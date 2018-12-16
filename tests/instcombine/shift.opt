@@ -206,7 +206,7 @@ Name: InstCombineShift: 476
 %r = or %a, %s2
 
 
-Name: InstCombineShift: 497
+Name: InstCombineShift: 497a
 ; FIXME: missing cases
 %Op0 = xor %X, C2
 %r = lshr %Op0, C
@@ -215,7 +215,7 @@ Name: InstCombineShift: 497
 %r = xor %s2, C2 u>> C
 
 
-Name: InstCombineShift: 497
+Name: InstCombineShift: 497b
 Pre: C2 u>> (width(C)-1) == 0
 %Op0 = xor %X, C2
 %r = ashr %Op0, C
@@ -224,7 +224,7 @@ Pre: C2 u>> (width(C)-1) == 0
 %r = xor %s2, C2 >> C
 
 
-Name: InstCombineShift: 497
+Name: InstCombineShift: 497c
 Pre: C2 u>> (width(C)-1) == 1
 %Op0 = and %X, C2
 %r = ashr %Op0, C
@@ -233,7 +233,7 @@ Pre: C2 u>> (width(C)-1) == 1
 %r = and %s2, C2 >> C
 
 
-Name: InstCombineShift: 497
+Name: InstCombineShift: 497d
 %Op0 = add %X, C2
 %r = shl %Op0, C
   =>
@@ -272,7 +272,7 @@ Name: InstCombineShift: 582
 %r = and %X, -1 u>> C
 
 
-Name: InstCombineShift: 592
+Name: InstCombineShift: 592a
 Pre: C1 < C2
 %Op0 = ashr exact %X, C1
 %r = shl i33 %Op0, C2
@@ -280,7 +280,7 @@ Pre: C1 < C2
 %r = shl %X, C2-C1
 
 
-Name: InstCombineShift: 592
+Name: InstCombineShift: 592b
 Pre: C1 < C2
 %Op0 = ashr exact %X, C1
 %r = shl nsw i31 %Op0, C2
@@ -288,7 +288,7 @@ Pre: C1 < C2
 %r = shl nsw %X, C2-C1
 
 
-Name: InstCombineShift: 592
+Name: InstCombineShift: 592c
 Pre: C1 < C2
 %Op0 = ashr exact %X, C1
 %r = shl nuw %Op0, C2
@@ -296,7 +296,7 @@ Pre: C1 < C2
 %r = shl nuw i27 %X, C2-C1
 
 
-Name: InstCombineShift: 592
+Name: InstCombineShift: 592d
 Pre: C1 < C2
 %Op0 = lshr exact %X, C1
 %r = shl i33 %Op0, C2
@@ -304,7 +304,7 @@ Pre: C1 < C2
 %r = shl %X, C2-C1
 
 
-Name: InstCombineShift: 592
+Name: InstCombineShift: 592e
 Pre: C1 < C2
 %Op0 = lshr exact %X, C1
 %r = shl nsw i31 %Op0, C2
@@ -312,7 +312,7 @@ Pre: C1 < C2
 %r = shl nsw %X, C2-C1
 
 
-Name: InstCombineShift: 592
+Name: InstCombineShift: 592f
 Pre: C1 < C2
 %Op0 = lshr exact %X, C1
 %r = shl nuw %Op0, C2
@@ -320,7 +320,7 @@ Pre: C1 < C2
 %r = shl nuw i27 %X, C2-C1
 
 
-Name: InstCombineShift: 612
+Name: InstCombineShift: 612a
 Pre: C1 < C2
 %Op0 = shl nuw %X, C1
 %r =  lshr i33 %Op0, C2
@@ -328,7 +328,7 @@ Pre: C1 < C2
 %r = lshr %X, C2-C1
 
 
-Name: InstCombineShift: 612
+Name: InstCombineShift: 612b
 Pre: C1 < C2
 %Op0 = shl nuw %X, C1
 %r =  lshr exact %Op0, C2

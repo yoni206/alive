@@ -1,0 +1,507 @@
+Name: AndOrXor:135
+%op = xor %X, C1
+%r = and %op, C2
+=>
+%a = and %X, C2
+%r = xor %a, C1&C2
+
+
+Name: AndOrXor:144
+;Pre: C1&C2 != C1  -- only for profitability
+%op = or %X, C1
+%r = and %op, C2
+=>
+%o = or %X, C1&C2
+%r = and %o, C2
+
+
+Name: AndOrXor:151
+Pre: (C1 & C2) == C1
+; && (C1 & C2) != 0  -- only for profitability
+%op = or %X, C1
+%r = and %op, C2
+=>
+%a = and %X, C2^(C1&C2)
+%r = or %a, C1
+
+
+Name: AndOrXor:185
+Pre: isPowerOf2(C2) && C1 & (C2-1) == 0 && C2 & C1 == 0
+%op = add %X, C1
+%r = and %op, C2
+=>
+%r = and %X, C2
+
+
+Name: AndOrXor:190
+Pre: isPowerOf2(C2) && C1 & (C2-1) == 0 && C2 & C1 != 0
+%op = add %X, C1
+%r = and %op, C2
+=>
+%a = and %X, C2
+%r = xor %a, C2
+
+
+Name: AndOrXor:206
+Pre: C2 & (-1 << C1) == (-1 << C1)
+%op = shl %X, C1
+%r = and %op, C2
+=>
+%r = %op
+
+
+Name: AndOrXor:210
+Pre: C2 & (-1 << C1) != (-1 << C1) && C2 & (-1 << C1) != C2
+%op = shl %X, C1
+%r = and %op, C2
+=>
+%r = and %op, C2 & (-1 << C1)
+
+
+Name: AndOrXor:226
+Pre: C2 & lshr(-1, C1) == lshr(-1, C1)
+%op = lshr %X, C1
+%r = and %op, C2
+=>
+%r = %op
+
+
+Name: AndOrXor:230
+Pre: C2 & lshr(-1, C1) != lshr(-1, C1)
+; && C2 & lshr(-1, C1) != C2 -- profitability only
+%op = lshr %X, C1
+%r = and %op, C2
+=>
+%r = and %op, C2 & lshr(-1, C1)
+
+
+Name: AndOrXor:246
+Pre: hasOneUse(%op) && C2 & lshr(-1, C1) == C2
+%op = ashr %X, C1
+%r = and %op, C2
+=>
+%op  = lshr %X, C1
+%r = and %op, C2
+
+
+Name: AndOrXor:343
+Pre: C1 & C2 == C2 && (isPowerOf2OrZero(C2+1) || (isShiftedMask(C2) && MaskedValueIsZero(%B, (1 << (width(C2) - countLeadingZeros((C2 - 1) ^ C2)))-1)))
+%lhs = and %A, C1
+%Op = add %lhs, %B
+%r = and %Op, C2
+=>
+%op = add %A, %B
+%r = and %op, C2
+
+
+Name: AndOrXor:363
+Pre: isPowerOf2OrZero(C2+1) && C1 & C2 == 0
+%lhs = or %A, C1
+%Op = add %lhs, %B
+%r = and %Op, C2
+=>
+%op = add %A, %B
+%r = and %op, C2
+
+
+Name: AndOrXor:364
+Pre: isPowerOf2OrZero(C2+1) && C1 & C2 == 0
+%lhs = xor %A, C1
+%Op = sub %lhs, %B
+%r = and %Op, C2
+=>
+%op = sub %A, %B
+%r = and %op, C2
+
+
+Name: AndOrXor:698
+%a1 = and %a, %b
+%a2 = and %a, %d
+%op0 = icmp eq %a1, 0
+%op1 = icmp eq %a2, 0
+%r = and %op0, %op1
+=>
+%or = or %b, %d
+%a3 = and %a, %or
+%r = icmp eq %a3, 0
+
+
+Name: AndOrXor:709
+%a1 = and %a, %b
+%a2 = and %a, %d
+%op0 = icmp eq %a1, %b
+%op1 = icmp eq %a2, %d
+%r = and %op0, %op1
+=>
+%or = or %b, %d
+%a3 = and %a, %or
+%r = icmp eq %a3, %or
+
+
+Name: AndOrXor:716
+%a1 = and %a, %b
+%a2 = and %a, %d
+%op0 = icmp eq %a1, %a
+%op1 = icmp eq %a2, %a
+%r = and %op0, %op1
+=>
+%a4 = and %b, %d
+%a3 = and %a, %a4
+%r = icmp eq %a3, %a
+
+
+Name: AndOrXor:732-1
+Pre: C1 & C2 == C1
+%a1 = and %a, C1
+%a2 = and %a, C2
+%op0 = icmp ne %a1, 0
+%op1 = icmp ne %a2, 0
+%r = and %op0, %op1
+=>
+%r = icmp ne %a1, 0
+
+
+Name: AndOrXor:732-2
+Pre: C1 & C2 == C1
+%a1 = and %a, C1
+%a2 = and %a, C2
+%op0 = icmp ne %a1, C1
+%op1 = icmp ne %a2, C2
+%r = and %op0, %op1
+=>
+%r = icmp ne %a1, C1
+
+
+Name: AndOrXor:745
+Pre: C1 | C2 == C1
+%a1 = and %a, C1
+%a2 = and %a, C2
+%op0 = icmp ne %a1, %a
+%op1 = icmp ne %a2, %a
+%r = and %op0, %op1
+=>
+%r = icmp ne %a1, %a
+
+
+Name: AndOrXor:757
+Pre: (C1 & C3) & (C2 ^ C4) == 0 && C1 & C2 == C2 && C3 & C4 == C4
+%a1 = and %a, C1
+%a2 = and %a, C3
+%op0 = icmp eq %a1, C2
+%op1 = icmp eq %a2, C4
+%r = and %op0, %op1
+=>
+%a3 = and %a, C1|C3
+%r = icmp eq %a3, C2|C4
+
+
+Name: AndOrXor:1140-1
+Pre: MaskedValueIsZero(%op0LHS, ~C)
+%op0 = xor %op0LHS, %op0RHS
+%r = and %op0, C
+=>
+%newRHS = and %op0RHS, C
+%r = xor %op0LHS, %newRHS
+
+
+Name: AndOrXor:1140-2
+Pre: MaskedValueIsZero(%op0LHS, ~C)
+%op0 = or %op0LHS, %op0RHS
+%r = and %op0, C
+=>
+%newRHS = and %op0RHS, C
+%r = or %op0LHS, %newRHS
+
+
+Name: AndOrXor:1146-1
+Pre: MaskedValueIsZero(%op0RHS, ~C)
+%op0 = xor %op0LHS, %op0RHS
+%r = and %op0, C
+=>
+%newLHS = and %op0LHS, C
+%r = xor %newLHS, %op0RHS
+
+Name: AndOrXor:1146-2
+Pre: MaskedValueIsZero(%op0RHS, ~C)
+%op0 = or %op0LHS, %op0RHS
+%r = and %op0, C
+=>
+%newLHS = and %op0LHS, C
+%r = or %newLHS, %op0RHS
+
+
+Name: AndOrXor:1175
+Pre: MaskedValueIsZero(%A, lshr(-1, countLeadingZeros(C)))
+%lhs = sub %A, %B
+%r = and %lhs, C
+=>
+%neg = sub 0, %B
+%r = and %neg, C
+
+
+Name: AndOrXor:1593
+Pre: isPowerOf2(%K1) && isPowerOf2(%K2)
+%a1 = and %A, %K1
+%a2 = and %A, %K2
+%cmp1 = icmp eq %a1, 0
+%cmp2 = icmp eq %a2, 0
+%r = or %cmp1, %cmp2
+=>
+%mask = or %K1, %K2
+%masked = and %A, %mask
+%r = icmp ne %masked, %mask
+
+
+Name: AndOrXor:1740
+Pre: C2+C3 == C1
+%add = add %X, C3
+%cmp1 = icmp ult %add, C1
+%cmp2 = icmp eq %X, C2
+%r = or %cmp1, %cmp2
+=>
+%r = icmp ule %add, C1
+
+
+Name: AndOrXor:1979
+Pre: C1 ^ C2 == -1
+%or = or %A, %B
+%op0 = and %or, C1
+%op1 = and %B, C2
+%r = or %op0, %op1
+=>
+%a = and %A, C1
+%r = or %a, %B
+
+
+Name: AndOrXor:2008
+Pre: C1 ^ C2 == -1
+%or = xor %A, %B
+%op0 = and %or, C1
+%op1 = and %B, C2
+%r = or %op0, %op1
+=>
+%a = and %A, C1
+%r = xor %a, %B
+
+
+Name: AndOrXor:2142
+Pre: C1 & C2 == 0 && MaskedValueIsZero(%V2, ~C1)
+%A = or %B, %V2
+%op0 = and %A, C1
+%op1 = and %B, C2
+%r = or %op0, %op1
+=>
+%r = and %A, (C1 | C2)
+
+
+Name: AndOrXor:2160
+Pre: C1 & C2 == 0 && C3 & ~C1 == 0 && C4 & ~C2 == 0
+%A = or %V1, C3
+%B = or %V1, C4
+%op0 = and %A, C1
+%op1 = and %B, C2
+%r = or %op0, %op1
+=>
+%V2 = or %V1, (C3 | C4)
+%r = and %V2, (C1 | C2)
+
+
+Name: AndOrXor:2188
+%C = xor %D, -1
+%B = xor %A, -1
+%op0 = and %A, %C
+%op1 = and %B, %D
+%r = or %op0, %op1
+=>
+%r = xor %A, %D
+
+
+Name: AndOrXor:2263
+%op1 = xor %op0, %B
+%r = or %op0, %op1
+=>
+%r = or %op0, %B
+
+
+Name: AndOrXor:2264
+%na = xor %A, -1
+%op1 = xor %na, %B
+%r = or %A, %op1
+=>
+%nb = xor %B, -1
+%r = or %A, %nb
+
+
+Name: AndOrXor:2265
+%op0 = and %A, %B
+%op1 = xor %A, %B
+%r = or %op0, %op1
+=>
+%r = or %A, %B
+
+
+Name: AndOrXor:2284
+%o = or %A, %B
+%op1 = xor %o, -1
+%r = or %A, %op1
+=>
+%not = xor %B, -1
+%r = or %A, %not
+
+
+Name: AndOrXor:2285
+%o = xor %A, %B
+%op1 = xor %o, -1
+%r = or %A, %op1
+=>
+%not = xor %B, -1
+%r = or %A, %not
+
+
+Name: AndOrXor:2297
+%op0 = and %A, %B
+%na = xor %A, -1
+%op1 = xor %na, %B
+%r = or %op0, %op1
+=>
+%r = xor %na, %B
+
+
+Name: AndOrXor:2367
+%op0 = or %A, C1
+%r = or %op0, %op1
+=>
+%i = or %A, %op1
+%r = or %i, C1
+
+
+Name: AndOrXor:2416
+%x = xor %nx, -1
+%op0 = and %x, %y
+%r = xor %op0, -1
+=>
+%ny = xor %y, -1
+%r = or %nx, %ny
+
+
+Name: AndOrXor:2417
+%x = xor %nx, -1
+%op0 = or %x, %y
+%r = xor %op0, -1
+=>
+%ny = xor %y, -1
+%r = and %nx, %ny
+
+
+Name: AndOrXor:2429
+%op0 = and %x, %y
+%r = xor %op0, -1
+=>
+%nx = xor %x, -1
+%ny = xor %y, -1
+%r = or %nx, %ny
+
+
+Name: AndOrXor:2430
+%op0 = or %x, %y
+%r = xor %op0, -1
+=>
+%nx = xor %x, -1
+%ny = xor %y, -1
+%r = and %nx, %ny
+
+
+Name: AndOrXor:2443
+%nx = xor %x, -1
+%op0 = ashr %nx, %y
+%r = xor %op0, -1
+=>
+%r = ashr %x, %y
+
+
+Name: AndOrXor:2475
+%op0 = sub C, %x
+%r = xor %op0, -1
+=>
+%r = add %x, -1-C  ; LLVM has -C-1, which prevents testing i1
+
+
+Name: AndOrXor:2486
+%op0 = add %x, C
+%r = xor %op0, -1
+=>
+%r = sub -1-C, %x
+
+
+Name: AndOrXor:2494
+Pre: isSignBit(C1)
+%op0 = add %x, C
+%r = xor %op0, C1
+=>
+%r = add %x, C + C1
+
+
+Name: AndOrXor:2500
+Pre: MaskedValueIsZero(%x,C1)
+%op0 = or %x, C1
+%r = xor %op0, C2
+=>
+%r = xor %x, C1^C2
+
+
+Name: AndOrXor:2595
+%op0 = and %a, %b
+%op1 = or %a, %b
+%r = xor %op0, %op1
+=>
+%r = xor %a, %b
+
+
+Name: AndOrXor:2607
+%na = xor %a, -1
+%nb = xor %b, -1
+%op0 = or %a, %nb
+%op1 = or %na, %b
+%r = xor %op0, %op1
+=>
+%r = xor %a, %b
+
+
+Name: AndOrXor:2617
+%na = xor %a, -1
+%nb = xor %b, -1
+%op0 = and %a, %nb
+%op1 = and %na, %b
+%r = xor %op0, %op1
+=>
+%r = xor %a, %b
+
+
+Name: AndOrXor:2627
+%op0 = xor %a, %c
+%op1 = or %a, %b
+%r = xor %op0, %op1
+=>
+%na = xor %a, -1
+%and = and %na, %b
+%r = xor %and, %c
+
+
+Name: AndOrXor:2647
+%op0 = and %a, %b
+%op1 = xor %a, %b
+%r = xor %op0, %op1
+=>
+%r = or %a, %b
+
+
+Name: AndOrXor:2658
+%nb = xor %b, -1
+%op0 = and %a, %nb
+%na = xor %a, -1
+%r = xor %op0, %na
+=>
+%and = and %a, %b
+%r = xor %and, -1
+
+

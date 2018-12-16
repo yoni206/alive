@@ -1,0 +1,215 @@
+AddSub:1040
+AddSub:1043
+AddSub:1063
+AddSub:1088
+AddSub:1111
+AddSub:1126-1
+AddSub:1126-2
+AddSub:1131
+AddSub:1142
+AddSub:1152
+AddSub:1156
+AddSub:1156-2
+AddSub:1156-3
+AddSub:1164
+AddSub:1165
+AddSub:1176
+AddSub:1184
+AddSub:1202
+AddSub:1206
+AddSub:1251
+AddSub:1255
+AddSub:1295
+AddSub:1309
+AddSub:1309-2
+AddSub:1309-3
+AddSub:1334
+AddSub:1338
+AddSub:1539
+AddSub:1539-2
+AddSub:1546
+AddSub:1549
+AddSub:1556
+AddSub:1560
+AddSub:1564
+AddSub:1574
+AddSub:1599
+AddSub:1604
+AddSub:1614
+AddSub:1619
+AddSub:1624
+AddSub:1633
+AddSub:1648
+AddSub:1654
+AddSub:1660
+AddSub:1665
+AddSub:1665-2
+AddSub:1672
+AddSub:1678
+AddSub:1693
+AddSub:1697
+Select:420
+Select:423
+Select:427
+Select:430
+Select:433
+Select:741
+Select:846
+Select:850
+Select:852
+Select:858
+Select:962
+AndOrXor:1140-1
+AndOrXor:1140-2
+AndOrXor:1146-1
+AndOrXor:1146-2
+AndOrXor:1175
+AndOrXor:1230 
+AndOrXor:1241 (A|B)
+AndOrXor:1247 ~(A&B)
+AndOrXor:1253 A
+AndOrXor:1280 (~A|B)&A
+AndOrXor:1288 (A
+AndOrXor:1294 (A
+AndOrXor:135
+AndOrXor:144
+AndOrXor:151
+AndOrXor:1593
+AndOrXor:1740
+AndOrXor:185
+AndOrXor:190
+AndOrXor:1979
+AndOrXor:2008
+AndOrXor:2052 
+AndOrXor:206
+AndOrXor:2063 
+AndOrXor:2095 
+AndOrXor:210
+AndOrXor:2113 
+AndOrXor:2118 
+AndOrXor:2123 
+AndOrXor:2142
+AndOrXor:2160
+AndOrXor:2188
+AndOrXor:2231 
+AndOrXor:2243 
+AndOrXor:2247 
+AndOrXor:226
+AndOrXor:2263
+AndOrXor:2264
+AndOrXor:2265
+AndOrXor:2284
+AndOrXor:2285
+AndOrXor:2297
+AndOrXor:230
+AndOrXor:2367
+AndOrXor:2416
+AndOrXor:2417
+AndOrXor:2429
+AndOrXor:2430
+AndOrXor:2443
+AndOrXor:246
+AndOrXor:2475
+AndOrXor:2486
+AndOrXor:2494
+AndOrXor:2500
+AndOrXor:2515 
+AndOrXor:2581 
+AndOrXor:2587 
+AndOrXor:2595
+AndOrXor:2607
+AndOrXor:2617
+AndOrXor:2627
+AndOrXor:2647
+AndOrXor:2658
+AndOrXor:343
+AndOrXor:363
+AndOrXor:364
+AndOrXor:698
+AndOrXor:709
+AndOrXor:716
+AndOrXor:732-1
+AndOrXor:732-2
+AndOrXor:745
+AndOrXor:757
+1030
+1033
+1049
+1062
+1065
+1291
+1321
+1333
+152
+160
+168
+168-2
+201
+203
+229
+239
+265
+265-2
+266
+266-2
+275
+275-2
+276
+276-2
+283
+290 &
+304
+735
+748
+756
+764
+772
+820
+865
+891
+891-2
+891-exact
+968
+simplifyValueKnownNonZero 1
+simplifyValueKnownNonZero 10
+simplifyValueKnownNonZero 11
+simplifyValueKnownNonZero 12
+simplifyValueKnownNonZero 2
+simplifyValueKnownNonZero 3
+simplifyValueKnownNonZero 4
+simplifyValueKnownNonZero 5
+simplifyValueKnownNonZero 6
+simplifyValueKnownNonZero 7
+simplifyValueKnownNonZero 8
+simplifyValueKnownNonZero 9
+InstCombineShift: 239
+InstCombineShift: 252
+InstCombineShift: 279
+InstCombineShift: 292
+InstCombineShift: 351
+InstCombineShift: 422-1
+InstCombineShift: 422-2
+InstCombineShift: 440
+InstCombineShift: 458
+InstCombineShift: 46
+InstCombineShift: 46-2
+InstCombineShift: 46-3
+InstCombineShift: 476
+InstCombineShift: 497
+InstCombineShift: 582
+InstCombineShift: 592
+InstCombineShift: 612
+InstCombineShift: 622
+InstCombineShift: 628
+InstCombineShift: 628-2
+InstCombineShift: 646
+InstCombineShift: 646-2
+InstCombineShift: 661
+InstCombineShift: 670
+InstCombineShift: 676
+InstCombineShift: 708
+InstCombineShift: 717
+InstCombineShift: 724
+InstCombineShift: 767
+InstCombineShift: 812
+InstCombineShift: 821

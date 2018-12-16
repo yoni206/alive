@@ -257,7 +257,7 @@ Pre: (C2 == zext(C-1)) && C != 0
 %r = select %c2, C2, %X
 
 
-Name: Select:575
+Name: Select:575a
 %c = icmp sgt %X, -1
 %r = select %c, C1, C2
   =>
@@ -266,7 +266,7 @@ Name: Select:575
 %r = add %a, C1
 
 
-Name: Select:575
+Name: Select:575b
 %c = icmp sgt %X, -1
 %r = select %c, C1, -1
   =>
@@ -274,7 +274,7 @@ Name: Select:575
 %r = or %s, C1
 
 
-Name: Select:576
+Name: Select:576a
 %c = icmp slt %X, 0
 %r = select %c, C2, C1
   =>
@@ -283,7 +283,7 @@ Name: Select:576
 %r = add %a, C1
 
 
-Name: Select:576
+Name: Select:576b
 %c = icmp slt %X, 0
 %r = select %c, -1, C1
   =>
@@ -500,7 +500,7 @@ Name: Select:855
 %A = and %B, %C
 
 
-Name: Select:859
+Name: Select:859a
 %A = select %B, %C, true
   =>
 %notb = xor %B, true
@@ -523,7 +523,7 @@ Name: Select:858
   =>
 %r = and %nota, %b
 
-Name: Select:859
+Name: Select:859b
 %nota = xor %a, -1
 %r = select %a, %b, %nota
   =>

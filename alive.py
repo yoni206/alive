@@ -453,6 +453,14 @@ def check_opt(opt, hide_progress):
   proofs = 0
   while res == sat:
     types = s.model()
+#    list_of_types = (list(set([types[a] for a in types.decls() if not str(a).startswith("ptrsize") and not str(a).startswith("t_")])))
+#    length = len(list_of_types)
+#    print
+#    if length > 1:
+#        print "panda bad ", name
+#    else: 
+#        print "panda good ", name
+
     set_ptr_size(types)
     fixupTypes(ident_src, types)
     fixupTypes(ident_tgt, types)
