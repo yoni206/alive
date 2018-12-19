@@ -1,0 +1,18 @@
+Name: Select:846
+%A = select %B, true, %C
+=>
+%A = or %B, %C
+Name: Select:850
+%A = select %B, false, %C
+=>
+%notb = xor %B, true
+%A = and %notb, %C
+Name: Select:852
+%r = select %a, %a, %b
+=>
+%r = or %a, %b
+Name: Select:858
+%nota = xor %a, -1
+%r = select %a, %nota, %b
+=>
+%r = and %nota, %b

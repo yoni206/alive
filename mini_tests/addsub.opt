@@ -1,0 +1,31 @@
+Name: AddSub:1040
+Pre: C2 == ~C1
+%Y = or %Z, C2
+%X = xor %Y, C1
+%LHS = add %X, 1
+%r = add %LHS, %RHS
+  =>
+%and = and %Z, C1
+%r = sub %RHS, %and
+
+
+Name: AddSub:1043
+%Y = and %Z, C1
+%X = xor %Y, C1
+%LHS = add %X, 1
+%r = add %LHS, %RHS
+  =>
+%or = or %Z, ~C1
+%r = sub %RHS, %or
+
+
+Name: AddSub:1063
+Pre: countTrailingZeros(C1) == 0 && C1 == C2+1
+%Y = and %Z, C2
+%LHS = xor %Y, C1
+%r = add %LHS, %RHS
+  =>
+%or = or %Z, ~C2
+%r = sub %RHS, %or
+
+

@@ -1,0 +1,9 @@
+
+Name: AddSub:1265
+Pre: hasOneUse(%sx) && WillNotOverflowSignedAdd(%x,trunc(C)) && (C & (-1 << (width(%x) - 1))) == 0
+%sx = sext %x
+%c = add %sx, C
+=>
+%xy = add nsw %x, trunc(C)
+%c = sext %xy
+

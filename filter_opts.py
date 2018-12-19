@@ -1,10 +1,18 @@
 #Given an .opt file and a .txt file so that the txt file contains a line separated list of optimization names from the .opt file, we produce a new .opt file that contains only these optimizations whose names are in the .txt file.
 
 import sys
+import os
 
 NAME_LINE_PREFIX = "Name: "
 
-def main(original_file, new_file, filter_file):
+def main(original_dir, new_dir, filter_file):
+    original_files = [f for f in os.listdir(original_dir) if not f.startswith(".")]
+    for f in original_files:
+        original_file = original_dir + "/" + f
+        new_file = new_dir + "/" + f
+        process_file(original_file, new_file, filter_file)
+
+def process_file(original_file, new_file, filter_file):
     #a map from names to lines. The first line in each optimization is the name line.
     optimizations = get_opts_from_file(original_file)
     wanted_names = get_wanted_names_from_file(filter_file)
@@ -28,12 +36,11 @@ def get_wanted_names_from_file(filter_file):
 
 def get_opts_from_file(original_file):
     with open(original_file, 'r') as myfile:
-        lines = [l.strip() for l in myfile.readlines()]
+        lines = [l.strip() for l in myfile.readlines() if (not l.startswith(";")) and l.strip()]
     result = {}
     for line in lines:
         if name_line(line):
             current_name = get_name_from_name_line(line)
-            print("panda", current_name)
             assert(current_name not in result)
             create_new_opt(result, current_name)
         add_line_to_opt(result, current_name, line)
@@ -53,9 +60,9 @@ def name_line(line):
 
 if __name__ == "__main__":
     if len(sys.argv) < 4:
-        print("arg1: original opt file\narg2: destination opt file\narg3: file with list of wanted opts")
+        print("arg1: original opt files dir\narg2: destination opt files dir\narg3: file with list of wanted opts")
         sys.exit(1)
-    original_file = sys.argv[1]
-    new_file = sys.argv[2]
+    original_dir = sys.argv[1]
+    new_dir = sys.argv[2]
     filter_file = sys.argv[3]
-    main(original_file, new_file, filter_file)
+    main(original_dir, new_dir, filter_file)
