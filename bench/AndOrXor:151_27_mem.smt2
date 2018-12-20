@@ -6,11 +6,11 @@
 
 (set-info :status unknown)
 (declare-fun mem0 () (_ BitVec 8))
-(declare-fun C1 () (_ BitVec 32))
-(declare-fun C2 () (_ BitVec 32))
+(declare-fun C1 () (_ BitVec 31))
+(declare-fun C2 () (_ BitVec 31))
 (assert
- (let (($x817 (and (distinct mem0 mem0) true)))
- (let ((?x52933 (bvand C1 C2)))
- (let (($x49208 (= ?x52933 C1)))
- (and $x49208 $x817)))))
+ (let (($x591 (and (distinct mem0 mem0) true)))
+ (let ((?x9238 (bvand C1 C2)))
+ (let (($x8644 (= ?x9238 C1)))
+ (and $x8644 $x591)))))
 (check-sat)

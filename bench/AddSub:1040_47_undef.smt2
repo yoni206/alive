@@ -5,9 +5,9 @@
 |)
 
 (set-info :status unknown)
-(declare-fun C1 () (_ BitVec 55))
-(declare-fun C2 () (_ BitVec 55))
+(declare-fun C1 () (_ BitVec 51))
+(declare-fun C2 () (_ BitVec 51))
 (assert
- (let (($x5988 (= C2 (bvnot C1))))
- (and $x5988 false)))
+ (let (($x5984 (= C2 (bvnot C1))))
+ (and $x5984 false)))
 (check-sat)

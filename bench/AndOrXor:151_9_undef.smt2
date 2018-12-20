@@ -5,10 +5,10 @@
 |)
 
 (set-info :status unknown)
-(declare-fun C1 () (_ BitVec 14))
-(declare-fun C2 () (_ BitVec 14))
+(declare-fun C1 () (_ BitVec 13))
+(declare-fun C2 () (_ BitVec 13))
 (assert
- (let ((?x49285 (bvand C1 C2)))
- (let (($x54035 (= ?x49285 C1)))
- (and $x54035 false))))
+ (let ((?x2756 (bvand C1 C2)))
+ (let (($x2702 (= ?x2756 C1)))
+ (and $x2702 false))))
 (check-sat)

@@ -24,6 +24,7 @@ def write_fil_opts_to_new_file(filtered_opts, new_file):
         for opt_name in filtered_opts:
             myfile.write("\n".join(filtered_opts[opt_name]))
             myfile.write("\n")
+            myfile.write("\n")
 
 
 def filter_opts(optimizations, wanted_names):

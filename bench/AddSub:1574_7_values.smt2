@@ -5,9 +5,9 @@
 |)
 
 (set-info :status unknown)
-(declare-fun %X () (_ BitVec 11))
-(declare-fun C2 () (_ BitVec 11))
-(declare-fun C () (_ BitVec 11))
+(declare-fun %X () (_ BitVec 12))
+(declare-fun C2 () (_ BitVec 12))
+(declare-fun C () (_ BitVec 12))
 (assert
  (and (distinct (bvsub C (bvadd %X C2)) (bvsub (bvsub C C2) %X)) true))
 (check-sat)

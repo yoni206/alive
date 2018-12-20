@@ -8,6 +8,6 @@
 (declare-fun %b () (_ BitVec 50))
 (declare-fun %a () (_ BitVec 50))
 (assert
- (let ((?x27776 (bvxor %a %b)))
- (and (distinct (bvxor (bvand %a %b) (bvor %a %b)) ?x27776) true)))
+ (let ((?x4629 (bvxor %a %b)))
+ (and (distinct (bvxor (bvand %a %b) (bvor %a %b)) ?x4629) true)))
 (check-sat)

@@ -8,7 +8,7 @@
 (declare-fun C1 () (_ BitVec 1))
 (declare-fun C2 () (_ BitVec 1))
 (assert
- (let ((?x55540 (bvand C1 C2)))
- (let (($x56500 (= ?x55540 C1)))
- (and $x56500 false))))
+ (let ((?x12097 (bvand C1 C2)))
+ (let (($x2929 (= ?x12097 C1)))
+ (and $x2929 false))))
 (check-sat)

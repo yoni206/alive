@@ -8,6 +8,6 @@
 (declare-fun %Y () (_ BitVec 58))
 (declare-fun %X () (_ BitVec 58))
 (assert
- (let ((?x44532 (bvsub (_ bv0 58) %Y)))
- (and (distinct (bvsub (bvsub %X %Y) %X) ?x44532) true)))
+ (let ((?x8039 (bvsub (_ bv0 58) %Y)))
+ (and (distinct (bvsub (bvsub %X %Y) %X) ?x8039) true)))
 (check-sat)

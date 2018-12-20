@@ -8,8 +8,8 @@
 (declare-fun C2 () (_ BitVec 5))
 (declare-fun C1 () (_ BitVec 5))
 (assert
- (let ((?x51383 (bvand C1 C2)))
- (let (($x65857 (= ?x51383 (_ bv0 5))))
- (let (($x2396 (= (bvand (bvadd C2 (_ bv1 5)) (bvsub (bvadd C2 (_ bv1 5)) (_ bv1 5))) (_ bv0 5))))
- (and $x2396 $x65857 false)))))
+ (let ((?x7749 (bvand C1 C2)))
+ (let (($x10470 (= ?x7749 (_ bv0 5))))
+ (let (($x7956 (= (bvand (bvadd C2 (_ bv1 5)) (bvsub (bvadd C2 (_ bv1 5)) (_ bv1 5))) (_ bv0 5))))
+ (and $x7956 $x10470 false)))))
 (check-sat)

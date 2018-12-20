@@ -8,17 +8,32 @@ import os
 
 def main(smt_dir):
     files = [f for f in os.listdir(smt_dir) if not f.startswith(".")]
-    all_failures = {}
-    for f in files:
-        all_failures[f] = []
-        print("Checking", f)
-        path = smt_dir + "/" + f
-        failures = do_checks(path)
-        all_failures[f].extend(failures)
-    print("No Problems:")
-    print("\n".join([f for f in all_failures if len(all_failures[f])==0]))
-    print("Problems:")
-    print("\n".join([f + ":" + str(all_failures[f]) for f in all_failures if len(all_failures[f])!=0]))
+    #TODO for now i am skipping mem checks
+    files = [f for f in files if not f.endswith("_mem.smt2")]
+    opt_names = set([f[0:f.find("_")] for f in files])
+    stats = {}
+    for opt_name in opt_names:
+        if opt_name not in stats:
+            stats[opt_name] = {}
+        for f in [g for g in files if g.startswith(opt_name)]:
+            stats[opt_name][f] = []
+            path = smt_dir + "/" + f
+            failures = do_checks(path)
+            stats[opt_name][f].extend(failures)
+    analysis(stats)
+
+def analysis(stats):
+    for opt_name in stats:
+        if is_opt_ok(stats, opt_name):
+            print(opt_name, "; OK")
+        else:
+            print(opt_name, "; FAIL")
+
+def is_opt_ok(stats, opt_name):
+    failures = []
+    for f in stats[opt_name]:
+        failures.extend(stats[opt_name][f])
+    return len(failures) == 0
 
 def do_checks(path):
     failures = []
@@ -30,7 +45,37 @@ def do_checks(path):
     b = "mem" not in path or check_mem0(content)
     if b is False:
         failures.append((path, "mem0"))
+    b = bv_const_only_zero_one(content)
+    if b is False:
+        failures.append((path, "non01const"))
+    b = no_extend(content)
+    if b is False:
+        failures.append((path, "_extend"))
     return failures
+
+def no_extend(content):
+    return "_extend " not in content
+
+def bv_const_only_zero_one(content):
+    result = True
+    exprs = get_bv_const_exprs(content)
+    for e in exprs:
+        if is_zero_one_const(e):
+            continue
+        else:
+            result = False
+            break
+    return result
+
+def is_zero_one_const(e):
+    index = find_2nd(e, " ")
+    first_char_before_second_space = e[index - 1]
+    second_char_before_second_space = e[index - 2]
+    return is_zero_or_one_char(first_char_before_second_space) and second_char_before_second_space == "v"
+
+def is_zero_or_one_char(s):
+    return s == "0" or s == "1"
+
 
 def check_mem0(content):
     return "distinct mem0 mem0" in content

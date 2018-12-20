@@ -5,11 +5,11 @@
 |)
 
 (set-info :status unknown)
-(declare-fun C2 () (_ BitVec 42))
-(declare-fun C1 () (_ BitVec 42))
+(declare-fun C2 () (_ BitVec 41))
+(declare-fun C1 () (_ BitVec 41))
 (assert
- (let ((?x54036 (bvand C1 C2)))
- (let (($x64386 (= ?x54036 (_ bv0 42))))
- (let (($x24646 (= (bvand (bvadd C2 (_ bv1 42)) (bvsub (bvadd C2 (_ bv1 42)) (_ bv1 42))) (_ bv0 42))))
- (and $x24646 $x64386 false)))))
+ (let ((?x10274 (bvand C1 C2)))
+ (let (($x11909 (= ?x10274 (_ bv0 41))))
+ (let (($x14674 (= (bvand (bvadd C2 (_ bv1 41)) (bvsub (bvadd C2 (_ bv1 41)) (_ bv1 41))) (_ bv0 41))))
+ (and $x14674 $x11909 false)))))
 (check-sat)

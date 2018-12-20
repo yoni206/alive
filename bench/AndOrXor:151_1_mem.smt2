@@ -9,8 +9,8 @@
 (declare-fun C1 () (_ BitVec 5))
 (declare-fun C2 () (_ BitVec 5))
 (assert
- (let (($x817 (and (distinct mem0 mem0) true)))
- (let ((?x51383 (bvand C1 C2)))
- (let (($x53655 (= ?x51383 C1)))
- (and $x53655 $x817)))))
+ (let (($x591 (and (distinct mem0 mem0) true)))
+ (let ((?x7749 (bvand C1 C2)))
+ (let (($x11666 (= ?x7749 C1)))
+ (and $x11666 $x591)))))
 (check-sat)

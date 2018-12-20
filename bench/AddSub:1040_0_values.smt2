@@ -10,7 +10,7 @@
 (declare-fun %RHS () (_ BitVec 4))
 (declare-fun C2 () (_ BitVec 4))
 (assert
- (let (($x813 (and (distinct (bvadd (bvadd (bvxor (bvor %Z C2) C1) (_ bv1 4)) %RHS) (bvsub %RHS (bvand %Z C1))) true)))
- (let (($x801 (= C2 (bvnot C1))))
- (and $x801 $x813))))
+ (let (($x583 (and (distinct (bvadd (bvadd (bvxor (bvor %Z C2) C1) (_ bv1 4)) %RHS) (bvsub %RHS (bvand %Z C1))) true)))
+ (let (($x571 (= C2 (bvnot C1))))
+ (and $x571 $x583))))
 (check-sat)

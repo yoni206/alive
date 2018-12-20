@@ -598,7 +598,7 @@ Name: AndOrXor:1207
 %r = and %newcast, trunc(C1) & C2
 
 
-Name: AndOrXor:1230  ~A & ~B -> ~(A | B)
+Name: AndOrXor:1230 
 %op0 = xor %notOp0, -1
 %op1 = xor %notOp1, -1
 %r = and %op0, %op1
@@ -607,7 +607,7 @@ Name: AndOrXor:1230  ~A & ~B -> ~(A | B)
 %r = xor %or, -1
 
 
-Name: AndOrXor:1241 (A|B) & ~(A&B) => A^B
+Name: AndOrXor:1241 
 %op0 = or %A, %B
 %notOp1 = and %A, %B
 %op1 = xor %notOp1, -1
@@ -616,7 +616,7 @@ Name: AndOrXor:1241 (A|B) & ~(A&B) => A^B
 %r = xor %A, %B
 
 
-Name: AndOrXor:1247 ~(A&B) & (A|B) => A^B
+Name: AndOrXor:1247 
 %notOp0 = and %A, %B
 %op0 = xor %notOp0, -1
 %op1 = or %A, %B
@@ -625,7 +625,7 @@ Name: AndOrXor:1247 ~(A&B) & (A|B) => A^B
 %r = xor %A, %B
 
 
-Name: AndOrXor:1253 A & (A^B) -> A & ~B
+Name: AndOrXor:1253 
 ; FIXME: need pre: !constant(%A) to avoid infinite loop when A == -1
 %op0 = xor %A, %B
 %r = and %op0, %A
@@ -634,7 +634,7 @@ Name: AndOrXor:1253 A & (A^B) -> A & ~B
 %r = and %A, %notB
 
 
-Name: AndOrXor:1280 (~A|B)&A -> A&B
+Name: AndOrXor:1280 
 %nA = xor %A, -1
 %op0 = or %nA, %B
 %r = and %op0, %A
@@ -642,7 +642,7 @@ Name: AndOrXor:1280 (~A|B)&A -> A&B
 %r = and %A, %B
 
 
-Name: AndOrXor:1288 (A ^ B) & ((B ^ C) ^ A) -> (A ^ B) & ~C
+Name: AndOrXor:1288
 %op0 = xor %A, %B
 %x = xor %B, %C
 %op1 = xor %x, %A
@@ -652,7 +652,7 @@ Name: AndOrXor:1288 (A ^ B) & ((B ^ C) ^ A) -> (A ^ B) & ~C
 %r = and %op0, %negC
 
 
-Name: AndOrXor:1294 (A | B) & ((~A) ^ B) -> (A & B)
+Name: AndOrXor:1294 
 %op0 = or %A, %B
 %x = xor %A, -1
 %op1 = xor %x, %B
@@ -661,7 +661,7 @@ Name: AndOrXor:1294 (A | B) & ((~A) ^ B) -> (A & B)
 %r = and %A, %B
 
 
-Name: AndOrXor:1346 (sext)
+Name: AndOrXor:1346a
 %op0 = sext %x
 %op1 = sext %y
 %r = and %op0, %op1
@@ -670,7 +670,7 @@ Name: AndOrXor:1346 (sext)
 %r = sext %0
 
 
-Name: AndOrXor:1346 (zext)
+Name: AndOrXor:1346b
 %op0 = zext %x
 %op1 = zext %y
 %r = and %op0, %op1
@@ -679,7 +679,7 @@ Name: AndOrXor:1346 (zext)
 %r = zext %0
 
 
-Name: AndOrXor:1346 (trunc)
+Name: AndOrXor:1346c
 %op0 = trunc %x
 %op1 = trunc %y
 %r = and %op0, %op1
@@ -1087,7 +1087,7 @@ Pre: C1 ^ C2 == -1
 %r = xor %a, %B
 
 
-Name: AndOrXor:2052  (X & C1) | C2 --> (X | C2) & (C1|C2)
+Name: AndOrXor:2052 
 Pre: C & C1 != 0 ; @@ why? it's just as correct without
 %op0 = and %x, C1
 %r = or %op0, C
@@ -1096,7 +1096,7 @@ Pre: C & C1 != 0 ; @@ why? it's just as correct without
 %r = and %or, (C | C1)
 
 
-Name: AndOrXor:2063  (X ^ C1) | C2 --> (X | C2) ^ (C1 & ~C2)
+Name: AndOrXor:2063 
 %op0 = xor %x, C1
 %r = or %op0, C
   =>
@@ -1104,7 +1104,7 @@ Name: AndOrXor:2063  (X ^ C1) | C2 --> (X | C2) ^ (C1 & ~C2)
 %r = xor %or, (C1 & ~C)
 
 
-Name: AndOrXor:2095   (X^C)|Y -> (X|Y)^C iff Y&C == 0
+Name: AndOrXor:2095
 Pre: MaskedValueIsZero(%op1, C1)
 %op0 = xor %A, C1
 %r = or %op0, %op1
@@ -1113,7 +1113,7 @@ Pre: MaskedValueIsZero(%op1, C1)
 %r = xor %or, C1
 
 
-Name: AndOrXor:2113   ((~A & B) | A) -> (A | B)
+Name: AndOrXor:2113
 %negA = xor %A, -1
 %op0 = and %negA, %B
 %r = or %op0, %A
@@ -1121,7 +1121,7 @@ Name: AndOrXor:2113   ((~A & B) | A) -> (A | B)
 %r = or %A, %B
 
 
-Name: AndOrXor:2118   ((A & B) | ~A) -> (~A | B)
+Name: AndOrXor:2118
 %negA = xor %A, -1
 %op0 = and %A, %B
 %r = or %op0, %negA
@@ -1129,7 +1129,7 @@ Name: AndOrXor:2118   ((A & B) | ~A) -> (~A | B)
 %r = or %negA, %B
 
 
-Name: AndOrXor:2123   (A & (~B)) | (A ^ B) -> (A ^ B)
+Name: AndOrXor:2123
 %negB = xor %B, -1
 %op0 = and %A, %negB
 %op1 = xor %A, %B
@@ -1170,7 +1170,7 @@ Name: AndOrXor:2188
 %r = xor %A, %D
 
 
-Name: AndOrXor:2231  (A ^ B) | ((B ^ C) ^ A) -> (A ^ B) | C
+Name: AndOrXor:2231 
 %op0 = xor %A, %B
 %x = xor %B, %C
 %op1 = xor %x, %A
@@ -1179,7 +1179,7 @@ Name: AndOrXor:2231  (A ^ B) | ((B ^ C) ^ A) -> (A ^ B) | C
 %r = or %op0, %C
 
 
-Name: AndOrXor:2243  ((B | C) & A) | B -> B | (A & C)
+Name: AndOrXor:2243
 %o = or %B, %C
 %op0 = and %o, %A
 %r = or %op0, %B
@@ -1188,7 +1188,7 @@ Name: AndOrXor:2243  ((B | C) & A) | B -> B | (A & C)
 %r = or %B, %a
 
 
-Name: AndOrXor:2247  (~A | ~B) == (~(A & B))
+Name: AndOrXor:2247
 %na = xor %A, -1
 %nb = xor %B, -1
 %r = or %na, %nb
@@ -1402,7 +1402,7 @@ Pre: MaskedValueIsZero(%x,C1)
 %r = xor %x, C1^C2
 
 
-Name: AndOrXor:2515   ((X^C1) >> C2)^C3 -> (X>>C2) ^ ((C1>>C2)^C3)
+Name: AndOrXor:2515 
 %e1  = xor %x, C1
 %op0 = lshr %e1, C2
 %r   = xor %op0, C3
@@ -1411,7 +1411,7 @@ Name: AndOrXor:2515   ((X^C1) >> C2)^C3 -> (X>>C2) ^ ((C1>>C2)^C3)
 %r = xor %0, lshr(C1,C2)^C3
 
 
-Name: AndOrXor:2581  (B|A)^B -> A & ~B
+Name: AndOrXor:2581 
 %op0 = or %a, %op1
 %r = xor %op0, %op1
   =>
@@ -1419,7 +1419,7 @@ Name: AndOrXor:2581  (B|A)^B -> A & ~B
 %r = and %a, %nop1
 
 
-Name: AndOrXor:2587  (B&A)^A -> ~B & A
+Name: AndOrXor:2587 
 %op0 = and %a, %op1
 %r = xor %op0, %op1
   =>

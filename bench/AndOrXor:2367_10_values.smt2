@@ -5,9 +5,9 @@
 |)
 
 (set-info :status unknown)
-(declare-fun C1 () (_ BitVec 14))
-(declare-fun %op1 () (_ BitVec 14))
-(declare-fun %A () (_ BitVec 14))
+(declare-fun C1 () (_ BitVec 11))
+(declare-fun %op1 () (_ BitVec 11))
+(declare-fun %A () (_ BitVec 11))
 (assert
  (and (distinct (bvor (bvor %A C1) %op1) (bvor (bvor %A %op1) C1)) true))
 (check-sat)
