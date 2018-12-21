@@ -109,7 +109,7 @@ def gen_benchmark(s, opt_name, index, opt_reason):
   #else:
   #  files.sort(reverse=True)
   #  filename = int(re.search('(\d+)\.smt2', files[0]).group(1)) + 1
-  filename = "bench/" + opt_name + "_" + str(index) + "_" + opt_reason + ".smt2"
+  filename = "bench/" + opt_name + "_" + opt_reason + "_" + str(index) +  ".smt2"
   fd = open(filename, 'w')
   fd.write(string)
   fd.close()
@@ -359,7 +359,6 @@ def check_typed_opt(pre, src, ident_src, tgt, ident_tgt, types, users, opt_name,
     gbl_prev_flags = [simplify_pre(mk_and(gbl_prev_flags + [flgs]))]
   else:
     check_refinement(srcv, tgtv, types, extra_cnstrs, users, opt_name, index)
-
   # 3) check that the final memory state is similar in both programs
   idx = BitVec('idx', get_ptr_size())
   val1 = srcv.load(idx)
@@ -399,7 +398,6 @@ def check_opt(opt, hide_progress):
   # Only one type per variable/expression in the precondition is required.
   for v in s.model().decls():
     register_pick_one_type(v)
-
   s.add(type_src)
   unregister_pick_one_type(get_smt_vars(type_src))
   if s.check() != sat:

@@ -1,27 +1,3 @@
-Name: AddSub:1040
-Pre: C2 == ~C1
-%Y = or %Z, C2
-%X = xor %Y, C1
-%LHS = add %X, 1
-%r = add %LHS, %RHS
-=>
-%and = and %Z, C1
-%r = sub %RHS, %and
-
-Name: AddSub:1043
-%Y = and %Z, C1
-%X = xor %Y, C1
-%LHS = add %X, 1
-%r = add %LHS, %RHS
-=>
-%or = or %Z, ~C1
-%r = sub %RHS, %or
-
-Name: AddSub:1152
-%r = add i1 %x, %y
-=>
-%r = xor %x, %y
-
 Name: AddSub:1164
 %na = sub 0, %a
 %c = add %na, %b
@@ -49,21 +25,10 @@ Name: AddSub:1295
 =>
 %c = or %a, %b
 
-Name: AddSub:1539
-%na = sub 0, %a
-%r = sub %x, %na
-=>
-%r = add %x, %a
-
 Name: AddSub:1539-2
 %r = sub %x, C
 =>
 %r = add %x, -C
-
-Name: AddSub:1556
-%r = sub i1 %x, %y
-=>
-%r = xor %x, %y
 
 Name: AddSub:1574
 %rhs = add %X, C2

@@ -12,65 +12,12 @@ Name: AndOrXor:144
 %o = or %X, C1&C2
 %r = and %o, C2
 
-Name: AndOrXor:151
-Pre: (C1 & C2) == C1
-%op = or %X, C1
-%r = and %op, C2
-=>
-%a = and %X, C2^(C1&C2)
-%r = or %a, C1
-
-Name: AndOrXor:363
-Pre: isPowerOf2OrZero(C2+1) && C1 & C2 == 0
-%lhs = or %A, C1
-%Op = add %lhs, %B
-%r = and %Op, C2
-=>
-%op = add %A, %B
-%r = and %op, C2
-
-Name: AndOrXor:364
-Pre: isPowerOf2OrZero(C2+1) && C1 & C2 == 0
-%lhs = xor %A, C1
-%Op = sub %lhs, %B
-%r = and %Op, C2
-=>
-%op = sub %A, %B
-%r = and %op, C2
-
-Name: AndOrXor:1346c
-%op0 = trunc %x
-%op1 = trunc %y
-%r = and %op0, %op1
-=>
-%0 = and %x, %y
-%r = trunc %0
-
-Name: AndOrXor:2052
-Pre: C & C1 != 0 ; @@ why? it's just as correct without
-%op0 = and %x, C1
-%r = or %op0, C
-=>
-%or = or %x, C
-%r = and %or, (C | C1)
-
 Name: AndOrXor:2063
 %op0 = xor %x, C1
 %r = or %op0, C
 =>
 %or = or %x, C
 %r = xor %or, (C1 & ~C)
-
-Name: AndOrXor:2160
-Pre: C1 & C2 == 0 && C3 & ~C1 == 0 && C4 & ~C2 == 0
-%A = or %V1, C3
-%B = or %V1, C4
-%op0 = and %A, C1
-%op1 = and %B, C2
-%r = or %op0, %op1
-=>
-%V2 = or %V1, (C3 | C4)
-%r = and %V2, (C1 | C2)
 
 Name: AndOrXor:2231
 %op0 = xor %A, %B
@@ -95,14 +42,6 @@ Name: AndOrXor:2265
 =>
 %r = or %A, %B
 
-Name: AndOrXor:2321-3
-%op0 = trunc %A
-%op1 = trunc %B
-%r = or %op0, %op1
-=>
-%or = or %A, %B
-%r = trunc %or
-
 Name: AndOrXor:2367
 %op0 = or %A, C1
 %r = or %op0, %op1
@@ -123,12 +62,4 @@ Name: AndOrXor:2647
 %r = xor %op0, %op1
 =>
 %r = or %a, %b
-
-Name: AndOrXor:2681-3
-%op0 = trunc %a
-%op1 = trunc %b
-%r = xor %op0, %op1
-=>
-%0 = xor %a, %b
-%r = trunc %0
 

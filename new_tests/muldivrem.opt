@@ -13,23 +13,3 @@ Name: muldivrem:239
 =>
 %r = mul %X, %Y
 
-Name: muldivrem:276-2
-%div = udiv i5 %X, %Y
-%negY = sub 0, %Y
-%r = mul %div, %negY
-=>
-%rem = urem %X, %Y
-%r = sub %rem, %X
-
-Name: muldivrem:283
-%r = mul i1 %X, %Y
-=>
-%r = and %X, %Y
-
-Name: muldivrem:820b
-%Z = urem i9 %X, %Op1
-%Op0 = sub %X, %Z
-%r = udiv %Op0, %Op1
-=>
-%r = udiv %X, %Op1
-
