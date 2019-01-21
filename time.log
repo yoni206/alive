@@ -1,207 +1,868 @@
-cvc4 int_bench/bounded/qf/qf_AddSub:1619_undef_0.smt2: 0.03376913070678711: unsat
-cvc4 int_bench/bounded/qf/qf_AndOrXor:135_undef_0.smt2: 0.03543400764465332: unsat
-cvc4 int_bench/bounded/qf/qf_AddSub:1574_undef_0.smt2: 0.03545784950256348: unsat
-cvc4 int_bench/bounded/qf/qf_AddSub:1539-2_values_43.smt2: 0.03446483612060547: unsat
-cvc4 int_bench/bounded/qf/qf_AddSub:1295_undef_0.smt2: 0.036252498626708984: unsat
-cvc4 int_bench/bounded/qf/qf_AndOrXor:2063_undef_0.smt2: 0.03355574607849121: unsat
-cvc4 int_bench/bounded/qf/qf_AddSub:1164_undef_0.smt2: 0.03542804718017578: unsat
-cvc4 int_bench/bounded/qf/qf_AndOrXor:2231_undef_0.smt2: 0.036698102951049805: unsat
-cvc4 int_bench/bounded/qf/qf_AndOrXor:2595_values_36.smt2: 0.04941821098327637: unknown
-cvc4 int_bench/bounded/qf/qf_AndOrXor:2647_values_7.smt2: 0.05550336837768555: unknown
-cvc4 int_bench/bounded/qf/qf_AndOrXor:135_values_4.smt2: 0.057294607162475586: unknown
-cvc4 int_bench/bounded/qf/qf_AndOrXor:2231_values_33.smt2: 0.05716133117675781: unknown
-cvc4 int_bench/bounded/qf/qf_AndOrXor:2243_values_29.smt2: 0.05833697319030762: unknown
-cvc4 int_bench/bounded/qf/qf_AndOrXor:2063_values_11.smt2: 0.0584263801574707: unknown
-cvc4 int_bench/bounded/qf/qf_AndOrXor:144_values_48.smt2: 0.05890989303588867: unknown
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AndOrXor:135_undef_0.smt2: 0.03001856803894043: unsat
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AddSub:1295_undef_0.smt2: 0.029082775115966797: unsat
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AndOrXor:2063_undef_0.smt2: 0.028948307037353516: unsat
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AddSub:1539-2_values_43.smt2: 0.030890703201293945: unsat
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AddSub:1574_undef_0.smt2: 0.03160905838012695: unsat
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AndOrXor:2231_undef_0.smt2: 0.03062129020690918: unsat
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AddSub:1619_undef_0.smt2: 0.034690141677856445: unsat
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AddSub:1164_undef_0.smt2: 0.03599953651428223: unsat
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:135_undef_0.smt2: 0.03563523292541504: unsat
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1295_undef_0.smt2: 0.03536844253540039: unsat
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:2063_undef_0.smt2: 0.035288095474243164: unsat
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AndOrXor:2595_values_36.smt2: 0.05309009552001953: unknown
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AndOrXor:2647_values_7.smt2: 0.04697370529174805: unknown
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1574_undef_0.smt2: 0.03711271286010742: unsat
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1539-2_values_43.smt2: 0.03931570053100586: unsat
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:2231_undef_0.smt2: 0.038622379302978516: unsat
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AndOrXor:2231_values_33.smt2: 0.05023074150085449: unknown
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AndOrXor:135_values_4.smt2: 0.05265951156616211: unknown
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AndOrXor:2243_values_29.smt2: 0.05451250076293945: unknown
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AndOrXor:2063_values_11.smt2: 0.0551297664642334: unknown
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1619_undef_0.smt2: 0.0450897216796875: unsat
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1164_undef_0.smt2: 0.04205894470214844: unsat
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AndOrXor:144_values_48.smt2: 0.055802106857299805: unknown
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AndOrXor:135_undef_0.smt2: 0.030673503875732422: unsat
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AddSub:1295_undef_0.smt2: 0.030689477920532227: unsat
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AndOrXor:2063_undef_0.smt2: 0.03068375587463379: unsat
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AddSub:1574_undef_0.smt2: 0.032354116439819336: unsat
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AddSub:1539-2_values_43.smt2: 0.0322873592376709: unsat
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AndOrXor:2231_undef_0.smt2: 0.032828569412231445: unsat
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AddSub:1619_undef_0.smt2: 0.03830218315124512: unsat
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:2595_values_36.smt2: 0.05205965042114258: sat
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AddSub:1164_undef_0.smt2: 0.042194366455078125: unsat
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:2647_values_7.smt2: 0.056858062744140625: sat
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AndOrXor:135_undef_0.smt2: 0.029996156692504883: unsat
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AndOrXor:2063_undef_0.smt2: 0.030025720596313477: unsat
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AddSub:1295_undef_0.smt2: 0.03193402290344238: unsat
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:2231_values_33.smt2: 0.06118488311767578: sat
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AddSub:1539-2_values_43.smt2: 0.03163719177246094: unsat
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AddSub:1574_undef_0.smt2: 0.0341646671295166: unsat
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:2243_values_29.smt2: 0.060550689697265625: sat
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:135_values_4.smt2: 0.06653308868408203: sat
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:2063_values_11.smt2: 0.07039618492126465: sat
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AndOrXor:2231_undef_0.smt2: 0.04351162910461426: unsat
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AddSub:1619_undef_0.smt2: 0.03257298469543457: unsat
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:144_values_48.smt2: 0.06969141960144043: sat
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AddSub:1164_undef_0.smt2: 0.03719139099121094: unsat
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:135_undef_0.smt2: 0.036476850509643555: unsat
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:2063_undef_0.smt2: 0.03675222396850586: unsat
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1295_undef_0.smt2: 0.04154253005981445: unsat
-z3 int_bench/bounded/qf/qf_AndOrXor:2063_undef_0.smt2: 0.007929325103759766: unsat
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1574_undef_0.smt2: 0.036142826080322266: unsat
-z3 int_bench/bounded/qf/qf_AddSub:1295_undef_0.smt2: 0.0065000057220458984: unsat
-z3 int_bench/bounded/qf/qf_AndOrXor:135_undef_0.smt2: 0.01399683952331543: unsat
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1539-2_values_43.smt2: 0.04782438278198242: unsat
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:2231_undef_0.smt2: 0.036947011947631836: unsat
-z3 int_bench/bounded/qf/qf_AddSub:1574_undef_0.smt2: 0.018475770950317383: unsat
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1619_undef_0.smt2: 0.04343271255493164: unsat
-z3 int_bench/bounded/qf/qf_AddSub:1539-2_values_43.smt2: 0.010767221450805664: unsat
-z3 int_bench/bounded/qf/qf_AndOrXor:2231_undef_0.smt2: 0.009700536727905273: unsat
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1164_undef_0.smt2: 0.03833770751953125: unsat
-z3 int_bench/bounded/qf/qf_AddSub:1619_undef_0.smt2: 0.008575439453125: unsat
-z3 int_bench/bounded/qf/qf_AddSub:1164_undef_0.smt2: 0.011937856674194336: unsat
-cvc4 int_bench/bounded/qf/qf_AddSub:1165_undef_0.smt2: 0.03176569938659668: unsat
-cvc4 int_bench/bounded/qf/qf_AndOrXor:2243_undef_0.smt2: 0.04552102088928223: unsat
-cvc4 int_bench/bounded/qf/qf_AndOrXor:2367_values_4.smt2: 0.05914735794067383: unknown
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AddSub:1165_undef_0.smt2: 0.032601118087768555: unsat
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AndOrXor:2243_undef_0.smt2: 0.04444718360900879: unsat
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AndOrXor:2367_values_4.smt2: 0.05661797523498535: unknown
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1165_undef_0.smt2: 0.03769636154174805: unsat
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:2243_undef_0.smt2: 0.044286489486694336: unsat
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AddSub:1165_undef_0.smt2: 0.03709268569946289: unsat
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AndOrXor:2243_undef_0.smt2: 0.03239035606384277: unsat
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:2367_values_4.smt2: 0.06642889976501465: sat
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AddSub:1165_undef_0.smt2: 0.03938889503479004: unsat
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AndOrXor:2243_undef_0.smt2: 0.03272891044616699: unsat
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1165_undef_0.smt2: 0.04518008232116699: unsat
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:2243_undef_0.smt2: 0.03868412971496582: unsat
-cvc4 int_bench/bounded/qf/qf_AddSub:1176_values_54.smt2: 0.272078275680542: unsat
-z3 int_bench/bounded/qf/qf_AndOrXor:2243_undef_0.smt2: 0.006665706634521484: unsat
-z3 int_bench/bounded/qf/qf_AddSub:1165_undef_0.smt2: 0.016258716583251953: unsat
-cvc4 int_bench/bounded/qf/qf_AddSub:1164_values_0.smt2: 0.2857356071472168: unsat
-cvc4 int_bench/bounded/qf/qf_AddSub:1539-2_undef_0.smt2: 0.04070734977722168: unsat
-cvc4 int_bench/bounded/qf/qf_AndOrXor:2265_values_25.smt2: 0.055307865142822266: unknown
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AddSub:1539-2_undef_0.smt2: 0.03732442855834961: unsat
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AndOrXor:2265_values_25.smt2: 0.05035090446472168: unknown
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1539-2_undef_0.smt2: 0.04532909393310547: unsat
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AddSub:1539-2_undef_0.smt2: 0.03610944747924805: unsat
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:2265_values_25.smt2: 0.0578463077545166: sat
-cvc4 int_bench/bounded/qf/qf_AddSub:1619_values_63.smt2: 0.42116546630859375: unsat
-cvc4 int_bench/bounded/qf/qf_AddSub:1614_values_56.smt2: 0.4331083297729492: unsat
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AddSub:1539-2_undef_0.smt2: 0.04044079780578613: unsat
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1539-2_undef_0.smt2: 0.04163312911987305: unsat
-z3 int_bench/bounded/qf/qf_AddSub:1539-2_undef_0.smt2: 0.011290550231933594: unsat
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AddSub:1176_values_54.smt2: 0.2835516929626465: unsat
-cvc4 int_bench/bounded/qf/qf_AddSub:1614_undef_0.smt2: 0.036545515060424805: unsat
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AddSub:1164_values_0.smt2: 0.29279565811157227: unsat
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AddSub:1614_undef_0.smt2: 0.037650108337402344: unsat
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1614_undef_0.smt2: 0.04216337203979492: unsat
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AddSub:1614_undef_0.smt2: 0.03842663764953613: unsat
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AddSub:1614_undef_0.smt2: 0.03521013259887695: unsat
-cvc4 int_bench/bounded/qf/qf_AddSub:1165_values_27.smt2: 0.966346025466919: unsat
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1614_undef_0.smt2: 0.04302692413330078: unsat
-z3 int_bench/bounded/qf/qf_AddSub:1614_undef_0.smt2: 0.010066986083984375: unsat
-cvc4 int_bench/bounded/qf/qf_AddSub:1164_mem_0.smt2: 0.03821754455566406: unsat
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AddSub:1164_mem_0.smt2: 0.03505373001098633: unsat
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AddSub:1619_values_63.smt2: 0.4116973876953125: unsat
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AddSub:1614_values_56.smt2: 0.4355299472808838: unsat
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1164_mem_0.smt2: 0.045966148376464844: unsat
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1176_values_54.smt2: 0.37380504608154297: unsat
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AddSub:1164_mem_0.smt2: 0.038918256759643555: unsat
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1164_values_0.smt2: 0.37448763847351074: unsat
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AddSub:1164_mem_0.smt2: 0.03810429573059082: unsat
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1164_mem_0.smt2: 0.04189467430114746: unsat
-z3 int_bench/bounded/qf/qf_AddSub:1164_mem_0.smt2: 0.012372255325317383: unsat
-cvc4 int_bench/bounded/qf/qf_AddSub:1295_values_34.smt2: 0.05912899971008301: unknown
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AddSub:1295_values_34.smt2: 0.06148719787597656: unknown
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1295_values_34.smt2: 0.08485698699951172: sat
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1619_values_63.smt2: 0.45375990867614746: unsat
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1614_values_56.smt2: 0.4971301555633545: unsat
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AddSub:1165_values_27.smt2: 0.9968302249908447: unsat
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AddSub:1176_values_54.smt2: 1.0396966934204102: unsat
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AddSub:1164_values_0.smt2: 1.0240373611450195: unsat
-cvc4 int_bench/bounded/qf/qf_AddSub:1574_values_13.smt2: 2.1844124794006348: unsat
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AddSub:1619_values_63.smt2: 1.0271496772766113: unsat
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1165_values_27.smt2: 1.048431396484375: unsat
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AddSub:1614_values_56.smt2: 1.4466731548309326: unsat
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AddSub:1164_values_0.smt2: 1.0514872074127197: unsat
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AddSub:1176_values_54.smt2: 1.0747480392456055: unsat
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AddSub:1619_values_63.smt2: 1.0412330627441406: unsat
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1164_values_0.smt2: 0.39846205711364746: unsat
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1176_values_54.smt2: 0.3994166851043701: unsat
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1619_values_63.smt2: 0.43776464462280273: unsat
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AddSub:1614_values_56.smt2: 1.430283784866333: unsat
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_AddSub:1574_values_13.smt2: 2.254922389984131: unsat
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1614_values_56.smt2: 0.5049376487731934: unsat
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AddSub:1165_values_27.smt2: 2.068021774291992: unsat
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AddSub:1165_values_27.smt2: 2.0113437175750732: unsat
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1165_values_27.smt2: 1.0111370086669922: unsat
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AndOrXor:2595_values_36.smt2: 20.02412223815918: timeout
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AndOrXor:2647_values_7.smt2: 20.026086568832397: timeout
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AndOrXor:2231_values_33.smt2: 20.02488374710083: timeout
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AndOrXor:2243_values_29.smt2: 20.025041580200195: timeout
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AndOrXor:2063_values_11.smt2: 20.021835327148438: timeout
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AndOrXor:135_values_4.smt2: 20.029295921325684: timeout
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AndOrXor:144_values_48.smt2: 20.028631925582886: timeout
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AndOrXor:2367_values_4.smt2: 20.02191662788391: timeout
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AndOrXor:2265_values_25.smt2: 20.022521495819092: timeout
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AddSub:1295_values_34.smt2: 20.02767848968506: timeout
-z3 int_bench/bounded/qf/qf_AddSub:1164_values_0.smt2: 20.023274660110474: timeout
-z3 int_bench/bounded/qf/qf_AddSub:1176_values_54.smt2: 20.020748138427734: timeout
-z3 int_bench/bounded/qf/qf_AddSub:1619_values_63.smt2: 20.023923635482788: timeout
-cvc4 int_bench/bounded/qf/qf_muldivrem:239_values_45.smt2: 0.3907942771911621: unknown
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1574_values_13.smt2: 20.030003547668457: timeout
-z3 int_bench/bounded/qf/qf_AddSub:1614_values_56.smt2: 20.024874210357666: timeout
-cvc4 --nl-ext-tplanes --cbqi-all int_bench/bounded/qf/qf_AddSub:1574_values_13.smt2: 3.351224422454834: unsat
-z3 int_bench/bounded/qf/qf_AddSub:1165_values_27.smt2: 20.024243593215942: timeout
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AddSub:1574_values_13.smt2: 2.7105202674865723: unsat
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AndOrXor:2595_values_36.smt2: 20.032084703445435: timeout
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AndOrXor:2647_values_7.smt2: 20.0285542011261: timeout
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AndOrXor:2231_values_33.smt2: 20.03077459335327: timeout
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AndOrXor:2243_values_29.smt2: 20.02760148048401: timeout
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AndOrXor:2063_values_11.smt2: 20.024065017700195: timeout
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AndOrXor:135_values_4.smt2: 20.031501531600952: timeout
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AndOrXor:144_values_48.smt2: 20.0272376537323: timeout
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:2647_values_7.smt2: 0.047041893005371094: sat
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:2595_values_36.smt2: 0.05586576461791992: sat
-z3 int_bench/bounded/qf/qf_AndOrXor:2647_values_7.smt2: 0.014914512634277344: sat
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:2231_values_33.smt2: 0.062493324279785156: sat
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:2243_values_29.smt2: 0.061339616775512695: sat
-z3 int_bench/bounded/qf/qf_AndOrXor:2595_values_36.smt2: 0.020907163619995117: sat
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:2063_values_11.smt2: 0.06418204307556152: sat
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:135_values_4.smt2: 0.06254887580871582: sat
-z3 int_bench/bounded/qf/qf_AndOrXor:2243_values_29.smt2: 0.01819014549255371: sat
-z3 int_bench/bounded/qf/qf_AndOrXor:2231_values_33.smt2: 0.021983623504638672: sat
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:144_values_48.smt2: 0.06940388679504395: sat
-z3 int_bench/bounded/qf/qf_AndOrXor:2063_values_11.smt2: 0.022614002227783203: sat
-z3 int_bench/bounded/qf/qf_AndOrXor:135_values_4.smt2: 0.01973724365234375: sat
-z3 int_bench/bounded/qf/qf_AndOrXor:144_values_48.smt2: 0.023473739624023438: sat
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AndOrXor:2367_values_4.smt2: 20.026878833770752: timeout
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:2367_values_4.smt2: 0.04568767547607422: sat
-z3 int_bench/bounded/qf/qf_AndOrXor:2367_values_4.smt2: 0.023227930068969727: sat
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AndOrXor:2265_values_25.smt2: 20.030086278915405: timeout
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AndOrXor:2265_values_25.smt2: 0.039810895919799805: sat
-z3 int_bench/bounded/qf/qf_AndOrXor:2265_values_25.smt2: 0.01976752281188965: sat
-cvc4 --cbqi-all int_bench/bounded/qf/qf_AddSub:1295_values_34.smt2: 20.02652883529663: timeout
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1295_values_34.smt2: 0.0435633659362793: sat
-z3 int_bench/bounded/qf/qf_AddSub:1295_values_34.smt2: 0.11043334007263184: sat
-cvc4 int_bench/bounded/qf/qf_muldivrem:229_values_9.smt2: 19.240336179733276: unknown
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_muldivrem:239_values_45.smt2: 20.029461145401: timeout
-cvc4 --fmf-fun-rlv int_bench/bounded/qf/qf_AddSub:1574_values_13.smt2: 20.023524045944214: timeout
-cvc4 --nl-ext-tplanes int_bench/bounded/qf/qf_muldivrem:229_values_9.smt2: 20.02444815635681: timeout
-cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/bounded/qf/qf_muldivrem:239_values_45.smt2: 20.024234533309937: timeout
+cvc4 int_bench/unbounded/qf/qf_AddSub:1164_undef_0.smt2: 0.026941299438476562: unsat
+cvc4 int_bench/unbounded/qf/qf_AndOrXor:2063_undef_0.smt2: 0.029935598373413086: unsat
+cvc4 int_bench/unbounded/qf/qf_AndOrXor:135_undef_0.smt2: 0.03335428237915039: unsat
+cvc4 int_bench/unbounded/qf/qf_AndOrXor:2231_undef_0.smt2: 0.03234052658081055: unsat
+cvc4 int_bench/unbounded/qf/qf_AddSub:1295_undef_0.smt2: 0.03615856170654297: unsat
+cvc4 int_bench/unbounded/qf/qf_AddSub:1539-2_values_43.smt2: 0.03483462333679199: unsat
+cvc4 int_bench/unbounded/qf/qf_AddSub:1619_undef_0.smt2: 0.03611946105957031: unsat
+cvc4 int_bench/unbounded/qf/qf_AddSub:1574_undef_0.smt2: 0.04000711441040039: unsat
+cvc4 int_bench/unbounded/qf/qf_AndOrXor:2595_values_36.smt2: 0.049350738525390625: unknown
+cvc4 int_bench/unbounded/qf/qf_AndOrXor:2647_values_7.smt2: 0.04913663864135742: unknown
+cvc4 int_bench/unbounded/qf/qf_AndOrXor:2231_values_33.smt2: 0.05357527732849121: unknown
+cvc4 int_bench/unbounded/qf/qf_AndOrXor:135_values_4.smt2: 0.05482745170593262: unknown
+cvc4 int_bench/unbounded/qf/qf_AndOrXor:2243_values_29.smt2: 0.05707240104675293: unknown
+cvc4 int_bench/unbounded/qf/qf_AndOrXor:2063_values_11.smt2: 0.05740189552307129: unknown
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AddSub:1164_undef_0.smt2: 0.029903173446655273: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AndOrXor:135_undef_0.smt2: 0.030664443969726562: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AndOrXor:2063_undef_0.smt2: 0.03074193000793457: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AddSub:1619_undef_0.smt2: 0.026810646057128906: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AddSub:1295_undef_0.smt2: 0.032117605209350586: unsat
+cvc4 int_bench/unbounded/qf/qf_AndOrXor:144_values_48.smt2: 0.06800651550292969: unknown
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AddSub:1539-2_values_43.smt2: 0.03390026092529297: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AndOrXor:2231_undef_0.smt2: 0.03669619560241699: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AddSub:1574_undef_0.smt2: 0.0356290340423584: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1164_undef_0.smt2: 0.03728485107421875: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AndOrXor:2647_values_7.smt2: 0.04529619216918945: unknown
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AndOrXor:2595_values_36.smt2: 0.04854893684387207: unknown
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:2063_undef_0.smt2: 0.03911423683166504: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1619_undef_0.smt2: 0.03870749473571777: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:135_undef_0.smt2: 0.040883779525756836: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1295_undef_0.smt2: 0.03648710250854492: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AndOrXor:135_values_4.smt2: 0.049813032150268555: unknown
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1539-2_values_43.smt2: 0.03774690628051758: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AndOrXor:2231_values_33.smt2: 0.05372262001037598: unknown
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:2231_undef_0.smt2: 0.037531137466430664: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1574_undef_0.smt2: 0.041030168533325195: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AndOrXor:2063_values_11.smt2: 0.05957627296447754: unknown
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AndOrXor:2243_values_29.smt2: 0.0601503849029541: unknown
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AddSub:1164_undef_0.smt2: 0.03629589080810547: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AndOrXor:144_values_48.smt2: 0.0639650821685791: unknown
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:2063_undef_0.smt2: 0.03272247314453125: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AddSub:1619_undef_0.smt2: 0.03195905685424805: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AddSub:1295_undef_0.smt2: 0.03094649314880371: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:135_undef_0.smt2: 0.033484458923339844: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AddSub:1539-2_values_43.smt2: 0.03133511543273926: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:2231_undef_0.smt2: 0.03431057929992676: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AddSub:1574_undef_0.smt2: 0.030308961868286133: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:2595_values_36.smt2: 0.05169034004211426: sat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:135_values_4.smt2: 0.05769491195678711: sat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:2647_values_7.smt2: 0.0664830207824707: sat
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AddSub:1164_undef_0.smt2: 0.03044414520263672: unsat
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:2063_undef_0.smt2: 0.030560970306396484: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:2231_values_33.smt2: 0.05918526649475098: sat
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:135_undef_0.smt2: 0.031334638595581055: unsat
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AddSub:1295_undef_0.smt2: 0.03442883491516113: unsat
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AddSub:1539-2_values_43.smt2: 0.03332805633544922: unsat
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AddSub:1574_undef_0.smt2: 0.030289649963378906: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:2063_values_11.smt2: 0.06130862236022949: sat
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:2231_undef_0.smt2: 0.03875017166137695: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:2243_values_29.smt2: 0.06586313247680664: sat
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AddSub:1619_undef_0.smt2: 0.049657344818115234: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1164_undef_0.smt2: 0.03622627258300781: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:144_values_48.smt2: 0.0656280517578125: sat
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:2063_undef_0.smt2: 0.03981208801269531: unsat
+z3 int_bench/unbounded/qf/qf_AddSub:1164_undef_0.smt2: 0.0076999664306640625: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1539-2_values_43.smt2: 0.03393292427062988: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1574_undef_0.smt2: 0.03553342819213867: unsat
+z3 int_bench/unbounded/qf/qf_AndOrXor:2063_undef_0.smt2: 0.007809162139892578: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:135_undef_0.smt2: 0.044826507568359375: unsat
+z3 int_bench/unbounded/qf/qf_AddSub:1539-2_values_43.smt2: 0.009963750839233398: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1619_undef_0.smt2: 0.03541994094848633: unsat
+z3 int_bench/unbounded/qf/qf_AddSub:1574_undef_0.smt2: 0.007848024368286133: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1295_undef_0.smt2: 0.05196833610534668: unsat
+z3 int_bench/unbounded/qf/qf_AndOrXor:135_undef_0.smt2: 0.008424758911132812: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:2231_undef_0.smt2: 0.04707622528076172: unsat
+z3 int_bench/unbounded/qf/qf_AddSub:1295_undef_0.smt2: 0.009530067443847656: unsat
+z3 int_bench/unbounded/qf/qf_AddSub:1619_undef_0.smt2: 0.015583992004394531: unsat
+z3 int_bench/unbounded/qf/qf_AndOrXor:2231_undef_0.smt2: 0.007546186447143555: unsat
+cvc4 int_bench/unbounded/qf/qf_AndOrXor:2243_undef_0.smt2: 0.032739877700805664: unsat
+cvc4 int_bench/unbounded/qf/qf_AddSub:1165_undef_0.smt2: 0.039180755615234375: unsat
+cvc4 int_bench/unbounded/qf/qf_AndOrXor:2367_values_4.smt2: 0.06008124351501465: unknown
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AndOrXor:2243_undef_0.smt2: 0.03645730018615723: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AddSub:1165_undef_0.smt2: 0.040238142013549805: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AndOrXor:2367_values_4.smt2: 0.05645179748535156: unknown
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:2243_undef_0.smt2: 0.03817391395568848: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1165_undef_0.smt2: 0.0413205623626709: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:2243_undef_0.smt2: 0.03200125694274902: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AddSub:1165_undef_0.smt2: 0.03841376304626465: unsat
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:2243_undef_0.smt2: 0.03311586380004883: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:2367_values_4.smt2: 0.0777275562286377: sat
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AddSub:1165_undef_0.smt2: 0.03906869888305664: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:2243_undef_0.smt2: 0.0387728214263916: unsat
+z3 int_bench/unbounded/qf/qf_AndOrXor:2243_undef_0.smt2: 0.008239269256591797: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1165_undef_0.smt2: 0.04909181594848633: unsat
+cvc4 int_bench/unbounded/qf/qf_AddSub:1176_values_54.smt2: 0.2784078121185303: unsat
+cvc4 int_bench/unbounded/qf/qf_AddSub:1164_values_0.smt2: 0.2754495143890381: unsat
+z3 int_bench/unbounded/qf/qf_AddSub:1165_undef_0.smt2: 0.014510631561279297: unsat
+cvc4 int_bench/unbounded/qf/qf_AndOrXor:2265_values_25.smt2: 0.04985451698303223: unknown
+cvc4 int_bench/unbounded/qf/qf_AddSub:1539-2_undef_0.smt2: 0.03981304168701172: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AndOrXor:2265_values_25.smt2: 0.049605369567871094: unknown
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AddSub:1539-2_undef_0.smt2: 0.03974628448486328: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:2265_values_25.smt2: 0.05701422691345215: sat
+cvc4 int_bench/unbounded/qf/qf_AddSub:1619_values_63.smt2: 0.38895225524902344: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1539-2_undef_0.smt2: 0.048259735107421875: unsat
+cvc4 int_bench/unbounded/qf/qf_AddSub:1614_values_56.smt2: 0.44208502769470215: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AddSub:1539-2_undef_0.smt2: 0.0390927791595459: unsat
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AddSub:1539-2_undef_0.smt2: 0.03462815284729004: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1539-2_undef_0.smt2: 0.04269552230834961: unsat
+z3 int_bench/unbounded/qf/qf_AddSub:1539-2_undef_0.smt2: 0.011826038360595703: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AddSub:1176_values_54.smt2: 0.27935361862182617: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AddSub:1164_values_0.smt2: 0.27630066871643066: unsat
+cvc4 int_bench/unbounded/qf/qf_AddSub:1614_undef_0.smt2: 0.04293417930603027: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AddSub:1614_undef_0.smt2: 0.03888559341430664: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1614_undef_0.smt2: 0.043771982192993164: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AddSub:1614_undef_0.smt2: 0.03870701789855957: unsat
+cvc4 int_bench/unbounded/qf/qf_AddSub:1165_values_27.smt2: 0.9627246856689453: unsat
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AddSub:1614_undef_0.smt2: 0.0371098518371582: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1614_undef_0.smt2: 0.044689178466796875: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AddSub:1619_values_63.smt2: 0.3899710178375244: unsat
+z3 int_bench/unbounded/qf/qf_AddSub:1614_undef_0.smt2: 0.009158849716186523: unsat
+cvc4 int_bench/unbounded/qf/qf_AddSub:1164_mem_0.smt2: 0.03236222267150879: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AddSub:1164_mem_0.smt2: 0.03294968605041504: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1164_mem_0.smt2: 0.0376126766204834: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AddSub:1614_values_56.smt2: 0.4609639644622803: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1164_values_0.smt2: 0.3642246723175049: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1176_values_54.smt2: 0.37728071212768555: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AddSub:1164_mem_0.smt2: 0.0593416690826416: unsat
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AddSub:1164_mem_0.smt2: 0.03632211685180664: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1164_mem_0.smt2: 0.042328834533691406: unsat
+z3 int_bench/unbounded/qf/qf_AddSub:1164_mem_0.smt2: 0.011235713958740234: unsat
+cvc4 int_bench/unbounded/qf/qf_AddSub:1295_values_34.smt2: 0.0585477352142334: unknown
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AddSub:1295_values_34.smt2: 0.05843925476074219: unknown
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1295_values_34.smt2: 0.07317829132080078: sat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1619_values_63.smt2: 0.4673187732696533: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1614_values_56.smt2: 0.5112419128417969: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AddSub:1165_values_27.smt2: 1.0162394046783447: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AddSub:1164_values_0.smt2: 1.0233478546142578: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AddSub:1176_values_54.smt2: 1.0426523685455322: unsat
+cvc4 int_bench/unbounded/qf/qf_AddSub:1574_values_13.smt2: 2.162752866744995: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AddSub:1619_values_63.smt2: 1.0230693817138672: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AddSub:1614_values_56.smt2: 1.4368438720703125: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1165_values_27.smt2: 1.161177635192871: unsat
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AddSub:1164_values_0.smt2: 1.0731236934661865: unsat
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AddSub:1176_values_54.smt2: 1.047908067703247: unsat
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AddSub:1619_values_63.smt2: 1.0368032455444336: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1164_values_0.smt2: 0.3940873146057129: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1176_values_54.smt2: 0.399432897567749: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1619_values_63.smt2: 0.48638010025024414: unsat
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AddSub:1614_values_56.smt2: 1.3579797744750977: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_AddSub:1574_values_13.smt2: 2.267956018447876: unsat
+z3 int_bench/unbounded/qf/qf_AddSub:1164_values_0.smt2: 1.1221537590026855: unsat
+z3 int_bench/unbounded/qf/qf_AddSub:1176_values_54.smt2: 1.1834185123443604: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1614_values_56.smt2: 0.44751715660095215: unsat
+cvc4 int_bench/unbounded/qf/qf_muldivrem:239_values_45.smt2: 0.3875892162322998: unknown
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AddSub:1165_values_27.smt2: 2.06962251663208: unsat
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AddSub:1165_values_27.smt2: 2.0598299503326416: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1165_values_27.smt2: 1.1479833126068115: unsat
+cvc4 int_bench/unbounded/qf/qf_muldivrem:229_values_9.smt2: 26.157944679260254: unknown
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:2595_values_36.smt2: 1000.1399035453796: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:135_values_4.smt2: 1000.1294057369232: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:2647_values_7.smt2: 1000.1319334506989: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:2231_values_33.smt2: 1000.1268968582153: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:2063_values_11.smt2: 1000.1239757537842: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:2243_values_29.smt2: 1000.128261089325: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:144_values_48.smt2: 1000.1156921386719: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:2367_values_4.smt2: 1000.1243994235992: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:2265_values_25.smt2: 1000.1153259277344: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AddSub:1295_values_34.smt2: 1000.11412525177: timeout
+z3 int_bench/unbounded/qf/qf_AddSub:1619_values_63.smt2: 1000.1033017635345: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1574_values_13.smt2: 1000.1146585941315: timeout
+z3 int_bench/unbounded/qf/qf_AddSub:1614_values_56.smt2: 1000.1021437644958: timeout
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_muldivrem:239_values_45.smt2: 1000.1111373901367: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_AddSub:1574_values_13.smt2: 3.3041625022888184: unsat
+z3 int_bench/unbounded/qf/qf_AddSub:1165_values_27.smt2: 1000.1035988330841: timeout
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AddSub:1574_values_13.smt2: 3.113959789276123: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/qf/qf_muldivrem:229_values_9.smt2: 1000.1122345924377: timeout
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:135_values_4.smt2: 1000.0470871925354: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:135_values_4.smt2: 0.07880163192749023: sat
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:2231_values_33.smt2: 1000.1308064460754: timeout
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:2647_values_7.smt2: 1000.1309862136841: timeout
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:2595_values_36.smt2: 1000.1394498348236: timeout
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:2063_values_11.smt2: 1000.1318786144257: timeout
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:144_values_48.smt2: 1000.1236083507538: timeout
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:2243_values_29.smt2: 1000.1300752162933: timeout
+z3 int_bench/unbounded/qf/qf_AndOrXor:135_values_4.smt2: 0.03732728958129883: sat
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:2647_values_7.smt2: 0.03979969024658203: sat
+z3 int_bench/unbounded/qf/qf_AndOrXor:2647_values_7.smt2: 0.01434016227722168: sat
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:144_values_48.smt2: 0.04669499397277832: sat
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:2231_values_33.smt2: 0.060773372650146484: sat
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:2595_values_36.smt2: 0.06415438652038574: sat
+z3 int_bench/unbounded/qf/qf_AndOrXor:2231_values_33.smt2: 0.017802715301513672: sat
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:2063_values_11.smt2: 0.07048463821411133: sat
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:2243_values_29.smt2: 0.06352782249450684: sat
+z3 int_bench/unbounded/qf/qf_AndOrXor:144_values_48.smt2: 0.023008346557617188: sat
+z3 int_bench/unbounded/qf/qf_AndOrXor:2595_values_36.smt2: 0.02000570297241211: sat
+z3 int_bench/unbounded/qf/qf_AndOrXor:2063_values_11.smt2: 0.0249783992767334: sat
+z3 int_bench/unbounded/qf/qf_AndOrXor:2243_values_29.smt2: 0.027080774307250977: sat
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:2367_values_4.smt2: 1000.1196513175964: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:2367_values_4.smt2: 0.04597663879394531: sat
+z3 int_bench/unbounded/qf/qf_AndOrXor:2367_values_4.smt2: 0.021062374114990234: sat
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AndOrXor:2265_values_25.smt2: 1000.0939311981201: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AndOrXor:2265_values_25.smt2: 0.03483319282531738: sat
+z3 int_bench/unbounded/qf/qf_AndOrXor:2265_values_25.smt2: 0.013618946075439453: sat
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_AddSub:1295_values_34.smt2: 1000.0742568969727: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1295_values_34.smt2: 0.04787158966064453: sat
+z3 int_bench/unbounded/qf/qf_AddSub:1295_values_34.smt2: 0.020113229751586914: sat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_muldivrem:239_values_45.smt2: 1000.1097571849823: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_AddSub:1574_values_13.smt2: 1000.1084568500519: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/qf/qf_muldivrem:229_values_9.smt2: 1000.1073560714722: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_muldivrem:239_values_45.smt2: 1000.1084744930267: timeout
+z3 int_bench/unbounded/qf/qf_AddSub:1574_values_13.smt2: 1000.1034924983978: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/qf/qf_muldivrem:229_values_9.smt2: 1000.1089761257172: timeout
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_muldivrem:239_values_45.smt2: 1000.1116695404053: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_muldivrem:239_values_45.smt2: 0.24476075172424316: unknown
+cvc4 --cbqi-all int_bench/unbounded/qf/qf_muldivrem:229_values_9.smt2: 1000.1109144687653: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/qf/qf_muldivrem:229_values_9.smt2: 8.3581063747406: unknown
+z3 int_bench/unbounded/qf/qf_muldivrem:239_values_45.smt2: 1000.1321992874146: timeout
+z3 int_bench/unbounded/qf/qf_muldivrem:229_values_9.smt2: 1000.1128220558167: timeout
+cvc4 int_bench/unbounded/rec/rec_AndOrXor:135_undef_0.smt2: 0.032515525817871094: unsat
+cvc4 int_bench/unbounded/rec/rec_AndOrXor:2063_undef_0.smt2: 0.032909393310546875: unsat
+cvc4 int_bench/unbounded/rec/rec_AddSub:1164_mem_0.smt2: 0.03387904167175293: unsat
+cvc4 int_bench/unbounded/rec/rec_AddSub:1574_undef_0.smt2: 0.03247570991516113: unsat
+cvc4 int_bench/unbounded/rec/rec_AndOrXor:2231_undef_0.smt2: 0.03298497200012207: unsat
+cvc4 int_bench/unbounded/rec/rec_AddSub:1614_undef_0.smt2: 0.033232688903808594: unsat
+cvc4 int_bench/unbounded/rec/rec_AddSub:1539-2_undef_0.smt2: 0.03584647178649902: unsat
+cvc4 int_bench/unbounded/rec/rec_AndOrXor:2243_undef_0.smt2: 0.03490757942199707: unsat
+cvc4 int_bench/unbounded/rec/rec_AddSub:1164_undef_0.smt2: 0.035300493240356445: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AndOrXor:2063_undef_0.smt2: 0.03045177459716797: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AddSub:1574_undef_0.smt2: 0.030431032180786133: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AndOrXor:135_undef_0.smt2: 0.031687021255493164: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AndOrXor:2231_undef_0.smt2: 0.030768871307373047: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AddSub:1164_mem_0.smt2: 0.03211045265197754: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AddSub:1539-2_undef_0.smt2: 0.03128242492675781: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AddSub:1614_undef_0.smt2: 0.034714698791503906: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AndOrXor:2243_undef_0.smt2: 0.03529238700866699: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AddSub:1164_undef_0.smt2: 0.036086320877075195: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1574_undef_0.smt2: 0.04164385795593262: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:2063_undef_0.smt2: 0.04229307174682617: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:2231_undef_0.smt2: 0.04192471504211426: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:135_undef_0.smt2: 0.0424954891204834: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1539-2_undef_0.smt2: 0.04082536697387695: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1164_mem_0.smt2: 0.04689764976501465: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1614_undef_0.smt2: 0.04626297950744629: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1164_undef_0.smt2: 0.041452646255493164: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:2243_undef_0.smt2: 0.04563641548156738: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:2063_undef_0.smt2: 0.031778573989868164: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AddSub:1539-2_undef_0.smt2: 0.03196358680725098: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:135_undef_0.smt2: 0.033321380615234375: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AddSub:1574_undef_0.smt2: 0.03575277328491211: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:2231_undef_0.smt2: 0.03978371620178223: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AddSub:1164_mem_0.smt2: 0.03386044502258301: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AddSub:1164_undef_0.smt2: 0.031787872314453125: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:2243_undef_0.smt2: 0.03530716896057129: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AddSub:1614_undef_0.smt2: 0.04474329948425293: unsat
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AddSub:1574_undef_0.smt2: 0.025578975677490234: unsat
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AddSub:1539-2_undef_0.smt2: 0.031125783920288086: unsat
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:2063_undef_0.smt2: 0.03504776954650879: unsat
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:135_undef_0.smt2: 0.034966230392456055: unsat
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AddSub:1164_mem_0.smt2: 0.03309297561645508: unsat
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AddSub:1164_undef_0.smt2: 0.03471779823303223: unsat
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:2231_undef_0.smt2: 0.041606903076171875: unsat
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:2243_undef_0.smt2: 0.03891921043395996: unsat
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AddSub:1614_undef_0.smt2: 0.03183245658874512: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1539-2_undef_0.smt2: 0.04368305206298828: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1574_undef_0.smt2: 0.05091595649719238: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:2063_undef_0.smt2: 0.04793405532836914: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:135_undef_0.smt2: 0.04688429832458496: unsat
+z3 int_bench/unbounded/rec/rec_AddSub:1539-2_undef_0.smt2: 0.012247562408447266: unsat
+z3 int_bench/unbounded/rec/rec_AddSub:1574_undef_0.smt2: 0.009197235107421875: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1164_undef_0.smt2: 0.04497838020324707: unsat
+z3 int_bench/unbounded/rec/rec_AndOrXor:135_undef_0.smt2: 0.008755683898925781: unsat
+z3 int_bench/unbounded/rec/rec_AndOrXor:2063_undef_0.smt2: 0.010910749435424805: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:2243_undef_0.smt2: 0.04067707061767578: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1164_mem_0.smt2: 0.053362131118774414: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:2231_undef_0.smt2: 0.04577445983886719: unsat
+z3 int_bench/unbounded/rec/rec_AndOrXor:2243_undef_0.smt2: 0.006881237030029297: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1614_undef_0.smt2: 0.0485377311706543: unsat
+z3 int_bench/unbounded/rec/rec_AddSub:1164_mem_0.smt2: 0.008968830108642578: unsat
+z3 int_bench/unbounded/rec/rec_AddSub:1164_undef_0.smt2: 0.018210649490356445: unsat
+z3 int_bench/unbounded/rec/rec_AndOrXor:2231_undef_0.smt2: 0.012457132339477539: unsat
+z3 int_bench/unbounded/rec/rec_AddSub:1614_undef_0.smt2: 0.007734060287475586: unsat
+cvc4 int_bench/unbounded/rec/rec_AddSub:1295_undef_0.smt2: 0.02808380126953125: unsat
+cvc4 int_bench/unbounded/rec/rec_AddSub:1619_undef_0.smt2: 0.03344082832336426: unsat
+cvc4 int_bench/unbounded/rec/rec_AddSub:1165_undef_0.smt2: 0.03595614433288574: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AddSub:1295_undef_0.smt2: 0.04205727577209473: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AddSub:1619_undef_0.smt2: 0.03409457206726074: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AddSub:1165_undef_0.smt2: 0.03595232963562012: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1295_undef_0.smt2: 0.05258941650390625: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1619_undef_0.smt2: 0.04782223701477051: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1165_undef_0.smt2: 0.04904603958129883: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AddSub:1295_undef_0.smt2: 0.03599739074707031: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AddSub:1619_undef_0.smt2: 0.04101300239562988: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AddSub:1165_undef_0.smt2: 0.03577733039855957: unsat
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AddSub:1295_undef_0.smt2: 0.03695249557495117: unsat
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AddSub:1165_undef_0.smt2: 0.033655643463134766: unsat
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AddSub:1619_undef_0.smt2: 0.04426407814025879: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1295_undef_0.smt2: 0.04580068588256836: unsat
+z3 int_bench/unbounded/rec/rec_AddSub:1295_undef_0.smt2: 0.008635282516479492: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1165_undef_0.smt2: 0.046366214752197266: unsat
+z3 int_bench/unbounded/rec/rec_AddSub:1165_undef_0.smt2: 0.009046554565429688: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1619_undef_0.smt2: 0.057147979736328125: unsat
+z3 int_bench/unbounded/rec/rec_AddSub:1619_undef_0.smt2: 0.011655092239379883: unsat
+cvc4 int_bench/unbounded/rec/rec_AddSub:1164_values_0.smt2: 1000.1642024517059: timeout
+cvc4 int_bench/unbounded/rec/rec_muldivrem:229_values_9.smt2: 1000.1716315746307: timeout
+cvc4 int_bench/unbounded/rec/rec_AndOrXor:135_values_4.smt2: 1000.1875517368317: timeout
+cvc4 int_bench/unbounded/rec/rec_AddSub:1614_values_56.smt2: 1000.1881093978882: timeout
+cvc4 int_bench/unbounded/rec/rec_AndOrXor:2063_values_11.smt2: 1000.192754983902: timeout
+cvc4 int_bench/unbounded/rec/rec_AndOrXor:2595_values_36.smt2: 1000.1941540241241: timeout
+cvc4 int_bench/unbounded/rec/rec_AndOrXor:2243_values_29.smt2: 1000.1986746788025: timeout
+cvc4 int_bench/unbounded/rec/rec_AddSub:1165_values_27.smt2: 1000.1295053958893: timeout
+cvc4 int_bench/unbounded/rec/rec_AddSub:1574_values_13.smt2: 1000.1421573162079: timeout
+cvc4 int_bench/unbounded/rec/rec_AddSub:1295_values_34.smt2: 1000.1487812995911: timeout
+cvc4 int_bench/unbounded/rec/rec_AndOrXor:2367_values_4.smt2: 1000.1612854003906: timeout
+cvc4 int_bench/unbounded/rec/rec_AddSub:1176_values_54.smt2: 1000.1429805755615: timeout
+cvc4 int_bench/unbounded/rec/rec_AndOrXor:144_values_48.smt2: 1000.1639578342438: timeout
+cvc4 int_bench/unbounded/rec/rec_AddSub:1619_values_63.smt2: 1000.1298758983612: timeout
+cvc4 int_bench/unbounded/rec/rec_AndOrXor:2231_values_33.smt2: 1000.1468257904053: timeout
+cvc4 int_bench/unbounded/rec/rec_muldivrem:239_values_45.smt2: 1000.1277513504028: timeout
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AddSub:1164_values_0.smt2: 1000.1352024078369: timeout
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_muldivrem:229_values_9.smt2: 1000.1584095954895: timeout
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AddSub:1614_values_56.smt2: 1000.1556277275085: timeout
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AndOrXor:135_values_4.smt2: 1000.1713259220123: timeout
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AndOrXor:2595_values_36.smt2: 1000.1795136928558: timeout
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AndOrXor:2243_values_29.smt2: 1000.1809647083282: timeout
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AndOrXor:2063_values_11.smt2: 1000.1944446563721: timeout
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AddSub:1165_values_27.smt2: 1000.1298580169678: timeout
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AddSub:1574_values_13.smt2: 1000.140424489975: timeout
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AddSub:1176_values_54.smt2: 1000.1435368061066: timeout
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AddSub:1295_values_34.smt2: 1000.1492040157318: timeout
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AndOrXor:2367_values_4.smt2: 1000.1632845401764: timeout
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AndOrXor:144_values_48.smt2: 1000.1606907844543: timeout
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AddSub:1619_values_63.smt2: 1000.1295647621155: timeout
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_muldivrem:239_values_45.smt2: 1000.125807762146: timeout
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AndOrXor:2231_values_33.smt2: 1000.1429393291473: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1164_values_0.smt2: 1000.1348359584808: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_muldivrem:229_values_9.smt2: 1000.1163594722748: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1614_values_56.smt2: 1000.1338822841644: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:135_values_4.smt2: 1000.1254041194916: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:2595_values_36.smt2: 1000.1154751777649: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:2243_values_29.smt2: 1000.1249096393585: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:2063_values_11.smt2: 1000.1214246749878: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1165_values_27.smt2: 1000.1179556846619: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1574_values_13.smt2: 1000.1139652729034: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1295_values_34.smt2: 1000.1189680099487: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1176_values_54.smt2: 1000.1215252876282: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:144_values_48.smt2: 1000.1099181175232: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:2367_values_4.smt2: 1000.1179320812225: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1619_values_63.smt2: 1000.1171271800995: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_muldivrem:239_values_45.smt2: 1000.1151003837585: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:2231_values_33.smt2: 1000.1165974140167: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AddSub:1164_values_0.smt2: 1000.1330807209015: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_muldivrem:229_values_9.smt2: 1000.1320049762726: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AddSub:1614_values_56.smt2: 1000.1298739910126: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:135_values_4.smt2: 1000.1382093429565: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:2595_values_36.smt2: 1000.1465427875519: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:2243_values_29.smt2: 1000.1505796909332: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:2063_values_11.smt2: 1000.1472413539886: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AddSub:1165_values_27.smt2: 1000.1230401992798: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AddSub:1574_values_13.smt2: 1000.1319029331207: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AddSub:1176_values_54.smt2: 1000.1390926837921: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AddSub:1295_values_34.smt2: 1000.1508004665375: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:144_values_48.smt2: 1000.164656162262: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:2367_values_4.smt2: 1000.1786623001099: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AddSub:1619_values_63.smt2: 1000.123218536377: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_muldivrem:239_values_45.smt2: 1000.1224234104156: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:2231_values_33.smt2: 1000.1400179862976: timeout
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AddSub:1164_values_0.smt2: 1000.1347658634186: timeout
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_muldivrem:229_values_9.smt2: 1000.1278381347656: timeout
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AddSub:1614_values_56.smt2: 1000.121954202652: timeout
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:135_values_4.smt2: 1000.1401727199554: timeout
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:2595_values_36.smt2: 1000.1411039829254: timeout
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:2243_values_29.smt2: 1000.1516160964966: timeout
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:2063_values_11.smt2: 1000.1616258621216: timeout
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AddSub:1165_values_27.smt2: 1000.1204469203949: timeout
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AddSub:1574_values_13.smt2: 1000.1190512180328: timeout
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AddSub:1176_values_54.smt2: 1000.1272428035736: timeout
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AddSub:1295_values_34.smt2: 1000.1390244960785: timeout
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:144_values_48.smt2: 1000.1526544094086: timeout
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:2367_values_4.smt2: 1000.1397910118103: timeout
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AddSub:1619_values_63.smt2: 1000.1260187625885: timeout
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_muldivrem:239_values_45.smt2: 1000.1192457675934: timeout
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:2231_values_33.smt2: 1000.1346054077148: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_muldivrem:229_values_9.smt2: 1000.1157605648041: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1164_values_0.smt2: 1000.1231372356415: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1614_values_56.smt2: 1000.118658542633: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:135_values_4.smt2: 1000.1270232200623: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:2595_values_36.smt2: 1000.1213645935059: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:2243_values_29.smt2: 1000.113523721695: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:2063_values_11.smt2: 1000.1156089305878: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1165_values_27.smt2: 1000.1088447570801: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1574_values_13.smt2: 1000.1095020771027: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1176_values_54.smt2: 1000.1140379905701: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1295_values_34.smt2: 1000.1094558238983: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:144_values_48.smt2: 1000.1096632480621: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:2367_values_4.smt2: 1000.1168777942657: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1619_values_63.smt2: 1000.1161789894104: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_muldivrem:239_values_45.smt2: 1000.1154823303223: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:2231_values_33.smt2: 1000.113742351532: timeout
+z3 int_bench/unbounded/rec/rec_AddSub:1164_values_0.smt2: 1000.1179566383362: timeout
+z3 int_bench/unbounded/rec/rec_muldivrem:229_values_9.smt2: 1000.1254236698151: timeout
+z3 int_bench/unbounded/rec/rec_AddSub:1614_values_56.smt2: 1000.1243224143982: timeout
+cvc4 int_bench/unbounded/rec/rec_AddSub:1539-2_values_43.smt2: 0.07382321357727051: unsat
+z3 int_bench/unbounded/rec/rec_AndOrXor:135_values_4.smt2: 1000.1313238143921: timeout
+z3 int_bench/unbounded/rec/rec_AndOrXor:2595_values_36.smt2: 1000.1323359012604: timeout
+z3 int_bench/unbounded/rec/rec_AndOrXor:2243_values_29.smt2: 1000.1137630939484: timeout
+z3 int_bench/unbounded/rec/rec_AndOrXor:2063_values_11.smt2: 1000.1120204925537: timeout
+z3 int_bench/unbounded/rec/rec_AddSub:1165_values_27.smt2: 1000.1126372814178: timeout
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AddSub:1539-2_values_43.smt2: 0.04990959167480469: unsat
+z3 int_bench/unbounded/rec/rec_AddSub:1574_values_13.smt2: 1000.1117608547211: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1539-2_values_43.smt2: 0.05011606216430664: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AddSub:1539-2_values_43.smt2: 0.027344226837158203: unsat
+z3 int_bench/unbounded/rec/rec_AddSub:1295_values_34.smt2: 1000.1097841262817: timeout
+z3 int_bench/unbounded/rec/rec_AddSub:1176_values_54.smt2: 1000.1427006721497: timeout
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AddSub:1539-2_values_43.smt2: 0.036383628845214844: unsat
+z3 int_bench/unbounded/rec/rec_AndOrXor:144_values_48.smt2: 1000.1149775981903: timeout
+z3 int_bench/unbounded/rec/rec_AndOrXor:2367_values_4.smt2: 1000.1072614192963: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AddSub:1539-2_values_43.smt2: 0.03553414344787598: unsat
+z3 int_bench/unbounded/rec/rec_AddSub:1539-2_values_43.smt2: 0.005011320114135742: unsat
+z3 int_bench/unbounded/rec/rec_AddSub:1619_values_63.smt2: 1000.0698621273041: timeout
+z3 int_bench/unbounded/rec/rec_muldivrem:239_values_45.smt2: 1000.058753490448: timeout
+z3 int_bench/unbounded/rec/rec_AndOrXor:2231_values_33.smt2: 1000.0708155632019: timeout
+cvc4 int_bench/unbounded/rec/rec_AndOrXor:2265_values_25.smt2: 1000.125296831131: timeout
+cvc4 int_bench/unbounded/rec/rec_AndOrXor:2647_values_7.smt2: 1000.1268918514252: timeout
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AndOrXor:2265_values_25.smt2: 1000.1228260993958: timeout
+cvc4 --nl-ext-tplanes int_bench/unbounded/rec/rec_AndOrXor:2647_values_7.smt2: 1000.1245090961456: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:2265_values_25.smt2: 1000.1109149456024: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:2647_values_7.smt2: 1000.1120586395264: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:2647_values_7.smt2: 1000.0473051071167: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:2265_values_25.smt2: 1000.1237823963165: timeout
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:2647_values_7.smt2: 1000.1225891113281: timeout
+cvc4 --cbqi-all int_bench/unbounded/rec/rec_AndOrXor:2265_values_25.smt2: 1000.1236567497253: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:2647_values_7.smt2: 1000.109207868576: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/rec/rec_AndOrXor:2265_values_25.smt2: 1000.1112680435181: timeout
+z3 int_bench/unbounded/rec/rec_AndOrXor:2647_values_7.smt2: 1000.1123857498169: timeout
+z3 int_bench/unbounded/rec/rec_AndOrXor:2265_values_25.smt2: 1000.1122860908508: timeout
+cvc4 int_bench/unbounded/full/full_AndOrXor:2063_undef_0.smt2: 0.037653446197509766: unsat
+cvc4 int_bench/unbounded/full/full_AddSub:1295_undef_0.smt2: 0.03867006301879883: unsat
+cvc4 int_bench/unbounded/full/full_AddSub:1164_mem_0.smt2: 0.03888201713562012: unsat
+cvc4 int_bench/unbounded/full/full_AddSub:1164_undef_0.smt2: 0.038967132568359375: unsat
+cvc4 int_bench/unbounded/full/full_AddSub:1165_undef_0.smt2: 0.040558576583862305: unsat
+cvc4 int_bench/unbounded/full/full_AddSub:1619_undef_0.smt2: 0.0394434928894043: unsat
+cvc4 int_bench/unbounded/full/full_AddSub:1539-2_values_43.smt2: 0.0395658016204834: unsat
+cvc4 int_bench/unbounded/full/full_AddSub:1574_undef_0.smt2: 0.04139399528503418: unsat
+cvc4 int_bench/unbounded/full/full_AndOrXor:2265_values_25.smt2: 0.05585980415344238: unknown
+cvc4 int_bench/unbounded/full/full_AndOrXor:2231_values_33.smt2: 0.06284594535827637: unknown
+cvc4 int_bench/unbounded/full/full_AddSub:1295_values_34.smt2: 0.06419086456298828: unknown
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AndOrXor:2063_undef_0.smt2: 0.0322113037109375: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AddSub:1164_undef_0.smt2: 0.03337669372558594: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AddSub:1164_mem_0.smt2: 0.034418344497680664: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AddSub:1295_undef_0.smt2: 0.03534078598022461: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AddSub:1619_undef_0.smt2: 0.03940701484680176: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AddSub:1539-2_values_43.smt2: 0.04013490676879883: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AddSub:1165_undef_0.smt2: 0.04156064987182617: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AddSub:1574_undef_0.smt2: 0.04449725151062012: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:2063_undef_0.smt2: 0.04034304618835449: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1164_mem_0.smt2: 0.04081463813781738: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AndOrXor:2265_values_25.smt2: 0.06042957305908203: unknown
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1164_undef_0.smt2: 0.04462265968322754: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AndOrXor:2231_values_33.smt2: 0.05532479286193848: unknown
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1295_undef_0.smt2: 0.04563474655151367: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1619_undef_0.smt2: 0.040926218032836914: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AddSub:1295_values_34.smt2: 0.0588231086730957: unknown
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1539-2_values_43.smt2: 0.045172691345214844: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1165_undef_0.smt2: 0.044512271881103516: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1574_undef_0.smt2: 0.04291272163391113: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AddSub:1164_mem_0.smt2: 0.03500962257385254: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AndOrXor:2063_undef_0.smt2: 0.04217171669006348: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AddSub:1295_undef_0.smt2: 0.03598666191101074: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AddSub:1619_undef_0.smt2: 0.03679513931274414: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AddSub:1164_undef_0.smt2: 0.04242730140686035: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AddSub:1539-2_values_43.smt2: 0.03563213348388672: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AddSub:1165_undef_0.smt2: 0.038126230239868164: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AddSub:1574_undef_0.smt2: 0.042661190032958984: unsat
+cvc4 int_bench/unbounded/full/full_AddSub:1176_values_54.smt2: 0.17928314208984375: unsat
+cvc4 int_bench/unbounded/full/full_AddSub:1164_values_0.smt2: 0.1802997589111328: unsat
+cvc4 --cbqi-all int_bench/unbounded/full/full_AddSub:1164_mem_0.smt2: 0.03619575500488281: unsat
+cvc4 --cbqi-all int_bench/unbounded/full/full_AndOrXor:2063_undef_0.smt2: 0.0381777286529541: unsat
+cvc4 --cbqi-all int_bench/unbounded/full/full_AddSub:1619_undef_0.smt2: 0.035436391830444336: unsat
+cvc4 --cbqi-all int_bench/unbounded/full/full_AddSub:1164_undef_0.smt2: 0.03454256057739258: unsat
+cvc4 --cbqi-all int_bench/unbounded/full/full_AddSub:1539-2_values_43.smt2: 0.03732013702392578: unsat
+cvc4 --cbqi-all int_bench/unbounded/full/full_AddSub:1295_undef_0.smt2: 0.0468144416809082: unsat
+cvc4 --cbqi-all int_bench/unbounded/full/full_AddSub:1165_undef_0.smt2: 0.03913593292236328: unsat
+cvc4 --cbqi-all int_bench/unbounded/full/full_AddSub:1574_undef_0.smt2: 0.04061770439147949: unsat
+cvc4 int_bench/unbounded/full/full_AddSub:1619_values_63.smt2: 0.21687865257263184: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1164_mem_0.smt2: 0.04160952568054199: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1164_undef_0.smt2: 0.039811134338378906: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:2063_undef_0.smt2: 0.04377555847167969: unsat
+z3 int_bench/unbounded/full/full_AddSub:1164_mem_0.smt2: 0.008072376251220703: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1539-2_values_43.smt2: 0.04234147071838379: unsat
+z3 int_bench/unbounded/full/full_AddSub:1164_undef_0.smt2: 0.01054525375366211: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1619_undef_0.smt2: 0.05217146873474121: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1165_undef_0.smt2: 0.04112958908081055: unsat
+z3 int_bench/unbounded/full/full_AndOrXor:2063_undef_0.smt2: 0.013876914978027344: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1295_undef_0.smt2: 0.04754447937011719: unsat
+z3 int_bench/unbounded/full/full_AddSub:1539-2_values_43.smt2: 0.008968830108642578: unsat
+z3 int_bench/unbounded/full/full_AddSub:1619_undef_0.smt2: 0.008373022079467773: unsat
+z3 int_bench/unbounded/full/full_AddSub:1165_undef_0.smt2: 0.008088827133178711: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1574_undef_0.smt2: 0.047875404357910156: unsat
+z3 int_bench/unbounded/full/full_AddSub:1295_undef_0.smt2: 0.012515544891357422: unsat
+cvc4 int_bench/unbounded/full/full_AndOrXor:135_undef_0.smt2: 0.035684823989868164: unsat
+z3 int_bench/unbounded/full/full_AddSub:1574_undef_0.smt2: 0.0159609317779541: unsat
+cvc4 int_bench/unbounded/full/full_AddSub:1614_undef_0.smt2: 0.037276506423950195: unsat
+cvc4 int_bench/unbounded/full/full_AddSub:1539-2_undef_0.smt2: 0.03550577163696289: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AndOrXor:135_undef_0.smt2: 0.035042762756347656: unsat
+cvc4 int_bench/unbounded/full/full_AndOrXor:2367_values_4.smt2: 0.06412220001220703: unknown
+cvc4 int_bench/unbounded/full/full_AndOrXor:2243_values_29.smt2: 0.06001091003417969: unknown
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AddSub:1614_undef_0.smt2: 0.036220550537109375: unsat
+cvc4 int_bench/unbounded/full/full_AddSub:1165_values_27.smt2: 0.3239302635192871: unsat
+cvc4 int_bench/unbounded/full/full_AndOrXor:2595_values_36.smt2: 0.0644381046295166: unknown
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AddSub:1539-2_undef_0.smt2: 0.041503190994262695: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:135_undef_0.smt2: 0.04389834403991699: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AddSub:1164_values_0.smt2: 0.17811274528503418: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1614_undef_0.smt2: 0.04195761680603027: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AddSub:1176_values_54.smt2: 0.1864013671875: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1539-2_undef_0.smt2: 0.0484004020690918: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AndOrXor:2367_values_4.smt2: 0.06808924674987793: unknown
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AndOrXor:2243_values_29.smt2: 0.06492948532104492: unknown
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AndOrXor:2595_values_36.smt2: 0.06122994422912598: unknown
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AndOrXor:135_undef_0.smt2: 0.04096221923828125: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AddSub:1614_undef_0.smt2: 0.03693866729736328: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AddSub:1539-2_undef_0.smt2: 0.03450822830200195: unsat
+cvc4 --cbqi-all int_bench/unbounded/full/full_AddSub:1614_undef_0.smt2: 0.036624908447265625: unsat
+cvc4 --cbqi-all int_bench/unbounded/full/full_AndOrXor:135_undef_0.smt2: 0.05027055740356445: unsat
+cvc4 --cbqi-all int_bench/unbounded/full/full_AddSub:1539-2_undef_0.smt2: 0.03522491455078125: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AddSub:1619_values_63.smt2: 0.23109698295593262: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1614_undef_0.smt2: 0.04437589645385742: unsat
+z3 int_bench/unbounded/full/full_AddSub:1614_undef_0.smt2: 0.008554697036743164: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:135_undef_0.smt2: 0.05226588249206543: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1539-2_undef_0.smt2: 0.05388474464416504: unsat
+z3 int_bench/unbounded/full/full_AndOrXor:135_undef_0.smt2: 0.014874458312988281: unsat
+z3 int_bench/unbounded/full/full_AddSub:1539-2_undef_0.smt2: 0.009942293167114258: unsat
+cvc4 int_bench/unbounded/full/full_AndOrXor:2243_undef_0.smt2: 0.03743457794189453: unsat
+cvc4 int_bench/unbounded/full/full_AndOrXor:2063_values_11.smt2: 0.061158180236816406: unknown
+cvc4 int_bench/unbounded/full/full_AndOrXor:135_values_4.smt2: 0.06802177429199219: unknown
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AndOrXor:2243_undef_0.smt2: 0.04062342643737793: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AndOrXor:2063_values_11.smt2: 0.0726776123046875: unknown
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:2243_undef_0.smt2: 0.04542827606201172: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AndOrXor:135_values_4.smt2: 0.05930519104003906: unknown
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AddSub:1165_values_27.smt2: 0.33304452896118164: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AndOrXor:2243_undef_0.smt2: 0.03793525695800781: unsat
+cvc4 --cbqi-all int_bench/unbounded/full/full_AndOrXor:2243_undef_0.smt2: 0.03723907470703125: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:2243_undef_0.smt2: 0.044060468673706055: unsat
+z3 int_bench/unbounded/full/full_AndOrXor:2243_undef_0.smt2: 0.009383678436279297: unsat
+cvc4 int_bench/unbounded/full/full_AddSub:1614_values_56.smt2: 0.23922324180603027: unsat
+cvc4 int_bench/unbounded/full/full_muldivrem:239_values_45.smt2: 0.8360581398010254: unknown
+cvc4 int_bench/unbounded/full/full_AddSub:1574_values_13.smt2: 0.8198747634887695: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AddSub:1614_values_56.smt2: 0.24385690689086914: unsat
+cvc4 int_bench/unbounded/full/full_muldivrem:229_values_9.smt2: 1.6807887554168701: unknown
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AddSub:1574_values_13.smt2: 0.83656907081604: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:2265_values_25.smt2: 1000.4153459072113: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1295_values_34.smt2: 1000.4573063850403: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:2231_values_33.smt2: 1000.5052225589752: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:2595_values_36.smt2: 1000.3736627101898: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:2243_values_29.smt2: 1000.5012905597687: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1176_values_54.smt2: 1000.5651125907898: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:2367_values_4.smt2: 1000.5608830451965: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1164_values_0.smt2: 1000.5868995189667: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1619_values_63.smt2: 1000.5527749061584: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:2063_values_11.smt2: 1000.4092583656311: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:135_values_4.smt2: 1000.4048595428467: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1165_values_27.smt2: 1000.3946712017059: timeout
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_muldivrem:239_values_45.smt2: 1000.1108655929565: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1614_values_56.smt2: 1000.2302007675171: timeout
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_muldivrem:229_values_9.smt2: 1000.1224310398102: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AddSub:1176_values_54.smt2: 1.09844970703125: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AddSub:1164_values_0.smt2: 1.208801507949829: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1574_values_13.smt2: 1000.2230837345123: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AddSub:1619_values_63.smt2: 1.2224223613739014: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AddSub:1614_values_56.smt2: 1.0189306735992432: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AddSub:1165_values_27.smt2: 1.7812111377716064: unsat
+cvc4 --cbqi-all int_bench/unbounded/full/full_AddSub:1176_values_54.smt2: 1.109710693359375: unsat
+cvc4 --cbqi-all int_bench/unbounded/full/full_AddSub:1164_values_0.smt2: 1.1178004741668701: unsat
+cvc4 --cbqi-all int_bench/unbounded/full/full_AddSub:1619_values_63.smt2: 1.1895265579223633: unsat
+cvc4 --cbqi-all int_bench/unbounded/full/full_AddSub:1614_values_56.smt2: 1.016455888748169: unsat
+cvc4 --cbqi-all int_bench/unbounded/full/full_AddSub:1165_values_27.smt2: 1.7868800163269043: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AddSub:1574_values_13.smt2: 2.4786336421966553: unsat
+cvc4 --cbqi-all int_bench/unbounded/full/full_AddSub:1574_values_13.smt2: 2.512907028198242: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AndOrXor:2265_values_25.smt2: 1000.1477580070496: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AddSub:1295_values_34.smt2: 1000.1367063522339: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AndOrXor:2231_values_33.smt2: 1000.1398899555206: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AndOrXor:2595_values_36.smt2: 1000.1378395557404: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AndOrXor:2243_values_29.smt2: 1000.1399981975555: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AndOrXor:2367_values_4.smt2: 1000.1167273521423: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AndOrXor:2063_values_11.smt2: 1000.1181988716125: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AndOrXor:135_values_4.smt2: 1000.1256730556488: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_muldivrem:239_values_45.smt2: 1000.2378828525543: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_muldivrem:229_values_9.smt2: 1000.2067210674286: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1176_values_54.smt2: 1000.3590972423553: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1164_values_0.smt2: 1000.3769857883453: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1619_values_63.smt2: 1000.2980647087097: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1614_values_56.smt2: 1000.2461202144623: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1165_values_27.smt2: 1000.2393622398376: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1574_values_13.smt2: 1000.2148201465607: timeout
+z3 int_bench/unbounded/full/full_AddSub:1619_values_63.smt2: 586.956832408905: unknown
+cvc4 int_bench/unbounded/full/full_AndOrXor:2647_values_7.smt2: 0.0535886287689209: unknown
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AndOrXor:2647_values_7.smt2: 0.05768918991088867: unknown
+cvc4 --cbqi-all int_bench/unbounded/full/full_AndOrXor:2265_values_25.smt2: 1000.1250622272491: timeout
+cvc4 --cbqi-all int_bench/unbounded/full/full_AddSub:1295_values_34.smt2: 1000.1275427341461: timeout
+cvc4 --cbqi-all int_bench/unbounded/full/full_AndOrXor:2231_values_33.smt2: 1000.1187019348145: timeout
+cvc4 --cbqi-all int_bench/unbounded/full/full_AndOrXor:2595_values_36.smt2: 1000.1278047561646: timeout
+cvc4 --cbqi-all int_bench/unbounded/full/full_AndOrXor:2243_values_29.smt2: 1000.128781080246: timeout
+cvc4 --cbqi-all int_bench/unbounded/full/full_AndOrXor:2367_values_4.smt2: 1000.1172173023224: timeout
+cvc4 --cbqi-all int_bench/unbounded/full/full_AndOrXor:2063_values_11.smt2: 1000.1131274700165: timeout
+cvc4 --cbqi-all int_bench/unbounded/full/full_AndOrXor:135_values_4.smt2: 1000.1163675785065: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_muldivrem:239_values_45.smt2: 1000.1266694068909: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_muldivrem:229_values_9.smt2: 1000.1328856945038: timeout
+z3 int_bench/unbounded/full/full_AddSub:1176_values_54.smt2: 1000.1137642860413: timeout
+cvc4 int_bench/unbounded/full/full_AndOrXor:2231_undef_0.smt2: 0.03947639465332031: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AndOrXor:2231_undef_0.smt2: 0.04251694679260254: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:2231_undef_0.smt2: 0.04876995086669922: unsat
+z3 int_bench/unbounded/full/full_AddSub:1164_values_0.smt2: 1000.1078221797943: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AndOrXor:2231_undef_0.smt2: 0.0462193489074707: unsat
+cvc4 int_bench/unbounded/full/full_AndOrXor:144_values_48.smt2: 0.0716400146484375: unknown
+cvc4 --cbqi-all int_bench/unbounded/full/full_AndOrXor:2231_undef_0.smt2: 0.042053937911987305: unsat
+z3 int_bench/unbounded/full/full_AddSub:1614_values_56.smt2: 1000.1051926612854: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:2231_undef_0.smt2: 0.051799774169921875: unsat
+z3 int_bench/unbounded/full/full_AndOrXor:2231_undef_0.smt2: 0.01055455207824707: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/full/full_AndOrXor:144_values_48.smt2: 0.0672445297241211: unknown
+z3 int_bench/unbounded/full/full_AddSub:1165_values_27.smt2: 1000.1079692840576: timeout
+z3 int_bench/unbounded/full/full_AddSub:1574_values_13.smt2: 1000.1057288646698: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:2647_values_7.smt2: 1000.1808741092682: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:2265_values_25.smt2: 1000.2484865188599: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AddSub:1295_values_34.smt2: 1000.3417685031891: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:2231_values_33.smt2: 1000.3130025863647: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:2595_values_36.smt2: 1000.3132994174957: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:2367_values_4.smt2: 1000.2577443122864: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:2243_values_29.smt2: 1000.302232503891: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:135_values_4.smt2: 1000.1690776348114: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:2063_values_11.smt2: 1000.230176448822: timeout
+cvc4 --cbqi-all int_bench/unbounded/full/full_muldivrem:239_values_45.smt2: 1000.1153252124786: timeout
+cvc4 --cbqi-all int_bench/unbounded/full/full_muldivrem:229_values_9.smt2: 1000.1222624778748: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:144_values_48.smt2: 1000.171856880188: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AndOrXor:2647_values_7.smt2: 1000.1121952533722: timeout
+z3 int_bench/unbounded/full/full_AndOrXor:2265_values_25.smt2: 1000.1106154918671: timeout
+z3 int_bench/unbounded/full/full_AddSub:1295_values_34.smt2: 1000.0778822898865: timeout
+z3 int_bench/unbounded/full/full_AndOrXor:2231_values_33.smt2: 1000.1106941699982: timeout
+z3 int_bench/unbounded/full/full_AndOrXor:2595_values_36.smt2: 1000.1245157718658: timeout
+z3 int_bench/unbounded/full/full_AndOrXor:2367_values_4.smt2: 1000.1135113239288: timeout
+z3 int_bench/unbounded/full/full_AndOrXor:135_values_4.smt2: 1000.1038725376129: timeout
+z3 int_bench/unbounded/full/full_AndOrXor:2243_values_29.smt2: 1000.1041975021362: timeout
+z3 int_bench/unbounded/full/full_AndOrXor:2063_values_11.smt2: 1000.1082303524017: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_muldivrem:239_values_45.smt2: 1000.1792418956757: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_muldivrem:229_values_9.smt2: 1000.1592583656311: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/full/full_AndOrXor:144_values_48.smt2: 1000.1115729808807: timeout
+cvc4 --cbqi-all int_bench/unbounded/full/full_AndOrXor:2647_values_7.smt2: 1000.1133661270142: timeout
+z3 int_bench/unbounded/full/full_muldivrem:239_values_45.smt2: 1000.1136391162872: timeout
+z3 int_bench/unbounded/full/full_muldivrem:229_values_9.smt2: 1000.0667312145233: timeout
+cvc4 --cbqi-all int_bench/unbounded/full/full_AndOrXor:144_values_48.smt2: 1000.114471912384: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:2647_values_7.smt2: 1000.2099101543427: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/full/full_AndOrXor:144_values_48.smt2: 1000.2325274944305: timeout
+z3 int_bench/unbounded/full/full_AndOrXor:2647_values_7.smt2: 1000.0455303192139: timeout
+z3 int_bench/unbounded/full/full_AndOrXor:144_values_48.smt2: 1000.117538690567: timeout
+cvc4 int_bench/unbounded/partial/partial_AddSub:1574_undef_0.smt2: 0.036277055740356445: unsat
+cvc4 int_bench/unbounded/partial/partial_AddSub:1164_mem_0.smt2: 0.03566765785217285: unsat
+cvc4 int_bench/unbounded/partial/partial_AddSub:1619_undef_0.smt2: 0.03608989715576172: unsat
+cvc4 int_bench/unbounded/partial/partial_AndOrXor:2063_undef_0.smt2: 0.03628802299499512: unsat
+cvc4 int_bench/unbounded/partial/partial_AddSub:1539-2_undef_0.smt2: 0.03704977035522461: unsat
+cvc4 int_bench/unbounded/partial/partial_AndOrXor:2243_undef_0.smt2: 0.03671455383300781: unsat
+cvc4 int_bench/unbounded/partial/partial_AddSub:1164_undef_0.smt2: 0.03973889350891113: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AndOrXor:2063_undef_0.smt2: 0.033075809478759766: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AddSub:1164_mem_0.smt2: 0.03374624252319336: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AddSub:1619_undef_0.smt2: 0.03634023666381836: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AddSub:1574_undef_0.smt2: 0.03738832473754883: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AddSub:1164_undef_0.smt2: 0.03680157661437988: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AndOrXor:2243_undef_0.smt2: 0.04151201248168945: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AddSub:1539-2_undef_0.smt2: 0.04552602767944336: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:2063_undef_0.smt2: 0.0426027774810791: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1574_undef_0.smt2: 0.04096651077270508: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1619_undef_0.smt2: 0.04187583923339844: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1164_undef_0.smt2: 0.04052448272705078: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:2243_undef_0.smt2: 0.04183340072631836: unsat
+cvc4 int_bench/unbounded/partial/partial_AndOrXor:2647_values_7.smt2: 0.12508606910705566: unknown
+cvc4 int_bench/unbounded/partial/partial_AndOrXor:2265_values_25.smt2: 0.12735676765441895: unknown
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1539-2_undef_0.smt2: 0.047080278396606445: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1164_mem_0.smt2: 0.06127357482910156: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:2063_undef_0.smt2: 0.037062883377075195: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AddSub:1619_undef_0.smt2: 0.037407875061035156: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AddSub:1574_undef_0.smt2: 0.0393984317779541: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AddSub:1164_undef_0.smt2: 0.03838157653808594: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:2243_undef_0.smt2: 0.03737640380859375: unsat
+cvc4 int_bench/unbounded/partial/partial_AndOrXor:2231_values_33.smt2: 0.16045022010803223: unknown
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AddSub:1539-2_undef_0.smt2: 0.03989243507385254: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AddSub:1164_mem_0.smt2: 0.03943467140197754: unsat
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:2063_undef_0.smt2: 0.036702632904052734: unsat
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AddSub:1619_undef_0.smt2: 0.03809022903442383: unsat
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AddSub:1164_undef_0.smt2: 0.03575277328491211: unsat
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AddSub:1574_undef_0.smt2: 0.04055380821228027: unsat
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:2243_undef_0.smt2: 0.045272111892700195: unsat
+cvc4 int_bench/unbounded/partial/partial_AndOrXor:144_values_48.smt2: 0.20727992057800293: unknown
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AddSub:1164_mem_0.smt2: 0.03742361068725586: unsat
+cvc4 int_bench/unbounded/partial/partial_AndOrXor:135_values_4.smt2: 0.2165541648864746: unknown
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AddSub:1539-2_undef_0.smt2: 0.04969501495361328: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:2063_undef_0.smt2: 0.042174339294433594: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1574_undef_0.smt2: 0.03977489471435547: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1164_undef_0.smt2: 0.041021108627319336: unsat
+z3 int_bench/unbounded/partial/partial_AndOrXor:2063_undef_0.smt2: 0.012634992599487305: unsat
+z3 int_bench/unbounded/partial/partial_AddSub:1574_undef_0.smt2: 0.008615970611572266: unsat
+cvc4 int_bench/unbounded/partial/partial_AndOrXor:2063_values_11.smt2: 0.2446732521057129: unknown
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1619_undef_0.smt2: 0.058335065841674805: unsat
+z3 int_bench/unbounded/partial/partial_AddSub:1164_undef_0.smt2: 0.014624595642089844: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1164_mem_0.smt2: 0.042519330978393555: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:2243_undef_0.smt2: 0.04860281944274902: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AndOrXor:2647_values_7.smt2: 0.1335451602935791: unknown
+z3 int_bench/unbounded/partial/partial_AddSub:1619_undef_0.smt2: 0.011588573455810547: unsat
+z3 int_bench/unbounded/partial/partial_AndOrXor:2243_undef_0.smt2: 0.009074211120605469: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AndOrXor:2265_values_25.smt2: 0.13552379608154297: unknown
+z3 int_bench/unbounded/partial/partial_AddSub:1164_mem_0.smt2: 0.014125585556030273: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1539-2_undef_0.smt2: 0.05129551887512207: unsat
+cvc4 int_bench/unbounded/partial/partial_AndOrXor:2231_undef_0.smt2: 0.03753399848937988: unsat
+cvc4 int_bench/unbounded/partial/partial_AddSub:1165_undef_0.smt2: 0.03741121292114258: unsat
+z3 int_bench/unbounded/partial/partial_AddSub:1539-2_undef_0.smt2: 0.016933441162109375: unsat
+cvc4 int_bench/unbounded/partial/partial_AddSub:1295_undef_0.smt2: 0.03709006309509277: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AndOrXor:2231_undef_0.smt2: 0.03596782684326172: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AddSub:1165_undef_0.smt2: 0.03600883483886719: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AndOrXor:2231_values_33.smt2: 0.16678166389465332: unknown
+cvc4 int_bench/unbounded/partial/partial_AddSub:1539-2_values_43.smt2: 0.04360604286193848: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AddSub:1295_undef_0.smt2: 0.035924434661865234: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:2231_undef_0.smt2: 0.043337106704711914: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1165_undef_0.smt2: 0.04277515411376953: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AddSub:1539-2_values_43.smt2: 0.0380558967590332: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1295_undef_0.smt2: 0.05414175987243652: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:2231_undef_0.smt2: 0.036833763122558594: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AddSub:1165_undef_0.smt2: 0.03766632080078125: unsat
+cvc4 int_bench/unbounded/partial/partial_AndOrXor:2595_values_36.smt2: 0.14281129837036133: unknown
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1539-2_values_43.smt2: 0.05100297927856445: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AndOrXor:144_values_48.smt2: 0.21860146522521973: unknown
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:2231_undef_0.smt2: 0.03610634803771973: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AndOrXor:135_values_4.smt2: 0.21697783470153809: unknown
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AddSub:1295_undef_0.smt2: 0.04565858840942383: unsat
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AddSub:1165_undef_0.smt2: 0.0400547981262207: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AddSub:1539-2_values_43.smt2: 0.038376808166503906: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:2231_undef_0.smt2: 0.041661739349365234: unsat
+z3 int_bench/unbounded/partial/partial_AndOrXor:2231_undef_0.smt2: 0.008358478546142578: unsat
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AddSub:1295_undef_0.smt2: 0.047826290130615234: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1165_undef_0.smt2: 0.04261016845703125: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AndOrXor:2063_values_11.smt2: 0.25124049186706543: unknown
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AddSub:1539-2_values_43.smt2: 0.03791642189025879: unsat
+z3 int_bench/unbounded/partial/partial_AddSub:1165_undef_0.smt2: 0.015571355819702148: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1295_undef_0.smt2: 0.04600644111633301: unsat
+z3 int_bench/unbounded/partial/partial_AddSub:1295_undef_0.smt2: 0.009089231491088867: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AndOrXor:2595_values_36.smt2: 0.13155412673950195: unknown
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1539-2_values_43.smt2: 0.04453468322753906: unsat
+cvc4 int_bench/unbounded/partial/partial_AddSub:1614_undef_0.smt2: 0.049317121505737305: unsat
+z3 int_bench/unbounded/partial/partial_AddSub:1539-2_values_43.smt2: 0.014882326126098633: unsat
+cvc4 int_bench/unbounded/partial/partial_AndOrXor:135_undef_0.smt2: 0.03877997398376465: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AddSub:1614_undef_0.smt2: 0.040029048919677734: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AndOrXor:135_undef_0.smt2: 0.03806710243225098: unsat
+cvc4 int_bench/unbounded/partial/partial_muldivrem:239_values_45.smt2: 0.6227612495422363: unknown
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1614_undef_0.smt2: 0.04575324058532715: unsat
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:135_undef_0.smt2: 0.04646182060241699: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AddSub:1614_undef_0.smt2: 0.03724050521850586: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:135_undef_0.smt2: 0.04087972640991211: unsat
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AddSub:1614_undef_0.smt2: 0.03590083122253418: unsat
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:135_undef_0.smt2: 0.04173445701599121: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1614_undef_0.smt2: 0.04251742362976074: unsat
+z3 int_bench/unbounded/partial/partial_AddSub:1614_undef_0.smt2: 0.008321523666381836: unsat
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:135_undef_0.smt2: 0.050694942474365234: unsat
+z3 int_bench/unbounded/partial/partial_AndOrXor:135_undef_0.smt2: 0.010812520980834961: unsat
+cvc4 int_bench/unbounded/partial/partial_AddSub:1295_values_34.smt2: 0.15201520919799805: unknown
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AddSub:1295_values_34.smt2: 0.17013096809387207: unknown
+cvc4 int_bench/unbounded/partial/partial_AddSub:1614_values_56.smt2: 1.005462884902954: unsat
+cvc4 int_bench/unbounded/partial/partial_AndOrXor:2367_values_4.smt2: 0.8728249073028564: unknown
+cvc4 int_bench/unbounded/partial/partial_AddSub:1619_values_63.smt2: 1.1487433910369873: unsat
+cvc4 int_bench/unbounded/partial/partial_AddSub:1176_values_54.smt2: 0.6995255947113037: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AddSub:1176_values_54.smt2: 0.708463191986084: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AndOrXor:2367_values_4.smt2: 0.8754913806915283: unknown
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AddSub:1614_values_56.smt2: 1.0233511924743652: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AddSub:1619_values_63.smt2: 1.207390546798706: unsat
+cvc4 int_bench/unbounded/partial/partial_AddSub:1165_values_27.smt2: 2.0793211460113525: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AddSub:1165_values_27.smt2: 1.9889724254608154: unsat
+cvc4 int_bench/unbounded/partial/partial_AddSub:1574_values_13.smt2: 5.001020908355713: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AddSub:1574_values_13.smt2: 5.111001491546631: unsat
+cvc4 int_bench/unbounded/partial/partial_muldivrem:229_values_9.smt2: 124.48457670211792: unknown
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:2265_values_25.smt2: 1000.1270546913147: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:2231_values_33.smt2: 1000.1182911396027: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:2647_values_7.smt2: 1000.2158796787262: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:135_values_4.smt2: 1000.2049860954285: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:144_values_48.smt2: 1000.2145149707794: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:2063_values_11.smt2: 1000.1435346603394: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:2595_values_36.smt2: 1000.1579723358154: timeout
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_muldivrem:239_values_45.smt2: 1000.1349351406097: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1295_values_34.smt2: 1000.1741378307343: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1176_values_54.smt2: 1000.1620142459869: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:2367_values_4.smt2: 1000.1193175315857: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1614_values_56.smt2: 1000.1497099399567: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1619_values_63.smt2: 1000.1606860160828: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1165_values_27.smt2: 1000.155116558075: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1574_values_13.smt2: 1000.1563408374786: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AddSub:1176_values_54.smt2: 12.105893850326538: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AddSub:1619_values_63.smt2: 17.062846660614014: unsat
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AddSub:1176_values_54.smt2: 12.136810064315796: unsat
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AddSub:1619_values_63.smt2: 17.704015731811523: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AddSub:1165_values_27.smt2: 107.07289600372314: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_muldivrem:229_values_9.smt2: 1000.1176156997681: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AddSub:1614_values_56.smt2: 199.91347551345825: unsat
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AddSub:1165_values_27.smt2: 102.5327308177948: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AddSub:1574_values_13.smt2: 227.16871976852417: unsat
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AddSub:1614_values_56.smt2: 189.99766445159912: unsat
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AddSub:1574_values_13.smt2: 248.10760068893433: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:2265_values_25.smt2: 1000.1101453304291: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:2647_values_7.smt2: 1000.1169512271881: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:2231_values_33.smt2: 1000.1708958148956: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:144_values_48.smt2: 1000.1167781352997: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:2063_values_11.smt2: 1000.1175837516785: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:135_values_4.smt2: 1000.1204125881195: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:2595_values_36.smt2: 1000.1386740207672: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_muldivrem:239_values_45.smt2: 1000.1650495529175: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AddSub:1295_values_34.smt2: 1000.1164152622223: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:2367_values_4.smt2: 1000.1142690181732: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1176_values_54.smt2: 1000.1692337989807: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1619_values_63.smt2: 1000.1687309741974: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_muldivrem:229_values_9.smt2: 1000.1508128643036: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1165_values_27.smt2: 1000.1737627983093: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1614_values_56.smt2: 1000.1630122661591: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1574_values_13.smt2: 1000.158399105072: timeout
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:2265_values_25.smt2: 1000.1132590770721: timeout
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:2647_values_7.smt2: 1000.120512008667: timeout
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:2231_values_33.smt2: 1000.1598765850067: timeout
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:144_values_48.smt2: 1000.1080584526062: timeout
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:135_values_4.smt2: 1000.116281747818: timeout
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:2063_values_11.smt2: 1000.117418050766: timeout
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:2595_values_36.smt2: 1000.1309285163879: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_muldivrem:239_values_45.smt2: 1000.1113970279694: timeout
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AddSub:1295_values_34.smt2: 1000.114958524704: timeout
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:2367_values_4.smt2: 1000.1136021614075: timeout
+z3 int_bench/unbounded/partial/partial_AddSub:1176_values_54.smt2: 1000.1086935997009: timeout
+cvc4 int_bench/unbounded/partial/partial_AndOrXor:2243_values_29.smt2: 0.17780375480651855: unknown
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AndOrXor:2243_values_29.smt2: 0.17393994331359863: unknown
+z3 int_bench/unbounded/partial/partial_AddSub:1619_values_63.smt2: 1000.1078207492828: timeout
+cvc4 int_bench/unbounded/partial/partial_AddSub:1164_values_0.smt2: 0.6362924575805664: unsat
+cvc4 --nl-ext-tplanes int_bench/unbounded/partial/partial_AddSub:1164_values_0.smt2: 0.6482570171356201: unsat
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_muldivrem:229_values_9.smt2: 1000.132318019867: timeout
+z3 int_bench/unbounded/partial/partial_AddSub:1165_values_27.smt2: 1000.1119270324707: timeout
+z3 int_bench/unbounded/partial/partial_AddSub:1614_values_56.smt2: 1000.052907705307: timeout
+z3 int_bench/unbounded/partial/partial_AddSub:1574_values_13.smt2: 1000.1039206981659: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:2265_values_25.smt2: 1000.1180539131165: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:2647_values_7.smt2: 1000.1713440418243: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:2231_values_33.smt2: 1000.1286511421204: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:2063_values_11.smt2: 1000.0328884124756: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:135_values_4.smt2: 1000.159811258316: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:144_values_48.smt2: 1000.2106080055237: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:2595_values_36.smt2: 1000.1681685447693: timeout
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_muldivrem:239_values_45.smt2: 1000.1190962791443: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1295_values_34.smt2: 1000.1454515457153: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:2367_values_4.smt2: 1000.1211624145508: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:2243_values_29.smt2: 1000.115335226059: timeout
+cvc4 --nl-ext-tplanes --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1164_values_0.smt2: 1000.1756575107574: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AddSub:1164_values_0.smt2: 13.442246437072754: unsat
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AddSub:1164_values_0.smt2: 9.685192823410034: unsat
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_muldivrem:229_values_9.smt2: 1000.1191260814667: timeout
+z3 int_bench/unbounded/partial/partial_AndOrXor:2265_values_25.smt2: 1000.1269085407257: timeout
+z3 int_bench/unbounded/partial/partial_AndOrXor:2647_values_7.smt2: 1000.1115534305573: timeout
+z3 int_bench/unbounded/partial/partial_AndOrXor:2063_values_11.smt2: 1000.1161842346191: timeout
+z3 int_bench/unbounded/partial/partial_AndOrXor:2231_values_33.smt2: 1000.1207900047302: timeout
+z3 int_bench/unbounded/partial/partial_AndOrXor:135_values_4.smt2: 1000.1201872825623: timeout
+z3 int_bench/unbounded/partial/partial_AndOrXor:144_values_48.smt2: 1000.107542514801: timeout
+z3 int_bench/unbounded/partial/partial_AndOrXor:2595_values_36.smt2: 1000.1103410720825: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_muldivrem:239_values_45.smt2: 1000.1316335201263: timeout
+z3 int_bench/unbounded/partial/partial_AddSub:1295_values_34.smt2: 1000.1064867973328: timeout
+z3 int_bench/unbounded/partial/partial_AndOrXor:2367_values_4.smt2: 1000.1095821857452: timeout
+cvc4 --nl-ext-tplanes --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:2243_values_29.smt2: 1000.0613980293274: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AddSub:1164_values_0.smt2: 1000.1299848556519: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_muldivrem:229_values_9.smt2: 1000.1260569095612: timeout
+z3 int_bench/unbounded/partial/partial_muldivrem:239_values_45.smt2: 1000.1099174022675: timeout
+cvc4 --cbqi-all int_bench/unbounded/partial/partial_AndOrXor:2243_values_29.smt2: 1000.10875415802: timeout
+z3 int_bench/unbounded/partial/partial_AddSub:1164_values_0.smt2: 1000.1052706241608: timeout
+z3 int_bench/unbounded/partial/partial_muldivrem:229_values_9.smt2: 1000.1130294799805: timeout
+cvc4 --fmf-fun-rlv int_bench/unbounded/partial/partial_AndOrXor:2243_values_29.smt2: 1000.1157331466675: timeout
+z3 int_bench/unbounded/partial/partial_AndOrXor:2243_values_29.smt2: 1000.0194737911224: timeout
