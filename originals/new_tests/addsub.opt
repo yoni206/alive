@@ -1,12 +1,3 @@
-Name: AddSub:1043
-%Y = and %Z, C1
-%X = xor %Y, C1
-%LHS = add %X, 1
-%r = add %LHS, %RHS
-=>
-%or = or %Z, ~C1
-%r = sub %RHS, %or
-
 Name: AddSub:1164
 %na = sub 0, %a
 %c = add %na, %b

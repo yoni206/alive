@@ -1,0 +1,65 @@
+Name: AndOrXor:135
+%op = xor %X, C1
+%r = and %op, C2
+=>
+%a = and %X, C2
+%r = xor %a, C1&C2
+
+Name: AndOrXor:144
+%op = or %X, C1
+%r = and %op, C2
+=>
+%o = or %X, C1&C2
+%r = and %o, C2
+
+Name: AndOrXor:2063
+%op0 = xor %x, C1
+%r = or %op0, C
+=>
+%or = or %x, C
+%r = xor %or, (C1 & ~C)
+
+Name: AndOrXor:2231
+%op0 = xor %A, %B
+%x = xor %B, %C
+%op1 = xor %x, %A
+%r = or %op0, %op1
+=>
+%r = or %op0, %C
+
+Name: AndOrXor:2243
+%o = or %B, %C
+%op0 = and %o, %A
+%r = or %op0, %B
+=>
+%a = and %A, %C
+%r = or %B, %a
+
+Name: AndOrXor:2265
+%op0 = and %A, %B
+%op1 = xor %A, %B
+%r = or %op0, %op1
+=>
+%r = or %A, %B
+
+Name: AndOrXor:2367
+%op0 = or %A, C1
+%r = or %op0, %op1
+=>
+%i = or %A, %op1
+%r = or %i, C1
+
+Name: AndOrXor:2595
+%op0 = and %a, %b
+%op1 = or %a, %b
+%r = xor %op0, %op1
+=>
+%r = xor %a, %b
+
+Name: AndOrXor:2647
+%op0 = and %a, %b
+%op1 = xor %a, %b
+%r = xor %op0, %op1
+=>
+%r = or %a, %b
+

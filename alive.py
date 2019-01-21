@@ -103,12 +103,6 @@ def gen_benchmark(s, opt_name, index, opt_reason):
             "\n|)\n\n")
   string = header + z3_solver_to_smtlib(s)
 
-  #files = glob.glob('bench/*.smt2')
-  #if len(files) == 0:
-  #  filename = 0
-  #else:
-  #  files.sort(reverse=True)
-  #  filename = int(re.search('(\d+)\.smt2', files[0]).group(1)) + 1
   filename = "bench/" + opt_name + "_" + opt_reason + "_" + str(index) +  ".smt2"
   fd = open(filename, 'w')
   fd.write(string)
@@ -144,8 +138,10 @@ def check_expr(qvars, expr, error, opt_name, index, opt_reason):
   s.add(expr)
   if __debug__:
     gen_benchmark(s, opt_name, index, opt_reason)
-
-  res = s.check()
+    
+  #panda don't check, to speed things up.
+  #res = s.check()
+  res = unsat
   if res != unsat:
     check_incomplete_solver(res, s)
     e, src, tgt, stop, srcv, tgtv, types = error(s)
@@ -367,7 +363,7 @@ def check_typed_opt(pre, src, ident_src, tgt, ident_tgt, types, users, opt_name,
     ('Mismatch in final memory state in ptr %s' % str_model(s, idx),
      str_model(s, val1), str_model(s, val2), None, srcv, tgtv, types), opt_name, index, "mem")
 
-panda_dict = {}
+#panda_dict = {}
 
 def check_opt(opt, hide_progress):
   name, pre, src, tgt, ident_src, ident_tgt, used_src, used_tgt, skip_tgt = opt
@@ -445,21 +441,21 @@ def check_opt(opt, hide_progress):
     s2.add(s.assertions())
     pick_pre_types(s, s2)
 
-  assert(name not in panda_dict)
-  panda_dict[name] = {}
+  #assert(name not in panda_dict)
+  #panda_dict[name] = {}
 
 
   # now check for correctness
   proofs = 0
-  i = 0
+#  i = 0
   while res == sat:
     types = s.model()
-    list_of_types = (list(set([types[a] for a in types.decls() if not str(a).startswith("ptrsize") and not str(a).startswith("t_")])))
-    length = len(list_of_types)
-    if i not in panda_dict[name]:
-        panda_dict[name][i] = set([])
-    panda_dict[name][i].update(list_of_types)
-    i = i+1
+#    list_of_types = (list(set([types[a] for a in types.decls() if not str(a).startswith("ptrsize") and not str(a).startswith("t_")])))
+#    length = len(list_of_types)
+#    if i not in panda_dict[name]:
+#        panda_dict[name][i] = set([])
+#    panda_dict[name][i].update(list_of_types)
+#    i = i+1
     
     set_ptr_size(types)
     fixupTypes(ident_src, types)
@@ -527,16 +523,16 @@ def main():
           check_opt(opt, hide_progress=args.hide_progress)
         elif not args.output:
           print opt[0]
-  print_good_opt_names()
+#  print_good_opt_names()
   if args.output:
     generate_switched_suite(gen, args.output)
 
-def print_good_opt_names():
-    good = []
-    for name in panda_dict:
-        if is_good(panda_dict[name]):
-            good.append(name)
-    print("\n".join(good))
+#def print_good_opt_names():
+#    good = []
+#    for name in panda_dict:
+#        if is_good(panda_dict[name]):
+#            good.append(name)
+#    print("\n".join(good))
 
 def is_good(indexes_to_types):
     result = True

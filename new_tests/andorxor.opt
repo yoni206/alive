@@ -12,6 +12,377 @@ Name: AndOrXor:144
 %o = or %X, C1&C2
 %r = and %o, C2
 
+Name: AndOrXor:287
+Pre: C1 <= C2 && C1 == C2
+%c1 = icmp slt %X, C1
+%c2 = icmp sge %X, C2
+%r = or %c1, %c2
+=>
+%r = true
+
+Name: AndOrXor:364
+Pre: isPowerOf2OrZero(C2+1) && C1 & C2 == 0
+%lhs = xor %A, C1
+%Op = sub %lhs, %B
+%r = and %Op, C2
+=>
+%op = sub %A, %B
+%r = and %op, C2
+
+Name: AndOrXor:698
+%a1 = and %a, %b
+%a2 = and %a, %d
+%op0 = icmp eq %a1, 0
+%op1 = icmp eq %a2, 0
+%r = and %op0, %op1
+=>
+%or = or %b, %d
+%a3 = and %a, %or
+%r = icmp eq %a3, 0
+
+Name: AndOrXor:732-2
+Pre: C1 & C2 == C1
+%a1 = and %a, C1
+%a2 = and %a, C2
+%op0 = icmp ne %a1, C1
+%op1 = icmp ne %a2, C2
+%r = and %op0, %op1
+=>
+%r = icmp ne %a1, C1
+
+Name: AndOrXor:794
+%op0 = icmp sgt %a, %b
+%op1 = icmp ne %a, %b
+%r = and %op0, %op1
+=>
+%r = icmp sgt %a, %b
+
+Name: AndOrXor:827
+%op0 = icmp eq %a, 0
+%op1 = icmp eq %b, 0
+%r = and %op0, %op1
+=>
+%o = or %a, %b
+%r = icmp eq %o, 0
+
+Name: AndOrXor:887-2
+%op0 = icmp eq %a, C1
+%op1 = icmp ne %a, C1
+%r = and %op0, %op1
+=>
+%r = false
+
+Name: AndOrXor:923
+Pre: C1 u< C2
+%op0 = icmp eq %a, C1
+%op1 = icmp ult %a, C2
+%r = and %op0, %op1
+=>
+%r = %op0
+
+Name: AndOrXor:940
+Pre: C1 u< C2
+%op0 = icmp ne %a, C1
+%op1 = icmp eq %a, C2
+%r = and %op0, %op1
+=>
+%r = %op1
+
+Name: AndOrXor:941
+Pre: C1 u< C2
+%op0 = icmp ne %a, C1
+%op1 = icmp ugt %a, C2
+%r = and %op0, %op1
+=>
+%r = %op1
+
+Name: AndOrXor:942
+Pre: C1 < C2
+%op0 = icmp ne %a, C1
+%op1 = icmp sgt %a, C2
+%r = and %op0, %op1
+=>
+%r = %op1
+
+Name: AndOrXor:949
+Pre: C1 u< C2 && C1 == C2-1
+%op0 = icmp ne %a, C1
+%op1 = icmp ne %a, C2
+%r = and %op0, %op1
+=>
+%s = add %a, -C1
+%r = icmp ugt %s, 1
+
+Name: AndOrXor:961
+Pre: C1 u< C2
+%op0 = icmp ult %a, C1
+%op1 = icmp eq %a, C2
+%r = and %op0, %op1
+=>
+%r = false
+
+Name: AndOrXor:962
+Pre: C1 u< C2
+%op0 = icmp ult %a, C1
+%op1 = icmp ugt %a, C2
+%r = and %op0, %op1
+=>
+%r = false
+
+Name: AndOrXor:966
+Pre: C1 u< C2
+%op0 = icmp ult %a, C1
+%op1 = icmp ne %a, C2
+%r = and %op0, %op1
+=>
+%r = %op0
+
+Name: AndOrXor:967
+Pre: C1 u< C2
+%op0 = icmp ult %a, C1
+%op1 = icmp ult %a, C2
+%r = and %op0, %op1
+=>
+%r = %op0
+
+Name: AndOrXor:978
+Pre: C1 < C2
+%op0 = icmp slt %a, C1
+%op1 = icmp ne %a, C2
+%r = and %op0, %op1
+=>
+%r = %op0
+
+Name: AndOrXor:979
+Pre: C1 < C2
+%op0 = icmp slt %a, C1
+%op1 = icmp slt %a, C2
+%r = and %op0, %op1
+=>
+%r = %op0
+
+Name: AndOrXor:988
+Pre: C1 u< C2
+%op0 = icmp ugt %a, C1
+%op1 = icmp eq %a, C2
+%r = and %op0, %op1
+=>
+%r = %op1
+
+Name: AndOrXor:989
+Pre: C1 u< C2
+%op0 = icmp ugt %a, C1
+%op1 = icmp ugt %a, C2
+%r = and %op0, %op1
+=>
+%r = %op1
+
+Name: AndOrXor:1006
+Pre: C1 < C2
+%op0 = icmp sgt %a, C1
+%op1 = icmp eq %a, C2
+%r = and %op0, %op1
+=>
+%r = %op1
+
+Name: AndOrXor:1007
+Pre: C1 < C2
+%op0 = icmp sgt %a, C1
+%op1 = icmp sgt %a, C2
+%r = and %op0, %op1
+=>
+%r = %op1
+
+Name: AndOrXor:1140-2
+Pre: MaskedValueIsZero(%op0LHS, ~C)
+%op0 = or %op0LHS, %op0RHS
+%r = and %op0, C
+=>
+%newRHS = and %op0RHS, C
+%r = or %op0LHS, %newRHS
+
+Name: AndOrXor:1146-2
+Pre: MaskedValueIsZero(%op0RHS, ~C)
+%op0 = or %op0LHS, %op0RHS
+%r = and %op0, C
+=>
+%newLHS = and %op0LHS, C
+%r = or %newLHS, %op0RHS
+
+Name: AndOrXor:1683-1
+%op0 = icmp ugt %a, %b
+%op1 = icmp eq %a, %b
+%r = or %op0, %op1
+=>
+%r = icmp uge %a, %b
+
+Name: AndOrXor:1683-2
+%op0 = icmp uge %a, %b
+%op1 = icmp ne %a, %b
+%r = or %op0, %op1
+=>
+%r = true
+
+Name: AndOrXor:1733
+%cmp1 = icmp ne %A, 0
+%cmp2 = icmp ne %B, 0
+%r = or %cmp1, %cmp2
+=>
+%or = or %A, %B
+%r = icmp ne %or, 0
+
+Name: AndOrXor:1819
+Pre: C1 u< C2
+%cmp1 = icmp eq %X, C1
+%cmp2 = icmp ult %X, C2
+%r = or %cmp1, %cmp2
+=>
+%r = %cmp2
+
+Name: AndOrXor:1827
+Pre: C1 u< C2
+%cmp1 = icmp ne %X, C1
+%cmp2 = icmp eq %X, C2
+%r = or %cmp1, %cmp2
+=>
+%r = %cmp1
+
+Name: AndOrXor:1828
+Pre: C1 u< C2
+%cmp1 = icmp ne %X, C1
+%cmp2 = icmp ugt %X, C2
+%r = or %cmp1, %cmp2
+=>
+%r = %cmp1
+
+Name: AndOrXor:1829
+Pre: C1 < C2
+%cmp1 = icmp ne %X, C1
+%cmp2 = icmp sgt %X, C2
+%r = or %cmp1, %cmp2
+=>
+%r = %cmp1
+
+Name: AndOrXor:1831
+Pre: C1 u< C2
+%cmp1 = icmp ne %X, C1
+%cmp2 = icmp ne %X, C2
+%r = or %cmp1, %cmp2
+=>
+%r = true
+
+Name: AndOrXor:1832
+Pre: C1 u< C2
+%cmp1 = icmp ne %X, C1
+%cmp2 = icmp ult %X, C2
+%r = or %cmp1, %cmp2
+=>
+%r = true
+
+Name: AndOrXor:1833
+Pre: C1 < C2
+%cmp1 = icmp ne %X, C1
+%cmp2 = icmp slt %X, C2
+%r = or %cmp1, %cmp2
+=>
+%r = true
+
+Name: AndOrXor:1849
+Pre: C1 u< C2
+%cmp1 = icmp ult %X, C1
+%cmp2 = icmp ne %X, C2
+%r = or %cmp1, %cmp2
+=>
+%r = %cmp2
+
+Name: AndOrXor:1850
+Pre: C1 u< C2
+%cmp1 = icmp ult %X, C1
+%cmp2 = icmp ult %X, C2
+%r = or %cmp1, %cmp2
+=>
+%r = %cmp2
+
+Name: AndOrXor:1869
+Pre: C1 < C2
+%cmp1 = icmp slt %X, C1
+%cmp2 = icmp ne %X, C2
+%r = or %cmp1, %cmp2
+=>
+%r = %cmp2
+
+Name: AndOrXor:1870
+Pre: C1 < C2
+%cmp1 = icmp slt %X, C1
+%cmp2 = icmp slt %X, C2
+%r = or %cmp1, %cmp2
+=>
+%r = %cmp2
+
+Name: AndOrXor:1879
+Pre: C1 u< C2
+%cmp1 = icmp ugt %X, C1
+%cmp2 = icmp eq %X, C2
+%r = or %cmp1, %cmp2
+=>
+%r = %cmp1
+
+Name: AndOrXor:1880
+Pre: C1 u< C2
+%cmp1 = icmp ugt %X, C1
+%cmp2 = icmp ugt %X, C2
+%r = or %cmp1, %cmp2
+=>
+%r = %cmp1
+
+Name: AndOrXor:1884
+Pre: C1 u< C2
+%cmp1 = icmp ugt %X, C1
+%cmp2 = icmp ne %X, C2
+%r = or %cmp1, %cmp2
+=>
+%r = true
+
+Name: AndOrXor:1885
+Pre: C1 u< C2
+%cmp1 = icmp ugt %X, C1
+%cmp2 = icmp ult %X, C2
+%r = or %cmp1, %cmp2
+=>
+%r = true
+
+Name: AndOrXor:1894
+Pre: C1 < C2
+%cmp1 = icmp sgt %X, C1
+%cmp2 = icmp eq %X, C2
+%r = or %cmp1, %cmp2
+=>
+%r = %cmp1
+
+Name: AndOrXor:1895
+Pre: C1 < C2
+%cmp1 = icmp sgt %X, C1
+%cmp2 = icmp sgt %X, C2
+%r = or %cmp1, %cmp2
+=>
+%r = %cmp1
+
+Name: AndOrXor:1899
+Pre: C1 < C2
+%cmp1 = icmp sgt %X, C1
+%cmp2 = icmp ne %X, C2
+%r = or %cmp1, %cmp2
+=>
+%r = true
+
+Name: AndOrXor:1900
+Pre: C1 < C2
+%cmp1 = icmp sgt %X, C1
+%cmp2 = icmp slt %X, C2
+%r = or %cmp1, %cmp2
+=>
+%r = true
+
 Name: AndOrXor:2063
 %op0 = xor %x, C1
 %r = or %op0, C
@@ -49,6 +420,12 @@ Name: AndOrXor:2367
 %i = or %A, %op1
 %r = or %i, C1
 
+Name: AndOrXor:2453
+%op0 = icmp slt %x, %y
+%r = xor %op0, -1
+=>
+%r = icmp sge %x, %y
+
 Name: AndOrXor:2595
 %op0 = and %a, %b
 %op1 = or %a, %b
@@ -62,4 +439,11 @@ Name: AndOrXor:2647
 %r = xor %op0, %op1
 =>
 %r = or %a, %b
+
+Name: AndOrXor:2663
+%op0 = icmp ule %a, %b
+%op1 = icmp ne %a, %b
+%r = xor %op0, %op1
+=>
+%r = icmp uge %a, %b
 
