@@ -1,0 +1,7 @@
+(set-info :status unknown)
+(declare-fun %B () (_ BitVec 17))
+(declare-fun %A () (_ BitVec 17))
+(assert
+ (let ((?x27509 (bvor %A %B)))
+ (and (distinct (bvor (bvand %A %B) (bvxor %A %B)) ?x27509) true)))
+(check-sat)

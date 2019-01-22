@@ -1,0 +1,10 @@
+
+(declare-fun C () (_ BitVec 64))
+(declare-fun %Y () (_ BitVec 64))
+(declare-fun C1 () (_ BitVec 64))
+(declare-fun |ana_isPowerOf2(abs(C))| () (_ BitVec 1))
+(declare-fun termITE_1 () (_ BitVec 64))
+(assert (and (bvslt C (_ bv0 64)) (not (= (bvadd (bvmul C %Y) (bvadd (bvmul C C1) (bvadd (bvmul %Y termITE_1) (bvmul C1 termITE_1)))) (_ bv0 64))) (not (= termITE_1 (_ bv0 64)))))
+(assert (and (bvslt C (_ bv0 64)) (not (= (bvadd (bvmul C %Y) (bvadd (bvmul C C1) (bvadd (bvmul %Y termITE_1) (bvmul C1 termITE_1)))) (_ bv0 64))) (not (= termITE_1 (_ bv0 64))) (= (bvand termITE_1 (bvadd termITE_1 (_ bv18446744073709551615 64))) (_ bv0 64))))
+(assert (ite (not (bvslt C (_ bv0 64))) (= termITE_1 C) (= termITE_1 (bvneg C))))
+(check-sat)

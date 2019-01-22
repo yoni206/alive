@@ -1,0 +1,10 @@
+(set-info :status unknown)
+(declare-fun mem0 () (_ BitVec 8))
+(declare-fun C2 () (_ BitVec 52))
+(declare-fun C1 () (_ BitVec 52))
+(assert
+ (let (($x521 (and (distinct mem0 mem0) true)))
+ (let (($x10269 (= C1 C2)))
+ (let (($x9514 (bvsle C1 C2)))
+ (and $x9514 $x10269 $x521)))))
+(check-sat)

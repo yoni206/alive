@@ -1,0 +1,23 @@
+Name: muldivrem:203
+Pre: C < 0 && isPowerOf2(abs(C))
+%Op0 = add %Y, C1
+%r = mul %Op0, C
+=>
+%sub = sub -C1, %Y
+%r = mul %sub, abs(C)
+
+Name: muldivrem:229
+%Op0 = add %X, C1
+%r = mul %Op0, %Op1
+=>
+%mul = mul C1, %Op1
+%tmp = mul %X, %Op1
+%r = add %tmp, %mul
+
+Name: muldivrem:239
+%a = sub 0, %X
+%b = sub 0, %Y
+%r = mul %a, %b
+=>
+%r = mul %X, %Y
+

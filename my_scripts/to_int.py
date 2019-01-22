@@ -1,3 +1,4 @@
+import subprocess
 import sys
 import os
 import re
@@ -20,15 +21,20 @@ alive_sub.pop('#b0111', None)
 alive_sub.pop('(BitVec 4)', None)
 alive_sub['bvudiv'] = "intudivtotal k"
 alive_sub['bvurem'] = "intmodtotal k"
-alive_sub['(_ bv0 1)'] = "false"
-alive_sub['(_ bv1 1)'] = "true"
-alive_sub['(_ BitVec 1)'] = "Bool"
+#alive_sub['(_ bv0 1)'] = "false"
+#alive_sub['(_ bv1 1)'] = "true"
+#alive_sub['(_ BitVec 1)'] = "Bool"
 
-def main(dir_of_bv_smt, dir_of_int_smt, dir_of_templates):
+def main(dir_of_bv_smt, dir_of_int_smt, dir_of_templates, filter_file):
     templates_files = [f for f in os.listdir(dir_of_templates) if not f.startswith(".")]
-    opt_map = gen_map(dir_of_bv_smt, dir_of_int_smt, dir_of_templates)
+    opt_map = gen_map(dir_of_bv_smt, dir_of_int_smt, dir_of_templates, filter_file)
     try:
       os.mkdir(dir_of_int_smt)
+    except FileExistsError:
+        pass
+
+    try:
+      os.mkdir("tmp")
     except FileExistsError:
         pass
     #we generate an int file for every template, optimization and reason. The specific source bv file is chosen by `pick`
@@ -45,16 +51,25 @@ def main(dir_of_bv_smt, dir_of_int_smt, dir_of_templates):
         t_path = dir_of_templates + "/" + t_f
         template_content = get_template_content_and_filter(t_path)
         for opt_name in opt_map:
-            print("panda", t_f, opt_name)
             for reason in REASONS:
                 files = opt_map[opt_name][reason]
                 if len(files) != 0:
                     f = pick(files)
-                    bv_path = dir_of_bv_smt + "/" + f
-                    bv_content = get_str_from_file(bv_path)
+                    bv_content = get_bv_content(dir_of_bv_smt, f)
                     generate_bounded_benchmark(template_content, bv_content, t_f, f, dir_of_int_smt, template_name)
                     generate_unbounded_benchmark(template_content, bv_content, t_f, f, dir_of_int_smt, template_name)
 
+def get_bv_content(d, f):
+    bv_path = d + "/" + f
+    tmp_path = "tmp/" + f
+    command = ["cvc4", "-qqqq", "--bv-to-bool", "--preprocess-only", "--dump=assertions", bv_path]
+    result_object = subprocess.run(command, stdout=subprocess.PIPE)
+    result_string = "\n".join([line for line in result_object.stdout.decode('utf-8').splitlines() if not line.startswith("(set-") and not line.startswith("(meta-")])
+    with open(tmp_path, "w") as myfile:
+        myfile.write(result_string)
+    return result_string
+
+    
 
 def generate_bounded_benchmark(template_content, int_content, t_f, f, dir_of_int_smt, template_name):
     generate_benchmark(template_content, int_content, t_f, f, dir_of_int_smt, template_name, True)
@@ -80,11 +95,15 @@ def get_opt_name(f):
     return l[0]
 
 #generates map from opt name to reason to all files
-def gen_map(dir_of_bv_smt, dir_of_int_smt, dir_of_templates):
+def gen_map(dir_of_bv_smt, dir_of_int_smt, dir_of_templates, filter_file):
+    with open(filter_file, 'r') as myfile:
+        filtered_opts = [l.strip() for l in myfile.readlines()]
     bv_smt_files =  [f for f in os.listdir(dir_of_bv_smt) if not f.startswith(".")]
     opt_names = set([get_opt_name(f) for f in bv_smt_files])
+    filtered_opt_names = [n for n in opt_names if n in filtered_opts]
     result = {}
-    for opt_name in opt_names:
+    for opt_name in filtered_opt_names:
+        print("panda", opt_name)
         result[opt_name] = {}
         for reason in REASONS:
             prefix = opt_name + "_" + reason + "_"
@@ -151,15 +170,18 @@ def replace_bv_constants(s):
 def replace_minus_ones(s):
     consts = re.findall(r"\(_ bv\d+ \d+\)", s)
     #ignore zeros and ones
-    consts = [c for c in consts if "bv0 " not in c and "bv1" not in c]
+    consts = [c for c in consts if "bv0 " not in c and "bv1 " not in c]
     #only one such const
     consts = set(consts)
-    assert(len(consts) == 1)
-    const = list(consts)[0]
-    #indeed minus 1
-    numeral, width = verify_stuff.get_numeral_and_width_from_const(const)
-    assert(2 ** width -1 == numeral)
-    return re.sub(const, "(intmax k)", s)
+    if len(consts) != 0:
+        assert(len(consts) == 1)
+        const = list(consts)[0]
+        #indeed minus 1
+        numeral, width = verify_stuff.get_numeral_and_width_from_const(const)
+        assert(2 ** width -1 == numeral)
+        return re.sub(const, "intmax k", s)
+    else:
+        return s
 
 #changes (declare-fun ... BV ) to declare-fun Int
 # if the fun is not a constant, fail
@@ -202,11 +224,12 @@ def replace_bv_functions(s):
 
 if __name__ == "__main__":
     if len(sys.argv) < 4:
-        print('arg1: dir of bv smt\narg2: dir of int smt\narg3: dir of templates')
+        print('arg1: dir of bv smt\narg2: dir of int smt\narg3: dir of templates\narg4: filter file')
         sys.exit(1)
     dir_of_bv_smt = sys.argv[1]
     dir_of_int_smt = sys.argv[2]
     dir_of_templates = sys.argv[3]
-    main(dir_of_bv_smt, dir_of_int_smt, dir_of_templates)
+    filter_file = sys.argv[4]
+    main(dir_of_bv_smt, dir_of_int_smt, dir_of_templates, filter_file)
 
 

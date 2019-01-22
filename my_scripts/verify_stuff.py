@@ -12,7 +12,7 @@ REASONS = ["mem", "poison", "undef", "values"]
 def main(smt_dir):
     files = [f for f in os.listdir(smt_dir) if not f.startswith(".")]
     #TODO for now i am skipping mem checks, because they are supposed to be trivial. Are they?
-    files = [f for f in files if not f.endswith("_mem.smt2")]
+    files = [f for f in files if "_mem_" not in f]
     opt_names = set([f[0:f.find("_")] for f in files])
     stats = {}
     global_stats = {}
@@ -196,6 +196,7 @@ def uniq(l):
 
 #local checks for each bitwidth of an optimization (e.g. no certain operations)
 def do_checks(path):
+    print("panda", path)
     failures = []
     with open(path, 'r') as my_file:
         content = "".join(my_file.readlines())
@@ -233,7 +234,10 @@ def bv_const_ok(content):
 
 def is_const_ok(e):
     numeral, width = get_numeral_and_width_from_const(e)
-    return is_zero(numeral) or is_one(numeral) or is_minusone(numeral, width) or is_width(numeral, width)
+    result = is_zero(numeral) or is_one(numeral) or is_minusone(numeral, width) or is_width(numeral, width)
+    if result and is_minusone(numeral, width) and not is_one(numeral):
+        print("panda constok", e)
+    return result
 
 def is_width(n, w):
     return n == w
@@ -275,8 +279,10 @@ def check_same_width(content):
     all_widths = set([])
     all_widths.update(bitvec_consts_widths)
     all_widths.update(bitvec_types_widths)
-    return len(all_widths) <= 1 or (len(all_widths) == 2 and 1 in all_widths)
-
+    result = len(all_widths) <= 1 or (len(all_widths) == 2 and 1 in all_widths)
+    if not result:
+        print(all_widths)
+    return result
 #returns a set. If (_ BitVec n) is in content, n is in the set.
 def get_bv_types_widths(content):
     result = set([])
@@ -284,8 +290,6 @@ def get_bv_types_widths(content):
     for expr in bv_type_exprs:
         n = get_width(expr)
         result.add(n)
-        if n == 1:
-            print("panda width 1", expr)
     return result
 
 #returns a list of all (_ BitVec n) in the content
@@ -303,8 +307,6 @@ def get_bv_consts_widths(content):
     for expr in bv_const_exprs:
         n = get_width(expr)
         result.add(n)
-        if n == 1:
-            print("panda width 1", expr)
     return result
 
 #returns a list of all (_ bv* n) in the content
