@@ -439,6 +439,6 @@ true
 (assert (everything_is_ok_for k C1))
 
 
-(assert (let ((_let_0 (intslt k %X C2))) (and (intslt k C1 C2) (not (= (or _let_0 (intslt k %X C1)) _let_0)))))
-(assert (intslt k C1 C2))
+(assert (let ((_let_0 (intslt k %X C2))) (and (intslt k C1 C2) (not (= (or (intslt k %X C1) _let_0) _let_0)))))
+(assert true)
 (check-sat)

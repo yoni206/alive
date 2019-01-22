@@ -54,7 +54,7 @@ def main(dir_of_bv_smt, dir_of_int_smt, dir_of_templates, filter_file):
             for reason in REASONS:
                 files = opt_map[opt_name][reason]
                 if len(files) != 0:
-                    f = pick(files)
+                    f = pick(dir_of_bv_smt,files)
                     bv_content = get_bv_content(dir_of_bv_smt, f)
                     generate_bounded_benchmark(template_content, bv_content, t_f, f, dir_of_int_smt, template_name)
                     generate_unbounded_benchmark(template_content, bv_content, t_f, f, dir_of_int_smt, template_name)
@@ -62,14 +62,27 @@ def main(dir_of_bv_smt, dir_of_int_smt, dir_of_templates, filter_file):
 def get_bv_content(d, f):
     bv_path = d + "/" + f
     tmp_path = "tmp/" + f
+    result_string = do_bv_to_bool(bv_path, tmp_path)
+    return result_string
+
+def no_pp(bv_path, tmp_path):
+    with open(bv_path, 'r') as myfile:
+        content = "\n".join([l.strip() for l in myfile.readlines()])
+    with open(tmp_path, 'w') as myfile:
+        myfile.write(content)
+    return content
+
+def do_bv_to_bool(bv_path, bool_path):
+    return do_cvc4_bv_to_bool(bv_path, bool_path)
+
+def do_cvc4_bv_to_bool(bv_path, bool_path):
     command = ["cvc4", "-qqqq", "--bv-to-bool", "--preprocess-only", "--dump=assertions", bv_path]
     result_object = subprocess.run(command, stdout=subprocess.PIPE)
     result_string = "\n".join([line for line in result_object.stdout.decode('utf-8').splitlines() if not line.startswith("(set-") and not line.startswith("(meta-")])
-    with open(tmp_path, "w") as myfile:
+    with open(bool_path, "w") as myfile:
         myfile.write(result_string)
     return result_string
 
-    
 
 def generate_bounded_benchmark(template_content, int_content, t_f, f, dir_of_int_smt, template_name):
     generate_benchmark(template_content, int_content, t_f, f, dir_of_int_smt, template_name, True)
@@ -87,8 +100,20 @@ def generate_benchmark(template_content, bv_content, t_f, f, dir_of_int_smt, tem
         filepath = dir_of_int_smt + "/unbounded/" + template_name + "/" + filename
     save_content_to_file(content, filepath)
 
-def pick(l):
-    return l[0]
+#current strategy is to pick the one with bitwidth 4.
+def pick(dir_of_bv_smt, files):
+    files_to_contents = {}
+    for f in files:
+        path = dir_of_bv_smt + "/" + f
+        print("panda", path)
+        with open(path, 'r') as myfile:
+            content = "\n".join([l.strip() for l in myfile.readlines()])
+        files_to_contents[f] = content
+    have_four = [f for f in files if "(_ BitVec 4)" in files_to_contents[f]]
+    if len(have_four) != 1:
+        print("panda have_four", len(have_four))
+        assert(False)
+    return have_four[0]
 
 def get_opt_name(f):
     l = f.split("_")
@@ -106,6 +131,7 @@ def gen_map(dir_of_bv_smt, dir_of_int_smt, dir_of_templates, filter_file):
         print("panda", opt_name)
         result[opt_name] = {}
         for reason in REASONS:
+            print("panda", reason)
             prefix = opt_name + "_" + reason + "_"
             result[opt_name][reason] = [f for f in bv_smt_files if f.startswith(prefix)]
     return result

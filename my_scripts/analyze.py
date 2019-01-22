@@ -8,15 +8,13 @@ import utils
 
 def main(results_dir, output_file):
     raw = get_df(results_dir)
-    print(raw)
     opt_results = agg_opt(raw)
+    print(opt_results)
 
 def agg_opt(df):
     grouped = df.groupby(['opt', 'reason'])
     agged = grouped["proved"].agg([agg_has_true]).reset_index()
-    print(agged.head())
     piv = agged.pivot(index='opt', columns='reason', values='agg_has_true')
-    print(piv)
     return piv
 
 def agg_all_true(l):
@@ -32,7 +30,6 @@ def get_df(results_dir):
     dfs = get_dfs(results_dir)
     commands = [c for c in dfs[pick(list(dfs.keys()))].columns.values if c != "filename"]
     for encoding in dfs:
-        print(encoding)
         df = dfs[encoding]
         df["encoding"] = encoding
         df["opt"] = df.filename.apply(lambda x: x.split("_")[1])

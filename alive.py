@@ -89,9 +89,9 @@ def z3_solver_to_smtlib(s):
   _a = (Ast * size)()
   for k in range(size):
     _a[k] = a[k].as_ast()
-
-  return Z3_benchmark_to_smtlib_string(a[size].ctx_ref(), None, None, None, '',
+  res = Z3_benchmark_to_smtlib_string(a[size].ctx_ref(), None, None, None, '',
                                        size, _a,  a[size].as_ast())
+  return res
 
 
 def gen_benchmark(s, opt_name, index, opt_reason):
