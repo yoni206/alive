@@ -1,0 +1,9 @@
+(set-info :status unknown)
+(declare-fun |ana_computeKnownZeroBits(%y)| () (_ BitVec 19))
+(declare-fun |ana_computeKnownZeroBits(%x)| () (_ BitVec 19))
+(declare-fun %y () (_ BitVec 19))
+(declare-fun %x () (_ BitVec 19))
+(assert
+ (let (($x3387 (= (bvor |ana_computeKnownZeroBits(%x)| |ana_computeKnownZeroBits(%y)|) (_ bv524287 19))))
+ (and (= (bvand |ana_computeKnownZeroBits(%x)| %x) (_ bv0 19)) (= (bvand |ana_computeKnownZeroBits(%y)| %y) (_ bv0 19)) $x3387 false)))
+(check-sat)

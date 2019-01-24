@@ -9,7 +9,7 @@ import os
 
 REASONS = ["mem", "poison", "undef", "values"]
 
-def main(smt_dir):
+def main(smt_dir, output_file):
     files = [f for f in os.listdir(smt_dir) if not f.startswith(".")]
     #TODO for now i am skipping mem checks, because they are supposed to be trivial. Are they?
     files = [f for f in files if "_mem_" not in f]
@@ -26,13 +26,15 @@ def main(smt_dir):
             path = smt_dir + "/" + f
             failures = do_checks(path)
             stats[opt_name][f].extend(failures)
-    analysis(stats, global_stats)
+    analysis(stats, global_stats, output_file)
 
-def analysis(stats, global_stats):
+def analysis(stats, global_stats, output_file):
     #which opts are ok?
+    ok_opts = []
     for opt_name in stats:
         if is_opt_ok(stats, global_stats, opt_name):
             print(opt_name, "; OK")
+            ok_opts.append(opt_name)
         else:
             print(opt_name, "; FAIL")
     #how many opts does it limitation block?
@@ -56,13 +58,19 @@ def analysis(stats, global_stats):
             else:
                 global_counters[reason] = 1
     print(global_counters)
+    with open(output_file, "w") as myfile:
+        myfile.write("\n".join([o.strip() for o in ok_opts]))
         
 
 def is_opt_ok(stats, global_stats, opt_name):
     failures = []
     for f in stats[opt_name]:
         failures.extend(stats[opt_name][f])
-    return len(failures) == 0 and len(global_stats[opt_name]) == 0
+    result = len(failures) == 0 and len(global_stats[opt_name]) == 0
+    if not result:
+        print("panda 1 ", opt_name, failures)
+        print("panda 2 ", opt_name, global_stats[opt_name])
+    return result
 
 
 def unification(opt_name, files, smt_dir):
@@ -196,7 +204,6 @@ def uniq(l):
 
 #local checks for each bitwidth of an optimization (e.g. no certain operations)
 def do_checks(path):
-    print("panda", path)
     failures = []
     with open(path, 'r') as my_file:
         content = "".join(my_file.readlines())
@@ -204,6 +211,7 @@ def do_checks(path):
     do_check(content, path, failures, bv_const_ok)
     do_check(content, path, failures, no_extend)
     do_check(content, path, failures, no_extract)
+    do_check(content, path, failures, no_ana)
     if "mem" in path:
         do_check(content, path, failures, check_mem0)
     return failures
@@ -214,6 +222,9 @@ def do_check(content, path, failures, check_func):
     b = check_func(content)
     if b is False:
         failures.append(check_func.__name__)
+
+def no_ana(content):
+    return "|ana_" not in content
 
 def no_extract(content):
     return "_ extract " not in content
@@ -235,8 +246,6 @@ def bv_const_ok(content):
 def is_const_ok(e):
     numeral, width = get_numeral_and_width_from_const(e)
     result = is_zero(numeral) or is_one(numeral) or is_minusone(numeral, width) or is_width(numeral, width)
-    if result and is_minusone(numeral, width) and not is_one(numeral):
-        print("panda constok", e)
     return result
 
 def is_width(n, w):
@@ -272,16 +281,14 @@ def get_numeral_and_width_from_const(e):
 def check_mem0(content):
     return "distinct mem0 mem0" in content
 
-#ignores bitwidth of width 1
+#ignores bitwidth of width 1 in constants
 def check_same_width(content):
     bitvec_consts_widths = get_bv_consts_widths(content)
     bitvec_types_widths = get_bv_types_widths(content)
     all_widths = set([])
     all_widths.update(bitvec_consts_widths)
     all_widths.update(bitvec_types_widths)
-    result = len(all_widths) <= 1 or (len(all_widths) == 2 and 1 in all_widths)
-    if not result:
-        print(all_widths)
+    result = len(all_widths) <= 1 or (len(all_widths) == 2 and 1 in all_widths and len(bitvec_types_widths) <= 1)
     return result
 #returns a set. If (_ BitVec n) is in content, n is in the set.
 def get_bv_types_widths(content):
@@ -331,8 +338,9 @@ def find_2nd(string, substring):
    return string.find(substring, string.find(substring) + 1)
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("arg1: dir of smt files")
+    if len(sys.argv) < 3:
+        print("arg1: dir of smt files\narg2: output_file")
         sys.exit(1)
     smt_dir = sys.argv[1]
-    main(smt_dir)
+    output_file = sys.argv[2]
+    main(smt_dir, output_file)

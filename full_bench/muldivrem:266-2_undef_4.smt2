@@ -1,0 +1,9 @@
+(set-info :status unknown)
+(declare-fun %X () (_ BitVec 8))
+(declare-fun %Y () (_ BitVec 8))
+(assert
+ (let (($x8863 (= (bvmul (bvsdiv %X %Y) %Y) %X)))
+ (let (($x4620 (or (and (distinct %X (_ bv128 8)) true) (and (distinct %Y (_ bv255 8)) true))))
+ (let (($x296 (and (distinct %Y (_ bv0 8)) true)))
+ (and $x296 $x4620 $x8863 false)))))
+(check-sat)

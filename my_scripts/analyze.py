@@ -9,7 +9,7 @@ import utils
 def main(results_dir, output_file):
     raw = get_df(results_dir)
     opt_results = agg_opt(raw)
-    print(opt_results)
+    opt_results.to_csv(output_file)
 
 def agg_opt(df):
     grouped = df.groupby(['opt', 'reason'])

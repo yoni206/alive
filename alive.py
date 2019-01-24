@@ -123,13 +123,13 @@ tactic = AndThen(
   Cond(Probe('is-qfbv'), Tactic('qfbv'), Tactic('bv'))
 )
 
-correct_exprs = {}
+#correct_exprs = {}
 def check_expr(qvars, expr, error, opt_name, index, opt_reason):
   expr = mk_forall(qvars, mk_and(expr))
   id = expr.get_id()
-  if id in correct_exprs:
-    return
-  correct_exprs[id] = expr
+#  if id in correct_exprs:
+#    return
+#  correct_exprs[id] = expr
 
   s = tactic.solver()
   s.add(expr)

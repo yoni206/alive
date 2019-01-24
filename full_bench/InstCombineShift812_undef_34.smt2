@@ -1,0 +1,9 @@
+(set-info :status unknown)
+(declare-fun C () (_ BitVec 36))
+(declare-fun |ana_MaskedValueIsZero(%Op0, ((1 << C) - 1))| () (_ BitVec 1))
+(declare-fun %Op0 () (_ BitVec 36))
+(assert
+ (let (($x21404 (= |ana_MaskedValueIsZero(%Op0, ((1 << C) - 1))| (_ bv1 1))))
+ (let (($x11727 (bvult C (_ bv36 36))))
+ (and $x11727 (=> $x21404 (= (bvand %Op0 (bvsub (bvshl (_ bv1 36) C) (_ bv1 36))) (_ bv0 36))) $x21404 (not $x11727)))))
+(check-sat)

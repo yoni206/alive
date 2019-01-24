@@ -1,6 +1,0 @@
-(set-info :status unknown)
-(declare-fun %b () (_ BitVec 22))
-(declare-fun %a () (_ BitVec 22))
-(assert
- (and (distinct (bvadd (bvsub (_ bv0 22) %a) (bvsub (_ bv0 22) %b)) (bvsub (_ bv0 22) (bvadd %a %b))) true))
-(check-sat)

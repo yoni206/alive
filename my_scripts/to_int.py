@@ -7,6 +7,7 @@ import gen_translations
 import utils
 import verify_stuff
 
+CVC4_BV_TO_BOOL_PATH = "/home/yoniz/git/CVC4/bv_to_bool_build/bin/./cvc4"
 REASONS = verify_stuff.REASONS
 
 ic_sub = gen_translations.substitutions
@@ -37,6 +38,8 @@ def main(dir_of_bv_smt, dir_of_int_smt, dir_of_templates, filter_file):
       os.mkdir("tmp")
     except FileExistsError:
         pass
+
+
     #we generate an int file for every template, optimization and reason. The specific source bv file is chosen by `pick`
     for t_f in templates_files:
         template_name = utils.get_file_or_dir_name_no_ext(t_f)
@@ -52,6 +55,9 @@ def main(dir_of_bv_smt, dir_of_int_smt, dir_of_templates, filter_file):
         template_content = get_template_content_and_filter(t_path)
         for opt_name in opt_map:
             for reason in REASONS:
+                if reason == "mem":
+                    continue
+                    #TODO ignoring memory!!!
                 files = opt_map[opt_name][reason]
                 if len(files) != 0:
                     f = pick(dir_of_bv_smt,files)
@@ -76,7 +82,7 @@ def do_bv_to_bool(bv_path, bool_path):
     return do_cvc4_bv_to_bool(bv_path, bool_path)
 
 def do_cvc4_bv_to_bool(bv_path, bool_path):
-    command = ["cvc4", "-qqqq", "--bv-to-bool", "--preprocess-only", "--dump=assertions", bv_path]
+    command = [CVC4_BV_TO_BOOL_PATH, "-qqqq", "--bv-to-bool", "--preprocess-only", "--dump=assertions", bv_path]
     result_object = subprocess.run(command, stdout=subprocess.PIPE)
     result_string = "\n".join([line for line in result_object.stdout.decode('utf-8').splitlines() if not line.startswith("(set-") and not line.startswith("(meta-")])
     with open(bool_path, "w") as myfile:
@@ -105,15 +111,16 @@ def pick(dir_of_bv_smt, files):
     files_to_contents = {}
     for f in files:
         path = dir_of_bv_smt + "/" + f
-        print("panda", path)
         with open(path, 'r') as myfile:
             content = "\n".join([l.strip() for l in myfile.readlines()])
         files_to_contents[f] = content
     have_four = [f for f in files if "(_ BitVec 4)" in files_to_contents[f]]
-    if len(have_four) != 1:
-        print("panda have_four", len(have_four))
-        assert(False)
-    return have_four[0]
+    if len(have_four) == 0:
+        assert(len([f for f in files if "(_ BitVec" in files_to_contents[f]]) == 0)
+        return files[0]
+    else:
+        assert(len(have_four) == 1)
+        return have_four[0]
 
 def get_opt_name(f):
     l = f.split("_")
@@ -128,10 +135,8 @@ def gen_map(dir_of_bv_smt, dir_of_int_smt, dir_of_templates, filter_file):
     filtered_opt_names = [n for n in opt_names if n in filtered_opts]
     result = {}
     for opt_name in filtered_opt_names:
-        print("panda", opt_name)
         result[opt_name] = {}
         for reason in REASONS:
-            print("panda", reason)
             prefix = opt_name + "_" + reason + "_"
             result[opt_name][reason] = [f for f in bv_smt_files if f.startswith(prefix)]
     return result
