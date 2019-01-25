@@ -8,17 +8,27 @@ import utils
 
 def main(results_dir, output_file):
     raw = get_df(results_dir)
+    raw.to_csv("~/tmp_raw.csv")
     opt_results = agg_opt(raw)
     opt_results.to_csv(output_file)
 
 def agg_opt(df):
     grouped = df.groupby(['opt', 'reason'])
     agged = grouped["proved"].agg([agg_has_true]).reset_index()
+    agged.to_csv("~/tmp_agged.csv")
     piv = agged.pivot(index='opt', columns='reason', values='agg_has_true')
+    piv.to_csv("~/tmp_piv.csv")
+    reasons = [r for r in piv.columns.values if r != "opt"]
+    piv['OK'] = piv.apply(lambda row: agg_all_true([row[reason] for reason in reasons]), 1)
+    piv = piv.drop(reasons, axis=1)
     return piv
 
 def agg_all_true(l):
-    values = l.tolist()
+    try:
+        values = l.tolist()
+    except AttributeError:
+        #This function may get a list or a row
+        values = l
     return set(values) == set([True])
 
 def agg_has_true(l):
@@ -51,7 +61,7 @@ def get_dfs(results_dir):
         dfs[encoding] = ps.read_csv(path)
     return dfs
 
-
+#mini changes to the files in d so that they are in csv format
 def to_csv(d):
     files = [f for f in os.listdir(d) if not f.startswith(".")]
     for f in files:
