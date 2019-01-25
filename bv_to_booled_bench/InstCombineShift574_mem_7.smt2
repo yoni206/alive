@@ -1,0 +1,7 @@
+
+(declare-fun mem0 () (_ BitVec 8))
+(declare-fun C2 () (_ BitVec 9))
+(declare-fun C () (_ BitVec 9))
+(assert (and (bvsge ((_ zero_extend 23) (bvadd C C2)) (_ bv9 32)) (not (= mem0 mem0))))
+(assert true)
+(check-sat)

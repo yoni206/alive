@@ -7,7 +7,6 @@ import gen_translations
 import utils
 import verify_stuff
 
-CVC4_BV_TO_BOOL_PATH = "/home/yoniz/git/CVC4/bv_to_bool_build/bin/./cvc4"
 REASONS = verify_stuff.REASONS
 
 ic_sub = gen_translations.substitutions
@@ -68,27 +67,15 @@ def main(dir_of_bv_smt, dir_of_int_smt, dir_of_templates, filter_file):
 def get_bv_content(d, f):
     bv_path = d + "/" + f
     tmp_path = "tmp/" + f
-    result_string = do_bv_to_bool(bv_path, tmp_path)
+    result_string = write_and_return(bv_path, tmp_path)
     return result_string
 
-def no_pp(bv_path, tmp_path):
+def write_and_return(bv_path, tmp_path):
     with open(bv_path, 'r') as myfile:
         content = "\n".join([l.strip() for l in myfile.readlines()])
     with open(tmp_path, 'w') as myfile:
         myfile.write(content)
     return content
-
-def do_bv_to_bool(bv_path, bool_path):
-    return do_cvc4_bv_to_bool(bv_path, bool_path)
-
-def do_cvc4_bv_to_bool(bv_path, bool_path):
-    command = [CVC4_BV_TO_BOOL_PATH, "-qqqq", "--bv-to-bool", "--preprocess-only", "--dump=assertions", bv_path]
-    result_object = subprocess.run(command, stdout=subprocess.PIPE)
-    result_string = "\n".join([line for line in result_object.stdout.decode('utf-8').splitlines() if not line.startswith("(set-") and not line.startswith("(meta-")])
-    with open(bool_path, "w") as myfile:
-        myfile.write(result_string)
-    return result_string
-
 
 def generate_bounded_benchmark(template_content, int_content, t_f, f, dir_of_int_smt, template_name):
     generate_benchmark(template_content, int_content, t_f, f, dir_of_int_smt, template_name, True)
@@ -195,24 +182,32 @@ def replace_bv_constants(s):
     result = s
     result = re.sub(r"\(_ bv0 \d+\)", "0", result)
     result = re.sub(r"\(_ bv1 \d+\)", "1", result)
-    result = replace_minus_ones(result)
+    result = replace_minus_ones_and_widths(result)
     return result
 
-def replace_minus_ones(s):
+def replace_minus_ones_and_widths(s):
+    result = s
     consts = re.findall(r"\(_ bv\d+ \d+\)", s)
     #ignore zeros and ones
     consts = [c for c in consts if "bv0 " not in c and "bv1 " not in c]
     #only one such const
     consts = set(consts)
     if len(consts) != 0:
-        assert(len(consts) == 1)
-        const = list(consts)[0]
-        #indeed minus 1
-        numeral, width = verify_stuff.get_numeral_and_width_from_const(const)
-        assert(2 ** width -1 == numeral)
-        return re.sub(const, "intmax k", s)
+        assert(len(consts) <= 2)
+        for const in consts:
+            print("panda", const)
+            numeral, width = verify_stuff.get_numeral_and_width_from_const(const)
+            if (2 ** width -1 == numeral):
+                result = result.replace(const, "(intmax k)")
+            elif numeral == width:
+                result = result.replace(const, "k")
+            else:
+                assert(False)
+        return result
     else:
         return s
+
+
 
 #changes (declare-fun ... BV ) to declare-fun Int
 # if the fun is not a constant, fail
@@ -254,7 +249,7 @@ def replace_bv_functions(s):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 4:
+    if len(sys.argv) < 5:
         print('arg1: dir of bv smt\narg2: dir of int smt\narg3: dir of templates\narg4: filter file')
         sys.exit(1)
     dir_of_bv_smt = sys.argv[1]

@@ -1,0 +1,6 @@
+
+(declare-fun %b () (_ BitVec 3))
+(declare-fun %a () (_ BitVec 3))
+(assert false)
+(assert true)
+(check-sat)

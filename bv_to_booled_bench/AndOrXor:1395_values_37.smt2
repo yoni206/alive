@@ -1,0 +1,6 @@
+
+(declare-fun %b () (_ BitVec 41))
+(declare-fun %a () (_ BitVec 1))
+(assert (not (= (bvand (bvxor ((_ sign_extend 40) %a) (_ bv2199023255551 41)) %b) (ite (= %a (_ bv1 1)) (_ bv0 41) %b))))
+(assert true)
+(check-sat)

@@ -33,10 +33,7 @@ def analysis(stats, global_stats, output_file):
     ok_opts = []
     for opt_name in stats:
         if is_opt_ok(stats, global_stats, opt_name):
-            print(opt_name, "; OK")
             ok_opts.append(opt_name)
-        else:
-            print(opt_name, "; FAIL")
     #how many opts does it limitation block?
     counters = {}
     for opt_name in stats:
@@ -67,9 +64,6 @@ def is_opt_ok(stats, global_stats, opt_name):
     for f in stats[opt_name]:
         failures.extend(stats[opt_name][f])
     result = len(failures) == 0 and len(global_stats[opt_name]) == 0
-    if not result:
-        print("panda 1 ", opt_name, failures)
-        print("panda 2 ", opt_name, global_stats[opt_name])
     return result
 
 
@@ -120,7 +114,8 @@ def unify_all(opt_name, files, smt_dir, reason):
     canonized_contents = canonize_contents(contents)
     canon_set = set(canonized_contents)
     if len(canon_set) > 1:
-        #print("\n\n".join(list(canon_set)))
+        if "ift239" in opt_name: #panda
+            print("panda", opt_name, reason, "\n".join(canon_set))
         return False
     else:
         return True
@@ -131,7 +126,9 @@ def get_contents(smt_dir, files):
         path = smt_dir +"/" + f
         with open(path, 'r') as my_file:
             content = "".join(my_file.readlines())
-        result.append(content)
+        if "(_ BitVec 1)" not in content and "(_ BitVec 2)" not in content:
+            #TODO we check unification only for the rest. 1 and 2 have corner cases.
+            result.append(content)
     return result
 
 def canonize_contents(contents):
@@ -165,12 +162,20 @@ def canonize_vars(content):
 
 def canonize_consts(content):
     result = content
-    p = re.compile('\(_ bv\d+ \d+\)')
-    all_matches = p.findall(content)
+    all_matches = get_bv_const_exprs(content)
     all_matches = uniq(all_matches)
     for m in all_matches:
-        c = get_const(m)
-        new_const = "(_ bv" + c + " 1111)"
+        numeral, width = get_numeral_and_width_from_const(m)
+        if is_one(numeral):
+            new_const = "(_ bv1 1111)"
+        elif is_zero(numeral):
+            new_const = "(_ bv0 1111)"
+        elif is_minusone(numeral, width):
+            new_const = "(_ bvMINUSONE 1111)"
+        elif is_width(numeral, width):
+            new_const = "(_ bvWIDTH 1111)"
+        else:
+            new_const = "(_ bv" + str(numeral) + " 1111)"
         result = result.replace(m, new_const)
     return result
 

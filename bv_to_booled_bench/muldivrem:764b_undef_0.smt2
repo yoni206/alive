@@ -1,0 +1,7 @@
+
+(declare-fun C1 () (_ BitVec 7))
+(declare-fun C2 () (_ BitVec 7))
+(declare-fun %X () (_ BitVec 7))
+(assert (let ((_let_0 (bvshl (_ bv1 7) C1))) (let ((_let_1 (bvshl %X C1))) (let ((_let_2 (bvudiv (ite (= ((_ extract 6 6) C2) (_ bv1 1)) (bvneg C2) C2) (ite (= ((_ extract 6 6) _let_0) (_ bv1 1)) (bvneg _let_0) _let_0)))) (let ((_let_3 (ite (xor (= ((_ extract 6 6) C2) (_ bv1 1)) (= ((_ extract 6 6) _let_0) (_ bv1 1))) (bvneg _let_2) _let_2))) (let ((_let_4 (bvurem (ite (= ((_ extract 6 6) C2) (_ bv1 1)) (bvneg C2) C2) (ite (= ((_ extract 6 6) _let_0) (_ bv1 1)) (bvneg _let_0) _let_0)))) (let ((_let_5 (bvudiv (ite (= ((_ extract 6 6) _let_1) (_ bv1 1)) (bvneg _let_1) _let_1) (ite (= ((_ extract 6 6) C2) (_ bv1 1)) (bvneg C2) C2)))) (and (bvult C1 (_ bv7 7)) (or (not (= _let_1 (_ bv64 7))) (not (= C2 (_ bv127 7)))) (= (bvashr _let_1 C1) %X) (= (bvmul (ite (xor (= ((_ extract 6 6) _let_1) (_ bv1 1)) (= ((_ extract 6 6) C2) (_ bv1 1))) (bvneg _let_5) _let_5) C2) _let_1) (= (ite (= ((_ extract 6 6) C2) (_ bv1 1)) (bvneg _let_4) _let_4) (_ bv0 7)) (not (and (or (not (= %X (_ bv64 7))) (not (= _let_3 (_ bv127 7)))) (not (= _let_3 (_ bv0 7))))) (not (= C2 (_ bv0 7))) (not (= C1 (bvsub (_ bv7 7) (_ bv1 7))))))))))))
+(assert true)
+(check-sat)

@@ -1,0 +1,7 @@
+
+(declare-fun mem0 () (_ BitVec 8))
+(declare-fun C2 () (_ BitVec 17))
+(declare-fun C1 () (_ BitVec 17))
+(assert (and (= C1 (bvneg C2)) (not (= (bvand C2 (bvshl (_ bv131071 17) (bvsub (_ bv17 17) (bvsub (bvsub (_ bv17 17) (ite (not (= ((_ extract 16 9) C2) (_ bv0 8))) (ite (not (= ((_ extract 16 13) C2) (_ bv0 4))) (ite (not (= ((_ extract 16 15) C2) (_ bv0 2))) (ite (not (= ((_ extract 16 16) C2) (_ bv0 1))) (_ bv16 17) (_ bv15 17)) (ite (not (= ((_ extract 14 14) C2) (_ bv0 1))) (_ bv14 17) (_ bv13 17))) (ite (not (= ((_ extract 12 11) C2) (_ bv0 2))) (ite (not (= ((_ extract 12 12) C2) (_ bv0 1))) (_ bv12 17) (_ bv11 17)) (ite (not (= ((_ extract 10 10) C2) (_ bv0 1))) (_ bv10 17) (_ bv9 17)))) (ite (not (= ((_ extract 8 5) C2) (_ bv0 4))) (ite (not (= ((_ extract 8 7) C2) (_ bv0 2))) (ite (not (= ((_ extract 8 8) C2) (_ bv0 1))) (_ bv8 17) (_ bv7 17)) (ite (not (= ((_ extract 6 6) C2) (_ bv0 1))) (_ bv6 17) (_ bv5 17))) (ite (not (= ((_ extract 4 3) C2) (_ bv0 2))) (ite (not (= ((_ extract 4 4) C2) (_ bv0 1))) (_ bv4 17) (_ bv3 17)) (ite (not (= ((_ extract 2 2) C2) (_ bv0 1))) (_ bv2 17) (ite (not (= ((_ extract 1 1) C2) (_ bv0 1))) (_ bv1 17) (_ bv0 17))))))) (_ bv1 17))))) (_ bv0 17))) (= (bvand C2 (bvsub C2 (_ bv1 17))) (_ bv0 17)) (not (= mem0 mem0)) (not (= C2 (_ bv0 17)))))
+(assert true)
+(check-sat)

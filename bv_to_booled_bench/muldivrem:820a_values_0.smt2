@@ -1,0 +1,6 @@
+
+(declare-fun %Op1 () (_ BitVec 9))
+(declare-fun %X () (_ BitVec 9))
+(assert (let ((_let_0 (bvudiv (ite (= ((_ extract 8 8) %X) (_ bv1 1)) (bvneg %X) %X) (ite (= ((_ extract 8 8) %Op1) (_ bv1 1)) (bvneg %Op1) %Op1)))) (let ((_let_1 (bvurem (ite (= ((_ extract 8 8) %X) (_ bv1 1)) (bvneg %X) %X) (ite (= ((_ extract 8 8) %Op1) (_ bv1 1)) (bvneg %Op1) %Op1)))) (let ((_let_2 (bvsub %X (ite (= ((_ extract 8 8) %X) (_ bv1 1)) (bvneg _let_1) _let_1)))) (let ((_let_3 (bvudiv (ite (= ((_ extract 8 8) _let_2) (_ bv1 1)) (bvneg _let_2) _let_2) (ite (= ((_ extract 8 8) %Op1) (_ bv1 1)) (bvneg %Op1) %Op1)))) (let ((_let_4 (not (= %Op1 (_ bv511 9))))) (and (or (not (= %X (_ bv256 9))) _let_4) (or (not (= _let_2 (_ bv256 9))) _let_4) (not (= %Op1 (_ bv0 9))) (not (= (ite (xor (= ((_ extract 8 8) _let_2) (_ bv1 1)) (= ((_ extract 8 8) %Op1) (_ bv1 1))) (bvneg _let_3) _let_3) (ite (xor (= ((_ extract 8 8) %X) (_ bv1 1)) (= ((_ extract 8 8) %Op1) (_ bv1 1))) (bvneg _let_0) _let_0))))))))))
+(assert true)
+(check-sat)

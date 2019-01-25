@@ -1,0 +1,9 @@
+
+(declare-fun mem0 () (_ BitVec 8))
+(declare-fun |ana_MaskedValueIsZero(%Y, (-1 << (log2(C1) + 1)))| () (_ BitVec 1))
+(declare-fun C1 () (_ BitVec 12))
+(declare-fun C2 () (_ BitVec 12))
+(declare-fun %Y () (_ BitVec 12))
+(assert (let ((_let_0 (= |ana_MaskedValueIsZero(%Y, (-1 << (log2(C1) + 1)))| (_ bv1 1)))) (and (=> _let_0 (= (bvand %Y (bvshl (_ bv4095 12) (bvadd (ite (not (= ((_ extract 11 6) C1) (_ bv0 6))) (ite (not (= ((_ extract 11 9) C1) (_ bv0 3))) (ite (not (= ((_ extract 11 11) C1) (_ bv0 1))) (_ bv11 12) (ite (not (= ((_ extract 10 10) C1) (_ bv0 1))) (_ bv10 12) (_ bv9 12))) (ite (not (= ((_ extract 8 8) C1) (_ bv0 1))) (_ bv8 12) (ite (not (= ((_ extract 7 7) C1) (_ bv0 1))) (_ bv7 12) (_ bv6 12)))) (ite (not (= ((_ extract 5 3) C1) (_ bv0 3))) (ite (not (= ((_ extract 5 5) C1) (_ bv0 1))) (_ bv5 12) (ite (not (= ((_ extract 4 4) C1) (_ bv0 1))) (_ bv4 12) (_ bv3 12))) (ite (not (= ((_ extract 2 2) C1) (_ bv0 1))) (_ bv2 12) (ite (not (= ((_ extract 1 1) C1) (_ bv0 1))) (_ bv1 12) (_ bv0 12))))) (_ bv1 12)))) (_ bv0 12))) (= C2 (bvneg C1)) _let_0 (= (bvand C1 (bvsub C1 (_ bv1 12))) (_ bv0 12)) (not (= mem0 mem0)) (not (= C1 (_ bv0 12))))))
+(assert true)
+(check-sat)

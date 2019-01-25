@@ -1,0 +1,9 @@
+
+(declare-fun C2 () (_ BitVec 14))
+(declare-fun %B () (_ BitVec 14))
+(declare-fun %A () (_ BitVec 14))
+(declare-fun C1 () (_ BitVec 14))
+(declare-fun |ana_MaskedValueIsZero(%B, ((1 << (width(C2) - countLeadingZeros(((C2 - 1) ^ C2)))) - 1))| () (_ BitVec 1))
+(assert (let ((_let_0 (= |ana_MaskedValueIsZero(%B, ((1 << (width(C2) - countLeadingZeros(((C2 - 1) ^ C2)))) - 1))| (_ bv1 1)))) (let ((_let_1 (bvor (bvsub C2 (_ bv1 14)) C2))) (let ((_let_2 (bvadd C2 (_ bv1 14)))) (let ((_let_3 (bvxor (bvsub C2 (_ bv1 14)) C2))) (and (=> _let_0 (= (bvand %B (bvsub (bvshl (_ bv1 14) (bvsub (_ bv14 14) (ite (= ((_ extract 13 13) _let_3) (_ bv1 1)) (_ bv0 14) (ite (= ((_ extract 12 12) _let_3) (_ bv1 1)) (_ bv1 14) (ite (= ((_ extract 11 11) _let_3) (_ bv1 1)) (_ bv2 14) (ite (= ((_ extract 10 10) _let_3) (_ bv1 1)) (_ bv3 14) (ite (= ((_ extract 9 9) _let_3) (_ bv1 1)) (_ bv4 14) (ite (= ((_ extract 8 8) _let_3) (_ bv1 1)) (_ bv5 14) (ite (= ((_ extract 7 7) _let_3) (_ bv1 1)) (_ bv6 14) (ite (= ((_ extract 6 6) _let_3) (_ bv1 1)) (_ bv7 14) (ite (= ((_ extract 5 5) _let_3) (_ bv1 1)) (_ bv8 14) (ite (= ((_ extract 4 4) _let_3) (_ bv1 1)) (_ bv9 14) (ite (= ((_ extract 3 3) _let_3) (_ bv1 1)) (_ bv10 14) (ite (= ((_ extract 2 2) _let_3) (_ bv1 1)) (_ bv11 14) (ite (= ((_ extract 1 1) _let_3) (_ bv1 1)) (_ bv12 14) (ite (= ((_ extract 0 0) _let_3) (_ bv1 1)) (_ bv13 14) (_ bv14 14))))))))))))))))) (_ bv1 14))) (_ bv0 14))) (= (bvand C1 C2) C2) (or (= (bvand _let_2 (bvsub _let_2 (_ bv1 14))) (_ bv0 14)) (and (= (bvand (bvadd _let_1 (_ bv1 14)) _let_1) (_ bv0 14)) _let_0 (not (= _let_1 (_ bv0 14))))) (not (= (bvand (bvadd (bvand %A C1) %B) C2) (bvand (bvadd %A %B) C2)))))))))
+(assert true)
+(check-sat)

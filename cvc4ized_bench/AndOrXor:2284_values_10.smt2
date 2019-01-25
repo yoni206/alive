@@ -1,0 +1,6 @@
+
+(declare-fun %B () (_ BitVec 14))
+(declare-fun %A () (_ BitVec 14))
+(assert (not (= (bvor %A (bvxor (bvor %A %B) (_ bv16383 14))) (bvor %A (bvxor %B (_ bv16383 14))))))
+(assert true)
+(check-sat)
