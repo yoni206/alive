@@ -1,0 +1,49 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--fmf-fun-rlv
+[runlim] argv[2]:		/tmp/zq1HkXmX.smt2
+[runlim] start:			Tue Jan 29 17:20:33 2019
+[runlim] main pid:		16916
+[runlim] sample:		7.4 time, 10.5 real, 164.6 MB
+[runlim] sample:		14.7 time, 20.5 real, 170.5 MB
+[runlim] sample:		23.5 time, 30.5 real, 190.9 MB
+[runlim] sample:		33.5 time, 40.5 real, 307.7 MB
+[runlim] sample:		43.5 time, 50.5 real, 427.6 MB
+[runlim] sample:		52.7 time, 60.5 real, 463.9 MB
+[runlim] sample:		62.7 time, 70.5 real, 467.3 MB
+[runlim] sample:		72.7 time, 80.5 real, 469.1 MB
+[runlim] sample:		81.4 time, 90.5 real, 470.9 MB
+[runlim] sample:		88.9 time, 100.5 real, 472.2 MB
+[runlim] sample:		98.2 time, 110.5 real, 481.2 MB
+[runlim] sample:		106.1 time, 120.5 real, 481.2 MB
+[runlim] sample:		115.7 time, 130.5 real, 482.2 MB
+[runlim] sample:		124.2 time, 140.5 real, 482.2 MB
+[runlim] sample:		132.9 time, 150.5 real, 690.2 MB
+[runlim] sample:		141.2 time, 160.5 real, 716.8 MB
+[runlim] sample:		150.6 time, 170.5 real, 719.3 MB
+[runlim] sample:		160.2 time, 180.5 real, 721.4 MB
+[runlim] sample:		169.9 time, 190.5 real, 775.0 MB
+[runlim] sample:		179.9 time, 200.5 real, 1064.9 MB
+[runlim] sample:		189.9 time, 210.5 real, 1420.5 MB
+[runlim] sample:		199.8 time, 220.5 real, 1498.0 MB
+[runlim] sample:		209.8 time, 230.5 real, 1498.3 MB
+[runlim] sample:		219.8 time, 240.5 real, 1498.3 MB
+[runlim] sample:		229.7 time, 250.5 real, 1574.0 MB
+[runlim] sample:		239.6 time, 260.5 real, 1574.0 MB
+[runlim] sample:		249.6 time, 270.5 real, 1583.1 MB
+[runlim] sample:		257.8 time, 280.5 real, 1586.4 MB
+[runlim] sample:		267.5 time, 290.5 real, 1586.4 MB
+[runlim] sample:		277.5 time, 300.5 real, 1586.4 MB
+[runlim] sample:		287.5 time, 310.5 real, 1586.4 MB
+[runlim] sample:		297.3 time, 320.5 real, 1586.7 MB
+[runlim] end:			Tue Jan 29 17:25:55 2019
+[runlim] status:		signal(9)
+[runlim] result:		11
+[runlim] children:		0
+[runlim] real:			322.24 seconds
+[runlim] time:			298.62 seconds
+[runlim] space:			1586.7 MB
+[runlim] samples:		3217

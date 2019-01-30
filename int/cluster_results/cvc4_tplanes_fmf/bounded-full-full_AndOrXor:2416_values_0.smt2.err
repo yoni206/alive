@@ -1,0 +1,49 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--nl-ext-tplanes
+[runlim] argv[2]:		--fmf-fun-rlv
+[runlim] argv[3]:		/tmp/R5rHUYOr.smt2
+[runlim] start:			Tue Jan 29 16:44:57 2019
+[runlim] main pid:		1340
+[runlim] sample:		8.3 time, 10.3 real, 142.6 MB
+[runlim] sample:		18.1 time, 20.3 real, 318.0 MB
+[runlim] sample:		28.1 time, 30.3 real, 374.9 MB
+[runlim] sample:		38.0 time, 40.3 real, 413.8 MB
+[runlim] sample:		48.0 time, 50.3 real, 509.0 MB
+[runlim] sample:		58.0 time, 60.3 real, 599.3 MB
+[runlim] sample:		68.0 time, 70.3 real, 857.9 MB
+[runlim] sample:		78.0 time, 80.3 real, 896.5 MB
+[runlim] sample:		88.0 time, 90.3 real, 938.0 MB
+[runlim] sample:		98.0 time, 100.3 real, 951.5 MB
+[runlim] sample:		108.0 time, 110.3 real, 952.7 MB
+[runlim] sample:		118.0 time, 120.3 real, 952.7 MB
+[runlim] sample:		128.0 time, 130.3 real, 952.7 MB
+[runlim] sample:		138.0 time, 140.3 real, 954.3 MB
+[runlim] sample:		148.1 time, 150.3 real, 954.3 MB
+[runlim] sample:		157.9 time, 160.3 real, 954.3 MB
+[runlim] sample:		166.9 time, 170.3 real, 954.3 MB
+[runlim] sample:		176.9 time, 180.3 real, 1167.4 MB
+[runlim] sample:		186.9 time, 190.3 real, 1268.2 MB
+[runlim] sample:		196.9 time, 200.3 real, 1269.8 MB
+[runlim] sample:		206.9 time, 210.3 real, 1271.6 MB
+[runlim] sample:		216.8 time, 220.3 real, 1272.9 MB
+[runlim] sample:		226.5 time, 230.3 real, 1274.4 MB
+[runlim] sample:		236.1 time, 240.3 real, 1275.4 MB
+[runlim] sample:		245.9 time, 250.3 real, 1276.7 MB
+[runlim] sample:		255.9 time, 260.3 real, 1278.0 MB
+[runlim] sample:		265.9 time, 270.3 real, 1278.8 MB
+[runlim] sample:		275.9 time, 280.3 real, 1279.6 MB
+[runlim] sample:		285.9 time, 290.3 real, 1280.6 MB
+[runlim] sample:		295.9 time, 300.3 real, 1281.4 MB
+CVC4 interrupted by SIGTERM.
+[runlim] end:			Tue Jan 29 16:50:01 2019
+[runlim] status:		out of time
+[runlim] result:		2
+[runlim] children:		0
+[runlim] real:			304.55 seconds
+[runlim] time:			300.06 seconds
+[runlim] space:			1281.9 MB
+[runlim] samples:		3042

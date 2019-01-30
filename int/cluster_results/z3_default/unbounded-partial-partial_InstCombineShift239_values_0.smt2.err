@@ -1,0 +1,46 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./z3
+[runlim] argv[1]:		/tmp/DeLZZ4Ne.smt2
+[runlim] start:			Tue Jan 29 17:25:54 2019
+[runlim] main pid:		19738
+[runlim] sample:		8.7 time, 10.2 real, 20.2 MB
+[runlim] sample:		17.4 time, 20.2 real, 22.7 MB
+[runlim] sample:		26.0 time, 30.2 real, 25.0 MB
+[runlim] sample:		34.7 time, 40.2 real, 25.0 MB
+[runlim] sample:		44.0 time, 50.2 real, 29.7 MB
+[runlim] sample:		54.0 time, 60.2 real, 29.7 MB
+[runlim] sample:		64.0 time, 70.2 real, 29.7 MB
+[runlim] sample:		73.1 time, 80.2 real, 29.7 MB
+[runlim] sample:		83.1 time, 90.2 real, 29.7 MB
+[runlim] sample:		93.1 time, 100.2 real, 29.7 MB
+[runlim] sample:		103.1 time, 110.2 real, 29.7 MB
+[runlim] sample:		113.1 time, 120.2 real, 29.7 MB
+[runlim] sample:		123.1 time, 130.2 real, 39.5 MB
+[runlim] sample:		133.1 time, 140.2 real, 39.5 MB
+[runlim] sample:		143.1 time, 150.2 real, 39.5 MB
+[runlim] sample:		153.1 time, 160.2 real, 39.5 MB
+[runlim] sample:		163.1 time, 170.2 real, 46.6 MB
+[runlim] sample:		173.1 time, 180.2 real, 46.6 MB
+[runlim] sample:		183.1 time, 190.2 real, 46.6 MB
+[runlim] sample:		193.1 time, 200.2 real, 46.6 MB
+[runlim] sample:		203.1 time, 210.2 real, 54.0 MB
+[runlim] sample:		213.1 time, 220.2 real, 54.0 MB
+[runlim] sample:		223.1 time, 230.2 real, 54.0 MB
+[runlim] sample:		233.1 time, 240.2 real, 54.0 MB
+[runlim] sample:		243.1 time, 250.2 real, 54.0 MB
+[runlim] sample:		253.1 time, 260.2 real, 54.0 MB
+[runlim] sample:		263.1 time, 270.2 real, 54.0 MB
+[runlim] sample:		273.1 time, 280.2 real, 54.0 MB
+[runlim] sample:		283.1 time, 290.2 real, 54.0 MB
+[runlim] sample:		293.1 time, 300.2 real, 54.0 MB
+[runlim] end:			Tue Jan 29 17:30:59 2019
+[runlim] status:		signal(9)
+[runlim] result:		11
+[runlim] children:		0
+[runlim] real:			305.33 seconds
+[runlim] time:			298.21 seconds
+[runlim] space:			54.0 MB
+[runlim] samples:		3051

@@ -1,0 +1,47 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--cbqi-all
+[runlim] argv[2]:		/tmp/U1IxSs9o.smt2
+[runlim] start:			Tue Jan 29 17:08:18 2019
+[runlim] main pid:		18522
+[runlim] sample:		8.0 time, 10.0 real, 39.0 MB
+[runlim] sample:		16.3 time, 20.0 real, 50.1 MB
+[runlim] sample:		26.3 time, 30.0 real, 58.7 MB
+[runlim] sample:		36.3 time, 40.0 real, 68.6 MB
+[runlim] sample:		46.3 time, 50.0 real, 75.1 MB
+[runlim] sample:		56.3 time, 60.0 real, 80.5 MB
+[runlim] sample:		66.3 time, 70.0 real, 85.9 MB
+[runlim] sample:		76.3 time, 80.0 real, 91.0 MB
+[runlim] sample:		86.3 time, 90.0 real, 95.2 MB
+[runlim] sample:		96.3 time, 100.0 real, 99.3 MB
+[runlim] sample:		106.3 time, 110.0 real, 105.1 MB
+[runlim] sample:		116.3 time, 120.0 real, 113.0 MB
+[runlim] sample:		126.3 time, 130.0 real, 116.3 MB
+[runlim] sample:		136.3 time, 140.0 real, 119.7 MB
+[runlim] sample:		146.3 time, 150.0 real, 123.0 MB
+[runlim] sample:		156.3 time, 160.0 real, 126.1 MB
+[runlim] sample:		166.3 time, 170.0 real, 128.9 MB
+[runlim] sample:		176.3 time, 180.0 real, 131.8 MB
+[runlim] sample:		186.3 time, 190.0 real, 134.4 MB
+[runlim] sample:		196.3 time, 200.0 real, 136.7 MB
+[runlim] sample:		206.2 time, 210.0 real, 138.7 MB
+[runlim] sample:		216.2 time, 220.0 real, 141.1 MB
+[runlim] sample:		226.3 time, 230.0 real, 143.1 MB
+[runlim] sample:		235.0 time, 240.0 real, 144.9 MB
+[runlim] sample:		244.7 time, 250.0 real, 147.5 MB
+[runlim] sample:		254.7 time, 260.0 real, 149.6 MB
+[runlim] sample:		264.5 time, 270.0 real, 151.6 MB
+[runlim] sample:		274.5 time, 280.0 real, 153.7 MB
+[runlim] sample:		284.5 time, 290.0 real, 155.8 MB
+[runlim] sample:		294.5 time, 300.0 real, 158.1 MB
+[runlim] end:			Tue Jan 29 17:13:23 2019
+[runlim] status:		signal(9)
+[runlim] result:		11
+[runlim] children:		0
+[runlim] real:			305.29 seconds
+[runlim] time:			299.69 seconds
+[runlim] space:			159.1 MB
+[runlim] samples:		3052

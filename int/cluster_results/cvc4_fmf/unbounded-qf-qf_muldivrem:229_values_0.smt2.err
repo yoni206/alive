@@ -1,0 +1,19 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--fmf-fun-rlv
+[runlim] argv[2]:		/tmp/7R5ILP6A.smt2
+[runlim] start:			Tue Jan 29 17:17:05 2019
+[runlim] main pid:		10096
+[runlim] sample:		7.6 time, 10.0 real, 29.3 MB
+[runlim] sample:		15.4 time, 20.0 real, 33.4 MB
+[runlim] end:			Tue Jan 29 17:17:35 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			30.01 seconds
+[runlim] time:			23.27 seconds
+[runlim] space:			39.8 MB
+[runlim] samples:		299

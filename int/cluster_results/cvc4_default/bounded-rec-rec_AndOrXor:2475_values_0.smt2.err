@@ -1,0 +1,46 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		/tmp/o3nSZZNU.smt2
+[runlim] start:			Tue Jan 29 16:36:35 2019
+[runlim] main pid:		11779
+[runlim] sample:		9.3 time, 10.8 real, 78.3 MB
+[runlim] sample:		19.3 time, 20.8 real, 100.4 MB
+[runlim] sample:		27.5 time, 30.8 real, 116.2 MB
+[runlim] sample:		36.6 time, 40.8 real, 130.0 MB
+[runlim] sample:		46.6 time, 50.8 real, 140.0 MB
+[runlim] sample:		56.6 time, 60.8 real, 148.5 MB
+[runlim] sample:		66.6 time, 70.8 real, 156.8 MB
+[runlim] sample:		76.6 time, 80.8 real, 163.5 MB
+[runlim] sample:		86.6 time, 90.8 real, 169.9 MB
+[runlim] sample:		96.0 time, 100.8 real, 175.2 MB
+[runlim] sample:		105.3 time, 110.8 real, 181.1 MB
+[runlim] sample:		115.0 time, 120.8 real, 184.7 MB
+[runlim] sample:		123.7 time, 130.8 real, 190.5 MB
+[runlim] sample:		133.7 time, 140.8 real, 196.0 MB
+[runlim] sample:		143.7 time, 150.8 real, 199.4 MB
+[runlim] sample:		152.7 time, 160.8 real, 205.9 MB
+[runlim] sample:		162.7 time, 170.8 real, 210.0 MB
+[runlim] sample:		172.7 time, 180.8 real, 215.1 MB
+[runlim] sample:		182.7 time, 190.8 real, 219.3 MB
+[runlim] sample:		192.7 time, 200.8 real, 224.7 MB
+[runlim] sample:		202.7 time, 210.8 real, 228.3 MB
+[runlim] sample:		212.7 time, 220.8 real, 231.6 MB
+[runlim] sample:		222.7 time, 230.8 real, 235.0 MB
+[runlim] sample:		232.7 time, 240.8 real, 238.3 MB
+[runlim] sample:		242.7 time, 250.8 real, 241.7 MB
+[runlim] sample:		252.7 time, 260.8 real, 246.8 MB
+[runlim] sample:		262.7 time, 270.8 real, 250.2 MB
+[runlim] sample:		272.7 time, 280.8 real, 251.7 MB
+[runlim] sample:		282.7 time, 290.8 real, 255.0 MB
+[runlim] sample:		292.7 time, 300.8 real, 259.4 MB
+[runlim] end:			Tue Jan 29 16:41:43 2019
+[runlim] status:		out of time
+[runlim] result:		2
+[runlim] children:		0
+[runlim] real:			308.16 seconds
+[runlim] time:			300.00 seconds
+[runlim] space:			261.2 MB
+[runlim] samples:		3073

@@ -1,0 +1,51 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--nl-ext-tplanes
+[runlim] argv[2]:		--fmf-fun-rlv
+[runlim] argv[3]:		/tmp/9JqRVhMe.smt2
+[runlim] start:			Tue Jan 29 16:41:48 2019
+[runlim] main pid:		7620
+[runlim] sample:		9.1 time, 10.9 real, 165.0 MB
+[runlim] sample:		18.6 time, 20.9 real, 268.4 MB
+[runlim] sample:		28.3 time, 30.9 real, 424.9 MB
+[runlim] sample:		37.3 time, 40.9 real, 429.5 MB
+[runlim] sample:		46.5 time, 50.9 real, 430.0 MB
+[runlim] sample:		54.9 time, 60.9 real, 561.1 MB
+[runlim] sample:		63.3 time, 70.9 real, 564.4 MB
+[runlim] sample:		71.8 time, 80.9 real, 613.7 MB
+[runlim] sample:		80.6 time, 90.9 real, 842.8 MB
+[runlim] sample:		89.6 time, 100.9 real, 842.8 MB
+[runlim] sample:		98.6 time, 110.9 real, 872.7 MB
+[runlim] sample:		107.9 time, 120.9 real, 877.6 MB
+[runlim] sample:		117.9 time, 130.9 real, 877.6 MB
+[runlim] sample:		127.5 time, 140.9 real, 878.8 MB
+[runlim] sample:		137.5 time, 150.9 real, 878.8 MB
+[runlim] sample:		147.2 time, 160.9 real, 952.9 MB
+[runlim] sample:		156.3 time, 170.9 real, 1130.4 MB
+[runlim] sample:		164.7 time, 180.9 real, 1132.0 MB
+[runlim] sample:		173.3 time, 190.9 real, 1133.0 MB
+[runlim] sample:		182.3 time, 200.9 real, 1134.6 MB
+[runlim] sample:		190.9 time, 210.9 real, 1135.6 MB
+[runlim] sample:		200.2 time, 220.9 real, 1136.6 MB
+[runlim] sample:		209.4 time, 230.9 real, 1137.7 MB
+[runlim] sample:		218.7 time, 240.9 real, 1138.7 MB
+[runlim] sample:		227.7 time, 250.9 real, 1139.5 MB
+[runlim] sample:		237.6 time, 260.9 real, 1140.5 MB
+[runlim] sample:		247.6 time, 270.9 real, 1141.3 MB
+[runlim] sample:		257.6 time, 280.9 real, 1142.0 MB
+[runlim] sample:		267.6 time, 290.9 real, 1143.1 MB
+[runlim] sample:		277.6 time, 300.9 real, 1143.8 MB
+[runlim] sample:		287.6 time, 310.9 real, 1160.9 MB
+[runlim] sample:		297.6 time, 320.9 real, 1333.3 MB
+CVC4 interrupted by SIGTERM.
+[runlim] end:			Tue Jan 29 16:47:11 2019
+[runlim] status:		out of time
+[runlim] result:		2
+[runlim] children:		0
+[runlim] real:			323.53 seconds
+[runlim] time:			300.10 seconds
+[runlim] space:			1404.5 MB
+[runlim] samples:		3225

@@ -1,0 +1,46 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./z3
+[runlim] argv[1]:		/tmp/g0IoJKPd.smt2
+[runlim] start:			Tue Jan 29 17:24:56 2019
+[runlim] main pid:		19745
+[runlim] sample:		7.5 time, 10.3 real, 87.5 MB
+[runlim] sample:		14.9 time, 20.3 real, 91.8 MB
+[runlim] sample:		22.5 time, 30.3 real, 100.9 MB
+[runlim] sample:		32.5 time, 40.3 real, 116.8 MB
+[runlim] sample:		42.5 time, 50.3 real, 126.6 MB
+[runlim] sample:		52.4 time, 60.3 real, 150.6 MB
+[runlim] sample:		62.4 time, 70.3 real, 161.1 MB
+[runlim] sample:		72.4 time, 80.3 real, 166.0 MB
+[runlim] sample:		81.6 time, 90.3 real, 175.8 MB
+[runlim] sample:		91.6 time, 100.3 real, 180.0 MB
+[runlim] sample:		101.6 time, 110.3 real, 200.1 MB
+[runlim] sample:		111.6 time, 120.3 real, 203.5 MB
+[runlim] sample:		121.5 time, 130.3 real, 220.2 MB
+[runlim] sample:		131.6 time, 140.3 real, 252.9 MB
+[runlim] sample:		139.3 time, 150.3 real, 268.1 MB
+[runlim] sample:		148.3 time, 160.3 real, 274.6 MB
+[runlim] sample:		158.3 time, 170.3 real, 278.2 MB
+[runlim] sample:		168.3 time, 180.3 real, 279.2 MB
+[runlim] sample:		178.2 time, 190.3 real, 285.2 MB
+[runlim] sample:		188.2 time, 200.3 real, 289.8 MB
+[runlim] sample:		198.2 time, 210.3 real, 291.3 MB
+[runlim] sample:		208.2 time, 220.3 real, 296.0 MB
+[runlim] sample:		218.2 time, 230.3 real, 296.8 MB
+[runlim] sample:		228.2 time, 240.3 real, 297.5 MB
+[runlim] sample:		238.2 time, 250.3 real, 298.3 MB
+[runlim] sample:		248.2 time, 260.3 real, 298.8 MB
+[runlim] sample:		258.2 time, 270.3 real, 299.1 MB
+[runlim] sample:		268.2 time, 280.3 real, 299.3 MB
+[runlim] sample:		278.2 time, 290.3 real, 300.4 MB
+[runlim] sample:		288.2 time, 300.3 real, 300.6 MB
+[runlim] end:			Tue Jan 29 17:30:04 2019
+[runlim] status:		signal(9)
+[runlim] result:		11
+[runlim] children:		0
+[runlim] real:			308.83 seconds
+[runlim] time:			296.74 seconds
+[runlim] space:			300.6 MB
+[runlim] samples:		3085

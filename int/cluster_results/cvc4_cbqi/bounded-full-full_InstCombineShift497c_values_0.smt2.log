@@ -1,0 +1,6 @@
+c host: barrett20.stanford.edu
+c start: Tue Jan 29 17:11:40 PST 2019
+c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/bounded/full/full_InstCombineShift497c_values_0.smt2
+c solver: ./cvc4
+c solver options: --cbqi-all
+c done

@@ -1,0 +1,46 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./z3
+[runlim] argv[1]:		/tmp/qSkizB99.smt2
+[runlim] start:			Tue Jan 29 17:25:57 2019
+[runlim] main pid:		3681
+[runlim] sample:		8.1 time, 10.3 real, 27.7 MB
+[runlim] sample:		15.5 time, 20.3 real, 30.7 MB
+[runlim] sample:		23.2 time, 30.3 real, 31.6 MB
+[runlim] sample:		33.2 time, 40.3 real, 32.9 MB
+[runlim] sample:		43.2 time, 50.3 real, 35.4 MB
+[runlim] sample:		53.2 time, 60.3 real, 36.7 MB
+[runlim] sample:		63.2 time, 70.3 real, 37.2 MB
+[runlim] sample:		73.2 time, 80.3 real, 46.5 MB
+[runlim] sample:		83.2 time, 90.3 real, 46.5 MB
+[runlim] sample:		93.2 time, 100.3 real, 80.3 MB
+[runlim] sample:		103.2 time, 110.3 real, 80.5 MB
+[runlim] sample:		113.2 time, 120.3 real, 74.4 MB
+[runlim] sample:		123.2 time, 130.3 real, 74.4 MB
+[runlim] sample:		133.2 time, 140.3 real, 74.4 MB
+[runlim] sample:		143.2 time, 150.3 real, 74.4 MB
+[runlim] sample:		152.5 time, 160.3 real, 74.4 MB
+[runlim] sample:		162.0 time, 170.3 real, 74.4 MB
+[runlim] sample:		169.4 time, 180.3 real, 74.4 MB
+[runlim] sample:		177.1 time, 190.3 real, 74.4 MB
+[runlim] sample:		185.6 time, 200.3 real, 74.4 MB
+[runlim] sample:		195.6 time, 210.3 real, 74.4 MB
+[runlim] sample:		203.9 time, 220.3 real, 74.4 MB
+[runlim] sample:		213.6 time, 230.3 real, 74.4 MB
+[runlim] sample:		223.6 time, 240.3 real, 74.4 MB
+[runlim] sample:		233.6 time, 250.3 real, 74.4 MB
+[runlim] sample:		243.6 time, 260.3 real, 74.4 MB
+[runlim] sample:		253.6 time, 270.3 real, 74.4 MB
+[runlim] sample:		263.6 time, 280.3 real, 74.4 MB
+[runlim] sample:		273.6 time, 290.3 real, 74.4 MB
+[runlim] sample:		283.6 time, 300.3 real, 174.8 MB
+[runlim] end:			Tue Jan 29 17:31:06 2019
+[runlim] status:		signal(9)
+[runlim] result:		11
+[runlim] children:		0
+[runlim] real:			309.06 seconds
+[runlim] time:			292.38 seconds
+[runlim] space:			175.5 MB
+[runlim] samples:		3088

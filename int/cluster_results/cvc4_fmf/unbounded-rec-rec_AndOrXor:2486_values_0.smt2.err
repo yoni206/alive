@@ -1,0 +1,48 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--fmf-fun-rlv
+[runlim] argv[2]:		/tmp/hGeb7JQm.smt2
+[runlim] start:			Tue Jan 29 17:19:09 2019
+[runlim] main pid:		4467
+[runlim] sample:		9.4 time, 11.0 real, 37.3 MB
+[runlim] sample:		19.4 time, 21.0 real, 46.2 MB
+[runlim] sample:		29.3 time, 31.0 real, 56.2 MB
+[runlim] sample:		39.3 time, 41.0 real, 59.8 MB
+[runlim] sample:		49.3 time, 51.0 real, 63.3 MB
+[runlim] sample:		58.2 time, 61.0 real, 65.2 MB
+[runlim] sample:		65.8 time, 71.0 real, 65.2 MB
+[runlim] sample:		75.5 time, 81.0 real, 65.7 MB
+[runlim] sample:		85.5 time, 91.0 real, 69.5 MB
+[runlim] sample:		94.7 time, 101.0 real, 72.6 MB
+[runlim] sample:		103.9 time, 111.0 real, 74.1 MB
+[runlim] sample:		113.9 time, 121.0 real, 75.9 MB
+[runlim] sample:		123.9 time, 131.0 real, 78.4 MB
+[runlim] sample:		133.7 time, 141.0 real, 79.1 MB
+[runlim] sample:		143.3 time, 151.0 real, 83.7 MB
+[runlim] sample:		153.0 time, 161.0 real, 80.5 MB
+[runlim] sample:		162.6 time, 171.0 real, 82.8 MB
+[runlim] sample:		172.3 time, 181.0 real, 84.4 MB
+[runlim] sample:		182.1 time, 191.0 real, 84.6 MB
+[runlim] sample:		190.8 time, 201.0 real, 89.0 MB
+[runlim] sample:		200.8 time, 211.0 real, 89.3 MB
+[runlim] sample:		210.8 time, 221.0 real, 90.0 MB
+[runlim] sample:		220.8 time, 231.0 real, 90.7 MB
+[runlim] sample:		230.8 time, 241.0 real, 92.0 MB
+[runlim] sample:		240.8 time, 251.0 real, 94.5 MB
+[runlim] sample:		250.8 time, 261.0 real, 96.0 MB
+[runlim] sample:		260.8 time, 271.0 real, 98.0 MB
+[runlim] sample:		270.8 time, 281.0 real, 105.2 MB
+[runlim] sample:		280.8 time, 291.0 real, 105.7 MB
+[runlim] sample:		290.8 time, 301.0 real, 106.0 MB
+CVC4 interrupted by SIGTERM.
+[runlim] end:			Tue Jan 29 17:24:19 2019
+[runlim] status:		out of time
+[runlim] result:		2
+[runlim] children:		0
+[runlim] real:			310.31 seconds
+[runlim] time:			300.10 seconds
+[runlim] space:			106.5 MB
+[runlim] samples:		3093

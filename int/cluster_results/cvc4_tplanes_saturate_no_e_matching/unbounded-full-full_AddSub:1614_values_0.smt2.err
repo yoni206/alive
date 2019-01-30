@@ -1,0 +1,33 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--nl-ext-tplanes
+[runlim] argv[2]:		--full-saturate-quant
+[runlim] argv[3]:		--no-e-matching
+[runlim] argv[4]:		/tmp/ql87wOI0.smt2
+[runlim] start:			Tue Jan 29 16:58:30 2019
+[runlim] main pid:		3796
+[runlim] sample:		9.6 time, 11.0 real, 47.4 MB
+[runlim] sample:		19.6 time, 21.0 real, 58.1 MB
+[runlim] sample:		29.6 time, 31.0 real, 62.6 MB
+[runlim] sample:		39.6 time, 41.0 real, 75.4 MB
+[runlim] sample:		49.6 time, 51.0 real, 81.1 MB
+[runlim] sample:		59.6 time, 61.0 real, 86.0 MB
+[runlim] sample:		68.2 time, 71.0 real, 92.4 MB
+[runlim] sample:		75.8 time, 81.0 real, 94.2 MB
+[runlim] sample:		84.3 time, 91.0 real, 98.0 MB
+[runlim] sample:		93.9 time, 101.0 real, 100.1 MB
+[runlim] sample:		103.9 time, 111.0 real, 103.7 MB
+[runlim] sample:		113.4 time, 121.0 real, 106.5 MB
+[runlim] sample:		123.1 time, 131.0 real, 109.6 MB
+[runlim] sample:		132.8 time, 141.0 real, 116.8 MB
+[runlim] end:			Tue Jan 29 17:00:52 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			142.05 seconds
+[runlim] time:			133.71 seconds
+[runlim] space:			119.4 MB
+[runlim] samples:		1410

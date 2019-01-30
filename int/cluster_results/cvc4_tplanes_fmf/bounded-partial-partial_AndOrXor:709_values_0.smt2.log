@@ -1,0 +1,6 @@
+c host: barrett24.stanford.edu
+c start: Tue Jan 29 16:48:17 PST 2019
+c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/bounded/partial/partial_AndOrXor:709_values_0.smt2
+c solver: ./cvc4
+c solver options: --nl-ext-tplanes --fmf-fun-rlv
+c done

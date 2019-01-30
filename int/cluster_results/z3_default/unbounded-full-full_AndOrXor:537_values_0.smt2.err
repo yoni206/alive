@@ -1,0 +1,44 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./z3
+[runlim] argv[1]:		/tmp/6lJ781wa.smt2
+[runlim] start:			Tue Jan 29 17:23:58 2019
+[runlim] main pid:		6506
+[runlim] sample:		8.3 time, 10.9 real, 16.8 MB
+[runlim] sample:		18.0 time, 20.9 real, 16.8 MB
+[runlim] sample:		26.0 time, 30.9 real, 16.8 MB
+[runlim] sample:		35.9 time, 40.9 real, 17.0 MB
+[runlim] sample:		45.9 time, 50.9 real, 17.0 MB
+[runlim] sample:		55.9 time, 60.9 real, 17.0 MB
+[runlim] sample:		65.9 time, 70.9 real, 17.0 MB
+[runlim] sample:		73.4 time, 80.9 real, 22.0 MB
+[runlim] sample:		81.7 time, 90.9 real, 22.0 MB
+[runlim] sample:		91.6 time, 100.9 real, 26.2 MB
+[runlim] sample:		101.3 time, 110.9 real, 26.2 MB
+[runlim] sample:		111.2 time, 120.9 real, 26.3 MB
+[runlim] sample:		119.4 time, 130.9 real, 26.3 MB
+[runlim] sample:		128.9 time, 140.9 real, 26.5 MB
+[runlim] sample:		138.9 time, 150.9 real, 26.5 MB
+[runlim] sample:		148.2 time, 160.9 real, 26.7 MB
+[runlim] sample:		157.1 time, 170.9 real, 26.7 MB
+[runlim] sample:		166.1 time, 180.9 real, 26.7 MB
+[runlim] sample:		175.9 time, 190.9 real, 26.7 MB
+[runlim] sample:		185.9 time, 200.9 real, 26.7 MB
+[runlim] sample:		195.9 time, 210.9 real, 26.8 MB
+[runlim] sample:		205.9 time, 220.9 real, 26.8 MB
+[runlim] sample:		215.5 time, 230.9 real, 26.8 MB
+[runlim] sample:		223.7 time, 240.9 real, 26.8 MB
+[runlim] sample:		233.0 time, 250.9 real, 27.1 MB
+[runlim] sample:		242.5 time, 260.9 real, 27.1 MB
+[runlim] sample:		252.5 time, 270.9 real, 27.1 MB
+[runlim] sample:		260.2 time, 280.9 real, 27.1 MB
+[runlim] end:			Tue Jan 29 17:28:47 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			289.68 seconds
+[runlim] time:			268.11 seconds
+[runlim] space:			27.1 MB
+[runlim] samples:		2887

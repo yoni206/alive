@@ -1,0 +1,7 @@
+c host: barrett6.stanford.edu
+c start: Tue Jan 29 17:27:37 PST 2019
+c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/bounded/qf/qf_AndOrXor:2123_undef_20.smt2
+c solver: ./z3
+c solver options: 
+unsat
+c done

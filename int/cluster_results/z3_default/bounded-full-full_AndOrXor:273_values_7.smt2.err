@@ -1,0 +1,46 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./z3
+[runlim] argv[1]:		/tmp/LUT2HUyi.smt2
+[runlim] start:			Tue Jan 29 17:26:45 2019
+[runlim] main pid:		7884
+[runlim] sample:		8.3 time, 10.9 real, 18.0 MB
+[runlim] sample:		16.6 time, 20.9 real, 18.2 MB
+[runlim] sample:		25.9 time, 30.9 real, 19.2 MB
+[runlim] sample:		35.3 time, 40.9 real, 22.3 MB
+[runlim] sample:		44.5 time, 50.9 real, 22.9 MB
+[runlim] sample:		53.0 time, 60.9 real, 22.9 MB
+[runlim] sample:		63.0 time, 70.9 real, 22.9 MB
+[runlim] sample:		73.0 time, 80.9 real, 22.9 MB
+[runlim] sample:		83.0 time, 90.9 real, 22.9 MB
+[runlim] sample:		93.0 time, 100.9 real, 22.9 MB
+[runlim] sample:		103.0 time, 110.9 real, 22.9 MB
+[runlim] sample:		113.0 time, 120.9 real, 22.9 MB
+[runlim] sample:		123.0 time, 130.9 real, 22.9 MB
+[runlim] sample:		133.0 time, 140.9 real, 22.9 MB
+[runlim] sample:		143.0 time, 150.9 real, 22.9 MB
+[runlim] sample:		153.0 time, 160.9 real, 22.9 MB
+[runlim] sample:		163.0 time, 170.9 real, 23.4 MB
+[runlim] sample:		173.1 time, 180.9 real, 23.4 MB
+[runlim] sample:		183.1 time, 190.9 real, 23.4 MB
+[runlim] sample:		193.0 time, 200.9 real, 23.4 MB
+[runlim] sample:		203.0 time, 210.9 real, 23.4 MB
+[runlim] sample:		213.1 time, 220.9 real, 23.6 MB
+[runlim] sample:		223.0 time, 230.9 real, 28.8 MB
+[runlim] sample:		233.0 time, 240.9 real, 30.9 MB
+[runlim] sample:		243.0 time, 250.9 real, 29.8 MB
+[runlim] sample:		253.0 time, 260.9 real, 35.6 MB
+[runlim] sample:		263.0 time, 270.9 real, 36.5 MB
+[runlim] sample:		273.0 time, 280.9 real, 37.2 MB
+[runlim] sample:		283.1 time, 290.9 real, 38.7 MB
+[runlim] sample:		293.1 time, 300.9 real, 41.2 MB
+[runlim] end:			Tue Jan 29 17:31:52 2019
+[runlim] status:		out of time
+[runlim] result:		2
+[runlim] children:		0
+[runlim] real:			307.89 seconds
+[runlim] time:			300.05 seconds
+[runlim] space:			43.6 MB
+[runlim] samples:		3070

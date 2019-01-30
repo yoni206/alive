@@ -1,0 +1,48 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--nl-ext-tplanes
+[runlim] argv[2]:		/tmp/pYmCsMWk.smt2
+[runlim] start:			Tue Jan 29 16:38:58 2019
+[runlim] main pid:		27038
+[runlim] sample:		7.5 time, 10.9 real, 89.2 MB
+[runlim] sample:		17.1 time, 20.9 real, 125.8 MB
+[runlim] sample:		26.8 time, 30.9 real, 149.6 MB
+[runlim] sample:		36.5 time, 40.9 real, 166.8 MB
+[runlim] sample:		46.1 time, 50.9 real, 182.4 MB
+[runlim] sample:		55.8 time, 60.9 real, 197.8 MB
+[runlim] sample:		65.4 time, 70.9 real, 212.1 MB
+[runlim] sample:		75.4 time, 80.9 real, 226.3 MB
+[runlim] sample:		85.4 time, 90.9 real, 235.6 MB
+[runlim] sample:		95.4 time, 100.9 real, 247.3 MB
+[runlim] sample:		105.4 time, 110.9 real, 256.3 MB
+[runlim] sample:		115.4 time, 120.9 real, 264.5 MB
+[runlim] sample:		125.4 time, 130.9 real, 272.9 MB
+[runlim] sample:		135.4 time, 140.9 real, 279.1 MB
+[runlim] sample:		145.4 time, 150.9 real, 287.3 MB
+[runlim] sample:		155.4 time, 160.9 real, 294.8 MB
+[runlim] sample:		165.4 time, 170.9 real, 301.2 MB
+[runlim] sample:		175.4 time, 180.9 real, 307.1 MB
+[runlim] sample:		185.4 time, 190.9 real, 313.3 MB
+[runlim] sample:		195.4 time, 200.9 real, 319.5 MB
+[runlim] sample:		205.4 time, 210.9 real, 324.6 MB
+[runlim] sample:		215.4 time, 220.9 real, 330.8 MB
+[runlim] sample:		225.4 time, 230.9 real, 334.9 MB
+[runlim] sample:		235.3 time, 240.9 real, 339.8 MB
+[runlim] sample:		245.3 time, 250.9 real, 345.4 MB
+[runlim] sample:		255.3 time, 260.9 real, 350.8 MB
+[runlim] sample:		265.3 time, 270.9 real, 356.0 MB
+[runlim] sample:		275.3 time, 280.9 real, 360.9 MB
+[runlim] sample:		285.3 time, 290.9 real, 364.7 MB
+[runlim] sample:		295.3 time, 300.9 real, 370.4 MB
+CVC4 interrupted by SIGTERM.
+[runlim] end:			Tue Jan 29 16:44:03 2019
+[runlim] status:		out of time
+[runlim] result:		2
+[runlim] children:		0
+[runlim] real:			305.63 seconds
+[runlim] time:			300.02 seconds
+[runlim] space:			371.4 MB
+[runlim] samples:		3047

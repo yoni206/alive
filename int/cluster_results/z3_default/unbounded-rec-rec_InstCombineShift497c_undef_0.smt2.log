@@ -1,0 +1,12 @@
+c host: barrett12.stanford.edu
+c start: Tue Jan 29 17:26:14 PST 2019
+c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/unbounded/rec/rec_InstCombineShift497c_undef_0.smt2
+c solver: ./z3
+c solver options: 
+(error "line 427 column 22: logic does not support theory recfun")
+(error "line 428 column 34: logic does not support theory recfun")
+(error "line 432 column 23: logic does not support theory recfun")
+(error "line 433 column 35: logic does not support theory recfun")
+(error "line 436 column 94: logic does not support theory recfun")
+sat
+c done

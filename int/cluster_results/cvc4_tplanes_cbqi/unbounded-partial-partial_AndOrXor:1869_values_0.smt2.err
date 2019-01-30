@@ -1,0 +1,19 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--nl-ext-tplanes
+[runlim] argv[2]:		--cbqi-all
+[runlim] argv[3]:		/tmp/EOQwzah9.smt2
+[runlim] start:			Tue Jan 29 16:51:30 2019
+[runlim] main pid:		11844
+[runlim] sample:		9.9 time, 10.2 real, 39.8 MB
+[runlim] end:			Tue Jan 29 16:51:45 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			15.72 seconds
+[runlim] time:			15.25 seconds
+[runlim] space:			43.7 MB
+[runlim] samples:		154

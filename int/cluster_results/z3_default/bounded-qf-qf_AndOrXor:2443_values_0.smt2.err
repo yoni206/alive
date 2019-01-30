@@ -1,0 +1,46 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./z3
+[runlim] argv[1]:		/tmp/LqkAIcpP.smt2
+[runlim] start:			Tue Jan 29 17:27:51 2019
+[runlim] main pid:		31588
+[runlim] sample:		9.3 time, 10.4 real, 38.9 MB
+[runlim] sample:		18.3 time, 20.4 real, 39.1 MB
+[runlim] sample:		26.9 time, 30.4 real, 39.1 MB
+[runlim] sample:		35.7 time, 40.4 real, 39.1 MB
+[runlim] sample:		45.4 time, 50.4 real, 39.1 MB
+[runlim] sample:		54.8 time, 60.4 real, 42.4 MB
+[runlim] sample:		64.1 time, 70.4 real, 44.7 MB
+[runlim] sample:		73.5 time, 80.4 real, 44.3 MB
+[runlim] sample:		82.9 time, 90.4 real, 64.8 MB
+[runlim] sample:		92.2 time, 100.4 real, 86.7 MB
+[runlim] sample:		101.6 time, 110.4 real, 86.8 MB
+[runlim] sample:		111.0 time, 120.4 real, 86.3 MB
+[runlim] sample:		120.5 time, 130.4 real, 86.2 MB
+[runlim] sample:		130.5 time, 140.4 real, 76.0 MB
+[runlim] sample:		140.5 time, 150.4 real, 76.0 MB
+[runlim] sample:		150.5 time, 160.4 real, 88.4 MB
+[runlim] sample:		160.5 time, 170.4 real, 88.4 MB
+[runlim] sample:		170.5 time, 180.4 real, 87.5 MB
+[runlim] sample:		180.5 time, 190.4 real, 76.1 MB
+[runlim] sample:		190.5 time, 200.4 real, 110.6 MB
+[runlim] sample:		200.5 time, 210.4 real, 110.6 MB
+[runlim] sample:		210.5 time, 220.4 real, 110.6 MB
+[runlim] sample:		220.5 time, 230.4 real, 110.9 MB
+[runlim] sample:		230.5 time, 240.4 real, 110.4 MB
+[runlim] sample:		240.5 time, 250.4 real, 110.7 MB
+[runlim] sample:		250.5 time, 260.4 real, 110.7 MB
+[runlim] sample:		260.5 time, 270.4 real, 110.7 MB
+[runlim] sample:		270.5 time, 280.4 real, 110.7 MB
+[runlim] sample:		280.5 time, 290.4 real, 109.5 MB
+[runlim] sample:		290.5 time, 300.4 real, 109.5 MB
+[runlim] end:			Tue Jan 29 17:33:00 2019
+[runlim] status:		out of time
+[runlim] result:		2
+[runlim] children:		0
+[runlim] real:			309.87 seconds
+[runlim] time:			300.03 seconds
+[runlim] space:			111.0 MB
+[runlim] samples:		3095

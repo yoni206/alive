@@ -1,0 +1,39 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--fmf-fun-rlv
+[runlim] argv[2]:		/tmp/E105dLrB.smt2
+[runlim] start:			Tue Jan 29 17:22:09 2019
+[runlim] main pid:		6763
+[runlim] sample:		8.7 time, 11.0 real, 41.8 MB
+[runlim] sample:		18.5 time, 21.0 real, 46.7 MB
+[runlim] sample:		28.5 time, 31.0 real, 49.3 MB
+[runlim] sample:		38.4 time, 41.0 real, 52.4 MB
+[runlim] sample:		48.4 time, 51.0 real, 60.6 MB
+[runlim] sample:		58.4 time, 61.0 real, 63.9 MB
+[runlim] sample:		68.4 time, 71.0 real, 65.5 MB
+[runlim] sample:		78.2 time, 81.0 real, 67.4 MB
+[runlim] sample:		87.9 time, 91.0 real, 68.2 MB
+[runlim] sample:		97.2 time, 101.0 real, 69.9 MB
+[runlim] sample:		105.8 time, 111.0 real, 71.7 MB
+[runlim] sample:		114.2 time, 121.0 real, 74.0 MB
+[runlim] sample:		124.2 time, 131.0 real, 77.3 MB
+[runlim] sample:		134.2 time, 141.0 real, 77.5 MB
+[runlim] sample:		144.1 time, 151.0 real, 78.0 MB
+[runlim] sample:		152.6 time, 161.0 real, 78.2 MB
+[runlim] sample:		162.0 time, 171.0 real, 78.7 MB
+[runlim] sample:		172.0 time, 181.0 real, 78.9 MB
+[runlim] sample:		181.4 time, 191.0 real, 79.9 MB
+[runlim] sample:		190.1 time, 201.0 real, 84.7 MB
+[runlim] sample:		200.1 time, 211.0 real, 86.3 MB
+[runlim] sample:		210.0 time, 221.0 real, 86.5 MB
+[runlim] end:			Tue Jan 29 17:25:53 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			224.54 seconds
+[runlim] time:			213.54 seconds
+[runlim] space:			86.7 MB
+[runlim] samples:		2235

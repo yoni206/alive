@@ -1,0 +1,46 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./z3
+[runlim] argv[1]:		/tmp/26UYRDYt.smt2
+[runlim] start:			Tue Jan 29 17:25:41 2019
+[runlim] main pid:		14740
+[runlim] sample:		9.2 time, 10.5 real, 60.0 MB
+[runlim] sample:		18.0 time, 20.5 real, 80.0 MB
+[runlim] sample:		26.7 time, 30.5 real, 97.3 MB
+[runlim] sample:		36.7 time, 40.5 real, 106.1 MB
+[runlim] sample:		46.7 time, 50.5 real, 124.1 MB
+[runlim] sample:		56.7 time, 60.5 real, 131.6 MB
+[runlim] sample:		66.7 time, 70.5 real, 138.0 MB
+[runlim] sample:		75.7 time, 80.5 real, 140.9 MB
+[runlim] sample:		85.2 time, 90.5 real, 147.1 MB
+[runlim] sample:		95.2 time, 100.5 real, 154.5 MB
+[runlim] sample:		105.2 time, 110.5 real, 156.1 MB
+[runlim] sample:		113.9 time, 120.5 real, 163.0 MB
+[runlim] sample:		123.0 time, 130.5 real, 165.0 MB
+[runlim] sample:		132.6 time, 140.5 real, 172.0 MB
+[runlim] sample:		142.3 time, 150.5 real, 174.8 MB
+[runlim] sample:		152.3 time, 160.5 real, 176.9 MB
+[runlim] sample:		162.3 time, 170.5 real, 179.5 MB
+[runlim] sample:		171.7 time, 180.5 real, 183.1 MB
+[runlim] sample:		180.6 time, 190.5 real, 187.0 MB
+[runlim] sample:		190.6 time, 200.5 real, 189.5 MB
+[runlim] sample:		200.6 time, 210.5 real, 192.1 MB
+[runlim] sample:		210.6 time, 220.5 real, 199.6 MB
+[runlim] sample:		220.6 time, 230.5 real, 214.4 MB
+[runlim] sample:		230.6 time, 240.5 real, 218.8 MB
+[runlim] sample:		240.6 time, 250.5 real, 225.2 MB
+[runlim] sample:		250.6 time, 260.5 real, 229.3 MB
+[runlim] sample:		260.6 time, 270.5 real, 231.6 MB
+[runlim] sample:		270.6 time, 280.5 real, 234.5 MB
+[runlim] sample:		280.6 time, 290.5 real, 238.9 MB
+[runlim] sample:		290.6 time, 300.5 real, 251.0 MB
+[runlim] end:			Tue Jan 29 17:30:50 2019
+[runlim] status:		out of time
+[runlim] result:		2
+[runlim] children:		0
+[runlim] real:			309.88 seconds
+[runlim] time:			300.02 seconds
+[runlim] space:			253.0 MB
+[runlim] samples:		3094
