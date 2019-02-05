@@ -5,49 +5,49 @@
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--nl-ext-tplanes
 [runlim] argv[2]:		--cbqi-all
-[runlim] argv[3]:		/tmp/WaztKkpN.smt2
-[runlim] start:			Tue Feb  5 10:18:38 2019
-[runlim] main pid:		2292
-/tmp/WaztKkpN.smt2:4.12: No set-logic command was given before this point.
-/tmp/WaztKkpN.smt2:4.12: CVC4 will make all theories available.
-/tmp/WaztKkpN.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
-/tmp/WaztKkpN.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
-[runlim] sample:		9.0 time, 10.4 real, 93.2 MB
-[runlim] sample:		18.9 time, 20.4 real, 125.3 MB
-[runlim] sample:		28.9 time, 30.4 real, 145.4 MB
-[runlim] sample:		38.9 time, 40.4 real, 159.4 MB
-[runlim] sample:		48.9 time, 50.4 real, 171.0 MB
-[runlim] sample:		58.9 time, 60.4 real, 181.9 MB
-[runlim] sample:		68.9 time, 70.4 real, 189.9 MB
-[runlim] sample:		78.9 time, 80.4 real, 198.9 MB
-[runlim] sample:		88.9 time, 90.4 real, 206.6 MB
-[runlim] sample:		98.8 time, 100.4 real, 214.1 MB
-[runlim] sample:		108.9 time, 110.4 real, 222.1 MB
-[runlim] sample:		118.8 time, 120.4 real, 232.4 MB
-[runlim] sample:		128.8 time, 130.4 real, 237.1 MB
-[runlim] sample:		138.8 time, 140.4 real, 245.0 MB
-[runlim] sample:		148.8 time, 150.4 real, 251.2 MB
-[runlim] sample:		158.8 time, 160.4 real, 257.6 MB
-[runlim] sample:		168.8 time, 170.4 real, 263.8 MB
-[runlim] sample:		178.8 time, 180.4 real, 269.2 MB
-[runlim] sample:		188.8 time, 190.4 real, 273.6 MB
-[runlim] sample:		198.8 time, 200.4 real, 281.2 MB
-[runlim] sample:		208.8 time, 210.4 real, 281.9 MB
-[runlim] sample:		218.8 time, 220.4 real, 285.5 MB
-[runlim] sample:		228.8 time, 230.4 real, 290.2 MB
-[runlim] sample:		238.8 time, 240.4 real, 295.1 MB
-[runlim] sample:		248.8 time, 250.4 real, 299.2 MB
-[runlim] sample:		258.8 time, 260.4 real, 301.5 MB
-[runlim] sample:		268.8 time, 270.4 real, 305.1 MB
-[runlim] sample:		278.8 time, 280.4 real, 309.5 MB
-[runlim] sample:		288.8 time, 290.4 real, 313.6 MB
-[runlim] sample:		298.8 time, 300.4 real, 316.4 MB
-CVC4 interrupted by SIGTERM.
-[runlim] end:			Tue Feb  5 10:23:39 2019
-[runlim] status:		out of time
-[runlim] result:		2
+[runlim] argv[3]:		/tmp/Gm6EYprn.smt2
+[runlim] start:			Tue Feb  5 13:17:27 2019
+[runlim] main pid:		746
+/tmp/Gm6EYprn.smt2:4.12: No set-logic command was given before this point.
+/tmp/Gm6EYprn.smt2:4.12: CVC4 will make all theories available.
+/tmp/Gm6EYprn.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
+/tmp/Gm6EYprn.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
+[runlim] sample:		9.9 time, 10.1 real, 96.1 MB
+[runlim] sample:		17.8 time, 20.1 real, 119.2 MB
+[runlim] sample:		27.4 time, 30.1 real, 143.1 MB
+[runlim] sample:		37.5 time, 40.1 real, 157.4 MB
+[runlim] sample:		47.5 time, 50.1 real, 169.7 MB
+[runlim] sample:		57.5 time, 60.1 real, 179.8 MB
+[runlim] sample:		67.5 time, 70.1 real, 189.8 MB
+[runlim] sample:		77.2 time, 80.1 real, 197.8 MB
+[runlim] sample:		84.8 time, 90.1 real, 203.7 MB
+[runlim] sample:		93.0 time, 100.1 real, 208.8 MB
+[runlim] sample:		102.6 time, 110.1 real, 215.0 MB
+[runlim] sample:		112.6 time, 120.1 real, 225.9 MB
+[runlim] sample:		122.3 time, 130.1 real, 232.3 MB
+[runlim] sample:		131.7 time, 140.1 real, 240.2 MB
+[runlim] sample:		141.5 time, 150.1 real, 244.8 MB
+[runlim] sample:		150.1 time, 160.1 real, 249.2 MB
+[runlim] sample:		157.8 time, 170.1 real, 255.9 MB
+[runlim] sample:		166.0 time, 180.1 real, 259.8 MB
+[runlim] sample:		174.1 time, 190.1 real, 264.4 MB
+[runlim] sample:		182.2 time, 200.1 real, 269.0 MB
+[runlim] sample:		192.1 time, 210.1 real, 273.4 MB
+[runlim] sample:		202.1 time, 220.1 real, 281.0 MB
+[runlim] sample:		212.1 time, 230.1 real, 281.7 MB
+[runlim] sample:		222.1 time, 240.1 real, 285.3 MB
+[runlim] sample:		232.1 time, 250.1 real, 290.0 MB
+[runlim] sample:		242.1 time, 260.1 real, 294.9 MB
+[runlim] sample:		252.1 time, 270.1 real, 299.0 MB
+[runlim] sample:		262.1 time, 280.1 real, 301.3 MB
+[runlim] sample:		272.1 time, 290.1 real, 304.9 MB
+[runlim] sample:		282.1 time, 300.1 real, 309.2 MB
+[runlim] sample:		292.1 time, 310.1 real, 311.1 MB
+[runlim] end:			Tue Feb  5 13:22:41 2019
+[runlim] status:		signal(9)
+[runlim] result:		11
 [runlim] children:		0
-[runlim] real:			301.64 seconds
-[runlim] time:			300.01 seconds
-[runlim] space:			316.4 MB
-[runlim] samples:		3012
+[runlim] real:			314.28 seconds
+[runlim] time:			296.16 seconds
+[runlim] space:			314.1 MB
+[runlim] samples:		3141

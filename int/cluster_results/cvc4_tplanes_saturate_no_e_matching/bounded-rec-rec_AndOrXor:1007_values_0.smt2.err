@@ -6,49 +6,18 @@
 [runlim] argv[1]:		--nl-ext-tplanes
 [runlim] argv[2]:		--full-saturate-quant
 [runlim] argv[3]:		--no-e-matching
-[runlim] argv[4]:		/tmp/TXOooAy4.smt2
-[runlim] start:			Tue Feb  5 10:33:44 2019
-[runlim] main pid:		974
-/tmp/TXOooAy4.smt2:4.12: No set-logic command was given before this point.
-/tmp/TXOooAy4.smt2:4.12: CVC4 will make all theories available.
-/tmp/TXOooAy4.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
-/tmp/TXOooAy4.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
-[runlim] sample:		8.3 time, 10.4 real, 42.2 MB
-[runlim] sample:		17.0 time, 20.4 real, 50.7 MB
-[runlim] sample:		26.3 time, 30.4 real, 57.3 MB
-[runlim] sample:		35.5 time, 40.4 real, 63.4 MB
-[runlim] sample:		44.6 time, 50.4 real, 70.6 MB
-[runlim] sample:		53.5 time, 60.4 real, 75.8 MB
-[runlim] sample:		62.1 time, 70.4 real, 78.4 MB
-[runlim] sample:		71.7 time, 80.4 real, 81.2 MB
-[runlim] sample:		81.7 time, 90.4 real, 86.4 MB
-[runlim] sample:		91.7 time, 100.4 real, 86.4 MB
-[runlim] sample:		101.7 time, 110.4 real, 86.4 MB
-[runlim] sample:		111.7 time, 120.4 real, 86.4 MB
-[runlim] sample:		121.7 time, 130.4 real, 86.4 MB
-[runlim] sample:		131.7 time, 140.4 real, 86.4 MB
-[runlim] sample:		141.7 time, 150.4 real, 86.4 MB
-[runlim] sample:		151.4 time, 160.4 real, 86.4 MB
-[runlim] sample:		159.1 time, 170.4 real, 86.4 MB
-[runlim] sample:		166.7 time, 180.4 real, 86.4 MB
-[runlim] sample:		175.7 time, 190.4 real, 86.4 MB
-[runlim] sample:		185.3 time, 200.4 real, 86.4 MB
-[runlim] sample:		194.6 time, 210.4 real, 86.4 MB
-[runlim] sample:		202.9 time, 220.4 real, 86.4 MB
-[runlim] sample:		212.6 time, 230.4 real, 86.4 MB
-[runlim] sample:		221.9 time, 240.4 real, 86.4 MB
-[runlim] sample:		231.9 time, 250.4 real, 86.4 MB
-[runlim] sample:		241.9 time, 260.4 real, 86.4 MB
-[runlim] sample:		251.9 time, 270.4 real, 86.4 MB
-[runlim] sample:		261.9 time, 280.4 real, 86.4 MB
-[runlim] sample:		271.9 time, 290.4 real, 86.4 MB
-[runlim] sample:		281.9 time, 300.4 real, 86.4 MB
-[runlim] sample:		291.9 time, 310.4 real, 86.4 MB
-[runlim] end:			Tue Feb  5 10:38:59 2019
-[runlim] status:		signal(9)
-[runlim] result:		11
+[runlim] argv[4]:		/tmp/bNWUshMO.smt2
+[runlim] start:			Tue Feb  5 13:27:21 2019
+[runlim] main pid:		21682
+/tmp/bNWUshMO.smt2:4.12: No set-logic command was given before this point.
+/tmp/bNWUshMO.smt2:4.12: CVC4 will make all theories available.
+/tmp/bNWUshMO.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
+/tmp/bNWUshMO.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
+[runlim] end:			Tue Feb  5 13:27:21 2019
+[runlim] status:		ok
+[runlim] result:		0
 [runlim] children:		0
-[runlim] real:			315.03 seconds
-[runlim] time:			296.55 seconds
-[runlim] space:			86.4 MB
-[runlim] samples:		3146
+[runlim] real:			0.23 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0

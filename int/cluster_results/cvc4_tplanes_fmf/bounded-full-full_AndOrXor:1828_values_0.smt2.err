@@ -5,47 +5,14 @@
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--nl-ext-tplanes
 [runlim] argv[2]:		--fmf-fun-rlv
-[runlim] argv[3]:		/tmp/fjmRlCF5.smt2
-[runlim] start:			Tue Feb  5 10:03:07 2019
-[runlim] main pid:		13744
-[runlim] sample:		9.2 time, 10.9 real, 155.5 MB
-[runlim] sample:		19.2 time, 20.9 real, 259.4 MB
-[runlim] sample:		29.2 time, 30.9 real, 356.1 MB
-[runlim] sample:		38.6 time, 40.9 real, 423.9 MB
-[runlim] sample:		48.2 time, 50.9 real, 752.6 MB
-[runlim] sample:		57.3 time, 60.9 real, 808.0 MB
-[runlim] sample:		66.8 time, 70.9 real, 808.6 MB
-[runlim] sample:		76.5 time, 80.9 real, 808.8 MB
-[runlim] sample:		85.7 time, 90.9 real, 847.4 MB
-[runlim] sample:		94.6 time, 100.9 real, 847.7 MB
-[runlim] sample:		103.6 time, 110.9 real, 1167.9 MB
-[runlim] sample:		112.1 time, 120.9 real, 1411.5 MB
-[runlim] sample:		122.1 time, 130.9 real, 1497.1 MB
-[runlim] sample:		131.6 time, 140.9 real, 1497.1 MB
-[runlim] sample:		140.4 time, 150.9 real, 1497.1 MB
-[runlim] sample:		147.8 time, 160.9 real, 1497.1 MB
-[runlim] sample:		154.9 time, 170.9 real, 1497.3 MB
-[runlim] sample:		162.1 time, 180.9 real, 1497.3 MB
-[runlim] sample:		170.8 time, 190.9 real, 1497.3 MB
-[runlim] sample:		180.8 time, 200.9 real, 1497.3 MB
-[runlim] sample:		190.8 time, 210.9 real, 1497.3 MB
-[runlim] sample:		200.8 time, 220.9 real, 1497.3 MB
-[runlim] sample:		210.8 time, 230.9 real, 1497.3 MB
-[runlim] sample:		220.6 time, 240.9 real, 1497.3 MB
-[runlim] sample:		230.6 time, 250.9 real, 1497.3 MB
-[runlim] sample:		240.6 time, 260.9 real, 1516.4 MB
-[runlim] sample:		250.2 time, 270.9 real, 1522.8 MB
-[runlim] sample:		259.9 time, 280.9 real, 1522.8 MB
-[runlim] sample:		269.6 time, 290.9 real, 1522.8 MB
-[runlim] sample:		279.5 time, 300.9 real, 1523.1 MB
-[runlim] sample:		289.3 time, 310.9 real, 1523.1 MB
-[runlim] sample:		298.7 time, 320.9 real, 1617.4 MB
-CVC4 interrupted by SIGTERM.
-[runlim] end:			Tue Feb  5 10:08:29 2019
-[runlim] status:		out of time
-[runlim] result:		2
+[runlim] argv[3]:		/tmp/gy9UMISY.smt2
+[runlim] start:			Tue Feb  5 13:06:54 2019
+[runlim] main pid:		9679
+[runlim] end:			Tue Feb  5 13:06:54 2019
+[runlim] status:		ok
+[runlim] result:		0
 [runlim] children:		0
-[runlim] real:			322.31 seconds
-[runlim] time:			300.01 seconds
-[runlim] space:			1656.1 MB
-[runlim] samples:		3213
+[runlim] real:			0.07 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0

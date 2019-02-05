@@ -3,45 +3,14 @@
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./z3
-[runlim] argv[1]:		/tmp/hHWMmD1l.smt2
-[runlim] start:			Tue Feb  5 11:04:20 2019
-[runlim] main pid:		16347
-[runlim] sample:		9.1 time, 10.1 real, 25.9 MB
-[runlim] sample:		17.8 time, 20.1 real, 26.2 MB
-[runlim] sample:		26.5 time, 30.1 real, 26.2 MB
-[runlim] sample:		35.7 time, 40.1 real, 26.2 MB
-[runlim] sample:		45.3 time, 50.1 real, 26.2 MB
-[runlim] sample:		55.3 time, 60.1 real, 26.4 MB
-[runlim] sample:		65.3 time, 70.1 real, 26.4 MB
-[runlim] sample:		75.2 time, 80.1 real, 26.4 MB
-[runlim] sample:		85.2 time, 90.1 real, 26.4 MB
-[runlim] sample:		95.2 time, 100.1 real, 26.4 MB
-[runlim] sample:		105.2 time, 110.1 real, 26.4 MB
-[runlim] sample:		115.2 time, 120.1 real, 26.4 MB
-[runlim] sample:		125.2 time, 130.1 real, 26.4 MB
-[runlim] sample:		133.2 time, 140.1 real, 26.4 MB
-[runlim] sample:		141.0 time, 150.1 real, 26.4 MB
-[runlim] sample:		148.9 time, 160.1 real, 26.4 MB
-[runlim] sample:		156.8 time, 170.1 real, 26.4 MB
-[runlim] sample:		165.8 time, 180.1 real, 26.4 MB
-[runlim] sample:		173.7 time, 190.1 real, 26.4 MB
-[runlim] sample:		183.1 time, 200.1 real, 26.6 MB
-[runlim] sample:		191.9 time, 210.1 real, 26.6 MB
-[runlim] sample:		201.9 time, 220.1 real, 26.8 MB
-[runlim] sample:		211.9 time, 230.1 real, 28.1 MB
-[runlim] sample:		221.9 time, 240.1 real, 35.9 MB
-[runlim] sample:		231.9 time, 250.1 real, 35.9 MB
-[runlim] sample:		241.9 time, 260.1 real, 35.9 MB
-[runlim] sample:		251.9 time, 270.1 real, 35.9 MB
-[runlim] sample:		261.9 time, 280.1 real, 35.9 MB
-[runlim] sample:		271.7 time, 290.1 real, 35.9 MB
-[runlim] sample:		281.7 time, 300.1 real, 35.9 MB
-[runlim] sample:		291.7 time, 310.1 real, 35.9 MB
-[runlim] end:			Tue Feb  5 11:09:32 2019
-[runlim] status:		signal(9)
-[runlim] result:		11
+[runlim] argv[1]:		/tmp/PWAhnLV3.smt2
+[runlim] start:			Tue Feb  5 13:52:20 2019
+[runlim] main pid:		24173
+[runlim] end:			Tue Feb  5 13:52:20 2019
+[runlim] status:		ok
+[runlim] result:		0
 [runlim] children:		0
-[runlim] real:			312.08 seconds
-[runlim] time:			293.60 seconds
-[runlim] space:			35.9 MB
-[runlim] samples:		3119
+[runlim] real:			0.86 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0

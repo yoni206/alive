@@ -5,36 +5,37 @@
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--nl-ext-tplanes
 [runlim] argv[2]:		--fmf-fun-rlv
-[runlim] argv[3]:		/tmp/scAfE0Xx.smt2
-[runlim] start:			Tue Feb  5 10:02:53 2019
-[runlim] main pid:		19222
-/tmp/scAfE0Xx.smt2:4.12: No set-logic command was given before this point.
-/tmp/scAfE0Xx.smt2:4.12: CVC4 will make all theories available.
-/tmp/scAfE0Xx.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
-/tmp/scAfE0Xx.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
-[runlim] sample:		8.6 time, 10.5 real, 41.3 MB
-[runlim] sample:		18.5 time, 20.5 real, 46.9 MB
-[runlim] sample:		28.5 time, 30.5 real, 49.9 MB
-[runlim] sample:		38.5 time, 40.5 real, 51.2 MB
-[runlim] sample:		48.5 time, 50.5 real, 57.9 MB
-[runlim] sample:		58.5 time, 60.5 real, 61.5 MB
-[runlim] sample:		68.5 time, 70.5 real, 62.2 MB
-[runlim] sample:		78.5 time, 80.5 real, 64.8 MB
-[runlim] sample:		88.5 time, 90.5 real, 65.5 MB
-[runlim] sample:		98.5 time, 100.5 real, 65.7 MB
-[runlim] sample:		108.4 time, 110.5 real, 68.0 MB
-[runlim] sample:		118.4 time, 120.5 real, 68.5 MB
-[runlim] sample:		128.4 time, 130.5 real, 70.7 MB
-[runlim] sample:		138.4 time, 140.5 real, 71.2 MB
-[runlim] sample:		148.4 time, 150.5 real, 71.5 MB
-[runlim] sample:		158.4 time, 160.5 real, 71.5 MB
-[runlim] sample:		168.4 time, 170.5 real, 72.0 MB
-[runlim] sample:		178.4 time, 180.5 real, 76.9 MB
-[runlim] end:			Tue Feb  5 10:06:00 2019
+[runlim] argv[3]:		/tmp/PhsttXT4.smt2
+[runlim] start:			Tue Feb  5 13:06:36 2019
+[runlim] main pid:		7771
+/tmp/PhsttXT4.smt2:4.12: No set-logic command was given before this point.
+/tmp/PhsttXT4.smt2:4.12: CVC4 will make all theories available.
+/tmp/PhsttXT4.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
+/tmp/PhsttXT4.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
+[runlim] sample:		9.0 time, 10.8 real, 42.7 MB
+[runlim] sample:		19.0 time, 20.8 real, 47.3 MB
+[runlim] sample:		29.0 time, 30.8 real, 49.9 MB
+[runlim] sample:		39.0 time, 40.8 real, 51.2 MB
+[runlim] sample:		49.0 time, 50.8 real, 57.8 MB
+[runlim] sample:		59.0 time, 60.8 real, 61.4 MB
+[runlim] sample:		69.0 time, 70.8 real, 62.2 MB
+[runlim] sample:		79.0 time, 80.8 real, 64.8 MB
+[runlim] sample:		89.0 time, 90.8 real, 65.2 MB
+[runlim] sample:		99.0 time, 100.8 real, 65.5 MB
+[runlim] sample:		109.0 time, 110.8 real, 67.8 MB
+[runlim] sample:		119.0 time, 120.8 real, 68.3 MB
+[runlim] sample:		129.0 time, 130.8 real, 69.5 MB
+[runlim] sample:		139.0 time, 140.8 real, 70.7 MB
+[runlim] sample:		149.0 time, 150.8 real, 71.3 MB
+[runlim] sample:		159.0 time, 160.8 real, 71.5 MB
+[runlim] sample:		169.0 time, 170.8 real, 71.8 MB
+[runlim] sample:		179.0 time, 180.8 real, 73.0 MB
+[runlim] sample:		189.0 time, 190.8 real, 76.9 MB
+[runlim] end:			Tue Feb  5 13:09:53 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
-[runlim] real:			187.99 seconds
-[runlim] time:			185.91 seconds
+[runlim] real:			197.10 seconds
+[runlim] time:			195.17 seconds
 [runlim] space:			78.7 MB
-[runlim] samples:		1875
+[runlim] samples:		1962

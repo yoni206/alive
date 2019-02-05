@@ -4,14 +4,14 @@
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--nl-ext-tplanes
-[runlim] argv[2]:		/tmp/dJJwJ2jF.smt2
-[runlim] start:			Tue Feb  5 09:52:45 2019
-[runlim] main pid:		20752
-[runlim] end:			Tue Feb  5 09:52:45 2019
+[runlim] argv[2]:		/tmp/zO34yl1T.smt2
+[runlim] start:			Tue Feb  5 13:01:23 2019
+[runlim] main pid:		364
+[runlim] end:			Tue Feb  5 13:01:23 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
-[runlim] real:			0.97 seconds
+[runlim] real:			0.28 seconds
 [runlim] time:			0.00 seconds
 [runlim] space:			0.0 MB
 [runlim] samples:		0

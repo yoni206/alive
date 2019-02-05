@@ -4,46 +4,14 @@
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--cbqi-all
-[runlim] argv[2]:		/tmp/64bLtSdX.smt2
-[runlim] start:			Tue Feb  5 10:38:48 2019
-[runlim] main pid:		25469
-[runlim] sample:		8.3 time, 10.1 real, 50.9 MB
-[runlim] sample:		17.1 time, 20.1 real, 64.6 MB
-[runlim] sample:		27.1 time, 30.1 real, 73.6 MB
-[runlim] sample:		35.8 time, 40.1 real, 81.4 MB
-[runlim] sample:		45.8 time, 50.1 real, 88.6 MB
-[runlim] sample:		55.8 time, 60.1 real, 94.0 MB
-[runlim] sample:		65.7 time, 70.1 real, 100.8 MB
-[runlim] sample:		75.7 time, 80.1 real, 108.2 MB
-[runlim] sample:		85.7 time, 90.1 real, 113.1 MB
-[runlim] sample:		95.7 time, 100.1 real, 117.0 MB
-[runlim] sample:		105.7 time, 110.1 real, 120.6 MB
-[runlim] sample:		115.5 time, 120.1 real, 123.7 MB
-[runlim] sample:		124.8 time, 130.1 real, 126.5 MB
-[runlim] sample:		132.8 time, 140.1 real, 128.8 MB
-[runlim] sample:		140.9 time, 150.1 real, 131.7 MB
-[runlim] sample:		150.9 time, 160.1 real, 135.0 MB
-[runlim] sample:		160.9 time, 170.1 real, 138.6 MB
-[runlim] sample:		170.9 time, 180.1 real, 141.2 MB
-[runlim] sample:		180.9 time, 190.1 real, 144.0 MB
-[runlim] sample:		190.9 time, 200.1 real, 146.6 MB
-[runlim] sample:		200.9 time, 210.1 real, 149.2 MB
-[runlim] sample:		210.6 time, 220.1 real, 151.5 MB
-[runlim] sample:		219.2 time, 230.1 real, 155.4 MB
-[runlim] sample:		229.1 time, 240.1 real, 157.4 MB
-[runlim] sample:		238.3 time, 250.1 real, 159.2 MB
-[runlim] sample:		247.5 time, 260.1 real, 161.6 MB
-[runlim] sample:		255.5 time, 270.1 real, 163.1 MB
-[runlim] sample:		264.8 time, 280.1 real, 164.7 MB
-[runlim] sample:		274.2 time, 290.1 real, 166.5 MB
-[runlim] sample:		283.3 time, 300.1 real, 170.2 MB
-[runlim] sample:		291.9 time, 310.1 real, 171.4 MB
-CVC4 interrupted by SIGTERM.
-[runlim] end:			Tue Feb  5 10:44:06 2019
-[runlim] status:		out of time
-[runlim] result:		2
+[runlim] argv[2]:		/tmp/aMc4i8jd.smt2
+[runlim] start:			Tue Feb  5 13:31:59 2019
+[runlim] main pid:		23674
+[runlim] end:			Tue Feb  5 13:31:59 2019
+[runlim] status:		ok
+[runlim] result:		0
 [runlim] children:		0
-[runlim] real:			318.42 seconds
-[runlim] time:			300.05 seconds
-[runlim] space:			173.2 MB
-[runlim] samples:		3183
+[runlim] real:			0.62 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0

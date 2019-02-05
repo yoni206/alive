@@ -3,18 +3,17 @@
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./cvc4
-[runlim] argv[1]:		/tmp/NET2aN0V.smt2
-[runlim] start:			Tue Feb  5 09:52:40 2019
-[runlim] main pid:		24882
-[runlim] sample:		9.9 time, 10.4 real, 30.2 MB
-[runlim] sample:		19.8 time, 20.4 real, 34.3 MB
-[runlim] sample:		29.8 time, 30.4 real, 41.0 MB
-[runlim] sample:		39.8 time, 40.4 real, 45.1 MB
-[runlim] end:			Tue Feb  5 09:53:27 2019
+[runlim] argv[1]:		/tmp/f4sChtPt.smt2
+[runlim] start:			Tue Feb  5 13:01:12 2019
+[runlim] main pid:		30403
+[runlim] sample:		10.0 time, 10.8 real, 34.3 MB
+[runlim] sample:		20.0 time, 20.8 real, 38.1 MB
+[runlim] sample:		29.8 time, 30.8 real, 44.0 MB
+[runlim] end:			Tue Feb  5 13:01:52 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
-[runlim] real:			47.12 seconds
-[runlim] time:			46.36 seconds
+[runlim] real:			40.61 seconds
+[runlim] time:			39.50 seconds
 [runlim] space:			47.4 MB
-[runlim] samples:		466
+[runlim] samples:		397

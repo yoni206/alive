@@ -5,18 +5,18 @@
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--nl-ext-tplanes
 [runlim] argv[2]:		--fmf-fun-rlv
-[runlim] argv[3]:		/tmp/Va5OswLo.smt2
-[runlim] start:			Tue Feb  5 10:07:57 2019
-[runlim] main pid:		18646
-/tmp/Va5OswLo.smt2:4.12: No set-logic command was given before this point.
-/tmp/Va5OswLo.smt2:4.12: CVC4 will make all theories available.
-/tmp/Va5OswLo.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
-/tmp/Va5OswLo.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
-[runlim] end:			Tue Feb  5 10:07:57 2019
+[runlim] argv[3]:		/tmp/NUpIonBR.smt2
+[runlim] start:			Tue Feb  5 13:11:35 2019
+[runlim] main pid:		8876
+/tmp/NUpIonBR.smt2:4.12: No set-logic command was given before this point.
+/tmp/NUpIonBR.smt2:4.12: CVC4 will make all theories available.
+/tmp/NUpIonBR.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
+/tmp/NUpIonBR.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
+[runlim] end:			Tue Feb  5 13:11:35 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
-[runlim] real:			0.78 seconds
+[runlim] real:			0.61 seconds
 [runlim] time:			0.00 seconds
 [runlim] space:			0.0 MB
 [runlim] samples:		0

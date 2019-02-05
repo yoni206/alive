@@ -4,14 +4,14 @@
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--fmf-fun-rlv
-[runlim] argv[2]:		/tmp/RMqkd6DD.smt2
-[runlim] start:			Tue Feb  5 10:50:33 2019
-[runlim] main pid:		14817
-[runlim] end:			Tue Feb  5 10:50:33 2019
+[runlim] argv[2]:		/tmp/HfDzb1hF.smt2
+[runlim] start:			Tue Feb  5 13:41:41 2019
+[runlim] main pid:		15313
+[runlim] end:			Tue Feb  5 13:41:41 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
-[runlim] real:			0.10 seconds
+[runlim] real:			0.45 seconds
 [runlim] time:			0.00 seconds
 [runlim] space:			0.0 MB
 [runlim] samples:		0

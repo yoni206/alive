@@ -4,50 +4,18 @@
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--nl-ext-tplanes
-[runlim] argv[2]:		/tmp/v43v4C5z.smt2
-[runlim] start:			Tue Feb  5 09:57:51 2019
-[runlim] main pid:		18223
-/tmp/v43v4C5z.smt2:4.12: No set-logic command was given before this point.
-/tmp/v43v4C5z.smt2:4.12: CVC4 will make all theories available.
-/tmp/v43v4C5z.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
-/tmp/v43v4C5z.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
-[runlim] sample:		9.0 time, 10.0 real, 90.8 MB
-[runlim] sample:		19.0 time, 20.0 real, 122.6 MB
-[runlim] sample:		29.0 time, 30.0 real, 144.2 MB
-[runlim] sample:		39.0 time, 40.0 real, 169.7 MB
-[runlim] sample:		49.0 time, 50.0 real, 184.5 MB
-[runlim] sample:		59.0 time, 60.0 real, 197.9 MB
-[runlim] sample:		69.0 time, 70.0 real, 215.5 MB
-[runlim] sample:		78.2 time, 80.0 real, 229.2 MB
-[runlim] sample:		86.5 time, 90.0 real, 236.2 MB
-[runlim] sample:		94.0 time, 100.0 real, 243.6 MB
-[runlim] sample:		101.6 time, 110.0 real, 250.6 MB
-[runlim] sample:		109.3 time, 120.0 real, 257.5 MB
-[runlim] sample:		117.0 time, 130.0 real, 268.1 MB
-[runlim] sample:		124.6 time, 140.0 real, 271.2 MB
-[runlim] sample:		133.6 time, 150.0 real, 278.4 MB
-[runlim] sample:		143.0 time, 160.0 real, 289.8 MB
-[runlim] sample:		150.7 time, 170.0 real, 298.6 MB
-[runlim] sample:		158.6 time, 180.0 real, 305.1 MB
-[runlim] sample:		167.4 time, 190.0 real, 313.9 MB
-[runlim] sample:		176.3 time, 200.0 real, 321.4 MB
-[runlim] sample:		184.1 time, 210.0 real, 323.4 MB
-[runlim] sample:		191.8 time, 220.0 real, 330.9 MB
-[runlim] sample:		199.4 time, 230.0 real, 346.3 MB
-[runlim] sample:		206.9 time, 240.0 real, 347.4 MB
-[runlim] sample:		214.6 time, 250.0 real, 353.8 MB
-[runlim] sample:		224.6 time, 260.0 real, 367.3 MB
-[runlim] sample:		234.6 time, 270.0 real, 370.7 MB
-[runlim] sample:		244.6 time, 280.0 real, 377.1 MB
-[runlim] sample:		254.6 time, 290.0 real, 382.8 MB
-[runlim] sample:		264.6 time, 300.0 real, 384.6 MB
-[runlim] sample:		274.6 time, 310.0 real, 389.7 MB
-[runlim] sample:		284.6 time, 320.0 real, 395.1 MB
-[runlim] end:			Tue Feb  5 10:03:13 2019
-[runlim] status:		signal(9)
-[runlim] result:		11
+[runlim] argv[2]:		/tmp/uJKwfo69.smt2
+[runlim] start:			Tue Feb  5 13:06:15 2019
+[runlim] main pid:		16592
+/tmp/uJKwfo69.smt2:4.12: No set-logic command was given before this point.
+/tmp/uJKwfo69.smt2:4.12: CVC4 will make all theories available.
+/tmp/uJKwfo69.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
+/tmp/uJKwfo69.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
+[runlim] end:			Tue Feb  5 13:06:15 2019
+[runlim] status:		ok
+[runlim] result:		0
 [runlim] children:		0
-[runlim] real:			321.44 seconds
-[runlim] time:			286.02 seconds
-[runlim] space:			396.4 MB
-[runlim] samples:		3214
+[runlim] real:			0.75 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0

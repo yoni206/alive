@@ -3,14 +3,14 @@
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./z3
-[runlim] argv[1]:		/tmp/qT0x4ADn.smt2
-[runlim] start:			Tue Feb  5 11:04:09 2019
-[runlim] main pid:		4748
-[runlim] end:			Tue Feb  5 11:04:09 2019
+[runlim] argv[1]:		/tmp/gzlO1qB0.smt2
+[runlim] start:			Tue Feb  5 13:51:51 2019
+[runlim] main pid:		5324
+[runlim] end:			Tue Feb  5 13:51:51 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
-[runlim] real:			0.79 seconds
-[runlim] time:			0.07 seconds
+[runlim] real:			0.71 seconds
+[runlim] time:			0.09 seconds
 [runlim] space:			13.7 MB
 [runlim] samples:		1

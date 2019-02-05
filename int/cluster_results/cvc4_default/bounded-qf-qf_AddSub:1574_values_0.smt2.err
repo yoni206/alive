@@ -3,14 +3,14 @@
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./cvc4
-[runlim] argv[1]:		/tmp/lkfpxQIV.smt2
-[runlim] start:			Tue Feb  5 09:52:43 2019
-[runlim] main pid:		14480
-[runlim] end:			Tue Feb  5 09:52:44 2019
+[runlim] argv[1]:		/tmp/3TI7OMxz.smt2
+[runlim] start:			Tue Feb  5 13:01:18 2019
+[runlim] main pid:		6443
+[runlim] end:			Tue Feb  5 13:01:19 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
-[runlim] real:			1.50 seconds
-[runlim] time:			1.29 seconds
-[runlim] space:			23.9 MB
-[runlim] samples:		13
+[runlim] real:			1.36 seconds
+[runlim] time:			0.79 seconds
+[runlim] space:			23.6 MB
+[runlim] samples:		8

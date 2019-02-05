@@ -3,18 +3,19 @@
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./cvc4
-[runlim] argv[1]:		/tmp/DV1DeTS7.smt2
-[runlim] start:			Tue Feb  5 09:52:42 2019
-[runlim] main pid:		16281
-[runlim] sample:		10.0 time, 11.0 real, 29.8 MB
-[runlim] sample:		20.0 time, 21.0 real, 34.4 MB
-[runlim] sample:		30.0 time, 31.0 real, 41.1 MB
-[runlim] sample:		40.0 time, 41.0 real, 45.1 MB
-[runlim] end:			Tue Feb  5 09:53:30 2019
+[runlim] argv[1]:		/tmp/ssQ30lPK.smt2
+[runlim] start:			Tue Feb  5 13:01:18 2019
+[runlim] main pid:		25753
+[runlim] sample:		10.0 time, 10.2 real, 34.4 MB
+[runlim] sample:		20.0 time, 20.2 real, 36.9 MB
+[runlim] sample:		30.0 time, 30.2 real, 42.0 MB
+[runlim] sample:		40.0 time, 40.2 real, 46.4 MB
+[runlim] sample:		50.0 time, 50.2 real, 50.2 MB
+[runlim] end:			Tue Feb  5 13:02:11 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
-[runlim] real:			48.03 seconds
-[runlim] time:			46.97 seconds
-[runlim] space:			47.5 MB
-[runlim] samples:		470
+[runlim] real:			53.99 seconds
+[runlim] time:			53.78 seconds
+[runlim] space:			51.0 MB
+[runlim] samples:		538

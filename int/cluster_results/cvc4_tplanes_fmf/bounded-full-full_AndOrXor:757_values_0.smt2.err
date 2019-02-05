@@ -5,47 +5,44 @@
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--nl-ext-tplanes
 [runlim] argv[2]:		--fmf-fun-rlv
-[runlim] argv[3]:		/tmp/chcUtiRV.smt2
-[runlim] start:			Tue Feb  5 10:03:05 2019
-[runlim] main pid:		4867
-[runlim] sample:		9.3 time, 10.8 real, 86.8 MB
-[runlim] sample:		19.3 time, 20.8 real, 322.7 MB
-[runlim] sample:		29.3 time, 30.8 real, 415.3 MB
-[runlim] sample:		39.3 time, 40.8 real, 572.8 MB
-[runlim] sample:		49.3 time, 50.8 real, 934.0 MB
-[runlim] sample:		59.3 time, 60.8 real, 1335.5 MB
-[runlim] sample:		69.3 time, 70.8 real, 1463.3 MB
-[runlim] sample:		78.7 time, 80.8 real, 1464.9 MB
-[runlim] sample:		88.0 time, 90.8 real, 1464.9 MB
-[runlim] sample:		97.0 time, 100.8 real, 1466.2 MB
-[runlim] sample:		105.3 time, 110.8 real, 1467.7 MB
-[runlim] sample:		113.9 time, 120.8 real, 1467.7 MB
-[runlim] sample:		122.8 time, 130.8 real, 1567.8 MB
-[runlim] sample:		131.2 time, 140.8 real, 1636.1 MB
-[runlim] sample:		139.6 time, 150.8 real, 1652.4 MB
-[runlim] sample:		147.6 time, 160.8 real, 1656.0 MB
-[runlim] sample:		156.8 time, 170.8 real, 1656.0 MB
-[runlim] sample:		166.2 time, 180.8 real, 1656.0 MB
-[runlim] sample:		175.6 time, 190.8 real, 1656.0 MB
-[runlim] sample:		185.6 time, 200.8 real, 1656.0 MB
-[runlim] sample:		195.6 time, 210.8 real, 1656.0 MB
-[runlim] sample:		204.2 time, 220.8 real, 1656.0 MB
-[runlim] sample:		213.1 time, 230.8 real, 1656.0 MB
-[runlim] sample:		221.9 time, 240.8 real, 1656.0 MB
-[runlim] sample:		231.9 time, 250.8 real, 1656.0 MB
-[runlim] sample:		241.2 time, 260.8 real, 1656.0 MB
-[runlim] sample:		249.0 time, 270.8 real, 1656.0 MB
-[runlim] sample:		256.6 time, 280.8 real, 1656.0 MB
-[runlim] sample:		264.7 time, 290.8 real, 1656.0 MB
-[runlim] sample:		273.4 time, 300.8 real, 1656.0 MB
-[runlim] sample:		283.4 time, 310.8 real, 1656.0 MB
-[runlim] sample:		293.4 time, 320.8 real, 1760.4 MB
-CVC4 interrupted by SIGTERM.
-[runlim] end:			Tue Feb  5 10:08:32 2019
-[runlim] status:		out of time
-[runlim] result:		2
+[runlim] argv[3]:		/tmp/DtYQXH85.smt2
+[runlim] start:			Tue Feb  5 13:06:48 2019
+[runlim] main pid:		15161
+[runlim] sample:		9.8 time, 10.1 real, 101.7 MB
+[runlim] sample:		19.8 time, 20.1 real, 363.1 MB
+[runlim] sample:		29.8 time, 30.1 real, 490.0 MB
+[runlim] sample:		39.5 time, 40.1 real, 595.7 MB
+[runlim] sample:		49.2 time, 50.1 real, 601.9 MB
+[runlim] sample:		58.9 time, 60.1 real, 712.4 MB
+[runlim] sample:		68.5 time, 70.1 real, 1002.1 MB
+[runlim] sample:		78.3 time, 80.1 real, 1368.2 MB
+[runlim] sample:		87.0 time, 90.1 real, 1633.3 MB
+[runlim] sample:		95.5 time, 100.1 real, 2030.3 MB
+[runlim] sample:		105.5 time, 110.1 real, 2357.6 MB
+[runlim] sample:		115.5 time, 120.1 real, 2442.4 MB
+[runlim] sample:		125.4 time, 130.1 real, 2442.4 MB
+[runlim] sample:		134.4 time, 140.1 real, 2443.7 MB
+[runlim] sample:		142.4 time, 150.1 real, 2443.7 MB
+[runlim] sample:		150.9 time, 160.1 real, 2443.7 MB
+[runlim] sample:		160.9 time, 170.1 real, 2445.0 MB
+[runlim] sample:		170.9 time, 180.1 real, 2446.1 MB
+[runlim] sample:		180.9 time, 190.1 real, 2446.1 MB
+[runlim] sample:		190.9 time, 200.1 real, 2446.1 MB
+[runlim] sample:		200.9 time, 210.1 real, 2557.6 MB
+[runlim] sample:		210.9 time, 220.1 real, 2562.4 MB
+[runlim] sample:		220.9 time, 230.1 real, 2562.4 MB
+[runlim] sample:		230.8 time, 240.1 real, 2606.2 MB
+[runlim] sample:		240.9 time, 250.1 real, 2616.3 MB
+[runlim] sample:		250.9 time, 260.1 real, 2616.3 MB
+[runlim] sample:		260.9 time, 270.1 real, 2616.3 MB
+[runlim] sample:		270.9 time, 280.1 real, 2616.3 MB
+[runlim] sample:		280.9 time, 290.1 real, 2616.3 MB
+[runlim] sample:		290.2 time, 300.1 real, 2616.3 MB
+[runlim] end:			Tue Feb  5 13:11:57 2019
+[runlim] status:		signal(9)
+[runlim] result:		11
 [runlim] children:		0
-[runlim] real:			327.60 seconds
-[runlim] time:			300.10 seconds
-[runlim] space:			1947.0 MB
-[runlim] samples:		3267
+[runlim] real:			309.51 seconds
+[runlim] time:			296.91 seconds
+[runlim] space:			2616.3 MB
+[runlim] samples:		3094

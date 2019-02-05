@@ -4,45 +4,45 @@
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--fmf-fun-rlv
-[runlim] argv[2]:		/tmp/gx9KMUsg.smt2
-[runlim] start:			Tue Feb  5 10:53:37 2019
-[runlim] main pid:		14628
-[runlim] sample:		9.3 time, 11.0 real, 50.6 MB
-[runlim] sample:		19.1 time, 21.0 real, 281.0 MB
-[runlim] sample:		29.1 time, 31.0 real, 547.6 MB
-[runlim] sample:		39.1 time, 41.0 real, 622.9 MB
-[runlim] sample:		49.1 time, 51.0 real, 622.9 MB
-[runlim] sample:		59.1 time, 61.0 real, 623.2 MB
-[runlim] sample:		69.1 time, 71.0 real, 623.2 MB
-[runlim] sample:		79.1 time, 81.0 real, 623.4 MB
-[runlim] sample:		89.1 time, 91.0 real, 623.4 MB
-[runlim] sample:		99.1 time, 101.0 real, 623.7 MB
-[runlim] sample:		109.1 time, 111.0 real, 624.0 MB
-[runlim] sample:		119.1 time, 121.0 real, 624.2 MB
-[runlim] sample:		129.1 time, 131.0 real, 624.2 MB
-[runlim] sample:		139.1 time, 141.0 real, 624.5 MB
-[runlim] sample:		149.1 time, 151.0 real, 624.7 MB
-[runlim] sample:		159.1 time, 161.0 real, 625.0 MB
-[runlim] sample:		169.1 time, 171.0 real, 625.2 MB
-[runlim] sample:		179.1 time, 181.0 real, 625.2 MB
-[runlim] sample:		189.1 time, 191.0 real, 625.5 MB
-[runlim] sample:		199.1 time, 201.0 real, 625.5 MB
-[runlim] sample:		209.1 time, 211.0 real, 625.8 MB
-[runlim] sample:		219.1 time, 221.0 real, 625.8 MB
-[runlim] sample:		229.1 time, 231.0 real, 626.0 MB
-[runlim] sample:		239.1 time, 241.0 real, 626.3 MB
-[runlim] sample:		249.1 time, 251.0 real, 626.5 MB
-[runlim] sample:		259.1 time, 261.0 real, 626.5 MB
-[runlim] sample:		269.1 time, 271.0 real, 626.8 MB
-[runlim] sample:		279.1 time, 281.0 real, 627.1 MB
-[runlim] sample:		289.1 time, 291.0 real, 627.1 MB
-[runlim] sample:		299.1 time, 301.0 real, 627.3 MB
-CVC4 interrupted by SIGTERM.
-[runlim] end:			Tue Feb  5 10:58:38 2019
-[runlim] status:		out of time
-[runlim] result:		2
+[runlim] argv[2]:		/tmp/bKc2pDDo.smt2
+[runlim] start:			Tue Feb  5 13:44:01 2019
+[runlim] main pid:		25722
+[runlim] sample:		10.0 time, 10.4 real, 245.8 MB
+[runlim] sample:		20.0 time, 20.4 real, 606.7 MB
+[runlim] sample:		30.0 time, 30.4 real, 622.9 MB
+[runlim] sample:		40.0 time, 40.4 real, 623.2 MB
+[runlim] sample:		50.0 time, 50.4 real, 623.2 MB
+[runlim] sample:		60.0 time, 60.4 real, 623.4 MB
+[runlim] sample:		70.0 time, 70.4 real, 623.4 MB
+[runlim] sample:		79.7 time, 80.4 real, 623.7 MB
+[runlim] sample:		88.9 time, 90.4 real, 623.9 MB
+[runlim] sample:		98.2 time, 100.4 real, 623.9 MB
+[runlim] sample:		107.8 time, 110.4 real, 624.2 MB
+[runlim] sample:		116.8 time, 120.4 real, 624.4 MB
+[runlim] sample:		126.5 time, 130.4 real, 624.4 MB
+[runlim] sample:		136.2 time, 140.4 real, 624.7 MB
+[runlim] sample:		146.1 time, 150.4 real, 625.0 MB
+[runlim] sample:		155.2 time, 160.4 real, 625.2 MB
+[runlim] sample:		165.2 time, 170.4 real, 625.2 MB
+[runlim] sample:		175.2 time, 180.4 real, 625.2 MB
+[runlim] sample:		185.2 time, 190.4 real, 625.5 MB
+[runlim] sample:		195.2 time, 200.4 real, 625.7 MB
+[runlim] sample:		205.2 time, 210.4 real, 625.7 MB
+[runlim] sample:		215.1 time, 220.4 real, 626.0 MB
+[runlim] sample:		223.9 time, 230.4 real, 626.2 MB
+[runlim] sample:		233.9 time, 240.4 real, 626.2 MB
+[runlim] sample:		243.9 time, 250.4 real, 626.5 MB
+[runlim] sample:		252.7 time, 260.4 real, 626.8 MB
+[runlim] sample:		262.1 time, 270.4 real, 626.8 MB
+[runlim] sample:		271.1 time, 280.4 real, 627.0 MB
+[runlim] sample:		279.7 time, 290.4 real, 627.3 MB
+[runlim] sample:		288.3 time, 300.4 real, 627.3 MB
+[runlim] sample:		296.8 time, 310.4 real, 628.1 MB
+[runlim] end:			Tue Feb  5 13:49:13 2019
+[runlim] status:		signal(9)
+[runlim] result:		11
 [runlim] children:		0
-[runlim] real:			302.00 seconds
-[runlim] time:			300.08 seconds
-[runlim] space:			627.3 MB
-[runlim] samples:		3010
+[runlim] real:			312.91 seconds
+[runlim] time:			298.74 seconds
+[runlim] space:			628.1 MB
+[runlim] samples:		3124

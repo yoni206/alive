@@ -4,47 +4,14 @@
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--fmf-fun-rlv
-[runlim] argv[2]:		/tmp/AAKLVkVC.smt2
-[runlim] start:			Tue Feb  5 10:49:54 2019
-[runlim] main pid:		26566
-[runlim] sample:		9.1 time, 10.5 real, 179.3 MB
-[runlim] sample:		19.1 time, 20.5 real, 359.2 MB
-[runlim] sample:		29.1 time, 30.5 real, 627.2 MB
-[runlim] sample:		39.1 time, 40.5 real, 630.1 MB
-[runlim] sample:		49.1 time, 50.5 real, 684.0 MB
-[runlim] sample:		59.1 time, 60.5 real, 744.9 MB
-[runlim] sample:		68.5 time, 70.5 real, 755.7 MB
-[runlim] sample:		78.2 time, 80.5 real, 1040.4 MB
-[runlim] sample:		88.2 time, 90.5 real, 1421.6 MB
-[runlim] sample:		97.3 time, 100.5 real, 1680.1 MB
-[runlim] sample:		106.0 time, 110.5 real, 1983.8 MB
-[runlim] sample:		115.6 time, 120.5 real, 2448.4 MB
-[runlim] sample:		124.5 time, 130.5 real, 2689.2 MB
-[runlim] sample:		133.6 time, 140.5 real, 2842.6 MB
-[runlim] sample:		143.0 time, 150.5 real, 2843.9 MB
-[runlim] sample:		151.4 time, 160.5 real, 2843.9 MB
-[runlim] sample:		159.8 time, 170.5 real, 2843.9 MB
-[runlim] sample:		168.6 time, 180.5 real, 2843.9 MB
-[runlim] sample:		178.3 time, 190.5 real, 2843.9 MB
-[runlim] sample:		188.3 time, 200.5 real, 2843.9 MB
-[runlim] sample:		198.3 time, 210.5 real, 2843.9 MB
-[runlim] sample:		208.3 time, 220.5 real, 2843.9 MB
-[runlim] sample:		217.3 time, 230.5 real, 2843.9 MB
-[runlim] sample:		226.8 time, 240.5 real, 2843.9 MB
-[runlim] sample:		235.2 time, 250.5 real, 2843.9 MB
-[runlim] sample:		244.0 time, 260.5 real, 2843.9 MB
-[runlim] sample:		254.0 time, 270.5 real, 2843.9 MB
-[runlim] sample:		264.0 time, 280.5 real, 2843.9 MB
-[runlim] sample:		272.2 time, 290.5 real, 2843.9 MB
-[runlim] sample:		281.6 time, 300.5 real, 2845.9 MB
-[runlim] sample:		290.1 time, 310.5 real, 2850.6 MB
-[runlim] sample:		299.2 time, 320.5 real, 2878.4 MB
-CVC4 interrupted by SIGTERM.
-[runlim] end:			Tue Feb  5 10:55:15 2019
-[runlim] status:		out of time
-[runlim] result:		2
+[runlim] argv[2]:		/tmp/BEbd6741.smt2
+[runlim] start:			Tue Feb  5 13:38:08 2019
+[runlim] main pid:		31587
+[runlim] end:			Tue Feb  5 13:38:09 2019
+[runlim] status:		ok
+[runlim] result:		0
 [runlim] children:		0
-[runlim] real:			321.78 seconds
-[runlim] time:			300.13 seconds
-[runlim] space:			2881.8 MB
-[runlim] samples:		3212
+[runlim] real:			1.04 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0

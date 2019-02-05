@@ -1,5 +1,5 @@
-c host: barrett10.stanford.edu
-c start: Tue Feb  5 11:10:52 PST 2019
+c host: barrett19.stanford.edu
+c start: Tue Feb  5 13:58:12 PST 2019
 c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/bounded/partial/partial_AddSub:1202_values_0.smt2
 c solver: ./z3
 c solver options: 

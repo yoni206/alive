@@ -4,14 +4,14 @@
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--cbqi-all
-[runlim] argv[2]:		/tmp/jeuAexWL.smt2
-[runlim] start:			Tue Feb  5 10:39:08 2019
-[runlim] main pid:		25675
-[runlim] end:			Tue Feb  5 10:39:09 2019
+[runlim] argv[2]:		/tmp/JUNDAONe.smt2
+[runlim] start:			Tue Feb  5 13:32:14 2019
+[runlim] main pid:		3087
+[runlim] end:			Tue Feb  5 13:32:15 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
-[runlim] real:			1.97 seconds
-[runlim] time:			0.79 seconds
-[runlim] space:			24.8 MB
+[runlim] real:			1.95 seconds
+[runlim] time:			0.80 seconds
+[runlim] space:			24.9 MB
 [runlim] samples:		11

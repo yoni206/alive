@@ -5,14 +5,14 @@
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--nl-ext-tplanes
 [runlim] argv[2]:		--cbqi-all
-[runlim] argv[3]:		/tmp/m4jjZg4o.smt2
-[runlim] start:			Tue Feb  5 10:23:21 2019
-[runlim] main pid:		12735
-[runlim] end:			Tue Feb  5 10:23:21 2019
+[runlim] argv[3]:		/tmp/m6qBOMvS.smt2
+[runlim] start:			Tue Feb  5 13:21:49 2019
+[runlim] main pid:		10483
+[runlim] end:			Tue Feb  5 13:21:50 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
-[runlim] real:			0.64 seconds
+[runlim] real:			1.05 seconds
 [runlim] time:			0.00 seconds
 [runlim] space:			0.0 MB
 [runlim] samples:		0

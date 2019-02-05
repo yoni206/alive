@@ -1,5 +1,5 @@
-c host: barrett31.stanford.edu
-c start: Tue Feb  5 10:23:38 PST 2019
+c host: barrett46.stanford.edu
+c start: Tue Feb  5 13:21:58 PST 2019
 c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/unbounded/full/full_AddSub:1599_values_0.smt2
 c solver: ./cvc4
 c solver options: --nl-ext-tplanes --full-saturate-quant --no-e-matching

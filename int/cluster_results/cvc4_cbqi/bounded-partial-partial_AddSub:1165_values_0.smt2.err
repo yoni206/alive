@@ -4,14 +4,15 @@
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--cbqi-all
-[runlim] argv[2]:		/tmp/FIumtcus.smt2
-[runlim] start:			Tue Feb  5 10:49:25 2019
-[runlim] main pid:		25464
-[runlim] end:			Tue Feb  5 10:49:34 2019
+[runlim] argv[2]:		/tmp/XOONRnfC.smt2
+[runlim] start:			Tue Feb  5 13:37:47 2019
+[runlim] main pid:		6204
+[runlim] sample:		8.1 time, 10.9 real, 38.9 MB
+[runlim] end:			Tue Feb  5 13:37:58 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
-[runlim] real:			9.36 seconds
-[runlim] time:			8.30 seconds
-[runlim] space:			39.0 MB
-[runlim] samples:		90
+[runlim] real:			11.51 seconds
+[runlim] time:			8.64 seconds
+[runlim] space:			38.9 MB
+[runlim] samples:		106

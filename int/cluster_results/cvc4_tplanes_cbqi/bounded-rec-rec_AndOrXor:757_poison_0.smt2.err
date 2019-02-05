@@ -5,18 +5,18 @@
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--nl-ext-tplanes
 [runlim] argv[2]:		--cbqi-all
-[runlim] argv[3]:		/tmp/X3la16LP.smt2
-[runlim] start:			Tue Feb  5 10:18:41 2019
-[runlim] main pid:		7170
-/tmp/X3la16LP.smt2:4.12: No set-logic command was given before this point.
-/tmp/X3la16LP.smt2:4.12: CVC4 will make all theories available.
-/tmp/X3la16LP.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
-/tmp/X3la16LP.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
-[runlim] end:			Tue Feb  5 10:18:41 2019
+[runlim] argv[3]:		/tmp/EsDjwOGX.smt2
+[runlim] start:			Tue Feb  5 13:17:46 2019
+[runlim] main pid:		9099
+/tmp/EsDjwOGX.smt2:4.12: No set-logic command was given before this point.
+/tmp/EsDjwOGX.smt2:4.12: CVC4 will make all theories available.
+/tmp/EsDjwOGX.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
+/tmp/EsDjwOGX.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
+[runlim] end:			Tue Feb  5 13:17:46 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
-[runlim] real:			0.70 seconds
+[runlim] real:			0.17 seconds
 [runlim] time:			0.00 seconds
 [runlim] space:			0.0 MB
 [runlim] samples:		0

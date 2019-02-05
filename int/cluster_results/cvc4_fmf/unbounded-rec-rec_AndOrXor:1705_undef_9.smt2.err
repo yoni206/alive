@@ -4,18 +4,18 @@
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--fmf-fun-rlv
-[runlim] argv[2]:		/tmp/BzxB6KiY.smt2
-[runlim] start:			Tue Feb  5 10:54:27 2019
-[runlim] main pid:		24063
-/tmp/BzxB6KiY.smt2:4.12: No set-logic command was given before this point.
-/tmp/BzxB6KiY.smt2:4.12: CVC4 will make all theories available.
-/tmp/BzxB6KiY.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
-/tmp/BzxB6KiY.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
-[runlim] end:			Tue Feb  5 10:54:27 2019
+[runlim] argv[2]:		/tmp/K8M7U8j9.smt2
+[runlim] start:			Tue Feb  5 13:44:31 2019
+[runlim] main pid:		13075
+/tmp/K8M7U8j9.smt2:4.12: No set-logic command was given before this point.
+/tmp/K8M7U8j9.smt2:4.12: CVC4 will make all theories available.
+/tmp/K8M7U8j9.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
+/tmp/K8M7U8j9.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
+[runlim] end:			Tue Feb  5 13:44:31 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
-[runlim] real:			0.06 seconds
+[runlim] real:			0.70 seconds
 [runlim] time:			0.00 seconds
 [runlim] space:			0.0 MB
 [runlim] samples:		0

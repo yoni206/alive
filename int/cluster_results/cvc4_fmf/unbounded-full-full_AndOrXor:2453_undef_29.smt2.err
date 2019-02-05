@@ -4,10 +4,10 @@
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--fmf-fun-rlv
-[runlim] argv[2]:		/tmp/lSXskyGo.smt2
-[runlim] start:			Tue Feb  5 10:50:01 2019
-[runlim] main pid:		30428
-[runlim] end:			Tue Feb  5 10:50:01 2019
+[runlim] argv[2]:		/tmp/MAXAnlHO.smt2
+[runlim] start:			Tue Feb  5 13:38:13 2019
+[runlim] main pid:		23680
+[runlim] end:			Tue Feb  5 13:38:13 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0

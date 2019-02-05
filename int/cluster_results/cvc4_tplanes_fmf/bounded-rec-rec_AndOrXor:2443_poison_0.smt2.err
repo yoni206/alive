@@ -5,18 +5,18 @@
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--nl-ext-tplanes
 [runlim] argv[2]:		--fmf-fun-rlv
-[runlim] argv[3]:		/tmp/ntk9SZPd.smt2
-[runlim] start:			Tue Feb  5 10:06:29 2019
-[runlim] main pid:		28905
-/tmp/ntk9SZPd.smt2:4.12: No set-logic command was given before this point.
-/tmp/ntk9SZPd.smt2:4.12: CVC4 will make all theories available.
-/tmp/ntk9SZPd.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
-/tmp/ntk9SZPd.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
-[runlim] end:			Tue Feb  5 10:06:29 2019
+[runlim] argv[3]:		/tmp/ZhDem6Sb.smt2
+[runlim] start:			Tue Feb  5 13:11:28 2019
+[runlim] main pid:		28290
+/tmp/ZhDem6Sb.smt2:4.12: No set-logic command was given before this point.
+/tmp/ZhDem6Sb.smt2:4.12: CVC4 will make all theories available.
+/tmp/ZhDem6Sb.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
+/tmp/ZhDem6Sb.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
+[runlim] end:			Tue Feb  5 13:11:28 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
-[runlim] real:			0.85 seconds
+[runlim] real:			0.55 seconds
 [runlim] time:			0.00 seconds
 [runlim] space:			0.0 MB
 [runlim] samples:		0

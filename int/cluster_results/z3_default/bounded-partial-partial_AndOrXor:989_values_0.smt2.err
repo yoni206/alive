@@ -3,26 +3,14 @@
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./z3
-[runlim] argv[1]:		/tmp/wYsEfu8Q.smt2
-[runlim] start:			Tue Feb  5 11:10:21 2019
-[runlim] main pid:		21858
-[runlim] sample:		9.6 time, 10.9 real, 80.4 MB
-[runlim] sample:		18.6 time, 20.9 real, 86.3 MB
-[runlim] sample:		28.1 time, 30.9 real, 86.3 MB
-[runlim] sample:		38.1 time, 40.9 real, 86.6 MB
-[runlim] sample:		48.1 time, 50.9 real, 86.6 MB
-[runlim] sample:		57.6 time, 60.9 real, 86.6 MB
-[runlim] sample:		67.6 time, 70.9 real, 86.8 MB
-[runlim] sample:		77.6 time, 80.9 real, 86.8 MB
-[runlim] sample:		87.6 time, 90.9 real, 86.8 MB
-[runlim] sample:		97.6 time, 100.9 real, 87.1 MB
-[runlim] sample:		107.6 time, 110.9 real, 87.1 MB
-[runlim] sample:		117.6 time, 120.9 real, 87.1 MB
-[runlim] end:			Tue Feb  5 11:12:22 2019
+[runlim] argv[1]:		/tmp/Ac5bV70u.smt2
+[runlim] start:			Tue Feb  5 13:57:30 2019
+[runlim] main pid:		29953
+[runlim] end:			Tue Feb  5 13:57:30 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
-[runlim] real:			122.00 seconds
-[runlim] time:			118.62 seconds
-[runlim] space:			87.1 MB
-[runlim] samples:		1210
+[runlim] real:			0.07 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0

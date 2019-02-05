@@ -6,46 +6,14 @@
 [runlim] argv[1]:		--nl-ext-tplanes
 [runlim] argv[2]:		--full-saturate-quant
 [runlim] argv[3]:		--no-e-matching
-[runlim] argv[4]:		/tmp/IE570AUQ.smt2
-[runlim] start:			Tue Feb  5 10:28:34 2019
-[runlim] main pid:		32761
-[runlim] sample:		9.2 time, 10.3 real, 46.4 MB
-[runlim] sample:		18.3 time, 20.3 real, 55.4 MB
-[runlim] sample:		28.1 time, 30.3 real, 62.3 MB
-[runlim] sample:		37.8 time, 40.3 real, 74.7 MB
-[runlim] sample:		46.2 time, 50.3 real, 80.9 MB
-[runlim] sample:		55.2 time, 60.3 real, 81.1 MB
-[runlim] sample:		65.1 time, 70.3 real, 93.9 MB
-[runlim] sample:		75.1 time, 80.3 real, 93.9 MB
-[runlim] sample:		84.8 time, 90.3 real, 93.1 MB
-[runlim] sample:		94.0 time, 100.3 real, 105.1 MB
-[runlim] sample:		103.0 time, 110.3 real, 105.1 MB
-[runlim] sample:		112.8 time, 120.3 real, 105.3 MB
-[runlim] sample:		122.8 time, 130.3 real, 121.1 MB
-[runlim] sample:		132.6 time, 140.3 real, 121.4 MB
-[runlim] sample:		142.2 time, 150.3 real, 121.4 MB
-[runlim] sample:		151.9 time, 160.3 real, 121.7 MB
-[runlim] sample:		161.8 time, 170.3 real, 121.7 MB
-[runlim] sample:		171.8 time, 180.3 real, 148.5 MB
-[runlim] sample:		181.8 time, 190.3 real, 148.5 MB
-[runlim] sample:		191.7 time, 200.3 real, 151.0 MB
-[runlim] sample:		201.2 time, 210.3 real, 151.0 MB
-[runlim] sample:		211.1 time, 220.3 real, 151.0 MB
-[runlim] sample:		221.1 time, 230.3 real, 168.7 MB
-[runlim] sample:		231.1 time, 240.3 real, 168.7 MB
-[runlim] sample:		241.0 time, 250.3 real, 168.7 MB
-[runlim] sample:		249.6 time, 260.3 real, 171.8 MB
-[runlim] sample:		258.9 time, 270.3 real, 172.1 MB
-[runlim] sample:		268.5 time, 280.3 real, 172.1 MB
-[runlim] sample:		278.1 time, 290.3 real, 172.1 MB
-[runlim] sample:		287.8 time, 300.3 real, 172.1 MB
-[runlim] sample:		297.7 time, 310.3 real, 172.1 MB
-CVC4 interrupted by SIGTERM.
-[runlim] end:			Tue Feb  5 10:33:46 2019
-[runlim] status:		out of time
-[runlim] result:		2
+[runlim] argv[4]:		/tmp/5BroorlZ.smt2
+[runlim] start:			Tue Feb  5 13:23:27 2019
+[runlim] main pid:		31179
+[runlim] end:			Tue Feb  5 13:23:27 2019
+[runlim] status:		ok
+[runlim] result:		0
 [runlim] children:		0
-[runlim] real:			312.69 seconds
-[runlim] time:			300.06 seconds
-[runlim] space:			172.1 MB
-[runlim] samples:		3124
+[runlim] real:			0.40 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0

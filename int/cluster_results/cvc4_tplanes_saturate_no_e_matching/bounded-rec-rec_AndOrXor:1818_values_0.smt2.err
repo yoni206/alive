@@ -6,49 +6,18 @@
 [runlim] argv[1]:		--nl-ext-tplanes
 [runlim] argv[2]:		--full-saturate-quant
 [runlim] argv[3]:		--no-e-matching
-[runlim] argv[4]:		/tmp/C0ZHGpe2.smt2
-[runlim] start:			Tue Feb  5 10:33:39 2019
-[runlim] main pid:		4291
-/tmp/C0ZHGpe2.smt2:4.12: No set-logic command was given before this point.
-/tmp/C0ZHGpe2.smt2:4.12: CVC4 will make all theories available.
-/tmp/C0ZHGpe2.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
-/tmp/C0ZHGpe2.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
-[runlim] sample:		8.0 time, 10.4 real, 41.1 MB
-[runlim] sample:		16.4 time, 20.4 real, 50.7 MB
-[runlim] sample:		25.7 time, 30.4 real, 56.7 MB
-[runlim] sample:		35.6 time, 40.4 real, 62.3 MB
-[runlim] sample:		45.6 time, 50.4 real, 67.9 MB
-[runlim] sample:		55.6 time, 60.4 real, 70.1 MB
-[runlim] sample:		65.6 time, 70.4 real, 73.7 MB
-[runlim] sample:		75.6 time, 80.4 real, 77.6 MB
-[runlim] sample:		85.6 time, 90.4 real, 81.6 MB
-[runlim] sample:		95.6 time, 100.4 real, 82.3 MB
-[runlim] sample:		105.6 time, 110.4 real, 84.6 MB
-[runlim] sample:		115.6 time, 120.4 real, 85.6 MB
-[runlim] sample:		125.6 time, 130.4 real, 86.9 MB
-[runlim] sample:		135.6 time, 140.4 real, 87.4 MB
-[runlim] sample:		145.6 time, 150.4 real, 90.0 MB
-[runlim] sample:		155.6 time, 160.4 real, 90.2 MB
-[runlim] sample:		165.6 time, 170.4 real, 92.5 MB
-[runlim] sample:		175.6 time, 180.4 real, 94.3 MB
-[runlim] sample:		185.6 time, 190.4 real, 94.8 MB
-[runlim] sample:		195.6 time, 200.4 real, 95.5 MB
-[runlim] sample:		205.5 time, 210.4 real, 96.3 MB
-[runlim] sample:		215.5 time, 220.4 real, 96.8 MB
-[runlim] sample:		225.5 time, 230.4 real, 97.1 MB
-[runlim] sample:		235.5 time, 240.4 real, 99.4 MB
-[runlim] sample:		245.5 time, 250.4 real, 99.4 MB
-[runlim] sample:		255.5 time, 260.4 real, 99.9 MB
-[runlim] sample:		265.5 time, 270.4 real, 100.7 MB
-[runlim] sample:		275.5 time, 280.4 real, 101.7 MB
-[runlim] sample:		285.5 time, 290.4 real, 102.5 MB
-[runlim] sample:		295.5 time, 300.4 real, 105.0 MB
-CVC4 interrupted by SIGTERM.
-[runlim] end:			Tue Feb  5 10:38:44 2019
-[runlim] status:		out of time
-[runlim] result:		2
+[runlim] argv[4]:		/tmp/kIzsaxyb.smt2
+[runlim] start:			Tue Feb  5 13:27:19 2019
+[runlim] main pid:		21186
+/tmp/kIzsaxyb.smt2:4.12: No set-logic command was given before this point.
+/tmp/kIzsaxyb.smt2:4.12: CVC4 will make all theories available.
+/tmp/kIzsaxyb.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
+/tmp/kIzsaxyb.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
+[runlim] end:			Tue Feb  5 13:27:19 2019
+[runlim] status:		ok
+[runlim] result:		0
 [runlim] children:		0
-[runlim] real:			305.06 seconds
-[runlim] time:			300.10 seconds
-[runlim] space:			107.4 MB
-[runlim] samples:		3046
+[runlim] real:			0.40 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0

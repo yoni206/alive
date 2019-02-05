@@ -4,18 +4,18 @@
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--cbqi-all
-[runlim] argv[2]:		/tmp/kdxhmU4b.smt2
-[runlim] start:			Tue Feb  5 10:45:45 2019
-[runlim] main pid:		31274
-/tmp/kdxhmU4b.smt2:4.12: No set-logic command was given before this point.
-/tmp/kdxhmU4b.smt2:4.12: CVC4 will make all theories available.
-/tmp/kdxhmU4b.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
-/tmp/kdxhmU4b.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
-[runlim] end:			Tue Feb  5 10:45:45 2019
+[runlim] argv[2]:		/tmp/IaoKDNna.smt2
+[runlim] start:			Tue Feb  5 13:37:24 2019
+[runlim] main pid:		32241
+/tmp/IaoKDNna.smt2:4.12: No set-logic command was given before this point.
+/tmp/IaoKDNna.smt2:4.12: CVC4 will make all theories available.
+/tmp/IaoKDNna.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
+/tmp/IaoKDNna.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
+[runlim] end:			Tue Feb  5 13:37:24 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
-[runlim] real:			0.27 seconds
+[runlim] real:			0.89 seconds
 [runlim] time:			0.00 seconds
 [runlim] space:			0.0 MB
 [runlim] samples:		0

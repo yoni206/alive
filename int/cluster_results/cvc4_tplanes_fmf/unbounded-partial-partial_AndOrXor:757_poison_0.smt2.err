@@ -5,10 +5,10 @@
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--nl-ext-tplanes
 [runlim] argv[2]:		--fmf-fun-rlv
-[runlim] argv[3]:		/tmp/TkjKEeIn.smt2
-[runlim] start:			Tue Feb  5 10:02:43 2019
-[runlim] main pid:		27241
-[runlim] end:			Tue Feb  5 10:02:43 2019
+[runlim] argv[3]:		/tmp/krJYWPcs.smt2
+[runlim] start:			Tue Feb  5 13:06:32 2019
+[runlim] main pid:		24015
+[runlim] end:			Tue Feb  5 13:06:32 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0

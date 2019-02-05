@@ -5,47 +5,14 @@
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--nl-ext-tplanes
 [runlim] argv[2]:		--fmf-fun-rlv
-[runlim] argv[3]:		/tmp/S5CUGvpe.smt2
-[runlim] start:			Tue Feb  5 10:03:15 2019
-[runlim] main pid:		18883
-[runlim] sample:		9.2 time, 10.7 real, 81.5 MB
-[runlim] sample:		18.4 time, 20.7 real, 214.1 MB
-[runlim] sample:		28.0 time, 30.7 real, 355.9 MB
-[runlim] sample:		37.4 time, 40.7 real, 360.6 MB
-[runlim] sample:		46.7 time, 50.7 real, 501.0 MB
-[runlim] sample:		55.7 time, 60.7 real, 817.2 MB
-[runlim] sample:		64.6 time, 70.7 real, 1185.1 MB
-[runlim] sample:		73.6 time, 80.7 real, 1465.1 MB
-[runlim] sample:		82.6 time, 90.7 real, 1649.5 MB
-[runlim] sample:		91.6 time, 100.7 real, 1652.0 MB
-[runlim] sample:		100.6 time, 110.7 real, 1653.6 MB
-[runlim] sample:		109.8 time, 120.7 real, 1653.6 MB
-[runlim] sample:		119.5 time, 130.7 real, 1654.9 MB
-[runlim] sample:		128.6 time, 140.7 real, 1656.2 MB
-[runlim] sample:		137.9 time, 150.7 real, 1656.2 MB
-[runlim] sample:		147.5 time, 160.7 real, 1657.7 MB
-[runlim] sample:		157.3 time, 170.7 real, 1773.6 MB
-[runlim] sample:		166.6 time, 180.7 real, 1828.0 MB
-[runlim] sample:		175.2 time, 190.7 real, 1828.0 MB
-[runlim] sample:		185.1 time, 200.7 real, 1828.0 MB
-[runlim] sample:		195.1 time, 210.7 real, 1831.4 MB
-[runlim] sample:		203.7 time, 220.7 real, 1831.4 MB
-[runlim] sample:		212.6 time, 230.7 real, 1831.4 MB
-[runlim] sample:		221.7 time, 240.7 real, 1831.4 MB
-[runlim] sample:		231.0 time, 250.7 real, 1831.4 MB
-[runlim] sample:		240.3 time, 260.7 real, 1831.4 MB
-[runlim] sample:		249.7 time, 270.7 real, 1831.4 MB
-[runlim] sample:		259.7 time, 280.7 real, 1831.4 MB
-[runlim] sample:		269.7 time, 290.7 real, 1831.4 MB
-[runlim] sample:		279.2 time, 300.7 real, 1831.4 MB
-[runlim] sample:		289.2 time, 310.7 real, 1831.4 MB
-[runlim] sample:		299.2 time, 320.7 real, 1831.4 MB
-CVC4 interrupted by SIGTERM.
-[runlim] end:			Tue Feb  5 10:08:36 2019
-[runlim] status:		out of time
-[runlim] result:		2
+[runlim] argv[3]:		/tmp/RJXwY77E.smt2
+[runlim] start:			Tue Feb  5 13:11:19 2019
+[runlim] main pid:		2009
+[runlim] end:			Tue Feb  5 13:11:20 2019
+[runlim] status:		ok
+[runlim] result:		0
 [runlim] children:		0
-[runlim] real:			321.71 seconds
-[runlim] time:			300.08 seconds
-[runlim] space:			1831.4 MB
-[runlim] samples:		3209
+[runlim] real:			1.05 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
