@@ -1,5 +1,6 @@
-
+(set-info :status unknown)
 (declare-fun %Y () (_ BitVec 4))
-(assert (let ((_let_0 (bvult %Y (_ bv4 4)))) (and _let_0 (not _let_0))))
-(assert true)
+(assert
+(let (($x2666 (bvult %Y (_ bv4 4))))
+(and $x2666 (not $x2666))))
 (check-sat)

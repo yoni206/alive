@@ -87,6 +87,8 @@ def generate_benchmark(template_content, bv_content, t_f, f, dir_of_int_smt, tem
     int_content = get_int_content(template_content, bv_content, bounded)
     filename = generate_filename(t_f, f)
     content = template_content + "\n\n\n" + int_content
+    if "rec" in template_name:
+        content = content.replace("(set-logic UFNIA)", "")
     if bounded:
         filepath = dir_of_int_smt + "/bounded/" + template_name + "/" + filename
     else:
@@ -195,7 +197,6 @@ def replace_minus_ones_and_widths(s):
     if len(consts) != 0:
         assert(len(consts) <= 2)
         for const in consts:
-            print("panda", const)
             numeral, width = verify_stuff.get_numeral_and_width_from_const(const)
             if (2 ** width -1 == numeral):
                 result = result.replace(const, "(intmax k)")
