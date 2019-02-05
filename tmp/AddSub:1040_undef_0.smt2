@@ -1,6 +1,6 @@
-(set-info :status unknown)
+
 (declare-fun C1 () (_ BitVec 4))
 (declare-fun C2 () (_ BitVec 4))
-(assert
-(and (= C2 (bvnot C1)) false))
+(assert false)
+(assert true)
 (check-sat)

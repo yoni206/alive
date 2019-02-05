@@ -408,7 +408,7 @@ true
 (assert (and_is_ok k))
 (assert (or_is_ok k))
 (assert (<= k 64))
-(set-info :status unknown)
+
 (declare-fun %b() Int)
 (assert (in_range k %b))
 (assert (everything_is_ok_for k %b))
@@ -419,6 +419,6 @@ true
 (assert (everything_is_ok_for k %a))
 
 
-(assert
-(and (distinct (intadd k (intsub k 0 %a) (intsub k 0 %b)) (intsub k 0 (intadd k %a %b))) true))
+(assert (not (= (intadd k (intsub k 0 %a) (intsub k 0 %b)) (intsub k 0 (intadd k %a %b)))))
+(assert true)
 (check-sat)

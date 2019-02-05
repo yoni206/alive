@@ -407,7 +407,7 @@ true
 (assert two_to_the_is_ok)
 (assert (and_is_ok k))
 (assert (or_is_ok k))
-(set-info :status unknown)
+
 (declare-fun C1() Int)
 (assert (in_range k C1))
 (assert (everything_is_ok_for k C1))
@@ -423,8 +423,6 @@ true
 (assert (everything_is_ok_for k %X))
 
 
-(assert
-(let (($x4294 (and (distinct (intand k (intlshr k %X C1) C2) (intand k (intlshr k %X C1) (intand k C2 (intlshr k (intmax k) C1)))) true)))
-(let (($x12134 (< C1 k)))
-(and $x12134 (and (distinct (intand k C2 (intlshr k (intmax k) C1)) (intlshr k (intmax k) C1)) true) $x4294))))
+(assert (let ((_let_0 (intlshr k %X C1))) (let ((_let_1 (intlshr k (intmax k) C1))) (let ((_let_2 (intand k C2 _let_1))) (and (< C1 k) (not (= _let_2 _let_1)) (not (= (intand k _let_0 C2) (intand k _let_0 _let_2))))))))
+(assert true)
 (check-sat)

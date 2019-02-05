@@ -1,0 +1,17 @@
+config,boundness,proved
+cvc4_cbqi,bounded,300
+cvc4_cbqi,unbounded,299
+cvc4_default,bounded,300
+cvc4_default,unbounded,300
+cvc4_fmf,bounded,300
+cvc4_fmf,unbounded,300
+cvc4_tplanes,bounded,300
+cvc4_tplanes,unbounded,300
+cvc4_tplanes_cbqi,bounded,301
+cvc4_tplanes_cbqi,unbounded,299
+cvc4_tplanes_fmf,bounded,300
+cvc4_tplanes_fmf,unbounded,300
+cvc4_tplanes_saturate_no_e_matching,bounded,307
+cvc4_tplanes_saturate_no_e_matching,unbounded,301
+z3_default,bounded,297
+z3_default,unbounded,297

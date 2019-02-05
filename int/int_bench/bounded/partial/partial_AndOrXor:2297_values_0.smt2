@@ -408,7 +408,7 @@ true
 (assert (and_is_ok k))
 (assert (or_is_ok k))
 (assert (<= k 64))
-(set-info :status unknown)
+
 (declare-fun %B() Int)
 (assert (in_range k %B))
 (assert (everything_is_ok_for k %B))
@@ -419,8 +419,6 @@ true
 (assert (everything_is_ok_for k %A))
 
 
-(assert
-(let ((?x9968 (intxor k %A (intmax k))))
-(let ((?x11917 (intxor k ?x9968 %B)))
-(and (distinct (intor k (intand k %A %B) ?x11917) ?x11917) true))))
+(assert (let ((_let_0 (intxor k (intxor k %A (intmax k)) %B))) (not (= (intor k (intand k %A %B) _let_0) _let_0))))
+(assert true)
 (check-sat)

@@ -1,6 +1,6 @@
-(set-info :status unknown)
+
 (declare-fun %B () (_ BitVec 4))
 (declare-fun %A () (_ BitVec 4))
-(assert
-(and (distinct (bvor (bvand %A %B) (bvxor %A (_ bv15 4))) (bvor (bvxor %A (_ bv15 4)) %B)) true))
+(assert (let ((_let_0 (bvxor %A (_ bv15 4)))) (not (= (bvor (bvand %A %B) _let_0) (bvor _let_0 %B)))))
+(assert true)
 (check-sat)

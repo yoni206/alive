@@ -408,7 +408,7 @@ true
 (assert (and_is_ok k))
 (assert (or_is_ok k))
 (assert (<= k 64))
-(set-info :status unknown)
-(assert
-false)
+
+(assert false)
+(assert true)
 (check-sat)

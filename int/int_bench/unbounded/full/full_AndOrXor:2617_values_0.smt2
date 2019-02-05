@@ -407,7 +407,7 @@ true
 (assert two_to_the_is_ok)
 (assert (and_is_ok k))
 (assert (or_is_ok k))
-(set-info :status unknown)
+
 (declare-fun %b() Int)
 (assert (in_range k %b))
 (assert (everything_is_ok_for k %b))
@@ -418,6 +418,6 @@ true
 (assert (everything_is_ok_for k %a))
 
 
-(assert
-(and (distinct (intxor k (intand k %a (intxor k %b (intmax k))) (intand k (intxor k %a (intmax k)) %b)) (intxor k %a %b)) true))
+(assert (not (= (intxor k (intand k %a (intxor k %b (intmax k))) (intand k (intxor k %a (intmax k)) %b)) (intxor k %a %b))))
+(assert true)
 (check-sat)

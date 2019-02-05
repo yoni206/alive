@@ -408,7 +408,7 @@ true
 (assert (and_is_ok k))
 (assert (or_is_ok k))
 (assert (<= k 64))
-(set-info :status unknown)
+
 (declare-fun C() Int)
 (assert (in_range k C))
 (assert (everything_is_ok_for k C))
@@ -419,7 +419,6 @@ true
 (assert (everything_is_ok_for k %x))
 
 
-(assert
-(let (($x8213 (and (distinct (intudivtotal k %x C) (ite (= (ite (< %x C) 1 0) 1) 0 1)) true)))
-(and (and (distinct C 0) true) (>= C (intshl k 1 (intsub k k 1))) $x8213)))
+(assert (and (>= C (intshl k 1 (intsub k k 1))) (not (= C 0)) (not (= (intudivtotal k %x C) (ite (< %x C) 0 1)))))
+(assert true)
 (check-sat)

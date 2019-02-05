@@ -28,63 +28,65 @@ def main(results_dir, tex_csv_dir):
     df.columns = [ 'path', 'err_log']
     df["config"] = df.path.apply(lambda x : x.split("/")[0])
     df["filename"] = df.path.apply(lambda x : x.split("/")[1])
-    df["encoding"] = df.filename.apply(lambda x : x.split("-")[0])
-    df["filename_clean"] = df.filename.apply(lambda x : x.split("-")[1].split(".")[0])
-    print(df)
-    df["ic_name"] = df.filename_clean.apply(lambda x: "_".join(x.split("_")[2:4]))
-    df["direction"] = df.filename_clean.apply(lambda x: x.split("_")[4])
-    df["cond_inv"] = df.filename_clean.apply(cond_inv_info)
+    df["boundness"] = df.filename.apply(lambda x : x.split("-")[0])
+    df["encoding"] = df.filename.apply(lambda x : x.split("-")[1])
+    df["filename_clean"] = df.filename.apply(lambda x : "-".join(x.split("-")[2:]))
+    df["filename_cleaner"] = df.filename_clean.apply(lambda x : "_".join(x.split("_")[1:]))
+    df["opt_name"] = df.filename_cleaner.apply(lambda x: x.split("_")[0])
+    df["reason"] = df.filename_cleaner.apply(lambda x : x.split("_")[1])
     df["status"] = df.err_log.apply(lambda x: x.split(",")[0])
     df["result"] = df.err_log.apply(lambda x: x.split(",")[1])
     validate_stat_res(df)
     validate_consistency(df)
-    #validate_no_sat_except_qf(df)
+    validate_no_sat_except_qf(df)
     df["proved"] = df.result.apply(lambda x: "yes" if (x == "unsat") else "no")
 
+    df.to_csv("~/tmp.csv")
     
-    cond_grouped = df.groupby(["ic_name", "direction", "encoding", "cond_inv"], as_index=False)
+    cond_grouped = df.groupby(["opt_name", "reason", "encoding", "boundness"], as_index=False)
     cond_agg = cond_grouped.agg({'proved' : agg_yes})
     
-    enc_grouped = cond_agg.groupby(["ic_name", "direction", "encoding"], as_index = False)
-    enc_agg = enc_grouped.agg({'proved' : agg_yes})
+    enc_grouped = cond_agg.groupby(["opt_name", "boundness", "encoding"], as_index = False)
+    enc_agg = enc_grouped.agg({'proved' : agg_three_yes})
     
-    direction_grouped = enc_agg.groupby(["ic_name", "direction"], as_index = False)
+    direction_grouped = enc_agg.groupby(["opt_name", "boundness"], as_index = False)
     direction_agg = direction_grouped.agg({'proved' : agg_yes})
-    
-    ic_grouped = direction_agg.groupby(["ic_name"], as_index=False)
-    ic_agg = ic_grouped.agg({'proved' : agg_both_yes})
-    
-    config_cond_grouped = df.groupby(["encoding", "config", "ic_name", "direction", "cond_inv"], as_index = False)
+
+    bounded_pivot = direction_agg.pivot_table(index = ["opt_name"], columns = "boundness", values = "proved", aggfunc = lambda x: " ".join(x)).reset_index()
+
+    config_cond_grouped = df.groupby(["encoding", "config", "opt_name", "reason", "boundness"], as_index = False)
     config_cond_agg = config_cond_grouped.agg({'proved' : agg_yes})
 
-    config_ic_grouped = config_cond_agg.groupby(["encoding", "config", "ic_name", "direction"])
+    config_ic_grouped = config_cond_agg.groupby(["encoding", "config", "opt_name", "boundness", "reason"])
     config_ic_agg = config_ic_grouped.agg({'proved': agg_yes})
 
-    config_grouped = config_ic_agg.groupby(["encoding", "config"])
+    config_grouped = config_ic_agg.groupby(["encoding", "config", "boundness"])
     config_agg = config_grouped.agg({'proved': agg_count_yes})
 
-    enc_alone_grouped = config_ic_agg.groupby(["encoding", "ic_name", "direction"])
+    enc_alone_grouped = config_ic_agg.groupby(["encoding", "opt_name", "reason", "boundness"])
     enc_alone_agg = enc_alone_grouped.agg({'proved':agg_yes})
 
-    enc_sum_grouped = enc_alone_agg.groupby(["encoding"])
+    enc_sum_grouped = enc_alone_agg.groupby(["encoding", "boundness"])
     enc_sum_agg = enc_sum_grouped.agg({'proved':agg_count_yes})
 
-    conf_alone_grouped = config_ic_agg.groupby(["config", "ic_name", "direction"])
+    conf_alone_grouped = config_ic_agg.groupby(["config", "opt_name", "reason", "boundness"])
     conf_alone_agg = conf_alone_grouped.agg({'proved':agg_yes})
 
-    conf_sum_grouped = conf_alone_agg.groupby(["config"])
+    conf_sum_grouped = conf_alone_agg.groupby(["config", "boundness"])
     conf_sum_agg = conf_sum_grouped.agg({'proved':agg_count_yes})
 
 
     only_partial = df.loc[df["encoding"] == "partial"].copy()
-    andy_configs(only_partial)
+    
+    #andy_encodings()
+    #andy_configs(only_partial)
 
 
     df.to_csv("tmp/tmp0.csv")
     cond_agg.to_csv("tmp/tmp1.csv")
     enc_agg.to_csv("tmp/tmp2.csv")
     direction_agg.to_csv("tmp/tmp3.csv")
-    ic_agg.to_csv("tmp/tmp4.csv")
+    bounded_pivot.to_csv("tmp/tmp4.csv")
     config_cond_agg.to_csv("tmp/tmp5.csv")
     config_ic_agg.to_csv("tmp/tmp6.csv")
     config_agg.to_csv("tmp/tmp7.csv")
@@ -93,12 +95,12 @@ def main(results_dir, tex_csv_dir):
     conf_alone_agg.to_csv("tmp/tmp10.csv")
     conf_sum_agg.to_csv("tmp/tmp11.csv")
 
-    tex_stuff(direction_agg, cond_agg, tex_csv_dir, translations_file)
+    #tex_stuff(direction_agg, cond_agg, tex_csv_dir)
 
-def tex_stuff(direction_agg, cond_agg, tex_csv_dir, translations_file):
+def tex_stuff(direction_agg, cond_agg, tex_csv_dir):
     gen_IC_status_tables(direction_agg, tex_csv_dir)
     gen_encoding_cond_tables(cond_agg, tex_csv_dir)
-    gen_qf_rtl_yes_ics(cond_agg, tex_csv_dir, translations_file)
+    gen_qf_rtl_yes_ics(cond_agg, tex_csv_dir)
 
 def gen_qf_rtl_yes_ics(cond_agg, tex_csv_dir, translations_file):
     ic_names = cond_agg["ic_name"].tolist()
@@ -287,7 +289,8 @@ def andy_configs(df):
     encodings = set(df["encoding"].tolist())
     assert len(encodings) == 1 and "partial" in encodings
     df = df.drop(columns = ["encoding"])
-    cond_grouped = df.groupby(["ic_name", "direction", "config", ], as_index=False)
+    df.to_csv("~/tmp1.csv")
+    cond_grouped = df.groupby(["opt_name", "boundness", "config", "boundness" ], as_index=False)
     cond_agg = cond_grouped.agg({'proved' : agg_yes})
 
     redundent_configs = set([])
@@ -330,12 +333,12 @@ def print_groups(gs):
         print (group)
         print("")
 
-def agg_both_yes(values):
+def agg_three_yes(values): #values, undef, poison
     l = values.tolist()
-    if (len(l) != 2):
+    if (len(l) != 3):
         assert(False)
-    assert(l[0] in ["yes", "no"] and l[1] in ["yes", "no"])
-    if l[0] == "yes" and l[1] == "yes":
+    assert(l[0] in ["yes", "no"] and l[1] in ["yes", "no"] and l[2] in ["yes", "no"])
+    if l[0] == "yes" and l[1] == "yes" and l[2] == "yes":
         return "yes"
     else:
         return "no"

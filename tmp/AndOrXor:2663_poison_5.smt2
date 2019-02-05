@@ -1,4 +1,4 @@
-(set-info :status unknown)
-(assert
-false)
+
+(assert false)
+(assert true)
 (check-sat)

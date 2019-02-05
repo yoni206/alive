@@ -408,7 +408,7 @@ true
 (assert (and_is_ok k))
 (assert (or_is_ok k))
 (assert (<= k 64))
-(set-info :status unknown)
+
 (declare-fun %d() Int)
 (assert (in_range k %d))
 (assert (everything_is_ok_for k %d))
@@ -424,8 +424,6 @@ true
 (assert (everything_is_ok_for k %a))
 
 
-(assert
-(let ((?x18568 (ite (= (intand k %a %d) %d) 1 0)))
-(let ((?x13029 (ite (= (intand k %a %b) %b) 1 0)))
-(and (distinct (intand k ?x13029 ?x18568) (ite (= (intand k %a (intor k %b %d)) (intor k %b %d)) 1 0)) true))))
+(assert (let ((_let_0 (intor k %b %d))) (not (= (and (= (intand k %a %b) %b) (= (intand k %a %d) %d)) (= (intand k %a _let_0) _let_0)))))
+(assert true)
 (check-sat)

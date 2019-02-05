@@ -407,13 +407,12 @@ true
 (assert two_to_the_is_ok)
 (assert (and_is_ok k))
 (assert (or_is_ok k))
-(set-info :status unknown)
+
 (declare-fun C() Int)
 (assert (in_range k C))
 (assert (everything_is_ok_for k C))
 
 
-(assert
-(let (($x8439 (< C k)))
-(and $x8439 false)))
+(assert false)
+(assert true)
 (check-sat)

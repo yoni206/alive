@@ -408,7 +408,7 @@ true
 (assert (and_is_ok k))
 (assert (or_is_ok k))
 (assert (<= k 64))
-(set-info :status unknown)
+
 (declare-fun %Y() Int)
 (assert (in_range k %Y))
 (assert (everything_is_ok_for k %Y))
@@ -419,7 +419,6 @@ true
 (assert (everything_is_ok_for k %Op1))
 
 
-(assert
-(let (($x2666 (< %Y k)))
-(and $x2666 (and (distinct (intmul k (intshl k 1 %Y) %Op1) (intshl k %Op1 %Y)) true))))
+(assert (and (< %Y k) (not (= (intmul k (intshl k 1 %Y) %Op1) (intshl k %Op1 %Y)))))
+(assert true)
 (check-sat)

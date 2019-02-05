@@ -408,7 +408,7 @@ true
 (assert (and_is_ok k))
 (assert (or_is_ok k))
 (assert (<= k 64))
-(set-info :status unknown)
+
 (declare-fun C4() Int)
 (assert (in_range k C4))
 (assert (everything_is_ok_for k C4))
@@ -429,6 +429,6 @@ true
 (assert (everything_is_ok_for k C1))
 
 
-(assert
-(and (= (intand k (intand k C1 C3) (intxor k C2 C4)) 0) (= (intand k C1 C2) C2) (= (intand k C3 C4) C4) false))
+(assert false)
+(assert true)
 (check-sat)

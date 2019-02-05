@@ -407,7 +407,7 @@ true
 (assert two_to_the_is_ok)
 (assert (and_is_ok k))
 (assert (or_is_ok k))
-(set-info :status unknown)
+
 (declare-fun C2() Int)
 (assert (in_range k C2))
 (assert (everything_is_ok_for k C2))
@@ -423,7 +423,6 @@ true
 (assert (everything_is_ok_for k C1))
 
 
-(assert
-(let ((?x20632 (ite (intslt k %X C2) 1 0)))
-(and (intslt k C1 C2) (and (distinct (intor k (ite (intslt k %X C1) 1 0) ?x20632) ?x20632) true))))
+(assert (let ((_let_0 (intslt k %X C2))) (and (intslt k C1 C2) (not (= (or (intslt k %X C1) _let_0) _let_0)))))
+(assert true)
 (check-sat)

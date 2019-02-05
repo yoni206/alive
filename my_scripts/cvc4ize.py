@@ -22,7 +22,6 @@ def main(orig_dir, dest_dir):
         do_cvc4(orig_path, dest_path)
 
 
-#runs a specialized version of cvc4 with minimal rewritings and preprocessing, but with bv-to-bool
 def do_cvc4(bv_path, bool_path):
     #command = [CVC4_BV_TO_BOOL_PATH, "-qqqq", "--bv-to-bool", "--preprocess-only", "--dump=assertions", bv_path]
     command = [CVC4_BV_TO_BOOL_PATH, "-qqqq", "--preprocess-only", "--dump=assertions", bv_path]

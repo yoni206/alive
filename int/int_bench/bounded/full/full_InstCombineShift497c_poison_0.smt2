@@ -408,7 +408,7 @@ true
 (assert (and_is_ok k))
 (assert (or_is_ok k))
 (assert (<= k 64))
-(set-info :status unknown)
+
 (declare-fun C2() Int)
 (assert (in_range k C2))
 (assert (everything_is_ok_for k C2))
@@ -419,7 +419,6 @@ true
 (assert (everything_is_ok_for k C))
 
 
-(assert
-(let (($x13922 (< C k)))
-(and $x13922 (= (intlshr k C2 (intsub k k 1)) 1) false)))
+(assert false)
+(assert true)
 (check-sat)

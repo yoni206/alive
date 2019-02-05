@@ -408,13 +408,12 @@ true
 (assert (and_is_ok k))
 (assert (or_is_ok k))
 (assert (<= k 64))
-(set-info :status unknown)
+
 (declare-fun %Y() Int)
 (assert (in_range k %Y))
 (assert (everything_is_ok_for k %Y))
 
 
-(assert
-(let (($x2666 (< %Y k)))
-(and $x2666 (not $x2666))))
+(assert (let ((_let_0 (< %Y k))) (and _let_0 (not _let_0))))
+(assert true)
 (check-sat)

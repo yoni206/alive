@@ -407,7 +407,7 @@ true
 (assert two_to_the_is_ok)
 (assert (and_is_ok k))
 (assert (or_is_ok k))
-(set-info :status unknown)
-(assert
-false)
+
+(assert false)
+(assert true)
 (check-sat)
