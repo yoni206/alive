@@ -1,0 +1,49 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--nl-ext-tplanes
+[runlim] argv[2]:		--cbqi-all
+[runlim] argv[3]:		/tmp/EBGbxyhX.smt2
+[runlim] start:			Tue Feb  5 10:19:19 2019
+[runlim] main pid:		20457
+[runlim] sample:		9.3 time, 10.3 real, 38.7 MB
+[runlim] sample:		19.0 time, 20.3 real, 47.2 MB
+[runlim] sample:		28.6 time, 30.3 real, 54.5 MB
+[runlim] sample:		38.4 time, 40.3 real, 60.1 MB
+[runlim] sample:		48.4 time, 50.3 real, 65.8 MB
+[runlim] sample:		58.4 time, 60.3 real, 70.4 MB
+[runlim] sample:		68.4 time, 70.3 real, 76.5 MB
+[runlim] sample:		78.2 time, 80.3 real, 79.0 MB
+[runlim] sample:		87.9 time, 90.3 real, 84.1 MB
+[runlim] sample:		97.9 time, 100.3 real, 87.7 MB
+[runlim] sample:		107.5 time, 110.3 real, 90.3 MB
+[runlim] sample:		117.2 time, 120.3 real, 94.1 MB
+[runlim] sample:		127.2 time, 130.3 real, 97.8 MB
+[runlim] sample:		136.9 time, 140.3 real, 100.3 MB
+[runlim] sample:		146.8 time, 150.3 real, 103.4 MB
+[runlim] sample:		156.4 time, 160.3 real, 108.8 MB
+[runlim] sample:		166.1 time, 170.3 real, 109.1 MB
+[runlim] sample:		175.8 time, 180.3 real, 111.9 MB
+[runlim] sample:		184.9 time, 190.3 real, 114.7 MB
+[runlim] sample:		193.3 time, 200.3 real, 117.1 MB
+[runlim] sample:		201.6 time, 210.3 real, 118.6 MB
+[runlim] sample:		209.9 time, 220.3 real, 120.7 MB
+[runlim] sample:		218.3 time, 230.3 real, 123.0 MB
+[runlim] sample:		227.8 time, 240.3 real, 125.6 MB
+[runlim] sample:		236.9 time, 250.3 real, 127.6 MB
+[runlim] sample:		246.9 time, 260.3 real, 130.0 MB
+[runlim] sample:		256.9 time, 270.3 real, 132.3 MB
+[runlim] sample:		266.9 time, 280.3 real, 135.4 MB
+[runlim] sample:		276.9 time, 290.3 real, 136.1 MB
+[runlim] sample:		286.9 time, 300.3 real, 139.0 MB
+[runlim] sample:		296.9 time, 310.3 real, 140.8 MB
+[runlim] end:			Tue Feb  5 10:24:31 2019
+[runlim] status:		signal(9)
+[runlim] result:		11
+[runlim] children:		0
+[runlim] real:			312.19 seconds
+[runlim] time:			298.71 seconds
+[runlim] space:			141.0 MB
+[runlim] samples:		3118

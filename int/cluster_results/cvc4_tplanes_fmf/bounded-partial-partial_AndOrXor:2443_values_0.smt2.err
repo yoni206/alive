@@ -1,0 +1,48 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--nl-ext-tplanes
+[runlim] argv[2]:		--fmf-fun-rlv
+[runlim] argv[3]:		/tmp/LEf54kA3.smt2
+[runlim] start:			Tue Feb  5 10:08:02 2019
+[runlim] main pid:		4296
+[runlim] sample:		7.3 time, 10.9 real, 45.5 MB
+[runlim] sample:		15.0 time, 20.9 real, 65.9 MB
+[runlim] sample:		22.6 time, 30.9 real, 293.4 MB
+[runlim] sample:		32.0 time, 40.9 real, 566.8 MB
+[runlim] sample:		42.0 time, 50.9 real, 689.0 MB
+[runlim] sample:		52.0 time, 60.9 real, 689.2 MB
+[runlim] sample:		62.0 time, 70.9 real, 689.5 MB
+[runlim] sample:		72.0 time, 80.9 real, 689.5 MB
+[runlim] sample:		82.0 time, 90.9 real, 689.7 MB
+[runlim] sample:		92.0 time, 100.9 real, 690.0 MB
+[runlim] sample:		102.0 time, 110.9 real, 690.0 MB
+[runlim] sample:		112.0 time, 120.9 real, 690.2 MB
+[runlim] sample:		122.0 time, 130.9 real, 690.2 MB
+[runlim] sample:		132.0 time, 140.9 real, 690.2 MB
+[runlim] sample:		142.0 time, 150.9 real, 690.5 MB
+[runlim] sample:		152.0 time, 160.9 real, 690.8 MB
+[runlim] sample:		162.0 time, 170.9 real, 690.8 MB
+[runlim] sample:		172.0 time, 180.9 real, 691.0 MB
+[runlim] sample:		182.0 time, 190.9 real, 691.3 MB
+[runlim] sample:		192.0 time, 200.9 real, 691.3 MB
+[runlim] sample:		202.0 time, 210.9 real, 691.5 MB
+[runlim] sample:		212.0 time, 220.9 real, 691.8 MB
+[runlim] sample:		221.9 time, 230.9 real, 692.0 MB
+[runlim] sample:		232.0 time, 240.9 real, 692.0 MB
+[runlim] sample:		242.0 time, 250.9 real, 692.3 MB
+[runlim] sample:		251.9 time, 260.9 real, 692.8 MB
+[runlim] sample:		261.9 time, 270.9 real, 693.1 MB
+[runlim] sample:		271.9 time, 280.9 real, 693.3 MB
+[runlim] sample:		281.9 time, 290.9 real, 693.3 MB
+[runlim] sample:		291.9 time, 300.9 real, 693.3 MB
+[runlim] end:			Tue Feb  5 10:13:10 2019
+[runlim] status:		signal(9)
+[runlim] result:		11
+[runlim] children:		0
+[runlim] real:			308.23 seconds
+[runlim] time:			299.24 seconds
+[runlim] space:			693.6 MB
+[runlim] samples:		3073

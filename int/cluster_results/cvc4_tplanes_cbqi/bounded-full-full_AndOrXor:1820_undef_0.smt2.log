@@ -1,0 +1,7 @@
+c host: barrett47.stanford.edu
+c start: Tue Feb  5 10:16:26 PST 2019
+c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/bounded/full/full_AndOrXor:1820_undef_0.smt2
+c solver: ./cvc4
+c solver options: --nl-ext-tplanes --cbqi-all
+unsat
+c done

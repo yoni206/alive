@@ -1,0 +1,48 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--cbqi-all
+[runlim] argv[2]:		/tmp/374ofTvo.smt2
+[runlim] start:			Tue Feb  5 10:49:06 2019
+[runlim] main pid:		2779
+[runlim] sample:		8.2 time, 10.4 real, 39.8 MB
+[runlim] sample:		16.9 time, 20.4 real, 51.5 MB
+[runlim] sample:		26.7 time, 30.4 real, 60.0 MB
+[runlim] sample:		35.3 time, 40.4 real, 69.0 MB
+[runlim] sample:		45.3 time, 50.4 real, 75.7 MB
+[runlim] sample:		55.3 time, 60.4 real, 81.4 MB
+[runlim] sample:		65.3 time, 70.4 real, 86.5 MB
+[runlim] sample:		75.3 time, 80.4 real, 91.2 MB
+[runlim] sample:		85.3 time, 90.4 real, 95.3 MB
+[runlim] sample:		95.3 time, 100.4 real, 99.4 MB
+[runlim] sample:		105.3 time, 110.4 real, 105.5 MB
+[runlim] sample:		115.3 time, 120.4 real, 113.1 MB
+[runlim] sample:		125.2 time, 130.4 real, 117.0 MB
+[runlim] sample:		135.3 time, 140.4 real, 119.8 MB
+[runlim] sample:		145.3 time, 150.4 real, 122.4 MB
+[runlim] sample:		155.2 time, 160.4 real, 125.2 MB
+[runlim] sample:		165.2 time, 170.4 real, 128.1 MB
+[runlim] sample:		175.2 time, 180.4 real, 130.6 MB
+[runlim] sample:		185.2 time, 190.4 real, 133.2 MB
+[runlim] sample:		195.2 time, 200.4 real, 135.5 MB
+[runlim] sample:		205.2 time, 210.4 real, 137.8 MB
+[runlim] sample:		215.2 time, 220.4 real, 139.9 MB
+[runlim] sample:		225.2 time, 230.4 real, 142.2 MB
+[runlim] sample:		235.2 time, 240.4 real, 144.6 MB
+[runlim] sample:		245.2 time, 250.4 real, 146.6 MB
+[runlim] sample:		255.2 time, 260.4 real, 148.7 MB
+[runlim] sample:		265.2 time, 270.4 real, 150.5 MB
+[runlim] sample:		275.2 time, 280.4 real, 152.5 MB
+[runlim] sample:		285.2 time, 290.4 real, 154.3 MB
+[runlim] sample:		295.2 time, 300.4 real, 156.7 MB
+CVC4 interrupted by SIGTERM.
+[runlim] end:			Tue Feb  5 10:54:11 2019
+[runlim] status:		out of time
+[runlim] result:		2
+[runlim] children:		0
+[runlim] real:			305.25 seconds
+[runlim] time:			300.03 seconds
+[runlim] space:			157.7 MB
+[runlim] samples:		3048

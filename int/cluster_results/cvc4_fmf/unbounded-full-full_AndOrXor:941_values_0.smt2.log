@@ -1,0 +1,6 @@
+c host: barrett12.stanford.edu
+c start: Tue Feb  5 10:51:11 PST 2019
+c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/unbounded/full/full_AndOrXor:941_values_0.smt2
+c solver: ./cvc4
+c solver options: --fmf-fun-rlv
+c done

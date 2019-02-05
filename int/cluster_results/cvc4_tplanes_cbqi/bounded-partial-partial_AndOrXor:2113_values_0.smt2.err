@@ -1,0 +1,49 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--nl-ext-tplanes
+[runlim] argv[2]:		--cbqi-all
+[runlim] argv[3]:		/tmp/vQ8KHgMM.smt2
+[runlim] start:			Tue Feb  5 10:23:26 2019
+[runlim] main pid:		6122
+[runlim] sample:		8.8 time, 10.0 real, 38.5 MB
+[runlim] sample:		17.1 time, 20.0 real, 45.9 MB
+[runlim] sample:		27.1 time, 30.0 real, 53.6 MB
+[runlim] sample:		35.4 time, 40.0 real, 59.4 MB
+[runlim] sample:		44.0 time, 50.0 real, 64.3 MB
+[runlim] sample:		53.1 time, 60.0 real, 68.7 MB
+[runlim] sample:		61.8 time, 70.0 real, 72.3 MB
+[runlim] sample:		71.4 time, 80.0 real, 76.7 MB
+[runlim] sample:		81.1 time, 90.0 real, 81.7 MB
+[runlim] sample:		90.7 time, 100.0 real, 85.8 MB
+[runlim] sample:		100.4 time, 110.0 real, 89.4 MB
+[runlim] sample:		110.1 time, 120.0 real, 93.3 MB
+[runlim] sample:		120.1 time, 130.0 real, 96.4 MB
+[runlim] sample:		130.1 time, 140.0 real, 99.7 MB
+[runlim] sample:		140.1 time, 150.0 real, 103.3 MB
+[runlim] sample:		150.1 time, 160.0 real, 106.2 MB
+[runlim] sample:		159.9 time, 170.0 real, 109.1 MB
+[runlim] sample:		169.5 time, 180.0 real, 113.2 MB
+[runlim] sample:		179.2 time, 190.0 real, 115.2 MB
+[runlim] sample:		188.8 time, 200.0 real, 117.8 MB
+[runlim] sample:		198.5 time, 210.0 real, 120.1 MB
+[runlim] sample:		208.2 time, 220.0 real, 122.7 MB
+[runlim] sample:		218.1 time, 230.0 real, 125.0 MB
+[runlim] sample:		228.1 time, 240.0 real, 127.6 MB
+[runlim] sample:		238.1 time, 250.0 real, 130.2 MB
+[runlim] sample:		248.1 time, 260.0 real, 132.3 MB
+[runlim] sample:		258.1 time, 270.0 real, 134.8 MB
+[runlim] sample:		268.1 time, 280.0 real, 137.2 MB
+[runlim] sample:		278.1 time, 290.0 real, 139.7 MB
+[runlim] sample:		288.1 time, 300.0 real, 142.6 MB
+[runlim] sample:		298.1 time, 310.0 real, 144.1 MB
+[runlim] end:			Tue Feb  5 10:28:37 2019
+[runlim] status:		signal(9)
+[runlim] result:		11
+[runlim] children:		0
+[runlim] real:			311.85 seconds
+[runlim] time:			299.89 seconds
+[runlim] space:			144.1 MB
+[runlim] samples:		3118

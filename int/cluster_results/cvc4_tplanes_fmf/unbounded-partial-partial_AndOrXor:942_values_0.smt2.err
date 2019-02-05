@@ -1,0 +1,50 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--nl-ext-tplanes
+[runlim] argv[2]:		--fmf-fun-rlv
+[runlim] argv[3]:		/tmp/dStuWRaj.smt2
+[runlim] start:			Tue Feb  5 09:58:42 2019
+[runlim] main pid:		26765
+[runlim] sample:		7.4 time, 10.1 real, 55.0 MB
+[runlim] sample:		15.2 time, 20.1 real, 61.4 MB
+[runlim] sample:		24.0 time, 30.1 real, 88.1 MB
+[runlim] sample:		34.0 time, 40.1 real, 377.1 MB
+[runlim] sample:		44.0 time, 50.1 real, 667.7 MB
+[runlim] sample:		54.0 time, 60.1 real, 971.0 MB
+[runlim] sample:		61.5 time, 70.1 real, 1094.4 MB
+[runlim] sample:		68.9 time, 80.1 real, 1302.2 MB
+[runlim] sample:		76.3 time, 90.1 real, 1411.3 MB
+[runlim] sample:		85.0 time, 100.1 real, 1499.2 MB
+[runlim] sample:		95.0 time, 110.1 real, 1571.1 MB
+[runlim] sample:		104.6 time, 120.1 real, 1571.1 MB
+[runlim] sample:		112.2 time, 130.1 real, 1571.1 MB
+[runlim] sample:		120.5 time, 140.1 real, 1571.4 MB
+[runlim] sample:		130.0 time, 150.1 real, 1571.4 MB
+[runlim] sample:		139.4 time, 160.1 real, 1571.4 MB
+[runlim] sample:		148.2 time, 170.1 real, 1571.4 MB
+[runlim] sample:		157.2 time, 180.1 real, 1571.6 MB
+[runlim] sample:		165.3 time, 190.1 real, 1571.6 MB
+[runlim] sample:		174.9 time, 200.1 real, 1571.6 MB
+[runlim] sample:		184.9 time, 210.1 real, 1571.6 MB
+[runlim] sample:		194.9 time, 220.1 real, 1571.9 MB
+[runlim] sample:		204.9 time, 230.1 real, 1571.9 MB
+[runlim] sample:		213.4 time, 240.1 real, 1571.9 MB
+[runlim] sample:		222.3 time, 250.1 real, 1572.2 MB
+[runlim] sample:		232.3 time, 260.1 real, 1572.2 MB
+[runlim] sample:		242.3 time, 270.1 real, 1572.2 MB
+[runlim] sample:		252.1 time, 280.1 real, 1572.4 MB
+[runlim] sample:		261.4 time, 290.1 real, 1572.4 MB
+[runlim] sample:		271.3 time, 300.1 real, 1572.4 MB
+[runlim] sample:		281.3 time, 310.1 real, 1572.4 MB
+[runlim] sample:		291.3 time, 320.1 real, 1572.7 MB
+[runlim] end:			Tue Feb  5 10:04:04 2019
+[runlim] status:		signal(9)
+[runlim] result:		11
+[runlim] children:		0
+[runlim] real:			322.42 seconds
+[runlim] time:			293.58 seconds
+[runlim] space:			1572.7 MB
+[runlim] samples:		3223

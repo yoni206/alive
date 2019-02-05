@@ -1,16 +1,19 @@
 [runlim] version:		1.10fixed
-[runlim] time limit:		1 seconds
+[runlim] time limit:		300 seconds
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./z3
-[runlim] argv[1]:		/tmp/wmn662gt.smt2
-[runlim] start:			Tue Feb  5 08:37:42 2019
-[runlim] main pid:		13801
-[runlim] end:			Tue Feb  5 08:37:44 2019
-[runlim] status:		out of time
-[runlim] result:		2
+[runlim] argv[1]:		/tmp/MyRZ7dNv.smt2
+[runlim] start:			Tue Feb  5 11:03:42 2019
+[runlim] main pid:		4577
+[runlim] sample:		8.6 time, 10.5 real, 15.5 MB
+[runlim] sample:		17.8 time, 20.5 real, 15.8 MB
+[runlim] sample:		27.8 time, 30.5 real, 16.1 MB
+[runlim] end:			Tue Feb  5 11:04:16 2019
+[runlim] status:		ok
+[runlim] result:		0
 [runlim] children:		0
-[runlim] real:			2.09 seconds
-[runlim] time:			1.09 seconds
-[runlim] space:			14.7 MB
-[runlim] samples:		11
+[runlim] real:			34.28 seconds
+[runlim] time:			31.62 seconds
+[runlim] space:			16.3 MB
+[runlim] samples:		338

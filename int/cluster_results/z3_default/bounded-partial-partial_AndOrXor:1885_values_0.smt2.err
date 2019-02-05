@@ -1,16 +1,17 @@
 [runlim] version:		1.10fixed
-[runlim] time limit:		1 seconds
+[runlim] time limit:		300 seconds
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./z3
-[runlim] argv[1]:		/tmp/M5lb3ZRv.smt2
-[runlim] start:			Tue Feb  5 08:37:51 2019
-[runlim] main pid:		30831
-[runlim] end:			Tue Feb  5 08:37:52 2019
-[runlim] status:		out of time
-[runlim] result:		2
+[runlim] argv[1]:		/tmp/WsIY1Etp.smt2
+[runlim] start:			Tue Feb  5 11:10:45 2019
+[runlim] main pid:		17207
+[runlim] sample:		9.7 time, 10.8 real, 26.2 MB
+[runlim] end:			Tue Feb  5 11:10:57 2019
+[runlim] status:		ok
+[runlim] result:		0
 [runlim] children:		0
-[runlim] real:			1.32 seconds
-[runlim] time:			1.09 seconds
-[runlim] space:			21.5 MB
-[runlim] samples:		11
+[runlim] real:			12.73 seconds
+[runlim] time:			11.61 seconds
+[runlim] space:			26.2 MB
+[runlim] samples:		119

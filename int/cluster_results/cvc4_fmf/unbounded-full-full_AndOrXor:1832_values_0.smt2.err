@@ -1,0 +1,48 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--fmf-fun-rlv
+[runlim] argv[2]:		/tmp/PylcZcg8.smt2
+[runlim] start:			Tue Feb  5 10:50:26 2019
+[runlim] main pid:		10271
+[runlim] sample:		9.3 time, 10.5 real, 162.1 MB
+[runlim] sample:		19.3 time, 20.5 real, 274.0 MB
+[runlim] sample:		29.1 time, 30.5 real, 356.1 MB
+[runlim] sample:		37.5 time, 40.5 real, 396.2 MB
+[runlim] sample:		47.5 time, 50.5 real, 736.7 MB
+[runlim] sample:		57.5 time, 60.5 real, 807.9 MB
+[runlim] sample:		67.5 time, 70.5 real, 808.4 MB
+[runlim] sample:		77.5 time, 80.5 real, 808.7 MB
+[runlim] sample:		87.4 time, 90.5 real, 847.3 MB
+[runlim] sample:		97.4 time, 100.5 real, 889.3 MB
+[runlim] sample:		107.4 time, 110.5 real, 1265.4 MB
+[runlim] sample:		117.4 time, 120.5 real, 1495.1 MB
+[runlim] sample:		125.9 time, 130.5 real, 1495.1 MB
+[runlim] sample:		134.7 time, 140.5 real, 1495.1 MB
+[runlim] sample:		143.2 time, 150.5 real, 1495.1 MB
+[runlim] sample:		152.8 time, 160.5 real, 1497.9 MB
+[runlim] sample:		162.2 time, 170.5 real, 1497.9 MB
+[runlim] sample:		170.7 time, 180.5 real, 1497.9 MB
+[runlim] sample:		179.3 time, 190.5 real, 1497.9 MB
+[runlim] sample:		188.0 time, 200.5 real, 1497.9 MB
+[runlim] sample:		197.9 time, 210.5 real, 1497.9 MB
+[runlim] sample:		205.4 time, 220.5 real, 1497.9 MB
+[runlim] sample:		213.4 time, 230.5 real, 1497.9 MB
+[runlim] sample:		222.5 time, 240.5 real, 1497.9 MB
+[runlim] sample:		231.3 time, 250.5 real, 1498.2 MB
+[runlim] sample:		241.0 time, 260.5 real, 1516.9 MB
+[runlim] sample:		250.9 time, 270.5 real, 1522.9 MB
+[runlim] sample:		260.9 time, 280.5 real, 1522.9 MB
+[runlim] sample:		270.9 time, 290.5 real, 1522.9 MB
+[runlim] sample:		280.9 time, 300.5 real, 1523.1 MB
+[runlim] sample:		290.9 time, 310.5 real, 1523.1 MB
+[runlim] end:			Tue Feb  5 10:55:43 2019
+[runlim] status:		signal(9)
+[runlim] result:		11
+[runlim] children:		0
+[runlim] real:			317.84 seconds
+[runlim] time:			298.23 seconds
+[runlim] space:			1581.7 MB
+[runlim] samples:		3173

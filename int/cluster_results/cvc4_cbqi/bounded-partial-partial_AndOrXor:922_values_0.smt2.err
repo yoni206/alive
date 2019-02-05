@@ -1,0 +1,48 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--cbqi-all
+[runlim] argv[2]:		/tmp/V8PU8pau.smt2
+[runlim] start:			Tue Feb  5 10:49:27 2019
+[runlim] main pid:		9940
+[runlim] sample:		8.5 time, 10.5 real, 38.2 MB
+[runlim] sample:		17.7 time, 20.5 real, 45.5 MB
+[runlim] sample:		27.6 time, 30.5 real, 53.4 MB
+[runlim] sample:		36.6 time, 40.5 real, 58.6 MB
+[runlim] sample:		44.9 time, 50.5 real, 63.3 MB
+[runlim] sample:		53.4 time, 60.5 real, 67.1 MB
+[runlim] sample:		63.4 time, 70.5 real, 71.5 MB
+[runlim] sample:		73.4 time, 80.5 real, 76.2 MB
+[runlim] sample:		83.4 time, 90.5 real, 80.4 MB
+[runlim] sample:		93.4 time, 100.5 real, 85.3 MB
+[runlim] sample:		103.4 time, 110.5 real, 88.4 MB
+[runlim] sample:		113.4 time, 120.5 real, 91.5 MB
+[runlim] sample:		123.4 time, 130.5 real, 95.1 MB
+[runlim] sample:		133.4 time, 140.5 real, 97.9 MB
+[runlim] sample:		143.4 time, 150.5 real, 101.3 MB
+[runlim] sample:		153.4 time, 160.5 real, 104.1 MB
+[runlim] sample:		163.4 time, 170.5 real, 106.4 MB
+[runlim] sample:		173.4 time, 180.5 real, 110.5 MB
+[runlim] sample:		183.4 time, 190.5 real, 112.8 MB
+[runlim] sample:		193.4 time, 200.5 real, 114.9 MB
+[runlim] sample:		203.4 time, 210.5 real, 117.7 MB
+[runlim] sample:		213.1 time, 220.5 real, 119.8 MB
+[runlim] sample:		222.6 time, 230.5 real, 122.4 MB
+[runlim] sample:		230.9 time, 240.5 real, 124.4 MB
+[runlim] sample:		239.7 time, 250.5 real, 126.7 MB
+[runlim] sample:		248.5 time, 260.5 real, 129.1 MB
+[runlim] sample:		256.7 time, 270.5 real, 129.8 MB
+[runlim] sample:		265.1 time, 280.5 real, 132.1 MB
+[runlim] sample:		274.1 time, 290.5 real, 134.2 MB
+[runlim] sample:		281.8 time, 300.5 real, 136.8 MB
+[runlim] sample:		290.2 time, 310.5 real, 137.8 MB
+[runlim] end:			Tue Feb  5 10:54:47 2019
+[runlim] status:		signal(9)
+[runlim] result:		11
+[runlim] children:		0
+[runlim] real:			320.46 seconds
+[runlim] time:			299.78 seconds
+[runlim] space:			139.9 MB
+[runlim] samples:		3199

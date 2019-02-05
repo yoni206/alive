@@ -1,0 +1,50 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--nl-ext-tplanes
+[runlim] argv[2]:		--full-saturate-quant
+[runlim] argv[3]:		--no-e-matching
+[runlim] argv[4]:		/tmp/Hk7Ommbs.smt2
+[runlim] start:			Tue Feb  5 10:29:21 2019
+[runlim] main pid:		21549
+[runlim] sample:		9.0 time, 10.9 real, 48.9 MB
+[runlim] sample:		18.1 time, 20.9 real, 60.8 MB
+[runlim] sample:		27.2 time, 30.9 real, 66.7 MB
+[runlim] sample:		36.6 time, 40.9 real, 72.9 MB
+[runlim] sample:		46.1 time, 50.9 real, 78.1 MB
+[runlim] sample:		55.8 time, 60.9 real, 82.3 MB
+[runlim] sample:		65.4 time, 70.9 real, 85.3 MB
+[runlim] sample:		75.1 time, 80.9 real, 89.8 MB
+[runlim] sample:		84.8 time, 90.9 real, 93.1 MB
+[runlim] sample:		94.4 time, 100.9 real, 97.5 MB
+[runlim] sample:		104.1 time, 110.9 real, 101.6 MB
+[runlim] sample:		113.7 time, 120.9 real, 104.2 MB
+[runlim] sample:		123.4 time, 130.9 real, 106.5 MB
+[runlim] sample:		133.1 time, 140.9 real, 107.8 MB
+[runlim] sample:		142.7 time, 150.9 real, 112.2 MB
+[runlim] sample:		152.4 time, 160.9 real, 115.3 MB
+[runlim] sample:		162.0 time, 170.9 real, 117.6 MB
+[runlim] sample:		171.7 time, 180.9 real, 124.3 MB
+[runlim] sample:		181.5 time, 190.9 real, 129.5 MB
+[runlim] sample:		190.9 time, 200.9 real, 134.1 MB
+[runlim] sample:		199.4 time, 210.9 real, 147.2 MB
+[runlim] sample:		208.6 time, 220.9 real, 155.2 MB
+[runlim] sample:		218.6 time, 230.9 real, 155.7 MB
+[runlim] sample:		228.6 time, 240.9 real, 156.2 MB
+[runlim] sample:		238.1 time, 250.9 real, 157.0 MB
+[runlim] sample:		248.1 time, 260.9 real, 158.5 MB
+[runlim] sample:		258.1 time, 270.9 real, 166.0 MB
+[runlim] sample:		268.1 time, 280.9 real, 166.3 MB
+[runlim] sample:		278.1 time, 290.9 real, 166.8 MB
+[runlim] sample:		288.1 time, 300.9 real, 167.6 MB
+[runlim] sample:		298.1 time, 310.9 real, 168.4 MB
+[runlim] end:			Tue Feb  5 10:34:33 2019
+[runlim] status:		signal(9)
+[runlim] result:		11
+[runlim] children:		0
+[runlim] real:			312.80 seconds
+[runlim] time:			299.96 seconds
+[runlim] space:			168.4 MB
+[runlim] samples:		3119

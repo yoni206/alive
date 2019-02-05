@@ -1,0 +1,50 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--nl-ext-tplanes
+[runlim] argv[2]:		--cbqi-all
+[runlim] argv[3]:		/tmp/5pbg33xz.smt2
+[runlim] start:			Tue Feb  5 10:08:21 2019
+[runlim] main pid:		25525
+[runlim] sample:		9.6 time, 10.5 real, 54.8 MB
+[runlim] sample:		19.6 time, 20.5 real, 68.4 MB
+[runlim] sample:		29.2 time, 30.5 real, 79.4 MB
+[runlim] sample:		37.6 time, 40.5 real, 89.0 MB
+[runlim] sample:		46.4 time, 50.5 real, 96.2 MB
+[runlim] sample:		55.7 time, 60.5 real, 102.6 MB
+[runlim] sample:		63.9 time, 70.5 real, 108.0 MB
+[runlim] sample:		71.4 time, 80.5 real, 112.9 MB
+[runlim] sample:		80.1 time, 90.5 real, 117.8 MB
+[runlim] sample:		88.4 time, 100.5 real, 123.3 MB
+[runlim] sample:		96.6 time, 110.5 real, 127.1 MB
+[runlim] sample:		104.8 time, 120.5 real, 134.3 MB
+[runlim] sample:		114.2 time, 130.5 real, 139.2 MB
+[runlim] sample:		123.8 time, 140.5 real, 143.3 MB
+[runlim] sample:		133.5 time, 150.5 real, 147.5 MB
+[runlim] sample:		143.1 time, 160.5 real, 151.1 MB
+[runlim] sample:		152.8 time, 170.5 real, 154.9 MB
+[runlim] sample:		162.5 time, 180.5 real, 159.1 MB
+[runlim] sample:		172.1 time, 190.5 real, 162.4 MB
+[runlim] sample:		181.8 time, 200.5 real, 166.5 MB
+[runlim] sample:		191.5 time, 210.5 real, 169.6 MB
+[runlim] sample:		201.1 time, 220.5 real, 172.4 MB
+[runlim] sample:		209.8 time, 230.5 real, 175.0 MB
+[runlim] sample:		217.5 time, 240.5 real, 177.1 MB
+[runlim] sample:		225.9 time, 250.5 real, 179.7 MB
+[runlim] sample:		234.0 time, 260.5 real, 183.3 MB
+[runlim] sample:		243.2 time, 270.5 real, 185.9 MB
+[runlim] sample:		252.6 time, 280.5 real, 187.7 MB
+[runlim] sample:		262.0 time, 290.5 real, 190.5 MB
+[runlim] sample:		271.3 time, 300.5 real, 193.3 MB
+[runlim] sample:		281.2 time, 310.5 real, 195.6 MB
+[runlim] sample:		291.2 time, 320.5 real, 198.0 MB
+[runlim] end:			Tue Feb  5 10:13:45 2019
+[runlim] status:		signal(9)
+[runlim] result:		11
+[runlim] children:		0
+[runlim] real:			324.61 seconds
+[runlim] time:			295.35 seconds
+[runlim] space:			199.2 MB
+[runlim] samples:		3241

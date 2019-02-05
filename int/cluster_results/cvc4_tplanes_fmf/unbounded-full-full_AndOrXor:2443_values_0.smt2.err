@@ -1,0 +1,39 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--nl-ext-tplanes
+[runlim] argv[2]:		--fmf-fun-rlv
+[runlim] argv[3]:		/tmp/we7lusCO.smt2
+[runlim] start:			Tue Feb  5 09:57:57 2019
+[runlim] main pid:		3972
+[runlim] sample:		9.7 time, 10.8 real, 181.7 MB
+[runlim] sample:		19.7 time, 20.8 real, 581.3 MB
+[runlim] sample:		29.7 time, 30.8 real, 813.7 MB
+[runlim] sample:		39.7 time, 40.8 real, 919.6 MB
+[runlim] sample:		49.7 time, 50.8 real, 919.6 MB
+[runlim] sample:		59.2 time, 60.8 real, 919.6 MB
+[runlim] sample:		67.7 time, 70.8 real, 919.6 MB
+[runlim] sample:		75.5 time, 80.8 real, 919.6 MB
+[runlim] sample:		84.3 time, 90.8 real, 919.6 MB
+[runlim] sample:		93.4 time, 100.8 real, 919.6 MB
+[runlim] sample:		102.5 time, 110.8 real, 919.6 MB
+[runlim] sample:		112.2 time, 120.8 real, 942.3 MB
+[runlim] sample:		121.9 time, 130.8 real, 1320.4 MB
+[runlim] sample:		131.9 time, 140.8 real, 1624.8 MB
+[runlim] sample:		141.1 time, 150.8 real, 1898.9 MB
+[runlim] sample:		150.3 time, 160.8 real, 2330.8 MB
+[runlim] sample:		159.0 time, 170.8 real, 2621.6 MB
+[runlim] sample:		169.0 time, 180.8 real, 2942.8 MB
+[runlim] sample:		179.0 time, 190.8 real, 3269.7 MB
+[runlim] sample:		189.0 time, 200.8 real, 3587.9 MB
+CVC4 interrupted by SIGTERM.
+[runlim] end:			Tue Feb  5 10:01:23 2019
+[runlim] status:		out of memory
+[runlim] result:		3
+[runlim] children:		0
+[runlim] real:			206.11 seconds
+[runlim] time:			194.23 seconds
+[runlim] space:			4023.1 MB
+[runlim] samples:		2052

@@ -1,0 +1,47 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--cbqi-all
+[runlim] argv[2]:		/tmp/3MSsxAlV.smt2
+[runlim] start:			Tue Feb  5 10:39:57 2019
+[runlim] main pid:		3042
+[runlim] sample:		8.3 time, 10.5 real, 37.8 MB
+[runlim] sample:		16.6 time, 20.5 real, 45.7 MB
+[runlim] sample:		26.4 time, 30.5 real, 52.5 MB
+[runlim] sample:		36.4 time, 40.5 real, 58.1 MB
+[runlim] sample:		45.5 time, 50.5 real, 64.1 MB
+[runlim] sample:		55.3 time, 60.5 real, 69.0 MB
+[runlim] sample:		65.3 time, 70.5 real, 73.6 MB
+[runlim] sample:		75.3 time, 80.5 real, 78.3 MB
+[runlim] sample:		85.3 time, 90.5 real, 83.1 MB
+[runlim] sample:		95.3 time, 100.5 real, 87.0 MB
+[runlim] sample:		105.3 time, 110.5 real, 90.6 MB
+[runlim] sample:		115.3 time, 120.5 real, 94.2 MB
+[runlim] sample:		125.3 time, 130.5 real, 98.1 MB
+[runlim] sample:		135.3 time, 140.5 real, 100.6 MB
+[runlim] sample:		145.1 time, 150.5 real, 104.3 MB
+[runlim] sample:		154.5 time, 160.5 real, 108.7 MB
+[runlim] sample:		164.4 time, 170.5 real, 109.5 MB
+[runlim] sample:		173.7 time, 180.5 real, 111.8 MB
+[runlim] sample:		183.0 time, 190.5 real, 114.4 MB
+[runlim] sample:		192.3 time, 200.5 real, 116.7 MB
+[runlim] sample:		201.6 time, 210.5 real, 119.0 MB
+[runlim] sample:		210.9 time, 220.5 real, 121.3 MB
+[runlim] sample:		220.2 time, 230.5 real, 123.9 MB
+[runlim] sample:		229.6 time, 240.5 real, 125.5 MB
+[runlim] sample:		239.1 time, 250.5 real, 128.0 MB
+[runlim] sample:		249.0 time, 260.5 real, 130.6 MB
+[runlim] sample:		259.0 time, 270.5 real, 132.7 MB
+[runlim] sample:		269.0 time, 280.5 real, 135.3 MB
+[runlim] sample:		279.0 time, 290.5 real, 137.6 MB
+[runlim] sample:		288.9 time, 300.5 real, 140.4 MB
+[runlim] end:			Tue Feb  5 10:45:05 2019
+[runlim] status:		signal(9)
+[runlim] result:		11
+[runlim] children:		0
+[runlim] real:			308.46 seconds
+[runlim] time:			296.85 seconds
+[runlim] space:			141.2 MB
+[runlim] samples:		3079

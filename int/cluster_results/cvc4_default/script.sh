@@ -4,12 +4,12 @@
 #SBATCH -c 1
 #SBATCH -a 1-3408
 #SBATCH --qos=normal
-#SBATCH -t 00:00:1
+#SBATCH -t 00:00:300
 #SBATCH -D /barrett/scratch/yoniz/git/alive/int/cluster_results/cvc4_default
 
 prefix="/barrett/scratch/yoniz/git/alive/int/int_bench/"
 runlim_binary="/barrett/scratch/local/bin/runlim"
-runlim_options="--time-limit=1 --space-limit=4000"
+runlim_options="--time-limit=300 --space-limit=4000"
 solver="./cvc4"
 solver_options=""
 benchmarks="/barrett/scratch/yoniz/git/alive/int/cluster_results/cvc4_default/benchmarks"

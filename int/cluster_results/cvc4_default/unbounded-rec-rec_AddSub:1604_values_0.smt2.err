@@ -1,21 +1,51 @@
 [runlim] version:		1.10fixed
-[runlim] time limit:		1 seconds
+[runlim] time limit:		300 seconds
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./cvc4
-[runlim] argv[1]:		/tmp/N51wqAyK.smt2
-[runlim] start:			Tue Feb  5 08:37:32 2019
-[runlim] main pid:		17709
-/tmp/N51wqAyK.smt2:4.12: No set-logic command was given before this point.
-/tmp/N51wqAyK.smt2:4.12: CVC4 will make all theories available.
-/tmp/N51wqAyK.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
-/tmp/N51wqAyK.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
+[runlim] argv[1]:		/tmp/ynlC7kjS.smt2
+[runlim] start:			Tue Feb  5 09:52:41 2019
+[runlim] main pid:		18531
+/tmp/ynlC7kjS.smt2:4.12: No set-logic command was given before this point.
+/tmp/ynlC7kjS.smt2:4.12: CVC4 will make all theories available.
+/tmp/ynlC7kjS.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
+/tmp/ynlC7kjS.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
+[runlim] sample:		10.0 time, 10.5 real, 77.9 MB
+[runlim] sample:		20.0 time, 20.5 real, 103.5 MB
+[runlim] sample:		29.9 time, 30.5 real, 122.6 MB
+[runlim] sample:		39.9 time, 40.5 real, 136.0 MB
+[runlim] sample:		49.9 time, 50.5 real, 148.3 MB
+[runlim] sample:		59.9 time, 60.5 real, 160.2 MB
+[runlim] sample:		69.9 time, 70.5 real, 175.8 MB
+[runlim] sample:		79.9 time, 80.5 real, 183.6 MB
+[runlim] sample:		88.5 time, 90.5 real, 190.7 MB
+[runlim] sample:		98.5 time, 100.5 real, 198.7 MB
+[runlim] sample:		108.5 time, 110.5 real, 207.7 MB
+[runlim] sample:		118.4 time, 120.5 real, 214.9 MB
+[runlim] sample:		128.4 time, 130.5 real, 222.4 MB
+[runlim] sample:		138.1 time, 140.5 real, 227.8 MB
+[runlim] sample:		147.8 time, 150.5 real, 233.9 MB
+[runlim] sample:		157.8 time, 160.5 real, 238.8 MB
+[runlim] sample:		167.8 time, 170.5 real, 250.8 MB
+[runlim] sample:		177.8 time, 180.5 real, 254.4 MB
+[runlim] sample:		187.8 time, 190.5 real, 258.8 MB
+[runlim] sample:		197.8 time, 200.5 real, 266.5 MB
+[runlim] sample:		207.8 time, 210.5 real, 270.9 MB
+[runlim] sample:		217.8 time, 220.5 real, 274.2 MB
+[runlim] sample:		226.6 time, 230.5 real, 286.5 MB
+[runlim] sample:		235.5 time, 240.5 real, 291.7 MB
+[runlim] sample:		245.5 time, 250.5 real, 295.3 MB
+[runlim] sample:		255.5 time, 260.5 real, 299.4 MB
+[runlim] sample:		265.5 time, 270.5 real, 303.3 MB
+[runlim] sample:		275.5 time, 280.5 real, 308.9 MB
+[runlim] sample:		285.5 time, 290.5 real, 314.3 MB
+[runlim] sample:		295.5 time, 300.5 real, 318.4 MB
 CVC4 interrupted by SIGTERM.
-[runlim] end:			Tue Feb  5 08:37:33 2019
+[runlim] end:			Tue Feb  5 09:57:46 2019
 [runlim] status:		out of time
 [runlim] result:		2
 [runlim] children:		0
-[runlim] real:			1.87 seconds
-[runlim] time:			1.09 seconds
-[runlim] space:			42.0 MB
-[runlim] samples:		11
+[runlim] real:			305.14 seconds
+[runlim] time:			300.06 seconds
+[runlim] space:			319.2 MB
+[runlim] samples:		3046

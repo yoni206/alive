@@ -1,0 +1,47 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--cbqi-all
+[runlim] argv[2]:		/tmp/WebhQsSr.smt2
+[runlim] start:			Tue Feb  5 10:49:37 2019
+[runlim] main pid:		25634
+[runlim] sample:		9.0 time, 10.5 real, 39.0 MB
+[runlim] sample:		17.9 time, 20.5 real, 46.9 MB
+[runlim] sample:		27.2 time, 30.5 real, 53.8 MB
+[runlim] sample:		36.9 time, 40.5 real, 60.5 MB
+[runlim] sample:		46.5 time, 50.5 real, 65.6 MB
+[runlim] sample:		56.2 time, 60.5 real, 70.3 MB
+[runlim] sample:		65.9 time, 70.5 real, 75.4 MB
+[runlim] sample:		75.5 time, 80.5 real, 79.4 MB
+[runlim] sample:		85.2 time, 90.5 real, 84.1 MB
+[runlim] sample:		94.9 time, 100.5 real, 87.9 MB
+[runlim] sample:		104.5 time, 110.5 real, 91.6 MB
+[runlim] sample:		114.2 time, 120.5 real, 95.4 MB
+[runlim] sample:		123.8 time, 130.5 real, 98.3 MB
+[runlim] sample:		133.5 time, 140.5 real, 101.6 MB
+[runlim] sample:		143.2 time, 150.5 real, 104.2 MB
+[runlim] sample:		152.8 time, 160.5 real, 107.0 MB
+[runlim] sample:		162.5 time, 170.5 real, 110.9 MB
+[runlim] sample:		172.2 time, 180.5 real, 113.2 MB
+[runlim] sample:		181.8 time, 190.5 real, 115.8 MB
+[runlim] sample:		191.5 time, 200.5 real, 118.4 MB
+[runlim] sample:		201.2 time, 210.5 real, 120.4 MB
+[runlim] sample:		210.8 time, 220.5 real, 123.0 MB
+[runlim] sample:		220.5 time, 230.5 real, 125.3 MB
+[runlim] sample:		230.2 time, 240.5 real, 127.9 MB
+[runlim] sample:		239.8 time, 250.5 real, 130.0 MB
+[runlim] sample:		249.5 time, 260.5 real, 132.5 MB
+[runlim] sample:		259.2 time, 270.5 real, 134.9 MB
+[runlim] sample:		269.0 time, 280.5 real, 137.4 MB
+[runlim] sample:		279.0 time, 290.5 real, 140.0 MB
+[runlim] sample:		289.0 time, 300.5 real, 141.6 MB
+[runlim] end:			Tue Feb  5 10:54:41 2019
+[runlim] status:		signal(9)
+[runlim] result:		11
+[runlim] children:		0
+[runlim] real:			304.64 seconds
+[runlim] time:			293.11 seconds
+[runlim] space:			142.8 MB
+[runlim] samples:		3041

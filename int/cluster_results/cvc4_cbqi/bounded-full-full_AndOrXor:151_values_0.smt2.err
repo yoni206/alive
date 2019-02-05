@@ -1,0 +1,50 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--cbqi-all
+[runlim] argv[2]:		/tmp/rO1dtEvv.smt2
+[runlim] start:			Tue Feb  5 10:44:17 2019
+[runlim] main pid:		5064
+[runlim] sample:		9.2 time, 10.3 real, 52.4 MB
+[runlim] sample:		19.2 time, 20.3 real, 66.4 MB
+[runlim] sample:		29.2 time, 30.3 real, 75.2 MB
+[runlim] sample:		39.2 time, 40.3 real, 82.9 MB
+[runlim] sample:		48.9 time, 50.3 real, 89.6 MB
+[runlim] sample:		58.8 time, 60.3 real, 96.3 MB
+[runlim] sample:		68.8 time, 70.3 real, 102.5 MB
+[runlim] sample:		78.8 time, 80.3 real, 110.0 MB
+[runlim] sample:		88.8 time, 90.3 real, 113.8 MB
+[runlim] sample:		98.8 time, 100.3 real, 118.0 MB
+[runlim] sample:		108.8 time, 110.3 real, 121.3 MB
+[runlim] sample:		118.5 time, 120.3 real, 124.4 MB
+[runlim] sample:		127.3 time, 130.3 real, 127.2 MB
+[runlim] sample:		136.6 time, 140.3 real, 130.6 MB
+[runlim] sample:		145.8 time, 150.3 real, 133.7 MB
+[runlim] sample:		155.5 time, 160.3 real, 137.3 MB
+[runlim] sample:		163.8 time, 170.3 real, 139.4 MB
+[runlim] sample:		171.9 time, 180.3 real, 141.9 MB
+[runlim] sample:		180.7 time, 190.3 real, 144.2 MB
+[runlim] sample:		189.0 time, 200.3 real, 146.3 MB
+[runlim] sample:		197.6 time, 210.3 real, 148.9 MB
+[runlim] sample:		206.9 time, 220.3 real, 150.7 MB
+[runlim] sample:		215.9 time, 230.3 real, 153.0 MB
+[runlim] sample:		225.2 time, 240.3 real, 157.1 MB
+[runlim] sample:		234.2 time, 250.3 real, 158.9 MB
+[runlim] sample:		242.9 time, 260.3 real, 160.5 MB
+[runlim] sample:		252.3 time, 270.3 real, 162.8 MB
+[runlim] sample:		261.7 time, 280.3 real, 164.3 MB
+[runlim] sample:		270.9 time, 290.3 real, 166.1 MB
+[runlim] sample:		279.1 time, 300.3 real, 167.7 MB
+[runlim] sample:		288.5 time, 310.3 real, 171.2 MB
+[runlim] sample:		297.4 time, 320.3 real, 172.8 MB
+CVC4 interrupted by SIGTERM.
+[runlim] end:			Tue Feb  5 10:49:40 2019
+[runlim] status:		out of time
+[runlim] result:		2
+[runlim] children:		0
+[runlim] real:			323.37 seconds
+[runlim] time:			300.04 seconds
+[runlim] space:			173.3 MB
+[runlim] samples:		3230

@@ -1,0 +1,28 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--nl-ext-tplanes
+[runlim] argv[2]:		--full-saturate-quant
+[runlim] argv[3]:		--no-e-matching
+[runlim] argv[4]:		/tmp/hvazCZ3s.smt2
+[runlim] start:			Tue Feb  5 10:34:26 2019
+[runlim] main pid:		9439
+[runlim] sample:		8.0 time, 10.3 real, 38.4 MB
+[runlim] sample:		18.0 time, 20.3 real, 49.2 MB
+[runlim] sample:		28.0 time, 30.3 real, 69.2 MB
+[runlim] sample:		38.0 time, 40.3 real, 95.2 MB
+[runlim] sample:		48.0 time, 50.3 real, 98.8 MB
+[runlim] sample:		58.0 time, 60.3 real, 102.9 MB
+[runlim] sample:		68.0 time, 70.3 real, 103.9 MB
+[runlim] sample:		78.0 time, 80.3 real, 108.0 MB
+[runlim] sample:		88.0 time, 90.3 real, 115.6 MB
+[runlim] end:			Tue Feb  5 10:36:03 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			97.78 seconds
+[runlim] time:			94.89 seconds
+[runlim] space:			135.2 MB
+[runlim] samples:		974

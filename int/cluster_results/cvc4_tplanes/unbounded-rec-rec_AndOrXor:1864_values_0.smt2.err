@@ -1,22 +1,51 @@
 [runlim] version:		1.10fixed
-[runlim] time limit:		1 seconds
+[runlim] time limit:		300 seconds
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--nl-ext-tplanes
-[runlim] argv[2]:		/tmp/LDUPUstx.smt2
-[runlim] start:			Tue Feb  5 08:37:37 2019
-[runlim] main pid:		30424
-/tmp/LDUPUstx.smt2:4.12: No set-logic command was given before this point.
-/tmp/LDUPUstx.smt2:4.12: CVC4 will make all theories available.
-/tmp/LDUPUstx.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
-/tmp/LDUPUstx.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
-CVC4 interrupted by SIGTERM.
-[runlim] end:			Tue Feb  5 08:37:38 2019
-[runlim] status:		out of time
-[runlim] result:		2
+[runlim] argv[2]:		/tmp/lLodycXk.smt2
+[runlim] start:			Tue Feb  5 09:52:46 2019
+[runlim] main pid:		5630
+/tmp/lLodycXk.smt2:4.12: No set-logic command was given before this point.
+/tmp/lLodycXk.smt2:4.12: CVC4 will make all theories available.
+/tmp/lLodycXk.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
+/tmp/lLodycXk.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
+[runlim] sample:		8.3 time, 10.8 real, 80.4 MB
+[runlim] sample:		17.3 time, 20.8 real, 99.4 MB
+[runlim] sample:		26.6 time, 30.8 real, 113.3 MB
+[runlim] sample:		36.0 time, 40.8 real, 125.1 MB
+[runlim] sample:		45.3 time, 50.8 real, 136.9 MB
+[runlim] sample:		54.6 time, 60.8 real, 144.4 MB
+[runlim] sample:		64.0 time, 70.8 real, 151.7 MB
+[runlim] sample:		72.8 time, 80.8 real, 156.9 MB
+[runlim] sample:		81.5 time, 90.8 real, 162.3 MB
+[runlim] sample:		90.6 time, 100.8 real, 166.4 MB
+[runlim] sample:		99.9 time, 110.8 real, 172.1 MB
+[runlim] sample:		109.4 time, 120.8 real, 176.4 MB
+[runlim] sample:		119.4 time, 130.8 real, 181.3 MB
+[runlim] sample:		129.4 time, 140.8 real, 186.6 MB
+[runlim] sample:		139.2 time, 150.8 real, 189.5 MB
+[runlim] sample:		148.9 time, 160.8 real, 193.1 MB
+[runlim] sample:		158.6 time, 170.8 real, 196.7 MB
+[runlim] sample:		168.2 time, 180.8 real, 200.5 MB
+[runlim] sample:		177.9 time, 190.8 real, 203.1 MB
+[runlim] sample:		187.5 time, 200.8 real, 207.2 MB
+[runlim] sample:		196.9 time, 210.8 real, 210.3 MB
+[runlim] sample:		206.9 time, 220.8 real, 212.9 MB
+[runlim] sample:		216.9 time, 230.8 real, 216.0 MB
+[runlim] sample:		226.9 time, 240.8 real, 220.1 MB
+[runlim] sample:		236.9 time, 250.8 real, 226.1 MB
+[runlim] sample:		246.9 time, 260.8 real, 226.6 MB
+[runlim] sample:		256.9 time, 270.8 real, 228.2 MB
+[runlim] sample:		266.9 time, 280.8 real, 232.3 MB
+[runlim] sample:		276.9 time, 290.8 real, 237.9 MB
+[runlim] sample:		286.8 time, 300.8 real, 239.7 MB
+[runlim] end:			Tue Feb  5 09:57:56 2019
+[runlim] status:		signal(9)
+[runlim] result:		11
 [runlim] children:		0
-[runlim] real:			1.53 seconds
-[runlim] time:			1.08 seconds
-[runlim] space:			45.8 MB
-[runlim] samples:		11
+[runlim] real:			310.54 seconds
+[runlim] time:			296.53 seconds
+[runlim] space:			243.0 MB
+[runlim] samples:		3097

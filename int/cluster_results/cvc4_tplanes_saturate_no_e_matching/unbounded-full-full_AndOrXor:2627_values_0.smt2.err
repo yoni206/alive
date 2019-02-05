@@ -1,0 +1,50 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--nl-ext-tplanes
+[runlim] argv[2]:		--full-saturate-quant
+[runlim] argv[3]:		--no-e-matching
+[runlim] argv[4]:		/tmp/HMIFiyD0.smt2
+[runlim] start:			Tue Feb  5 10:23:36 2019
+[runlim] main pid:		23141
+[runlim] sample:		9.3 time, 10.5 real, 52.3 MB
+[runlim] sample:		19.3 time, 20.5 real, 62.6 MB
+[runlim] sample:		29.3 time, 30.5 real, 69.5 MB
+[runlim] sample:		38.5 time, 40.5 real, 76.4 MB
+[runlim] sample:		47.8 time, 50.5 real, 83.6 MB
+[runlim] sample:		57.6 time, 60.5 real, 88.3 MB
+[runlim] sample:		65.2 time, 70.5 real, 92.3 MB
+[runlim] sample:		74.6 time, 80.5 real, 95.9 MB
+[runlim] sample:		82.7 time, 90.5 real, 99.5 MB
+[runlim] sample:		91.1 time, 100.5 real, 102.4 MB
+[runlim] sample:		100.9 time, 110.5 real, 104.9 MB
+[runlim] sample:		110.9 time, 120.5 real, 107.8 MB
+[runlim] sample:		120.9 time, 130.5 real, 113.2 MB
+[runlim] sample:		130.7 time, 140.5 real, 113.9 MB
+[runlim] sample:		139.6 time, 150.5 real, 119.6 MB
+[runlim] sample:		149.1 time, 160.5 real, 120.1 MB
+[runlim] sample:		158.8 time, 170.5 real, 121.4 MB
+[runlim] sample:		167.6 time, 180.5 real, 123.8 MB
+[runlim] sample:		175.2 time, 190.5 real, 126.2 MB
+[runlim] sample:		183.3 time, 200.5 real, 127.2 MB
+[runlim] sample:		192.7 time, 210.5 real, 128.7 MB
+[runlim] sample:		202.4 time, 220.5 real, 132.1 MB
+[runlim] sample:		212.1 time, 230.5 real, 134.2 MB
+[runlim] sample:		221.5 time, 240.5 real, 137.5 MB
+[runlim] sample:		231.5 time, 250.5 real, 139.8 MB
+[runlim] sample:		241.5 time, 260.5 real, 141.6 MB
+[runlim] sample:		251.5 time, 270.5 real, 143.6 MB
+[runlim] sample:		261.5 time, 280.5 real, 144.9 MB
+[runlim] sample:		271.5 time, 290.5 real, 147.2 MB
+[runlim] sample:		281.5 time, 300.5 real, 149.8 MB
+[runlim] sample:		291.5 time, 310.5 real, 152.4 MB
+[runlim] end:			Tue Feb  5 10:28:55 2019
+[runlim] status:		signal(9)
+[runlim] result:		11
+[runlim] children:		0
+[runlim] real:			319.16 seconds
+[runlim] time:			299.36 seconds
+[runlim] space:			154.7 MB
+[runlim] samples:		3186

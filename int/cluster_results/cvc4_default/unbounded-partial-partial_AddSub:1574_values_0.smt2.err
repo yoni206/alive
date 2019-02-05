@@ -1,17 +1,16 @@
 [runlim] version:		1.10fixed
-[runlim] time limit:		1 seconds
+[runlim] time limit:		300 seconds
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./cvc4
-[runlim] argv[1]:		/tmp/VnxiTZs3.smt2
-[runlim] start:			Tue Feb  5 08:37:32 2019
-[runlim] main pid:		15579
-CVC4 interrupted by SIGTERM.
-[runlim] end:			Tue Feb  5 08:37:33 2019
-[runlim] status:		out of time
-[runlim] result:		2
+[runlim] argv[1]:		/tmp/KrhCfeIp.smt2
+[runlim] start:			Tue Feb  5 09:52:41 2019
+[runlim] main pid:		2579
+[runlim] end:			Tue Feb  5 09:52:44 2019
+[runlim] status:		ok
+[runlim] result:		0
 [runlim] children:		0
-[runlim] real:			1.38 seconds
-[runlim] time:			1.09 seconds
-[runlim] space:			26.2 MB
-[runlim] samples:		11
+[runlim] real:			3.44 seconds
+[runlim] time:			3.37 seconds
+[runlim] space:			27.2 MB
+[runlim] samples:		34
