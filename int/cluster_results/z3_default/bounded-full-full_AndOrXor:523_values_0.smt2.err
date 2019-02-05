@@ -1,46 +1,16 @@
 [runlim] version:		1.10fixed
-[runlim] time limit:		300 seconds
+[runlim] time limit:		1 seconds
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./z3
-[runlim] argv[1]:		/tmp/1m6YRuie.smt2
-[runlim] start:			Tue Jan 29 17:27:03 2019
-[runlim] main pid:		29648
-[runlim] sample:		10.0 time, 10.1 real, 16.2 MB
-[runlim] sample:		20.0 time, 20.1 real, 16.2 MB
-[runlim] sample:		30.0 time, 30.1 real, 16.5 MB
-[runlim] sample:		40.0 time, 40.1 real, 18.3 MB
-[runlim] sample:		48.7 time, 50.1 real, 18.3 MB
-[runlim] sample:		58.4 time, 60.1 real, 22.6 MB
-[runlim] sample:		68.0 time, 70.1 real, 28.0 MB
-[runlim] sample:		76.7 time, 80.1 real, 28.0 MB
-[runlim] sample:		85.2 time, 90.1 real, 36.0 MB
-[runlim] sample:		93.5 time, 100.1 real, 36.0 MB
-[runlim] sample:		103.5 time, 110.1 real, 36.0 MB
-[runlim] sample:		113.5 time, 120.1 real, 36.0 MB
-[runlim] sample:		123.0 time, 130.1 real, 36.0 MB
-[runlim] sample:		132.7 time, 140.1 real, 36.0 MB
-[runlim] sample:		142.2 time, 150.1 real, 36.0 MB
-[runlim] sample:		152.2 time, 160.1 real, 36.0 MB
-[runlim] sample:		161.6 time, 170.1 real, 43.2 MB
-[runlim] sample:		171.5 time, 180.1 real, 46.3 MB
-[runlim] sample:		181.5 time, 190.1 real, 46.8 MB
-[runlim] sample:		191.5 time, 200.1 real, 46.9 MB
-[runlim] sample:		201.5 time, 210.1 real, 46.9 MB
-[runlim] sample:		211.5 time, 220.1 real, 46.9 MB
-[runlim] sample:		221.5 time, 230.1 real, 46.9 MB
-[runlim] sample:		231.5 time, 240.1 real, 46.9 MB
-[runlim] sample:		241.5 time, 250.1 real, 46.9 MB
-[runlim] sample:		251.5 time, 260.1 real, 46.9 MB
-[runlim] sample:		261.5 time, 270.1 real, 46.9 MB
-[runlim] sample:		271.5 time, 280.1 real, 59.5 MB
-[runlim] sample:		281.5 time, 290.1 real, 80.0 MB
-[runlim] sample:		291.5 time, 300.1 real, 83.4 MB
-[runlim] end:			Tue Jan 29 17:32:11 2019
+[runlim] argv[1]:		/tmp/dYwBtrhl.smt2
+[runlim] start:			Tue Feb  5 08:37:47 2019
+[runlim] main pid:		32322
+[runlim] end:			Tue Feb  5 08:37:48 2019
 [runlim] status:		out of time
 [runlim] result:		2
 [runlim] children:		0
-[runlim] real:			308.60 seconds
-[runlim] time:			300.04 seconds
-[runlim] space:			88.2 MB
-[runlim] samples:		3085
+[runlim] real:			1.61 seconds
+[runlim] time:			1.09 seconds
+[runlim] space:			15.3 MB
+[runlim] samples:		11

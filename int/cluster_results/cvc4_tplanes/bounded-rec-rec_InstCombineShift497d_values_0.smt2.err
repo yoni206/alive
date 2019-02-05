@@ -1,47 +1,22 @@
 [runlim] version:		1.10fixed
-[runlim] time limit:		300 seconds
+[runlim] time limit:		1 seconds
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--nl-ext-tplanes
-[runlim] argv[2]:		/tmp/SBW5O0qN.smt2
-[runlim] start:			Tue Jan 29 16:40:04 2019
-[runlim] main pid:		10349
-[runlim] sample:		8.7 time, 10.1 real, 66.7 MB
-[runlim] sample:		17.4 time, 20.1 real, 82.8 MB
-[runlim] sample:		26.2 time, 30.1 real, 93.3 MB
-[runlim] sample:		35.0 time, 40.1 real, 102.6 MB
-[runlim] sample:		45.0 time, 50.1 real, 111.1 MB
-[runlim] sample:		55.0 time, 60.1 real, 120.2 MB
-[runlim] sample:		65.0 time, 70.1 real, 125.6 MB
-[runlim] sample:		75.0 time, 80.1 real, 131.8 MB
-[runlim] sample:		85.0 time, 90.1 real, 136.2 MB
-[runlim] sample:		95.0 time, 100.1 real, 140.1 MB
-[runlim] sample:		105.0 time, 110.1 real, 144.2 MB
-[runlim] sample:		115.0 time, 120.1 real, 148.2 MB
-[runlim] sample:		124.6 time, 130.1 real, 152.6 MB
-[runlim] sample:		134.3 time, 140.1 real, 155.2 MB
-[runlim] sample:		144.1 time, 150.1 real, 158.8 MB
-[runlim] sample:		153.8 time, 160.1 real, 162.1 MB
-[runlim] sample:		163.7 time, 170.1 real, 164.7 MB
-[runlim] sample:		173.7 time, 180.1 real, 167.3 MB
-[runlim] sample:		183.7 time, 190.1 real, 170.2 MB
-[runlim] sample:		193.7 time, 200.1 real, 173.3 MB
-[runlim] sample:		203.5 time, 210.1 real, 175.1 MB
-[runlim] sample:		213.0 time, 220.1 real, 177.4 MB
-[runlim] sample:		222.5 time, 230.1 real, 180.2 MB
-[runlim] sample:		231.9 time, 240.1 real, 181.7 MB
-[runlim] sample:		241.6 time, 250.1 real, 184.6 MB
-[runlim] sample:		251.3 time, 260.1 real, 186.0 MB
-[runlim] sample:		261.3 time, 270.1 real, 188.8 MB
-[runlim] sample:		271.3 time, 280.1 real, 190.5 MB
-[runlim] sample:		281.3 time, 290.1 real, 193.1 MB
-[runlim] sample:		291.3 time, 300.1 real, 194.4 MB
-[runlim] end:			Tue Jan 29 16:45:12 2019
-[runlim] status:		signal(9)
-[runlim] result:		11
+[runlim] argv[2]:		/tmp/GNF27Skr.smt2
+[runlim] start:			Tue Feb  5 08:37:39 2019
+[runlim] main pid:		20457
+/tmp/GNF27Skr.smt2:4.12: No set-logic command was given before this point.
+/tmp/GNF27Skr.smt2:4.12: CVC4 will make all theories available.
+/tmp/GNF27Skr.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
+/tmp/GNF27Skr.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
+CVC4 interrupted by SIGTERM.
+[runlim] end:			Tue Feb  5 08:37:40 2019
+[runlim] status:		out of time
+[runlim] result:		2
 [runlim] children:		0
-[runlim] real:			308.71 seconds
-[runlim] time:			299.72 seconds
-[runlim] space:			195.9 MB
-[runlim] samples:		3085
+[runlim] real:			1.60 seconds
+[runlim] time:			1.09 seconds
+[runlim] space:			41.5 MB
+[runlim] samples:		11

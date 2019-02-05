@@ -1,9 +1,7 @@
-c host: barrett4.stanford.edu
-c start: Tue Jan 29 17:27:26 PST 2019
+c host: barrett41.stanford.edu
+c start: Tue Feb  5 08:37:47 PST 2019
 c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/bounded/rec/rec_AndOrXor:2443_undef_0.smt2
 c solver: ./z3
 c solver options: 
-(error "line 428 column 23: logic does not support theory recfun")
-(error "line 429 column 35: logic does not support theory recfun")
 unsat
 c done

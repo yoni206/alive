@@ -1,48 +1,22 @@
 [runlim] version:		1.10fixed
-[runlim] time limit:		300 seconds
+[runlim] time limit:		1 seconds
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--nl-ext-tplanes
-[runlim] argv[2]:		/tmp/ZrLpKLKv.smt2
-[runlim] start:			Tue Jan 29 16:38:31 2019
-[runlim] main pid:		26101
-[runlim] sample:		7.3 time, 10.8 real, 76.5 MB
-[runlim] sample:		17.3 time, 20.8 real, 102.8 MB
-[runlim] sample:		25.2 time, 30.8 real, 119.6 MB
-[runlim] sample:		33.6 time, 40.8 real, 132.6 MB
-[runlim] sample:		43.6 time, 50.8 real, 144.9 MB
-[runlim] sample:		53.6 time, 60.8 real, 156.1 MB
-[runlim] sample:		63.6 time, 70.8 real, 164.8 MB
-[runlim] sample:		73.6 time, 80.8 real, 173.0 MB
-[runlim] sample:		83.6 time, 90.8 real, 180.7 MB
-[runlim] sample:		93.6 time, 100.8 real, 186.9 MB
-[runlim] sample:		103.6 time, 110.8 real, 193.1 MB
-[runlim] sample:		113.6 time, 120.8 real, 199.7 MB
-[runlim] sample:		123.6 time, 130.8 real, 208.3 MB
-[runlim] sample:		133.6 time, 140.8 real, 215.5 MB
-[runlim] sample:		143.6 time, 150.8 real, 225.0 MB
-[runlim] sample:		153.6 time, 160.8 real, 229.4 MB
-[runlim] sample:		163.6 time, 170.8 real, 233.8 MB
-[runlim] sample:		173.6 time, 180.8 real, 239.0 MB
-[runlim] sample:		183.6 time, 190.8 real, 244.2 MB
-[runlim] sample:		193.6 time, 200.8 real, 250.3 MB
-[runlim] sample:		203.6 time, 210.8 real, 254.2 MB
-[runlim] sample:		213.6 time, 220.8 real, 258.0 MB
-[runlim] sample:		223.6 time, 230.8 real, 262.4 MB
-[runlim] sample:		233.6 time, 240.8 real, 266.3 MB
-[runlim] sample:		243.6 time, 250.8 real, 270.1 MB
-[runlim] sample:		253.6 time, 260.8 real, 274.3 MB
-[runlim] sample:		263.6 time, 270.8 real, 276.8 MB
-[runlim] sample:		273.6 time, 280.8 real, 279.9 MB
-[runlim] sample:		283.6 time, 290.8 real, 284.0 MB
-[runlim] sample:		293.6 time, 300.8 real, 286.1 MB
+[runlim] argv[2]:		/tmp/gfZhiSwP.smt2
+[runlim] start:			Tue Feb  5 08:37:37 2019
+[runlim] main pid:		4313
+/tmp/gfZhiSwP.smt2:4.12: No set-logic command was given before this point.
+/tmp/gfZhiSwP.smt2:4.12: CVC4 will make all theories available.
+/tmp/gfZhiSwP.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
+/tmp/gfZhiSwP.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
 CVC4 interrupted by SIGTERM.
-[runlim] end:			Tue Jan 29 16:43:38 2019
+[runlim] end:			Tue Feb  5 08:37:38 2019
 [runlim] status:		out of time
 [runlim] result:		2
 [runlim] children:		0
-[runlim] real:			307.37 seconds
-[runlim] time:			300.06 seconds
-[runlim] space:			287.6 MB
-[runlim] samples:		3065
+[runlim] real:			1.73 seconds
+[runlim] time:			1.09 seconds
+[runlim] space:			48.5 MB
+[runlim] samples:		11

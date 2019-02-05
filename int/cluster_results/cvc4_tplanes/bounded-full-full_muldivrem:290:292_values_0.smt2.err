@@ -1,48 +1,18 @@
 [runlim] version:		1.10fixed
-[runlim] time limit:		300 seconds
+[runlim] time limit:		1 seconds
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--nl-ext-tplanes
-[runlim] argv[2]:		/tmp/huqSUHU3.smt2
-[runlim] start:			Tue Jan 29 16:39:03 2019
-[runlim] main pid:		29924
-[runlim] sample:		9.1 time, 10.7 real, 36.9 MB
-[runlim] sample:		18.1 time, 20.7 real, 47.5 MB
-[runlim] sample:		27.1 time, 30.7 real, 57.2 MB
-[runlim] sample:		36.1 time, 40.7 real, 67.2 MB
-[runlim] sample:		45.1 time, 50.7 real, 77.9 MB
-[runlim] sample:		55.1 time, 60.7 real, 88.4 MB
-[runlim] sample:		64.7 time, 70.7 real, 98.2 MB
-[runlim] sample:		73.7 time, 80.7 real, 107.2 MB
-[runlim] sample:		83.5 time, 90.7 real, 116.5 MB
-[runlim] sample:		93.2 time, 100.7 real, 128.3 MB
-[runlim] sample:		102.8 time, 110.7 real, 139.5 MB
-[runlim] sample:		110.9 time, 120.7 real, 149.1 MB
-[runlim] sample:		118.5 time, 130.7 real, 157.1 MB
-[runlim] sample:		126.5 time, 140.7 real, 164.8 MB
-[runlim] sample:		134.6 time, 150.7 real, 173.1 MB
-[runlim] sample:		143.7 time, 160.7 real, 183.1 MB
-[runlim] sample:		153.0 time, 170.7 real, 193.2 MB
-[runlim] sample:		162.3 time, 180.7 real, 203.5 MB
-[runlim] sample:		171.6 time, 190.7 real, 213.3 MB
-[runlim] sample:		180.9 time, 200.7 real, 222.9 MB
-[runlim] sample:		190.7 time, 210.7 real, 236.9 MB
-[runlim] sample:		200.7 time, 220.7 real, 246.1 MB
-[runlim] sample:		210.7 time, 230.7 real, 256.5 MB
-[runlim] sample:		220.7 time, 240.7 real, 270.4 MB
-[runlim] sample:		230.6 time, 250.7 real, 279.9 MB
-[runlim] sample:		240.6 time, 260.7 real, 289.5 MB
-[runlim] sample:		250.6 time, 270.7 real, 298.7 MB
-[runlim] sample:		260.6 time, 280.7 real, 309.8 MB
-[runlim] sample:		270.6 time, 290.7 real, 321.7 MB
-[runlim] sample:		280.6 time, 300.7 real, 332.0 MB
-[runlim] sample:		290.6 time, 310.7 real, 343.6 MB
-[runlim] end:			Tue Jan 29 16:44:20 2019
-[runlim] status:		signal(9)
-[runlim] result:		11
+[runlim] argv[2]:		/tmp/7wRWamgV.smt2
+[runlim] start:			Tue Feb  5 08:37:38 2019
+[runlim] main pid:		22945
+CVC4 interrupted by SIGTERM.
+[runlim] end:			Tue Feb  5 08:37:39 2019
+[runlim] status:		out of time
+[runlim] result:		2
 [runlim] children:		0
-[runlim] real:			317.85 seconds
-[runlim] time:			297.71 seconds
-[runlim] space:			350.3 MB
-[runlim] samples:		3171
+[runlim] real:			1.25 seconds
+[runlim] time:			1.09 seconds
+[runlim] space:			29.2 MB
+[runlim] samples:		11

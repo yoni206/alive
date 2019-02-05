@@ -1,11 +1,7 @@
-c host: barrett49.stanford.edu
-c start: Tue Jan 29 17:26:13 PST 2019
+c host: barrett34.stanford.edu
+c start: Tue Feb  5 08:37:45 PST 2019
 c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/unbounded/rec/rec_AndOrXor:1827_poison_0.smt2
 c solver: ./z3
 c solver options: 
-(error "line 427 column 23: logic does not support theory recfun")
-(error "line 428 column 35: logic does not support theory recfun")
-(error "line 432 column 23: logic does not support theory recfun")
-(error "line 433 column 35: logic does not support theory recfun")
 unsat
 c done

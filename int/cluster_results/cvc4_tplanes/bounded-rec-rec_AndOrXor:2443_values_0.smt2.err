@@ -1,49 +1,22 @@
 [runlim] version:		1.10fixed
-[runlim] time limit:		300 seconds
+[runlim] time limit:		1 seconds
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--nl-ext-tplanes
-[runlim] argv[2]:		/tmp/YTel84UN.smt2
-[runlim] start:			Tue Jan 29 16:39:43 2019
-[runlim] main pid:		30858
-[runlim] sample:		9.1 time, 10.5 real, 79.7 MB
-[runlim] sample:		19.1 time, 20.5 real, 104.5 MB
-[runlim] sample:		29.1 time, 30.5 real, 122.0 MB
-[runlim] sample:		39.1 time, 40.5 real, 135.5 MB
-[runlim] sample:		49.1 time, 50.5 real, 145.1 MB
-[runlim] sample:		58.0 time, 60.5 real, 152.6 MB
-[runlim] sample:		68.0 time, 70.5 real, 160.2 MB
-[runlim] sample:		78.0 time, 80.5 real, 168.0 MB
-[runlim] sample:		87.0 time, 90.5 real, 174.1 MB
-[runlim] sample:		97.0 time, 100.5 real, 180.0 MB
-[runlim] sample:		106.8 time, 110.5 real, 184.9 MB
-[runlim] sample:		115.7 time, 120.5 real, 190.8 MB
-[runlim] sample:		124.4 time, 130.5 real, 194.9 MB
-[runlim] sample:		132.9 time, 140.5 real, 200.9 MB
-[runlim] sample:		142.9 time, 150.5 real, 205.8 MB
-[runlim] sample:		152.1 time, 160.5 real, 211.5 MB
-[runlim] sample:		161.4 time, 170.5 real, 214.3 MB
-[runlim] sample:		171.1 time, 180.5 real, 222.6 MB
-[runlim] sample:		178.5 time, 190.5 real, 222.8 MB
-[runlim] sample:		187.2 time, 200.5 real, 225.9 MB
-[runlim] sample:		197.2 time, 210.5 real, 229.9 MB
-[runlim] sample:		207.2 time, 220.5 real, 232.9 MB
-[runlim] sample:		217.2 time, 230.5 real, 236.3 MB
-[runlim] sample:		227.2 time, 240.5 real, 239.4 MB
-[runlim] sample:		236.9 time, 250.5 real, 244.9 MB
-[runlim] sample:		246.0 time, 260.5 real, 248.0 MB
-[runlim] sample:		255.4 time, 270.5 real, 249.5 MB
-[runlim] sample:		264.0 time, 280.5 real, 253.1 MB
-[runlim] sample:		273.9 time, 290.5 real, 255.4 MB
-[runlim] sample:		283.9 time, 300.5 real, 257.8 MB
-[runlim] sample:		293.9 time, 310.5 real, 262.3 MB
+[runlim] argv[2]:		/tmp/ALeX5QQI.smt2
+[runlim] start:			Tue Feb  5 08:37:39 2019
+[runlim] main pid:		9307
+/tmp/ALeX5QQI.smt2:4.12: No set-logic command was given before this point.
+/tmp/ALeX5QQI.smt2:4.12: CVC4 will make all theories available.
+/tmp/ALeX5QQI.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
+/tmp/ALeX5QQI.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
 CVC4 interrupted by SIGTERM.
-[runlim] end:			Tue Jan 29 16:44:59 2019
+[runlim] end:			Tue Feb  5 08:37:40 2019
 [runlim] status:		out of time
 [runlim] result:		2
 [runlim] children:		0
-[runlim] real:			316.92 seconds
-[runlim] time:			300.10 seconds
-[runlim] space:			263.6 MB
-[runlim] samples:		3164
+[runlim] real:			1.34 seconds
+[runlim] time:			1.09 seconds
+[runlim] space:			48.7 MB
+[runlim] samples:		11

@@ -1,48 +1,16 @@
 [runlim] version:		1.10fixed
-[runlim] time limit:		300 seconds
+[runlim] time limit:		1 seconds
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./z3
-[runlim] argv[1]:		/tmp/QsfViUc6.smt2
-[runlim] start:			Tue Jan 29 17:24:07 2019
-[runlim] main pid:		18247
-[runlim] sample:		7.6 time, 10.5 real, 24.5 MB
-[runlim] sample:		15.4 time, 20.5 real, 24.5 MB
-[runlim] sample:		23.3 time, 30.5 real, 24.5 MB
-[runlim] sample:		31.3 time, 40.5 real, 24.5 MB
-[runlim] sample:		39.2 time, 50.5 real, 33.5 MB
-[runlim] sample:		48.0 time, 60.5 real, 32.9 MB
-[runlim] sample:		57.5 time, 70.5 real, 31.9 MB
-[runlim] sample:		66.7 time, 80.5 real, 34.2 MB
-[runlim] sample:		75.9 time, 90.5 real, 35.3 MB
-[runlim] sample:		83.5 time, 100.5 real, 38.7 MB
-[runlim] sample:		92.8 time, 110.5 real, 40.2 MB
-[runlim] sample:		102.2 time, 120.5 real, 40.2 MB
-[runlim] sample:		111.7 time, 130.5 real, 40.2 MB
-[runlim] sample:		121.3 time, 140.5 real, 40.2 MB
-[runlim] sample:		131.0 time, 150.5 real, 40.2 MB
-[runlim] sample:		140.2 time, 160.5 real, 40.2 MB
-[runlim] sample:		149.7 time, 170.5 real, 40.2 MB
-[runlim] sample:		158.7 time, 180.5 real, 40.2 MB
-[runlim] sample:		167.5 time, 190.5 real, 40.2 MB
-[runlim] sample:		176.7 time, 200.5 real, 40.2 MB
-[runlim] sample:		186.2 time, 210.5 real, 40.2 MB
-[runlim] sample:		196.2 time, 220.5 real, 40.2 MB
-[runlim] sample:		206.2 time, 230.5 real, 40.2 MB
-[runlim] sample:		216.2 time, 240.5 real, 82.1 MB
-[runlim] sample:		226.2 time, 250.5 real, 82.1 MB
-[runlim] sample:		236.2 time, 260.5 real, 82.1 MB
-[runlim] sample:		246.2 time, 270.5 real, 82.1 MB
-[runlim] sample:		256.2 time, 280.5 real, 82.4 MB
-[runlim] sample:		266.2 time, 290.5 real, 82.4 MB
-[runlim] sample:		276.2 time, 300.5 real, 82.4 MB
-[runlim] sample:		286.2 time, 310.5 real, 82.4 MB
-[runlim] sample:		296.2 time, 320.5 real, 82.4 MB
-[runlim] end:			Tue Jan 29 17:29:31 2019
+[runlim] argv[1]:		/tmp/8Kggxh9e.smt2
+[runlim] start:			Tue Feb  5 08:37:42 2019
+[runlim] main pid:		23637
+[runlim] end:			Tue Feb  5 08:37:43 2019
 [runlim] status:		out of time
 [runlim] result:		2
 [runlim] children:		0
-[runlim] real:			324.41 seconds
-[runlim] time:			300.07 seconds
-[runlim] space:			82.4 MB
-[runlim] samples:		3239
+[runlim] real:			1.65 seconds
+[runlim] time:			1.09 seconds
+[runlim] space:			17.5 MB
+[runlim] samples:		11

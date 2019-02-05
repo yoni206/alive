@@ -1,7 +1,0 @@
-c host: barrett48.stanford.edu
-c start: Tue Jan 29 17:22:35 PST 2019
-c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/bounded/qf/qf_AndOrXor:2160_values_0.smt2
-c solver: ./cvc4
-c solver options: --fmf-fun-rlv
-sat
-c done

@@ -1,48 +1,17 @@
 [runlim] version:		1.10fixed
-[runlim] time limit:		300 seconds
+[runlim] time limit:		1 seconds
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--nl-ext-tplanes
-[runlim] argv[2]:		/tmp/4PdAt1D5.smt2
-[runlim] start:			Tue Jan 29 16:39:04 2019
-[runlim] main pid:		30012
-[runlim] sample:		9.8 time, 10.1 real, 66.3 MB
-[runlim] sample:		18.7 time, 20.1 real, 104.7 MB
-[runlim] sample:		27.3 time, 30.1 real, 144.8 MB
-[runlim] sample:		36.7 time, 40.1 real, 185.0 MB
-[runlim] sample:		46.3 time, 50.1 real, 227.7 MB
-[runlim] sample:		55.5 time, 60.1 real, 270.1 MB
-[runlim] sample:		64.9 time, 70.1 real, 309.3 MB
-[runlim] sample:		74.9 time, 80.1 real, 351.5 MB
-[runlim] sample:		84.0 time, 90.1 real, 387.6 MB
-[runlim] sample:		93.4 time, 100.1 real, 433.1 MB
-[runlim] sample:		103.4 time, 110.1 real, 484.9 MB
-[runlim] sample:		113.4 time, 120.1 real, 498.0 MB
-[runlim] sample:		123.4 time, 130.1 real, 541.8 MB
-[runlim] sample:		133.4 time, 140.1 real, 587.7 MB
-[runlim] sample:		143.4 time, 150.1 real, 630.0 MB
-[runlim] sample:		153.4 time, 160.1 real, 677.0 MB
-[runlim] sample:		163.4 time, 170.1 real, 719.1 MB
-[runlim] sample:		173.4 time, 180.1 real, 760.8 MB
-[runlim] sample:		183.4 time, 190.1 real, 814.2 MB
-[runlim] sample:		193.4 time, 200.1 real, 858.3 MB
-[runlim] sample:		203.4 time, 210.1 real, 910.9 MB
-[runlim] sample:		213.4 time, 220.1 real, 932.0 MB
-[runlim] sample:		223.4 time, 230.1 real, 965.0 MB
-[runlim] sample:		233.4 time, 240.1 real, 1004.7 MB
-[runlim] sample:		243.4 time, 250.1 real, 1044.1 MB
-[runlim] sample:		253.4 time, 260.1 real, 1083.6 MB
-[runlim] sample:		263.4 time, 270.1 real, 1128.8 MB
-[runlim] sample:		273.4 time, 280.1 real, 1173.7 MB
-[runlim] sample:		283.4 time, 290.1 real, 1219.3 MB
-[runlim] sample:		293.4 time, 300.1 real, 1267.8 MB
-CVC4 interrupted by SIGTERM.
-[runlim] end:			Tue Jan 29 16:44:10 2019
-[runlim] status:		out of time
-[runlim] result:		2
+[runlim] argv[2]:		/tmp/8cDk6ACP.smt2
+[runlim] start:			Tue Feb  5 08:37:38 2019
+[runlim] main pid:		20155
+[runlim] end:			Tue Feb  5 08:37:38 2019
+[runlim] status:		ok
+[runlim] result:		0
 [runlim] children:		0
-[runlim] real:			306.84 seconds
-[runlim] time:			300.07 seconds
-[runlim] space:			1298.2 MB
-[runlim] samples:		3067
+[runlim] real:			0.38 seconds
+[runlim] time:			0.19 seconds
+[runlim] space:			21.2 MB
+[runlim] samples:		2

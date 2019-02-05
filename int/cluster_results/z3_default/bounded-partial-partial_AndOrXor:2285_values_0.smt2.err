@@ -1,46 +1,16 @@
 [runlim] version:		1.10fixed
-[runlim] time limit:		300 seconds
+[runlim] time limit:		1 seconds
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./z3
-[runlim] argv[1]:		/tmp/5IqZ2Vn5.smt2
-[runlim] start:			Tue Jan 29 17:28:05 2019
-[runlim] main pid:		26832
-[runlim] sample:		8.3 time, 10.2 real, 43.1 MB
-[runlim] sample:		18.0 time, 20.2 real, 52.7 MB
-[runlim] sample:		27.2 time, 30.2 real, 67.1 MB
-[runlim] sample:		35.6 time, 40.2 real, 78.2 MB
-[runlim] sample:		44.1 time, 50.2 real, 84.6 MB
-[runlim] sample:		53.5 time, 60.2 real, 94.4 MB
-[runlim] sample:		62.0 time, 70.2 real, 99.8 MB
-[runlim] sample:		72.0 time, 80.2 real, 107.6 MB
-[runlim] sample:		82.0 time, 90.2 real, 114.6 MB
-[runlim] sample:		92.0 time, 100.2 real, 119.7 MB
-[runlim] sample:		102.0 time, 110.2 real, 123.6 MB
-[runlim] sample:		112.0 time, 120.2 real, 131.3 MB
-[runlim] sample:		122.0 time, 130.2 real, 134.1 MB
-[runlim] sample:		131.9 time, 140.2 real, 141.6 MB
-[runlim] sample:		141.9 time, 150.2 real, 148.6 MB
-[runlim] sample:		151.9 time, 160.2 real, 153.0 MB
-[runlim] sample:		161.9 time, 170.2 real, 157.3 MB
-[runlim] sample:		171.9 time, 180.2 real, 162.2 MB
-[runlim] sample:		181.9 time, 190.2 real, 168.7 MB
-[runlim] sample:		191.9 time, 200.2 real, 173.3 MB
-[runlim] sample:		201.9 time, 210.2 real, 178.2 MB
-[runlim] sample:		211.9 time, 220.2 real, 183.1 MB
-[runlim] sample:		221.9 time, 230.2 real, 187.2 MB
-[runlim] sample:		231.9 time, 240.2 real, 190.6 MB
-[runlim] sample:		241.9 time, 250.2 real, 193.7 MB
-[runlim] sample:		251.9 time, 260.2 real, 196.8 MB
-[runlim] sample:		261.9 time, 270.2 real, 200.1 MB
-[runlim] sample:		271.9 time, 280.2 real, 202.7 MB
-[runlim] sample:		281.9 time, 290.2 real, 209.4 MB
-[runlim] sample:		291.9 time, 300.2 real, 215.3 MB
-[runlim] end:			Tue Jan 29 17:33:13 2019
-[runlim] status:		signal(9)
-[runlim] result:		11
+[runlim] argv[1]:		/tmp/zHoNSngd.smt2
+[runlim] start:			Tue Feb  5 08:37:50 2019
+[runlim] main pid:		6711
+[runlim] end:			Tue Feb  5 08:37:51 2019
+[runlim] status:		ok
+[runlim] result:		0
 [runlim] children:		0
-[runlim] real:			308.19 seconds
-[runlim] time:			299.84 seconds
-[runlim] space:			218.2 MB
-[runlim] samples:		3079
+[runlim] real:			1.17 seconds
+[runlim] time:			0.39 seconds
+[runlim] space:			19.5 MB
+[runlim] samples:		4

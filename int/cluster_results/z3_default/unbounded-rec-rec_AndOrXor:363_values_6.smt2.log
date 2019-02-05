@@ -1,16 +1,6 @@
-c host: barrett49.stanford.edu
-c start: Tue Jan 29 17:26:14 PST 2019
+c host: barrett6.stanford.edu
+c start: Tue Feb  5 08:37:46 PST 2019
 c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/unbounded/rec/rec_AndOrXor:363_values_6.smt2
 c solver: ./z3
 c solver options: 
-(error "line 427 column 23: logic does not support theory recfun")
-(error "line 428 column 35: logic does not support theory recfun")
-(error "line 432 column 23: logic does not support theory recfun")
-(error "line 433 column 35: logic does not support theory recfun")
-(error "line 437 column 23: logic does not support theory recfun")
-(error "line 438 column 35: logic does not support theory recfun")
-(error "line 442 column 23: logic does not support theory recfun")
-(error "line 443 column 35: logic does not support theory recfun")
-(error "line 446 column 198: logic does not support theory recfun")
-sat
 c done

@@ -1,47 +1,21 @@
 [runlim] version:		1.10fixed
-[runlim] time limit:		300 seconds
+[runlim] time limit:		1 seconds
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./cvc4
-[runlim] argv[1]:		/tmp/hmkrafXB.smt2
-[runlim] start:			Tue Jan 29 16:36:25 2019
-[runlim] main pid:		2485
-[runlim] sample:		9.2 time, 10.1 real, 103.0 MB
-[runlim] sample:		17.5 time, 20.1 real, 139.4 MB
-[runlim] sample:		25.9 time, 30.1 real, 163.5 MB
-[runlim] sample:		34.8 time, 40.1 real, 189.1 MB
-[runlim] sample:		43.8 time, 50.1 real, 216.6 MB
-[runlim] sample:		52.9 time, 60.1 real, 234.9 MB
-[runlim] sample:		62.1 time, 70.1 real, 252.8 MB
-[runlim] sample:		71.4 time, 80.1 real, 269.2 MB
-[runlim] sample:		81.3 time, 90.1 real, 282.2 MB
-[runlim] sample:		90.5 time, 100.1 real, 293.8 MB
-[runlim] sample:		99.8 time, 110.1 real, 306.8 MB
-[runlim] sample:		109.7 time, 120.1 real, 316.8 MB
-[runlim] sample:		119.7 time, 130.1 real, 326.9 MB
-[runlim] sample:		129.7 time, 140.1 real, 336.7 MB
-[runlim] sample:		139.7 time, 150.1 real, 347.8 MB
-[runlim] sample:		149.7 time, 160.1 real, 356.1 MB
-[runlim] sample:		159.7 time, 170.1 real, 364.3 MB
-[runlim] sample:		168.4 time, 180.1 real, 373.3 MB
-[runlim] sample:		178.3 time, 190.1 real, 383.8 MB
-[runlim] sample:		187.9 time, 200.1 real, 390.0 MB
-[runlim] sample:		197.3 time, 210.1 real, 399.5 MB
-[runlim] sample:		206.2 time, 220.1 real, 409.1 MB
-[runlim] sample:		215.1 time, 230.1 real, 419.1 MB
-[runlim] sample:		225.0 time, 240.1 real, 425.0 MB
-[runlim] sample:		235.0 time, 250.1 real, 429.7 MB
-[runlim] sample:		245.0 time, 260.1 real, 436.6 MB
-[runlim] sample:		255.0 time, 270.1 real, 443.8 MB
-[runlim] sample:		264.9 time, 280.1 real, 449.0 MB
-[runlim] sample:		274.4 time, 290.1 real, 453.6 MB
-[runlim] sample:		284.1 time, 300.1 real, 460.8 MB
-[runlim] sample:		293.8 time, 310.1 real, 464.9 MB
-[runlim] end:			Tue Jan 29 16:41:42 2019
-[runlim] status:		signal(9)
-[runlim] result:		11
+[runlim] argv[1]:		/tmp/bkJiEXsq.smt2
+[runlim] start:			Tue Feb  5 08:37:33 2019
+[runlim] main pid:		10460
+/tmp/bkJiEXsq.smt2:4.12: No set-logic command was given before this point.
+/tmp/bkJiEXsq.smt2:4.12: CVC4 will make all theories available.
+/tmp/bkJiEXsq.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
+/tmp/bkJiEXsq.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
+CVC4 interrupted by SIGTERM.
+[runlim] end:			Tue Feb  5 08:37:34 2019
+[runlim] status:		out of time
+[runlim] result:		2
 [runlim] children:		0
-[runlim] real:			317.14 seconds
-[runlim] time:			299.43 seconds
-[runlim] space:			476.5 MB
-[runlim] samples:		3170
+[runlim] real:			1.49 seconds
+[runlim] time:			1.09 seconds
+[runlim] space:			38.1 MB
+[runlim] samples:		11

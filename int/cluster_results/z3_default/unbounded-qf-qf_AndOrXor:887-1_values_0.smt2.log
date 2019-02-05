@@ -1,7 +1,7 @@
-c host: barrett52.stanford.edu
-c start: Tue Jan 29 17:25:09 PST 2019
+c host: barrett37.stanford.edu
+c start: Tue Feb  5 08:37:43 PST 2019
 c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/unbounded/qf/qf_AndOrXor:887-1_values_0.smt2
 c solver: ./z3
 c solver options: 
-unsat
+sat
 c done
