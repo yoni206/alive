@@ -1,8 +1,3 @@
-# Given a directory of smt2 files, verifies that in every file:
-# 1. All BitVec variables and functions are of the same bitwidth
-# 2. All files with _mem_ in the filename have (distinct mem0 mem0) in them.
-# 3. more stuff detailed in the code.
-#list files that fail these criteria
 import sys
 import re
 import os
@@ -222,7 +217,6 @@ def do_checks(path):
     return failures
 
 
-#functional programming baby!!!!
 def do_check(content, path, failures, check_func):
     b = check_func(content)
     if b is False:

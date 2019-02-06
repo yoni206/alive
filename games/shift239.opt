@@ -1,0 +1,6 @@
+
+Name: InstCombineShift239
+%Op0 = shl %X, C
+%r = lshr %Op0, C
+  =>
+%r = and %X, -1 u>> C

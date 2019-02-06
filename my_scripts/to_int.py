@@ -43,10 +43,6 @@ def main(dir_of_bv_smt, dir_of_int_smt, dir_of_templates, filter_file):
     for t_f in templates_files:
         template_name = utils.get_file_or_dir_name_no_ext(t_f)
         try:
-          os.makedirs(dir_of_int_smt + "/bounded/" + template_name)
-        except FileExistsError:
-            pass
-        try:
           os.makedirs(dir_of_int_smt + "/unbounded/" + template_name)
         except FileExistsError:
             pass
@@ -61,7 +57,6 @@ def main(dir_of_bv_smt, dir_of_int_smt, dir_of_templates, filter_file):
                 if len(files) != 0:
                     f = pick(dir_of_bv_smt,files)
                     bv_content = get_bv_content(dir_of_bv_smt, f)
-                    generate_bounded_benchmark(template_content, bv_content, t_f, f, dir_of_int_smt, template_name)
                     generate_unbounded_benchmark(template_content, bv_content, t_f, f, dir_of_int_smt, template_name)
 
 def get_bv_content(d, f):
@@ -76,9 +71,6 @@ def write_and_return(bv_path, tmp_path):
     with open(tmp_path, 'w') as myfile:
         myfile.write(content)
     return content
-
-def generate_bounded_benchmark(template_content, int_content, t_f, f, dir_of_int_smt, template_name):
-    generate_benchmark(template_content, int_content, t_f, f, dir_of_int_smt, template_name, True)
 
 def generate_unbounded_benchmark(template_content, int_content, t_f, f, dir_of_int_smt, template_name):
     generate_benchmark(template_content, int_content, t_f, f, dir_of_int_smt, template_name, False)

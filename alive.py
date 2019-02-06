@@ -223,6 +223,8 @@ def check_refinement(srcv, tgtv, types, extra_cnstrs, users, opt_name, index):
     (a, defa, poisona, qvars) = v
     (b, defb, poisonb, qvarsb) = tgtv[k]
     defb = mk_and(defb)
+    print "panda 1", defa, defb
+    print "panda 2", str(k), tgtv[k]
     poisonb = mk_and(poisonb)
 
     n_users = users[k]
@@ -328,7 +330,10 @@ gbl_prev_flags = []
 
 def check_typed_opt(pre, src, ident_src, tgt, ident_tgt, types, users, opt_name, index):
   srcv = toSMT(src, ident_src, True)
+  print "panda 3.1", tgt
+  print "panda 3.2", ident_tgt
   tgtv = toSMT(tgt, ident_tgt, False)
+  print "panda 6", str(tgtv.vars)
   pre_d, pre = pre.toSMT(srcv)
   extra_cnstrs = pre_d + pre +\
                  srcv.getAllocaConstraints() + tgtv.getAllocaConstraints()

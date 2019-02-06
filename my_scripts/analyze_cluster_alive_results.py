@@ -2,7 +2,9 @@ import pandas as ps
 import sys
 import os
 
-def main(results_dir, tex_csv_dir):
+NAME_LINE_PREFIX = "Name: "
+
+def main(results_dir, tex_csv_dir, opt_dir):
     results = {}
     results_dirs = [d for d in os.listdir(results_dir)]
     for d in results_dirs:
@@ -42,10 +44,19 @@ def main(results_dir, tex_csv_dir):
     df["proved"] = df.result.apply(lambda x: "yes" if (x == "unsat") else "no")
 
     df.to_csv("~/tmp.csv")
-    
+    df = df.loc[df["boundness"] == "unbounded"].copy()   
     cond_grouped = df.groupby(["opt_name", "reason", "encoding", "boundness"], as_index=False)
     cond_agg = cond_grouped.agg({'proved' : agg_yes})
     
+    reasons_grouped = cond_agg.groupby(["opt_name", "reason"], as_index = False)
+    reasons_agg = reasons_grouped.agg({'proved': agg_yes})
+
+    reasons_pivot = reasons_agg.pivot_table(index = ["opt_name"], columns = "reason", values = "proved", aggfunc = lambda x: " ".join(x)).reset_index()
+    opt_dict = gen_opt_dict(opt_dir)
+    reasons_pivot["has_poison"] = reasons_pivot["opt_name"].apply(has_poison(opt_dict))
+    
+
+
     enc_grouped = cond_agg.groupby(["opt_name", "boundness", "encoding"], as_index = False)
     enc_agg = enc_grouped.agg({'proved' : agg_three_yes})
     
@@ -94,8 +105,56 @@ def main(results_dir, tex_csv_dir):
     enc_sum_agg.to_csv("tmp/tmp9.csv")
     conf_alone_agg.to_csv("tmp/tmp10.csv")
     conf_sum_agg.to_csv("tmp/tmp11.csv")
+    reasons_agg.to_csv("tmp/tmp12.csv")
+    reasons_pivot.to_csv("tmp/tmp13.csv")
 
     #tex_stuff(direction_agg, cond_agg, tex_csv_dir)
+
+def gen_opt_dict(opts_dir):
+    result = {}
+    opt_files = [f for f in os.listdir(opts_dir) if not f.startswith(".")]
+    for f in opt_files:
+        opt_file = opts_dir + "/" + f
+        add_opts_from_file(result, opt_file)
+    return result
+
+def add_opts_from_file(result, opt_file):
+    optimizations = get_opts_from_file(opt_file)
+    for opt in optimizations:
+        assert(opt not in result)
+        result[opt] = optimizations[opt]
+
+def get_opts_from_file(original_file):
+    with open(original_file, 'r') as myfile:
+        lines = [l.strip() for l in myfile.readlines() if (not l.startswith(";")) and l.strip()]
+    result = {}
+    for line in lines:
+        if name_line(line):
+            current_name = get_name_from_name_line(line)
+            assert(current_name not in result)
+            create_new_opt(result, current_name)
+        add_line_to_opt(result, current_name, line)
+    return result
+
+def create_new_opt(result, current_name):
+    result[current_name] = []
+
+def add_line_to_opt(result, current_name, line):
+    result[current_name].append(line)
+
+def get_name_from_name_line(line):
+    return line[len(NAME_LINE_PREFIX):]
+
+def name_line(line):
+    return line.startswith(NAME_LINE_PREFIX)
+
+def has_poison(opt_dict):
+    return lambda opt_name : opt_has_poison(opt_dict, opt_name)
+
+def opt_has_poison(opt_dict, opt_name):
+    opt_content = opt_dict[opt_name]
+    return "nsw" in opt_content or "nuw" in opt_content or "exact" in opt_content
+
 
 def tex_stuff(direction_agg, cond_agg, tex_csv_dir):
     gen_IC_status_tables(direction_agg, tex_csv_dir)
@@ -411,8 +470,9 @@ def get_result(log_content):
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
-        print('arg1: cluster results dir\narg2: tex-csv dir')
+        print('arg1: cluster results dir\narg2: opts dir\narg3: tex-csv dir')
         exit(1)
     results_dir = sys.argv[1]
-    tex_csv_dir = sys.argv[2]
-    main(results_dir, tex_csv_dir)
+    opt_dir = sys.argv[2]
+    tex_csv_dir = sys.argv[3]
+    main(results_dir, tex_csv_dir, opt_dir)

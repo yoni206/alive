@@ -1,0 +1,6 @@
+(set-info :status unknown)
+(declare-fun C () (_ BitVec 7))
+(assert
+ (let (($x453 (bvult C (_ bv7 7))))
+ (and $x453 $x453 false)))
+(check-sat)

@@ -1,0 +1,12 @@
+(set-info :status unknown)
+(declare-fun %B () (_ BitVec 33))
+(declare-fun %A () (_ BitVec 33))
+(declare-fun %X () (_ BitVec 33))
+(declare-fun u_%Y () (_ BitVec 8))
+(assert
+ (let (($x901 (and (distinct (bvsrem %X (bvlshr (bvshl (_ bv1 33) %A) %B)) (bvsrem %X (bvshl (_ bv1 33) (bvsub %A %B)))) true)))
+ (let (($x1887 (bvult %B (_ bv33 33))))
+ (let (($x1514 (bvult %A (_ bv33 33))))
+ (let (($x1095 (or (and (distinct %X (_ bv4294967296 33)) true) (and (distinct (bvlshr (bvshl (_ bv1 33) %A) %B) (_ bv8589934591 33)) true))))
+ (and $x1514 $x1887 (and (distinct (bvlshr (bvshl (_ bv1 33) %A) %B) (_ bv0 33)) true) $x1095 $x1514 $x1887 (= u_%Y (_ bv1 8)) $x901))))))
+(check-sat)

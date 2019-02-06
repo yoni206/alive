@@ -1,4 +1,3 @@
-#Given an .opt file and a .txt file so that the txt file contains a line separated list of optimization names from the .opt file, we produce a new .opt file that contains only these optimizations whose names are in the .txt file.
 
 import sys
 import os

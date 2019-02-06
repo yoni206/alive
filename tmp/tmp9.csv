@@ -1,9 +1,5 @@
 encoding,boundness,proved
-full,bounded,294
-full,unbounded,292
-partial,bounded,307
-partial,unbounded,305
-qf,bounded,292
-qf,unbounded,292
-rec,bounded,291
-rec,unbounded,290
+full,unbounded,347
+partial,unbounded,350
+qf,unbounded,349
+rec,unbounded,344
