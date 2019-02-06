@@ -1,0 +1,6 @@
+(set-info :status unknown)
+(declare-fun C1 () (_ BitVec 15))
+(declare-fun %X () (_ BitVec 15))
+(assert
+ (and (distinct (ite (= (ite (bvslt %X (_ bv0 15)) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) (_ bv32767 15) C1) (bvor (bvashr %X (bvsub (_ bv15 15) (_ bv1 15))) C1)) true))
+(check-sat)

@@ -1,0 +1,13 @@
+(set-info :status unknown)
+(declare-fun C () (_ BitVec 16))
+(declare-fun C2 () (_ BitVec 11))
+(declare-fun C3 () (_ BitVec 11))
+(assert
+ (let ((?x6747 (ite (and (distinct ((_ extract 3 2) C) (_ bv0 2)) true) (ite (and (distinct ((_ extract 3 3) C) (_ bv0 1)) true) (_ bv3 32) (_ bv2 32)) (ite (and (distinct ((_ extract 1 1) C) (_ bv0 1)) true) (_ bv1 32) (_ bv0 32)))))
+ (let ((?x5560 (ite (and (distinct ((_ extract 7 6) C) (_ bv0 2)) true) (ite (and (distinct ((_ extract 7 7) C) (_ bv0 1)) true) (_ bv7 32) (_ bv6 32)) (ite (and (distinct ((_ extract 5 5) C) (_ bv0 1)) true) (_ bv5 32) (_ bv4 32)))))
+ (let ((?x4653 (ite (and (distinct ((_ extract 11 10) C) (_ bv0 2)) true) (ite (and (distinct ((_ extract 11 11) C) (_ bv0 1)) true) (_ bv11 32) (_ bv10 32)) (ite (and (distinct ((_ extract 9 9) C) (_ bv0 1)) true) (_ bv9 32) (_ bv8 32)))))
+ (let ((?x7533 (ite (and (distinct ((_ extract 15 14) C) (_ bv0 2)) true) (ite (and (distinct ((_ extract 15 15) C) (_ bv0 1)) true) (_ bv15 32) (_ bv14 32)) (ite (and (distinct ((_ extract 13 13) C) (_ bv0 1)) true) (_ bv13 32) (_ bv12 32)))))
+ (let ((?x6707 (ite (and (distinct ((_ extract 15 8) C) (_ bv0 8)) true) (ite (and (distinct ((_ extract 15 12) C) (_ bv0 4)) true) ?x7533 ?x4653) (ite (and (distinct ((_ extract 7 4) C) (_ bv0 4)) true) ?x5560 ?x6747))))
+ (let (($x7515 (and (and (distinct (bvsub C3 C2) (_ bv0 11)) true) (= (bvand (bvsub C3 C2) (bvsub (bvsub C3 C2) (_ bv1 11))) (_ bv0 11)))))
+ (and (and (and (distinct C (_ bv0 16)) true) (= (bvand C (bvsub C (_ bv1 16))) (_ bv0 16))) $x7515 (bvslt ?x6707 (_ bv11 32)) false))))))))
+(check-sat)

@@ -1,0 +1,5 @@
+
+(declare-fun C () (_ BitVec 1))
+(assert (not (= (ite (= C (_ bv1 1)) (_ bv4611686018427387903 62) (_ bv0 62)) ((_ sign_extend 61) C))))
+(assert true)
+(check-sat)

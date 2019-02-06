@@ -1,0 +1,9 @@
+(set-info :status unknown)
+(declare-fun %x () (_ BitVec 6))
+(declare-fun C2 () (_ BitVec 15))
+(declare-fun C () (_ BitVec 6))
+(assert
+ (let ((?x4612 ((_ sign_extend 9) %x)))
+ (let (($x6407 (and (distinct (ite (= (ite (bvslt %x C) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) ?x4612 C2) (ite (= (ite (bvsgt ?x4612 C2) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) C2 ?x4612)) true)))
+ (and (= C2 ((_ sign_extend 9) (bvsub C (_ bv1 6)))) (not (= C (_ bv32 6))) $x6407))))
+(check-sat)
