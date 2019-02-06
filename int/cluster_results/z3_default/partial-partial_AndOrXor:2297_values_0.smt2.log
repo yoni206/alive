@@ -1,0 +1,7 @@
+c host: barrett45.stanford.edu
+c start: Wed Feb  6 07:02:50 PST 2019
+c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/unbounded/partial/partial_AndOrXor:2297_values_0.smt2
+c solver: ./z3
+c solver options: 
+unknown
+c done

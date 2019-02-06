@@ -1,0 +1,28 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		1800 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./z3
+[runlim] argv[1]:		/tmp/i2sBqocp.smt2
+[runlim] start:			Wed Feb  6 07:03:13 2019
+[runlim] main pid:		26119
+[runlim] sample:		9.0 time, 10.5 real, 16.7 MB
+[runlim] sample:		18.4 time, 20.5 real, 16.8 MB
+[runlim] sample:		28.1 time, 30.5 real, 26.5 MB
+[runlim] sample:		38.1 time, 40.5 real, 27.0 MB
+[runlim] sample:		48.1 time, 50.5 real, 27.2 MB
+[runlim] sample:		58.1 time, 60.5 real, 27.6 MB
+[runlim] sample:		68.2 time, 70.5 real, 27.9 MB
+[runlim] sample:		78.1 time, 80.5 real, 36.9 MB
+[runlim] sample:		88.2 time, 90.5 real, 43.9 MB
+[runlim] sample:		98.2 time, 100.5 real, 43.9 MB
+[runlim] sample:		108.2 time, 110.5 real, 44.1 MB
+[runlim] sample:		118.2 time, 120.5 real, 44.1 MB
+[runlim] end:			Wed Feb  6 07:05:20 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			127.99 seconds
+[runlim] time:			125.55 seconds
+[runlim] space:			44.1 MB
+[runlim] samples:		1274

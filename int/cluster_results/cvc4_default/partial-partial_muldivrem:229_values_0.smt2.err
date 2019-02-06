@@ -1,0 +1,26 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		1800 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		/tmp/78fBDwfY.smt2
+[runlim] start:			Wed Feb  6 06:32:24 2019
+[runlim] main pid:		21613
+[runlim] sample:		10.0 time, 11.0 real, 33.6 MB
+[runlim] sample:		20.0 time, 21.0 real, 39.9 MB
+[runlim] sample:		30.0 time, 31.0 real, 56.9 MB
+[runlim] sample:		38.7 time, 41.0 real, 65.4 MB
+[runlim] sample:		47.3 time, 51.0 real, 66.4 MB
+[runlim] sample:		56.1 time, 61.0 real, 126.9 MB
+[runlim] sample:		65.1 time, 71.0 real, 130.3 MB
+[runlim] sample:		74.1 time, 81.0 real, 141.8 MB
+[runlim] sample:		83.0 time, 91.0 real, 151.6 MB
+[runlim] sample:		92.1 time, 101.0 real, 152.1 MB
+[runlim] end:			Wed Feb  6 06:34:14 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			110.57 seconds
+[runlim] time:			101.71 seconds
+[runlim] space:			156.3 MB
+[runlim] samples:		1096

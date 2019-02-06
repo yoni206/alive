@@ -1,0 +1,7 @@
+c host: barrett22.stanford.edu
+c start: Wed Feb  6 06:32:28 PST 2019
+c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/unbounded/full/full_Select:705_poison_122.smt2
+c solver: ./cvc4
+c solver options: --nl-ext-tplanes --full-saturate-quant --no-e-matching
+unsat
+c done
