@@ -33,12 +33,6 @@ def main(dir_of_bv_smt, dir_of_int_smt, dir_of_templates, filter_file):
     except FileExistsError:
         pass
 
-    try:
-      os.mkdir("tmp")
-    except FileExistsError:
-        pass
-
-
     #we generate an int file for every template, optimization and reason. The specific source bv file is chosen by `pick`
     for t_f in templates_files:
         template_name = utils.get_file_or_dir_name_no_ext(t_f)
@@ -61,15 +55,12 @@ def main(dir_of_bv_smt, dir_of_int_smt, dir_of_templates, filter_file):
 
 def get_bv_content(d, f):
     bv_path = d + "/" + f
-    tmp_path = "tmp/" + f
-    result_string = write_and_return(bv_path, tmp_path)
+    result_string = write_and_return(bv_path):
     return result_string
 
-def write_and_return(bv_path, tmp_path):
+def write_and_return(bv_path):
     with open(bv_path, 'r') as myfile:
         content = "\n".join([l.strip() for l in myfile.readlines()])
-    with open(tmp_path, 'w') as myfile:
-        myfile.write(content)
     return content
 
 def generate_unbounded_benchmark(template_content, int_content, t_f, f, dir_of_int_smt, template_name):

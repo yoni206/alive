@@ -1,5 +1,5 @@
-encoding,boundness,proved
-full,unbounded,347
-partial,unbounded,350
-qf,unbounded,349
-rec,unbounded,344
+,encoding,boundness,proved
+0,full,unbounded,347
+1,partial,unbounded,350
+2,qf,unbounded,349
+3,rec,unbounded,344

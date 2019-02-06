@@ -68,29 +68,29 @@ def main(results_dir, tex_csv_dir, opt_dir):
     config_cond_grouped = df.groupby(["encoding", "config", "opt_name", "reason", "boundness"], as_index = False)
     config_cond_agg = config_cond_grouped.agg({'proved' : agg_yes})
 
-    config_ic_grouped = config_cond_agg.groupby(["encoding", "config", "opt_name", "boundness", "reason"])
+    config_ic_grouped = config_cond_agg.groupby(["encoding", "config", "opt_name", "boundness", "reason"], as_index = False)
     config_ic_agg = config_ic_grouped.agg({'proved': agg_yes})
 
-    config_grouped = config_ic_agg.groupby(["encoding", "config", "boundness"])
+    config_grouped = config_ic_agg.groupby(["encoding", "config", "boundness"], as_index = False)
     config_agg = config_grouped.agg({'proved': agg_count_yes})
 
-    enc_alone_grouped = config_ic_agg.groupby(["encoding", "opt_name", "reason", "boundness"])
+    enc_alone_grouped = config_ic_agg.groupby(["encoding", "opt_name", "reason", "boundness"], as_index = False)
     enc_alone_agg = enc_alone_grouped.agg({'proved':agg_yes})
 
-    enc_sum_grouped = enc_alone_agg.groupby(["encoding", "boundness"])
+    enc_sum_grouped = enc_alone_agg.groupby(["encoding", "boundness"], as_index = False)
     enc_sum_agg = enc_sum_grouped.agg({'proved':agg_count_yes})
 
-    conf_alone_grouped = config_ic_agg.groupby(["config", "opt_name", "reason", "boundness"])
+    conf_alone_grouped = config_ic_agg.groupby(["config", "opt_name", "reason", "boundness"], as_index = False)
     conf_alone_agg = conf_alone_grouped.agg({'proved':agg_yes})
 
-    conf_sum_grouped = conf_alone_agg.groupby(["config", "boundness"])
+    conf_sum_grouped = conf_alone_agg.groupby(["config", "boundness"], as_index = False)
     conf_sum_agg = conf_sum_grouped.agg({'proved':agg_count_yes})
 
 
     only_partial = df.loc[df["encoding"] == "partial"].copy()
     
-    #andy_encodings()
-    #andy_configs(only_partial)
+    andy_encodings(enc_alone_agg)
+    andy_configs(only_partial)
 
 
     df.to_csv("tmp/tmp0.csv")
@@ -325,14 +325,16 @@ def keep_encodings(df, encodings_to_keep):
 
 
 def andy_encodings(df):
+    df.reindex()
+    df.to_csv("~/tmp.csv")
+    df = df.loc[df["reason"] == "values"].copy() #only values matter
     redundent_encodings = set([])
     encodings = set(df['encoding'].tolist())
     d = {}
     for encoding in encodings:
         df_e = df.loc[df.encoding == encoding].copy()
         df_e_yes = df_e.loc[df_e.proved == "yes"].copy()
-        df_e_yes["full_name"] = df_e_yes.apply(lambda row: row['ic_name'] + "_" + row['direction'], axis=1)
-        l = df_e_yes["full_name"].tolist()
+        l = df_e_yes["opt_name"].tolist()
         s = set(l)
         d[encoding] = s
 
@@ -343,13 +345,14 @@ def andy_encodings(df):
             else:
                 if d[e1].issubset(d[e2]):
                     redundent_encodings.add(e1)
+    print("redundent encodings", redundent_encodings)
 
 def andy_configs(df):
     encodings = set(df["encoding"].tolist())
     assert len(encodings) == 1 and "partial" in encodings
     df = df.drop(columns = ["encoding"])
-    df.to_csv("~/tmp1.csv")
-    cond_grouped = df.groupby(["opt_name", "boundness", "config", "boundness" ], as_index=False)
+    df = df.loc[df["reason"] == "values"].copy()
+    cond_grouped = df.groupby(["opt_name", "boundness", "config" ], as_index=False)
     cond_agg = cond_grouped.agg({'proved' : agg_yes})
 
     redundent_configs = set([])
@@ -358,8 +361,7 @@ def andy_configs(df):
     for config in configs:
         df_e = df.loc[df.config == config].copy()
         df_e_yes = df_e.loc[df_e.proved == "yes"].copy()
-        df_e_yes["full_name"] = df_e_yes.apply(lambda row: row['ic_name'] + "_" + row['direction'], axis=1)
-        l = df_e_yes["full_name"].tolist()
+        l = df_e_yes["opt_name"].tolist()
         s = set(l)
         d[config] = s
 
@@ -372,6 +374,7 @@ def andy_configs(df):
                     print("panda same:", e1, e2)
                 if d[e1].issubset(d[e2]):
                     redundent_configs.add(e1)
+    print("redundent configs: ", redundent_configs)
 
 def validate_no_sat_except_qf(df):
     no_qf = df.loc[df.encoding != "qf"].copy()
