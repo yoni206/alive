@@ -1,6 +1,0 @@
-c host: barrett21.stanford.edu
-c start: Tue Feb  5 13:56:15 PST 2019
-c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/bounded/rec/rec_InstCombineShift497a_values_0.smt2
-c solver: ./z3
-c solver options: 
-c done

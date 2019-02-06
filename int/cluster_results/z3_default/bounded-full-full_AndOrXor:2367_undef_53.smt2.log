@@ -1,7 +1,0 @@
-c host: barrett38.stanford.edu
-c start: Tue Feb  5 13:55:28 PST 2019
-c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/bounded/full/full_AndOrXor:2367_undef_53.smt2
-c solver: ./z3
-c solver options: 
-unsat
-c done
