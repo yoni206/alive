@@ -425,7 +425,6 @@ class LLVMBoolPred(BoolPred):
       return args[0].dot('isSignMask', [])
 
     if self.op == LLVMBoolPred.OneUse:
-      print "panda", args[0].arr('hasOneUse', [])
       return args[0].arr('hasOneUse', [])
 
     if self.op in {LLVMBoolPred.NSWAdd, LLVMBoolPred.NSWSub,

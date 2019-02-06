@@ -84,9 +84,7 @@ class State:
   def add(self, v, smt, defined, poison, qvars):
     if v.getUniqueName() == '':
       return
-    print "panda 5.1", self.vars, defined
     self.vars[v.getUniqueName()] = (smt, self.defined + defined, poison, qvars)
-    print "panda 5.2", self.vars, defined
     if isinstance(v, TerminatorInst):
       for (bb,cond) in v.getSuccessors(self):
         bb = bb[1:]
@@ -1169,9 +1167,6 @@ def toSMT(prog, idents, isSource):
       defined = []
       poison = []
       qvars = []
-      print "panda 4.0", v.__class__.__name__, v
       smt = v.toSMT(defined, poison, state, qvars)
-      print "panda 4.1", isSource, defined
       state.add(v, smt, defined, poison, qvars)
-      print "panda 4.2", isSource, defined
   return state
