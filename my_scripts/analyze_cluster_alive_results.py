@@ -1,4 +1,5 @@
 import pandas as ps
+    
 import sys
 import os
 
@@ -107,7 +108,7 @@ def main(results_dir, tex_csv_dir, opt_dir):
     reasons_agg.to_csv("tmp/tmp12.csv")
     reasons_pivot.to_csv("tmp/tmp13.csv")
 
-    tex_stuff(values_agg, cond_agg, config_cond_agg, tex_csv_dir)
+    tex_stuff(values_agg, cond_agg, config_cond_agg, conf_alone_agg, tex_csv_dir)
 
 def get_opt_family(s):
     s = s.lower()
@@ -180,19 +181,49 @@ def validate_reasons(reasons_pivot):
     print("panda poison", poison)
     assert(len(both) == 1 and ("yes" in both))
 
-def tex_stuff(values_agg, cond_agg, config_cond_agg, tex_csv_dir):
+def tex_stuff(values_agg, cond_agg, config_cond_agg, conf_alone_agg, tex_csv_dir):
     gen_alive_status_tables(values_agg, tex_csv_dir)
     values_cond_agg = cond_agg.loc[cond_agg["reason"] == "values"].copy()
     gen_alive_encoding_cmp(values_cond_agg, tex_csv_dir)
     values_config_cond_agg = config_cond_agg.loc[config_cond_agg["reason"] == "values"].copy()
-    gen_alive_enc_conf_cmp(values_config_cond_agg, tex_csv_dir)
+    gen_alive_enc_conf_cmp(values_config_cond_agg, conf_alone_agg, cond_agg,  tex_csv_dir)
     #gen_encoding_cond_tables(cond_agg, tex_csv_dir)
     #gen_qf_rtl_yes_ics(cond_agg, tex_csv_dir)
 
-def gen_alive_enc_conf_cmp(values_config_cond_agg, tex_csv_dir):
+def gen_alive_enc_conf_cmp(values_config_cond_agg, conf_alone_agg, cond_agg, tex_csv_dir):
+    values_conf_alone = conf_alone_agg.loc[conf_alone_agg["reason"] == "values"].copy()
+    values_conf_alone = values_conf_alone.loc[values_conf_alone["proved"] == "yes"].copy()
+    d = {}
+    configs = set(values_conf_alone["config"].tolist())
+    for config in configs:
+        d[config] = len(values_conf_alone.loc[values_conf_alone["config"] == config].index)
+    s = ps.Series(d)
+    s.name = "total"
+
+    values_cond_agg = cond_agg.loc[cond_agg["reason"] == "values"].copy()
+    values_cond_agg = values_cond_agg.loc[cond_agg["proved"] == "yes"].copy()
+    agg = values_cond_agg.copy()
+    agg.to_csv("~/tmp.csv")
+    e = {}
+    encs = set(agg["encoding"].tolist())
+    for enc in encs:
+        e[enc] = len(agg.loc[agg["encoding"] == enc].index)
+    agg.to_csv("~/tmp1.csv")
+    grouped = agg.groupby(["opt_name", "reason"], as_index=False)
+    grouped_agg = grouped.agg({'proved' : agg_yes})
+    grouped_agg.to_csv("~/tmp.csv")
+
+    e["total"] = len(grouped_agg.loc[grouped_agg["proved"] == "yes"].copy().index)
+
+    t = ps.Series(e)
+    t.name = "total_enc"
+
     reasons = set(values_config_cond_agg["reason"].tolist())
     assert(len(reasons) == 1 and "values" in reasons)
     pivot = values_config_cond_agg.pivot_table(index=["encoding"], columns = "config", values = "proved", aggfunc = countyes)
+    pivot = pivot.append(s)
+    print("panda", t)
+    pivot["total_enc"] = t
     pivot.to_csv(tex_csv_dir + "/alive_enc_con.csv")
 
 
