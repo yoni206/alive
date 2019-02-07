@@ -43,7 +43,6 @@ def main(results_dir, tex_csv_dir, opt_dir):
     validate_no_sat_except_qf(df)
     df["proved"] = df.result.apply(lambda x: "yes" if (x == "unsat") else "no")
 
-    df.to_csv("~/tmp.csv")
     cond_grouped = df.groupby(["opt_name", "reason", "encoding"], as_index=False)
     cond_agg = cond_grouped.agg({'proved' : agg_yes})
     
@@ -108,7 +107,7 @@ def main(results_dir, tex_csv_dir, opt_dir):
     reasons_agg.to_csv("tmp/tmp12.csv")
     reasons_pivot.to_csv("tmp/tmp13.csv")
 
-    tex_stuff(direction_agg, cond_agg, tex_csv_dir)
+    tex_stuff(values_agg, cond_agg, config_cond_agg, tex_csv_dir)
 
 def get_opt_family(s):
     s = s.lower()
@@ -181,12 +180,21 @@ def validate_reasons(reasons_pivot):
     print("panda poison", poison)
     assert(len(both) == 1 and ("yes" in both))
 
-def tex_stuff(values_agg, cond_agg, tex_csv_dir):
+def tex_stuff(values_agg, cond_agg, config_cond_agg, tex_csv_dir):
     gen_alive_status_tables(values_agg, tex_csv_dir)
     values_cond_agg = cond_agg.loc[cond_agg["reason"] == "values"].copy()
     gen_alive_encoding_cmp(values_cond_agg, tex_csv_dir)
+    values_config_cond_agg = config_cond_agg.loc[config_cond_agg["reason"] == "values"].copy()
+    gen_alive_enc_conf_cmp(values_config_cond_agg, tex_csv_dir)
     #gen_encoding_cond_tables(cond_agg, tex_csv_dir)
     #gen_qf_rtl_yes_ics(cond_agg, tex_csv_dir)
+
+def gen_alive_enc_conf_cmp(values_config_cond_agg, tex_csv_dir):
+    reasons = set(values_config_cond_agg["reason"].tolist())
+    assert(len(reasons) == 1 and "values" in reasons)
+    pivot = values_config_cond_agg.pivot_table(index=["encoding"], columns = "config", values = "proved", aggfunc = countyes)
+    pivot.to_csv(tex_csv_dir + "/alive_enc_con.csv")
+
 
 def gen_alive_encoding_cmp(enc_agg, tex_csv_dir):
     enc_agg["family"] = enc_agg["opt_name"].apply(get_opt_family)
@@ -290,7 +298,7 @@ def count_translated(direction_agg):
     return lambda family : len(direction_agg.loc[direction_agg["family"] == family].index)
 
 def count_proved(direction_agg):
-    return lambda family : len(direction_agg.loc[(direction_agg["family"] == family) & (direction_agg["proved"] == "yes")].index)
+    return lambda family : len(direction_agg.loc[(direction_agg["family"] == family) & (direction_agg["values"] == "yes")].index)
 
 def what_proved(row):
     if row["ltr"] == "yes" and row["rtl"] == "yes":
@@ -364,7 +372,6 @@ def keep_encodings(df, encodings_to_keep):
 
 def andy_encodings(df):
     df.reindex()
-    df.to_csv("~/tmp.csv")
     df = df.loc[df["reason"] == "values"].copy() #only values matter
     redundent_encodings = set([])
     encodings = set(df['encoding'].tolist())

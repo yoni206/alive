@@ -1,0 +1,4 @@
+encoding,cvc4_default,cvc4_tplanes_saturate_no_e_matching,z3_default
+full,60,65,66
+partial,81,68,67
+qf,80,77,67
