@@ -30,11 +30,11 @@ def main(results_dir, tex_csv_dir, opt_dir):
     df.columns = [ 'path', 'err_log']
     df["config"] = df.path.apply(lambda x : x.split("/")[0])
     df["filename"] = df.path.apply(lambda x : x.split("/")[1])
-    df["boundness"] = df.filename.apply(lambda x : x.split("-")[0])
-    df["encoding"] = df.filename.apply(lambda x : x.split("-")[1])
-    df["filename_clean"] = df.filename.apply(lambda x : "-".join(x.split("-")[2:]))
+    df["encoding"] = df.filename.apply(lambda x : x.split("-")[0])
+    df["filename_clean"] = df.filename.apply(lambda x : "-".join(x.split("-")[1:]))
     df["filename_cleaner"] = df.filename_clean.apply(lambda x : "_".join(x.split("_")[1:]))
     df["opt_name"] = df.filename_cleaner.apply(lambda x: x.split("_")[0])
+    df["family"] = df.opt_name.apply(get_opt_family)
     df["reason"] = df.filename_cleaner.apply(lambda x : x.split("_")[1])
     df["status"] = df.err_log.apply(lambda x: x.split(",")[0])
     df["result"] = df.err_log.apply(lambda x: x.split(",")[1])
@@ -44,8 +44,7 @@ def main(results_dir, tex_csv_dir, opt_dir):
     df["proved"] = df.result.apply(lambda x: "yes" if (x == "unsat") else "no")
 
     df.to_csv("~/tmp.csv")
-    df = df.loc[df["boundness"] == "unbounded"].copy()   
-    cond_grouped = df.groupby(["opt_name", "reason", "encoding", "boundness"], as_index=False)
+    cond_grouped = df.groupby(["opt_name", "reason", "encoding"], as_index=False)
     cond_agg = cond_grouped.agg({'proved' : agg_yes})
     
     reasons_grouped = cond_agg.groupby(["opt_name", "reason"], as_index = False)
@@ -54,36 +53,37 @@ def main(results_dir, tex_csv_dir, opt_dir):
     reasons_pivot = reasons_agg.pivot_table(index = ["opt_name"], columns = "reason", values = "proved", aggfunc = lambda x: " ".join(x)).reset_index()
     opt_dict = gen_opt_dict(opt_dir)
     reasons_pivot["has_poison"] = reasons_pivot["opt_name"].apply(has_poison(opt_dict))
-    
+    validate_reasons(reasons_pivot)
+    values_agg = reasons_pivot.drop("undef",axis=1).drop("poison",axis=1).drop("has_poison",axis=1).copy()
 
 
-    enc_grouped = cond_agg.groupby(["opt_name", "boundness", "encoding"], as_index = False)
+
+    enc_grouped = cond_agg.groupby(["opt_name", "encoding"], as_index = False)
     enc_agg = enc_grouped.agg({'proved' : agg_three_yes})
     
-    direction_grouped = enc_agg.groupby(["opt_name", "boundness"], as_index = False)
+    direction_grouped = enc_agg.groupby(["opt_name"], as_index = False)
     direction_agg = direction_grouped.agg({'proved' : agg_yes})
 
-    bounded_pivot = direction_agg.pivot_table(index = ["opt_name"], columns = "boundness", values = "proved", aggfunc = lambda x: " ".join(x)).reset_index()
 
-    config_cond_grouped = df.groupby(["encoding", "config", "opt_name", "reason", "boundness"], as_index = False)
+    config_cond_grouped = df.groupby(["encoding", "config", "opt_name", "reason"], as_index = False)
     config_cond_agg = config_cond_grouped.agg({'proved' : agg_yes})
 
-    config_ic_grouped = config_cond_agg.groupby(["encoding", "config", "opt_name", "boundness", "reason"], as_index = False)
+    config_ic_grouped = config_cond_agg.groupby(["encoding", "config", "opt_name", "reason"], as_index = False)
     config_ic_agg = config_ic_grouped.agg({'proved': agg_yes})
 
-    config_grouped = config_ic_agg.groupby(["encoding", "config", "boundness"], as_index = False)
+    config_grouped = config_ic_agg.groupby(["encoding", "config"], as_index = False)
     config_agg = config_grouped.agg({'proved': agg_count_yes})
 
-    enc_alone_grouped = config_ic_agg.groupby(["encoding", "opt_name", "reason", "boundness"], as_index = False)
+    enc_alone_grouped = config_ic_agg.groupby(["encoding", "opt_name", "reason"], as_index = False)
     enc_alone_agg = enc_alone_grouped.agg({'proved':agg_yes})
 
-    enc_sum_grouped = enc_alone_agg.groupby(["encoding", "boundness"], as_index = False)
+    enc_sum_grouped = enc_alone_agg.groupby(["encoding"], as_index = False)
     enc_sum_agg = enc_sum_grouped.agg({'proved':agg_count_yes})
 
-    conf_alone_grouped = config_ic_agg.groupby(["config", "opt_name", "reason", "boundness"], as_index = False)
+    conf_alone_grouped = config_ic_agg.groupby(["config", "opt_name", "reason"], as_index = False)
     conf_alone_agg = conf_alone_grouped.agg({'proved':agg_yes})
 
-    conf_sum_grouped = conf_alone_agg.groupby(["config", "boundness"], as_index = False)
+    conf_sum_grouped = conf_alone_agg.groupby(["config"], as_index = False)
     conf_sum_agg = conf_sum_grouped.agg({'proved':agg_count_yes})
 
 
@@ -97,7 +97,7 @@ def main(results_dir, tex_csv_dir, opt_dir):
     cond_agg.to_csv("tmp/tmp1.csv")
     enc_agg.to_csv("tmp/tmp2.csv")
     direction_agg.to_csv("tmp/tmp3.csv")
-    bounded_pivot.to_csv("tmp/tmp4.csv")
+    values_agg.to_csv("tmp/tmp4.csv")
     config_cond_agg.to_csv("tmp/tmp5.csv")
     config_ic_agg.to_csv("tmp/tmp6.csv")
     config_agg.to_csv("tmp/tmp7.csv")
@@ -108,7 +108,23 @@ def main(results_dir, tex_csv_dir, opt_dir):
     reasons_agg.to_csv("tmp/tmp12.csv")
     reasons_pivot.to_csv("tmp/tmp13.csv")
 
-    #tex_stuff(direction_agg, cond_agg, tex_csv_dir)
+    tex_stuff(direction_agg, cond_agg, tex_csv_dir)
+
+def get_opt_family(s):
+    s = s.lower()
+    if "addsub" in s:
+        return "AddSub"
+    elif "andorxor" in s:
+        return "AndOrXor"
+    elif "muldivrem" in s:
+        return "MulDivRem"
+    elif "select" in s:
+        return "Select"
+    elif "shift" in s:
+        return "Shifts"
+    else:
+        print("panda", s)
+        assert(False)
 
 def gen_opt_dict(opts_dir):
     result = {}
@@ -152,14 +168,31 @@ def has_poison(opt_dict):
     return lambda opt_name : opt_has_poison(opt_dict, opt_name)
 
 def opt_has_poison(opt_dict, opt_name):
-    opt_content = opt_dict[opt_name]
+    opt_content = "\n".join(opt_dict[opt_name])
     return "nsw" in opt_content or "nuw" in opt_content or "exact" in opt_content
 
 
-def tex_stuff(direction_agg, cond_agg, tex_csv_dir):
-    gen_IC_status_tables(direction_agg, tex_csv_dir)
-    gen_encoding_cond_tables(cond_agg, tex_csv_dir)
-    gen_qf_rtl_yes_ics(cond_agg, tex_csv_dir)
+#verify that all reasons are true, except maybe values
+def validate_reasons(reasons_pivot):
+    undef = set(reasons_pivot["undef"].tolist())
+    poison = set(reasons_pivot["poison"].tolist())
+    both = undef.union(poison)
+    print("panda undef", undef)
+    print("panda poison", poison)
+    assert(len(both) == 1 and ("yes" in both))
+
+def tex_stuff(values_agg, cond_agg, tex_csv_dir):
+    gen_alive_status_tables(values_agg, tex_csv_dir)
+    values_cond_agg = cond_agg.loc[cond_agg["reason"] == "values"]
+    gen_alive_encoding_cmp(values_cond_agg, tex_csv_dir)
+    #gen_encoding_cond_tables(cond_agg, tex_csv_dir)
+    #gen_qf_rtl_yes_ics(cond_agg, tex_csv_dir)
+
+def gen_alive_encoding_cmp(enc_agg, tex_csv_dir):
+    enc_agg["family"] = enc_agg["opt_name"].apply(get_opt_family)
+    pivot = enc_agg.pivot_table(index = ["encoding"], columns = "family", values = "proved", aggfunc = countyes)
+    pivot["total"] = pivot.sum(axis=1)
+    pivot.to_csv(tex_csv_dir + "/alive_enc_cmp.csv")
 
 def gen_qf_rtl_yes_ics(cond_agg, tex_csv_dir, translations_file):
     ic_names = cond_agg["ic_name"].tolist()
@@ -229,30 +262,35 @@ def countyes(ser):
     l = ser.tolist()
     return len([a for a in l if a == "yes"])
 
-def gen_IC_status_tables(direction_agg, tex_csv_dir):
-    pivot = direction_agg.pivot_table(index = "ic_name", columns = "direction", values = "proved", aggfunc = lambda x: ' '.join(x))
-#    pivot.columns = pivot.columns.droplevel()
-    pivot = pivot.reset_index()
-    pivot.columns=pivot.columns.tolist()
-    pivot["relation"] = pivot["ic_name"].apply(lambda x: x.split('_')[0])
-    pivot["operation"] = pivot["ic_name"].apply(lambda x: x.split('_')[1])
-    pivot["family"] = pivot["relation"].apply(get_family)
-    pivot["direction_proved"] = pivot.apply(what_proved, axis=1)
+def gen_alive_status_tables(direction_agg, tex_csv_dir):
+    direction_agg["family"] = direction_agg["opt_name"].apply(get_opt_family)
+    families = set(direction_agg["family"].tolist())
+    assert("AddSub" in families)
+    assert("MulDivRem" in families)
+    assert("AndOrXor" in families)
+    assert("Select" in families)
+    assert("Shifts" in families)
+    alive_original = {}
+    alive_original["AddSub"] = [49]
+    alive_original["MulDivRem"] = [44]
+    alive_original["AndOrXor"] = [131]
+    alive_original["Select"] = [52]
+    alive_original["Shifts"] = [41]
     
-    summary = pivot.pivot_table(index = "operation", columns = "relation", values = "direction_proved", aggfunc = lambda x: ' '.join(x))
-    columnsTitles = ['eq', 'ne', 'bvult', 'bvugt', 'bvule', 'bvuge', 'bvslt', 'bvsgt', 'bvsle', 'bvsge']
+    new_df = ps.DataFrame.from_dict(alive_original, orient='index', columns = ['alive'])
+    new_df = new_df.reset_index()
+    new_df = new_df.rename(index = str, columns = {"index":"family"})
+    new_df["translated"] = new_df.family.apply(count_translated(direction_agg))
+    new_df["proved"] = new_df["family"].apply(count_proved(direction_agg))
+    new_df.to_csv(tex_csv_dir + "/alive_summary.csv", index=False)
 
-    summary = summary.reindex(columns=columnsTitles)
-    summary.to_csv(tex_csv_dir + "/" + "summary" + ".csv")
-    
-#    tables = {}
-#    families = set(pivot["family"].tolist())
-#    for family in families:
-#        filtered = pivot.loc[pivot["family"] == family]
-#        tables[family] = filtered.pivot_table(index = "operation", columns = "relation", values = "direction_proved", aggfunc = lambda x: ' '.join(x))
-#        tables[family] = tables[family].reset_index()
-#        tables[family].columns=tables[family].columns.tolist()
-#        tables[family].to_csv(tex_csv_dir + "/" + family + ".csv")
+
+
+def count_translated(direction_agg):
+    return lambda family : len(direction_agg.loc[direction_agg["family"] == family].index)
+
+def count_proved(direction_agg):
+    return lambda family : len(direction_agg.loc[(direction_agg["family"] == family) & (direction_agg["proved"] == "yes")].index)
 
 def what_proved(row):
     if row["ltr"] == "yes" and row["rtl"] == "yes":
@@ -352,7 +390,7 @@ def andy_configs(df):
     assert len(encodings) == 1 and "partial" in encodings
     df = df.drop(columns = ["encoding"])
     df = df.loc[df["reason"] == "values"].copy()
-    cond_grouped = df.groupby(["opt_name", "boundness", "config" ], as_index=False)
+    cond_grouped = df.groupby(["opt_name", "config" ], as_index=False)
     cond_agg = cond_grouped.agg({'proved' : agg_yes})
 
     redundent_configs = set([])
@@ -465,6 +503,7 @@ def get_result(log_content):
     bad_prefix = "c"
     good_lines = [l for l in lines if not l.startswith(bad_prefix)]
     if len(good_lines) != 1:
+        print(log_content)
         print(good_lines)
         assert(False)
     good_line = good_lines[0]

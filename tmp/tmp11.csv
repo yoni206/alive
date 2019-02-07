@@ -1,9 +1,4 @@
-,config,boundness,proved
-0,cvc4_cbqi,unbounded,349
-1,cvc4_default,unbounded,350
-2,cvc4_fmf,unbounded,349
-3,cvc4_tplanes,unbounded,350
-4,cvc4_tplanes_cbqi,unbounded,349
-5,cvc4_tplanes_fmf,unbounded,349
-6,cvc4_tplanes_saturate_no_e_matching,unbounded,346
-7,z3_default,unbounded,342
+,config,proved
+0,cvc4_default,418
+1,cvc4_tplanes_saturate_no_e_matching,414
+2,z3_default,407

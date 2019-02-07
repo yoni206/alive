@@ -1,6 +1,0 @@
-c host: barrett27.stanford.edu
-c start: Wed Feb  6 07:03:27 PST 2019
-c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/unbounded/rec/rec_Select:427_undef_0.smt2
-c solver: ./z3
-c solver options: 
-c done
