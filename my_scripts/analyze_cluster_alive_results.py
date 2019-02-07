@@ -183,7 +183,7 @@ def validate_reasons(reasons_pivot):
 
 def tex_stuff(values_agg, cond_agg, tex_csv_dir):
     gen_alive_status_tables(values_agg, tex_csv_dir)
-    values_cond_agg = cond_agg.loc[cond_agg["reason"] == "values"]
+    values_cond_agg = cond_agg.loc[cond_agg["reason"] == "values"].copy()
     gen_alive_encoding_cmp(values_cond_agg, tex_csv_dir)
     #gen_encoding_cond_tables(cond_agg, tex_csv_dir)
     #gen_qf_rtl_yes_ics(cond_agg, tex_csv_dir)
