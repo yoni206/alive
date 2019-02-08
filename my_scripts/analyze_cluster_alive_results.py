@@ -177,12 +177,11 @@ def validate_reasons(reasons_pivot):
     undef = set(reasons_pivot["undef"].tolist())
     poison = set(reasons_pivot["poison"].tolist())
     both = undef.union(poison)
-    print("panda undef", undef)
-    print("panda poison", poison)
     assert(len(both) == 1 and ("yes" in both))
 
 def tex_stuff(values_agg, cond_agg, config_cond_agg, conf_alone_agg, tex_csv_dir):
-    gen_alive_status_tables(values_agg, tex_csv_dir)
+    alive, translated, proved = gen_alive_status_tables(values_agg, tex_csv_dir)
+    gen_numbers(alive, translated, proved, tex_csv_dir)
     values_cond_agg = cond_agg.loc[cond_agg["reason"] == "values"].copy()
     gen_alive_encoding_cmp(values_cond_agg, tex_csv_dir)
     values_config_cond_agg = config_cond_agg.loc[config_cond_agg["reason"] == "values"].copy()
@@ -216,14 +215,13 @@ def gen_alive_enc_conf_cmp(values_config_cond_agg, conf_alone_agg, cond_agg, tex
     e["total"] = len(grouped_agg.loc[grouped_agg["proved"] == "yes"].copy().index)
 
     t = ps.Series(e)
-    t.name = "total_enc"
+    t.name = "total"
 
     reasons = set(values_config_cond_agg["reason"].tolist())
     assert(len(reasons) == 1 and "values" in reasons)
     pivot = values_config_cond_agg.pivot_table(index=["encoding"], columns = "config", values = "proved", aggfunc = countyes)
     pivot = pivot.append(s)
-    print("panda", t)
-    pivot["total_enc"] = t
+    pivot["total"] = t
     pivot.to_csv(tex_csv_dir + "/alive_enc_con.csv")
 
 
@@ -301,6 +299,16 @@ def countyes(ser):
     l = ser.tolist()
     return len([a for a in l if a == "yes"])
 
+def gen_numbers(alive, translated, proved, tex_csv_dir):
+  with open(tex_csv_dir + "/alive_original.tex", "w") as myfile:
+      myfile.write(str(alive))
+  with open(tex_csv_dir + "/alive_translated.tex", "w") as myfile:
+      myfile.write(str(translated))
+  with open(tex_csv_dir + "/alive_proved.tex", "w") as myfile:
+      myfile.write(str(proved))
+
+
+
 def gen_alive_status_tables(direction_agg, tex_csv_dir):
     direction_agg["family"] = direction_agg["opt_name"].apply(get_opt_family)
     families = set(direction_agg["family"].tolist())
@@ -315,13 +323,18 @@ def gen_alive_status_tables(direction_agg, tex_csv_dir):
     alive_original["AndOrXor"] = [131]
     alive_original["Select"] = [52]
     alive_original["Shifts"] = [41]
+    alive_original["LoadStoreAlloca"] = [17]
     
     new_df = ps.DataFrame.from_dict(alive_original, orient='index', columns = ['alive'])
     new_df = new_df.reset_index()
     new_df = new_df.rename(index = str, columns = {"index":"family"})
     new_df["translated"] = new_df.family.apply(count_translated(direction_agg))
     new_df["proved"] = new_df["family"].apply(count_proved(direction_agg))
-    new_df.to_csv(tex_csv_dir + "/alive_summary.csv", index=False)
+    new_df = new_df.set_index('family')
+    new_df = new_df.append(new_df.sum().rename('Total')).copy()
+    new_df.to_csv(tex_csv_dir + "/alive_summary.csv", index=True)
+    alive, translated, proved = new_df.loc["Total"].tolist()
+    return alive, translated, proved
 
 
 

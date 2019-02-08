@@ -4,3 +4,5 @@ MulDivRem,44,5,2
 AndOrXor,131,112,57
 Select,52,26,16
 Shifts,41,9,0
+LoadStoreAlloca,17,0,0
+Total,334,168,82
