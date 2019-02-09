@@ -151,6 +151,8 @@ def get_int_content(template_content, bv_content, bounded):
     result += "\n"
     result += "(assert (or_is_ok k))"
     result += "\n"
+    result += "(assert (xor_is_ok k))"
+    result += "\n"
 
     if bounded:
         result += "(assert (<= k 64))"
