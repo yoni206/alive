@@ -8,3 +8,6 @@
 6,qf,cvc4_default,416
 7,qf,cvc4_tplanes_saturate_no_e_matching,413
 8,qf,z3_default,403
+9,rec,cvc4_default,378
+10,rec,cvc4_tplanes_saturate_no_e_matching,405
+11,rec,z3_default,391
