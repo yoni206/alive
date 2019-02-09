@@ -55,7 +55,7 @@ def main(dir_of_bv_smt, dir_of_int_smt, dir_of_templates, filter_file):
 
 def get_bv_content(d, f):
     bv_path = d + "/" + f
-    result_string = write_and_return(bv_path):
+    result_string = write_and_return(bv_path)
     return result_string
 
 def write_and_return(bv_path):
