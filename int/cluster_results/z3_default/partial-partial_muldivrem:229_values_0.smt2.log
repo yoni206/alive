@@ -1,5 +1,5 @@
-c host: barrett52.stanford.edu
-c start: Wed Feb  6 07:03:00 PST 2019
+c host: barrett26.stanford.edu
+c start: Sat Feb  9 02:00:02 PST 2019
 c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/unbounded/partial/partial_muldivrem:229_values_0.smt2
 c solver: ./z3
 c solver options: 

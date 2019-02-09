@@ -3,25 +3,31 @@
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./z3
-[runlim] argv[1]:		/tmp/telNw0Jy.smt2
-[runlim] start:			Wed Feb  6 07:03:16 2019
-[runlim] main pid:		7980
-[runlim] sample:		9.6 time, 10.8 real, 19.4 MB
-[runlim] sample:		19.4 time, 20.8 real, 26.3 MB
-[runlim] sample:		29.4 time, 30.8 real, 27.9 MB
-[runlim] sample:		39.4 time, 40.8 real, 35.2 MB
-[runlim] sample:		49.4 time, 50.8 real, 35.5 MB
-[runlim] sample:		59.4 time, 60.8 real, 35.5 MB
-[runlim] sample:		69.3 time, 70.8 real, 35.5 MB
-[runlim] sample:		79.3 time, 80.8 real, 35.5 MB
-[runlim] sample:		89.3 time, 90.8 real, 35.5 MB
-[runlim] sample:		99.3 time, 100.8 real, 35.4 MB
-[runlim] sample:		109.3 time, 110.8 real, 35.4 MB
-[runlim] end:			Wed Feb  6 07:05:15 2019
+[runlim] argv[1]:		/tmp/RKzmzlsE.smt2
+[runlim] start:			Sat Feb  9 02:03:59 2019
+[runlim] main pid:		14025
+[runlim] sample:		9.7 time, 10.1 real, 19.4 MB
+[runlim] sample:		19.7 time, 20.1 real, 26.9 MB
+[runlim] sample:		29.6 time, 30.1 real, 27.8 MB
+[runlim] sample:		37.3 time, 40.1 real, 33.7 MB
+[runlim] sample:		45.0 time, 50.1 real, 32.1 MB
+[runlim] sample:		54.5 time, 60.1 real, 35.5 MB
+[runlim] sample:		64.5 time, 70.1 real, 35.5 MB
+[runlim] sample:		74.5 time, 80.1 real, 35.5 MB
+[runlim] sample:		84.5 time, 90.1 real, 35.5 MB
+[runlim] sample:		94.5 time, 100.1 real, 35.5 MB
+[runlim] sample:		104.5 time, 110.1 real, 35.5 MB
+[runlim] sample:		114.5 time, 120.1 real, 35.5 MB
+[runlim] sample:		124.5 time, 130.1 real, 35.5 MB
+[runlim] sample:		134.5 time, 140.1 real, 35.4 MB
+[runlim] sample:		144.5 time, 150.1 real, 35.4 MB
+[runlim] sample:		153.4 time, 160.1 real, 35.4 MB
+[runlim] sample:		162.2 time, 170.1 real, 35.4 MB
+[runlim] end:			Sat Feb  9 02:06:53 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
-[runlim] real:			119.48 seconds
-[runlim] time:			118.05 seconds
+[runlim] real:			174.05 seconds
+[runlim] time:			166.06 seconds
 [runlim] space:			35.5 MB
-[runlim] samples:		1187
+[runlim] samples:		1739

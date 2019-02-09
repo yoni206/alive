@@ -3,27 +3,28 @@
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./z3
-[runlim] argv[1]:		/tmp/vaRDm9DW.smt2
-[runlim] start:			Wed Feb  6 06:53:09 2019
-[runlim] main pid:		18882
-[runlim] sample:		8.0 time, 10.5 real, 16.0 MB
-[runlim] sample:		17.2 time, 20.5 real, 17.6 MB
-[runlim] sample:		27.2 time, 30.5 real, 17.7 MB
-[runlim] sample:		37.2 time, 40.5 real, 18.1 MB
-[runlim] sample:		47.2 time, 50.5 real, 18.1 MB
-[runlim] sample:		56.6 time, 60.5 real, 18.1 MB
-[runlim] sample:		66.6 time, 70.5 real, 18.5 MB
-[runlim] sample:		76.6 time, 80.5 real, 18.7 MB
-[runlim] sample:		86.6 time, 90.5 real, 18.7 MB
-[runlim] sample:		96.6 time, 100.5 real, 18.7 MB
-[runlim] sample:		106.6 time, 110.5 real, 18.7 MB
-[runlim] sample:		116.6 time, 120.5 real, 18.7 MB
-[runlim] sample:		126.6 time, 130.5 real, 18.7 MB
-[runlim] end:			Wed Feb  6 06:55:29 2019
+[runlim] argv[1]:		/tmp/RC3ohfKg.smt2
+[runlim] start:			Sat Feb  9 01:55:54 2019
+[runlim] main pid:		24150
+[runlim] sample:		8.7 time, 10.0 real, 16.1 MB
+[runlim] sample:		18.4 time, 20.0 real, 17.4 MB
+[runlim] sample:		28.2 time, 30.0 real, 17.6 MB
+[runlim] sample:		38.0 time, 40.0 real, 18.0 MB
+[runlim] sample:		47.7 time, 50.0 real, 18.0 MB
+[runlim] sample:		57.4 time, 60.0 real, 18.0 MB
+[runlim] sample:		67.3 time, 70.0 real, 18.0 MB
+[runlim] sample:		77.3 time, 80.0 real, 18.5 MB
+[runlim] sample:		87.3 time, 90.0 real, 18.6 MB
+[runlim] sample:		97.3 time, 100.0 real, 18.6 MB
+[runlim] sample:		107.3 time, 110.0 real, 18.6 MB
+[runlim] sample:		117.0 time, 120.0 real, 18.6 MB
+[runlim] sample:		126.7 time, 130.0 real, 18.6 MB
+[runlim] sample:		136.4 time, 140.0 real, 18.6 MB
+[runlim] end:			Sat Feb  9 01:58:18 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
-[runlim] real:			140.10 seconds
-[runlim] time:			136.16 seconds
-[runlim] space:			18.7 MB
-[runlim] samples:		1396
+[runlim] real:			144.68 seconds
+[runlim] time:			140.88 seconds
+[runlim] space:			18.6 MB
+[runlim] samples:		1446

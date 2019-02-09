@@ -6,22 +6,23 @@
 [runlim] argv[1]:		--nl-ext-tplanes
 [runlim] argv[2]:		--full-saturate-quant
 [runlim] argv[3]:		--no-e-matching
-[runlim] argv[4]:		/tmp/6S1Qq0I5.smt2
-[runlim] start:			Wed Feb  6 06:32:28 2019
-[runlim] main pid:		32285
-[runlim] sample:		10.0 time, 10.9 real, 49.9 MB
-[runlim] sample:		20.0 time, 20.9 real, 64.7 MB
-[runlim] sample:		30.0 time, 30.9 real, 71.9 MB
-[runlim] sample:		40.0 time, 40.9 real, 83.6 MB
-[runlim] sample:		50.0 time, 50.9 real, 88.3 MB
-[runlim] sample:		59.9 time, 60.9 real, 91.7 MB
-[runlim] sample:		68.8 time, 70.9 real, 96.8 MB
-[runlim] sample:		78.4 time, 80.9 real, 103.9 MB
-[runlim] end:			Wed Feb  6 06:33:52 2019
+[runlim] argv[4]:		/tmp/Pdm2jHnp.smt2
+[runlim] start:			Sat Feb  9 01:21:39 2019
+[runlim] main pid:		15306
+[runlim] sample:		8.9 time, 10.5 real, 47.0 MB
+[runlim] sample:		18.4 time, 20.5 real, 60.5 MB
+[runlim] sample:		28.4 time, 30.5 real, 69.3 MB
+[runlim] sample:		38.4 time, 40.5 real, 81.7 MB
+[runlim] sample:		47.1 time, 50.5 real, 85.8 MB
+[runlim] sample:		55.1 time, 60.5 real, 88.2 MB
+[runlim] sample:		63.1 time, 70.5 real, 91.8 MB
+[runlim] sample:		71.2 time, 80.5 real, 96.7 MB
+[runlim] sample:		79.2 time, 90.5 real, 102.5 MB
+[runlim] end:			Sat Feb  9 01:23:16 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
-[runlim] real:			84.53 seconds
-[runlim] time:			81.96 seconds
-[runlim] space:			105.0 MB
-[runlim] samples:		836
+[runlim] real:			97.42 seconds
+[runlim] time:			84.71 seconds
+[runlim] space:			105.1 MB
+[runlim] samples:		969

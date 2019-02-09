@@ -1,0 +1,33 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		1800 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--nl-ext-tplanes
+[runlim] argv[2]:		--full-saturate-quant
+[runlim] argv[3]:		--no-e-matching
+[runlim] argv[4]:		/tmp/MtDmA9cv.smt2
+[runlim] start:			Sat Feb  9 01:49:48 2019
+[runlim] main pid:		27020
+/tmp/MtDmA9cv.smt2:4.12: No set-logic command was given before this point.
+/tmp/MtDmA9cv.smt2:4.12: CVC4 will make all theories available.
+/tmp/MtDmA9cv.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
+/tmp/MtDmA9cv.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
+[runlim] sample:		8.5 time, 10.4 real, 43.3 MB
+[runlim] sample:		18.2 time, 20.4 real, 56.4 MB
+[runlim] sample:		28.0 time, 30.4 real, 71.4 MB
+[runlim] sample:		36.4 time, 40.4 real, 72.4 MB
+[runlim] sample:		45.6 time, 50.4 real, 72.7 MB
+[runlim] sample:		54.1 time, 60.4 real, 73.4 MB
+[runlim] sample:		62.1 time, 70.4 real, 76.0 MB
+[runlim] sample:		72.1 time, 80.4 real, 80.6 MB
+[runlim] sample:		82.1 time, 90.4 real, 88.0 MB
+[runlim] sample:		92.1 time, 100.4 real, 88.3 MB
+[runlim] end:			Sat Feb  9 01:51:33 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			105.88 seconds
+[runlim] time:			97.63 seconds
+[runlim] space:			92.2 MB
+[runlim] samples:		1055
