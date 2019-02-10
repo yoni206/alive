@@ -1,5 +1,5 @@
-c host: barrett24.stanford.edu
-c start: Sat Feb  9 14:34:38 PST 2019
+c host: barrett35.stanford.edu
+c start: Sat Feb  9 17:53:01 PST 2019
 c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/unbounded/rec/rec_AndOrXor:2607_undef_2.smt2
 c solver: ./cvc4
 c solver options: --nl-ext-tplanes --full-saturate-quant --no-e-matching

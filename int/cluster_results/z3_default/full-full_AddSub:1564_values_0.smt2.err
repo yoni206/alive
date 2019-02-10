@@ -3,35 +3,33 @@
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./z3
-[runlim] argv[1]:		/tmp/DqmJdAWN.smt2
-[runlim] start:			Sat Feb  9 15:05:26 2019
-[runlim] main pid:		27689
-[runlim] sample:		9.2 time, 10.3 real, 18.1 MB
-[runlim] sample:		19.2 time, 20.3 real, 18.8 MB
-[runlim] sample:		28.4 time, 30.3 real, 18.9 MB
-[runlim] sample:		38.4 time, 40.3 real, 19.7 MB
-[runlim] sample:		48.4 time, 50.3 real, 20.6 MB
-[runlim] sample:		57.1 time, 60.3 real, 20.7 MB
-[runlim] sample:		67.1 time, 70.3 real, 20.7 MB
-[runlim] sample:		77.1 time, 80.3 real, 20.9 MB
-[runlim] sample:		85.1 time, 90.3 real, 21.0 MB
-[runlim] sample:		93.4 time, 100.3 real, 21.0 MB
-[runlim] sample:		101.7 time, 110.3 real, 21.0 MB
-[runlim] sample:		109.5 time, 120.3 real, 21.0 MB
-[runlim] sample:		117.5 time, 130.3 real, 21.0 MB
-[runlim] sample:		126.8 time, 140.3 real, 21.0 MB
-[runlim] sample:		135.8 time, 150.3 real, 21.0 MB
-[runlim] sample:		144.8 time, 160.3 real, 21.0 MB
-[runlim] sample:		152.4 time, 170.3 real, 21.0 MB
-[runlim] sample:		162.4 time, 180.3 real, 21.0 MB
-[runlim] sample:		172.4 time, 190.3 real, 21.0 MB
-[runlim] sample:		182.4 time, 200.3 real, 21.0 MB
-[runlim] sample:		192.4 time, 210.3 real, 21.0 MB
-[runlim] end:			Sat Feb  9 15:08:59 2019
+[runlim] argv[1]:		/tmp/X9lilaro.smt2
+[runlim] start:			Sat Feb  9 17:53:54 2019
+[runlim] main pid:		25695
+[runlim] sample:		8.6 time, 10.1 real, 18.2 MB
+[runlim] sample:		17.2 time, 20.1 real, 18.7 MB
+[runlim] sample:		27.2 time, 30.1 real, 19.0 MB
+[runlim] sample:		37.2 time, 40.1 real, 19.7 MB
+[runlim] sample:		47.2 time, 50.1 real, 20.6 MB
+[runlim] sample:		57.2 time, 60.1 real, 20.6 MB
+[runlim] sample:		67.2 time, 70.1 real, 20.6 MB
+[runlim] sample:		77.2 time, 80.1 real, 21.0 MB
+[runlim] sample:		87.2 time, 90.1 real, 21.1 MB
+[runlim] sample:		97.2 time, 100.1 real, 21.1 MB
+[runlim] sample:		107.1 time, 110.1 real, 21.1 MB
+[runlim] sample:		116.4 time, 120.1 real, 21.1 MB
+[runlim] sample:		126.4 time, 130.1 real, 21.1 MB
+[runlim] sample:		136.4 time, 140.1 real, 21.1 MB
+[runlim] sample:		146.4 time, 150.1 real, 21.1 MB
+[runlim] sample:		155.1 time, 160.1 real, 21.1 MB
+[runlim] sample:		164.7 time, 170.1 real, 21.1 MB
+[runlim] sample:		174.5 time, 180.1 real, 21.1 MB
+[runlim] sample:		184.4 time, 190.1 real, 21.1 MB
+[runlim] end:			Sat Feb  9 17:57:12 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
-[runlim] real:			213.50 seconds
-[runlim] time:			195.63 seconds
-[runlim] space:			21.5 MB
-[runlim] samples:		2132
+[runlim] real:			198.24 seconds
+[runlim] time:			191.39 seconds
+[runlim] space:			21.1 MB
+[runlim] samples:		1981

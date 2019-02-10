@@ -1,5 +1,5 @@
-c host: barrett26.stanford.edu
-c start: Sat Feb  9 15:05:48 PST 2019
+c host: barrett31.stanford.edu
+c start: Sat Feb  9 17:54:22 PST 2019
 c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/unbounded/partial/partial_AndOrXor:732-2_undef_0.smt2
 c solver: ./z3
 c solver options: 

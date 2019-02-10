@@ -6,18 +6,18 @@
 [runlim] argv[1]:		--nl-ext-tplanes
 [runlim] argv[2]:		--full-saturate-quant
 [runlim] argv[3]:		--no-e-matching
-[runlim] argv[4]:		/tmp/V9yO3VKx.smt2
-[runlim] start:			Sat Feb  9 15:04:31 2019
-[runlim] main pid:		24454
-/tmp/V9yO3VKx.smt2:4.12: No set-logic command was given before this point.
-/tmp/V9yO3VKx.smt2:4.12: CVC4 will make all theories available.
-/tmp/V9yO3VKx.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
-/tmp/V9yO3VKx.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
-[runlim] end:			Sat Feb  9 15:04:33 2019
+[runlim] argv[4]:		/tmp/iHMB13qA.smt2
+[runlim] start:			Sat Feb  9 17:53:29 2019
+[runlim] main pid:		6178
+/tmp/iHMB13qA.smt2:4.12: No set-logic command was given before this point.
+/tmp/iHMB13qA.smt2:4.12: CVC4 will make all theories available.
+/tmp/iHMB13qA.smt2:4.12: Consider setting a stricter logic for (likely) better performance.
+/tmp/iHMB13qA.smt2:4.12: To suppress this warning in the future use (set-logic ALL).
+[runlim] end:			Sat Feb  9 17:53:32 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
-[runlim] real:			2.83 seconds
-[runlim] time:			2.32 seconds
-[runlim] space:			32.4 MB
-[runlim] samples:		25
+[runlim] real:			3.60 seconds
+[runlim] time:			2.31 seconds
+[runlim] space:			32.3 MB
+[runlim] samples:		29
