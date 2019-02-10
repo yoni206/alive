@@ -6,15 +6,16 @@
 [runlim] argv[1]:		--nl-ext-tplanes
 [runlim] argv[2]:		--full-saturate-quant
 [runlim] argv[3]:		--no-e-matching
-[runlim] argv[4]:		/tmp/1KSoewNH.smt2
-[runlim] start:			Sat Feb  9 01:23:33 2019
-[runlim] main pid:		30966
-[runlim] sample:		7.3 time, 10.9 real, 47.9 MB
-[runlim] end:			Sat Feb  9 01:23:53 2019
+[runlim] argv[4]:		/tmp/EBts2DA4.smt2
+[runlim] start:			Sat Feb  9 14:34:31 2019
+[runlim] main pid:		28806
+[runlim] sample:		10.0 time, 10.0 real, 54.3 MB
+[runlim] sample:		20.0 time, 20.0 real, 68.8 MB
+[runlim] end:			Sat Feb  9 14:34:52 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
-[runlim] real:			20.29 seconds
-[runlim] time:			14.13 seconds
-[runlim] space:			59.2 MB
-[runlim] samples:		193
+[runlim] real:			21.96 seconds
+[runlim] time:			21.88 seconds
+[runlim] space:			69.8 MB
+[runlim] samples:		219

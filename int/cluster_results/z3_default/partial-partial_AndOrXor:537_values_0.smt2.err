@@ -3,40 +3,14 @@
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./z3
-[runlim] argv[1]:		/tmp/7A5p96RZ.smt2
-[runlim] start:			Sat Feb  9 01:59:11 2019
-[runlim] main pid:		29576
-[runlim] sample:		7.6 time, 10.7 real, 18.2 MB
-[runlim] sample:		15.2 time, 20.7 real, 19.9 MB
-[runlim] sample:		22.8 time, 30.7 real, 21.3 MB
-[runlim] sample:		30.4 time, 40.7 real, 21.6 MB
-[runlim] sample:		38.0 time, 50.7 real, 21.8 MB
-[runlim] sample:		46.8 time, 60.7 real, 21.8 MB
-[runlim] sample:		56.8 time, 70.7 real, 22.6 MB
-[runlim] sample:		66.8 time, 80.7 real, 25.2 MB
-[runlim] sample:		76.8 time, 90.7 real, 25.2 MB
-[runlim] sample:		86.8 time, 100.7 real, 25.2 MB
-[runlim] sample:		96.8 time, 110.7 real, 25.4 MB
-[runlim] sample:		106.8 time, 120.7 real, 25.4 MB
-[runlim] sample:		116.8 time, 130.7 real, 25.9 MB
-[runlim] sample:		126.8 time, 140.7 real, 27.9 MB
-[runlim] sample:		136.8 time, 150.7 real, 27.9 MB
-[runlim] sample:		146.8 time, 160.7 real, 27.9 MB
-[runlim] sample:		156.8 time, 170.7 real, 27.9 MB
-[runlim] sample:		166.8 time, 180.7 real, 27.9 MB
-[runlim] sample:		176.8 time, 190.7 real, 27.9 MB
-[runlim] sample:		186.8 time, 200.7 real, 27.9 MB
-[runlim] sample:		196.8 time, 210.7 real, 27.9 MB
-[runlim] sample:		206.8 time, 220.7 real, 27.9 MB
-[runlim] sample:		216.8 time, 230.7 real, 27.9 MB
-[runlim] sample:		226.8 time, 240.7 real, 27.9 MB
-[runlim] sample:		236.8 time, 250.7 real, 27.9 MB
-[runlim] sample:		246.8 time, 260.7 real, 27.9 MB
-[runlim] end:			Sat Feb  9 02:03:39 2019
+[runlim] argv[1]:		/tmp/BL2dKuVS.smt2
+[runlim] start:			Sat Feb  9 15:05:45 2019
+[runlim] main pid:		30617
+[runlim] end:			Sat Feb  9 15:05:46 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
-[runlim] real:			268.84 seconds
-[runlim] time:			254.55 seconds
-[runlim] space:			28.2 MB
-[runlim] samples:		2681
+[runlim] real:			1.04 seconds
+[runlim] time:			0.07 seconds
+[runlim] space:			16.4 MB
+[runlim] samples:		1

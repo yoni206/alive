@@ -6,10 +6,10 @@
 [runlim] argv[1]:		--nl-ext-tplanes
 [runlim] argv[2]:		--full-saturate-quant
 [runlim] argv[3]:		--no-e-matching
-[runlim] argv[4]:		/tmp/U9S9hEAi.smt2
-[runlim] start:			Sat Feb  9 01:41:30 2019
-[runlim] main pid:		5186
-[runlim] end:			Sat Feb  9 01:41:30 2019
+[runlim] argv[4]:		/tmp/0F8Vv5PG.smt2
+[runlim] start:			Sat Feb  9 14:34:35 2019
+[runlim] main pid:		16573
+[runlim] end:			Sat Feb  9 14:34:35 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
