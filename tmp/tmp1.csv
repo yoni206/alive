@@ -8,7 +8,7 @@
 6,AddSub:1040,undef,qf,yes
 7,AddSub:1040,undef,rec,yes
 8,AddSub:1040,values,full,no
-9,AddSub:1040,values,partial,yes
+9,AddSub:1040,values,partial,no
 10,AddSub:1040,values,qf,no
 11,AddSub:1040,values,rec,no
 12,AddSub:1043,poison,full,yes
@@ -20,7 +20,7 @@
 18,AddSub:1043,undef,qf,yes
 19,AddSub:1043,undef,rec,yes
 20,AddSub:1043,values,full,no
-21,AddSub:1043,values,partial,yes
+21,AddSub:1043,values,partial,no
 22,AddSub:1043,values,qf,no
 23,AddSub:1043,values,rec,no
 24,AddSub:1164,poison,full,yes
@@ -68,7 +68,7 @@
 66,AddSub:1202,undef,qf,yes
 67,AddSub:1202,undef,rec,yes
 68,AddSub:1202,values,full,no
-69,AddSub:1202,values,partial,yes
+69,AddSub:1202,values,partial,no
 70,AddSub:1202,values,qf,no
 71,AddSub:1202,values,rec,no
 72,AddSub:1295,poison,full,yes
@@ -80,7 +80,7 @@
 78,AddSub:1295,undef,qf,yes
 79,AddSub:1295,undef,rec,yes
 80,AddSub:1295,values,full,no
-81,AddSub:1295,values,partial,yes
+81,AddSub:1295,values,partial,no
 82,AddSub:1295,values,qf,no
 83,AddSub:1295,values,rec,no
 84,AddSub:1539-2,poison,full,yes
@@ -104,7 +104,7 @@
 102,AddSub:1560,undef,qf,yes
 103,AddSub:1560,undef,rec,yes
 104,AddSub:1560,values,full,no
-105,AddSub:1560,values,partial,yes
+105,AddSub:1560,values,partial,no
 106,AddSub:1560,values,qf,no
 107,AddSub:1560,values,rec,no
 108,AddSub:1564,poison,full,yes
@@ -116,7 +116,7 @@
 114,AddSub:1564,undef,qf,yes
 115,AddSub:1564,undef,rec,yes
 116,AddSub:1564,values,full,no
-117,AddSub:1564,values,partial,yes
+117,AddSub:1564,values,partial,no
 118,AddSub:1564,values,qf,no
 119,AddSub:1564,values,rec,no
 120,AddSub:1574,poison,full,yes
@@ -140,7 +140,7 @@
 138,AddSub:1599,undef,qf,yes
 139,AddSub:1599,undef,rec,yes
 140,AddSub:1599,values,full,no
-141,AddSub:1599,values,partial,yes
+141,AddSub:1599,values,partial,no
 142,AddSub:1599,values,qf,no
 143,AddSub:1599,values,rec,no
 144,AddSub:1604,poison,full,yes
@@ -152,7 +152,7 @@
 150,AddSub:1604,undef,qf,yes
 151,AddSub:1604,undef,rec,yes
 152,AddSub:1604,values,full,no
-153,AddSub:1604,values,partial,yes
+153,AddSub:1604,values,partial,no
 154,AddSub:1604,values,qf,no
 155,AddSub:1604,values,rec,no
 156,AddSub:1614,poison,full,yes
@@ -188,7 +188,7 @@
 186,AddSub:1624,undef,qf,yes
 187,AddSub:1624,undef,rec,yes
 188,AddSub:1624,values,full,no
-189,AddSub:1624,values,partial,yes
+189,AddSub:1624,values,partial,no
 190,AddSub:1624,values,qf,no
 191,AddSub:1624,values,rec,no
 192,AndOrXor:1006,poison,full,yes
@@ -236,7 +236,7 @@
 234,AndOrXor:1288,undef,qf,yes
 235,AndOrXor:1288,undef,rec,yes
 236,AndOrXor:1288,values,full,no
-237,AndOrXor:1288,values,partial,yes
+237,AndOrXor:1288,values,partial,no
 238,AndOrXor:1288,values,qf,no
 239,AndOrXor:1288,values,rec,no
 240,AndOrXor:135,poison,full,yes
@@ -248,7 +248,7 @@
 246,AndOrXor:135,undef,qf,yes
 247,AndOrXor:135,undef,rec,yes
 248,AndOrXor:135,values,full,no
-249,AndOrXor:135,values,partial,yes
+249,AndOrXor:135,values,partial,no
 250,AndOrXor:135,values,qf,no
 251,AndOrXor:135,values,rec,no
 252,AndOrXor:144,poison,full,yes
@@ -260,7 +260,7 @@
 258,AndOrXor:144,undef,qf,yes
 259,AndOrXor:144,undef,rec,yes
 260,AndOrXor:144,values,full,no
-261,AndOrXor:144,values,partial,yes
+261,AndOrXor:144,values,partial,no
 262,AndOrXor:144,values,qf,no
 263,AndOrXor:144,values,rec,no
 264,AndOrXor:151,poison,full,yes
@@ -272,7 +272,7 @@
 270,AndOrXor:151,undef,qf,yes
 271,AndOrXor:151,undef,rec,yes
 272,AndOrXor:151,values,full,no
-273,AndOrXor:151,values,partial,yes
+273,AndOrXor:151,values,partial,no
 274,AndOrXor:151,values,qf,no
 275,AndOrXor:151,values,rec,no
 276,AndOrXor:1683-1,poison,full,yes
@@ -332,7 +332,7 @@
 330,AndOrXor:1733,undef,qf,yes
 331,AndOrXor:1733,undef,rec,yes
 332,AndOrXor:1733,values,full,no
-333,AndOrXor:1733,values,partial,yes
+333,AndOrXor:1733,values,partial,no
 334,AndOrXor:1733,values,qf,no
 335,AndOrXor:1733,values,rec,no
 336,AndOrXor:1740,poison,full,yes
@@ -356,7 +356,7 @@
 354,AndOrXor:1795,undef,qf,yes
 355,AndOrXor:1795,undef,rec,yes
 356,AndOrXor:1795,values,full,no
-357,AndOrXor:1795,values,partial,yes
+357,AndOrXor:1795,values,partial,no
 358,AndOrXor:1795,values,qf,no
 359,AndOrXor:1795,values,rec,no
 360,AndOrXor:1818,poison,full,yes
@@ -512,7 +512,7 @@
 510,AndOrXor:1864,undef,qf,yes
 511,AndOrXor:1864,undef,rec,yes
 512,AndOrXor:1864,values,full,no
-513,AndOrXor:1864,values,partial,yes
+513,AndOrXor:1864,values,partial,no
 514,AndOrXor:1864,values,qf,no
 515,AndOrXor:1864,values,rec,no
 516,AndOrXor:1869,poison,full,yes
@@ -644,7 +644,7 @@
 642,AndOrXor:1979,undef,qf,yes
 643,AndOrXor:1979,undef,rec,yes
 644,AndOrXor:1979,values,full,no
-645,AndOrXor:1979,values,partial,yes
+645,AndOrXor:1979,values,partial,no
 646,AndOrXor:1979,values,qf,no
 647,AndOrXor:1979,values,rec,no
 648,AndOrXor:2008,poison,full,yes
@@ -656,7 +656,7 @@
 654,AndOrXor:2008,undef,qf,yes
 655,AndOrXor:2008,undef,rec,yes
 656,AndOrXor:2008,values,full,no
-657,AndOrXor:2008,values,partial,yes
+657,AndOrXor:2008,values,partial,no
 658,AndOrXor:2008,values,qf,no
 659,AndOrXor:2008,values,rec,no
 660,AndOrXor:210,poison,full,yes
@@ -668,7 +668,7 @@
 666,AndOrXor:210,undef,qf,yes
 667,AndOrXor:210,undef,rec,yes
 668,AndOrXor:210,values,full,no
-669,AndOrXor:210,values,partial,yes
+669,AndOrXor:210,values,partial,no
 670,AndOrXor:210,values,qf,no
 671,AndOrXor:210,values,rec,no
 672,AndOrXor:2113,poison,full,yes
@@ -680,7 +680,7 @@
 678,AndOrXor:2113,undef,qf,yes
 679,AndOrXor:2113,undef,rec,yes
 680,AndOrXor:2113,values,full,no
-681,AndOrXor:2113,values,partial,yes
+681,AndOrXor:2113,values,partial,no
 682,AndOrXor:2113,values,qf,no
 683,AndOrXor:2113,values,rec,no
 684,AndOrXor:2118,poison,full,yes
@@ -692,7 +692,7 @@
 690,AndOrXor:2118,undef,qf,yes
 691,AndOrXor:2118,undef,rec,yes
 692,AndOrXor:2118,values,full,no
-693,AndOrXor:2118,values,partial,yes
+693,AndOrXor:2118,values,partial,no
 694,AndOrXor:2118,values,qf,no
 695,AndOrXor:2118,values,rec,no
 696,AndOrXor:2123,poison,full,yes
@@ -704,7 +704,7 @@
 702,AndOrXor:2123,undef,qf,yes
 703,AndOrXor:2123,undef,rec,yes
 704,AndOrXor:2123,values,full,no
-705,AndOrXor:2123,values,partial,yes
+705,AndOrXor:2123,values,partial,no
 706,AndOrXor:2123,values,qf,no
 707,AndOrXor:2123,values,rec,no
 708,AndOrXor:2160,poison,full,yes
@@ -716,7 +716,7 @@
 714,AndOrXor:2160,undef,qf,yes
 715,AndOrXor:2160,undef,rec,yes
 716,AndOrXor:2160,values,full,no
-717,AndOrXor:2160,values,partial,yes
+717,AndOrXor:2160,values,partial,no
 718,AndOrXor:2160,values,qf,no
 719,AndOrXor:2160,values,rec,no
 720,AndOrXor:2188,poison,full,yes
@@ -728,7 +728,7 @@
 726,AndOrXor:2188,undef,qf,yes
 727,AndOrXor:2188,undef,rec,yes
 728,AndOrXor:2188,values,full,no
-729,AndOrXor:2188,values,partial,yes
+729,AndOrXor:2188,values,partial,no
 730,AndOrXor:2188,values,qf,no
 731,AndOrXor:2188,values,rec,no
 732,AndOrXor:2243,poison,full,yes
@@ -740,7 +740,7 @@
 738,AndOrXor:2243,undef,qf,yes
 739,AndOrXor:2243,undef,rec,yes
 740,AndOrXor:2243,values,full,no
-741,AndOrXor:2243,values,partial,yes
+741,AndOrXor:2243,values,partial,no
 742,AndOrXor:2243,values,qf,no
 743,AndOrXor:2243,values,rec,no
 744,AndOrXor:2247,poison,full,yes
@@ -752,7 +752,7 @@
 750,AndOrXor:2247,undef,qf,yes
 751,AndOrXor:2247,undef,rec,yes
 752,AndOrXor:2247,values,full,no
-753,AndOrXor:2247,values,partial,yes
+753,AndOrXor:2247,values,partial,no
 754,AndOrXor:2247,values,qf,no
 755,AndOrXor:2247,values,rec,no
 756,AndOrXor:2263,poison,full,yes
@@ -764,7 +764,7 @@
 762,AndOrXor:2263,undef,qf,yes
 763,AndOrXor:2263,undef,rec,yes
 764,AndOrXor:2263,values,full,no
-765,AndOrXor:2263,values,partial,yes
+765,AndOrXor:2263,values,partial,no
 766,AndOrXor:2263,values,qf,no
 767,AndOrXor:2263,values,rec,no
 768,AndOrXor:2264,poison,full,yes
@@ -776,7 +776,7 @@
 774,AndOrXor:2264,undef,qf,yes
 775,AndOrXor:2264,undef,rec,yes
 776,AndOrXor:2264,values,full,no
-777,AndOrXor:2264,values,partial,yes
+777,AndOrXor:2264,values,partial,no
 778,AndOrXor:2264,values,qf,no
 779,AndOrXor:2264,values,rec,no
 780,AndOrXor:2265,poison,full,yes
@@ -788,7 +788,7 @@
 786,AndOrXor:2265,undef,qf,yes
 787,AndOrXor:2265,undef,rec,yes
 788,AndOrXor:2265,values,full,no
-789,AndOrXor:2265,values,partial,yes
+789,AndOrXor:2265,values,partial,no
 790,AndOrXor:2265,values,qf,no
 791,AndOrXor:2265,values,rec,no
 792,AndOrXor:2284,poison,full,yes
@@ -800,7 +800,7 @@
 798,AndOrXor:2284,undef,qf,yes
 799,AndOrXor:2284,undef,rec,yes
 800,AndOrXor:2284,values,full,no
-801,AndOrXor:2284,values,partial,yes
+801,AndOrXor:2284,values,partial,no
 802,AndOrXor:2284,values,qf,no
 803,AndOrXor:2284,values,rec,no
 804,AndOrXor:2285,poison,full,yes
@@ -812,7 +812,7 @@
 810,AndOrXor:2285,undef,qf,yes
 811,AndOrXor:2285,undef,rec,yes
 812,AndOrXor:2285,values,full,no
-813,AndOrXor:2285,values,partial,yes
+813,AndOrXor:2285,values,partial,no
 814,AndOrXor:2285,values,qf,no
 815,AndOrXor:2285,values,rec,no
 816,AndOrXor:2297,poison,full,yes
@@ -824,7 +824,7 @@
 822,AndOrXor:2297,undef,qf,yes
 823,AndOrXor:2297,undef,rec,yes
 824,AndOrXor:2297,values,full,no
-825,AndOrXor:2297,values,partial,yes
+825,AndOrXor:2297,values,partial,no
 826,AndOrXor:2297,values,qf,no
 827,AndOrXor:2297,values,rec,no
 828,AndOrXor:230,poison,full,yes
@@ -836,7 +836,7 @@
 834,AndOrXor:230,undef,qf,yes
 835,AndOrXor:230,undef,rec,yes
 836,AndOrXor:230,values,full,no
-837,AndOrXor:230,values,partial,yes
+837,AndOrXor:230,values,partial,no
 838,AndOrXor:230,values,qf,no
 839,AndOrXor:230,values,rec,no
 840,AndOrXor:2367,poison,full,yes
@@ -848,7 +848,7 @@
 846,AndOrXor:2367,undef,qf,yes
 847,AndOrXor:2367,undef,rec,yes
 848,AndOrXor:2367,values,full,no
-849,AndOrXor:2367,values,partial,yes
+849,AndOrXor:2367,values,partial,no
 850,AndOrXor:2367,values,qf,no
 851,AndOrXor:2367,values,rec,no
 852,AndOrXor:2416,poison,full,yes
@@ -860,7 +860,7 @@
 858,AndOrXor:2416,undef,qf,yes
 859,AndOrXor:2416,undef,rec,yes
 860,AndOrXor:2416,values,full,no
-861,AndOrXor:2416,values,partial,yes
+861,AndOrXor:2416,values,partial,no
 862,AndOrXor:2416,values,qf,no
 863,AndOrXor:2416,values,rec,no
 864,AndOrXor:2417,poison,full,yes
@@ -872,7 +872,7 @@
 870,AndOrXor:2417,undef,qf,yes
 871,AndOrXor:2417,undef,rec,yes
 872,AndOrXor:2417,values,full,no
-873,AndOrXor:2417,values,partial,yes
+873,AndOrXor:2417,values,partial,no
 874,AndOrXor:2417,values,qf,no
 875,AndOrXor:2417,values,rec,no
 876,AndOrXor:2429,poison,full,yes
@@ -884,7 +884,7 @@
 882,AndOrXor:2429,undef,qf,yes
 883,AndOrXor:2429,undef,rec,yes
 884,AndOrXor:2429,values,full,no
-885,AndOrXor:2429,values,partial,yes
+885,AndOrXor:2429,values,partial,no
 886,AndOrXor:2429,values,qf,no
 887,AndOrXor:2429,values,rec,no
 888,AndOrXor:2430,poison,full,yes
@@ -896,7 +896,7 @@
 894,AndOrXor:2430,undef,qf,yes
 895,AndOrXor:2430,undef,rec,yes
 896,AndOrXor:2430,values,full,no
-897,AndOrXor:2430,values,partial,yes
+897,AndOrXor:2430,values,partial,no
 898,AndOrXor:2430,values,qf,no
 899,AndOrXor:2430,values,rec,no
 900,AndOrXor:2443,poison,full,yes
@@ -908,7 +908,7 @@
 906,AndOrXor:2443,undef,qf,yes
 907,AndOrXor:2443,undef,rec,yes
 908,AndOrXor:2443,values,full,no
-909,AndOrXor:2443,values,partial,yes
+909,AndOrXor:2443,values,partial,no
 910,AndOrXor:2443,values,qf,no
 911,AndOrXor:2443,values,rec,no
 912,AndOrXor:2453,poison,full,yes
@@ -932,7 +932,7 @@
 930,AndOrXor:2475,undef,qf,yes
 931,AndOrXor:2475,undef,rec,yes
 932,AndOrXor:2475,values,full,no
-933,AndOrXor:2475,values,partial,yes
+933,AndOrXor:2475,values,partial,no
 934,AndOrXor:2475,values,qf,no
 935,AndOrXor:2475,values,rec,no
 936,AndOrXor:2486,poison,full,yes
@@ -944,7 +944,7 @@
 942,AndOrXor:2486,undef,qf,yes
 943,AndOrXor:2486,undef,rec,yes
 944,AndOrXor:2486,values,full,no
-945,AndOrXor:2486,values,partial,yes
+945,AndOrXor:2486,values,partial,no
 946,AndOrXor:2486,values,qf,no
 947,AndOrXor:2486,values,rec,no
 948,AndOrXor:2595,poison,full,yes
@@ -956,7 +956,7 @@
 954,AndOrXor:2595,undef,qf,yes
 955,AndOrXor:2595,undef,rec,yes
 956,AndOrXor:2595,values,full,no
-957,AndOrXor:2595,values,partial,yes
+957,AndOrXor:2595,values,partial,no
 958,AndOrXor:2595,values,qf,no
 959,AndOrXor:2595,values,rec,no
 960,AndOrXor:2607,poison,full,yes
@@ -968,7 +968,7 @@
 966,AndOrXor:2607,undef,qf,yes
 967,AndOrXor:2607,undef,rec,yes
 968,AndOrXor:2607,values,full,no
-969,AndOrXor:2607,values,partial,yes
+969,AndOrXor:2607,values,partial,no
 970,AndOrXor:2607,values,qf,no
 971,AndOrXor:2607,values,rec,no
 972,AndOrXor:2617,poison,full,yes
@@ -980,7 +980,7 @@
 978,AndOrXor:2617,undef,qf,yes
 979,AndOrXor:2617,undef,rec,yes
 980,AndOrXor:2617,values,full,no
-981,AndOrXor:2617,values,partial,yes
+981,AndOrXor:2617,values,partial,no
 982,AndOrXor:2617,values,qf,no
 983,AndOrXor:2617,values,rec,no
 984,AndOrXor:2627,poison,full,yes
@@ -992,7 +992,7 @@
 990,AndOrXor:2627,undef,qf,yes
 991,AndOrXor:2627,undef,rec,yes
 992,AndOrXor:2627,values,full,no
-993,AndOrXor:2627,values,partial,yes
+993,AndOrXor:2627,values,partial,no
 994,AndOrXor:2627,values,qf,no
 995,AndOrXor:2627,values,rec,no
 996,AndOrXor:2647,poison,full,yes
@@ -1004,7 +1004,7 @@
 1002,AndOrXor:2647,undef,qf,yes
 1003,AndOrXor:2647,undef,rec,yes
 1004,AndOrXor:2647,values,full,no
-1005,AndOrXor:2647,values,partial,yes
+1005,AndOrXor:2647,values,partial,no
 1006,AndOrXor:2647,values,qf,no
 1007,AndOrXor:2647,values,rec,no
 1008,AndOrXor:2658,poison,full,yes
@@ -1016,7 +1016,7 @@
 1014,AndOrXor:2658,undef,qf,yes
 1015,AndOrXor:2658,undef,rec,yes
 1016,AndOrXor:2658,values,full,no
-1017,AndOrXor:2658,values,partial,yes
+1017,AndOrXor:2658,values,partial,no
 1018,AndOrXor:2658,values,qf,no
 1019,AndOrXor:2658,values,rec,no
 1020,AndOrXor:2663,poison,full,yes
@@ -1052,7 +1052,7 @@
 1050,AndOrXor:273,undef,qf,yes
 1051,AndOrXor:273,undef,rec,yes
 1052,AndOrXor:273,values,full,no
-1053,AndOrXor:273,values,partial,yes
+1053,AndOrXor:273,values,partial,no
 1054,AndOrXor:273,values,qf,no
 1055,AndOrXor:273,values,rec,no
 1056,AndOrXor:280,poison,full,yes
@@ -1088,7 +1088,7 @@
 1086,AndOrXor:290,undef,qf,yes
 1087,AndOrXor:290,undef,rec,yes
 1088,AndOrXor:290,values,full,no
-1089,AndOrXor:290,values,partial,yes
+1089,AndOrXor:290,values,partial,no
 1090,AndOrXor:290,values,qf,no
 1091,AndOrXor:290,values,rec,no
 1092,AndOrXor:298,poison,full,yes
@@ -1112,7 +1112,7 @@
 1110,AndOrXor:363,undef,qf,yes
 1111,AndOrXor:363,undef,rec,yes
 1112,AndOrXor:363,values,full,no
-1113,AndOrXor:363,values,partial,yes
+1113,AndOrXor:363,values,partial,no
 1114,AndOrXor:363,values,qf,no
 1115,AndOrXor:363,values,rec,no
 1116,AndOrXor:364,poison,full,yes
@@ -1124,7 +1124,7 @@
 1122,AndOrXor:364,undef,qf,yes
 1123,AndOrXor:364,undef,rec,yes
 1124,AndOrXor:364,values,full,no
-1125,AndOrXor:364,values,partial,yes
+1125,AndOrXor:364,values,partial,no
 1126,AndOrXor:364,values,qf,no
 1127,AndOrXor:364,values,rec,no
 1128,AndOrXor:516,poison,full,yes
@@ -1136,7 +1136,7 @@
 1134,AndOrXor:516,undef,qf,yes
 1135,AndOrXor:516,undef,rec,yes
 1136,AndOrXor:516,values,full,no
-1137,AndOrXor:516,values,partial,yes
+1137,AndOrXor:516,values,partial,no
 1138,AndOrXor:516,values,qf,no
 1139,AndOrXor:516,values,rec,no
 1140,AndOrXor:523,poison,full,yes
@@ -1148,7 +1148,7 @@
 1146,AndOrXor:523,undef,qf,yes
 1147,AndOrXor:523,undef,rec,yes
 1148,AndOrXor:523,values,full,no
-1149,AndOrXor:523,values,partial,yes
+1149,AndOrXor:523,values,partial,no
 1150,AndOrXor:523,values,qf,no
 1151,AndOrXor:523,values,rec,no
 1152,AndOrXor:530,poison,full,yes
@@ -1160,7 +1160,7 @@
 1158,AndOrXor:530,undef,qf,yes
 1159,AndOrXor:530,undef,rec,yes
 1160,AndOrXor:530,values,full,no
-1161,AndOrXor:530,values,partial,yes
+1161,AndOrXor:530,values,partial,no
 1162,AndOrXor:530,values,qf,no
 1163,AndOrXor:530,values,rec,no
 1164,AndOrXor:537,poison,full,yes
@@ -1172,7 +1172,7 @@
 1170,AndOrXor:537,undef,qf,yes
 1171,AndOrXor:537,undef,rec,yes
 1172,AndOrXor:537,values,full,no
-1173,AndOrXor:537,values,partial,yes
+1173,AndOrXor:537,values,partial,no
 1174,AndOrXor:537,values,qf,no
 1175,AndOrXor:537,values,rec,no
 1176,AndOrXor:698,poison,full,yes
@@ -1184,7 +1184,7 @@
 1182,AndOrXor:698,undef,qf,yes
 1183,AndOrXor:698,undef,rec,yes
 1184,AndOrXor:698,values,full,no
-1185,AndOrXor:698,values,partial,yes
+1185,AndOrXor:698,values,partial,no
 1186,AndOrXor:698,values,qf,no
 1187,AndOrXor:698,values,rec,no
 1188,AndOrXor:709,poison,full,yes
@@ -1196,7 +1196,7 @@
 1194,AndOrXor:709,undef,qf,yes
 1195,AndOrXor:709,undef,rec,yes
 1196,AndOrXor:709,values,full,no
-1197,AndOrXor:709,values,partial,yes
+1197,AndOrXor:709,values,partial,no
 1198,AndOrXor:709,values,qf,no
 1199,AndOrXor:709,values,rec,no
 1200,AndOrXor:716,poison,full,yes
@@ -1208,7 +1208,7 @@
 1206,AndOrXor:716,undef,qf,yes
 1207,AndOrXor:716,undef,rec,yes
 1208,AndOrXor:716,values,full,no
-1209,AndOrXor:716,values,partial,yes
+1209,AndOrXor:716,values,partial,no
 1210,AndOrXor:716,values,qf,no
 1211,AndOrXor:716,values,rec,no
 1212,AndOrXor:732-1,poison,full,yes
@@ -1220,7 +1220,7 @@
 1218,AndOrXor:732-1,undef,qf,yes
 1219,AndOrXor:732-1,undef,rec,yes
 1220,AndOrXor:732-1,values,full,no
-1221,AndOrXor:732-1,values,partial,yes
+1221,AndOrXor:732-1,values,partial,no
 1222,AndOrXor:732-1,values,qf,no
 1223,AndOrXor:732-1,values,rec,no
 1224,AndOrXor:732-2,poison,full,yes
@@ -1232,7 +1232,7 @@
 1230,AndOrXor:732-2,undef,qf,yes
 1231,AndOrXor:732-2,undef,rec,yes
 1232,AndOrXor:732-2,values,full,no
-1233,AndOrXor:732-2,values,partial,yes
+1233,AndOrXor:732-2,values,partial,no
 1234,AndOrXor:732-2,values,qf,no
 1235,AndOrXor:732-2,values,rec,no
 1236,AndOrXor:745,poison,full,yes
@@ -1244,7 +1244,7 @@
 1242,AndOrXor:745,undef,qf,yes
 1243,AndOrXor:745,undef,rec,yes
 1244,AndOrXor:745,values,full,no
-1245,AndOrXor:745,values,partial,yes
+1245,AndOrXor:745,values,partial,no
 1246,AndOrXor:745,values,qf,no
 1247,AndOrXor:745,values,rec,no
 1248,AndOrXor:757,poison,full,yes
@@ -1256,7 +1256,7 @@
 1254,AndOrXor:757,undef,qf,yes
 1255,AndOrXor:757,undef,rec,yes
 1256,AndOrXor:757,values,full,no
-1257,AndOrXor:757,values,partial,yes
+1257,AndOrXor:757,values,partial,no
 1258,AndOrXor:757,values,qf,no
 1259,AndOrXor:757,values,rec,no
 1260,AndOrXor:794,poison,full,yes
@@ -1280,7 +1280,7 @@
 1278,AndOrXor:819,undef,qf,yes
 1279,AndOrXor:819,undef,rec,yes
 1280,AndOrXor:819,values,full,no
-1281,AndOrXor:819,values,partial,yes
+1281,AndOrXor:819,values,partial,no
 1282,AndOrXor:819,values,qf,no
 1283,AndOrXor:819,values,rec,no
 1284,AndOrXor:827,poison,full,yes
@@ -1544,7 +1544,7 @@
 1542,InstCombineShift239,undef,qf,yes
 1543,InstCombineShift239,undef,rec,yes
 1544,InstCombineShift239,values,full,no
-1545,InstCombineShift239,values,partial,yes
+1545,InstCombineShift239,values,partial,no
 1546,InstCombineShift239,values,qf,no
 1547,InstCombineShift239,values,rec,no
 1548,InstCombineShift279,poison,full,yes
@@ -1556,7 +1556,7 @@
 1554,InstCombineShift279,undef,qf,yes
 1555,InstCombineShift279,undef,rec,yes
 1556,InstCombineShift279,values,full,no
-1557,InstCombineShift279,values,partial,yes
+1557,InstCombineShift279,values,partial,no
 1558,InstCombineShift279,values,qf,no
 1559,InstCombineShift279,values,rec,no
 1560,InstCombineShift440,poison,full,yes
@@ -1568,7 +1568,7 @@
 1566,InstCombineShift440,undef,qf,yes
 1567,InstCombineShift440,undef,rec,yes
 1568,InstCombineShift440,values,full,no
-1569,InstCombineShift440,values,partial,yes
+1569,InstCombineShift440,values,partial,no
 1570,InstCombineShift440,values,qf,no
 1571,InstCombineShift440,values,rec,no
 1572,InstCombineShift476,poison,full,yes
@@ -1580,7 +1580,7 @@
 1578,InstCombineShift476,undef,qf,yes
 1579,InstCombineShift476,undef,rec,yes
 1580,InstCombineShift476,values,full,no
-1581,InstCombineShift476,values,partial,yes
+1581,InstCombineShift476,values,partial,no
 1582,InstCombineShift476,values,qf,no
 1583,InstCombineShift476,values,rec,no
 1584,InstCombineShift497a,poison,full,yes
@@ -1592,7 +1592,7 @@
 1590,InstCombineShift497a,undef,qf,yes
 1591,InstCombineShift497a,undef,rec,yes
 1592,InstCombineShift497a,values,full,no
-1593,InstCombineShift497a,values,partial,yes
+1593,InstCombineShift497a,values,partial,no
 1594,InstCombineShift497a,values,qf,no
 1595,InstCombineShift497a,values,rec,no
 1596,InstCombineShift497b,poison,full,yes
@@ -1604,7 +1604,7 @@
 1602,InstCombineShift497b,undef,qf,yes
 1603,InstCombineShift497b,undef,rec,yes
 1604,InstCombineShift497b,values,full,no
-1605,InstCombineShift497b,values,partial,yes
+1605,InstCombineShift497b,values,partial,no
 1606,InstCombineShift497b,values,qf,no
 1607,InstCombineShift497b,values,rec,no
 1608,InstCombineShift497c,poison,full,yes
@@ -1616,7 +1616,7 @@
 1614,InstCombineShift497c,undef,qf,yes
 1615,InstCombineShift497c,undef,rec,yes
 1616,InstCombineShift497c,values,full,no
-1617,InstCombineShift497c,values,partial,yes
+1617,InstCombineShift497c,values,partial,no
 1618,InstCombineShift497c,values,qf,no
 1619,InstCombineShift497c,values,rec,no
 1620,InstCombineShift497d,poison,full,yes
@@ -1628,7 +1628,7 @@
 1626,InstCombineShift497d,undef,qf,yes
 1627,InstCombineShift497d,undef,rec,yes
 1628,InstCombineShift497d,values,full,no
-1629,InstCombineShift497d,values,partial,yes
+1629,InstCombineShift497d,values,partial,no
 1630,InstCombineShift497d,values,qf,no
 1631,InstCombineShift497d,values,rec,no
 1632,InstCombineShift582,poison,full,yes
@@ -1640,7 +1640,7 @@
 1638,InstCombineShift582,undef,qf,yes
 1639,InstCombineShift582,undef,rec,yes
 1640,InstCombineShift582,values,full,no
-1641,InstCombineShift582,values,partial,yes
+1641,InstCombineShift582,values,partial,no
 1642,InstCombineShift582,values,qf,no
 1643,InstCombineShift582,values,rec,no
 1644,Select:1100,poison,full,yes
@@ -1676,7 +1676,7 @@
 1674,Select:420,undef,qf,yes
 1675,Select:420,undef,rec,yes
 1676,Select:420,values,full,no
-1677,Select:420,values,partial,yes
+1677,Select:420,values,partial,no
 1678,Select:420,values,qf,no
 1679,Select:420,values,rec,no
 1680,Select:423,poison,full,yes
@@ -1688,7 +1688,7 @@
 1686,Select:423,undef,qf,yes
 1687,Select:423,undef,rec,yes
 1688,Select:423,values,full,no
-1689,Select:423,values,partial,yes
+1689,Select:423,values,partial,no
 1690,Select:423,values,qf,no
 1691,Select:423,values,rec,no
 1692,Select:427,poison,full,yes
@@ -1700,7 +1700,7 @@
 1698,Select:427,undef,qf,yes
 1699,Select:427,undef,rec,yes
 1700,Select:427,values,full,no
-1701,Select:427,values,partial,yes
+1701,Select:427,values,partial,no
 1702,Select:427,values,qf,no
 1703,Select:427,values,rec,no
 1704,Select:430,poison,full,yes
@@ -1712,7 +1712,7 @@
 1710,Select:430,undef,qf,yes
 1711,Select:430,undef,rec,yes
 1712,Select:430,values,full,no
-1713,Select:430,values,partial,yes
+1713,Select:430,values,partial,no
 1714,Select:430,values,qf,no
 1715,Select:430,values,rec,no
 1716,Select:433,poison,full,yes
@@ -1724,7 +1724,7 @@
 1722,Select:433,undef,qf,yes
 1723,Select:433,undef,rec,yes
 1724,Select:433,values,full,no
-1725,Select:433,values,partial,yes
+1725,Select:433,values,partial,no
 1726,Select:433,values,qf,no
 1727,Select:433,values,rec,no
 1728,Select:510,poison,full,yes
@@ -1736,7 +1736,7 @@
 1734,Select:510,undef,qf,yes
 1735,Select:510,undef,rec,yes
 1736,Select:510,values,full,no
-1737,Select:510,values,partial,yes
+1737,Select:510,values,partial,no
 1738,Select:510,values,qf,no
 1739,Select:510,values,rec,no
 1740,Select:575a,poison,full,yes
@@ -1748,7 +1748,7 @@
 1746,Select:575a,undef,qf,yes
 1747,Select:575a,undef,rec,no
 1748,Select:575a,values,full,no
-1749,Select:575a,values,partial,yes
+1749,Select:575a,values,partial,no
 1750,Select:575a,values,qf,no
 1751,Select:575a,values,rec,no
 1752,Select:575b,poison,full,yes
@@ -1760,7 +1760,7 @@
 1758,Select:575b,undef,qf,yes
 1759,Select:575b,undef,rec,no
 1760,Select:575b,values,full,no
-1761,Select:575b,values,partial,yes
+1761,Select:575b,values,partial,no
 1762,Select:575b,values,qf,no
 1763,Select:575b,values,rec,no
 1764,Select:576a,poison,full,yes
@@ -1772,7 +1772,7 @@
 1770,Select:576a,undef,qf,yes
 1771,Select:576a,undef,rec,no
 1772,Select:576a,values,full,no
-1773,Select:576a,values,partial,yes
+1773,Select:576a,values,partial,no
 1774,Select:576a,values,qf,no
 1775,Select:576a,values,rec,no
 1776,Select:576b,poison,full,yes
@@ -1784,7 +1784,7 @@
 1782,Select:576b,undef,qf,yes
 1783,Select:576b,undef,rec,no
 1784,Select:576b,values,full,no
-1785,Select:576b,values,partial,yes
+1785,Select:576b,values,partial,no
 1786,Select:576b,values,qf,no
 1787,Select:576b,values,rec,no
 1788,Select:637,poison,full,yes
@@ -1976,7 +1976,7 @@
 1974,muldivrem:229,undef,qf,yes
 1975,muldivrem:229,undef,rec,yes
 1976,muldivrem:229,values,full,no
-1977,muldivrem:229,values,partial,yes
+1977,muldivrem:229,values,partial,no
 1978,muldivrem:229,values,qf,no
 1979,muldivrem:229,values,rec,no
 1980,muldivrem:239,poison,full,yes
@@ -1988,7 +1988,7 @@
 1986,muldivrem:239,undef,qf,yes
 1987,muldivrem:239,undef,rec,yes
 1988,muldivrem:239,values,full,no
-1989,muldivrem:239,values,partial,yes
+1989,muldivrem:239,values,partial,no
 1990,muldivrem:239,values,qf,no
 1991,muldivrem:239,values,rec,no
 1992,muldivrem:290:292,poison,full,yes
@@ -2012,6 +2012,6 @@
 2010,muldivrem:876,undef,qf,yes
 2011,muldivrem:876,undef,rec,yes
 2012,muldivrem:876,values,full,no
-2013,muldivrem:876,values,partial,yes
+2013,muldivrem:876,values,partial,no
 2014,muldivrem:876,values,qf,no
 2015,muldivrem:876,values,rec,no

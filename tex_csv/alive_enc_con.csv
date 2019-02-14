@@ -1,6 +1,6 @@
 encoding,cvc4_default,cvc4_tplanes_saturate_no_e_matching,z3_default,total
 full,60,70,64,76
-partial,80,167,125,168
+partial,80,72,66,83
 qf,80,74,69,80
 rec,46,75,59,75
-total,81,167,130,168
+total,81,80,71,83

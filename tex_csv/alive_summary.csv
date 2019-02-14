@@ -1,8 +1,8 @@
 family,alive,translated,proved
-AddSub,49,16,16
-MulDivRem,44,5,5
-AndOrXor,131,112,112
-Select,52,26,26
-Shifts,41,9,9
+AddSub,49,16,7
+MulDivRem,44,5,2
+AndOrXor,131,112,58
+Select,52,26,16
+Shifts,41,9,0
 LoadStoreAlloca,17,0,0
-Total,334,168,168
+Total,334,168,83

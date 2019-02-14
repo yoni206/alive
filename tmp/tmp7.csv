@@ -3,8 +3,8 @@
 1,full,cvc4_tplanes_saturate_no_e_matching,406
 2,full,z3_default,400
 3,partial,cvc4_default,416
-4,partial,cvc4_tplanes_saturate_no_e_matching,503
-5,partial,z3_default,461
+4,partial,cvc4_tplanes_saturate_no_e_matching,408
+5,partial,z3_default,402
 6,qf,cvc4_default,416
 7,qf,cvc4_tplanes_saturate_no_e_matching,410
 8,qf,z3_default,405
