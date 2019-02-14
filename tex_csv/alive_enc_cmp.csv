@@ -1,4 +1,5 @@
 encoding,AddSub,AndOrXor,MulDivRem,Select,Shifts,total
+combined,7,58,1,16,0,82
 full,7,54,1,14,0,76
 partial,7,58,2,16,0,83
 qf,7,57,1,15,0,80
