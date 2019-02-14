@@ -1,5 +1,5 @@
-c host: barrett46.stanford.edu
-c start: Sat Feb  9 17:23:20 PST 2019
+c host: barrett24.stanford.edu
+c start: Thu Feb 14 00:42:36 PST 2019
 c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/unbounded/partial/partial_muldivrem:239_poison_62.smt2
 c solver: ./cvc4
 c solver options: --nl-ext-tplanes --full-saturate-quant --no-e-matching

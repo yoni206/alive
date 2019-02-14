@@ -1,25 +1,25 @@
 [runlim] version:		1.10fixed
-[runlim] time limit:		1800 seconds
+[runlim] time limit:		300 seconds
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--nl-ext-tplanes
 [runlim] argv[2]:		--full-saturate-quant
 [runlim] argv[3]:		--no-e-matching
-[runlim] argv[4]:		/tmp/33pgcDJP.smt2
-[runlim] start:			Sat Feb  9 17:22:42 2019
-[runlim] main pid:		10421
-[runlim] sample:		10.0 time, 10.1 real, 49.4 MB
-[runlim] sample:		20.0 time, 20.1 real, 54.1 MB
-[runlim] sample:		30.0 time, 30.1 real, 59.9 MB
-[runlim] sample:		40.0 time, 40.1 real, 72.3 MB
-[runlim] sample:		50.0 time, 50.1 real, 82.1 MB
-[runlim] sample:		60.0 time, 60.1 real, 88.6 MB
-[runlim] end:			Sat Feb  9 17:23:46 2019
+[runlim] argv[4]:		/tmp/GzUSi3Up.smt2
+[runlim] start:			Thu Feb 14 00:38:43 2019
+[runlim] main pid:		27608
+[runlim] sample:		8.1 time, 10.3 real, 49.1 MB
+[runlim] sample:		18.1 time, 20.3 real, 54.0 MB
+[runlim] sample:		28.1 time, 30.3 real, 58.6 MB
+[runlim] sample:		38.1 time, 40.3 real, 69.4 MB
+[runlim] sample:		48.1 time, 50.3 real, 79.6 MB
+[runlim] sample:		58.0 time, 60.3 real, 86.8 MB
+[runlim] end:			Thu Feb 14 00:39:50 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
-[runlim] real:			64.36 seconds
-[runlim] time:			64.19 seconds
+[runlim] real:			67.39 seconds
+[runlim] time:			65.05 seconds
 [runlim] space:			93.7 MB
-[runlim] samples:		642
+[runlim] samples:		670

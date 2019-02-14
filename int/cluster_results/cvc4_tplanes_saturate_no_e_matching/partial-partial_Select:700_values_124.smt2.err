@@ -1,19 +1,19 @@
 [runlim] version:		1.10fixed
-[runlim] time limit:		1800 seconds
+[runlim] time limit:		300 seconds
 [runlim] real time limit:	311040000 seconds
 [runlim] space limit:		4000 MB
 [runlim] argv[0]:		./cvc4
 [runlim] argv[1]:		--nl-ext-tplanes
 [runlim] argv[2]:		--full-saturate-quant
 [runlim] argv[3]:		--no-e-matching
-[runlim] argv[4]:		/tmp/yxWdcgsI.smt2
-[runlim] start:			Sat Feb  9 17:23:12 2019
-[runlim] main pid:		17552
-[runlim] end:			Sat Feb  9 17:23:18 2019
+[runlim] argv[4]:		/tmp/ju79Ir6w.smt2
+[runlim] start:			Thu Feb 14 00:42:22 2019
+[runlim] main pid:		28418
+[runlim] end:			Thu Feb 14 00:42:29 2019
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
-[runlim] real:			6.07 seconds
-[runlim] time:			4.67 seconds
-[runlim] space:			37.0 MB
-[runlim] samples:		57
+[runlim] real:			7.46 seconds
+[runlim] time:			4.68 seconds
+[runlim] space:			36.6 MB
+[runlim] samples:		64

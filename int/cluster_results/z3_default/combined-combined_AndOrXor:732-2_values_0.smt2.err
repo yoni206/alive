@@ -1,0 +1,34 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./z3
+[runlim] argv[1]:		/tmp/w4UGQxxK.smt2
+[runlim] start:			Thu Feb 14 00:52:20 2019
+[runlim] main pid:		22012
+[runlim] sample:		8.2 time, 10.7 real, 19.4 MB
+[runlim] sample:		16.8 time, 20.7 real, 20.4 MB
+[runlim] sample:		25.7 time, 30.7 real, 20.6 MB
+[runlim] sample:		34.7 time, 40.7 real, 21.2 MB
+[runlim] sample:		44.4 time, 50.7 real, 24.4 MB
+[runlim] sample:		53.8 time, 60.7 real, 25.1 MB
+[runlim] sample:		63.8 time, 70.7 real, 25.1 MB
+[runlim] sample:		73.8 time, 80.7 real, 25.1 MB
+[runlim] sample:		83.8 time, 90.7 real, 25.1 MB
+[runlim] sample:		93.8 time, 100.7 real, 25.4 MB
+[runlim] sample:		103.8 time, 110.7 real, 25.4 MB
+[runlim] sample:		111.8 time, 120.7 real, 25.4 MB
+[runlim] sample:		119.8 time, 130.7 real, 25.4 MB
+[runlim] sample:		129.2 time, 140.7 real, 25.4 MB
+[runlim] sample:		137.5 time, 150.7 real, 25.4 MB
+[runlim] sample:		145.4 time, 160.7 real, 25.4 MB
+[runlim] sample:		153.3 time, 170.7 real, 25.4 MB
+[runlim] sample:		161.3 time, 180.7 real, 25.6 MB
+[runlim] end:			Thu Feb 14 00:55:29 2019
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			189.08 seconds
+[runlim] time:			169.12 seconds
+[runlim] space:			26.1 MB
+[runlim] samples:		1883

@@ -1,0 +1,6 @@
+c host: barrett28.stanford.edu
+c start: Thu Feb 14 00:52:32 PST 2019
+c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/unbounded/combined/combined_AddSub:1202_values_0.smt2
+c solver: ./z3
+c solver options: 
+c done

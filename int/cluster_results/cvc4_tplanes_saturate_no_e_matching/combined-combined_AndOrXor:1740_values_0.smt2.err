@@ -1,0 +1,50 @@
+[runlim] version:		1.10fixed
+[runlim] time limit:		300 seconds
+[runlim] real time limit:	311040000 seconds
+[runlim] space limit:		4000 MB
+[runlim] argv[0]:		./cvc4
+[runlim] argv[1]:		--nl-ext-tplanes
+[runlim] argv[2]:		--full-saturate-quant
+[runlim] argv[3]:		--no-e-matching
+[runlim] argv[4]:		/tmp/luwqpbNU.smt2
+[runlim] start:			Thu Feb 14 00:44:58 2019
+[runlim] main pid:		6617
+[runlim] sample:		8.4 time, 10.1 real, 45.9 MB
+[runlim] sample:		17.7 time, 20.1 real, 58.4 MB
+[runlim] sample:		27.0 time, 30.1 real, 63.1 MB
+[runlim] sample:		36.7 time, 40.1 real, 63.6 MB
+[runlim] sample:		45.8 time, 50.1 real, 63.9 MB
+[runlim] sample:		54.6 time, 60.1 real, 63.9 MB
+[runlim] sample:		63.9 time, 70.1 real, 63.9 MB
+[runlim] sample:		72.8 time, 80.1 real, 64.2 MB
+[runlim] sample:		81.1 time, 90.1 real, 64.2 MB
+[runlim] sample:		89.7 time, 100.1 real, 64.4 MB
+[runlim] sample:		98.4 time, 110.1 real, 64.4 MB
+[runlim] sample:		106.8 time, 120.1 real, 64.7 MB
+[runlim] sample:		116.1 time, 130.1 real, 64.9 MB
+[runlim] sample:		126.1 time, 140.1 real, 64.9 MB
+[runlim] sample:		136.1 time, 150.1 real, 65.2 MB
+[runlim] sample:		146.1 time, 160.1 real, 65.2 MB
+[runlim] sample:		156.1 time, 170.1 real, 65.4 MB
+[runlim] sample:		166.1 time, 180.1 real, 65.4 MB
+[runlim] sample:		176.1 time, 190.1 real, 65.7 MB
+[runlim] sample:		186.1 time, 200.1 real, 65.7 MB
+[runlim] sample:		196.1 time, 210.1 real, 66.0 MB
+[runlim] sample:		206.1 time, 220.1 real, 66.2 MB
+[runlim] sample:		216.1 time, 230.1 real, 66.2 MB
+[runlim] sample:		226.1 time, 240.1 real, 66.5 MB
+[runlim] sample:		236.1 time, 250.1 real, 66.7 MB
+[runlim] sample:		246.0 time, 260.1 real, 66.7 MB
+[runlim] sample:		256.0 time, 270.1 real, 67.0 MB
+[runlim] sample:		266.0 time, 280.1 real, 67.0 MB
+[runlim] sample:		276.0 time, 290.1 real, 67.2 MB
+[runlim] sample:		286.0 time, 300.1 real, 67.2 MB
+[runlim] sample:		296.0 time, 310.1 real, 67.5 MB
+[runlim] end:			Thu Feb 14 00:50:11 2019
+[runlim] status:		signal(9)
+[runlim] result:		11
+[runlim] children:		0
+[runlim] real:			313.19 seconds
+[runlim] time:			299.03 seconds
+[runlim] space:			67.5 MB
+[runlim] samples:		3130
