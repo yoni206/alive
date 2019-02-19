@@ -1,6 +1,6 @@
 
-(declare-fun %Y () (_ BitVec 27))
-(declare-fun %X () (_ BitVec 27))
-(assert (let ((_let_0 ((_ zero_extend 37) %Y))) (and (not (= _let_0 (_ bv0 64))) (not (= (bvudiv ((_ zero_extend 37) %X) _let_0) ((_ zero_extend 37) (bvudiv %X %Y)))))))
+(declare-fun %Y () (_ BitVec 5))
+(declare-fun %X () (_ BitVec 5))
+(assert (let ((_let_0 ((_ zero_extend 15) %Y))) (and (not (= _let_0 (_ bv0 20))) (not (= (bvudiv ((_ zero_extend 15) %X) _let_0) ((_ zero_extend 15) (bvudiv %X %Y)))))))
 (assert true)
 (check-sat)

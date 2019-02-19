@@ -1,0 +1,6 @@
+(set-info :status unknown)
+(declare-fun C () (_ BitVec 24))
+(declare-fun %x () (_ BitVec 24))
+(assert
+ (and (distinct (bvxor (bvsub C %x) (_ bv16777215 24)) (bvadd %x (bvsub (_ bv16777215 24) C))) true))
+(check-sat)

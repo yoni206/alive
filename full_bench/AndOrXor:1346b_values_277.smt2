@@ -2,5 +2,5 @@
 (declare-fun %y () (_ BitVec 7))
 (declare-fun %x () (_ BitVec 7))
 (assert
- (and (distinct (bvand ((_ zero_extend 30) %x) ((_ zero_extend 30) %y)) ((_ zero_extend 30) (bvand %x %y))) true))
+ (and (distinct (bvand ((_ zero_extend 6) %x) ((_ zero_extend 6) %y)) ((_ zero_extend 6) (bvand %x %y))) true))
 (check-sat)

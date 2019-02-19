@@ -3,6 +3,6 @@
 (declare-fun C1 () (_ BitVec 61))
 (declare-fun u_%op () (_ BitVec 8))
 (assert
- (let (($x17568 (bvult C1 (_ bv61 61))))
- (and $x17568 $x17568 (= u_%op (_ bv1 8)) (= (bvand C2 (bvlshr (_ bv2305843009213693951 61) C1)) C2) false)))
+ (let (($x13649 (bvult C1 (_ bv61 61))))
+ (and $x13649 $x13649 (= u_%op (_ bv1 8)) (= (bvand C2 (bvlshr (_ bv2305843009213693951 61) C1)) C2) false)))
 (check-sat)

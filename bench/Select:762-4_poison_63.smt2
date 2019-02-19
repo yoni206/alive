@@ -3,6 +3,6 @@
 (declare-fun C3 () (_ BitVec 11))
 (declare-fun C () (_ BitVec 1))
 (assert
- (let (($x3312 (and (and (distinct (bvsub C3 C2) (_ bv0 11)) true) (= (bvand (bvsub C3 C2) (bvsub (bvsub C3 C2) (_ bv1 11))) (_ bv0 11)))))
- (and (and (and (distinct C (_ bv0 1)) true) (= (bvand C (bvsub C (_ bv1 1))) (_ bv0 1))) $x3312 (bvslt (_ bv0 32) (_ bv11 32)) false)))
+ (let (($x381 (and (and (distinct (bvsub C3 C2) (_ bv0 11)) true) (= (bvand (bvsub C3 C2) (bvsub (bvsub C3 C2) (_ bv1 11))) (_ bv0 11)))))
+ (and (and (and (distinct C (_ bv0 1)) true) (= (bvand C (bvsub C (_ bv1 1))) (_ bv0 1))) $x381 (bvslt (_ bv0 32) (_ bv11 32)) false)))
 (check-sat)

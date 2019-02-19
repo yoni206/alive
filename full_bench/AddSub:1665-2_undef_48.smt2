@@ -2,6 +2,6 @@
 (declare-fun %Y () (_ BitVec 53))
 (declare-fun u_%Op1 () (_ BitVec 8))
 (assert
- (let (($x15658 (bvult %Y (_ bv53 53))))
- (and $x15658 $x15658 (= u_%Op1 (_ bv1 8)) (not $x15658))))
+ (let (($x15406 (bvult %Y (_ bv53 53))))
+ (and $x15406 $x15406 (= u_%Op1 (_ bv1 8)) (not $x15406))))
 (check-sat)

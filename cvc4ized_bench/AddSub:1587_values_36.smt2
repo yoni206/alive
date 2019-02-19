@@ -1,5 +1,0 @@
-
-(declare-fun %X () (_ BitVec 1))
-(assert (not (= (bvsub (_ bv0 41) ((_ sign_extend 40) %X)) ((_ zero_extend 40) %X))))
-(assert true)
-(check-sat)

@@ -3,7 +3,7 @@
 (declare-fun %rhs () (_ BitVec 3))
 (declare-fun %lhs () (_ BitVec 3))
 (assert
- (let (($x13415 (= |ana_WillNotOverflowSignedAdd(%lhs, %rhs)| (_ bv1 1))))
- (let (($x4464 (= (bvadd ((_ sign_extend 1) %lhs) ((_ sign_extend 1) %rhs)) ((_ sign_extend 1) (bvadd %lhs %rhs)))))
- (and (=> $x13415 $x4464) $x13415 false))))
+ (let (($x10871 (= |ana_WillNotOverflowSignedAdd(%lhs, %rhs)| (_ bv1 1))))
+ (let (($x2890 (= (bvadd ((_ sign_extend 1) %lhs) ((_ sign_extend 1) %rhs)) ((_ sign_extend 1) (bvadd %lhs %rhs)))))
+ (and (=> $x10871 $x2890) $x10871 false))))
 (check-sat)

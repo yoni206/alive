@@ -6,6 +6,6 @@
 (assert
  (let ((?x11734 ((_ sign_extend 1) (bvadd %x ((_ extract 44 0) C)))))
  (let (($x11749 (= |ana_WillNotOverflowSignedAdd(%x, trunc(C))| (_ bv1 1))))
- (let (($x9366 (=> $x11749 (= (bvadd ((_ sign_extend 1) %x) ((_ sign_extend 1) ((_ extract 44 0) C))) ?x11734))))
- (and $x9366 (= u_%sx (_ bv1 8)) $x11749 (= (bvand C (bvshl (_ bv70368744177663 46) (bvsub (_ bv45 46) (_ bv1 46)))) (_ bv0 46)) (and (distinct (bvadd ((_ sign_extend 1) %x) C) ?x11734) true))))))
+ (let (($x7656 (=> $x11749 (= (bvadd ((_ sign_extend 1) %x) ((_ sign_extend 1) ((_ extract 44 0) C))) ?x11734))))
+ (and $x7656 (= u_%sx (_ bv1 8)) $x11749 (= (bvand C (bvshl (_ bv70368744177663 46) (bvsub (_ bv45 46) (_ bv1 46)))) (_ bv0 46)) (and (distinct (bvadd ((_ sign_extend 1) %x) C) ?x11734) true))))))
 (check-sat)

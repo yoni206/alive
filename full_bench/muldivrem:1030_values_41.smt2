@@ -1,5 +1,5 @@
 (set-info :status unknown)
-(declare-fun %X () (_ BitVec 42))
+(declare-fun %X () (_ BitVec 45))
 (assert
- (and (and (distinct (_ bv4398046511103 42) (_ bv0 42)) true) (or (and (distinct %X (_ bv2199023255552 42)) true) (and (distinct (_ bv4398046511103 42) (_ bv4398046511103 42)) true)) (and (distinct (bvsdiv %X (_ bv4398046511103 42)) (bvsub (_ bv0 42) %X)) true)))
+ (and (and (distinct (_ bv35184372088831 45) (_ bv0 45)) true) (or (and (distinct %X (_ bv17592186044416 45)) true) (and (distinct (_ bv35184372088831 45) (_ bv35184372088831 45)) true)) (and (distinct (bvsdiv %X (_ bv35184372088831 45)) (bvsub (_ bv0 45) %X)) true)))
 (check-sat)

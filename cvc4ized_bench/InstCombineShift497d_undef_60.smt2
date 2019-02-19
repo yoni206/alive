@@ -1,5 +1,5 @@
 
-(declare-fun C () (_ BitVec 61))
-(assert (let ((_let_0 (bvult C (_ bv61 61)))) (and _let_0 (not _let_0))))
+(declare-fun C () (_ BitVec 64))
+(assert (let ((_let_0 (bvult C (_ bv64 64)))) (and _let_0 (not _let_0))))
 (assert true)
 (check-sat)

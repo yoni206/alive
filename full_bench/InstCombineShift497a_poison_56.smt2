@@ -1,6 +1,6 @@
 (set-info :status unknown)
-(declare-fun C () (_ BitVec 57))
+(declare-fun C () (_ BitVec 60))
 (assert
- (let (($x6397 (bvult C (_ bv57 57))))
- (and $x6397 false)))
+ (let (($x24436 (bvult C (_ bv60 60))))
+ (and $x24436 false)))
 (check-sat)

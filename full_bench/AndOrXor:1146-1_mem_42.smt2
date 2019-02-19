@@ -4,6 +4,6 @@
 (declare-fun C () (_ BitVec 46))
 (declare-fun %op0RHS () (_ BitVec 46))
 (assert
- (let (($x20976 (= |ana_MaskedValueIsZero(%op0RHS, ~C)| (_ bv1 1))))
- (and (=> $x20976 (= (bvand %op0RHS (bvnot C)) (_ bv0 46))) $x20976 (and (distinct mem0 mem0) true))))
+ (let (($x3528 (= |ana_MaskedValueIsZero(%op0RHS, ~C)| (_ bv1 1))))
+ (and (=> $x3528 (= (bvand %op0RHS (bvnot C)) (_ bv0 46))) $x3528 (and (distinct mem0 mem0) true))))
 (check-sat)

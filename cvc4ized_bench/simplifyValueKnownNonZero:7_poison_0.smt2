@@ -1,7 +1,1 @@
-
-(declare-fun u_%Y () (_ BitVec 8))
-(declare-fun %B () (_ BitVec 33))
-(declare-fun %A () (_ BitVec 33))
-(assert false)
-(assert true)
-(check-sat)
+(error "Couldn't open file: full_bench/simplifyValueKnownNonZero:7_poison_0.smt2")

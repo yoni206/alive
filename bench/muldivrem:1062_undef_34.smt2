@@ -1,0 +1,11 @@
+(set-info :status unknown)
+(declare-fun %Op1 () (_ BitVec 37))
+(declare-fun |ana_MaskedValueIsZero(%Op1, (1 << (width(%Op0) - 1)))| () (_ BitVec 1))
+(declare-fun |ana_MaskedValueIsZero(%Op0, (1 << (width(%Op0) - 1)))| () (_ BitVec 1))
+(declare-fun %Op0 () (_ BitVec 37))
+(assert
+ (let (($x8114 (= |ana_MaskedValueIsZero(%Op1, (1 << (width(%Op0) - 1)))| (_ bv1 1))))
+ (let (($x5944 (= |ana_MaskedValueIsZero(%Op0, (1 << (width(%Op0) - 1)))| (_ bv1 1))))
+ (let (($x13561 (and (distinct %Op1 (_ bv0 37)) true)))
+ (and $x13561 (or (and (distinct %Op0 (_ bv68719476736 37)) true) (and (distinct %Op1 (_ bv137438953471 37)) true)) (=> $x5944 (= (bvand %Op0 (bvshl (_ bv1 37) (bvsub (_ bv37 37) (_ bv1 37)))) (_ bv0 37))) (=> $x8114 (= (bvand %Op1 (bvshl (_ bv1 37) (bvsub (_ bv37 37) (_ bv1 37)))) (_ bv0 37))) $x5944 $x8114 (not $x13561))))))
+(check-sat)

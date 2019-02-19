@@ -1,0 +1,12 @@
+(set-info :status unknown)
+(declare-fun %y () (_ BitVec 3))
+(declare-fun %x () (_ BitVec 3))
+(declare-fun |ana_WillNotOverflowSignedAdd(%x, %y)| () (_ BitVec 1))
+(declare-fun u_%sy () (_ BitVec 8))
+(declare-fun u_%sx () (_ BitVec 8))
+(assert
+ (let (($x3842 (and (distinct (bvadd ((_ sign_extend 45) %x) ((_ sign_extend 45) %y)) ((_ sign_extend 45) (bvadd %x %y))) true)))
+ (let (($x7288 (= |ana_WillNotOverflowSignedAdd(%x, %y)| (_ bv1 1))))
+ (let (($x917 (= (bvadd ((_ sign_extend 1) %x) ((_ sign_extend 1) %y)) ((_ sign_extend 1) (bvadd %x %y)))))
+ (and (=> $x7288 $x917) (or (= u_%sx (_ bv1 8)) (= u_%sy (_ bv1 8))) $x7288 $x3842)))))
+(check-sat)

@@ -2,6 +2,6 @@
 (declare-fun C2 () (_ BitVec 42))
 (declare-fun C1 () (_ BitVec 42))
 (assert
- (let (($x24909 (bvult C1 (_ bv42 42))))
- (and $x24909 (bvult C2 (_ bv42 42)) (bvsge ((_ zero_extend 1) (bvadd C1 C2)) (_ bv42 43)) false)))
+ (let (($x20001 (bvult C1 (_ bv42 42))))
+ (and $x20001 (bvult C2 (_ bv42 42)) (bvsge ((_ zero_extend 1) (bvadd C1 C2)) (_ bv42 43)) false)))
 (check-sat)

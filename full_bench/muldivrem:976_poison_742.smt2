@@ -1,5 +1,5 @@
 (set-info :status unknown)
-(declare-fun %Y () (_ BitVec 28))
+(declare-fun %Y () (_ BitVec 13))
 (assert
- (and (and (distinct ((_ zero_extend 33) %Y) (_ bv0 61)) true) false))
+ (and (and (distinct ((_ zero_extend 40) %Y) (_ bv0 53)) true) false))
 (check-sat)

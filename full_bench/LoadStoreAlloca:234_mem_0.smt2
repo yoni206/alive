@@ -1,0 +1,12 @@
+(set-info :status unknown)
+(declare-fun mem0 () (_ BitVec 8))
+(declare-fun alloca%p_2939 () (_ BitVec 8))
+(declare-fun %p () (_ BitVec 64))
+(declare-fun idx () (_ BitVec 64))
+(assert
+ (forall ((alloca%p_2938 (_ BitVec 8)) )(let (($x17942 (= idx (bvadd %p (_ bv0 64)))))
+ (let ((?x10365 (ite $x17942 ((_ extract 7 0) alloca%p_2939) mem0)))
+ (let (($x2608 (and (distinct %p (_ bv0 64)) true)))
+ (and $x2608 $x2608 (and (distinct (ite $x17942 ((_ extract 7 0) alloca%p_2938) mem0) ?x10365) true))))))
+ )
+(check-sat)

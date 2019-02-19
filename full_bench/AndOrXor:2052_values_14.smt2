@@ -1,0 +1,8 @@
+(set-info :status unknown)
+(declare-fun C1 () (_ BitVec 18))
+(declare-fun C () (_ BitVec 18))
+(declare-fun %x () (_ BitVec 18))
+(assert
+ (let (($x8033 (and (distinct (bvor (bvand %x C1) C) (bvand (bvor %x C) (bvor C C1))) true)))
+ (and (and (distinct (bvand C C1) (_ bv0 18)) true) $x8033)))
+(check-sat)

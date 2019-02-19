@@ -1,8 +1,8 @@
 (set-info :status unknown)
 (declare-fun %A () (_ BitVec 52))
 (assert
- (let ((?x2949 (bvsub (_ bv0 52) %A)))
- (let ((?x2399 (ite (= (ite (bvsgt %A (_ bv0 52)) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) ?x2949 %A)))
- (let ((?x3599 (bvsub (_ bv0 52) ?x2399)))
- (and (distinct (ite (= (ite (bvsgt ?x2399 (_ bv4503599627370495 52)) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) ?x3599 ?x2399) ?x2399) true)))))
+ (let ((?x1927 (bvsub (_ bv0 52) %A)))
+ (let ((?x20019 (ite (= (ite (bvsgt %A (_ bv0 52)) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) ?x1927 %A)))
+ (let ((?x11010 (bvsub (_ bv0 52) ?x20019)))
+ (and (distinct (ite (= (ite (bvsgt ?x20019 (_ bv4503599627370495 52)) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) ?x11010 ?x20019) ?x20019) true)))))
 (check-sat)

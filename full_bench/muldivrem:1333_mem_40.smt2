@@ -5,7 +5,7 @@
 (declare-fun %Op0 () (_ BitVec 44))
 (declare-fun %Op1 () (_ BitVec 44))
 (assert
- (let (($x21226 (= |ana_MaskedValueIsZero(%Op0, (1 << (width(%Op0) - 1)))| (_ bv1 1))))
- (let (($x21026 (= |ana_MaskedValueIsZero(%Op1, (1 << (width(%Op1) - 1)))| (_ bv1 1))))
- (and (=> $x21026 (= (bvand %Op1 (bvshl (_ bv1 44) (bvsub (_ bv44 44) (_ bv1 44)))) (_ bv0 44))) (=> $x21226 (= (bvand %Op0 (bvshl (_ bv1 44) (bvsub (_ bv44 44) (_ bv1 44)))) (_ bv0 44))) $x21026 $x21226 (and (distinct mem0 mem0) true)))))
+ (let (($x6481 (= |ana_MaskedValueIsZero(%Op0, (1 << (width(%Op0) - 1)))| (_ bv1 1))))
+ (let (($x18420 (= |ana_MaskedValueIsZero(%Op1, (1 << (width(%Op1) - 1)))| (_ bv1 1))))
+ (and (=> $x18420 (= (bvand %Op1 (bvshl (_ bv1 44) (bvsub (_ bv44 44) (_ bv1 44)))) (_ bv0 44))) (=> $x6481 (= (bvand %Op0 (bvshl (_ bv1 44) (bvsub (_ bv44 44) (_ bv1 44)))) (_ bv0 44))) $x18420 $x6481 (and (distinct mem0 mem0) true)))))
 (check-sat)

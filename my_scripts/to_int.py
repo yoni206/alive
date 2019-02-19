@@ -102,8 +102,13 @@ def get_opt_name(f):
 def gen_map(dir_of_bv_smt, dir_of_int_smt, dir_of_templates, filter_file):
     with open(filter_file, 'r') as myfile:
         filtered_opts = [l.strip() for l in myfile.readlines()]
+    assert(len(filtered_opts) == len(set(filtered_opts)))
+    filtered_opts = set(filtered_opts)
     bv_smt_files =  [f for f in os.listdir(dir_of_bv_smt) if not f.startswith(".")]
     opt_names = set([get_opt_name(f) for f in bv_smt_files])
+    if not filtered_opts.issubset(opt_names):
+        print("panda", filtered_opts.difference(opt_names))
+        assert(False)
     filtered_opt_names = [n for n in opt_names if n in filtered_opts]
     result = {}
     for opt_name in filtered_opt_names:

@@ -1,9 +1,1 @@
-
-(declare-fun %B () (_ BitVec 39))
-(declare-fun %A () (_ BitVec 39))
-(declare-fun %X () (_ BitVec 39))
-(declare-fun u_%Y () (_ BitVec 8))
-(declare-fun |ana_isPowerOf2(%A)| () (_ BitVec 1))
-(assert (let ((_let_0 (bvult %B (_ bv39 39)))) (let ((_let_1 (= |ana_isPowerOf2(%A)| (_ bv1 1)))) (let ((_let_2 (or (not (= %X (_ bv274877906944 39))) (not (= (bvlshr %A %B) (_ bv549755813887 39)))))) (let ((_let_3 (not (= (bvlshr %A %B) (_ bv0 39))))) (and _let_0 _let_2 (=> _let_1 (and (= (bvand %A (bvsub %A (_ bv1 39))) (_ bv0 39)) (not (= %A (_ bv0 39))))) _let_1 (= u_%Y (_ bv1 8)) (not (and _let_0 _let_2 _let_3)) _let_3))))))
-(assert true)
-(check-sat)
+(error "Couldn't open file: full_bench/simplifyValueKnownNonZero:11_undef_35.smt2")

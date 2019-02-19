@@ -1,0 +1,7 @@
+(set-info :status unknown)
+(declare-fun mem0 () (_ BitVec 8))
+(declare-fun C1 () (_ BitVec 53))
+(declare-fun C2 () (_ BitVec 53))
+(assert
+ (and (= (bvand C2 (bvlshr (_ bv9007199254740991 53) C1)) (bvlshr (_ bv9007199254740991 53) C1)) (and (distinct mem0 mem0) true)))
+(check-sat)

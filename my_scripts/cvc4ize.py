@@ -3,7 +3,7 @@ import subprocess
 import sys
 import os
 import re
-CVC4_BV_TO_BOOL_PATH = "/home/yoniz/git/CVC4/bv_to_bool_build/bin/./cvc4"
+CVC4_MINIMIZED_PATH = "/home/yoniz/git/CVC4/bv_to_bool_build/bin/./cvc4"
 
 def main(orig_dir, dest_dir):
     try:
@@ -23,8 +23,8 @@ def main(orig_dir, dest_dir):
 
 
 def do_cvc4(bv_path, bool_path):
-    command = [CVC4_BV_TO_BOOL_PATH, "-qqqq", "--bv-to-bool", "--preprocess-only", "--dump=assertions", bv_path]
-    #command = [CVC4_BV_TO_BOOL_PATH, "-qqqq", "--preprocess-only", "--dump=assertions", bv_path]
+    #command = [CVC4_MINIMIZED_PATH, "-qqqq", "--bv-to-bool", "--preprocess-only", "--dump=assertions", bv_path]
+    command = [CVC4_MINIMIZED_PATH, "-qqqq", "--preprocess-only", "--dump=assertions", bv_path]
     result_object = subprocess.run(command, stdout=subprocess.PIPE)
     result_string = "\n".join([line for line in result_object.stdout.decode('utf-8').splitlines() if not line.startswith("(set-") and not line.startswith("(meta-")])
     with open(bool_path, "w") as myfile:

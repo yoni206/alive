@@ -1,7 +1,1 @@
-
-(declare-fun mem0 () (_ BitVec 8))
-(declare-fun u_%Op1 () (_ BitVec 8))
-(declare-fun %Y () (_ BitVec 59))
-(assert (and (bvult %Y (_ bv59 59)) (= u_%Op1 (_ bv1 8)) (not (= mem0 mem0))))
-(assert true)
-(check-sat)
+(error "Couldn't open file: full_bench/AddSub:1665_mem_51.smt2")

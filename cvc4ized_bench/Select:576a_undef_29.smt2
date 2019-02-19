@@ -1,4 +1,4 @@
 
-(assert (not (bvult (bvsub (_ bv37 37) (_ bv1 37)) (_ bv37 37))))
+(assert (not (bvult (bvsub (_ bv32 32) (_ bv1 32)) (_ bv32 32))))
 (assert true)
 (check-sat)

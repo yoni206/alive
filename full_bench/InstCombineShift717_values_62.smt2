@@ -3,8 +3,8 @@
 (declare-fun %Op0 () (_ BitVec 2))
 (declare-fun |ana_ComputeNumSignBits(%Op0)| () (_ BitVec 2))
 (assert
- (let (($x16317 (= ((_ extract 0 0) |ana_ComputeNumSignBits(%Op0)|) ((_ extract 1 1) |ana_ComputeNumSignBits(%Op0)|))))
- (let (($x5051 (bvule (ite $x16317 (_ bv2 2) (_ bv1 2)) (ite (= ((_ extract 0 0) %Op0) ((_ extract 1 1) %Op0)) (_ bv2 2) (_ bv1 2)))))
- (let (($x8697 (bvult C (_ bv2 2))))
- (and $x8697 $x5051 (bvsgt (ite $x16317 (_ bv2 2) (_ bv1 2)) C) (and (distinct (bvshl %Op0 C) (bvshl %Op0 C)) true))))))
+ (let (($x19920 (= ((_ extract 0 0) |ana_ComputeNumSignBits(%Op0)|) ((_ extract 1 1) |ana_ComputeNumSignBits(%Op0)|))))
+ (let (($x11051 (bvule (ite $x19920 (_ bv2 2) (_ bv1 2)) (ite (= ((_ extract 0 0) %Op0) ((_ extract 1 1) %Op0)) (_ bv2 2) (_ bv1 2)))))
+ (let (($x12998 (bvult C (_ bv2 2))))
+ (and $x12998 $x11051 (bvsgt (ite $x19920 (_ bv2 2) (_ bv1 2)) C) (and (distinct (bvshl %Op0 C) (bvshl %Op0 C)) true))))))
 (check-sat)

@@ -1,6 +1,1 @@
-
-(declare-fun C2 () (_ BitVec 51))
-(declare-fun C1 () (_ BitVec 51))
-(assert false)
-(assert true)
-(check-sat)
+(error "Couldn't open file: full_bench/AndOrXor:1819_undef_43.smt2")

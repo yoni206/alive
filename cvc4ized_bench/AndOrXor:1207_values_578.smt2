@@ -1,7 +1,7 @@
 
-(declare-fun C2 () (_ BitVec 5))
-(declare-fun C1 () (_ BitVec 11))
-(declare-fun %x () (_ BitVec 11))
-(assert (not (= (bvand ((_ extract 4 0) (bvand %x C1)) C2) (bvand ((_ extract 4 0) %x) (bvand ((_ extract 4 0) C1) C2)))))
+(declare-fun C2 () (_ BitVec 63))
+(declare-fun C1 () (_ BitVec 64))
+(declare-fun %x () (_ BitVec 64))
+(assert (not (= (bvand ((_ extract 62 0) (bvand %x C1)) C2) (bvand ((_ extract 62 0) %x) (bvand ((_ extract 62 0) C1) C2)))))
 (assert true)
 (check-sat)

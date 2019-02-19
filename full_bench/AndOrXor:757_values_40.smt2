@@ -5,8 +5,8 @@
 (declare-fun C1 () (_ BitVec 44))
 (declare-fun %a () (_ BitVec 44))
 (assert
- (let ((?x23655 (ite (= (bvand %a C3) C4) (_ bv1 1) (_ bv0 1))))
- (let ((?x24409 (ite (= (bvand %a C1) C2) (_ bv1 1) (_ bv0 1))))
- (let (($x13134 (and (distinct (bvand ?x24409 ?x23655) (ite (= (bvand %a (bvor C1 C3)) (bvor C2 C4)) (_ bv1 1) (_ bv0 1))) true)))
- (and (= (bvand (bvand C1 C3) (bvxor C2 C4)) (_ bv0 44)) (= (bvand C1 C2) C2) (= (bvand C3 C4) C4) $x13134)))))
+ (let ((?x9820 (ite (= (bvand %a C3) C4) (_ bv1 1) (_ bv0 1))))
+ (let ((?x9180 (ite (= (bvand %a C1) C2) (_ bv1 1) (_ bv0 1))))
+ (let (($x10037 (and (distinct (bvand ?x9180 ?x9820) (ite (= (bvand %a (bvor C1 C3)) (bvor C2 C4)) (_ bv1 1) (_ bv0 1))) true)))
+ (and (= (bvand (bvand C1 C3) (bvxor C2 C4)) (_ bv0 44)) (= (bvand C1 C2) C2) (= (bvand C3 C4) C4) $x10037)))))
 (check-sat)

@@ -1,4 +1,1 @@
-
-(assert false)
-(assert true)
-(check-sat)
+(error "Couldn't open file: full_bench/AddSub:1165_poison_47.smt2")

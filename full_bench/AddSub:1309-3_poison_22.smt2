@@ -2,7 +2,7 @@
 (declare-fun %b () (_ BitVec 27))
 (declare-fun %a () (_ BitVec 27))
 (assert
- (let (($x18092 (= (bvadd ((_ zero_extend 1) %a) ((_ zero_extend 1) %b)) ((_ zero_extend 1) (bvadd %a %b)))))
- (let (($x2141 (= (bvadd ((_ zero_extend 1) (bvand %a %b)) ((_ zero_extend 1) (bvor %a %b))) ((_ zero_extend 1) (bvadd (bvand %a %b) (bvor %a %b))))))
- (and $x2141 (not $x18092)))))
+ (let (($x18878 (= (bvadd ((_ zero_extend 1) %a) ((_ zero_extend 1) %b)) ((_ zero_extend 1) (bvadd %a %b)))))
+ (let (($x2273 (= (bvadd ((_ zero_extend 1) (bvand %a %b)) ((_ zero_extend 1) (bvor %a %b))) ((_ zero_extend 1) (bvadd (bvand %a %b) (bvor %a %b))))))
+ (and $x2273 (not $x18878)))))
 (check-sat)

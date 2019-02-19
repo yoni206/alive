@@ -1,6 +1,1 @@
-
-(declare-fun %Y () (_ BitVec 16))
-(declare-fun %c () (_ BitVec 1))
-(assert false)
-(assert true)
-(check-sat)
+(error "Couldn't open file: full_bench/SimplifyDivRemOfSelect_poison_8.smt2")

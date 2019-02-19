@@ -1,0 +1,10 @@
+(set-info :status unknown)
+(declare-fun mem0 () (_ BitVec 8))
+(declare-fun |ana_WillNotOverflowUnsignedSub(%A, %B)| () (_ BitVec 1))
+(declare-fun %B () (_ BitVec 37))
+(declare-fun %A () (_ BitVec 37))
+(assert
+ (let (($x4140 (= |ana_WillNotOverflowUnsignedSub(%A, %B)| (_ bv1 1))))
+ (let (($x12372 (= (bvsub ((_ zero_extend 1) %A) ((_ zero_extend 1) %B)) ((_ zero_extend 1) (bvsub %A %B)))))
+ (and (=> $x4140 $x12372) $x4140 (and (distinct mem0 mem0) true)))))
+(check-sat)

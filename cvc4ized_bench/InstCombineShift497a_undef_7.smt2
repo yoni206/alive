@@ -1,5 +1,1 @@
-
-(declare-fun C () (_ BitVec 8))
-(assert (let ((_let_0 (bvult C (_ bv8 8)))) (and _let_0 (not _let_0))))
-(assert true)
-(check-sat)
+(error "Couldn't open file: full_bench/InstCombineShift497a_undef_7.smt2")

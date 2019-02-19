@@ -1,6 +1,6 @@
 (set-info :status unknown)
-(declare-fun %y () (_ BitVec 9))
-(declare-fun %x () (_ BitVec 9))
+(declare-fun %y () (_ BitVec 8))
+(declare-fun %x () (_ BitVec 8))
 (assert
- (and (distinct (bvxor (bvor %x %y) (_ bv511 9)) (bvand (bvxor %x (_ bv511 9)) (bvxor %y (_ bv511 9)))) true))
+ (and (distinct (bvxor (bvor %x %y) (_ bv255 8)) (bvand (bvxor %x (_ bv255 8)) (bvxor %y (_ bv255 8)))) true))
 (check-sat)

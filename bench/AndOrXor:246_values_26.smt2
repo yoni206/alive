@@ -1,0 +1,10 @@
+(set-info :status unknown)
+(declare-fun C2 () (_ BitVec 31))
+(declare-fun C1 () (_ BitVec 31))
+(declare-fun %X () (_ BitVec 31))
+(declare-fun u_%op () (_ BitVec 8))
+(assert
+ (let (($x18353 (and (distinct (bvand (bvashr %X C1) C2) (bvand (bvlshr %X C1) C2)) true)))
+ (let (($x13414 (bvult C1 (_ bv31 31))))
+ (and $x13414 $x13414 (= u_%op (_ bv1 8)) (= (bvand C2 (bvlshr (_ bv2147483647 31) C1)) C2) $x18353))))
+(check-sat)

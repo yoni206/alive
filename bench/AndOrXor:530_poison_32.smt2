@@ -1,0 +1,5 @@
+(set-info :status unknown)
+(declare-fun C () (_ BitVec 36))
+(assert
+ (and (and (and (distinct C (_ bv0 36)) true) (= (bvand C (bvsub C (_ bv1 36))) (_ bv0 36))) false))
+(check-sat)

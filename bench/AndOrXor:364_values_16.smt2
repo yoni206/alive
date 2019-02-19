@@ -1,0 +1,9 @@
+(set-info :status unknown)
+(declare-fun C2 () (_ BitVec 19))
+(declare-fun %B () (_ BitVec 19))
+(declare-fun %A () (_ BitVec 19))
+(declare-fun C1 () (_ BitVec 19))
+(assert
+ (let (($x6156 (and (distinct (bvand (bvsub (bvxor %A C1) %B) C2) (bvand (bvsub %A %B) C2)) true)))
+ (and (= (bvand (bvadd C2 (_ bv1 19)) (bvsub (bvadd C2 (_ bv1 19)) (_ bv1 19))) (_ bv0 19)) (= (bvand C1 C2) (_ bv0 19)) $x6156)))
+(check-sat)

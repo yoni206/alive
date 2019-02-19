@@ -1,4 +1,1 @@
-
-(assert false)
-(assert true)
-(check-sat)
+(error "Couldn't open file: full_bench/AndOrXor:2453_poison_120.smt2")

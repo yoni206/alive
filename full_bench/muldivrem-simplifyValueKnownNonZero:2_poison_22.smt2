@@ -1,0 +1,13 @@
+(set-info :status unknown)
+(declare-fun %A () (_ BitVec 27))
+(declare-fun %B () (_ BitVec 27))
+(declare-fun u_%Y () (_ BitVec 8))
+(declare-fun |ana_isPowerOf2(%A)| () (_ BitVec 1))
+(assert
+ (let (($x2475 (= |ana_isPowerOf2(%A)| (_ bv1 1))))
+ (let (($x5753 (bvult %B (_ bv27 27))))
+ (let (($x13763 (=> $x2475 (and (and (distinct %A (_ bv0 27)) true) (= (bvand %A (bvsub %A (_ bv1 27))) (_ bv0 27))))))
+ (let ((?x8978 (bvlshr %A %B)))
+ (let (($x14130 (and (distinct ?x8978 (_ bv0 27)) true)))
+ (and $x5753 $x14130 $x13763 $x5753 $x2475 (= u_%Y (_ bv1 8)) (not (= (bvshl ?x8978 %B) %A)))))))))
+(check-sat)

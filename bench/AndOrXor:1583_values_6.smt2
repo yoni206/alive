@@ -1,0 +1,12 @@
+(set-info :status unknown)
+(declare-fun %D () (_ BitVec 10))
+(declare-fun %C () (_ BitVec 10))
+(declare-fun %Cond () (_ BitVec 1))
+(assert
+ (let ((?x3219 (bvxor %Cond (_ bv1 1))))
+ (let ((?x9071 ((_ sign_extend 9) ?x3219)))
+ (let ((?x5284 (bvand ?x9071 %D)))
+ (let ((?x7090 ((_ sign_extend 9) %Cond)))
+ (let ((?x9692 (bvand ?x7090 %C)))
+ (and (distinct (bvor ?x9692 ?x5284) (ite (= %Cond (_ bv1 1)) %C %D)) true)))))))
+(check-sat)

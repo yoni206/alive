@@ -2,5 +2,5 @@
 (declare-fun %B () (_ BitVec 64))
 (declare-fun %A () (_ BitVec 64))
 (assert
- (and (distinct (bvor ((_ extract 49 0) %A) ((_ extract 49 0) %B)) ((_ extract 49 0) (bvor %A %B))) true))
+ (and (distinct (bvor ((_ extract 48 0) %A) ((_ extract 48 0) %B)) ((_ extract 48 0) (bvor %A %B))) true))
 (check-sat)

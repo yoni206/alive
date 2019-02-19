@@ -1,7 +1,0 @@
-
-(declare-fun |ana_WillNotOverflowSignedSub(%A, %B)| () (_ BitVec 1))
-(declare-fun %B () (_ BitVec 51))
-(declare-fun %A () (_ BitVec 51))
-(assert false)
-(assert true)
-(check-sat)

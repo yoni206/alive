@@ -2,6 +2,6 @@
 (declare-fun %b () (_ BitVec 58))
 (declare-fun %a () (_ BitVec 58))
 (assert
- (let (($x18801 (= (bvadd ((_ sign_extend 1) (bvand %a %b)) ((_ sign_extend 1) (bvor %a %b))) ((_ sign_extend 1) (bvadd (bvand %a %b) (bvor %a %b))))))
- (and $x18801 false)))
+ (let (($x18794 (= (bvadd ((_ sign_extend 1) (bvand %a %b)) ((_ sign_extend 1) (bvor %a %b))) ((_ sign_extend 1) (bvadd (bvand %a %b) (bvor %a %b))))))
+ (and $x18794 false)))
 (check-sat)

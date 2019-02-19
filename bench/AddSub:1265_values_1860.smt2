@@ -1,0 +1,11 @@
+(set-info :status unknown)
+(declare-fun C () (_ BitVec 32))
+(declare-fun %x () (_ BitVec 11))
+(declare-fun |ana_WillNotOverflowSignedAdd(%x, trunc(C))| () (_ BitVec 1))
+(declare-fun u_%sx () (_ BitVec 8))
+(assert
+ (let (($x18042 (and (distinct (bvadd ((_ sign_extend 21) %x) C) ((_ sign_extend 21) (bvadd %x ((_ extract 10 0) C)))) true)))
+ (let (($x17996 (= |ana_WillNotOverflowSignedAdd(%x, trunc(C))| (_ bv1 1))))
+ (let (($x14837 (= (bvadd ((_ sign_extend 1) %x) ((_ sign_extend 1) ((_ extract 10 0) C))) ((_ sign_extend 1) (bvadd %x ((_ extract 10 0) C))))))
+ (and (=> $x17996 $x14837) (= u_%sx (_ bv1 8)) $x17996 (= (bvand C (bvshl (_ bv4294967295 32) (bvsub (_ bv11 32) (_ bv1 32)))) (_ bv0 32)) $x18042)))))
+(check-sat)

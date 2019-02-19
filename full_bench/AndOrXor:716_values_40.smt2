@@ -3,7 +3,7 @@
 (declare-fun %d () (_ BitVec 44))
 (declare-fun %b () (_ BitVec 44))
 (assert
- (let ((?x8082 (ite (= (bvand %a %d) %a) (_ bv1 1) (_ bv0 1))))
- (let ((?x8512 (ite (= (bvand %a %b) %a) (_ bv1 1) (_ bv0 1))))
- (and (distinct (bvand ?x8512 ?x8082) (ite (= (bvand %a (bvand %b %d)) %a) (_ bv1 1) (_ bv0 1))) true))))
+ (let ((?x14067 (ite (= (bvand %a %d) %a) (_ bv1 1) (_ bv0 1))))
+ (let ((?x6668 (ite (= (bvand %a %b) %a) (_ bv1 1) (_ bv0 1))))
+ (and (distinct (bvand ?x6668 ?x14067) (ite (= (bvand %a (bvand %b %d)) %a) (_ bv1 1) (_ bv0 1))) true))))
 (check-sat)

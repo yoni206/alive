@@ -1,5 +1,5 @@
 
-(declare-fun %Y () (_ BitVec 18))
-(assert (and (= %Y (_ bv0 18)) (not (= ((_ zero_extend 5) %Y) (_ bv0 23)))))
+(declare-fun %Y () (_ BitVec 34))
+(assert (and (= %Y (_ bv0 34)) (not (= ((_ zero_extend 2) %Y) (_ bv0 36)))))
 (assert true)
 (check-sat)

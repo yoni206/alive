@@ -1,0 +1,10 @@
+(set-info :status unknown)
+(declare-fun mem0 () (_ BitVec 8))
+(declare-fun %p1 () (_ BitVec 64))
+(declare-fun %c () (_ BitVec 1))
+(assert
+ (let ((?x14315 (concat (concat (concat (concat mem0 mem0) mem0) mem0) ((_ extract 0 0) mem0))))
+ (let ((?x4917 (ite (= %c (_ bv1 1)) (_ bv0 64) %p1)))
+ (let (($x19180 (and (distinct ?x4917 (_ bv0 64)) true)))
+ (and $x19180 $x19180 (and (distinct ?x14315 ?x14315) true))))))
+(check-sat)

@@ -3,7 +3,7 @@
 (declare-fun %A () (_ BitVec 59))
 (declare-fun C1 () (_ BitVec 59))
 (assert
- (let ((?x7858 (ite (= (ite (bvslt %A C1) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) %A C1)))
- (let (($x6562 (and (distinct (ite (= (ite (bvslt ?x7858 C2) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) ?x7858 C2) (ite (= (ite (bvslt %A C2) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) %A C2)) true)))
- (and (bvsgt C1 C2) $x6562))))
+ (let ((?x20830 (ite (= (ite (bvslt %A C1) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) %A C1)))
+ (let (($x13289 (and (distinct (ite (= (ite (bvslt ?x20830 C2) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) ?x20830 C2) (ite (= (ite (bvslt %A C2) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) %A C2)) true)))
+ (and (bvsgt C1 C2) $x13289))))
 (check-sat)

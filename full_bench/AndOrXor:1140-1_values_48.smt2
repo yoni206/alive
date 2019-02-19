@@ -4,7 +4,7 @@
 (declare-fun %op0LHS () (_ BitVec 52))
 (declare-fun |ana_MaskedValueIsZero(%op0LHS, ~C)| () (_ BitVec 1))
 (assert
- (let (($x20957 (and (distinct (bvand (bvxor %op0LHS %op0RHS) C) (bvxor %op0LHS (bvand %op0RHS C))) true)))
- (let (($x21064 (= |ana_MaskedValueIsZero(%op0LHS, ~C)| (_ bv1 1))))
- (and (=> $x21064 (= (bvand %op0LHS (bvnot C)) (_ bv0 52))) $x21064 $x20957))))
+ (let (($x3995 (and (distinct (bvand (bvxor %op0LHS %op0RHS) C) (bvxor %op0LHS (bvand %op0RHS C))) true)))
+ (let (($x17573 (= |ana_MaskedValueIsZero(%op0LHS, ~C)| (_ bv1 1))))
+ (and (=> $x17573 (= (bvand %op0LHS (bvnot C)) (_ bv0 52))) $x17573 $x3995))))
 (check-sat)

@@ -2,5 +2,5 @@
 (declare-fun %B () (_ BitVec 7))
 (declare-fun %A () (_ BitVec 7))
 (assert
- (and (distinct (bvor ((_ zero_extend 5) %A) ((_ zero_extend 5) %B)) ((_ zero_extend 5) (bvor %A %B))) true))
+ (and (distinct (bvor ((_ zero_extend 44) %A) ((_ zero_extend 44) %B)) ((_ zero_extend 44) (bvor %A %B))) true))
 (check-sat)

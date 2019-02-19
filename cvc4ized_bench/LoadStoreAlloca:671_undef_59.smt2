@@ -1,0 +1,1 @@
+(error "Couldn't open file: full_bench/LoadStoreAlloca:671_undef_59.smt2")

@@ -1,6 +1,6 @@
 (set-info :status unknown)
 (declare-fun %op0RHS () (_ BitVec 15))
 (assert
- (let (($x13672 (bvult %op0RHS (_ bv15 15))))
- (and $x13672 false)))
+ (let (($x412 (bvult %op0RHS (_ bv15 15))))
+ (and $x412 false)))
 (check-sat)

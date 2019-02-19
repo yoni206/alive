@@ -4,6 +4,6 @@
 (declare-fun u_%LHS () (_ BitVec 8))
 (declare-fun %Y () (_ BitVec 55))
 (assert
- (let (($x11172 (and (and (distinct (bvadd C2 (_ bv1 55)) (_ bv0 55)) true) (= (bvand (bvadd C2 (_ bv1 55)) (bvsub (bvadd C2 (_ bv1 55)) (_ bv1 55))) (_ bv0 55)))))
- (and (= (bvand |ana_computeKnownZeroBits(%Y)| %Y) (_ bv0 55)) (= u_%LHS (_ bv1 8)) $x11172 (= (bvor C2 |ana_computeKnownZeroBits(%Y)|) (_ bv36028797018963967 55)) false)))
+ (let (($x11171 (and (and (distinct (bvadd C2 (_ bv1 55)) (_ bv0 55)) true) (= (bvand (bvadd C2 (_ bv1 55)) (bvsub (bvadd C2 (_ bv1 55)) (_ bv1 55))) (_ bv0 55)))))
+ (and (= (bvand |ana_computeKnownZeroBits(%Y)| %Y) (_ bv0 55)) (= u_%LHS (_ bv1 8)) $x11171 (= (bvor C2 |ana_computeKnownZeroBits(%Y)|) (_ bv36028797018963967 55)) false)))
 (check-sat)

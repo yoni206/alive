@@ -1,0 +1,12 @@
+(set-info :status unknown)
+(declare-fun |ana_isPowerOf2(%K2)| () (_ BitVec 1))
+(declare-fun |ana_isPowerOf2(%K1)| () (_ BitVec 1))
+(declare-fun %K2 () (_ BitVec 19))
+(declare-fun %K1 () (_ BitVec 19))
+(assert
+ (let (($x1088 (= |ana_isPowerOf2(%K2)| (_ bv1 1))))
+ (let (($x1955 (= |ana_isPowerOf2(%K1)| (_ bv1 1))))
+ (let (($x821 (=> $x1088 (and (and (distinct %K2 (_ bv0 19)) true) (= (bvand %K2 (bvsub %K2 (_ bv1 19))) (_ bv0 19))))))
+ (let (($x7570 (=> $x1955 (and (and (distinct %K1 (_ bv0 19)) true) (= (bvand %K1 (bvsub %K1 (_ bv1 19))) (_ bv0 19))))))
+ (and $x7570 $x821 $x1955 $x1088 false))))))
+(check-sat)

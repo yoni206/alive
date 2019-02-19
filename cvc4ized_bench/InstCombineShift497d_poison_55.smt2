@@ -1,5 +1,1 @@
-
-(declare-fun C () (_ BitVec 56))
-(assert false)
-(assert true)
-(check-sat)
+(error "Couldn't open file: full_bench/InstCombineShift497d_poison_55.smt2")

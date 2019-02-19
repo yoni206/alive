@@ -1,8 +1,8 @@
 (set-info :status unknown)
-(declare-fun %X () (_ BitVec 60))
-(declare-fun %Y () (_ BitVec 60))
+(declare-fun %X () (_ BitVec 64))
+(declare-fun %Y () (_ BitVec 64))
 (assert
- (let (($x9901 (= (bvmul (bvudiv %X %Y) %Y) %X)))
- (let (($x1305 (and (distinct %Y (_ bv0 60)) true)))
- (and $x1305 $x9901 false))))
+ (let (($x18803 (= (bvmul (bvudiv %X %Y) %Y) %X)))
+ (let (($x2691 (and (distinct %Y (_ bv0 64)) true)))
+ (and $x2691 $x18803 false))))
 (check-sat)

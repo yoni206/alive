@@ -1,0 +1,12 @@
+(set-info :status unknown)
+(declare-fun C1 () (_ BitVec 7))
+(declare-fun C2 () (_ BitVec 7))
+(declare-fun %X () (_ BitVec 7))
+(assert
+ (let ((?x4451 (bvsdiv C2 C1)))
+ (let ((?x25094 (bvsdiv %X ?x4451)))
+ (let ((?x14415 (bvmul %X C1)))
+ (let ((?x23595 (bvsdiv ?x14415 C2)))
+ (let (($x15454 (= (bvmul ((_ sign_extend 7) %X) ((_ sign_extend 7) C1)) ((_ sign_extend 7) ?x14415))))
+ (and (and (distinct C2 (_ bv0 7)) true) (or (and (distinct ?x14415 (_ bv64 7)) true) (and (distinct C2 (_ bv127 7)) true)) $x15454 (= (bvmul ?x23595 C2) ?x14415) (= (bvsrem C2 C1) (_ bv0 7)) (and (distinct ?x23595 ?x25094) true))))))))
+(check-sat)

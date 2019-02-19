@@ -5,8 +5,8 @@
 (declare-fun u_%sy () (_ BitVec 8))
 (declare-fun u_%sx () (_ BitVec 8))
 (assert
- (let (($x10085 (and (distinct (bvadd ((_ sign_extend 43) %x) ((_ sign_extend 43) %y)) ((_ sign_extend 43) (bvadd %x %y))) true)))
- (let (($x1254 (= |ana_WillNotOverflowSignedAdd(%x, %y)| (_ bv1 1))))
- (let (($x5981 (= (bvadd ((_ sign_extend 1) %x) ((_ sign_extend 1) %y)) ((_ sign_extend 1) (bvadd %x %y)))))
- (and (=> $x1254 $x5981) (or (= u_%sx (_ bv1 8)) (= u_%sy (_ bv1 8))) $x1254 $x10085)))))
+ (let (($x10079 (and (distinct (bvadd ((_ sign_extend 43) %x) ((_ sign_extend 43) %y)) ((_ sign_extend 43) (bvadd %x %y))) true)))
+ (let (($x2168 (= |ana_WillNotOverflowSignedAdd(%x, %y)| (_ bv1 1))))
+ (let (($x6501 (= (bvadd ((_ sign_extend 1) %x) ((_ sign_extend 1) %y)) ((_ sign_extend 1) (bvadd %x %y)))))
+ (and (=> $x2168 $x6501) (or (= u_%sx (_ bv1 8)) (= u_%sy (_ bv1 8))) $x2168 $x10079)))))
 (check-sat)

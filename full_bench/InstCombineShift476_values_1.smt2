@@ -4,7 +4,7 @@
 (declare-fun C2 () (_ BitVec 5))
 (declare-fun %X () (_ BitVec 5))
 (assert
- (let (($x2725 (and (distinct (bvshl (bvor (bvand (bvlshr %X C) C2) %Y) C) (bvor (bvand %X (bvshl C2 C)) (bvshl %Y C))) true)))
- (let (($x20146 (bvult C (_ bv5 5))))
- (and $x20146 $x20146 $x2725))))
+ (let (($x23639 (and (distinct (bvshl (bvor (bvand (bvlshr %X C) C2) %Y) C) (bvor (bvand %X (bvshl C2 C)) (bvshl %Y C))) true)))
+ (let (($x11372 (bvult C (_ bv5 5))))
+ (and $x11372 $x11372 $x23639))))
 (check-sat)

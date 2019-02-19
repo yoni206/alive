@@ -1,0 +1,1 @@
+(error "Couldn't open file: full_bench/AndOrXor:1280_poison_47.smt2")

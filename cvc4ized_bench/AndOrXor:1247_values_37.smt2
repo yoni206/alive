@@ -1,0 +1,1 @@
+(error "Couldn't open file: full_bench/AndOrXor:1247_values_37.smt2")

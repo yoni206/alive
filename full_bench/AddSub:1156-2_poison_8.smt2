@@ -1,6 +1,6 @@
 (set-info :status unknown)
 (declare-fun %b () (_ BitVec 13))
 (assert
- (let (($x1374 (= (bvadd ((_ sign_extend 1) %b) ((_ sign_extend 1) %b)) ((_ sign_extend 1) (bvadd %b %b)))))
- (and $x1374 (not (= (bvashr (bvshl %b (_ bv1 13)) (_ bv1 13)) %b)))))
+ (let (($x809 (= (bvadd ((_ sign_extend 1) %b) ((_ sign_extend 1) %b)) ((_ sign_extend 1) (bvadd %b %b)))))
+ (and $x809 (not (= (bvashr (bvshl %b (_ bv1 13)) (_ bv1 13)) %b)))))
 (check-sat)

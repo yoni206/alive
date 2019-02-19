@@ -1,6 +1,1 @@
-
-(declare-fun %y () (_ BitVec 17))
-(declare-fun %x () (_ BitVec 17))
-(assert (not (= (bvand ((_ zero_extend 36) %x) ((_ zero_extend 36) %y)) ((_ zero_extend 36) (bvand %x %y)))))
-(assert true)
-(check-sat)
+(error "Couldn't open file: full_bench/AndOrXor:1346b_values_2004.smt2")

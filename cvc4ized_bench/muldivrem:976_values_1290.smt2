@@ -1,6 +1,1 @@
-
-(declare-fun %Y () (_ BitVec 44))
-(declare-fun %X () (_ BitVec 44))
-(assert (let ((_let_0 ((_ zero_extend 13) %Y))) (and (not (= _let_0 (_ bv0 57))) (not (= (bvudiv ((_ zero_extend 13) %X) _let_0) ((_ zero_extend 13) (bvudiv %X %Y)))))))
-(assert true)
-(check-sat)
+(error "Couldn't open file: full_bench/muldivrem:976_values_1290.smt2")

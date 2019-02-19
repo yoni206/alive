@@ -2,7 +2,7 @@
 (declare-fun %X () (_ BitVec 26))
 (declare-fun %Y () (_ BitVec 26))
 (assert
- (let (($x18023 (= (bvmul (bvudiv %X %Y) %Y) %X)))
- (let (($x16116 (and (distinct %Y (_ bv0 26)) true)))
- (and $x16116 $x18023 false))))
+ (let (($x12471 (= (bvmul (bvudiv %X %Y) %Y) %X)))
+ (let (($x102 (and (distinct %Y (_ bv0 26)) true)))
+ (and $x102 $x12471 false))))
 (check-sat)

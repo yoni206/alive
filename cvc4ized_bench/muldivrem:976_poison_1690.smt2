@@ -1,5 +1,5 @@
 
-(declare-fun %Y () (_ BitVec 28))
+(declare-fun %Y () (_ BitVec 32))
 (assert false)
 (assert true)
 (check-sat)

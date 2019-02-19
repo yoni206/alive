@@ -1,0 +1,6 @@
+(set-info :status unknown)
+(declare-fun %op1 () (_ BitVec 51))
+(declare-fun %a () (_ BitVec 51))
+(assert
+ (and (distinct (bvxor (bvand %a %op1) %op1) (bvand (bvxor %a (_ bv2251799813685247 51)) %op1)) true))
+(check-sat)

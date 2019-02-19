@@ -1,0 +1,13 @@
+(set-info :status unknown)
+(declare-fun C1 () (_ BitVec 5))
+(declare-fun %Y () (_ BitVec 5))
+(declare-fun C2 () (_ BitVec 5))
+(declare-fun |ana_MaskedValueIsZero(%Y, (-1 << (log2(C1) + 1)))| () (_ BitVec 1))
+(assert
+ (let ((?x4377 (ite (and (distinct ((_ extract 2 2) C1) (_ bv0 1)) true) (_ bv2 5) (ite (and (distinct ((_ extract 1 1) C1) (_ bv0 1)) true) (_ bv1 5) (_ bv0 5)))))
+ (let ((?x464 (ite (and (distinct ((_ extract 4 3) C1) (_ bv0 2)) true) (ite (and (distinct ((_ extract 4 4) C1) (_ bv0 1)) true) (_ bv4 5) (_ bv3 5)) ?x4377)))
+ (let ((?x1839 (bvsub (bvsub (_ bv5 5) ?x464) (_ bv1 5))))
+ (let (($x2004 (and (distinct (bvadd (bvxor %Y C2) C1) (bvashr (bvshl %Y ?x1839) ?x1839)) true)))
+ (let (($x3495 (= |ana_MaskedValueIsZero(%Y, (-1 << (log2(C1) + 1)))| (_ bv1 1))))
+ (and (=> $x3495 (= (bvand %Y (bvshl (_ bv31 5) (bvadd ?x464 (_ bv1 5)))) (_ bv0 5))) (= C2 (bvneg C1)) (and (and (distinct C1 (_ bv0 5)) true) (= (bvand C1 (bvsub C1 (_ bv1 5))) (_ bv0 5))) $x3495 $x2004)))))))
+(check-sat)

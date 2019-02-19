@@ -1,8 +1,1 @@
-
-(declare-fun |ana_isPowerOf2(%K2)| () (_ BitVec 1))
-(declare-fun |ana_isPowerOf2(%K1)| () (_ BitVec 1))
-(declare-fun %K2 () (_ BitVec 51))
-(declare-fun %K1 () (_ BitVec 51))
-(assert false)
-(assert true)
-(check-sat)
+(error "Couldn't open file: full_bench/AndOrXor:1593_poison_43.smt2")

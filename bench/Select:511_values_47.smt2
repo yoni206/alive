@@ -1,8 +1,8 @@
 (set-info :status unknown)
-(declare-fun %X () (_ BitVec 49))
-(declare-fun C2 () (_ BitVec 49))
-(declare-fun C () (_ BitVec 49))
+(declare-fun %X () (_ BitVec 55))
+(declare-fun C2 () (_ BitVec 55))
+(declare-fun C () (_ BitVec 55))
 (assert
- (let (($x4424 (and (distinct (ite (= (ite (bvslt %X C) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) %X C2) (ite (= (ite (bvsgt %X C2) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) C2 %X)) true)))
- (and (= C2 (bvsub C (_ bv1 49))) (not (= C (_ bv281474976710656 49))) $x4424)))
+ (let (($x15732 (and (distinct (ite (= (ite (bvslt %X C) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) %X C2) (ite (= (ite (bvsgt %X C2) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) C2 %X)) true)))
+ (and (= C2 (bvsub C (_ bv1 55))) (not (= C (_ bv18014398509481984 55))) $x15732)))
 (check-sat)

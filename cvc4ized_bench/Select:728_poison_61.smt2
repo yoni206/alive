@@ -1,6 +1,1 @@
-
-(declare-fun C2 () (_ BitVec 3))
-(declare-fun C1 () (_ BitVec 3))
-(assert false)
-(assert true)
-(check-sat)
+(error "Couldn't open file: full_bench/Select:728_poison_61.smt2")

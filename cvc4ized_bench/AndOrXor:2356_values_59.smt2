@@ -1,6 +1,0 @@
-
-(declare-fun %op1 () (_ BitVec 63))
-(declare-fun %A () (_ BitVec 1))
-(assert (not (= (bvor ((_ sign_extend 62) %A) %op1) (ite (= %A (_ bv1 1)) (_ bv9223372036854775807 63) %op1))))
-(assert true)
-(check-sat)

@@ -1,6 +1,6 @@
 (set-info :status unknown)
-(declare-fun C2 () (_ BitVec 35))
-(declare-fun C1 () (_ BitVec 35))
+(declare-fun C2 () (_ BitVec 36))
+(declare-fun C1 () (_ BitVec 36))
 (assert
- (and (= (bvand (bvadd C2 (_ bv1 35)) (bvsub (bvadd C2 (_ bv1 35)) (_ bv1 35))) (_ bv0 35)) (= (bvand C1 C2) (_ bv0 35)) false))
+ (and (= (bvand (bvadd C2 (_ bv1 36)) (bvsub (bvadd C2 (_ bv1 36)) (_ bv1 36))) (_ bv0 36)) (= (bvand C1 C2) (_ bv0 36)) false))
 (check-sat)

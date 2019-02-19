@@ -1,4 +1,4 @@
-Name: simplifyValueKnownNonZero:1
+Name: muldivrem-simplifyValueKnownNonZero:1
 ; FIXME: combine the following 12 into 3.
 ; FIXME: slow
 Pre: hasOneUse(%Y)
@@ -11,7 +11,7 @@ Pre: hasOneUse(%Y)
 %r = udiv %X, %Y
 
 
-Name: simplifyValueKnownNonZero:2
+Name: muldivrem-simplifyValueKnownNonZero:2
 Pre: isPowerOf2(%A) && hasOneUse(%Y)
 %Y = lshr %A, %B
 %r = udiv %X, %Y
@@ -20,7 +20,7 @@ Pre: isPowerOf2(%A) && hasOneUse(%Y)
 %r = udiv %X, %Y
 
 
-Name: simplifyValueKnownNonZero:3
+Name: muldivrem-simplifyValueKnownNonZero:3
 Pre: isPowerOf2(%A) && hasOneUse(%Y)
 %Y = shl %A, %B
 %r = udiv %X, %Y
@@ -29,7 +29,7 @@ Pre: isPowerOf2(%A) && hasOneUse(%Y)
 %r = udiv %X, %Y
 
 
-Name: simplifyValueKnownNonZero:4
+Name: muldivrem-simplifyValueKnownNonZero:4
 ; FIXME: slow
 Pre: hasOneUse(%Y)
 %s = shl i33 1, %A
@@ -41,7 +41,7 @@ Pre: hasOneUse(%Y)
 %r = sdiv %X, %Y
 
 
-Name: simplifyValueKnownNonZero:5
+Name: muldivrem-simplifyValueKnownNonZero:5
 Pre: isPowerOf2(%A) && hasOneUse(%Y)
 %Y = lshr %A, %B
 %r = sdiv %X, %Y
@@ -50,7 +50,7 @@ Pre: isPowerOf2(%A) && hasOneUse(%Y)
 %r = sdiv %X, %Y
 
 
-Name: simplifyValueKnownNonZero:6
+Name: muldivrem-simplifyValueKnownNonZero:6
 Pre: isPowerOf2(%A) && hasOneUse(%Y)
 %Y = shl %A, %B
 %r = sdiv %X, %Y
@@ -59,7 +59,7 @@ Pre: isPowerOf2(%A) && hasOneUse(%Y)
 %r = sdiv %X, %Y
 
 
-Name: simplifyValueKnownNonZero:7
+Name: muldivrem-simplifyValueKnownNonZero:7
 ; FIXME: slow
 Pre: hasOneUse(%Y)
 %s = shl i33 1, %A
@@ -71,7 +71,7 @@ Pre: hasOneUse(%Y)
 %r = urem %X, %Y
 
 
-Name: simplifyValueKnownNonZero:8
+Name: muldivrem-simplifyValueKnownNonZero:8
 Pre: isPowerOf2(%A) && hasOneUse(%Y)
 %Y = lshr %A, %B
 %r = urem %X, %Y
@@ -80,7 +80,7 @@ Pre: isPowerOf2(%A) && hasOneUse(%Y)
 %r = urem %X, %Y
 
 
-Name: simplifyValueKnownNonZero:9
+Name: muldivrem-simplifyValueKnownNonZero:9
 Pre: isPowerOf2(%A) && hasOneUse(%Y)
 %Y = shl %A, %B
 %r = urem %X, %Y
@@ -89,7 +89,7 @@ Pre: isPowerOf2(%A) && hasOneUse(%Y)
 %r = urem %X, %Y
 
 
-Name: simplifyValueKnownNonZero:10
+Name: muldivrem-simplifyValueKnownNonZero:10
 ; FIXME: slow
 Pre: hasOneUse(%Y)
 %s = shl i33 1, %A
@@ -101,7 +101,7 @@ Pre: hasOneUse(%Y)
 %r = srem %X, %Y
 
 
-Name: simplifyValueKnownNonZero:11
+Name: muldivrem-simplifyValueKnownNonZero:11
 Pre: isPowerOf2(%A) && hasOneUse(%Y)
 %Y = lshr %A, %B
 %r = srem %X, %Y
@@ -110,7 +110,7 @@ Pre: isPowerOf2(%A) && hasOneUse(%Y)
 %r = srem %X, %Y
 
 
-Name: simplifyValueKnownNonZero:12
+Name: muldivrem-simplifyValueKnownNonZero:12
 Pre: isPowerOf2(%A) && hasOneUse(%Y)
 %Y = shl %A, %B
 %r = srem %X, %Y
@@ -281,7 +281,7 @@ Pre: MaskedValueIsZero(%Op0, -2)
 %r = and %s, %Op1
 
 
-Name: SimplifyDivRemOfSelect
+Name: muldivrem-SimplifyDivRemOfSelect
 ; FIXME: applies to *div/*rem
 %sel = select %c, %Y, 0
 %r = udiv %X, %sel

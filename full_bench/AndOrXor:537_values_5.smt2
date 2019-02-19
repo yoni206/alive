@@ -2,7 +2,7 @@
 (declare-fun C () (_ BitVec 7))
 (declare-fun %X () (_ BitVec 7))
 (assert
- (let (($x6608 (and (distinct (ite (bvugt %X C) (_ bv1 1) (_ bv0 1)) (ite (and (distinct (bvand %X (bvnot C)) (_ bv0 7)) true) (_ bv1 1) (_ bv0 1))) true)))
- (let (($x12811 (and (and (distinct (bvadd C (_ bv1 7)) (_ bv0 7)) true) (= (bvand (bvadd C (_ bv1 7)) (bvsub (bvadd C (_ bv1 7)) (_ bv1 7))) (_ bv0 7)))))
- (and $x12811 $x6608))))
+ (let (($x13064 (and (distinct (ite (bvugt %X C) (_ bv1 1) (_ bv0 1)) (ite (and (distinct (bvand %X (bvnot C)) (_ bv0 7)) true) (_ bv1 1) (_ bv0 1))) true)))
+ (let (($x16269 (and (and (distinct (bvadd C (_ bv1 7)) (_ bv0 7)) true) (= (bvand (bvadd C (_ bv1 7)) (bvsub (bvadd C (_ bv1 7)) (_ bv1 7))) (_ bv0 7)))))
+ (and $x16269 $x13064))))
 (check-sat)

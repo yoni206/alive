@@ -1,8 +1,8 @@
 
-(declare-fun %B () (_ BitVec 31))
-(declare-fun C1 () (_ BitVec 31))
-(declare-fun %A () (_ BitVec 31))
-(declare-fun C2 () (_ BitVec 31))
-(assert (and (= (bvxor C1 C2) (_ bv2147483647 31)) (not (= (bvor (bvand (bvxor %A %B) C1) (bvand %B C2)) (bvxor (bvand %A C1) %B)))))
+(declare-fun %B () (_ BitVec 27))
+(declare-fun C1 () (_ BitVec 27))
+(declare-fun %A () (_ BitVec 27))
+(declare-fun C2 () (_ BitVec 27))
+(assert (and (= (bvxor C1 C2) (_ bv134217727 27)) (not (= (bvor (bvand (bvxor %A %B) C1) (bvand %B C2)) (bvxor (bvand %A C1) %B)))))
 (assert true)
 (check-sat)

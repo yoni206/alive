@@ -1,7 +1,7 @@
 (set-info :status unknown)
-(declare-fun %B () (_ BitVec 32))
-(declare-fun %A () (_ BitVec 32))
+(declare-fun %B () (_ BitVec 4))
+(declare-fun %A () (_ BitVec 4))
 (assert
- (let ((?x2312 (ite (= (ite (bvuge %A %B) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) %A %B)))
- (and (distinct (ite (= (ite (bvuge ?x2312 %B) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) ?x2312 %B) ?x2312) true)))
+ (let ((?x1017 (ite (= (ite (bvuge %A %B) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) %A %B)))
+ (and (distinct (ite (= (ite (bvuge ?x1017 %B) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) ?x1017 %B) ?x1017) true)))
 (check-sat)

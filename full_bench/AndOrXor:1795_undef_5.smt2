@@ -2,6 +2,6 @@
 (declare-fun C2 () (_ BitVec 9))
 (declare-fun C1 () (_ BitVec 9))
 (assert
- (let (($x13778 (and (and (distinct (bvxor C1 C2) (_ bv0 9)) true) (= (bvand (bvxor C1 C2) (bvsub (bvxor C1 C2) (_ bv1 9))) (_ bv0 9)))))
- (and (bvult C1 C2) $x13778 false)))
+ (let (($x8622 (and (and (distinct (bvxor C1 C2) (_ bv0 9)) true) (= (bvand (bvxor C1 C2) (bvsub (bvxor C1 C2) (_ bv1 9))) (_ bv0 9)))))
+ (and (bvult C1 C2) $x8622 false)))
 (check-sat)

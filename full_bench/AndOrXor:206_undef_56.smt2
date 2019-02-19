@@ -1,7 +1,7 @@
 (set-info :status unknown)
-(declare-fun C1 () (_ BitVec 61))
-(declare-fun C2 () (_ BitVec 61))
+(declare-fun C1 () (_ BitVec 62))
+(declare-fun C2 () (_ BitVec 62))
 (assert
- (let (($x13651 (bvult C1 (_ bv61 61))))
- (and $x13651 (= (bvand C2 (bvshl (_ bv2305843009213693951 61) C1)) (bvshl (_ bv2305843009213693951 61) C1)) (not $x13651))))
+ (let (($x14640 (bvult C1 (_ bv62 62))))
+ (and $x14640 (= (bvand C2 (bvshl (_ bv4611686018427387903 62) C1)) (bvshl (_ bv4611686018427387903 62) C1)) (not $x14640))))
 (check-sat)

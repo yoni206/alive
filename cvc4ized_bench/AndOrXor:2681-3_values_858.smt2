@@ -1,6 +1,6 @@
 
-(declare-fun %b () (_ BitVec 35))
-(declare-fun %a () (_ BitVec 35))
-(assert (not (= (bvxor ((_ extract 14 0) %a) ((_ extract 14 0) %b)) ((_ extract 14 0) (bvxor %a %b)))))
+(declare-fun %b () (_ BitVec 64))
+(declare-fun %a () (_ BitVec 64))
+(assert (not (= (bvxor ((_ extract 40 0) %a) ((_ extract 40 0) %b)) ((_ extract 40 0) (bvxor %a %b)))))
 (assert true)
 (check-sat)

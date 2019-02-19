@@ -1,6 +1,6 @@
 
-(declare-fun %B () (_ BitVec 21))
-(declare-fun %A () (_ BitVec 21))
+(declare-fun %B () (_ BitVec 22))
+(declare-fun %A () (_ BitVec 22))
 (assert (let ((_let_0 (ite (= (ite (bvslt %A %B) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) %A %B))) (not (= (ite (= (ite (bvslt _let_0 %B) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) _let_0 %B) _let_0))))
 (assert true)
 (check-sat)

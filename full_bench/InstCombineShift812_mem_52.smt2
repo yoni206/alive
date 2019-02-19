@@ -1,9 +1,9 @@
 (set-info :status unknown)
 (declare-fun mem0 () (_ BitVec 8))
 (declare-fun |ana_MaskedValueIsZero(%Op0, ((1 << C) - 1))| () (_ BitVec 1))
-(declare-fun C () (_ BitVec 54))
-(declare-fun %Op0 () (_ BitVec 54))
+(declare-fun C () (_ BitVec 58))
+(declare-fun %Op0 () (_ BitVec 58))
 (assert
- (let (($x23260 (= |ana_MaskedValueIsZero(%Op0, ((1 << C) - 1))| (_ bv1 1))))
- (and (=> $x23260 (= (bvand %Op0 (bvsub (bvshl (_ bv1 54) C) (_ bv1 54))) (_ bv0 54))) $x23260 (and (distinct mem0 mem0) true))))
+ (let (($x16229 (= |ana_MaskedValueIsZero(%Op0, ((1 << C) - 1))| (_ bv1 1))))
+ (and (=> $x16229 (= (bvand %Op0 (bvsub (bvshl (_ bv1 58) C) (_ bv1 58))) (_ bv0 58))) $x16229 (and (distinct mem0 mem0) true))))
 (check-sat)

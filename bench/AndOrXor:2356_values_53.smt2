@@ -1,0 +1,6 @@
+(set-info :status unknown)
+(declare-fun %op1 () (_ BitVec 57))
+(declare-fun %A () (_ BitVec 1))
+(assert
+ (and (distinct (bvor ((_ sign_extend 56) %A) %op1) (ite (= %A (_ bv1 1)) (_ bv144115188075855871 57) %op1)) true))
+(check-sat)

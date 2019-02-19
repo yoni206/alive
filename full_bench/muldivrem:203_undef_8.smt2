@@ -2,8 +2,8 @@
 (declare-fun |ana_isPowerOf2(abs(C))| () (_ BitVec 1))
 (declare-fun C () (_ BitVec 12))
 (assert
- (let (($x280 (= |ana_isPowerOf2(abs(C))| (_ bv1 1))))
- (let ((?x15572 (ite (bvsge C (_ bv0 12)) C (bvneg C))))
- (let (($x1880 (=> $x280 (and (and (distinct ?x15572 (_ bv0 12)) true) (= (bvand ?x15572 (bvsub ?x15572 (_ bv1 12))) (_ bv0 12))))))
- (and $x1880 (bvslt C (_ bv0 12)) $x280 false)))))
+ (let (($x12042 (= |ana_isPowerOf2(abs(C))| (_ bv1 1))))
+ (let ((?x1217 (ite (bvsge C (_ bv0 12)) C (bvneg C))))
+ (let (($x6891 (=> $x12042 (and (and (distinct ?x1217 (_ bv0 12)) true) (= (bvand ?x1217 (bvsub ?x1217 (_ bv1 12))) (_ bv0 12))))))
+ (and $x6891 (bvslt C (_ bv0 12)) $x12042 false)))))
 (check-sat)

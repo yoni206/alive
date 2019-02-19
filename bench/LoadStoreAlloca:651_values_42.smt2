@@ -1,0 +1,10 @@
+(set-info :status unknown)
+(declare-fun %idx () (_ BitVec 45))
+(declare-fun %a () (_ BitVec 64))
+(declare-fun u_%ptr () (_ BitVec 8))
+(declare-fun u_%a () (_ BitVec 8))
+(assert
+ (let ((?x9525 (bvadd %a (bvmul (_ bv1 64) ((_ sign_extend 19) %idx)))))
+ (let (($x18356 (and (distinct %a (_ bv0 64)) true)))
+ (and $x18356 $x18356 $x18356 (= u_%ptr (_ bv1 8)) (= u_%a (_ bv1 8)) $x18356 $x18356 $x18356 (and (distinct u_%ptr (_ bv1 8)) true) (and (distinct ?x9525 ?x9525) true)))))
+(check-sat)

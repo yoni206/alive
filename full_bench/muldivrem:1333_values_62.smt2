@@ -4,8 +4,8 @@
 (declare-fun |ana_MaskedValueIsZero(%Op0, (1 << (width(%Op0) - 1)))| () (_ BitVec 1))
 (declare-fun |ana_MaskedValueIsZero(%Op1, (1 << (width(%Op1) - 1)))| () (_ BitVec 1))
 (assert
- (let (($x5776 (= |ana_MaskedValueIsZero(%Op0, (1 << (width(%Op0) - 1)))| (_ bv1 1))))
- (let (($x1006 (= |ana_MaskedValueIsZero(%Op1, (1 << (width(%Op1) - 1)))| (_ bv1 1))))
- (let (($x10533 (and (distinct %Op1 (_ bv0 2)) true)))
- (and $x10533 (or (and (distinct %Op0 (_ bv2 2)) true) (and (distinct %Op1 (_ bv3 2)) true)) (=> $x1006 (= (bvand %Op1 (bvshl (_ bv1 2) (bvsub (_ bv2 2) (_ bv1 2)))) (_ bv0 2))) (=> $x5776 (= (bvand %Op0 (bvshl (_ bv1 2) (bvsub (_ bv2 2) (_ bv1 2)))) (_ bv0 2))) $x1006 $x5776 (and (distinct (bvsrem %Op0 %Op1) (bvurem %Op0 %Op1)) true))))))
+ (let (($x5333 (= |ana_MaskedValueIsZero(%Op0, (1 << (width(%Op0) - 1)))| (_ bv1 1))))
+ (let (($x6507 (= |ana_MaskedValueIsZero(%Op1, (1 << (width(%Op1) - 1)))| (_ bv1 1))))
+ (let (($x10833 (and (distinct %Op1 (_ bv0 2)) true)))
+ (and $x10833 (or (and (distinct %Op0 (_ bv2 2)) true) (and (distinct %Op1 (_ bv3 2)) true)) (=> $x6507 (= (bvand %Op1 (bvshl (_ bv1 2) (bvsub (_ bv2 2) (_ bv1 2)))) (_ bv0 2))) (=> $x5333 (= (bvand %Op0 (bvshl (_ bv1 2) (bvsub (_ bv2 2) (_ bv1 2)))) (_ bv0 2))) $x6507 $x5333 (and (distinct (bvsrem %Op0 %Op1) (bvurem %Op0 %Op1)) true))))))
 (check-sat)

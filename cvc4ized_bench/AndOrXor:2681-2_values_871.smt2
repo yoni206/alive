@@ -1,6 +1,6 @@
 
-(declare-fun %b () (_ BitVec 30))
-(declare-fun %a () (_ BitVec 30))
-(assert (not (= (bvxor ((_ sign_extend 23) %a) ((_ sign_extend 23) %b)) ((_ sign_extend 23) (bvxor %a %b)))))
+(declare-fun %b () (_ BitVec 36))
+(declare-fun %a () (_ BitVec 36))
+(assert (not (= (bvxor ((_ sign_extend 3) %a) ((_ sign_extend 3) %b)) ((_ sign_extend 3) (bvxor %a %b)))))
 (assert true)
 (check-sat)

@@ -1,0 +1,11 @@
+(set-info :status unknown)
+(declare-fun C1 () (_ BitVec 62))
+(declare-fun C3 () (_ BitVec 62))
+(declare-fun %X () (_ BitVec 62))
+(declare-fun C2 () (_ BitVec 62))
+(assert
+ (let ((?x16215 (ite (= %X C2) (_ bv1 1) (_ bv0 1))))
+ (let ((?x17900 (ite (bvult (bvadd %X C3) C1) (_ bv1 1) (_ bv0 1))))
+ (let (($x9390 (and (distinct (bvor ?x17900 ?x16215) (ite (bvule (bvadd %X C3) C1) (_ bv1 1) (_ bv0 1))) true)))
+ (and (= (bvadd C2 C3) C1) $x9390)))))
+(check-sat)

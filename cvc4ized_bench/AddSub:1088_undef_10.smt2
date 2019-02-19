@@ -1,5 +1,1 @@
-
-(declare-fun C () (_ BitVec 14))
-(assert false)
-(assert true)
-(check-sat)
+(error "Couldn't open file: full_bench/AddSub:1088_undef_10.smt2")

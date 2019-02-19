@@ -1,0 +1,7 @@
+(set-info :status unknown)
+(declare-fun C1 () (_ BitVec 63))
+(declare-fun C2 () (_ BitVec 63))
+(assert
+ (let (($x107 (bvult C1 (_ bv63 63))))
+ (and $x107 (= (bvand C2 (bvlshr (_ bv9223372036854775807 63) C1)) (bvlshr (_ bv9223372036854775807 63) C1)) false)))
+(check-sat)

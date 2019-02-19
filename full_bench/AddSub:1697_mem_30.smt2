@@ -4,7 +4,7 @@
 (declare-fun %B () (_ BitVec 34))
 (declare-fun %A () (_ BitVec 34))
 (assert
- (let (($x8745 (= |ana_WillNotOverflowUnsignedSub(%A, %B)| (_ bv1 1))))
- (let (($x13043 (= (bvsub ((_ zero_extend 1) %A) ((_ zero_extend 1) %B)) ((_ zero_extend 1) (bvsub %A %B)))))
- (and (=> $x8745 $x13043) $x8745 (and (distinct mem0 mem0) true)))))
+ (let (($x8258 (= |ana_WillNotOverflowUnsignedSub(%A, %B)| (_ bv1 1))))
+ (let (($x12372 (= (bvsub ((_ zero_extend 1) %A) ((_ zero_extend 1) %B)) ((_ zero_extend 1) (bvsub %A %B)))))
+ (and (=> $x8258 $x12372) $x8258 (and (distinct mem0 mem0) true)))))
 (check-sat)

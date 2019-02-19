@@ -1,8 +1,1 @@
-
-(declare-fun C () (_ BitVec 30))
-(declare-fun |ana_WillNotOverflowSignedAdd(%x, trunc(C))| () (_ BitVec 1))
-(declare-fun u_%sx () (_ BitVec 8))
-(declare-fun %x () (_ BitVec 23))
-(assert false)
-(assert true)
-(check-sat)
+(error "Couldn't open file: full_bench/AddSub:1265_undef_1826.smt2")

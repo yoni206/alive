@@ -1,0 +1,6 @@
+(set-info :status unknown)
+(declare-fun C () (_ BitVec 21))
+(assert
+ (let (($x8638 (bvult C (_ bv21 21))))
+ (and $x8638 (= C (bvsub (_ bv21 21) (_ bv1 21))) (not $x8638))))
+(check-sat)

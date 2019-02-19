@@ -1,0 +1,13 @@
+(set-info :status unknown)
+(declare-fun C () (_ BitVec 5))
+(declare-fun %Op0 () (_ BitVec 5))
+(declare-fun |ana_ComputeNumSignBits(%Op0)| () (_ BitVec 5))
+(assert
+ (let ((?x22877 ((_ extract 4 4) |ana_ComputeNumSignBits(%Op0)|)))
+ (let ((?x13211 (ite (= ((_ extract 1 1) |ana_ComputeNumSignBits(%Op0)|) ?x22877) (ite (= ((_ extract 0 0) |ana_ComputeNumSignBits(%Op0)|) ?x22877) (_ bv5 5) (_ bv4 5)) (_ bv3 5))))
+ (let ((?x15007 (ite (= ((_ extract 3 3) |ana_ComputeNumSignBits(%Op0)|) ?x22877) (ite (= ((_ extract 2 2) |ana_ComputeNumSignBits(%Op0)|) ?x22877) ?x13211 (_ bv2 5)) (_ bv1 5))))
+ (let ((?x12853 (ite (= ((_ extract 1 1) %Op0) ((_ extract 4 4) %Op0)) (ite (= ((_ extract 0 0) %Op0) ((_ extract 4 4) %Op0)) (_ bv5 5) (_ bv4 5)) (_ bv3 5))))
+ (let ((?x15361 (ite (= ((_ extract 3 3) %Op0) ((_ extract 4 4) %Op0)) (ite (= ((_ extract 2 2) %Op0) ((_ extract 4 4) %Op0)) ?x12853 (_ bv2 5)) (_ bv1 5))))
+ (let (($x2542 (bvult C (_ bv5 5))))
+ (and $x2542 (bvule ?x15007 ?x15361) (bvsgt ?x15007 C) (and (distinct (bvshl %Op0 C) (bvshl %Op0 C)) true)))))))))
+(check-sat)

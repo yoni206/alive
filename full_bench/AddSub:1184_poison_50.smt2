@@ -4,6 +4,6 @@
 (declare-fun %y () (_ BitVec 54))
 (declare-fun %x () (_ BitVec 54))
 (assert
- (let (($x10256 (= (bvor |ana_computeKnownZeroBits(%x)| |ana_computeKnownZeroBits(%y)|) (_ bv18014398509481983 54))))
- (and (= (bvand |ana_computeKnownZeroBits(%x)| %x) (_ bv0 54)) (= (bvand |ana_computeKnownZeroBits(%y)| %y) (_ bv0 54)) $x10256 false)))
+ (let (($x6529 (= (bvor |ana_computeKnownZeroBits(%x)| |ana_computeKnownZeroBits(%y)|) (_ bv18014398509481983 54))))
+ (and (= (bvand |ana_computeKnownZeroBits(%x)| %x) (_ bv0 54)) (= (bvand |ana_computeKnownZeroBits(%y)| %y) (_ bv0 54)) $x6529 false)))
 (check-sat)

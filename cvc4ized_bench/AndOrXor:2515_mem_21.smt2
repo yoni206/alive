@@ -1,0 +1,1 @@
+(error "Couldn't open file: full_bench/AndOrXor:2515_mem_21.smt2")

@@ -4,6 +4,6 @@
 (declare-fun %A () (_ BitVec 48))
 (declare-fun C1 () (_ BitVec 48))
 (assert
- (let (($x10283 (and (distinct (bvand (bvsub (bvxor %A C1) %B) C2) (bvand (bvsub %A %B) C2)) true)))
- (and (= (bvand (bvadd C2 (_ bv1 48)) (bvsub (bvadd C2 (_ bv1 48)) (_ bv1 48))) (_ bv0 48)) (= (bvand C1 C2) (_ bv0 48)) $x10283)))
+ (let (($x1212 (and (distinct (bvand (bvsub (bvxor %A C1) %B) C2) (bvand (bvsub %A %B) C2)) true)))
+ (and (= (bvand (bvadd C2 (_ bv1 48)) (bvsub (bvadd C2 (_ bv1 48)) (_ bv1 48))) (_ bv0 48)) (= (bvand C1 C2) (_ bv0 48)) $x1212)))
 (check-sat)

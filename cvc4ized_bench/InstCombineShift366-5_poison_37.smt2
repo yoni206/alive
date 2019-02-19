@@ -1,6 +1,1 @@
-
-(declare-fun C2 () (_ BitVec 17))
-(declare-fun C1 () (_ BitVec 55))
-(assert false)
-(assert true)
-(check-sat)
+(error "Couldn't open file: full_bench/InstCombineShift366-5_poison_37.smt2")

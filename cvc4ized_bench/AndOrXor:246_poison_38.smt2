@@ -1,7 +1,1 @@
-
-(declare-fun C2 () (_ BitVec 43))
-(declare-fun C1 () (_ BitVec 43))
-(declare-fun u_%op () (_ BitVec 8))
-(assert false)
-(assert true)
-(check-sat)
+(error "Couldn't open file: full_bench/AndOrXor:246_poison_38.smt2")

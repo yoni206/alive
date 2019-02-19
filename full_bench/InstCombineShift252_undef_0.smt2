@@ -4,8 +4,8 @@
 (declare-fun |ana_MaskedValueIsZero(%X, ((-1 u>> (width(C2) - C2)) << (width(C1) - C1)))| () (_ BitVec 1))
 (declare-fun %X () (_ BitVec 27))
 (assert
- (let (($x13681 (= |ana_MaskedValueIsZero(%X, ((-1 u>> (width(C2) - C2)) << (width(C1) - C1)))| (_ bv1 1))))
- (let ((?x11900 (bvand %X (bvshl (bvlshr (_ bv134217727 27) (bvsub (_ bv27 27) C2)) (bvsub (_ bv27 27) C1)))))
- (let (($x25330 (bvult C1 (_ bv27 27))))
- (and $x25330 (bvult C2 (_ bv27 27)) (=> $x13681 (= ?x11900 (_ bv0 27))) (bvsgt C1 C2) $x13681 (not (bvult (bvsub C1 C2) (_ bv27 27))))))))
+ (let (($x22639 (= |ana_MaskedValueIsZero(%X, ((-1 u>> (width(C2) - C2)) << (width(C1) - C1)))| (_ bv1 1))))
+ (let ((?x8046 (bvand %X (bvshl (bvlshr (_ bv134217727 27) (bvsub (_ bv27 27) C2)) (bvsub (_ bv27 27) C1)))))
+ (let (($x14634 (bvult C1 (_ bv27 27))))
+ (and $x14634 (bvult C2 (_ bv27 27)) (=> $x22639 (= ?x8046 (_ bv0 27))) (bvsgt C1 C2) $x22639 (not (bvult (bvsub C1 C2) (_ bv27 27))))))))
 (check-sat)

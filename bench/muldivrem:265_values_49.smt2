@@ -1,0 +1,10 @@
+(set-info :status unknown)
+(declare-fun %X () (_ BitVec 57))
+(declare-fun %Y () (_ BitVec 57))
+(assert
+ (let ((?x21955 (bvudiv %X %Y)))
+ (let ((?x9809 (bvmul ?x21955 %Y)))
+ (let (($x3736 (= ?x9809 %X)))
+ (let (($x14538 (and (distinct %Y (_ bv0 57)) true)))
+ (and $x14538 $x3736 (and (distinct ?x9809 %X) true)))))))
+(check-sat)

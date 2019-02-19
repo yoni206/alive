@@ -1,6 +1,1 @@
-
-(declare-fun %b () (_ BitVec 8))
-(declare-fun %a () (_ BitVec 8))
-(assert (not (= (bvxor ((_ sign_extend 37) %a) ((_ sign_extend 37) %b)) ((_ sign_extend 37) (bvxor %a %b)))))
-(assert true)
-(check-sat)
+(error "Couldn't open file: full_bench/AndOrXor:2681-2_values_1134.smt2")

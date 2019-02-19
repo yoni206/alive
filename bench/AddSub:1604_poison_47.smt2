@@ -1,0 +1,6 @@
+(set-info :status unknown)
+(declare-fun C () (_ BitVec 55))
+(assert
+ (let (($x13533 (bvult C (_ bv55 55))))
+ (and $x13533 (= C (bvsub (_ bv55 55) (_ bv1 55))) false)))
+(check-sat)

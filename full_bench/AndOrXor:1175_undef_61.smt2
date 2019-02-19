@@ -3,8 +3,8 @@
 (declare-fun C () (_ BitVec 3))
 (declare-fun %A () (_ BitVec 3))
 (assert
- (let (($x17212 (= |ana_MaskedValueIsZero(%A, lshr(-1, countLeadingZeros(C)))| (_ bv1 1))))
- (let ((?x6090 (ite (= ((_ extract 1 1) C) (_ bv1 1)) (_ bv1 3) (ite (= ((_ extract 0 0) C) (_ bv1 1)) (_ bv2 3) (_ bv3 3)))))
- (let (($x22668 (= (bvand %A (bvlshr (_ bv7 3) (ite (= ((_ extract 2 2) C) (_ bv1 1)) (_ bv0 3) ?x6090))) (_ bv0 3))))
- (and (=> $x17212 $x22668) $x17212 false)))))
+ (let (($x11166 (= |ana_MaskedValueIsZero(%A, lshr(-1, countLeadingZeros(C)))| (_ bv1 1))))
+ (let ((?x6868 (ite (= ((_ extract 1 1) C) (_ bv1 1)) (_ bv1 3) (ite (= ((_ extract 0 0) C) (_ bv1 1)) (_ bv2 3) (_ bv3 3)))))
+ (let (($x6350 (= (bvand %A (bvlshr (_ bv7 3) (ite (= ((_ extract 2 2) C) (_ bv1 1)) (_ bv0 3) ?x6868))) (_ bv0 3))))
+ (and (=> $x11166 $x6350) $x11166 false)))))
 (check-sat)

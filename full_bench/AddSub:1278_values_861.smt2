@@ -7,6 +7,6 @@
 (assert
  (let (($x18809 (and (distinct (bvadd ((_ sign_extend 21) %x) ((_ sign_extend 21) %y)) ((_ sign_extend 21) (bvadd %x %y))) true)))
  (let (($x18940 (= |ana_WillNotOverflowSignedAdd(%x, %y)| (_ bv1 1))))
- (let (($x1031 (= (bvadd ((_ sign_extend 1) %x) ((_ sign_extend 1) %y)) ((_ sign_extend 1) (bvadd %x %y)))))
- (and (=> $x18940 $x1031) (or (= u_%sx (_ bv1 8)) (= u_%sy (_ bv1 8))) $x18940 $x18809)))))
+ (let (($x979 (= (bvadd ((_ sign_extend 1) %x) ((_ sign_extend 1) %y)) ((_ sign_extend 1) (bvadd %x %y)))))
+ (and (=> $x18940 $x979) (or (= u_%sx (_ bv1 8)) (= u_%sy (_ bv1 8))) $x18940 $x18809)))))
 (check-sat)

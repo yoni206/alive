@@ -1,4 +1,4 @@
 
-(assert (not (bvult (bvsub (_ bv21 21) (_ bv1 21)) (_ bv21 21))))
+(assert (not (bvult (bvsub (_ bv16 16) (_ bv1 16)) (_ bv16 16))))
 (assert true)
 (check-sat)

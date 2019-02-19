@@ -4,7 +4,7 @@
 (declare-fun %x () (_ BitVec 32))
 (declare-fun |ana_MaskedValueIsZero(%x, C1)| () (_ BitVec 1))
 (assert
- (let (($x6456 (and (distinct (bvxor (bvor %x C1) C2) (bvxor %x (bvxor C1 C2))) true)))
- (let (($x11854 (= |ana_MaskedValueIsZero(%x, C1)| (_ bv1 1))))
- (and (=> $x11854 (= (bvand %x C1) (_ bv0 32))) $x11854 $x6456))))
+ (let (($x17908 (and (distinct (bvxor (bvor %x C1) C2) (bvxor %x (bvxor C1 C2))) true)))
+ (let (($x15378 (= |ana_MaskedValueIsZero(%x, C1)| (_ bv1 1))))
+ (and (=> $x15378 (= (bvand %x C1) (_ bv0 32))) $x15378 $x17908))))
 (check-sat)

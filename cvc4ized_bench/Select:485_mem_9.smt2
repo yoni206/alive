@@ -1,6 +1,1 @@
-
-(declare-fun mem0 () (_ BitVec 8))
-(declare-fun C () (_ BitVec 32))
-(assert (and (= C (_ bv2147483648 32)) (not (= mem0 mem0))))
-(assert true)
-(check-sat)
+(error "Couldn't open file: full_bench/Select:485_mem_9.smt2")

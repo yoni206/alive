@@ -4,7 +4,7 @@
 (declare-fun %x () (_ BitVec 32))
 (declare-fun u_%xc2 () (_ BitVec 8))
 (assert
- (let (($x3893 (and (distinct (bvadd (bvand %x C2) C1) (bvand (bvadd %x C1) C2)) true)))
- (let (($x3985 (= (bvnot (bvsub (bvand C1 (bvneg C1)) (_ bv1 32))) (bvand (bvnot (bvsub (bvand C1 (bvneg C1)) (_ bv1 32))) C2))))
- (and (= u_%xc2 (_ bv1 8)) $x3985 $x3893))))
+ (let (($x1404 (and (distinct (bvadd (bvand %x C2) C1) (bvand (bvadd %x C1) C2)) true)))
+ (let (($x1573 (= (bvnot (bvsub (bvand C1 (bvneg C1)) (_ bv1 32))) (bvand (bvnot (bvsub (bvand C1 (bvneg C1)) (_ bv1 32))) C2))))
+ (and (= u_%xc2 (_ bv1 8)) $x1573 $x1404))))
 (check-sat)

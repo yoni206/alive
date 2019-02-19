@@ -1,6 +1,6 @@
 (set-info :status unknown)
-(declare-fun %Y () (_ BitVec 14))
-(declare-fun %X () (_ BitVec 14))
+(declare-fun %Y () (_ BitVec 15))
+(declare-fun %X () (_ BitVec 15))
 (assert
- (and (distinct (bvmul (bvsub (_ bv0 14) %X) (bvsub (_ bv0 14) %Y)) (bvmul %X %Y)) true))
+ (and (distinct (bvmul (bvsub (_ bv0 15) %X) (bvsub (_ bv0 15) %Y)) (bvmul %X %Y)) true))
 (check-sat)

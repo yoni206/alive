@@ -1,0 +1,1 @@
+(error "Couldn't open file: full_bench/AndOrXor:1294_undef_63.smt2")

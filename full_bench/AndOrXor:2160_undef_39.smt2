@@ -1,8 +1,8 @@
 (set-info :status unknown)
-(declare-fun C2 () (_ BitVec 40))
-(declare-fun C4 () (_ BitVec 40))
-(declare-fun C1 () (_ BitVec 40))
-(declare-fun C3 () (_ BitVec 40))
+(declare-fun C2 () (_ BitVec 43))
+(declare-fun C4 () (_ BitVec 43))
+(declare-fun C1 () (_ BitVec 43))
+(declare-fun C3 () (_ BitVec 43))
 (assert
- (and (= (bvand C1 C2) (_ bv0 40)) (= (bvand C3 (bvnot C1)) (_ bv0 40)) (= (bvand C4 (bvnot C2)) (_ bv0 40)) false))
+ (and (= (bvand C1 C2) (_ bv0 43)) (= (bvand C3 (bvnot C1)) (_ bv0 43)) (= (bvand C4 (bvnot C2)) (_ bv0 43)) false))
 (check-sat)

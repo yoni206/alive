@@ -5,6 +5,6 @@
 (declare-fun C3 () (_ BitVec 7))
 (declare-fun %V1 () (_ BitVec 7))
 (assert
- (let (($x8626 (and (distinct (bvor (bvand (bvor %V1 C3) C1) (bvand (bvor %V1 C4) C2)) (bvand (bvor %V1 (bvor C3 C4)) (bvor C1 C2))) true)))
- (and (= (bvand C1 C2) (_ bv0 7)) (= (bvand C3 (bvnot C1)) (_ bv0 7)) (= (bvand C4 (bvnot C2)) (_ bv0 7)) $x8626)))
+ (let (($x22669 (and (distinct (bvor (bvand (bvor %V1 C3) C1) (bvand (bvor %V1 C4) C2)) (bvand (bvor %V1 (bvor C3 C4)) (bvor C1 C2))) true)))
+ (and (= (bvand C1 C2) (_ bv0 7)) (= (bvand C3 (bvnot C1)) (_ bv0 7)) (= (bvand C4 (bvnot C2)) (_ bv0 7)) $x22669)))
 (check-sat)

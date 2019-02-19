@@ -4,8 +4,8 @@
 (declare-fun C3 () (_ BitVec 49))
 (declare-fun %x () (_ BitVec 49))
 (assert
- (let (($x21650 (= (bvand %x (bvor C3 (bvsub (bvshl (_ bv1 49) (_ bv11 49)) (_ bv1 49)))) (bvor ((_ zero_extend 38) C1) C2))))
- (let ((?x5869 (ite (= (bvand %x C3) C2) (_ bv1 1) (_ bv0 1))))
- (let ((?x10079 (ite (= ((_ extract 10 0) %x) C1) (_ bv1 1) (_ bv0 1))))
- (and (= (bvand (bvsub (bvshl (_ bv1 49) (_ bv11 49)) (_ bv1 49)) C3) (_ bv0 49)) (= (bvand (bvsub (bvshl (_ bv1 49) (_ bv11 49)) (_ bv1 49)) C2) (_ bv0 49)) (and (distinct (bvand ?x10079 ?x5869) (ite $x21650 (_ bv1 1) (_ bv0 1))) true))))))
+ (let (($x16320 (= (bvand %x (bvor C3 (bvsub (bvshl (_ bv1 49) (_ bv11 49)) (_ bv1 49)))) (bvor ((_ zero_extend 38) C1) C2))))
+ (let ((?x10102 (ite (= (bvand %x C3) C2) (_ bv1 1) (_ bv0 1))))
+ (let ((?x15891 (ite (= ((_ extract 10 0) %x) C1) (_ bv1 1) (_ bv0 1))))
+ (and (= (bvand (bvsub (bvshl (_ bv1 49) (_ bv11 49)) (_ bv1 49)) C3) (_ bv0 49)) (= (bvand (bvsub (bvshl (_ bv1 49) (_ bv11 49)) (_ bv1 49)) C2) (_ bv0 49)) (and (distinct (bvand ?x15891 ?x10102) (ite $x16320 (_ bv1 1) (_ bv0 1))) true))))))
 (check-sat)

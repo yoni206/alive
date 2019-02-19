@@ -2,8 +2,8 @@
 (declare-fun %a () (_ BitVec 18))
 (declare-fun %x () (_ BitVec 18))
 (assert
- (let (($x9811 (= (bvadd ((_ sign_extend 1) %x) ((_ sign_extend 1) %a)) ((_ sign_extend 1) (bvadd %x %a)))))
- (let (($x11694 (= (bvsub ((_ sign_extend 1) %x) ((_ sign_extend 1) (bvsub (_ bv0 18) %a))) ((_ sign_extend 1) (bvsub %x (bvsub (_ bv0 18) %a))))))
- (let (($x8044 (= (bvsub ((_ sign_extend 1) (_ bv0 18)) ((_ sign_extend 1) %a)) ((_ sign_extend 1) (bvsub (_ bv0 18) %a)))))
- (and $x8044 $x11694 (not $x9811))))))
+ (let (($x7848 (= (bvadd ((_ sign_extend 1) %x) ((_ sign_extend 1) %a)) ((_ sign_extend 1) (bvadd %x %a)))))
+ (let (($x16303 (= (bvsub ((_ sign_extend 1) %x) ((_ sign_extend 1) (bvsub (_ bv0 18) %a))) ((_ sign_extend 1) (bvsub %x (bvsub (_ bv0 18) %a))))))
+ (let (($x755 (= (bvsub ((_ sign_extend 1) (_ bv0 18)) ((_ sign_extend 1) %a)) ((_ sign_extend 1) (bvsub (_ bv0 18) %a)))))
+ (and $x755 $x16303 (not $x7848))))))
 (check-sat)

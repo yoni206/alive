@@ -1,6 +1,0 @@
-
-(declare-fun %b () (_ BitVec 24))
-(declare-fun %a () (_ BitVec 24))
-(assert false)
-(assert true)
-(check-sat)

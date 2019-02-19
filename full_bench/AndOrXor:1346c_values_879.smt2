@@ -1,6 +1,6 @@
 (set-info :status unknown)
-(declare-fun %y () (_ BitVec 59))
-(declare-fun %x () (_ BitVec 59))
+(declare-fun %y () (_ BitVec 40))
+(declare-fun %x () (_ BitVec 40))
 (assert
- (and (distinct (bvand ((_ extract 44 0) %x) ((_ extract 44 0) %y)) ((_ extract 44 0) (bvand %x %y))) true))
+ (and (distinct (bvand ((_ extract 7 0) %x) ((_ extract 7 0) %y)) ((_ extract 7 0) (bvand %x %y))) true))
 (check-sat)

@@ -1,6 +1,6 @@
 
-(declare-fun C2 () (_ BitVec 11))
-(declare-fun C () (_ BitVec 11))
-(assert (and (bvult C2 (_ bv11 11)) (bvult C (_ bv11 11)) (bvsge ((_ zero_extend 21) (bvadd C C2)) (_ bv11 32)) (not (bvult (bvsub (_ bv11 11) (_ bv1 11)) (_ bv11 11)))))
+(declare-fun C2 () (_ BitVec 14))
+(declare-fun C () (_ BitVec 14))
+(assert (and (bvult C2 (_ bv14 14)) (bvult C (_ bv14 14)) (bvsge ((_ zero_extend 18) (bvadd C C2)) (_ bv14 32)) (not (bvult (bvsub (_ bv14 14) (_ bv1 14)) (_ bv14 14)))))
 (assert true)
 (check-sat)

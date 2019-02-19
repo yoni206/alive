@@ -1,5 +1,5 @@
 
-(declare-fun C () (_ BitVec 24))
+(declare-fun C () (_ BitVec 27))
 (assert false)
 (assert true)
 (check-sat)

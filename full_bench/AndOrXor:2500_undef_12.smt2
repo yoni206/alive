@@ -3,6 +3,6 @@
 (declare-fun C1 () (_ BitVec 16))
 (declare-fun %x () (_ BitVec 16))
 (assert
- (let (($x18735 (= |ana_MaskedValueIsZero(%x, C1)| (_ bv1 1))))
- (and (=> $x18735 (= (bvand %x C1) (_ bv0 16))) $x18735 false)))
+ (let (($x6744 (= |ana_MaskedValueIsZero(%x, C1)| (_ bv1 1))))
+ (and (=> $x6744 (= (bvand %x C1) (_ bv0 16))) $x6744 false)))
 (check-sat)

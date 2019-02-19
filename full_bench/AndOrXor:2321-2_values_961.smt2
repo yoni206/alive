@@ -1,6 +1,6 @@
 (set-info :status unknown)
-(declare-fun %B () (_ BitVec 9))
-(declare-fun %A () (_ BitVec 9))
+(declare-fun %B () (_ BitVec 44))
+(declare-fun %A () (_ BitVec 44))
 (assert
- (and (distinct (bvor ((_ sign_extend 39) %A) ((_ sign_extend 39) %B)) ((_ sign_extend 39) (bvor %A %B))) true))
+ (and (distinct (bvor ((_ sign_extend 17) %A) ((_ sign_extend 17) %B)) ((_ sign_extend 17) (bvor %A %B))) true))
 (check-sat)

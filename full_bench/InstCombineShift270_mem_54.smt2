@@ -1,7 +1,7 @@
 (set-info :status unknown)
 (declare-fun mem0 () (_ BitVec 8))
-(declare-fun C2 () (_ BitVec 58))
-(declare-fun C1 () (_ BitVec 58))
+(declare-fun C2 () (_ BitVec 55))
+(declare-fun C1 () (_ BitVec 55))
 (assert
- (and (bvsge ((_ zero_extend 1) (bvadd C1 C2)) (_ bv58 59)) (and (distinct mem0 mem0) true)))
+ (and (bvsge ((_ zero_extend 1) (bvadd C1 C2)) (_ bv55 56)) (and (distinct mem0 mem0) true)))
 (check-sat)

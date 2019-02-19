@@ -6,7 +6,7 @@
 (declare-fun %y () (_ BitVec 3))
 (declare-fun %x () (_ BitVec 3))
 (assert
- (let (($x11176 (= |ana_WillNotOverflowSignedAdd(%x, %y)| (_ bv1 1))))
- (let (($x3646 (= (bvadd ((_ sign_extend 1) %x) ((_ sign_extend 1) %y)) ((_ sign_extend 1) (bvadd %x %y)))))
- (and (=> $x11176 $x3646) (or (= u_%sx (_ bv1 8)) (= u_%sy (_ bv1 8))) $x11176 (and (distinct mem0 mem0) true)))))
+ (let (($x10921 (= |ana_WillNotOverflowSignedAdd(%x, %y)| (_ bv1 1))))
+ (let (($x4523 (= (bvadd ((_ sign_extend 1) %x) ((_ sign_extend 1) %y)) ((_ sign_extend 1) (bvadd %x %y)))))
+ (and (=> $x10921 $x4523) (or (= u_%sx (_ bv1 8)) (= u_%sy (_ bv1 8))) $x10921 (and (distinct mem0 mem0) true)))))
 (check-sat)

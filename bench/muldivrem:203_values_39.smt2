@@ -1,0 +1,12 @@
+(set-info :status unknown)
+(declare-fun C () (_ BitVec 43))
+(declare-fun %Y () (_ BitVec 43))
+(declare-fun C1 () (_ BitVec 43))
+(declare-fun |ana_isPowerOf2(abs(C))| () (_ BitVec 1))
+(assert
+ (let ((?x1217 (ite (bvsge C (_ bv0 43)) C (bvneg C))))
+ (let (($x9408 (and (distinct (bvmul (bvadd %Y C1) C) (bvmul (bvsub (bvneg C1) %Y) ?x1217)) true)))
+ (let (($x4464 (= |ana_isPowerOf2(abs(C))| (_ bv1 1))))
+ (let (($x24240 (=> $x4464 (and (and (distinct ?x1217 (_ bv0 43)) true) (= (bvand ?x1217 (bvsub ?x1217 (_ bv1 43))) (_ bv0 43))))))
+ (and $x24240 (bvslt C (_ bv0 43)) $x4464 $x9408))))))
+(check-sat)

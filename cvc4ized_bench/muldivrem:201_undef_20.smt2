@@ -1,6 +1,6 @@
 
 (declare-fun |ana_isPowerOf2(abs(C))| () (_ BitVec 1))
-(declare-fun C () (_ BitVec 21))
+(declare-fun C () (_ BitVec 22))
 (assert false)
 (assert true)
 (check-sat)

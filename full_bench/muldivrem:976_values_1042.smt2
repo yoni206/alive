@@ -1,7 +1,7 @@
 (set-info :status unknown)
-(declare-fun %Y () (_ BitVec 25))
-(declare-fun %X () (_ BitVec 25))
+(declare-fun %Y () (_ BitVec 56))
+(declare-fun %X () (_ BitVec 56))
 (assert
- (let (($x10892 (and (distinct (bvudiv ((_ zero_extend 11) %X) ((_ zero_extend 11) %Y)) ((_ zero_extend 11) (bvudiv %X %Y))) true)))
- (and (and (distinct ((_ zero_extend 11) %Y) (_ bv0 36)) true) $x10892)))
+ (let (($x18031 (and (distinct (bvudiv ((_ zero_extend 5) %X) ((_ zero_extend 5) %Y)) ((_ zero_extend 5) (bvudiv %X %Y))) true)))
+ (and (and (distinct ((_ zero_extend 5) %Y) (_ bv0 61)) true) $x18031)))
 (check-sat)

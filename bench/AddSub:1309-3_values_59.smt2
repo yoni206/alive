@@ -1,0 +1,10 @@
+(set-info :status unknown)
+(declare-fun %b () (_ BitVec 64))
+(declare-fun %a () (_ BitVec 64))
+(assert
+ (let ((?x2259 (bvadd %a %b)))
+ (let ((?x10397 (bvor %a %b)))
+ (let ((?x18649 (bvand %a %b)))
+ (let ((?x16178 (bvadd ?x18649 ?x10397)))
+ (and (= (bvadd ((_ zero_extend 1) ?x18649) ((_ zero_extend 1) ?x10397)) ((_ zero_extend 1) ?x16178)) (and (distinct ?x16178 ?x2259) true)))))))
+(check-sat)

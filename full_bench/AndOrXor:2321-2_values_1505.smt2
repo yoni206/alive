@@ -2,5 +2,5 @@
 (declare-fun %B () (_ BitVec 29))
 (declare-fun %A () (_ BitVec 29))
 (assert
- (and (distinct (bvor ((_ sign_extend 32) %A) ((_ sign_extend 32) %B)) ((_ sign_extend 32) (bvor %A %B))) true))
+ (and (distinct (bvor ((_ sign_extend 4) %A) ((_ sign_extend 4) %B)) ((_ sign_extend 4) (bvor %A %B))) true))
 (check-sat)

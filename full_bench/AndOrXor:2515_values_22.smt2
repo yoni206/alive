@@ -1,0 +1,10 @@
+(set-info :status unknown)
+(declare-fun C3 () (_ BitVec 26))
+(declare-fun C2 () (_ BitVec 26))
+(declare-fun C1 () (_ BitVec 26))
+(declare-fun %x () (_ BitVec 26))
+(assert
+ (let (($x4642 (and (distinct (bvxor (bvlshr (bvxor %x C1) C2) C3) (bvxor (bvlshr %x C2) (bvxor (bvlshr C1 C2) C3))) true)))
+ (let (($x8180 (bvult C2 (_ bv26 26))))
+ (and $x8180 $x4642))))
+(check-sat)

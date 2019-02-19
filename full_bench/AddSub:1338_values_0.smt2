@@ -3,7 +3,7 @@
 (declare-fun %lhs () (_ BitVec 4))
 (declare-fun |ana_WillNotOverflowUnsignedAdd(%lhs, %rhs)| () (_ BitVec 1))
 (assert
- (let (($x4292 (= |ana_WillNotOverflowUnsignedAdd(%lhs, %rhs)| (_ bv1 1))))
- (let (($x7856 (= (bvadd ((_ zero_extend 1) %lhs) ((_ zero_extend 1) %rhs)) ((_ zero_extend 1) (bvadd %lhs %rhs)))))
- (and (=> $x4292 $x7856) $x4292 (and (distinct (bvadd %lhs %rhs) (bvadd %lhs %rhs)) true)))))
+ (let (($x4934 (= |ana_WillNotOverflowUnsignedAdd(%lhs, %rhs)| (_ bv1 1))))
+ (let (($x3184 (= (bvadd ((_ zero_extend 1) %lhs) ((_ zero_extend 1) %rhs)) ((_ zero_extend 1) (bvadd %lhs %rhs)))))
+ (and (=> $x4934 $x3184) $x4934 (and (distinct (bvadd %lhs %rhs) (bvadd %lhs %rhs)) true)))))
 (check-sat)

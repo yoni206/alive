@@ -598,7 +598,7 @@ Name: AndOrXor:1207
 %r = and %newcast, trunc(C1) & C2
 
 
-Name: AndOrXor:1230 
+Name: AndOrXor:1230
 %op0 = xor %notOp0, -1
 %op1 = xor %notOp1, -1
 %r = and %op0, %op1
@@ -607,7 +607,7 @@ Name: AndOrXor:1230
 %r = xor %or, -1
 
 
-Name: AndOrXor:1241 
+Name: AndOrXor:1241
 %op0 = or %A, %B
 %notOp1 = and %A, %B
 %op1 = xor %notOp1, -1
@@ -616,7 +616,7 @@ Name: AndOrXor:1241
 %r = xor %A, %B
 
 
-Name: AndOrXor:1247 
+Name: AndOrXor:1247
 %notOp0 = and %A, %B
 %op0 = xor %notOp0, -1
 %op1 = or %A, %B
@@ -625,7 +625,7 @@ Name: AndOrXor:1247
 %r = xor %A, %B
 
 
-Name: AndOrXor:1253 
+Name: AndOrXor:1253
 ; FIXME: need pre: !constant(%A) to avoid infinite loop when A == -1
 %op0 = xor %A, %B
 %r = and %op0, %A
@@ -634,7 +634,7 @@ Name: AndOrXor:1253
 %r = and %A, %notB
 
 
-Name: AndOrXor:1280 
+Name: AndOrXor:1280
 %nA = xor %A, -1
 %op0 = or %nA, %B
 %r = and %op0, %A
@@ -652,7 +652,7 @@ Name: AndOrXor:1288
 %r = and %op0, %negC
 
 
-Name: AndOrXor:1294 
+Name: AndOrXor:1294
 %op0 = or %A, %B
 %x = xor %A, -1
 %op1 = xor %x, %B
@@ -1087,7 +1087,7 @@ Pre: C1 ^ C2 == -1
 %r = xor %a, %B
 
 
-Name: AndOrXor:2052 
+Name: AndOrXor:2052
 Pre: C & C1 != 0 ; @@ why? it's just as correct without
 %op0 = and %x, C1
 %r = or %op0, C
@@ -1096,7 +1096,7 @@ Pre: C & C1 != 0 ; @@ why? it's just as correct without
 %r = and %or, (C | C1)
 
 
-Name: AndOrXor:2063 
+Name: AndOrXor:2063
 %op0 = xor %x, C1
 %r = or %op0, C
   =>
@@ -1170,7 +1170,7 @@ Name: AndOrXor:2188
 %r = xor %A, %D
 
 
-Name: AndOrXor:2231 
+Name: AndOrXor:2231
 %op0 = xor %A, %B
 %x = xor %B, %C
 %op1 = xor %x, %A
@@ -1402,7 +1402,7 @@ Pre: MaskedValueIsZero(%x,C1)
 %r = xor %x, C1^C2
 
 
-Name: AndOrXor:2515 
+Name: AndOrXor:2515
 %e1  = xor %x, C1
 %op0 = lshr %e1, C2
 %r   = xor %op0, C3
@@ -1411,7 +1411,7 @@ Name: AndOrXor:2515
 %r = xor %0, lshr(C1,C2)^C3
 
 
-Name: AndOrXor:2581 
+Name: AndOrXor:2581
 %op0 = or %a, %op1
 %r = xor %op0, %op1
   =>
@@ -1419,7 +1419,7 @@ Name: AndOrXor:2581
 %r = and %a, %nop1
 
 
-Name: AndOrXor:2587 
+Name: AndOrXor:2587
 %op0 = and %a, %op1
 %r = xor %op0, %op1
   =>

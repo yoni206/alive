@@ -2,5 +2,5 @@
 (declare-fun %b () (_ BitVec 27))
 (declare-fun %a () (_ BitVec 27))
 (assert
- (and (distinct (bvxor ((_ zero_extend 30) %a) ((_ zero_extend 30) %b)) ((_ zero_extend 30) (bvxor %a %b))) true))
+ (and (distinct (bvxor ((_ zero_extend 33) %a) ((_ zero_extend 33) %b)) ((_ zero_extend 33) (bvxor %a %b))) true))
 (check-sat)

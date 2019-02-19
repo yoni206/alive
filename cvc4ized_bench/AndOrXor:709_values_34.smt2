@@ -1,7 +1,1 @@
-
-(declare-fun %d () (_ BitVec 39))
-(declare-fun %b () (_ BitVec 39))
-(declare-fun %a () (_ BitVec 39))
-(assert (let ((_let_0 (bvor %b %d))) (not (= (bvand (ite (= (bvand %a %b) %b) (_ bv1 1) (_ bv0 1)) (ite (= (bvand %a %d) %d) (_ bv1 1) (_ bv0 1))) (ite (= (bvand %a _let_0) _let_0) (_ bv1 1) (_ bv0 1))))))
-(assert true)
-(check-sat)
+(error "Couldn't open file: full_bench/AndOrXor:709_values_34.smt2")

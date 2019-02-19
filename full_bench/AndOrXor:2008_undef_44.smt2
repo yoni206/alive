@@ -1,6 +1,6 @@
 (set-info :status unknown)
-(declare-fun C2 () (_ BitVec 49))
-(declare-fun C1 () (_ BitVec 49))
+(declare-fun C2 () (_ BitVec 45))
+(declare-fun C1 () (_ BitVec 45))
 (assert
- (and (= (bvxor C1 C2) (_ bv562949953421311 49)) false))
+ (and (= (bvxor C1 C2) (_ bv35184372088831 45)) false))
 (check-sat)

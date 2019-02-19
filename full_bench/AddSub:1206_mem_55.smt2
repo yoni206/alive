@@ -4,6 +4,6 @@
 (declare-fun C1 () (_ BitVec 59))
 (declare-fun u_%xc2 () (_ BitVec 8))
 (assert
- (let (($x9436 (= (bvnot (bvsub (bvand C1 (bvneg C1)) (_ bv1 59))) (bvand (bvnot (bvsub (bvand C1 (bvneg C1)) (_ bv1 59))) C2))))
- (and (= u_%xc2 (_ bv1 8)) $x9436 (and (distinct mem0 mem0) true))))
+ (let (($x10464 (= (bvnot (bvsub (bvand C1 (bvneg C1)) (_ bv1 59))) (bvand (bvnot (bvsub (bvand C1 (bvneg C1)) (_ bv1 59))) C2))))
+ (and (= u_%xc2 (_ bv1 8)) $x10464 (and (distinct mem0 mem0) true))))
 (check-sat)

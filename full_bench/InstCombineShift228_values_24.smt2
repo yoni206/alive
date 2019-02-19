@@ -3,6 +3,6 @@
 (declare-fun C1 () (_ BitVec 28))
 (declare-fun %X () (_ BitVec 28))
 (assert
- (let (($x11376 (bvult C1 (_ bv28 28))))
- (and $x11376 (bvult C2 (_ bv28 28)) (bvsge ((_ zero_extend 4) (bvadd C1 C2)) (_ bv28 32)) (and (distinct (bvshl (bvshl %X C1) C2) (_ bv0 28)) true))))
+ (let (($x19315 (bvult C1 (_ bv28 28))))
+ (and $x19315 (bvult C2 (_ bv28 28)) (bvsge ((_ zero_extend 4) (bvadd C1 C2)) (_ bv28 32)) (and (distinct (bvshl (bvshl %X C1) C2) (_ bv0 28)) true))))
 (check-sat)

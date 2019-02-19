@@ -3,8 +3,8 @@
 (declare-fun C1 () (_ BitVec 9))
 (declare-fun %X () (_ BitVec 9))
 (assert
- (let ((?x46 (bvmul ((_ zero_extend 9) %X) ((_ zero_extend 9) (bvudiv (bvshl (_ bv1 9) C1) C2)))))
- (let (($x2711 (= (bvlshr (bvshl %X C1) C1) %X)))
- (let (($x2011 (bvult C1 (_ bv9 9))))
- (and $x2011 (and (distinct C2 (_ bv0 9)) true) $x2711 (= (bvurem (bvshl (_ bv1 9) C1) C2) (_ bv0 9)) (not (= ((_ extract 17 9) ?x46) (_ bv0 9))))))))
+ (let ((?x9102 (bvmul ((_ zero_extend 9) %X) ((_ zero_extend 9) (bvudiv (bvshl (_ bv1 9) C1) C2)))))
+ (let (($x12383 (= (bvlshr (bvshl %X C1) C1) %X)))
+ (let (($x15245 (bvult C1 (_ bv9 9))))
+ (and $x15245 (and (distinct C2 (_ bv0 9)) true) $x12383 (= (bvurem (bvshl (_ bv1 9) C1) C2) (_ bv0 9)) (not (= ((_ extract 17 9) ?x9102) (_ bv0 9))))))))
 (check-sat)

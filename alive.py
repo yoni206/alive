@@ -100,7 +100,7 @@ def gen_benchmark(s, opt_name, index, opt_reason):
   header = ""
   string = header + z3_solver_to_smtlib(s)
 
-  filename = "bench/" + opt_name + "_" + opt_reason + "_" + str(index) +  ".smt2"
+  filename = "bench/" + opt_name.strip() + "_" + opt_reason + "_" + str(index) +  ".smt2"
   fd = open(filename, 'w')
   fd.write(string)
   fd.close()

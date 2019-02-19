@@ -1,10 +1,1 @@
-
-(declare-fun mem0 () (_ BitVec 8))
-(declare-fun |ana_WillNotOverflowSignedAdd(%x, %y)| () (_ BitVec 1))
-(declare-fun u_%sy () (_ BitVec 8))
-(declare-fun u_%sx () (_ BitVec 8))
-(declare-fun %y () (_ BitVec 10))
-(declare-fun %x () (_ BitVec 10))
-(assert (let ((_let_0 (= |ana_WillNotOverflowSignedAdd(%x, %y)| (_ bv1 1)))) (and (=> _let_0 (= (bvadd ((_ sign_extend 1) %x) ((_ sign_extend 1) %y)) ((_ sign_extend 1) (bvadd %x %y)))) (or (= u_%sx (_ bv1 8)) (= u_%sy (_ bv1 8))) _let_0 (not (= mem0 mem0)))))
-(assert true)
-(check-sat)
+(error "Couldn't open file: full_bench/AddSub:1278_mem_1213.smt2")

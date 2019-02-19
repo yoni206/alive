@@ -1,0 +1,5 @@
+(set-info :status unknown)
+(declare-fun %b () (_ BitVec 48))
+(assert
+ (and (distinct (bvadd %b %b) (bvshl %b (_ bv1 48))) true))
+(check-sat)

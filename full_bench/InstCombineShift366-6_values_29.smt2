@@ -3,7 +3,7 @@
 (declare-fun C1 () (_ BitVec 47))
 (declare-fun %X () (_ BitVec 47))
 (assert
- (let ((?x7479 (bvand (bvlshr (bvashr %X C1) ((_ zero_extend 30) C2)) (bvlshr (bvsub (bvshl (_ bv1 47) (_ bv17 47)) (_ bv1 47)) ((_ zero_extend 30) C2)))))
- (let (($x20476 (bvult C1 (_ bv47 47))))
- (and $x20476 (bvult C2 (_ bv17 17)) (and (distinct (bvlshr ((_ extract 16 0) (bvashr %X C1)) C2) ((_ extract 16 0) ?x7479)) true)))))
+ (let ((?x13698 (bvand (bvlshr (bvashr %X C1) ((_ zero_extend 30) C2)) (bvlshr (bvsub (bvshl (_ bv1 47) (_ bv17 47)) (_ bv1 47)) ((_ zero_extend 30) C2)))))
+ (let (($x3281 (bvult C1 (_ bv47 47))))
+ (and $x3281 (bvult C2 (_ bv17 17)) (and (distinct (bvlshr ((_ extract 16 0) (bvashr %X C1)) C2) ((_ extract 16 0) ?x13698)) true)))))
 (check-sat)

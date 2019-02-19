@@ -4,7 +4,7 @@
 (declare-fun |ana_WillNotOverflowSignedAdd(%x, trunc(C))| () (_ BitVec 1))
 (declare-fun u_%sx () (_ BitVec 8))
 (assert
- (let (($x10054 (= (bvadd ((_ sign_extend 1) %x) ((_ sign_extend 1) ((_ extract 36 0) C))) ((_ sign_extend 1) (bvadd %x ((_ extract 36 0) C))))))
- (let (($x10392 (= |ana_WillNotOverflowSignedAdd(%x, trunc(C))| (_ bv1 1))))
- (and (=> $x10392 $x10054) (= u_%sx (_ bv1 8)) $x10392 (= (bvand C (bvshl (_ bv17592186044415 44) (bvsub (_ bv37 44) (_ bv1 44)))) (_ bv0 44)) (not $x10054)))))
+ (let (($x10052 (= (bvadd ((_ sign_extend 1) %x) ((_ sign_extend 1) ((_ extract 36 0) C))) ((_ sign_extend 1) (bvadd %x ((_ extract 36 0) C))))))
+ (let (($x10384 (= |ana_WillNotOverflowSignedAdd(%x, trunc(C))| (_ bv1 1))))
+ (and (=> $x10384 $x10052) (= u_%sx (_ bv1 8)) $x10384 (= (bvand C (bvshl (_ bv17592186044415 44) (bvsub (_ bv37 44) (_ bv1 44)))) (_ bv0 44)) (not $x10052)))))
 (check-sat)

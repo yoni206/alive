@@ -1,0 +1,10 @@
+(set-info :status unknown)
+(declare-fun mem0 () (_ BitVec 8))
+(declare-fun |ana_computeKnownZeroBits(%Y)| () (_ BitVec 29))
+(declare-fun C2 () (_ BitVec 29))
+(declare-fun u_%LHS () (_ BitVec 8))
+(declare-fun %Y () (_ BitVec 29))
+(assert
+ (let (($x2940 (and (and (distinct (bvadd C2 (_ bv1 29)) (_ bv0 29)) true) (= (bvand (bvadd C2 (_ bv1 29)) (bvsub (bvadd C2 (_ bv1 29)) (_ bv1 29))) (_ bv0 29)))))
+ (and (= (bvand |ana_computeKnownZeroBits(%Y)| %Y) (_ bv0 29)) (= u_%LHS (_ bv1 8)) $x2940 (= (bvor C2 |ana_computeKnownZeroBits(%Y)|) (_ bv536870911 29)) (and (distinct mem0 mem0) true))))
+(check-sat)

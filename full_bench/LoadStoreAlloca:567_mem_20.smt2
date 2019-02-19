@@ -1,0 +1,11 @@
+(set-info :status unknown)
+(declare-fun mem0 () (_ BitVec 8))
+(declare-fun %x () (_ BitVec 24))
+(declare-fun %p0 () (_ BitVec 32))
+(declare-fun idx () (_ BitVec 32))
+(assert
+ (let ((?x2225 (ite (and (and (distinct %p0 (_ bv0 32)) true) (= idx (bvadd %p0 (_ bv0 32)))) ((_ extract 7 0) %x) mem0)))
+ (let ((?x12244 (ite (and (and (distinct %p0 (_ bv0 32)) true) (= idx (bvadd %p0 (_ bv1 32)))) ((_ extract 15 8) %x) ?x2225)))
+ (let ((?x20447 (ite (and (and (distinct %p0 (_ bv0 32)) true) (= idx (bvadd %p0 (_ bv2 32)))) ((_ extract 23 16) %x) ?x12244)))
+ (and (distinct ?x20447 ?x20447) true)))))
+(check-sat)

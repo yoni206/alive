@@ -1,6 +1,6 @@
 
-(declare-fun %b () (_ BitVec 47))
-(declare-fun %a () (_ BitVec 47))
-(assert (not (= (bvadd (bvsub (_ bv0 47) %a) (bvsub (_ bv0 47) %b)) (bvsub (_ bv0 47) (bvadd %a %b)))))
+(declare-fun %b () (_ BitVec 48))
+(declare-fun %a () (_ BitVec 48))
+(assert (not (= (bvadd (bvsub (_ bv0 48) %a) (bvsub (_ bv0 48) %b)) (bvsub (_ bv0 48) (bvadd %a %b)))))
 (assert true)
 (check-sat)

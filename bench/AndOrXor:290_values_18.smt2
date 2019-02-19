@@ -1,0 +1,10 @@
+(set-info :status unknown)
+(declare-fun C2 () (_ BitVec 20))
+(declare-fun %X () (_ BitVec 20))
+(declare-fun C1 () (_ BitVec 20))
+(assert
+ (let ((?x3498 (ite (bvsge %X C2) (_ bv1 1) (_ bv0 1))))
+ (let ((?x11788 (ite (bvslt %X C1) (_ bv1 1) (_ bv0 1))))
+ (let (($x8710 (and (distinct (bvor ?x11788 ?x3498) (ite (bvsgt %X (bvsub C2 (_ bv1 20))) (_ bv1 1) (_ bv0 1))) true)))
+ (and (bvsle C1 C2) (and (distinct C1 C2) true) (= C1 (bvshl (_ bv1 20) (bvsub (_ bv20 20) (_ bv1 20)))) $x8710)))))
+(check-sat)

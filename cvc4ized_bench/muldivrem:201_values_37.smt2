@@ -1,8 +1,1 @@
-
-(declare-fun C () (_ BitVec 38))
-(declare-fun %Y () (_ BitVec 38))
-(declare-fun %X () (_ BitVec 38))
-(declare-fun |ana_isPowerOf2(abs(C))| () (_ BitVec 1))
-(assert (let ((_let_0 (ite (bvsge C (_ bv0 38)) C (bvneg C)))) (let ((_let_1 (= |ana_isPowerOf2(abs(C))| (_ bv1 1)))) (and (=> _let_1 (and (= (bvand _let_0 (bvsub _let_0 (_ bv1 38))) (_ bv0 38)) (not (= _let_0 (_ bv0 38))))) (bvslt C (_ bv0 38)) _let_1 (not (= (bvmul (bvsub %Y %X) C) (bvmul (bvsub %X %Y) _let_0)))))))
-(assert true)
-(check-sat)
+(error "Couldn't open file: full_bench/muldivrem:201_values_37.smt2")

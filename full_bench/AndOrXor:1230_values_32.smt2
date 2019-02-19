@@ -1,0 +1,6 @@
+(set-info :status unknown)
+(declare-fun %notOp1 () (_ BitVec 40))
+(declare-fun %notOp0 () (_ BitVec 40))
+(assert
+ (and (distinct (bvand (bvxor %notOp0 (_ bv1099511627775 40)) (bvxor %notOp1 (_ bv1099511627775 40))) (bvxor (bvor %notOp0 %notOp1) (_ bv1099511627775 40))) true))
+(check-sat)

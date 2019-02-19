@@ -4,8 +4,8 @@
 (declare-fun C () (_ BitVec 4))
 (declare-fun %A () (_ BitVec 4))
 (assert
- (let (($x10403 (= |ana_MaskedValueIsZero(%A, lshr(-1, countLeadingZeros(C)))| (_ bv1 1))))
- (let ((?x961 (ite (= ((_ extract 1 1) C) (_ bv1 1)) (_ bv2 4) (ite (= ((_ extract 0 0) C) (_ bv1 1)) (_ bv3 4) (_ bv4 4)))))
- (let ((?x16285 (ite (= ((_ extract 3 3) C) (_ bv1 1)) (_ bv0 4) (ite (= ((_ extract 2 2) C) (_ bv1 1)) (_ bv1 4) ?x961))))
- (and (=> $x10403 (= (bvand %A (bvlshr (_ bv15 4) ?x16285)) (_ bv0 4))) $x10403 (and (distinct mem0 mem0) true))))))
+ (let (($x1910 (= |ana_MaskedValueIsZero(%A, lshr(-1, countLeadingZeros(C)))| (_ bv1 1))))
+ (let ((?x2629 (ite (= ((_ extract 1 1) C) (_ bv1 1)) (_ bv2 4) (ite (= ((_ extract 0 0) C) (_ bv1 1)) (_ bv3 4) (_ bv4 4)))))
+ (let ((?x15358 (ite (= ((_ extract 3 3) C) (_ bv1 1)) (_ bv0 4) (ite (= ((_ extract 2 2) C) (_ bv1 1)) (_ bv1 4) ?x2629))))
+ (and (=> $x1910 (= (bvand %A (bvlshr (_ bv15 4) ?x15358)) (_ bv0 4))) $x1910 (and (distinct mem0 mem0) true))))))
 (check-sat)

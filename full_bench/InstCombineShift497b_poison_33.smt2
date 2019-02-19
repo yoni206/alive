@@ -2,6 +2,6 @@
 (declare-fun C2 () (_ BitVec 38))
 (declare-fun C () (_ BitVec 38))
 (assert
- (let (($x840 (bvult C (_ bv38 38))))
- (and $x840 (= (bvlshr C2 (bvsub (_ bv38 38) (_ bv1 38))) (_ bv0 38)) false)))
+ (let (($x10837 (bvult C (_ bv38 38))))
+ (and $x10837 (= (bvlshr C2 (bvsub (_ bv38 38) (_ bv1 38))) (_ bv0 38)) false)))
 (check-sat)

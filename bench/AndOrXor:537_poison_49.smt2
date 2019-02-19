@@ -1,0 +1,6 @@
+(set-info :status unknown)
+(declare-fun C () (_ BitVec 51))
+(assert
+ (let (($x1653 (and (and (distinct (bvadd C (_ bv1 51)) (_ bv0 51)) true) (= (bvand (bvadd C (_ bv1 51)) (bvsub (bvadd C (_ bv1 51)) (_ bv1 51))) (_ bv0 51)))))
+ (and $x1653 false)))
+(check-sat)

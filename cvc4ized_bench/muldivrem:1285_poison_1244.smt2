@@ -1,5 +1,1 @@
-
-(declare-fun %Y () (_ BitVec 26))
-(assert false)
-(assert true)
-(check-sat)
+(error "Couldn't open file: full_bench/muldivrem:1285_poison_1244.smt2")

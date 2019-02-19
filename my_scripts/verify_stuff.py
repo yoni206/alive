@@ -6,7 +6,7 @@ REASONS = ["mem", "poison", "undef", "values"]
 
 def main(smt_dir, output_file):
     files = [f for f in os.listdir(smt_dir) if not f.startswith(".")]
-    #TODO for now i am skipping mem checks, because they are supposed to be trivial. Are they?
+    #TODO we should include memory files also.
     files = [f for f in files if "_mem_" not in f]
     opt_names = set([f[0:f.find("_")] for f in files])
     stats = {}
@@ -93,6 +93,7 @@ def verify_sixty_three_reason(opt_name, files, smt_dir, reason):
 #checks on the level of the optimization (e.g. all files are the same except for the bitwidth).
 def do_global_checks(opt_name, files, smt_dir):
     failures = []
+    #unification actually also checks that all constants are the same. Otherwise the files wouldn't unify.
     do_global_check(opt_name, files, smt_dir, failures, unification)
     do_global_check(opt_name, files, smt_dir, failures, sixtythreefiles)
     return failures
@@ -109,8 +110,6 @@ def unify_all(opt_name, files, smt_dir, reason):
     canonized_contents = canonize_contents(contents)
     canon_set = set(canonized_contents)
     if len(canon_set) > 1:
-        if "ift239" in opt_name: #panda
-            print("panda", opt_name, reason, "\n".join(canon_set))
         return False
     else:
         return True
@@ -208,7 +207,8 @@ def do_checks(path):
     with open(path, 'r') as my_file:
         content = "".join(my_file.readlines())
     do_check(content, path, failures, check_same_width)
-    do_check(content, path, failures, bv_const_ok)
+    #we allow other constants than 0,1,etc. as long as they are the same globally. Checked in unification.
+    #do_check(content, path, failures, bv_const_ok)
     do_check(content, path, failures, no_extend)
     do_check(content, path, failures, no_extract)
     do_check(content, path, failures, no_ana)

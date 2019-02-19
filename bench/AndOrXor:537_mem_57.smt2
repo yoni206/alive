@@ -1,0 +1,7 @@
+(set-info :status unknown)
+(declare-fun mem0 () (_ BitVec 8))
+(declare-fun C () (_ BitVec 59))
+(assert
+ (let (($x11187 (and (and (distinct (bvadd C (_ bv1 59)) (_ bv0 59)) true) (= (bvand (bvadd C (_ bv1 59)) (bvsub (bvadd C (_ bv1 59)) (_ bv1 59))) (_ bv0 59)))))
+ (and $x11187 (and (distinct mem0 mem0) true))))
+(check-sat)

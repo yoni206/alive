@@ -1,0 +1,12 @@
+(set-info :status unknown)
+(declare-fun %x () (_ BitVec 13))
+(declare-fun C () (_ BitVec 3))
+(declare-fun %N () (_ BitVec 3))
+(assert
+ (let ((?x12428 (ite (and (distinct ((_ extract 2 2) C) (_ bv0 1)) true) (_ bv2 3) (ite (and (distinct ((_ extract 1 1) C) (_ bv0 1)) true) (_ bv1 3) (_ bv0 3)))))
+ (let ((?x17275 ((_ zero_extend 10) (bvadd %N ?x12428))))
+ (let ((?x11698 (bvshl C %N)))
+ (let ((?x14538 ((_ zero_extend 10) ?x11698)))
+ (let (($x9371 (bvult %N (_ bv3 3))))
+ (and $x9371 (and (distinct ?x14538 (_ bv0 13)) true) (= (bvmul (bvudiv %x ?x14538) ?x14538) %x) (and (and (distinct C (_ bv0 3)) true) (= (bvand C (bvsub C (_ bv1 3))) (_ bv0 3))) (not (= (bvshl (bvlshr %x ?x17275) ?x17275) %x)))))))))
+(check-sat)

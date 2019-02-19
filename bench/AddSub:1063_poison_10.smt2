@@ -1,0 +1,12 @@
+(set-info :status unknown)
+(declare-fun C2 () (_ BitVec 12))
+(declare-fun C1 () (_ BitVec 12))
+(assert
+ (let ((?x2565 (ite (= ((_ extract 10 10) C1) (_ bv1 1)) (_ bv10 32) (ite (= ((_ extract 11 11) C1) (_ bv1 1)) (_ bv11 32) (_ bv12 32)))))
+ (let ((?x3768 (ite (= ((_ extract 8 8) C1) (_ bv1 1)) (_ bv8 32) (ite (= ((_ extract 9 9) C1) (_ bv1 1)) (_ bv9 32) ?x2565))))
+ (let ((?x2239 (ite (= ((_ extract 6 6) C1) (_ bv1 1)) (_ bv6 32) (ite (= ((_ extract 7 7) C1) (_ bv1 1)) (_ bv7 32) ?x3768))))
+ (let ((?x2246 (ite (= ((_ extract 4 4) C1) (_ bv1 1)) (_ bv4 32) (ite (= ((_ extract 5 5) C1) (_ bv1 1)) (_ bv5 32) ?x2239))))
+ (let ((?x2454 (ite (= ((_ extract 2 2) C1) (_ bv1 1)) (_ bv2 32) (ite (= ((_ extract 3 3) C1) (_ bv1 1)) (_ bv3 32) ?x2246))))
+ (let ((?x1984 (ite (= ((_ extract 0 0) C1) (_ bv1 1)) (_ bv0 32) (ite (= ((_ extract 1 1) C1) (_ bv1 1)) (_ bv1 32) ?x2454))))
+ (and (= ?x1984 (_ bv0 32)) (= C1 (bvadd C2 (_ bv1 12))) false))))))))
+(check-sat)

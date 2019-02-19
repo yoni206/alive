@@ -1,6 +1,6 @@
 (set-info :status unknown)
-(declare-fun %b () (_ BitVec 33))
-(declare-fun %a () (_ BitVec 33))
+(declare-fun %b () (_ BitVec 42))
+(declare-fun %a () (_ BitVec 42))
 (assert
- (and (distinct (bvxor ((_ zero_extend 9) %a) ((_ zero_extend 9) %b)) ((_ zero_extend 9) (bvxor %a %b))) true))
+ (and (distinct (bvxor ((_ zero_extend 7) %a) ((_ zero_extend 7) %b)) ((_ zero_extend 7) (bvxor %a %b))) true))
 (check-sat)

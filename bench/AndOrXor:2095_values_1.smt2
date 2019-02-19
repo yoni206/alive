@@ -1,0 +1,10 @@
+(set-info :status unknown)
+(declare-fun C1 () (_ BitVec 5))
+(declare-fun %op1 () (_ BitVec 5))
+(declare-fun %A () (_ BitVec 5))
+(declare-fun |ana_MaskedValueIsZero(%op1, C1)| () (_ BitVec 1))
+(assert
+ (let (($x7219 (and (distinct (bvor (bvxor %A C1) %op1) (bvxor (bvor %A %op1) C1)) true)))
+ (let (($x16086 (= |ana_MaskedValueIsZero(%op1, C1)| (_ bv1 1))))
+ (and (=> $x16086 (= (bvand %op1 C1) (_ bv0 5))) $x16086 $x7219))))
+(check-sat)

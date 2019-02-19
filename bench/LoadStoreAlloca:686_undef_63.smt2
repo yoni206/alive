@@ -1,0 +1,11 @@
+(set-info :status unknown)
+(declare-fun %p1 () (_ BitVec 64))
+(declare-fun u_%x () (_ BitVec 8))
+(declare-fun |ana_equivalentAddressValues(%p1, %p2)| () (_ BitVec 1))
+(declare-fun %p2 () (_ BitVec 64))
+(assert
+ (let (($x15902 (or true true)))
+ (let (($x16073 (and (distinct %p1 (_ bv0 64)) true)))
+ (let (($x6404 (= |ana_equivalentAddressValues(%p1, %p2)| (_ bv1 1))))
+ (and $x16073 $x15902 $x16073 $x15902 (=> $x6404 (= %p1 %p2)) $x6404 (and (distinct u_%x (_ bv1 8)) true) (not (and $x16073 $x15902 $x16073 $x15902)))))))
+(check-sat)

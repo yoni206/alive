@@ -1,0 +1,13 @@
+(set-info :status unknown)
+(declare-fun mem0 () (_ BitVec 8))
+(declare-fun |ana_MaskedValueIsZero(%Y, (-1 << (log2(C2) + 1)))| () (_ BitVec 1))
+(declare-fun C2 () (_ BitVec 8))
+(declare-fun C1 () (_ BitVec 8))
+(declare-fun %Y () (_ BitVec 8))
+(assert
+ (let (($x8289 (= |ana_MaskedValueIsZero(%Y, (-1 << (log2(C2) + 1)))| (_ bv1 1))))
+ (let ((?x5305 (ite (and (distinct ((_ extract 3 2) C2) (_ bv0 2)) true) (ite (and (distinct ((_ extract 3 3) C2) (_ bv0 1)) true) (_ bv3 8) (_ bv2 8)) (ite (and (distinct ((_ extract 1 1) C2) (_ bv0 1)) true) (_ bv1 8) (_ bv0 8)))))
+ (let ((?x5009 (ite (and (distinct ((_ extract 7 6) C2) (_ bv0 2)) true) (ite (and (distinct ((_ extract 7 7) C2) (_ bv0 1)) true) (_ bv7 8) (_ bv6 8)) (ite (and (distinct ((_ extract 5 5) C2) (_ bv0 1)) true) (_ bv5 8) (_ bv4 8)))))
+ (let ((?x8981 (bvshl (_ bv255 8) (bvadd (ite (and (distinct ((_ extract 7 4) C2) (_ bv0 4)) true) ?x5009 ?x5305) (_ bv1 8)))))
+ (and (=> $x8289 (= (bvand %Y ?x8981) (_ bv0 8))) (= C2 (bvneg C1)) (and (and (distinct C2 (_ bv0 8)) true) (= (bvand C2 (bvsub C2 (_ bv1 8))) (_ bv0 8))) $x8289 (and (distinct mem0 mem0) true)))))))
+(check-sat)

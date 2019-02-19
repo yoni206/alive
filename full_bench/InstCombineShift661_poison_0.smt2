@@ -3,8 +3,8 @@
 (declare-fun C2 () (_ BitVec 33))
 (declare-fun C1 () (_ BitVec 33))
 (assert
- (let (($x2125 (not (= (bvlshr (bvshl %X (bvsub C1 C2)) (bvsub C1 C2)) %X))))
- (let (($x17170 (= (bvlshr (bvshl %X C1) C1) %X)))
- (let (($x7940 (bvult C1 (_ bv33 33))))
- (and $x7940 (bvult C2 (_ bv33 33)) $x17170 (bvsgt C1 C2) $x2125)))))
+ (let (($x14641 (not (= (bvlshr (bvshl %X (bvsub C1 C2)) (bvsub C1 C2)) %X))))
+ (let (($x17348 (= (bvlshr (bvshl %X C1) C1) %X)))
+ (let (($x21004 (bvult C1 (_ bv33 33))))
+ (and $x21004 (bvult C2 (_ bv33 33)) $x17348 (bvsgt C1 C2) $x14641)))))
 (check-sat)

@@ -3,6 +3,6 @@
 (declare-fun %Op0 () (_ BitVec 22))
 (declare-fun |ana_MaskedValueIsZero(%Op0, -2)| () (_ BitVec 1))
 (assert
- (let (($x14158 (= |ana_MaskedValueIsZero(%Op0, -2)| (_ bv1 1))))
- (and (=> $x14158 (= (bvand %Op0 (_ bv4194302 22)) (_ bv0 22))) $x14158 (and (distinct (bvmul %Op0 %Op1) (bvand (bvsub (_ bv0 22) %Op0) %Op1)) true))))
+ (let (($x17265 (= |ana_MaskedValueIsZero(%Op0, -2)| (_ bv1 1))))
+ (and (=> $x17265 (= (bvand %Op0 (_ bv4194302 22)) (_ bv0 22))) $x17265 (and (distinct (bvmul %Op0 %Op1) (bvand (bvsub (_ bv0 22) %Op0) %Op1)) true))))
 (check-sat)

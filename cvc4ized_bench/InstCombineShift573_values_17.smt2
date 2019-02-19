@@ -1,7 +1,0 @@
-
-(declare-fun C () (_ BitVec 18))
-(declare-fun C2 () (_ BitVec 18))
-(declare-fun %X () (_ BitVec 18))
-(assert (and (bvult C2 (_ bv18 18)) (bvult C (_ bv18 18)) (bvsge ((_ zero_extend 14) (bvadd C C2)) (_ bv18 32)) (not (= (bvshl (bvshl %X C2) C) (_ bv0 18)))))
-(assert true)
-(check-sat)

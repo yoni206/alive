@@ -2,6 +2,6 @@
 (declare-fun %A () (_ BitVec 64))
 (declare-fun %B () (_ BitVec 64))
 (assert
- (let ((?x3153 (ite (= (ite (bvslt %A %B) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) %A %B)))
- (and (distinct (ite (= (ite (bvsge ?x3153 %A) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) ?x3153 %A) %A) true)))
+ (let ((?x16304 (ite (= (ite (bvslt %A %B) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) %A %B)))
+ (and (distinct (ite (= (ite (bvsge ?x16304 %A) (_ bv1 1) (_ bv0 1)) (_ bv1 1)) ?x16304 %A) %A) true)))
 (check-sat)

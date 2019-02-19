@@ -1,0 +1,7 @@
+(set-info :status unknown)
+(declare-fun u_%Op1 () (_ BitVec 8))
+(declare-fun %Y () (_ BitVec 64))
+(assert
+ (let (($x2280 (bvult %Y (_ bv64 64))))
+ (and $x2280 $x2280 (= u_%Op1 (_ bv1 8)) false)))
+(check-sat)

@@ -3,6 +3,6 @@
 (declare-fun %X () (_ BitVec 37))
 (declare-fun C2 () (_ BitVec 37))
 (assert
- (let ((?x13248 (ite (and (distinct %X C1) true) (_ bv1 1) (_ bv0 1))))
- (and (bvult C1 C2) (and (distinct (bvor ?x13248 (ite (= %X C2) (_ bv1 1) (_ bv0 1))) ?x13248) true))))
+ (let ((?x19165 (ite (and (distinct %X C1) true) (_ bv1 1) (_ bv0 1))))
+ (and (bvult C1 C2) (and (distinct (bvor ?x19165 (ite (= %X C2) (_ bv1 1) (_ bv0 1))) ?x19165) true))))
 (check-sat)

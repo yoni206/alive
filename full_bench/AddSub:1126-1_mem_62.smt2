@@ -5,7 +5,7 @@
 (declare-fun C2 () (_ BitVec 2))
 (declare-fun %Y () (_ BitVec 2))
 (assert
- (let (($x583 (= |ana_MaskedValueIsZero(%Y, (-1 << (log2(C1) + 1)))| (_ bv1 1))))
- (let ((?x2969 (bvshl (_ bv3 2) (bvadd (ite (and (distinct ((_ extract 1 1) C1) (_ bv0 1)) true) (_ bv1 2) (_ bv0 2)) (_ bv1 2)))))
- (and (=> $x583 (= (bvand %Y ?x2969) (_ bv0 2))) (= C2 (bvneg C1)) (and (and (distinct C1 (_ bv0 2)) true) (= (bvand C1 (bvsub C1 (_ bv1 2))) (_ bv0 2))) $x583 (and (distinct mem0 mem0) true)))))
+ (let (($x1028 (= |ana_MaskedValueIsZero(%Y, (-1 << (log2(C1) + 1)))| (_ bv1 1))))
+ (let ((?x3435 (bvshl (_ bv3 2) (bvadd (ite (and (distinct ((_ extract 1 1) C1) (_ bv0 1)) true) (_ bv1 2) (_ bv0 2)) (_ bv1 2)))))
+ (and (=> $x1028 (= (bvand %Y ?x3435) (_ bv0 2))) (= C2 (bvneg C1)) (and (and (distinct C1 (_ bv0 2)) true) (= (bvand C1 (bvsub C1 (_ bv1 2))) (_ bv0 2))) $x1028 (and (distinct mem0 mem0) true)))))
 (check-sat)

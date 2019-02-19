@@ -3,6 +3,6 @@
 (declare-fun %Op1 () (_ BitVec 21))
 (declare-fun u_%Op0 () (_ BitVec 8))
 (assert
- (let (($x5770 (and (distinct (bvsub (bvor %Y %Op1) %Op1) (bvand (bvxor %Op1 (_ bv2097151 21)) %Y)) true)))
- (and (= u_%Op0 (_ bv1 8)) $x5770)))
+ (let (($x15289 (and (distinct (bvsub (bvor %Y %Op1) %Op1) (bvand (bvxor %Op1 (_ bv2097151 21)) %Y)) true)))
+ (and (= u_%Op0 (_ bv1 8)) $x15289)))
 (check-sat)

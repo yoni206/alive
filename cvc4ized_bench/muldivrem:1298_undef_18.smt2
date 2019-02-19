@@ -1,5 +1,5 @@
 
-(declare-fun %Op1 () (_ BitVec 20))
+(declare-fun %Op1 () (_ BitVec 23))
 (assert false)
 (assert true)
 (check-sat)

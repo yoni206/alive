@@ -3,7 +3,7 @@
 (declare-fun %A () (_ BitVec 46))
 (declare-fun |ana_WillNotOverflowSignedSub(%A, %B)| () (_ BitVec 1))
 (assert
- (let (($x11461 (= |ana_WillNotOverflowSignedSub(%A, %B)| (_ bv1 1))))
- (let (($x16916 (= (bvsub ((_ sign_extend 1) %A) ((_ sign_extend 1) %B)) ((_ sign_extend 1) (bvsub %A %B)))))
- (and (=> $x11461 $x16916) $x11461 (and (distinct (bvsub %A %B) (bvsub %A %B)) true)))))
+ (let (($x10007 (= |ana_WillNotOverflowSignedSub(%A, %B)| (_ bv1 1))))
+ (let (($x14709 (= (bvsub ((_ sign_extend 1) %A) ((_ sign_extend 1) %B)) ((_ sign_extend 1) (bvsub %A %B)))))
+ (and (=> $x10007 $x14709) $x10007 (and (distinct (bvsub %A %B) (bvsub %A %B)) true)))))
 (check-sat)

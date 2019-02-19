@@ -1,6 +1,6 @@
 
-(declare-fun %b () (_ BitVec 54))
-(declare-fun %a () (_ BitVec 54))
+(declare-fun %b () (_ BitVec 29))
+(declare-fun %a () (_ BitVec 29))
 (assert (not (= (bvor (ite (bvuge %a %b) (_ bv1 1) (_ bv0 1)) (ite (not (= %a %b)) (_ bv1 1) (_ bv0 1))) (_ bv1 1))))
 (assert true)
 (check-sat)

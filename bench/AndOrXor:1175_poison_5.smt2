@@ -1,0 +1,13 @@
+(set-info :status unknown)
+(declare-fun |ana_MaskedValueIsZero(%A, lshr(-1, countLeadingZeros(C)))| () (_ BitVec 1))
+(declare-fun C () (_ BitVec 9))
+(declare-fun %A () (_ BitVec 9))
+(assert
+ (let (($x6416 (= |ana_MaskedValueIsZero(%A, lshr(-1, countLeadingZeros(C)))| (_ bv1 1))))
+ (let ((?x1845 (ite (= ((_ extract 1 1) C) (_ bv1 1)) (_ bv7 9) (ite (= ((_ extract 0 0) C) (_ bv1 1)) (_ bv8 9) (_ bv9 9)))))
+ (let ((?x15000 (ite (= ((_ extract 3 3) C) (_ bv1 1)) (_ bv5 9) (ite (= ((_ extract 2 2) C) (_ bv1 1)) (_ bv6 9) ?x1845))))
+ (let ((?x10226 (ite (= ((_ extract 5 5) C) (_ bv1 1)) (_ bv3 9) (ite (= ((_ extract 4 4) C) (_ bv1 1)) (_ bv4 9) ?x15000))))
+ (let ((?x4638 (ite (= ((_ extract 7 7) C) (_ bv1 1)) (_ bv1 9) (ite (= ((_ extract 6 6) C) (_ bv1 1)) (_ bv2 9) ?x10226))))
+ (let (($x1347 (= (bvand %A (bvlshr (_ bv511 9) (ite (= ((_ extract 8 8) C) (_ bv1 1)) (_ bv0 9) ?x4638))) (_ bv0 9))))
+ (and (=> $x6416 $x1347) $x6416 false))))))))
+(check-sat)

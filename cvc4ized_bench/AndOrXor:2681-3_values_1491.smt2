@@ -1,6 +1,1 @@
-
-(declare-fun %b () (_ BitVec 59))
-(declare-fun %a () (_ BitVec 59))
-(assert (not (= (bvxor ((_ extract 20 0) %a) ((_ extract 20 0) %b)) ((_ extract 20 0) (bvxor %a %b)))))
-(assert true)
-(check-sat)
+(error "Couldn't open file: full_bench/AndOrXor:2681-3_values_1491.smt2")

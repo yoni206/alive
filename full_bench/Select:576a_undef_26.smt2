@@ -1,4 +1,4 @@
 (set-info :status unknown)
 (assert
- (not (bvult (bvsub (_ bv34 34) (_ bv1 34)) (_ bv34 34))))
+ (not (bvult (bvsub (_ bv29 29) (_ bv1 29)) (_ bv29 29))))
 (check-sat)
