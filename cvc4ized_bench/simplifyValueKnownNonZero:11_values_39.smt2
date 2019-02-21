@@ -1,1 +1,0 @@
-(error "Couldn't open file: full_bench/simplifyValueKnownNonZero:11_values_39.smt2")

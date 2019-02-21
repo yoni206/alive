@@ -1,1 +1,6 @@
-(error "Couldn't open file: full_bench/AndOrXor:2008_undef_21.smt2")
+
+(declare-fun C2 () (_ BitVec 22))
+(declare-fun C1 () (_ BitVec 22))
+(assert false)
+(assert true)
+(check-sat)

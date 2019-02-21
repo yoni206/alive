@@ -1,8 +1,8 @@
 
 (declare-fun mem0 () (_ BitVec 8))
 (declare-fun |ana_MaskedValueIsZero(%Op0, (-1 << (width(C) - C)))| () (_ BitVec 1))
-(declare-fun C () (_ BitVec 18))
-(declare-fun %Op0 () (_ BitVec 18))
-(assert (let ((_let_0 (= |ana_MaskedValueIsZero(%Op0, (-1 << (width(C) - C)))| (_ bv1 1)))) (and (=> _let_0 (= (bvand %Op0 (bvshl (_ bv262143 18) (bvsub (_ bv18 18) C))) (_ bv0 18))) _let_0 (not (= mem0 mem0)))))
+(declare-fun C () (_ BitVec 21))
+(declare-fun %Op0 () (_ BitVec 21))
+(assert (let ((_let_0 (= |ana_MaskedValueIsZero(%Op0, (-1 << (width(C) - C)))| (_ bv1 1)))) (and (=> _let_0 (= (bvand %Op0 (bvshl (_ bv2097151 21) (bvsub (_ bv21 21) C))) (_ bv0 21))) _let_0 (not (= mem0 mem0)))))
 (assert true)
 (check-sat)

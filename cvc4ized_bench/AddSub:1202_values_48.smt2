@@ -1,0 +1,6 @@
+
+(declare-fun %x () (_ BitVec 52))
+(declare-fun C () (_ BitVec 52))
+(assert (not (= (bvadd (bvxor %x (_ bv4503599627370495 52)) C) (bvsub (bvsub C (_ bv1 52)) %x))))
+(assert true)
+(check-sat)

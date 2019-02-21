@@ -92,6 +92,7 @@ def pick(dir_of_bv_smt, files):
         return files[0]
     else:
         assert(len(have_four) == 1)
+        assert("(_ BitVec 1)" not in have_four[0])
         return have_four[0]
 
 def get_opt_name(f):

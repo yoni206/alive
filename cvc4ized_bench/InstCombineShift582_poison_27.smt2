@@ -1,1 +1,5 @@
-(error "Couldn't open file: full_bench/InstCombineShift582_poison_27.smt2")
+
+(declare-fun C () (_ BitVec 31))
+(assert false)
+(assert true)
+(check-sat)

@@ -1,1 +1,6 @@
-(error "Couldn't open file: full_bench/AndOrXor:994_poison_50.smt2")
+
+(declare-fun C1 () (_ BitVec 58))
+(declare-fun C2 () (_ BitVec 58))
+(assert false)
+(assert true)
+(check-sat)

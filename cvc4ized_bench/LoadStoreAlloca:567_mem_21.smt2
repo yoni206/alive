@@ -1,8 +1,8 @@
 
 (declare-fun mem0 () (_ BitVec 8))
-(declare-fun %x () (_ BitVec 11))
+(declare-fun %x () (_ BitVec 25))
 (declare-fun %p0 () (_ BitVec 32))
 (declare-fun idx () (_ BitVec 32))
-(assert (let ((_let_0 (not (= %p0 (_ bv0 32))))) (let ((_let_1 (ite (and (= idx (bvadd (bvadd %p0 (_ bv1 32)) (_ bv0 32))) _let_0) ((_ extract 10 3) %x) (ite (and (= idx %p0) _let_0) (concat ((_ extract 7 3) mem0) ((_ extract 2 0) %x)) mem0)))) (not (= _let_1 _let_1)))))
+(assert (let ((_let_0 (bvadd %p0 (_ bv1 32)))) (let ((_let_1 (not (= %p0 (_ bv0 32))))) (let ((_let_2 (ite (and (= idx (bvadd _let_0 (_ bv2 32))) _let_1) ((_ extract 24 17) %x) (ite (and (= idx (bvadd _let_0 (_ bv1 32))) _let_1) ((_ extract 16 9) %x) (ite (and (= idx (bvadd _let_0 (_ bv0 32))) _let_1) ((_ extract 8 1) %x) (ite (and (= idx %p0) _let_1) (concat ((_ extract 7 1) mem0) ((_ extract 0 0) %x)) mem0)))))) (not (= _let_2 _let_2))))))
 (assert true)
 (check-sat)

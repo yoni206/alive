@@ -1,1 +1,5 @@
-(error "Couldn't open file: full_bench/AndOrXor:2321-3_mem_200.smt2")
+
+(declare-fun mem0 () (_ BitVec 8))
+(assert (not (= mem0 mem0)))
+(assert true)
+(check-sat)

@@ -1,6 +1,0 @@
-
-(declare-fun %B () (_ BitVec 39))
-(declare-fun %A () (_ BitVec 39))
-(assert (not (= (bvor (bvand (bvxor %A (_ bv549755813887 39)) %B) %A) (bvor %A %B))))
-(assert true)
-(check-sat)

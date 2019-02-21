@@ -1,1 +1,5 @@
-(error "Couldn't open file: full_bench/AndOrXor:537_undef_40.smt2")
+
+(declare-fun C () (_ BitVec 42))
+(assert false)
+(assert true)
+(check-sat)

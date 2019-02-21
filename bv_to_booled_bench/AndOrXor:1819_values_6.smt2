@@ -1,7 +1,0 @@
-
-(declare-fun C2 () (_ BitVec 14))
-(declare-fun %X () (_ BitVec 14))
-(declare-fun C1 () (_ BitVec 14))
-(assert (let ((_let_0 (bvult %X C2))) (and (bvult C1 C2) (not (= (or (= %X C1) _let_0) _let_0)))))
-(assert true)
-(check-sat)

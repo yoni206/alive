@@ -1,1 +1,6 @@
-(error "Couldn't open file: full_bench/AddSub:1063_undef_3.smt2")
+
+(declare-fun C2 () (_ BitVec 5))
+(declare-fun C1 () (_ BitVec 5))
+(assert false)
+(assert true)
+(check-sat)

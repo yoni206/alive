@@ -1,1 +1,0 @@
-(error "Couldn't open file: full_bench/SimplifyDivRemOfSelect_mem_49.smt2")

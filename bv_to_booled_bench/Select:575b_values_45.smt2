@@ -1,6 +1,0 @@
-
-(declare-fun C1 () (_ BitVec 47))
-(declare-fun %X () (_ BitVec 47))
-(assert (not (= (ite (bvsgt %X (_ bv140737488355327 47)) C1 (_ bv140737488355327 47)) (bvor (bvashr %X (bvsub (_ bv47 47) (_ bv1 47))) C1))))
-(assert true)
-(check-sat)

@@ -2,12 +2,16 @@ import sys
 import re
 import os
 
-REASONS = ["mem", "poison", "undef", "values"]
+    #TODO we should include memory files also.
+REASONS = ["poison", "undef", "values"]
 
 def main(smt_dir, output_file):
     files = [f for f in os.listdir(smt_dir) if not f.startswith(".")]
+    
     #TODO we should include memory files also.
     files = [f for f in files if "_mem_" not in f]
+    files = [f for f in files if "LoadStore" not in f]
+
     opt_names = set([f[0:f.find("_")] for f in files])
     stats = {}
     global_stats = {}
@@ -80,14 +84,12 @@ def sixtythreefiles(opt_name, files, smt_dir):
 #opts with a single file seems to be bitwidth dependent.
 #opts with 63 seem ok too.
 def verify_sixty_three_reason(opt_name, files, smt_dir, reason):
-    #TODO considering only values for now.
-    if reason != "values":
-        return True
-    opt_files = [f for f in files if f.startswith(opt_name) and reason in f]
+    opt_files = [f for f in files if f.startswith(opt_name + "_") and reason in f]
     num_of_files = len(opt_files)
     if num_of_files >= 63:
         return True
     else:
+        #print("panda", opt_name, reason, num_of_files)
         return False
 
 #checks on the level of the optimization (e.g. all files are the same except for the bitwidth).

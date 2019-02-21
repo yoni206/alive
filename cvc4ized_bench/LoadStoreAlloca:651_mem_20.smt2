@@ -1,0 +1,13 @@
+
+(declare-fun mem0 () (_ BitVec 8))
+(declare-fun alloca%a_3004 () (_ BitVec 8))
+(declare-fun %a () (_ BitVec 64))
+(declare-fun idx () (_ BitVec 64))
+(declare-fun %x () (_ BitVec 5))
+(declare-fun %idx () (_ BitVec 23))
+(declare-fun u_%a () (_ BitVec 8))
+(declare-fun u_%ptr () (_ BitVec 8))
+(assert (and (= u_%ptr (_ bv1 8)) (= u_%a (_ bv1 8)) (not (= %a (_ bv0 64))) (forall ((alloca%a_3003 (_ BitVec 8)) (alloca%a_3005 (_ BitVec 8))) (let ((_let_0 (bvadd %a (_ bv0 64)))) (let ((_let_1 (= idx _let_0))) (let ((_let_2 (bvadd %a (bvmul (_ bv1 64) ((_ sign_extend 41) %idx))))) (not (= (ite _let_1 ((_ extract 7 0) alloca%a_3005) (ite (and (= idx _let_2) (not (= %a (_ bv0 64))) (not (= _let_2 (_ bv0 64))) (bvuge _let_2 %a) (bvuge (_ bv0 64) (bvsub _let_2 %a))) (concat ((_ extract 7 5) (ite (= _let_2 _let_0) ((_ extract 7 0) alloca%a_3003) mem0)) ((_ extract 4 0) %x)) mem0)) (ite _let_1 ((_ extract 7 0) alloca%a_3004) mem0)))))) )))
+(assert true)
+(declare-fun g_1 () Bool)
+(declare-fun ek_2 () (_ BitVec 8))

@@ -1,1 +1,4 @@
-(error "Couldn't open file: full_bench/muldivrem:239_undef_23.smt2")
+
+(assert false)
+(assert true)
+(check-sat)

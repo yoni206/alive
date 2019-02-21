@@ -1,1 +1,4 @@
-(error "Couldn't open file: full_bench/AddSub:1098_undef_56.smt2")
+
+(assert false)
+(assert true)
+(check-sat)

@@ -1,1 +1,0 @@
-(error "Couldn't open file: full_bench/SimplifyDivRemOfSelect_poison_24.smt2")

@@ -1,7 +1,7 @@
 
 (declare-fun mem0 () (_ BitVec 8))
-(declare-fun C1 () (_ BitVec 33))
-(declare-fun C2 () (_ BitVec 33))
-(assert (let ((_let_0 (bvshl (_ bv8589934591 33) C1))) (and (= (bvand C2 _let_0) _let_0) (not (= mem0 mem0)))))
+(declare-fun C1 () (_ BitVec 35))
+(declare-fun C2 () (_ BitVec 35))
+(assert (let ((_let_0 (bvshl (_ bv34359738367 35) C1))) (and (= (bvand C2 _let_0) _let_0) (not (= mem0 mem0)))))
 (assert true)
 (check-sat)

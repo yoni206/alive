@@ -1,1 +1,5 @@
-(error "Couldn't open file: full_bench/InstCombineShift239_undef_15.smt2")
+
+(declare-fun C () (_ BitVec 19))
+(assert false)
+(assert true)
+(check-sat)

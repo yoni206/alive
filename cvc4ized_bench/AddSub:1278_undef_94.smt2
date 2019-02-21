@@ -1,1 +1,9 @@
-(error "Couldn't open file: full_bench/AddSub:1278_undef_94.smt2")
+
+(declare-fun |ana_WillNotOverflowSignedAdd(%x, %y)| () (_ BitVec 1))
+(declare-fun u_%sy () (_ BitVec 8))
+(declare-fun u_%sx () (_ BitVec 8))
+(declare-fun %y () (_ BitVec 42))
+(declare-fun %x () (_ BitVec 42))
+(assert false)
+(assert true)
+(check-sat)

@@ -1,1 +1,6 @@
-(error "Couldn't open file: full_bench/Select:420_undef_8.smt2")
+
+(declare-fun C2 () (_ BitVec 13))
+(declare-fun C1 () (_ BitVec 13))
+(assert false)
+(assert true)
+(check-sat)

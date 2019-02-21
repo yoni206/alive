@@ -1,7 +1,0 @@
-c host: barrett28.stanford.edu
-c start: Thu Feb 14 00:48:35 PST 2019
-c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/unbounded/partial/partial_AddSub:1560_poison_3.smt2
-c solver: ./z3
-c solver options: 
-unsat
-c done

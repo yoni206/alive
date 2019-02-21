@@ -1,1 +1,5 @@
-(error "Couldn't open file: full_bench/AddSub:1633_undef_17.smt2")
+
+(declare-fun u_%Op0 () (_ BitVec 8))
+(assert false)
+(assert true)
+(check-sat)

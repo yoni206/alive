@@ -1,1 +1,9 @@
-(error "Couldn't open file: full_bench/AndOrXor:2375_values_57.smt2")
+
+(declare-fun %D () (_ BitVec 8))
+(declare-fun %B () (_ BitVec 8))
+(declare-fun %C () (_ BitVec 8))
+(declare-fun %A () (_ BitVec 8))
+(declare-fun %x () (_ BitVec 1))
+(assert (let ((_let_0 (= %x (_ bv1 1)))) (not (= (bvor (ite _let_0 %A %B) (ite _let_0 %C %D)) (ite _let_0 (bvor %A %C) (bvor %B %D))))))
+(assert true)
+(check-sat)

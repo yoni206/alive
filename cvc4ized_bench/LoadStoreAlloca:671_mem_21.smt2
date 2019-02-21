@@ -1,0 +1,11 @@
+
+(declare-fun mem0 () (_ BitVec 8))
+(declare-fun %y () (_ BitVec 23))
+(declare-fun %p2 () (_ BitVec 64))
+(declare-fun idx () (_ BitVec 64))
+(declare-fun %x () (_ BitVec 23))
+(declare-fun %p1 () (_ BitVec 64))
+(declare-fun |ana_equivalentAddressValues(%p1, %p2)| () (_ BitVec 1))
+(assert (let ((_let_0 (= idx %p2))) (let ((_let_1 ((_ extract 7 7) mem0))) (let ((_let_2 ((_ extract 6 0) %y))) (let ((_let_3 (bvadd %p2 (_ bv1 64)))) (let ((_let_4 (= idx (bvadd _let_3 (_ bv0 64))))) (let ((_let_5 ((_ extract 14 7) %y))) (let ((_let_6 (= idx (bvadd _let_3 (_ bv1 64))))) (let ((_let_7 ((_ extract 22 15) %y))) (let ((_let_8 (concat _let_1 ((_ extract 6 0) %x)))) (let ((_let_9 (bvadd %p1 (_ bv1 64)))) (let ((_let_10 (bvadd _let_9 (_ bv0 64)))) (let ((_let_11 ((_ extract 14 7) %x))) (let ((_let_12 (bvadd _let_9 (_ bv1 64)))) (let ((_let_13 ((_ extract 22 15) %x))) (let ((_let_14 (= |ana_equivalentAddressValues(%p1, %p2)| (_ bv1 1)))) (let ((_let_15 (not (= %p1 (_ bv0 64))))) (let ((_let_16 (not (= %p2 (_ bv0 64))))) (and (=> _let_14 (= %p1 %p2)) _let_14 (not (= (ite (and _let_6 _let_15 _let_16) _let_7 (ite (and _let_4 _let_15 _let_16) _let_5 (ite (and _let_0 _let_15 _let_16) (concat ((_ extract 7 7) (ite (and (= %p2 _let_12) _let_15) _let_13 (ite (and (= %p2 _let_10) _let_15) _let_11 (ite (and (= %p2 %p1) _let_15) _let_8 mem0)))) _let_2) (ite (and (= idx _let_12) _let_15) _let_13 (ite (and (= idx _let_10) _let_15) _let_11 (ite (and (= idx %p1) _let_15) _let_8 mem0)))))) (ite (and _let_6 _let_16) _let_7 (ite (and _let_4 _let_16) _let_5 (ite (and _let_0 _let_16) (concat _let_1 _let_2) mem0))))))))))))))))))))))))
+(assert true)
+(check-sat)

@@ -1,0 +1,9 @@
+
+(declare-fun mem0 () (_ BitVec 8))
+(declare-fun |ana_computeKnownZeroBits(%y)| () (_ BitVec 33))
+(declare-fun |ana_computeKnownZeroBits(%x)| () (_ BitVec 33))
+(declare-fun %y () (_ BitVec 33))
+(declare-fun %x () (_ BitVec 33))
+(assert (and (= (bvand |ana_computeKnownZeroBits(%x)| %x) (_ bv0 33)) (= (bvand |ana_computeKnownZeroBits(%y)| %y) (_ bv0 33)) (= (bvor |ana_computeKnownZeroBits(%x)| |ana_computeKnownZeroBits(%y)|) (_ bv8589934591 33)) (not (= mem0 mem0))))
+(assert true)
+(check-sat)

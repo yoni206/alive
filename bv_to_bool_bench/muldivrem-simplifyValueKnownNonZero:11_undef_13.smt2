@@ -1,0 +1,9 @@
+
+(declare-fun %B () (_ BitVec 18))
+(declare-fun %A () (_ BitVec 18))
+(declare-fun %X () (_ BitVec 18))
+(declare-fun u_%Y () (_ BitVec 8))
+(declare-fun |ana_isPowerOf2(%A)| () (_ BitVec 1))
+(assert (let ((_let_0 (bvult %B (_ bv18 18)))) (let ((_let_1 (= |ana_isPowerOf2(%A)| (_ bv1 1)))) (let ((_let_2 (or (not (= %X (_ bv131072 18))) (not (= (bvlshr %A %B) (_ bv262143 18)))))) (let ((_let_3 (not (= (bvlshr %A %B) (_ bv0 18))))) (and _let_0 _let_2 (=> _let_1 (and (= (bvand %A (bvsub %A (_ bv1 18))) (_ bv0 18)) (not (= %A (_ bv0 18))))) _let_1 (= u_%Y (_ bv1 8)) (not (and _let_0 _let_2 _let_3)) _let_3))))))
+(assert true)
+(check-sat)

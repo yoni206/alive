@@ -1,0 +1,7 @@
+
+(declare-fun |ana_WillNotOverflowSignedAdd(%lhs, %rhs)| () (_ BitVec 1))
+(declare-fun %rhs () (_ BitVec 61))
+(declare-fun %lhs () (_ BitVec 61))
+(assert false)
+(assert true)
+(check-sat)

@@ -1,1 +1,4 @@
-(error "Couldn't open file: full_bench/Select:740_undef_26.smt2")
+
+(assert false)
+(assert true)
+(check-sat)

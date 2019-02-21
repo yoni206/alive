@@ -1,7 +1,0 @@
-c host: barrett42.stanford.edu
-c start: Thu Feb 14 00:52:05 PST 2019
-c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/unbounded/combined/combined_Select:705_undef_23.smt2
-c solver: ./z3
-c solver options: 
-unsat
-c done

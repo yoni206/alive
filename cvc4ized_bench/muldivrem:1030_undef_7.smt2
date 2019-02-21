@@ -1,1 +1,5 @@
-(error "Couldn't open file: full_bench/muldivrem:1030_undef_7.smt2")
+
+(declare-fun %X () (_ BitVec 11))
+(assert false)
+(assert true)
+(check-sat)

@@ -1,1 +1,4 @@
-(error "Couldn't open file: full_bench/AndOrXor:2681-1_undef_1148.smt2")
+
+(assert false)
+(assert true)
+(check-sat)

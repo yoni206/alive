@@ -1,5 +1,5 @@
 
-(declare-fun C1 () (_ BitVec 38))
+(declare-fun C1 () (_ BitVec 35))
 (declare-fun C2 () (_ BitVec 11))
 (assert false)
 (assert true)

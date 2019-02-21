@@ -1,1 +1,6 @@
-(error "Couldn't open file: full_bench/muldivrem:976_values_537.smt2")
+
+(declare-fun %Y () (_ BitVec 5))
+(declare-fun %X () (_ BitVec 5))
+(assert (let ((_let_0 ((_ zero_extend 13) %Y))) (and (not (= _let_0 (_ bv0 18))) (not (= (bvudiv ((_ zero_extend 13) %X) _let_0) ((_ zero_extend 13) (bvudiv %X %Y)))))))
+(assert true)
+(check-sat)

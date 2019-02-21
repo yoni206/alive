@@ -1,4 +1,0 @@
-
-(declare-fun %X () (_ BitVec 48))
-(assert (let ((_let_0 (bvudiv (ite (= ((_ extract 47 47) %X) (_ bv1 1)) (bvneg %X) %X) (ite (= ((_ extract 47 47) (_ bv281474976710655 48)) (_ bv1 1)) (bvneg (_ bv281474976710655 48)) (_ bv281474976710655 48))))) (and (or (not (= %X (_ bv140737488355328 48))) (not (= (_ bv281474976710655 48) (_ bv281474976710655 48)))) (not (= (_ bv281474976710655 48) (_ bv0 48))) (not (= (ite (xor (= ((_ extract 47 47) %X) (_ bv1 1)) (= ((_ extract 47 47) (_ bv281474976710655 48)) (_ bv1 1))) (bvneg _let_0) _let_0) (bvsub (_ bv0 48) %X))))))
-(assert true)

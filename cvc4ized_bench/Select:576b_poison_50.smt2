@@ -1,1 +1,4 @@
-(error "Couldn't open file: full_bench/Select:576b_poison_50.smt2")
+
+(assert false)
+(assert true)
+(check-sat)

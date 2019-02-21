@@ -1,0 +1,7 @@
+
+(declare-fun %X () (_ BitVec 50))
+(declare-fun C2 () (_ BitVec 50))
+(declare-fun C1 () (_ BitVec 50))
+(assert (and (= C1 (bvnot C2)) (= (bvand C1 (bvsub C1 (_ bv1 50))) (_ bv0 50)) (not (= (ite (= (bvand %X C1) (_ bv0 50)) (bvand %X C2) %X) %X)) (not (= C1 (_ bv0 50)))))
+(assert true)
+(check-sat)

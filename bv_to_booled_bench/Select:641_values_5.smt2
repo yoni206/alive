@@ -1,7 +1,0 @@
-
-(declare-fun C () (_ BitVec 13))
-(declare-fun %Y () (_ BitVec 13))
-(declare-fun %X () (_ BitVec 13))
-(assert (let ((_let_0 (not (= %X C)))) (not (= (ite _let_0 %Y %X) (ite _let_0 %Y C)))))
-(assert true)
-(check-sat)

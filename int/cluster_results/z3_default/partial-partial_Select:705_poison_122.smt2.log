@@ -1,7 +1,0 @@
-c host: barrett14.stanford.edu
-c start: Thu Feb 14 00:48:41 PST 2019
-c benchmark: /barrett/scratch/yoniz/git/alive/int/int_bench/unbounded/partial/partial_Select:705_poison_122.smt2
-c solver: ./z3
-c solver options: 
-unsat
-c done

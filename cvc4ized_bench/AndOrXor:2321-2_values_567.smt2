@@ -1,1 +1,6 @@
-(error "Couldn't open file: full_bench/AndOrXor:2321-2_values_567.smt2")
+
+(declare-fun %B () (_ BitVec 11))
+(declare-fun %A () (_ BitVec 11))
+(assert (not (= (bvor ((_ sign_extend 11) %A) ((_ sign_extend 11) %B)) ((_ sign_extend 11) (bvor %A %B)))))
+(assert true)
+(check-sat)

@@ -1,0 +1,6 @@
+
+(declare-fun mem0 () (_ BitVec 8))
+(declare-fun C1 () (_ BitVec 11))
+(assert (and (= (bvand C1 (bvsub C1 (_ bv1 11))) (_ bv0 11)) (not (= mem0 mem0)) (not (= C1 (_ bv0 11)))))
+(assert true)
+(check-sat)

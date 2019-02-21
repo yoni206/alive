@@ -1,0 +1,7 @@
+
+(declare-fun C () (_ BitVec 8))
+(declare-fun |ana_ComputeNumSignBits(%Op0)| () (_ BitVec 8))
+(declare-fun %Op0 () (_ BitVec 8))
+(assert (let ((_let_0 ((_ extract 7 7) |ana_ComputeNumSignBits(%Op0)|))) (let ((_let_1 (ite (= ((_ extract 6 6) |ana_ComputeNumSignBits(%Op0)|) _let_0) (ite (= ((_ extract 5 5) |ana_ComputeNumSignBits(%Op0)|) _let_0) (ite (= ((_ extract 4 4) |ana_ComputeNumSignBits(%Op0)|) _let_0) (ite (= ((_ extract 3 3) |ana_ComputeNumSignBits(%Op0)|) _let_0) (ite (= ((_ extract 2 2) |ana_ComputeNumSignBits(%Op0)|) _let_0) (ite (= ((_ extract 1 1) |ana_ComputeNumSignBits(%Op0)|) _let_0) (ite (= ((_ extract 0 0) |ana_ComputeNumSignBits(%Op0)|) _let_0) (_ bv8 8) (_ bv7 8)) (_ bv6 8)) (_ bv5 8)) (_ bv4 8)) (_ bv3 8)) (_ bv2 8)) (_ bv1 8)))) (let ((_let_2 ((_ extract 7 7) %Op0))) (let ((_let_3 (bvult C (_ bv8 8)))) (and _let_3 (bvule _let_1 (ite (= ((_ extract 6 6) %Op0) _let_2) (ite (= ((_ extract 5 5) %Op0) _let_2) (ite (= ((_ extract 4 4) %Op0) _let_2) (ite (= ((_ extract 3 3) %Op0) _let_2) (ite (= ((_ extract 2 2) %Op0) _let_2) (ite (= ((_ extract 1 1) %Op0) _let_2) (ite (= ((_ extract 0 0) %Op0) _let_2) (_ bv8 8) (_ bv7 8)) (_ bv6 8)) (_ bv5 8)) (_ bv4 8)) (_ bv3 8)) (_ bv2 8)) (_ bv1 8))) (bvsgt _let_1 C) (not _let_3)))))))
+(assert true)
+(check-sat)

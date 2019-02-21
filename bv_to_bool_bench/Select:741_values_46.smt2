@@ -1,0 +1,5 @@
+
+(declare-fun %A () (_ BitVec 51))
+(assert (let ((_let_0 (ite (bvsgt %A (_ bv0 51)) (bvsub (_ bv0 51) %A) %A))) (not (= (ite (bvsgt _let_0 (_ bv2251799813685247 51)) (bvsub (_ bv0 51) _let_0) _let_0) _let_0))))
+(assert true)
+(check-sat)

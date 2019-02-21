@@ -1,1 +1,6 @@
-(error "Couldn't open file: full_bench/AddSub:1309-2_undef_53.smt2")
+
+(declare-fun %b () (_ BitVec 58))
+(declare-fun %a () (_ BitVec 58))
+(assert false)
+(assert true)
+(check-sat)

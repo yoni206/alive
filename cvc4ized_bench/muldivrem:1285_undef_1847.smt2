@@ -1,1 +1,5 @@
-(error "Couldn't open file: full_bench/muldivrem:1285_undef_1847.smt2")
+
+(declare-fun %Y () (_ BitVec 38))
+(assert (and (= %Y (_ bv0 38)) (not (= ((_ zero_extend 9) %Y) (_ bv0 47)))))
+(assert true)
+(check-sat)

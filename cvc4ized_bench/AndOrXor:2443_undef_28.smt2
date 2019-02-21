@@ -1,1 +1,5 @@
-(error "Couldn't open file: full_bench/AndOrXor:2443_undef_28.smt2")
+
+(declare-fun %y () (_ BitVec 32))
+(assert (let ((_let_0 (bvult %y (_ bv32 32)))) (and _let_0 (not _let_0))))
+(assert true)
+(check-sat)
