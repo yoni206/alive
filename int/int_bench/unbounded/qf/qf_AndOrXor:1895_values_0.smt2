@@ -94,11 +94,6 @@ never_even
 ;quantifier-free axiomatization of power
 (define-fun two_to_the_is_ok_qf () Bool base_cases)
 
-;quantifier-free helper, to use on specific variables
-(define-fun two_to_the_is_ok_for ((b Int)) Bool
-(=> (and (> b 3)) (and (> (two_to_the b) 8) (= (two_to_the b) (* (two_to_the (- b 1)) 2)) ))
-)
-
 ;trivial axiomatization of power, in case the recursive definition is used
 (define-fun two_to_the_is_ok_rec () Bool true)
 
@@ -241,15 +236,6 @@ never_even
 ;partial axiomatization of bitwise or - quantifier free
 (define-fun or_is_ok_qf ((k Int)) Bool true)
 
-(define-fun or_is_ok_for ((k Int) (a Int) ) Bool
-(and
-(= (intor k 0 a) a)
-(= (intor k a 0) a)
-(= (intor k (intmax k) a) (intmax k))
-(= (intor k a (intmax k)) (intmax k))
-)
-)
-
 ;trivial axiomatization if recursive definition was chosen
 (define-fun or_is_ok_rec ((k Int)  ) Bool true)
 
@@ -326,15 +312,6 @@ never_even
 ;combination of full and prtial
 (define-fun and_is_ok_combined ((k Int)) Bool (and (and_is_ok_full k) (and_is_ok_partial k)))
 
-(define-fun and_is_ok_for ((k Int) (a Int) ) Bool
-(and
-(= (intand k 0 a) 0)
-(= (intand k a 0) 0)
-(= (intand k (intmax k) a) a)
-(= (intand k a (intmax k)) a)
-)
-)
-
 ;trivial axiomatization for bitwise and - for when recursive definition is used
 (define-fun and_is_ok_rec ((k Int) ) Bool true)
 
@@ -400,13 +377,6 @@ never_even
 ;partial axiomatization of bitwise xor - quantifier free
 (define-fun xor_is_ok_qf ((k Int)) Bool true)
 
-(define-fun xor_is_ok_for ((k Int) (a Int) ) Bool
-(and
-(= (intxor k a a) 0)
-(= (intxor k a (intnot k a)) (intmax k))
-)
-)
-
 ;trivial axiomatization if recursive definition was chosen
 (define-fun xor_is_ok_rec ((k Int)  ) Bool true)
 
@@ -420,8 +390,6 @@ never_even
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (define-fun range_assumptions ((k Int) (s Int) (t Int)) Bool (and (>= k 1) (in_range k s) (in_range k t)))
-(define-fun everything_is_ok_for ((k Int) (a Int)) Bool (and (two_to_the_is_ok_for a) (two_to_the_is_ok_for k) (and_is_ok_for k a) (or_is_ok_for k a) (xor_is_ok_for k a)))
-
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -436,17 +404,14 @@ never_even
 
 (declare-fun C1() Int)
 (assert (in_range k C1))
-(assert (everything_is_ok_for k C1))
 
 
 (declare-fun %X() Int)
 (assert (in_range k %X))
-(assert (everything_is_ok_for k %X))
 
 
 (declare-fun C2() Int)
 (assert (in_range k C2))
-(assert (everything_is_ok_for k C2))
 
 
 (assert (let ((_let_0 (intsgt k %X C1))) (and (intslt k C1 C2) (not (= (or _let_0 (intsgt k %X C2)) _let_0)))))

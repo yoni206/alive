@@ -7,7 +7,7 @@ import gen_translations
 import utils
 import verify_stuff
 
-REASONS = verify_stuff.REASONS
+REASONS = ["poison", "undef", "values", "mem"]
 
 ic_sub = gen_translations.substitutions
 alive_sub = {k: ic_sub[k] for k in ic_sub}
@@ -34,6 +34,7 @@ def main(dir_of_bv_smt, dir_of_int_smt, dir_of_templates, filter_file):
         pass
 
     #we generate an int file for every template, optimization and reason. The specific source bv file is chosen by `pick`
+    panda_dict = {}
     for t_f in templates_files:
         template_name = utils.get_file_or_dir_name_no_ext(t_f)
         try:
@@ -44,14 +45,27 @@ def main(dir_of_bv_smt, dir_of_int_smt, dir_of_templates, filter_file):
         template_content = get_template_content_and_filter(t_path)
         for opt_name in opt_map:
             for reason in REASONS:
-                if reason == "mem":
-                    continue
-                    #TODO ignoring memory!!!
                 files = opt_map[opt_name][reason]
                 if len(files) != 0:
                     f = pick(dir_of_bv_smt,files)
                     bv_content = get_bv_content(dir_of_bv_smt, f)
+                    if reason not in panda_dict:
+                        panda_dict[reason] = {}
+                    panda_dict[reason][opt_name] = bv_content
+                    if reason == "mem":
+                        continue
+                        #TODO ignoring memory!!!
                     generate_unbounded_benchmark(template_content, bv_content, t_f, f, dir_of_int_smt, template_name)
+    print_by_reason(panda_dict)
+
+def print_by_reason(panda_dict):
+    for reason in REASONS:
+        print("*"*20)
+        print("panda", reason)
+        for name in panda_dict[reason]:
+            print(panda_dict[reason][name])
+        print("*"*20)
+
 
 def get_bv_content(d, f):
     bv_path = d + "/" + f
@@ -88,11 +102,13 @@ def pick(dir_of_bv_smt, files):
         files_to_contents[f] = content
     have_four = [f for f in files if "(_ BitVec 4)" in files_to_contents[f]]
     if len(have_four) == 0:
-        assert(len([f for f in files if "(_ BitVec" in files_to_contents[f]]) == 0)
+        #assert(len([f for f in files if "(_ BitVec" in files_to_contents[f]]) == 0)
         return files[0]
     else:
         assert(len(have_four) == 1)
-        assert("(_ BitVec 1)" not in have_four[0])
+        assert("(_ BitVec 1)" not in files_to_contents[have_four[0]])
+        assert("(_ bv0 1)" not in files_to_contents[have_four[0]])
+        assert("(_ bv1 1)" not in files_to_contents[have_four[0]])
         return have_four[0]
 
 def get_opt_name(f):
@@ -224,8 +240,6 @@ def intize_declaration(d):
     new_declaration = "(declare-fun " + var_name + "() Int)"
     new_declaration += "\n"
     new_declaration += "(assert (in_range k " + var_name + "))"
-    new_declaration += "\n"
-    new_declaration += "(assert (everything_is_ok_for k "+ var_name + "))"
     new_declaration += "\n"
     new_declaration += "\n"
     return new_declaration
