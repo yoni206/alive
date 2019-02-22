@@ -1104,7 +1104,7 @@
 1102,vampire,AddSub:1539-2,undef,yes
 1103,vampire,AddSub:1539-2,values,yes
 1104,vampire,AddSub:1560,poison,yes
-1105,vampire,AddSub:1560,undef,no
+1105,vampire,AddSub:1560,undef,yes
 1106,vampire,AddSub:1560,values,no
 1107,vampire,AddSub:1564,poison,yes
 1108,vampire,AddSub:1564,undef,yes
@@ -1134,10 +1134,10 @@
 1132,vampire,AndOrXor:1007,undef,yes
 1133,vampire,AndOrXor:1007,values,yes
 1134,vampire,AndOrXor:1012,poison,yes
-1135,vampire,AndOrXor:1012,undef,no
+1135,vampire,AndOrXor:1012,undef,yes
 1136,vampire,AndOrXor:1012,values,no
 1137,vampire,AndOrXor:1230,poison,yes
-1138,vampire,AndOrXor:1230,undef,yes
+1138,vampire,AndOrXor:1230,undef,no
 1139,vampire,AndOrXor:1230,values,no
 1140,vampire,AndOrXor:1241,poison,yes
 1141,vampire,AndOrXor:1241,undef,yes
@@ -1173,7 +1173,7 @@
 1171,vampire,AndOrXor:1683-2,undef,yes
 1172,vampire,AndOrXor:1683-2,values,yes
 1173,vampire,AndOrXor:1704,poison,yes
-1174,vampire,AndOrXor:1704,undef,no
+1174,vampire,AndOrXor:1704,undef,yes
 1175,vampire,AndOrXor:1704,values,yes
 1176,vampire,AndOrXor:1705,poison,yes
 1177,vampire,AndOrXor:1705,undef,yes
@@ -1185,7 +1185,7 @@
 1183,vampire,AndOrXor:1740,undef,yes
 1184,vampire,AndOrXor:1740,values,yes
 1185,vampire,AndOrXor:1795,poison,yes
-1186,vampire,AndOrXor:1795,undef,yes
+1186,vampire,AndOrXor:1795,undef,no
 1187,vampire,AndOrXor:1795,values,no
 1188,vampire,AndOrXor:1818,poison,yes
 1189,vampire,AndOrXor:1818,undef,yes
@@ -1244,7 +1244,7 @@
 1242,vampire,AndOrXor:1885,poison,yes
 1243,vampire,AndOrXor:1885,undef,yes
 1244,vampire,AndOrXor:1885,values,yes
-1245,vampire,AndOrXor:1894,poison,no
+1245,vampire,AndOrXor:1894,poison,yes
 1246,vampire,AndOrXor:1894,undef,yes
 1247,vampire,AndOrXor:1894,values,yes
 1248,vampire,AndOrXor:1895,poison,yes
@@ -1265,10 +1265,10 @@
 1263,vampire,AndOrXor:2052,poison,yes
 1264,vampire,AndOrXor:2052,undef,yes
 1265,vampire,AndOrXor:2052,values,no
-1266,vampire,AndOrXor:2063,poison,yes
+1266,vampire,AndOrXor:2063,poison,no
 1267,vampire,AndOrXor:2063,undef,yes
 1268,vampire,AndOrXor:2063,values,no
-1269,vampire,AndOrXor:210,poison,yes
+1269,vampire,AndOrXor:210,poison,no
 1270,vampire,AndOrXor:210,undef,yes
 1271,vampire,AndOrXor:210,values,no
 1272,vampire,AndOrXor:2113,poison,yes
@@ -1323,7 +1323,7 @@
 1321,vampire,AndOrXor:2416,undef,yes
 1322,vampire,AndOrXor:2416,values,no
 1323,vampire,AndOrXor:2417,poison,yes
-1324,vampire,AndOrXor:2417,undef,no
+1324,vampire,AndOrXor:2417,undef,yes
 1325,vampire,AndOrXor:2417,values,no
 1326,vampire,AndOrXor:2429,poison,yes
 1327,vampire,AndOrXor:2429,undef,yes
@@ -1341,7 +1341,7 @@
 1339,vampire,AndOrXor:2475,undef,yes
 1340,vampire,AndOrXor:2475,values,no
 1341,vampire,AndOrXor:2486,poison,yes
-1342,vampire,AndOrXor:2486,undef,yes
+1342,vampire,AndOrXor:2486,undef,no
 1343,vampire,AndOrXor:2486,values,no
 1344,vampire,AndOrXor:2515,poison,yes
 1345,vampire,AndOrXor:2515,undef,yes
@@ -1376,16 +1376,16 @@
 1374,vampire,AndOrXor:270,poison,yes
 1375,vampire,AndOrXor:270,undef,yes
 1376,vampire,AndOrXor:270,values,yes
-1377,vampire,AndOrXor:273,poison,no
+1377,vampire,AndOrXor:273,poison,yes
 1378,vampire,AndOrXor:273,undef,yes
 1379,vampire,AndOrXor:273,values,no
 1380,vampire,AndOrXor:280,poison,yes
 1381,vampire,AndOrXor:280,undef,yes
 1382,vampire,AndOrXor:280,values,no
-1383,vampire,AndOrXor:287,poison,no
+1383,vampire,AndOrXor:287,poison,yes
 1384,vampire,AndOrXor:287,undef,yes
 1385,vampire,AndOrXor:287,values,yes
-1386,vampire,AndOrXor:290,poison,no
+1386,vampire,AndOrXor:290,poison,yes
 1387,vampire,AndOrXor:290,undef,yes
 1388,vampire,AndOrXor:290,values,no
 1389,vampire,AndOrXor:298,poison,yes
@@ -1419,7 +1419,7 @@
 1417,vampire,AndOrXor:716,undef,yes
 1418,vampire,AndOrXor:716,values,no
 1419,vampire,AndOrXor:732-1,poison,yes
-1420,vampire,AndOrXor:732-1,undef,yes
+1420,vampire,AndOrXor:732-1,undef,no
 1421,vampire,AndOrXor:732-1,values,no
 1422,vampire,AndOrXor:732-2,poison,yes
 1423,vampire,AndOrXor:732-2,undef,yes
@@ -1439,7 +1439,7 @@
 1437,vampire,AndOrXor:827,poison,yes
 1438,vampire,AndOrXor:827,undef,yes
 1439,vampire,AndOrXor:827,values,yes
-1440,vampire,AndOrXor:887-1,poison,no
+1440,vampire,AndOrXor:887-1,poison,yes
 1441,vampire,AndOrXor:887-1,undef,yes
 1442,vampire,AndOrXor:887-1,values,yes
 1443,vampire,AndOrXor:887-2,poison,yes
@@ -1451,7 +1451,7 @@
 1449,vampire,AndOrXor:923,poison,yes
 1450,vampire,AndOrXor:923,undef,yes
 1451,vampire,AndOrXor:923,values,yes
-1452,vampire,AndOrXor:924,poison,yes
+1452,vampire,AndOrXor:924,poison,no
 1453,vampire,AndOrXor:924,undef,yes
 1454,vampire,AndOrXor:924,values,yes
 1455,vampire,AndOrXor:931,poison,yes
@@ -1493,7 +1493,7 @@
 1491,vampire,AndOrXor:988,poison,yes
 1492,vampire,AndOrXor:988,undef,yes
 1493,vampire,AndOrXor:988,values,yes
-1494,vampire,AndOrXor:989,poison,yes
+1494,vampire,AndOrXor:989,poison,no
 1495,vampire,AndOrXor:989,undef,yes
 1496,vampire,AndOrXor:989,values,yes
 1497,vampire,AndOrXor:994,poison,yes
@@ -1514,7 +1514,7 @@
 1512,vampire,InstCombineShift497a,poison,yes
 1513,vampire,InstCombineShift497a,undef,yes
 1514,vampire,InstCombineShift497a,values,no
-1515,vampire,InstCombineShift497b,poison,yes
+1515,vampire,InstCombineShift497b,poison,no
 1516,vampire,InstCombineShift497b,undef,yes
 1517,vampire,InstCombineShift497b,values,no
 1518,vampire,InstCombineShift497c,poison,yes
@@ -2155,7 +2155,7 @@
 2153,z3_default,muldivrem:239,values,no
 2154,z3_default,muldivrem:290:292,poison,yes
 2155,z3_default,muldivrem:290:292,undef,yes
-2156,z3_default,muldivrem:290:292,values,no
+2156,z3_default,muldivrem:290:292,values,yes
 2157,z3_default,muldivrem:876,poison,yes
 2158,z3_default,muldivrem:876,undef,yes
 2159,z3_default,muldivrem:876,values,no
