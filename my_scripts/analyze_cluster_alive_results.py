@@ -21,11 +21,12 @@ def main(results_dir, tex_csv_dir, opt_dir):
                 log_content = myfile.read()
             status = get_status(err_content)
             is_ok = get_status_ok(status)
+            seconds = get_seconds(err_content)
             if is_ok:
                 result = get_result(log_content)
             else:
                 result = "no result"
-            results[config + "/" + smt_file] = status + "," + result
+            results[config + "/" + smt_file] = status + "," + result + "," + seconds
     df = ps.DataFrame(list(results.items()))
     df.index = df.index.rename("index")
     df.columns = [ 'path', 'err_log']
@@ -39,6 +40,7 @@ def main(results_dir, tex_csv_dir, opt_dir):
     df["reason"] = df.filename_cleaner.apply(lambda x : x.split("_")[1])
     df["status"] = df.err_log.apply(lambda x: x.split(",")[0])
     df["result"] = df.err_log.apply(lambda x: x.split(",")[1])
+    df["seconds"] = df.err_log.apply(lambda x: x.split(",")[2])
     validate_stat_res(df)
     validate_consistency(df)
     validate_no_sat_except_qf(df)
@@ -244,7 +246,6 @@ def gen_alive_encoding_cmp(enc_agg, tex_csv_dir):
     e["total"] = len(grouped_agg.loc[grouped_agg["proved"] == "yes"].copy().index)
     t = ps.Series(e)
     t.name = "total"
-    print("panda t", t)
 
     pivot = enc_agg.pivot_table(index = ["family"], columns = "encoding", values = "proved", aggfunc = countyes)
     pivot = pivot.append(s)
@@ -556,6 +557,20 @@ def cond_inv_info(s):
         if result not in ["no_inv", "inv_a", "inv_g", "inv_r"]:
             return result
     return result
+
+def get_seconds(err_content):
+    lines = err_content.splitlines()
+    prefix = "[runlim] time:"
+    time_lines = [line for line in lines if line.startswith(prefix)]
+    if len(time_lines) == 0:
+        return "no_time"
+    elif len(time_lines) > 1:
+        assert(False)
+    else:
+        assert(len(time_lines) == 1)
+        time_line = time_lines[0]
+        time = time_line[len(prefix):].split(".")[0].strip()
+        return time
 
 def get_status(err_content):
     lines = err_content.splitlines()
