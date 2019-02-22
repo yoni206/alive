@@ -1,6 +1,7 @@
-encoding,AddSub,AndOrXor,MulDivRem,Select,Shifts,total
-combined,7,58,1,16,0,82
-full,7,54,1,14,0,76
-partial,7,58,2,16,0,83
-qf,7,57,1,15,0,80
-rec,4,57,0,14,0,75
+family,combined,full,partial,qf,total
+AddSub,7,7,7,7,7
+AndOrXor,59,56,55,53,59
+MulDivRem,2,1,2,1,2
+Select,14,15,11,11,15
+Shifts,0,0,0,0,0
+total,82,79,75,72,83

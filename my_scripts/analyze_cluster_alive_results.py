@@ -202,7 +202,6 @@ def gen_alive_enc_conf_cmp(values_config_cond_agg, conf_alone_agg, cond_agg, tex
     values_cond_agg = cond_agg.loc[cond_agg["reason"] == "values"].copy()
     values_cond_agg = values_cond_agg.loc[cond_agg["proved"] == "yes"].copy()
     agg = values_cond_agg.copy()
-    agg.to_csv("~/tmp.csv")
     e = {}
     encs = set(agg["encoding"].tolist())
     for enc in encs:
@@ -210,7 +209,6 @@ def gen_alive_enc_conf_cmp(values_config_cond_agg, conf_alone_agg, cond_agg, tex
     agg.to_csv("~/tmp1.csv")
     grouped = agg.groupby(["opt_name", "reason"], as_index=False)
     grouped_agg = grouped.agg({'proved' : agg_yes})
-    grouped_agg.to_csv("~/tmp.csv")
 
     e["total"] = len(grouped_agg.loc[grouped_agg["proved"] == "yes"].copy().index)
 
@@ -227,8 +225,30 @@ def gen_alive_enc_conf_cmp(values_config_cond_agg, conf_alone_agg, cond_agg, tex
 
 def gen_alive_encoding_cmp(enc_agg, tex_csv_dir):
     enc_agg["family"] = enc_agg["opt_name"].apply(get_opt_family)
-    pivot = enc_agg.pivot_table(index = ["encoding"], columns = "family", values = "proved", aggfunc = countyes)
-    pivot["total"] = pivot.sum(axis=1)
+    totals = enc_agg.loc[enc_agg["proved"] == "yes"].copy()
+    d = {}
+    encs = set(enc_agg["encoding"].tolist())
+    for enc in encs:
+        d[enc] = len(totals.loc[totals["encoding"] == enc].index)
+    s = ps.Series(d)
+    s.name = "total"
+
+    e = {}
+    grouped = enc_agg.groupby(["opt_name", "reason", "family"], as_index=False)
+    grouped_agg = grouped.agg({'proved': agg_yes})
+    grouped_agg = grouped_agg.loc[grouped_agg["proved"] == "yes"].copy()
+    grouped_agg.to_csv("~/tmp.csv")
+    families = set(enc_agg["family"].tolist())
+    for family in families:
+        e[family] = len(grouped_agg.loc[grouped_agg["family"] == family].index)
+    e["total"] = len(grouped_agg.loc[grouped_agg["proved"] == "yes"].copy().index)
+    t = ps.Series(e)
+    t.name = "total"
+    print("panda t", t)
+
+    pivot = enc_agg.pivot_table(index = ["family"], columns = "encoding", values = "proved", aggfunc = countyes)
+    pivot = pivot.append(s)
+    pivot["total"] = t
     pivot.to_csv(tex_csv_dir + "/alive_enc_cmp.csv")
 
 def gen_qf_rtl_yes_ics(cond_agg, tex_csv_dir, translations_file):
@@ -511,7 +531,7 @@ def consistent(row):
     return result
 
 def validate_stat_res_row(row):
-    if row.status == "ok" and row.result not in ["sat", "unsat", "unknown"]:
+    if row.status == "ok" and row.result not in ["sat", "unsat", "unknown", "no result"]:
         return False
     if row.status != "ok" and row.result in ["sat", "unsat", "unknown"]:
         return False
@@ -541,10 +561,15 @@ def get_status(err_content):
     lines = err_content.splitlines()
     prefix = "[runlim] status:"
     status_lines = [line for line in lines if line.startswith(prefix)]
-    assert(len(status_lines) == 1)
-    status_line = status_lines[0]
-    status = status_line[len(prefix):].strip()
-    return status
+    if len(status_lines) == 0:
+        return "no_status"
+    elif len(status_lines) > 1:
+        assert(False)
+    else:
+        assert(len(status_lines) == 1)
+        status_line = status_lines[0]
+        status = status_line[len(prefix):].strip()
+        return status
 
 def get_status_ok(status):
     return status == "ok"
@@ -553,12 +578,14 @@ def get_result(log_content):
     lines = log_content.splitlines()
     bad_prefix = "c"
     good_lines = [l for l in lines if not l.startswith(bad_prefix)]
-    if len(good_lines) != 1:
-        print(log_content)
-        print(good_lines)
+    if len(good_lines) == 0:
+        return "no result"
+    elif len(good_lines) > 1:
         assert(False)
-    good_line = good_lines[0]
-    return good_line
+    else:
+        assert(len(good_lines) == 1)
+        good_line = good_lines[0]
+        return good_line
 
 
 if __name__ == "__main__":
