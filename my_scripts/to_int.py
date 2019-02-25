@@ -56,7 +56,6 @@ def main(dir_of_bv_smt, dir_of_int_smt, dir_of_templates, filter_file):
                         continue
                         #TODO ignoring memory!!!
                     generate_unbounded_benchmark(template_content, bv_content, t_f, f, dir_of_int_smt, template_name)
-    print_by_reason(panda_dict)
 
 def print_by_reason(panda_dict):
     for reason in REASONS:

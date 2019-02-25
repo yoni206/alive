@@ -1,7 +1,7 @@
 family,combined,full,partial,qf,total
 AddSub,7,7,7,7,7
-AndOrXor,59,56,55,53,59
+AndOrXor,59,57,55,53,59
 MulDivRem,2,1,2,1,2
 Select,14,15,11,11,15
 Shifts,0,0,0,0,0
-total,82,79,75,72,83
+total,82,80,75,72,83

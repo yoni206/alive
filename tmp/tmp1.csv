@@ -224,7 +224,7 @@
 222,AndOrXor:1012,undef,partial,yes
 223,AndOrXor:1012,undef,qf,yes
 224,AndOrXor:1012,values,combined,yes
-225,AndOrXor:1012,values,full,no
+225,AndOrXor:1012,values,full,yes
 226,AndOrXor:1012,values,partial,no
 227,AndOrXor:1012,values,qf,no
 228,AndOrXor:1230,poison,combined,yes
@@ -1987,7 +1987,7 @@
 1985,Select:704,undef,full,yes
 1986,Select:704,undef,partial,yes
 1987,Select:704,undef,qf,yes
-1988,Select:704,values,combined,no
+1988,Select:704,values,combined,yes
 1989,Select:704,values,full,yes
 1990,Select:704,values,partial,no
 1991,Select:704,values,qf,no
@@ -2095,7 +2095,7 @@
 2093,Select:747,undef,full,yes
 2094,Select:747,undef,partial,yes
 2095,Select:747,undef,qf,yes
-2096,Select:747,values,combined,yes
+2096,Select:747,values,combined,no
 2097,Select:747,values,full,yes
 2098,Select:747,values,partial,no
 2099,Select:747,values,qf,no

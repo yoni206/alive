@@ -72,7 +72,7 @@
 70,AndOrXor:1007,partial,yes
 71,AndOrXor:1007,qf,yes
 72,AndOrXor:1012,combined,yes
-73,AndOrXor:1012,full,no
+73,AndOrXor:1012,full,yes
 74,AndOrXor:1012,partial,no
 75,AndOrXor:1012,qf,no
 76,AndOrXor:1230,combined,no
@@ -659,7 +659,7 @@
 657,Select:700,full,yes
 658,Select:700,partial,yes
 659,Select:700,qf,yes
-660,Select:704,combined,no
+660,Select:704,combined,yes
 661,Select:704,full,yes
 662,Select:704,partial,no
 663,Select:704,qf,no
@@ -695,7 +695,7 @@
 693,Select:746,full,yes
 694,Select:746,partial,no
 695,Select:746,qf,no
-696,Select:747,combined,yes
+696,Select:747,combined,no
 697,Select:747,full,yes
 698,Select:747,partial,no
 699,Select:747,qf,no
