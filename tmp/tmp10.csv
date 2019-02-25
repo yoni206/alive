@@ -1086,7 +1086,7 @@
 1084,vampire,AddSub:1043,undef,yes
 1085,vampire,AddSub:1043,values,no
 1086,vampire,AddSub:1164,poison,yes
-1087,vampire,AddSub:1164,undef,no
+1087,vampire,AddSub:1164,undef,yes
 1088,vampire,AddSub:1164,values,yes
 1089,vampire,AddSub:1165,poison,yes
 1090,vampire,AddSub:1165,undef,yes
@@ -1103,7 +1103,7 @@
 1101,vampire,AddSub:1539-2,poison,yes
 1102,vampire,AddSub:1539-2,undef,yes
 1103,vampire,AddSub:1539-2,values,yes
-1104,vampire,AddSub:1560,poison,no
+1104,vampire,AddSub:1560,poison,yes
 1105,vampire,AddSub:1560,undef,yes
 1106,vampire,AddSub:1560,values,no
 1107,vampire,AddSub:1564,poison,yes
@@ -1185,7 +1185,7 @@
 1183,vampire,AndOrXor:1740,undef,yes
 1184,vampire,AndOrXor:1740,values,yes
 1185,vampire,AndOrXor:1795,poison,yes
-1186,vampire,AndOrXor:1795,undef,yes
+1186,vampire,AndOrXor:1795,undef,no
 1187,vampire,AndOrXor:1795,values,no
 1188,vampire,AndOrXor:1818,poison,yes
 1189,vampire,AndOrXor:1818,undef,yes
@@ -1203,7 +1203,7 @@
 1201,vampire,AndOrXor:1828,undef,yes
 1202,vampire,AndOrXor:1828,values,yes
 1203,vampire,AndOrXor:1829,poison,yes
-1204,vampire,AndOrXor:1829,undef,no
+1204,vampire,AndOrXor:1829,undef,yes
 1205,vampire,AndOrXor:1829,values,yes
 1206,vampire,AndOrXor:1831,poison,yes
 1207,vampire,AndOrXor:1831,undef,yes
@@ -1247,7 +1247,7 @@
 1245,vampire,AndOrXor:1894,poison,yes
 1246,vampire,AndOrXor:1894,undef,yes
 1247,vampire,AndOrXor:1894,values,yes
-1248,vampire,AndOrXor:1895,poison,no
+1248,vampire,AndOrXor:1895,poison,yes
 1249,vampire,AndOrXor:1895,undef,yes
 1250,vampire,AndOrXor:1895,values,yes
 1251,vampire,AndOrXor:1899,poison,yes
@@ -1295,7 +1295,7 @@
 1293,vampire,AndOrXor:2247,poison,yes
 1294,vampire,AndOrXor:2247,undef,yes
 1295,vampire,AndOrXor:2247,values,no
-1296,vampire,AndOrXor:2263,poison,yes
+1296,vampire,AndOrXor:2263,poison,no
 1297,vampire,AndOrXor:2263,undef,yes
 1298,vampire,AndOrXor:2263,values,no
 1299,vampire,AndOrXor:2264,poison,yes
@@ -1464,7 +1464,7 @@
 1462,vampire,AndOrXor:940,undef,yes
 1463,vampire,AndOrXor:940,values,yes
 1464,vampire,AndOrXor:941,poison,yes
-1465,vampire,AndOrXor:941,undef,no
+1465,vampire,AndOrXor:941,undef,yes
 1466,vampire,AndOrXor:941,values,yes
 1467,vampire,AndOrXor:942,poison,yes
 1468,vampire,AndOrXor:942,undef,yes
@@ -1530,7 +1530,7 @@
 1528,vampire,Select:1100,undef,yes
 1529,vampire,Select:1100,values,yes
 1530,vampire,Select:1105,poison,yes
-1531,vampire,Select:1105,undef,yes
+1531,vampire,Select:1105,undef,no
 1532,vampire,Select:1105,values,yes
 1533,vampire,Select:420,poison,yes
 1534,vampire,Select:420,undef,yes
@@ -1556,13 +1556,13 @@
 1554,vampire,Select:575b,poison,yes
 1555,vampire,Select:575b,undef,yes
 1556,vampire,Select:575b,values,no
-1557,vampire,Select:576a,poison,no
+1557,vampire,Select:576a,poison,yes
 1558,vampire,Select:576a,undef,yes
 1559,vampire,Select:576a,values,no
 1560,vampire,Select:576b,poison,yes
 1561,vampire,Select:576b,undef,yes
 1562,vampire,Select:576b,values,no
-1563,vampire,Select:637,poison,yes
+1563,vampire,Select:637,poison,no
 1564,vampire,Select:637,undef,yes
 1565,vampire,Select:637,values,yes
 1566,vampire,Select:641,poison,yes
@@ -1578,7 +1578,7 @@
 1576,vampire,Select:704,undef,yes
 1577,vampire,Select:704,values,no
 1578,vampire,Select:705,poison,yes
-1579,vampire,Select:705,undef,yes
+1579,vampire,Select:705,undef,no
 1580,vampire,Select:705,values,yes
 1581,vampire,Select:719,poison,yes
 1582,vampire,Select:719,undef,yes
@@ -1999,7 +1999,7 @@
 1997,z3_default,AndOrXor:931,values,yes
 1998,z3_default,AndOrXor:937,poison,yes
 1999,z3_default,AndOrXor:937,undef,yes
-2000,z3_default,AndOrXor:937,values,no
+2000,z3_default,AndOrXor:937,values,yes
 2001,z3_default,AndOrXor:940,poison,yes
 2002,z3_default,AndOrXor:940,undef,yes
 2003,z3_default,AndOrXor:940,values,yes
@@ -2155,7 +2155,7 @@
 2153,z3_default,muldivrem:239,values,no
 2154,z3_default,muldivrem:290:292,poison,yes
 2155,z3_default,muldivrem:290:292,undef,yes
-2156,z3_default,muldivrem:290:292,values,no
+2156,z3_default,muldivrem:290:292,values,yes
 2157,z3_default,muldivrem:876,poison,yes
 2158,z3_default,muldivrem:876,undef,yes
 2159,z3_default,muldivrem:876,values,no

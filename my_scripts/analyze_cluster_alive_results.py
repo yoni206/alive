@@ -239,7 +239,6 @@ def gen_alive_encoding_cmp(enc_agg, tex_csv_dir):
     grouped = enc_agg.groupby(["opt_name", "reason", "family"], as_index=False)
     grouped_agg = grouped.agg({'proved': agg_yes})
     grouped_agg = grouped_agg.loc[grouped_agg["proved"] == "yes"].copy()
-    grouped_agg.to_csv("~/tmp.csv")
     families = set(enc_agg["family"].tolist())
     for family in families:
         e[family] = len(grouped_agg.loc[grouped_agg["family"] == family].index)
