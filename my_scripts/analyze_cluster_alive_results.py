@@ -5,7 +5,7 @@ import os
 
 NAME_LINE_PREFIX = "Name: "
 
-def main(results_dir, tex_csv_dir, opt_dir):
+def main(results_dir, tex_csv_dir, opt_dir, virtual_timeout):
     results = {}
     results_dirs = [d for d in os.listdir(results_dir)]
     for d in results_dirs:
@@ -19,7 +19,7 @@ def main(results_dir, tex_csv_dir, opt_dir):
                 err_content = myfile.read()
             with open(directory + "/" + log_file, "r") as myfile:
                 log_content = myfile.read()
-            status = get_status(err_content)
+            status = get_status(err_content, virtual_timeout)
             is_ok = get_status_ok(status)
             seconds = get_seconds(err_content)
             if is_ok:
@@ -571,7 +571,8 @@ def get_seconds(err_content):
         time = time_line[len(prefix):].split(".")[0].strip()
         return time
 
-def get_status(err_content):
+# no virtual timeout - put -1
+def get_status(err_content, virtual_to):
     lines = err_content.splitlines()
     prefix = "[runlim] status:"
     status_lines = [line for line in lines if line.startswith(prefix)]
@@ -583,7 +584,18 @@ def get_status(err_content):
         assert(len(status_lines) == 1)
         status_line = status_lines[0]
         status = status_line[len(prefix):].strip()
-        return status
+        #vampire errors
+        if "User error" in err_content:
+            return "error"
+        else:
+            if virtual_to == -1:
+                return status
+            else:
+                time = get_seconds(err_content)
+                if time == "no_time" or int(time) > virtual_to:
+                    return "out of time"
+                else:
+                    return status
 
 def get_status_ok(status):
     return status == "ok"
@@ -604,9 +616,13 @@ def get_result(log_content):
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
-        print('arg1: cluster results dir\narg2: opts dir\narg3: tex-csv dir')
+        print('arg1: cluster results dir\narg2: opts dir\narg3: tex-csv dir\n optional virtual timeout')
         exit(1)
     results_dir = sys.argv[1]
     opt_dir = sys.argv[2]
     tex_csv_dir = sys.argv[3]
-    main(results_dir, tex_csv_dir, opt_dir)
+    if len(sys.argv) == 5:
+        virtual_timeout = int(sys.argv[4])
+    else:
+        virtual_timeout = -1
+    main(results_dir, tex_csv_dir, opt_dir, virtual_timeout)
