@@ -34,10 +34,10 @@
 32,combined,AddSub:1574,values,yes
 33,combined,AddSub:1599,poison,yes
 34,combined,AddSub:1599,undef,yes
-35,combined,AddSub:1599,values,no
+35,combined,AddSub:1599,values,yes
 36,combined,AddSub:1604,poison,yes
 37,combined,AddSub:1604,undef,yes
-38,combined,AddSub:1604,values,no
+38,combined,AddSub:1604,values,yes
 39,combined,AddSub:1614,poison,yes
 40,combined,AddSub:1614,undef,yes
 41,combined,AddSub:1614,values,yes
@@ -145,7 +145,7 @@
 143,combined,AndOrXor:1850,values,yes
 144,combined,AndOrXor:1864,poison,yes
 145,combined,AndOrXor:1864,undef,yes
-146,combined,AndOrXor:1864,values,no
+146,combined,AndOrXor:1864,values,yes
 147,combined,AndOrXor:1869,poison,yes
 148,combined,AndOrXor:1869,undef,yes
 149,combined,AndOrXor:1869,values,yes
@@ -469,7 +469,7 @@
 467,combined,Select:433,values,no
 468,combined,Select:510,poison,yes
 469,combined,Select:510,undef,yes
-470,combined,Select:510,values,no
+470,combined,Select:510,values,yes
 471,combined,Select:575a,poison,yes
 472,combined,Select:575a,undef,yes
 473,combined,Select:575a,values,no
@@ -523,7 +523,7 @@
 521,combined,Select:746,values,yes
 522,combined,Select:747,poison,yes
 523,combined,Select:747,undef,yes
-524,combined,Select:747,values,no
+524,combined,Select:747,values,yes
 525,combined,muldivrem:152,poison,yes
 526,combined,muldivrem:152,undef,yes
 527,combined,muldivrem:152,values,yes
@@ -538,7 +538,7 @@
 536,combined,muldivrem:290:292,values,yes
 537,combined,muldivrem:876,poison,yes
 538,combined,muldivrem:876,undef,yes
-539,combined,muldivrem:876,values,no
+539,combined,muldivrem:876,values,yes
 540,full,AddSub:1040,poison,yes
 541,full,AddSub:1040,undef,yes
 542,full,AddSub:1040,values,no

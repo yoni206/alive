@@ -10,8 +10,8 @@
 8,AddSub:1560,yes,yes,no,False
 9,AddSub:1564,yes,yes,no,False
 10,AddSub:1574,yes,yes,yes,False
-11,AddSub:1599,yes,yes,no,False
-12,AddSub:1604,yes,yes,no,False
+11,AddSub:1599,yes,yes,yes,False
+12,AddSub:1604,yes,yes,yes,False
 13,AddSub:1614,yes,yes,yes,False
 14,AddSub:1619,yes,yes,yes,False
 15,AddSub:1624,yes,yes,no,False
@@ -47,7 +47,7 @@
 45,AndOrXor:1844,yes,yes,yes,False
 46,AndOrXor:1849,yes,yes,yes,False
 47,AndOrXor:1850,yes,yes,yes,False
-48,AndOrXor:1864,yes,yes,no,False
+48,AndOrXor:1864,yes,yes,yes,False
 49,AndOrXor:1869,yes,yes,yes,False
 50,AndOrXor:1870,yes,yes,yes,False
 51,AndOrXor:1879,yes,yes,yes,False
@@ -155,7 +155,7 @@
 153,Select:427,yes,yes,no,False
 154,Select:430,yes,yes,no,False
 155,Select:433,yes,yes,no,False
-156,Select:510,yes,yes,no,False
+156,Select:510,yes,yes,yes,False
 157,Select:575a,yes,yes,no,False
 158,Select:575b,yes,yes,no,False
 159,Select:576a,yes,yes,no,False
@@ -178,4 +178,4 @@
 176,muldivrem:229,yes,yes,no,False
 177,muldivrem:239,yes,yes,no,False
 178,muldivrem:290:292,yes,yes,yes,False
-179,muldivrem:876,yes,yes,no,False
+179,muldivrem:876,yes,yes,yes,False

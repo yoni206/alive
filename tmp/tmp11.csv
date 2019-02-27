@@ -1,5 +1,5 @@
 ,config,proved
 0,cvc4_tplanes,433
-1,cvc4_tplanes_saturate_no_e_matching,442
-2,vampire,424
-3,z3_default,433
+1,cvc4_tplanes_saturate_no_e_matching,447
+2,vampire,429
+3,z3_default,431

@@ -43,11 +43,11 @@
 41,AddSub:1574,full,yes
 42,AddSub:1574,partial,yes
 43,AddSub:1574,qf,yes
-44,AddSub:1599,combined,no
+44,AddSub:1599,combined,yes
 45,AddSub:1599,full,no
 46,AddSub:1599,partial,no
 47,AddSub:1599,qf,no
-48,AddSub:1604,combined,no
+48,AddSub:1604,combined,yes
 49,AddSub:1604,full,no
 50,AddSub:1604,partial,no
 51,AddSub:1604,qf,no
@@ -191,7 +191,7 @@
 189,AndOrXor:1850,full,yes
 190,AndOrXor:1850,partial,yes
 191,AndOrXor:1850,qf,yes
-192,AndOrXor:1864,combined,no
+192,AndOrXor:1864,combined,yes
 193,AndOrXor:1864,full,no
 194,AndOrXor:1864,partial,no
 195,AndOrXor:1864,qf,no
@@ -623,7 +623,7 @@
 621,Select:433,full,no
 622,Select:433,partial,no
 623,Select:433,qf,no
-624,Select:510,combined,no
+624,Select:510,combined,yes
 625,Select:510,full,no
 626,Select:510,partial,no
 627,Select:510,qf,no
@@ -695,7 +695,7 @@
 693,Select:746,full,yes
 694,Select:746,partial,no
 695,Select:746,qf,no
-696,Select:747,combined,no
+696,Select:747,combined,yes
 697,Select:747,full,yes
 698,Select:747,partial,no
 699,Select:747,qf,no
@@ -715,7 +715,7 @@
 713,muldivrem:290:292,full,no
 714,muldivrem:290:292,partial,yes
 715,muldivrem:290:292,qf,no
-716,muldivrem:876,combined,no
+716,muldivrem:876,combined,yes
 717,muldivrem:876,full,no
 718,muldivrem:876,partial,no
 719,muldivrem:876,qf,no

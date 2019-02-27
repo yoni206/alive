@@ -34,10 +34,10 @@
 32,AddSub:1574,values,yes
 33,AddSub:1599,poison,yes
 34,AddSub:1599,undef,yes
-35,AddSub:1599,values,no
+35,AddSub:1599,values,yes
 36,AddSub:1604,poison,yes
 37,AddSub:1604,undef,yes
-38,AddSub:1604,values,no
+38,AddSub:1604,values,yes
 39,AddSub:1614,poison,yes
 40,AddSub:1614,undef,yes
 41,AddSub:1614,values,yes
@@ -145,7 +145,7 @@
 143,AndOrXor:1850,values,yes
 144,AndOrXor:1864,poison,yes
 145,AndOrXor:1864,undef,yes
-146,AndOrXor:1864,values,no
+146,AndOrXor:1864,values,yes
 147,AndOrXor:1869,poison,yes
 148,AndOrXor:1869,undef,yes
 149,AndOrXor:1869,values,yes
@@ -469,7 +469,7 @@
 467,Select:433,values,no
 468,Select:510,poison,yes
 469,Select:510,undef,yes
-470,Select:510,values,no
+470,Select:510,values,yes
 471,Select:575a,poison,yes
 472,Select:575a,undef,yes
 473,Select:575a,values,no
@@ -538,4 +538,4 @@
 536,muldivrem:290:292,values,yes
 537,muldivrem:876,poison,yes
 538,muldivrem:876,undef,yes
-539,muldivrem:876,values,no
+539,muldivrem:876,values,yes
