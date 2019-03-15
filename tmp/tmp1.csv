@@ -127,7 +127,7 @@
 125,AddSub:1574,undef,full,yes
 126,AddSub:1574,undef,partial,yes
 127,AddSub:1574,undef,qf,yes
-128,AddSub:1574,values,combined,yes
+128,AddSub:1574,values,combined,no
 129,AddSub:1574,values,full,yes
 130,AddSub:1574,values,partial,yes
 131,AddSub:1574,values,qf,yes
@@ -1195,7 +1195,7 @@
 1193,AndOrXor:273,undef,full,yes
 1194,AndOrXor:273,undef,partial,yes
 1195,AndOrXor:273,undef,qf,yes
-1196,AndOrXor:273,values,combined,no
+1196,AndOrXor:273,values,combined,yes
 1197,AndOrXor:273,values,full,no
 1198,AndOrXor:273,values,partial,no
 1199,AndOrXor:273,values,qf,no
@@ -1243,7 +1243,7 @@
 1241,AndOrXor:298,undef,full,yes
 1242,AndOrXor:298,undef,partial,yes
 1243,AndOrXor:298,undef,qf,yes
-1244,AndOrXor:298,values,combined,yes
+1244,AndOrXor:298,values,combined,no
 1245,AndOrXor:298,values,full,yes
 1246,AndOrXor:298,values,partial,no
 1247,AndOrXor:298,values,qf,no
@@ -1279,7 +1279,7 @@
 1277,AndOrXor:516,undef,full,yes
 1278,AndOrXor:516,undef,partial,yes
 1279,AndOrXor:516,undef,qf,yes
-1280,AndOrXor:516,values,combined,no
+1280,AndOrXor:516,values,combined,yes
 1281,AndOrXor:516,values,full,no
 1282,AndOrXor:516,values,partial,no
 1283,AndOrXor:516,values,qf,no
@@ -2107,10 +2107,10 @@
 2105,muldivrem:152,undef,full,yes
 2106,muldivrem:152,undef,partial,yes
 2107,muldivrem:152,undef,qf,yes
-2108,muldivrem:152,values,combined,yes
-2109,muldivrem:152,values,full,yes
+2108,muldivrem:152,values,combined,no
+2109,muldivrem:152,values,full,no
 2110,muldivrem:152,values,partial,yes
-2111,muldivrem:152,values,qf,yes
+2111,muldivrem:152,values,qf,no
 2112,muldivrem:229,poison,combined,yes
 2113,muldivrem:229,poison,full,yes
 2114,muldivrem:229,poison,partial,yes
@@ -2143,7 +2143,7 @@
 2141,muldivrem:290:292,undef,full,yes
 2142,muldivrem:290:292,undef,partial,yes
 2143,muldivrem:290:292,undef,qf,yes
-2144,muldivrem:290:292,values,combined,yes
+2144,muldivrem:290:292,values,combined,no
 2145,muldivrem:290:292,values,full,no
 2146,muldivrem:290:292,values,partial,yes
 2147,muldivrem:290:292,values,qf,no

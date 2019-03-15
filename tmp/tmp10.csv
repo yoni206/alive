@@ -100,7 +100,7 @@
 98,cvc4_tplanes,AndOrXor:1705,values,yes
 99,cvc4_tplanes,AndOrXor:1733,poison,yes
 100,cvc4_tplanes,AndOrXor:1733,undef,yes
-101,cvc4_tplanes,AndOrXor:1733,values,no
+101,cvc4_tplanes,AndOrXor:1733,values,yes
 102,cvc4_tplanes,AndOrXor:1740,poison,yes
 103,cvc4_tplanes,AndOrXor:1740,undef,yes
 104,cvc4_tplanes,AndOrXor:1740,values,yes
@@ -352,13 +352,13 @@
 350,cvc4_tplanes,AndOrXor:757,values,no
 351,cvc4_tplanes,AndOrXor:794,poison,yes
 352,cvc4_tplanes,AndOrXor:794,undef,yes
-353,cvc4_tplanes,AndOrXor:794,values,yes
+353,cvc4_tplanes,AndOrXor:794,values,no
 354,cvc4_tplanes,AndOrXor:819,poison,yes
 355,cvc4_tplanes,AndOrXor:819,undef,yes
 356,cvc4_tplanes,AndOrXor:819,values,no
 357,cvc4_tplanes,AndOrXor:827,poison,yes
 358,cvc4_tplanes,AndOrXor:827,undef,yes
-359,cvc4_tplanes,AndOrXor:827,values,no
+359,cvc4_tplanes,AndOrXor:827,values,yes
 360,cvc4_tplanes,AndOrXor:887-1,poison,yes
 361,cvc4_tplanes,AndOrXor:887-1,undef,yes
 362,cvc4_tplanes,AndOrXor:887-1,values,yes
@@ -838,7 +838,7 @@
 836,cvc4_tplanes_saturate_no_e_matching,AndOrXor:270,values,yes
 837,cvc4_tplanes_saturate_no_e_matching,AndOrXor:273,poison,yes
 838,cvc4_tplanes_saturate_no_e_matching,AndOrXor:273,undef,yes
-839,cvc4_tplanes_saturate_no_e_matching,AndOrXor:273,values,no
+839,cvc4_tplanes_saturate_no_e_matching,AndOrXor:273,values,yes
 840,cvc4_tplanes_saturate_no_e_matching,AndOrXor:280,poison,yes
 841,cvc4_tplanes_saturate_no_e_matching,AndOrXor:280,undef,yes
 842,cvc4_tplanes_saturate_no_e_matching,AndOrXor:280,values,yes
@@ -859,7 +859,7 @@
 857,cvc4_tplanes_saturate_no_e_matching,AndOrXor:364,values,no
 858,cvc4_tplanes_saturate_no_e_matching,AndOrXor:516,poison,yes
 859,cvc4_tplanes_saturate_no_e_matching,AndOrXor:516,undef,yes
-860,cvc4_tplanes_saturate_no_e_matching,AndOrXor:516,values,no
+860,cvc4_tplanes_saturate_no_e_matching,AndOrXor:516,values,yes
 861,cvc4_tplanes_saturate_no_e_matching,AndOrXor:523,poison,yes
 862,cvc4_tplanes_saturate_no_e_matching,AndOrXor:523,undef,yes
 863,cvc4_tplanes_saturate_no_e_matching,AndOrXor:523,values,no
@@ -1066,7 +1066,7 @@
 1064,cvc4_tplanes_saturate_no_e_matching,Select:747,values,yes
 1065,cvc4_tplanes_saturate_no_e_matching,muldivrem:152,poison,yes
 1066,cvc4_tplanes_saturate_no_e_matching,muldivrem:152,undef,yes
-1067,cvc4_tplanes_saturate_no_e_matching,muldivrem:152,values,yes
+1067,cvc4_tplanes_saturate_no_e_matching,muldivrem:152,values,no
 1068,cvc4_tplanes_saturate_no_e_matching,muldivrem:229,poison,yes
 1069,cvc4_tplanes_saturate_no_e_matching,muldivrem:229,undef,yes
 1070,cvc4_tplanes_saturate_no_e_matching,muldivrem:229,values,no
@@ -1135,7 +1135,7 @@
 1133,vampire,AndOrXor:1007,values,yes
 1134,vampire,AndOrXor:1012,poison,yes
 1135,vampire,AndOrXor:1012,undef,yes
-1136,vampire,AndOrXor:1012,values,no
+1136,vampire,AndOrXor:1012,values,yes
 1137,vampire,AndOrXor:1230,poison,yes
 1138,vampire,AndOrXor:1230,undef,yes
 1139,vampire,AndOrXor:1230,values,no
@@ -1459,7 +1459,7 @@
 1457,vampire,AndOrXor:931,values,yes
 1458,vampire,AndOrXor:937,poison,yes
 1459,vampire,AndOrXor:937,undef,yes
-1460,vampire,AndOrXor:937,values,no
+1460,vampire,AndOrXor:937,values,yes
 1461,vampire,AndOrXor:940,poison,yes
 1462,vampire,AndOrXor:940,undef,yes
 1463,vampire,AndOrXor:940,values,yes
@@ -1663,7 +1663,7 @@
 1661,z3_default,AddSub:1614,values,no
 1662,z3_default,AddSub:1619,poison,yes
 1663,z3_default,AddSub:1619,undef,yes
-1664,z3_default,AddSub:1619,values,no
+1664,z3_default,AddSub:1619,values,yes
 1665,z3_default,AddSub:1624,poison,yes
 1666,z3_default,AddSub:1624,undef,yes
 1667,z3_default,AddSub:1624,values,no
@@ -1675,7 +1675,7 @@
 1673,z3_default,AndOrXor:1007,values,yes
 1674,z3_default,AndOrXor:1012,poison,yes
 1675,z3_default,AndOrXor:1012,undef,yes
-1676,z3_default,AndOrXor:1012,values,yes
+1676,z3_default,AndOrXor:1012,values,no
 1677,z3_default,AndOrXor:1230,poison,yes
 1678,z3_default,AndOrXor:1230,undef,yes
 1679,z3_default,AndOrXor:1230,values,no
@@ -2116,7 +2116,7 @@
 2114,z3_default,Select:700,values,yes
 2115,z3_default,Select:704,poison,yes
 2116,z3_default,Select:704,undef,yes
-2117,z3_default,Select:704,values,yes
+2117,z3_default,Select:704,values,no
 2118,z3_default,Select:705,poison,yes
 2119,z3_default,Select:705,undef,yes
 2120,z3_default,Select:705,values,yes

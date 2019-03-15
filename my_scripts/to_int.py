@@ -42,7 +42,7 @@ def main(dir_of_bv_smt, dir_of_int_smt, dir_of_templates, filter_file):
         except FileExistsError:
             pass
         t_path = dir_of_templates + "/" + t_f
-        template_content = get_template_content_and_filter(t_path)
+        template_content = get_str_from_file(t_path)
         for opt_name in opt_map:
             for reason in REASONS:
                 files = opt_map[opt_name][reason]
@@ -83,8 +83,10 @@ def generate_benchmark(template_content, bv_content, t_f, f, dir_of_int_smt, tem
     int_content = get_int_content(template_content, bv_content, bounded)
     filename = generate_filename(t_f, f)
     content = template_content + "\n\n\n" + int_content
-    if "rec" in template_name:
-        content = content.replace("(set-logic UFNIA)", "")
+    if "qf" in template_name:
+        content = "(set-logic QF_UFNIA)\n" + content
+    else:
+        content = "(set-logic UFNIA)\n" + content 
     if bounded:
         filepath = dir_of_int_smt + "/bounded/" + template_name + "/" + filename
     else:
@@ -166,13 +168,13 @@ def get_int_content(template_content, bv_content, bounded):
     result += "\n"
     result += "(assert (> k 0))"
     result += "\n"
-    result += "(assert two_to_the_is_ok)"
+    result += "(assert two_to_the_ax)"
     result += "\n"
-    result += "(assert (and_is_ok k))"
+    result += "(assert (and_ax k))"
     result += "\n"
-    result += "(assert (or_is_ok k))"
+    result += "(assert (or_ax k))"
     result += "\n"
-    result += "(assert (xor_is_ok k))"
+    result += "(assert (xor_ax k))"
     result += "\n"
 
     if bounded:

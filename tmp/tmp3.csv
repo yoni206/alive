@@ -98,14 +98,14 @@
 96,AndOrXor:2658,no
 97,AndOrXor:2663,yes
 98,AndOrXor:270,yes
-99,AndOrXor:273,no
+99,AndOrXor:273,yes
 100,AndOrXor:280,yes
 101,AndOrXor:287,yes
 102,AndOrXor:290,no
 103,AndOrXor:298,yes
 104,AndOrXor:363,no
 105,AndOrXor:364,no
-106,AndOrXor:516,no
+106,AndOrXor:516,yes
 107,AndOrXor:523,no
 108,AndOrXor:530,no
 109,AndOrXor:537,no

@@ -31,7 +31,7 @@
 29,combined,AddSub:1564,values,no
 30,combined,AddSub:1574,poison,yes
 31,combined,AddSub:1574,undef,yes
-32,combined,AddSub:1574,values,yes
+32,combined,AddSub:1574,values,no
 33,combined,AddSub:1599,poison,yes
 34,combined,AddSub:1599,undef,yes
 35,combined,AddSub:1599,values,yes
@@ -298,7 +298,7 @@
 296,combined,AndOrXor:270,values,yes
 297,combined,AndOrXor:273,poison,yes
 298,combined,AndOrXor:273,undef,yes
-299,combined,AndOrXor:273,values,no
+299,combined,AndOrXor:273,values,yes
 300,combined,AndOrXor:280,poison,yes
 301,combined,AndOrXor:280,undef,yes
 302,combined,AndOrXor:280,values,yes
@@ -310,7 +310,7 @@
 308,combined,AndOrXor:290,values,no
 309,combined,AndOrXor:298,poison,yes
 310,combined,AndOrXor:298,undef,yes
-311,combined,AndOrXor:298,values,yes
+311,combined,AndOrXor:298,values,no
 312,combined,AndOrXor:363,poison,yes
 313,combined,AndOrXor:363,undef,yes
 314,combined,AndOrXor:363,values,no
@@ -319,7 +319,7 @@
 317,combined,AndOrXor:364,values,no
 318,combined,AndOrXor:516,poison,yes
 319,combined,AndOrXor:516,undef,yes
-320,combined,AndOrXor:516,values,no
+320,combined,AndOrXor:516,values,yes
 321,combined,AndOrXor:523,poison,yes
 322,combined,AndOrXor:523,undef,yes
 323,combined,AndOrXor:523,values,no
@@ -526,7 +526,7 @@
 524,combined,Select:747,values,yes
 525,combined,muldivrem:152,poison,yes
 526,combined,muldivrem:152,undef,yes
-527,combined,muldivrem:152,values,yes
+527,combined,muldivrem:152,values,no
 528,combined,muldivrem:229,poison,yes
 529,combined,muldivrem:229,undef,yes
 530,combined,muldivrem:229,values,no
@@ -535,7 +535,7 @@
 533,combined,muldivrem:239,values,no
 534,combined,muldivrem:290:292,poison,yes
 535,combined,muldivrem:290:292,undef,yes
-536,combined,muldivrem:290:292,values,yes
+536,combined,muldivrem:290:292,values,no
 537,combined,muldivrem:876,poison,yes
 538,combined,muldivrem:876,undef,yes
 539,combined,muldivrem:876,values,yes
@@ -1066,7 +1066,7 @@
 1064,full,Select:747,values,yes
 1065,full,muldivrem:152,poison,yes
 1066,full,muldivrem:152,undef,yes
-1067,full,muldivrem:152,values,yes
+1067,full,muldivrem:152,values,no
 1068,full,muldivrem:229,poison,yes
 1069,full,muldivrem:229,undef,yes
 1070,full,muldivrem:229,values,no
@@ -2146,7 +2146,7 @@
 2144,qf,Select:747,values,no
 2145,qf,muldivrem:152,poison,yes
 2146,qf,muldivrem:152,undef,yes
-2147,qf,muldivrem:152,values,yes
+2147,qf,muldivrem:152,values,no
 2148,qf,muldivrem:229,poison,yes
 2149,qf,muldivrem:229,undef,yes
 2150,qf,muldivrem:229,values,no
