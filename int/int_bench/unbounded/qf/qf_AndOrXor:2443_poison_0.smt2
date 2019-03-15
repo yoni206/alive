@@ -35,6 +35,7 @@
 
 
 (declare-fun k () Int)
+(assert (instantiate_me k))
 (assert (> k 0))
 (assert two_to_the_ax)
 (assert (and_ax k))
@@ -42,7 +43,7 @@
 (assert (xor_ax k))
 
 (declare-fun %y() Int)
-(assert (in_range k %y))
+(assert (in_range k %y))(assert (instantiate_me %y))
 
 
 (assert false)

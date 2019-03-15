@@ -7,6 +7,7 @@ import gen_translations
 import utils
 import verify_stuff
 
+use_patterns = True
 REASONS = ["poison", "undef", "values", "mem"]
 
 ic_sub = gen_translations.substitutions
@@ -166,6 +167,9 @@ def save_content_to_file(content, filename):
 def get_int_content(template_content, bv_content, bounded):
     result = "(declare-fun k () Int)"
     result += "\n"
+    if use_patterns:
+        result += "(assert (instantiate_me k))"
+        result += "\n"
     result += "(assert (> k 0))"
     result += "\n"
     result += "(assert two_to_the_ax)"
@@ -241,6 +245,8 @@ def intize_declaration(d):
     new_declaration = "(declare-fun " + var_name + "() Int)"
     new_declaration += "\n"
     new_declaration += "(assert (in_range k " + var_name + "))"
+    if use_patterns:
+        new_declaration += "(assert (instantiate_me " + var_name + "))"
     new_declaration += "\n"
     new_declaration += "\n"
     return new_declaration
@@ -257,12 +263,14 @@ def replace_bv_functions(s):
 
 if __name__ == "__main__":
     if len(sys.argv) < 5:
-        print('arg1: dir of bv smt\narg2: dir of int smt\narg3: dir of templates\narg4: filter file')
+        print('arg1: dir of bv smt\narg2: dir of int smt\narg3: dir of templates\narg4: filter file\narg5: use patterns yes/no (optional, default yes)')
         sys.exit(1)
     dir_of_bv_smt = sys.argv[1]
     dir_of_int_smt = sys.argv[2]
     dir_of_templates = sys.argv[3]
     filter_file = sys.argv[4]
+    if len(sys.argv) == 6 and sys.argv[5] == "no":
+        use_patterns = False
     main(dir_of_bv_smt, dir_of_int_smt, dir_of_templates, filter_file)
 
 

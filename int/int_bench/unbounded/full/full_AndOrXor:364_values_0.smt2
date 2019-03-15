@@ -42,6 +42,7 @@
 
 
 (declare-fun k () Int)
+(assert (instantiate_me k))
 (assert (> k 0))
 (assert two_to_the_ax)
 (assert (and_ax k))
@@ -49,19 +50,19 @@
 (assert (xor_ax k))
 
 (declare-fun C2() Int)
-(assert (in_range k C2))
+(assert (in_range k C2))(assert (instantiate_me C2))
 
 
 (declare-fun %B() Int)
-(assert (in_range k %B))
+(assert (in_range k %B))(assert (instantiate_me %B))
 
 
 (declare-fun %A() Int)
-(assert (in_range k %A))
+(assert (in_range k %A))(assert (instantiate_me %A))
 
 
 (declare-fun C1() Int)
-(assert (in_range k C1))
+(assert (in_range k C1))(assert (instantiate_me C1))
 
 
 (assert (let ((_let_0 (intadd k C2 1))) (and (= (intand k _let_0 (intsub k _let_0 1)) 0) (= (intand k C1 C2) 0) (not (= (intand k (intsub k (intxor k %A C1) %B) C2) (intand k (intsub k %A %B) C2))))))

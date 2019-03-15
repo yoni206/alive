@@ -75,6 +75,7 @@
 
 
 (declare-fun k () Int)
+(assert (instantiate_me k))
 (assert (> k 0))
 (assert two_to_the_ax)
 (assert (and_ax k))
@@ -82,11 +83,11 @@
 (assert (xor_ax k))
 
 (declare-fun C1() Int)
-(assert (in_range k C1))
+(assert (in_range k C1))(assert (instantiate_me C1))
 
 
 (declare-fun %a() Int)
-(assert (in_range k %a))
+(assert (in_range k %a))(assert (instantiate_me %a))
 
 
 (assert (let ((_let_0 (= %a C1))) (and _let_0 (not _let_0))))
