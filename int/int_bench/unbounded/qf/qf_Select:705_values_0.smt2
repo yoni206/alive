@@ -35,7 +35,6 @@
 
 
 (declare-fun k () Int)
-(assert (instantiate_me k))
 (assert (> k 0))
 (assert two_to_the_ax)
 (assert (and_ax k))
@@ -43,11 +42,11 @@
 (assert (xor_ax k))
 
 (declare-fun %A() Int)
-(assert (in_range k %A))(assert (instantiate_me %A))
+(assert (in_range k %A))
 
 
 (declare-fun %B() Int)
-(assert (in_range k %B))(assert (instantiate_me %B))
+(assert (in_range k %B))
 
 
 (assert (let ((_let_0 (ite (intsge k %A %B) %A %B))) (not (= (ite (intslt k _let_0 %A) _let_0 %A) %A))))

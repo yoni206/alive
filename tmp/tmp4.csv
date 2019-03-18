@@ -101,7 +101,7 @@
 99,AndOrXor:273,yes
 100,AndOrXor:280,yes
 101,AndOrXor:287,yes
-102,AndOrXor:290,no
+102,AndOrXor:290,yes
 103,AndOrXor:298,yes
 104,AndOrXor:363,no
 105,AndOrXor:364,no
@@ -170,12 +170,12 @@
 168,Select:720,yes
 169,Select:727,yes
 170,Select:728,yes
-171,Select:740,no
+171,Select:740,yes
 172,Select:741,yes
 173,Select:746,yes
 174,Select:747,yes
-175,muldivrem:152,yes
+175,muldivrem:152,no
 176,muldivrem:229,no
 177,muldivrem:239,no
-178,muldivrem:290:292,yes
+178,muldivrem:290:292,no
 179,muldivrem:876,yes

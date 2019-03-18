@@ -127,7 +127,7 @@
 125,AddSub:1574,undef,full,yes
 126,AddSub:1574,undef,partial,yes
 127,AddSub:1574,undef,qf,yes
-128,AddSub:1574,values,combined,no
+128,AddSub:1574,values,combined,yes
 129,AddSub:1574,values,full,yes
 130,AddSub:1574,values,partial,yes
 131,AddSub:1574,values,qf,yes
@@ -1231,7 +1231,7 @@
 1229,AndOrXor:290,undef,full,yes
 1230,AndOrXor:290,undef,partial,yes
 1231,AndOrXor:290,undef,qf,yes
-1232,AndOrXor:290,values,combined,no
+1232,AndOrXor:290,values,combined,yes
 1233,AndOrXor:290,values,full,no
 1234,AndOrXor:290,values,partial,no
 1235,AndOrXor:290,values,qf,no
@@ -1243,7 +1243,7 @@
 1241,AndOrXor:298,undef,full,yes
 1242,AndOrXor:298,undef,partial,yes
 1243,AndOrXor:298,undef,qf,yes
-1244,AndOrXor:298,values,combined,no
+1244,AndOrXor:298,values,combined,yes
 1245,AndOrXor:298,values,full,yes
 1246,AndOrXor:298,values,partial,no
 1247,AndOrXor:298,values,qf,no
@@ -1989,7 +1989,7 @@
 1987,Select:704,undef,qf,yes
 1988,Select:704,values,combined,yes
 1989,Select:704,values,full,yes
-1990,Select:704,values,partial,no
+1990,Select:704,values,partial,yes
 1991,Select:704,values,qf,no
 1992,Select:705,poison,combined,yes
 1993,Select:705,poison,full,yes
@@ -2059,8 +2059,8 @@
 2057,Select:740,undef,full,yes
 2058,Select:740,undef,partial,yes
 2059,Select:740,undef,qf,yes
-2060,Select:740,values,combined,no
-2061,Select:740,values,full,no
+2060,Select:740,values,combined,yes
+2061,Select:740,values,full,yes
 2062,Select:740,values,partial,no
 2063,Select:740,values,qf,no
 2064,Select:741,poison,combined,yes
@@ -2109,7 +2109,7 @@
 2107,muldivrem:152,undef,qf,yes
 2108,muldivrem:152,values,combined,no
 2109,muldivrem:152,values,full,no
-2110,muldivrem:152,values,partial,yes
+2110,muldivrem:152,values,partial,no
 2111,muldivrem:152,values,qf,no
 2112,muldivrem:229,poison,combined,yes
 2113,muldivrem:229,poison,full,yes
@@ -2145,7 +2145,7 @@
 2143,muldivrem:290:292,undef,qf,yes
 2144,muldivrem:290:292,values,combined,no
 2145,muldivrem:290:292,values,full,no
-2146,muldivrem:290:292,values,partial,yes
+2146,muldivrem:290:292,values,partial,no
 2147,muldivrem:290:292,values,qf,no
 2148,muldivrem:876,poison,combined,yes
 2149,muldivrem:876,poison,full,yes

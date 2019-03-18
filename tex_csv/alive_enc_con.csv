@@ -1,6 +1,6 @@
 encoding,cvc4_tplanes,cvc4_tplanes_saturate_no_e_matching,vampire,z3_default,total
-combined,49,84,69,63,86
-full,48,79,67,63,79
-partial,68,64,66,67,75
+combined,87,83,70,61,90
+full,80,79,67,61,80
+partial,66,64,67,61,74
 qf,70,70,0,68,71
-total,74,88,71,70,90
+total,89,85,70,70,90

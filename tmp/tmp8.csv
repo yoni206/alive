@@ -31,7 +31,7 @@
 29,combined,AddSub:1564,values,no
 30,combined,AddSub:1574,poison,yes
 31,combined,AddSub:1574,undef,yes
-32,combined,AddSub:1574,values,no
+32,combined,AddSub:1574,values,yes
 33,combined,AddSub:1599,poison,yes
 34,combined,AddSub:1599,undef,yes
 35,combined,AddSub:1599,values,yes
@@ -307,10 +307,10 @@
 305,combined,AndOrXor:287,values,yes
 306,combined,AndOrXor:290,poison,yes
 307,combined,AndOrXor:290,undef,yes
-308,combined,AndOrXor:290,values,no
+308,combined,AndOrXor:290,values,yes
 309,combined,AndOrXor:298,poison,yes
 310,combined,AndOrXor:298,undef,yes
-311,combined,AndOrXor:298,values,no
+311,combined,AndOrXor:298,values,yes
 312,combined,AndOrXor:363,poison,yes
 313,combined,AndOrXor:363,undef,yes
 314,combined,AndOrXor:363,values,no
@@ -514,7 +514,7 @@
 512,combined,Select:728,values,yes
 513,combined,Select:740,poison,yes
 514,combined,Select:740,undef,yes
-515,combined,Select:740,values,no
+515,combined,Select:740,values,yes
 516,combined,Select:741,poison,yes
 517,combined,Select:741,undef,yes
 518,combined,Select:741,values,yes
@@ -1054,7 +1054,7 @@
 1052,full,Select:728,values,yes
 1053,full,Select:740,poison,yes
 1054,full,Select:740,undef,yes
-1055,full,Select:740,values,no
+1055,full,Select:740,values,yes
 1056,full,Select:741,poison,yes
 1057,full,Select:741,undef,yes
 1058,full,Select:741,values,yes
@@ -1576,7 +1576,7 @@
 1574,partial,Select:700,values,yes
 1575,partial,Select:704,poison,yes
 1576,partial,Select:704,undef,yes
-1577,partial,Select:704,values,no
+1577,partial,Select:704,values,yes
 1578,partial,Select:705,poison,yes
 1579,partial,Select:705,undef,yes
 1580,partial,Select:705,values,yes
@@ -1606,7 +1606,7 @@
 1604,partial,Select:747,values,no
 1605,partial,muldivrem:152,poison,yes
 1606,partial,muldivrem:152,undef,yes
-1607,partial,muldivrem:152,values,yes
+1607,partial,muldivrem:152,values,no
 1608,partial,muldivrem:229,poison,yes
 1609,partial,muldivrem:229,undef,yes
 1610,partial,muldivrem:229,values,no
@@ -1615,7 +1615,7 @@
 1613,partial,muldivrem:239,values,no
 1614,partial,muldivrem:290:292,poison,yes
 1615,partial,muldivrem:290:292,undef,yes
-1616,partial,muldivrem:290:292,values,yes
+1616,partial,muldivrem:290:292,values,no
 1617,partial,muldivrem:876,poison,yes
 1618,partial,muldivrem:876,undef,yes
 1619,partial,muldivrem:876,values,no

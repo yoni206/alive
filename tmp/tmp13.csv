@@ -101,7 +101,7 @@
 99,AndOrXor:273,yes,yes,yes,False
 100,AndOrXor:280,yes,yes,yes,False
 101,AndOrXor:287,yes,yes,yes,False
-102,AndOrXor:290,yes,yes,no,False
+102,AndOrXor:290,yes,yes,yes,False
 103,AndOrXor:298,yes,yes,yes,False
 104,AndOrXor:363,yes,yes,no,False
 105,AndOrXor:364,yes,yes,no,False
@@ -170,12 +170,12 @@
 168,Select:720,yes,yes,yes,False
 169,Select:727,yes,yes,yes,False
 170,Select:728,yes,yes,yes,False
-171,Select:740,yes,yes,no,False
+171,Select:740,yes,yes,yes,False
 172,Select:741,yes,yes,yes,False
 173,Select:746,yes,yes,yes,False
 174,Select:747,yes,yes,yes,False
-175,muldivrem:152,yes,yes,yes,False
+175,muldivrem:152,yes,yes,no,False
 176,muldivrem:229,yes,yes,no,False
 177,muldivrem:239,yes,yes,no,False
-178,muldivrem:290:292,yes,yes,yes,False
+178,muldivrem:290:292,yes,yes,no,False
 179,muldivrem:876,yes,yes,yes,False

@@ -35,7 +35,6 @@
 
 
 (declare-fun k () Int)
-(assert (instantiate_me k))
 (assert (> k 0))
 (assert two_to_the_ax)
 (assert (and_ax k))
@@ -43,11 +42,11 @@
 (assert (xor_ax k))
 
 (declare-fun %op1() Int)
-(assert (in_range k %op1))(assert (instantiate_me %op1))
+(assert (in_range k %op1))
 
 
 (declare-fun %a() Int)
-(assert (in_range k %a))(assert (instantiate_me %a))
+(assert (in_range k %a))
 
 
 (assert (not (= (intxor k (intor k %a %op1) %op1) (intand k %a (intxor k %op1 (intmax k))))))

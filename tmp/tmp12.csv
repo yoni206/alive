@@ -307,7 +307,7 @@
 305,AndOrXor:287,values,yes
 306,AndOrXor:290,poison,yes
 307,AndOrXor:290,undef,yes
-308,AndOrXor:290,values,no
+308,AndOrXor:290,values,yes
 309,AndOrXor:298,poison,yes
 310,AndOrXor:298,undef,yes
 311,AndOrXor:298,values,yes
@@ -514,7 +514,7 @@
 512,Select:728,values,yes
 513,Select:740,poison,yes
 514,Select:740,undef,yes
-515,Select:740,values,no
+515,Select:740,values,yes
 516,Select:741,poison,yes
 517,Select:741,undef,yes
 518,Select:741,values,yes
@@ -526,7 +526,7 @@
 524,Select:747,values,yes
 525,muldivrem:152,poison,yes
 526,muldivrem:152,undef,yes
-527,muldivrem:152,values,yes
+527,muldivrem:152,values,no
 528,muldivrem:229,poison,yes
 529,muldivrem:229,undef,yes
 530,muldivrem:229,values,no
@@ -535,7 +535,7 @@
 533,muldivrem:239,values,no
 534,muldivrem:290:292,poison,yes
 535,muldivrem:290:292,undef,yes
-536,muldivrem:290:292,values,yes
+536,muldivrem:290:292,values,no
 537,muldivrem:876,poison,yes
 538,muldivrem:876,undef,yes
 539,muldivrem:876,values,yes

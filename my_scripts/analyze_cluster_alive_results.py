@@ -607,6 +607,7 @@ def get_result(log_content):
     if len(good_lines) == 0:
         return "no result"
     elif len(good_lines) > 1:
+        print(good_lines)
         assert(False)
     else:
         assert(len(good_lines) == 1)

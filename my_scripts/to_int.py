@@ -81,7 +81,7 @@ def generate_unbounded_benchmark(template_content, int_content, t_f, f, dir_of_i
     generate_benchmark(template_content, int_content, t_f, f, dir_of_int_smt, template_name, False)
 
 def generate_benchmark(template_content, bv_content, t_f, f, dir_of_int_smt, template_name, bounded):
-    int_content = get_int_content(template_content, bv_content, bounded)
+    int_content = get_int_content(template_content, bv_content, template_name, bounded)
     filename = generate_filename(t_f, f)
     content = template_content + "\n\n\n" + int_content
     if "qf" in template_name:
@@ -164,10 +164,10 @@ def save_content_to_file(content, filename):
         myfile.write(content)
 
 
-def get_int_content(template_content, bv_content, bounded):
+def get_int_content(template_content, bv_content, template_name, bounded):
     result = "(declare-fun k () Int)"
     result += "\n"
-    if use_patterns:
+    if use_patterns and "qf" not in template_name:
         result += "(assert (instantiate_me k))"
         result += "\n"
     result += "(assert (> k 0))"
@@ -187,7 +187,7 @@ def get_int_content(template_content, bv_content, bounded):
 
     result += bv_content
     result = replace_bv_functions(result)
-    result = replace_declarations(result)
+    result = replace_declarations(result, template_name)
     result = replace_bv_constants(result)
     return result
 
@@ -224,19 +224,19 @@ def replace_minus_ones_and_widths(s):
 
 #changes (declare-fun ... BV ) to declare-fun Int
 # if the fun is not a constant, fail
-def replace_declarations(s):
+def replace_declarations(s, template_name):
     lines = [l.strip() for l in s.splitlines()]
     new_lines = []
     for line in lines:
         if is_declare_bv_line(line):
-            line = intize_declaration(line)
+            line = intize_declaration(line, template_name)
         new_lines.append(line)
     return "\n".join(new_lines)
 
 def is_declare_bv_line(line):
     return "declare-fun" in line and "BitVec" in line
 
-def intize_declaration(d):
+def intize_declaration(d, template_name):
     regex = r"\(declare-fun (.+) \(\) \(_ BitVec (\d+)\)\)"
     assert(re.search(regex, d))
     match = re.search(regex, d)
@@ -245,7 +245,7 @@ def intize_declaration(d):
     new_declaration = "(declare-fun " + var_name + "() Int)"
     new_declaration += "\n"
     new_declaration += "(assert (in_range k " + var_name + "))"
-    if use_patterns:
+    if use_patterns and "qf" not in template_name:
         new_declaration += "(assert (instantiate_me " + var_name + "))"
     new_declaration += "\n"
     new_declaration += "\n"
