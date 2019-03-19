@@ -62,7 +62,6 @@ Publications: "Provably correct peephole optimizations with alive" by N. P. Lope
 (declare-fun %A() Int)
 (assert (in_range k %A))
 
-
 (assert (let ((_let_0 (intsub k 0 %A))) (let ((_let_1 (ite (intslt k %A 0) %A _let_0))) (not (= (ite (intsgt k _let_1 0) _let_1 (intsub k 0 _let_1)) (ite (intsgt k %A 0) %A _let_0))))))
 (assert true)
 (check-sat)

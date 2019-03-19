@@ -95,14 +95,11 @@ Publications: "Provably correct peephole optimizations with alive" by N. P. Lope
 (declare-fun C() Int)
 (assert (in_range k C))
 
-
 (declare-fun %b() Int)
 (assert (in_range k %b))
 
-
 (declare-fun %a() Int)
 (assert (in_range k %a))
-
 
 (assert (and (= (intand k C (intsub k C 1)) 0) (not (= (and (< %a C) (< %b C)) (< (intor k %a %b) C))) (not (= C 0))))
 (assert true)

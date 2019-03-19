@@ -265,7 +265,6 @@ def intize_declaration(d, template_name):
     if use_patterns and "qf" not in template_name:
         new_declaration += "(assert (instantiate_me " + var_name + "))"
     new_declaration += "\n"
-    new_declaration += "\n"
     return new_declaration
     
 

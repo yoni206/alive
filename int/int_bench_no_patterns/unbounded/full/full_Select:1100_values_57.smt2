@@ -62,10 +62,8 @@ Publications: "Provably correct peephole optimizations with alive" by N. P. Lope
 (declare-fun %X() Int)
 (assert (in_range k %X))
 
-
 (declare-fun %Y() Int)
 (assert (in_range k %Y))
-
 
 (assert (not (= %X %X)))
 (assert true)

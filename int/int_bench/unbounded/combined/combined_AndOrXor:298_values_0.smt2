@@ -97,14 +97,11 @@ Publications: "Provably correct peephole optimizations with alive" by N. P. Lope
 (declare-fun C2() Int)
 (assert (in_range k C2))(assert (instantiate_me C2))
 
-
 (declare-fun C1() Int)
 (assert (in_range k C1))(assert (instantiate_me C1))
 
-
 (declare-fun %X() Int)
 (assert (in_range k %X))(assert (instantiate_me %X))
-
 
 (assert (let ((_let_0 (intneg k C1))) (and (intsle k C1 C2) (not (= C1 C2)) (not (= (or (intslt k %X C1) (intsge k %X C2)) (> (intadd k %X _let_0) (intadd k _let_0 (intsub k C2 1))))))))
 (assert true)

@@ -91,18 +91,14 @@ Publications: "Provably correct peephole optimizations with alive" by N. P. Lope
 (declare-fun C2() Int)
 (assert (in_range k C2))
 
-
 (declare-fun C4() Int)
 (assert (in_range k C4))
-
 
 (declare-fun C1() Int)
 (assert (in_range k C1))
 
-
 (declare-fun C3() Int)
 (assert (in_range k C3))
-
 
 (assert false)
 (assert true)
