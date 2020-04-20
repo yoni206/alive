@@ -72,7 +72,16 @@ Publications: "Provably correct peephole optimizations with alive" by N. P. Lope
 (define-fun or_difference1 ((k Int)) Bool (forall ((a Int) (b Int) (c Int)) (! (=> (and (distinct a b) (> k 0) (in_range k a) (in_range k b) (in_range k c) ) (or (distinct (intor k a c) b) (distinct (intor k b c) a))) :pattern ((instantiate_me a) (instantiate_me b) (instantiate_me c))) ))
 (define-fun or_sym ((k Int)) Bool (forall ((a Int) (b Int)) (! (=> (and (> k 0) (in_range k a) (in_range k b)) (= (intor k a b) (intor k b a))) :pattern ((instantiate_me a) (instantiate_me b)))))
 (define-fun or_ranges ((k Int)) Bool (forall ((a Int) (b Int)) (!(=> (and (> k 0) (in_range k a) (in_range k b) ) (and (in_range k (intor k a b)) (>= (intor k a b) a) (>= (intor k a b) b) ) ) :pattern ((instantiate_me a) (instantiate_me b))) ))
-(define-fun or_properties ((k Int)) Bool (and (or_max1 k) (or_max2 k) (or_ide k) (excluded_middle k) (or_sym k) (or_difference1 k) (or_ranges k) ))
+(define-fun or_properties ((k Int)) Bool 
+(and 
+;  (or_max1 k) 
+  (or_max2 k) 
+;  (or_ide k) 
+;  (excluded_middle k) 
+;  (or_sym k) 
+;  (or_difference1 k) 
+  (or_ranges k) 
+))
 ;xor properties
 (define-fun xor_ide ((k Int)) Bool (forall ((a Int)) (! (=> (and (> k 0) (in_range k a) ) (= (intxor k a a) 0)) :pattern ((instantiate_me a))) ))
 (define-fun xor_flip ((k Int)) Bool (forall ((a Int)) (! (=> (and (> k 0) (in_range k a)) (= (intxor k a (intnot k a)) (intmax k))) :pattern ((instantiate_me a))) ))

@@ -105,7 +105,7 @@
 103,AndOrXor:298,yes
 104,AndOrXor:363,no
 105,AndOrXor:364,no
-106,AndOrXor:516,yes
+106,AndOrXor:516,no
 107,AndOrXor:523,no
 108,AndOrXor:530,no
 109,AndOrXor:537,no
@@ -129,7 +129,7 @@
 127,AndOrXor:940,yes
 128,AndOrXor:941,yes
 129,AndOrXor:942,yes
-130,AndOrXor:949,yes
+130,AndOrXor:949,no
 131,AndOrXor:961,yes
 132,AndOrXor:962,yes
 133,AndOrXor:966,yes

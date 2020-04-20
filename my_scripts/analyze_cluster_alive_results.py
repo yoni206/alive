@@ -91,8 +91,8 @@ def main(results_dir, tex_csv_dir, opt_dir, virtual_timeout):
 
     only_partial = df.loc[df["encoding"] == "partial"].copy()
     
-    andy_encodings(enc_alone_agg)
-    andy_configs(only_partial)
+    #andy_encodings(enc_alone_agg)
+    #andy_configs(only_partial)
 
 
     df.to_csv("tmp/tmp0.csv")

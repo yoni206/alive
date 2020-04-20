@@ -319,7 +319,7 @@
 317,AndOrXor:364,values,no
 318,AndOrXor:516,poison,yes
 319,AndOrXor:516,undef,yes
-320,AndOrXor:516,values,yes
+320,AndOrXor:516,values,no
 321,AndOrXor:523,poison,yes
 322,AndOrXor:523,undef,yes
 323,AndOrXor:523,values,no
@@ -391,7 +391,7 @@
 389,AndOrXor:942,values,yes
 390,AndOrXor:949,poison,yes
 391,AndOrXor:949,undef,yes
-392,AndOrXor:949,values,yes
+392,AndOrXor:949,values,no
 393,AndOrXor:961,poison,yes
 394,AndOrXor:961,undef,yes
 395,AndOrXor:961,values,yes

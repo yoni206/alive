@@ -105,7 +105,7 @@
 103,AndOrXor:298,yes,yes,yes,False
 104,AndOrXor:363,yes,yes,no,False
 105,AndOrXor:364,yes,yes,no,False
-106,AndOrXor:516,yes,yes,yes,False
+106,AndOrXor:516,yes,yes,no,False
 107,AndOrXor:523,yes,yes,no,False
 108,AndOrXor:530,yes,yes,no,False
 109,AndOrXor:537,yes,yes,no,False
@@ -129,7 +129,7 @@
 127,AndOrXor:940,yes,yes,yes,False
 128,AndOrXor:941,yes,yes,yes,False
 129,AndOrXor:942,yes,yes,yes,False
-130,AndOrXor:949,yes,yes,yes,False
+130,AndOrXor:949,yes,yes,no,False
 131,AndOrXor:961,yes,yes,yes,False
 132,AndOrXor:962,yes,yes,yes,False
 133,AndOrXor:966,yes,yes,yes,False
